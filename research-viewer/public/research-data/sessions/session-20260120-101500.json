@@ -1,0 +1,145 @@
+{
+  "id": "session-20260120-101500",
+  "startedAt": "2026-01-20T10:15:00Z",
+  "completedAt": "2026-01-20T10:45:00Z",
+  "target": {
+    "industry": "technology-software",
+    "domain": "cybersecurity",
+    "field": "endpoint-security",
+    "specificTopic": null
+  },
+  "configuration": {
+    "model": "claude-opus-4-5",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 5,
+    "problemIds": [
+      "b2c3d4e5-f6a7-8901-0001-endpoint000001",
+      "b2c3d4e5-f6a7-8901-0002-endpoint000002",
+      "b2c3d4e5-f6a7-8901-0003-endpoint000003",
+      "b2c3d4e5-f6a7-8901-0004-endpoint000004",
+      "b2c3d4e5-f6a7-8901-0005-endpoint000005",
+      "b2c3d4e5-f6a7-8901-0006-endpoint000006",
+      "b2c3d4e5-f6a7-8901-0007-endpoint000007",
+      "b2c3d4e5-f6a7-8901-0008-endpoint000008",
+      "b2c3d4e5-f6a7-8901-0009-endpoint000009",
+      "b2c3d4e5-f6a7-8901-0010-endpoint000010"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-20T10:15:00Z",
+      "durationMs": 500,
+      "input": {
+        "userInput": "technology-software cybersecurity endpoint-security"
+      },
+      "output": {
+        "industry": "technology-software",
+        "domain": "cybersecurity",
+        "field": "endpoint-security"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "initialize_session",
+      "timestamp": "2026-01-20T10:15:01Z",
+      "durationMs": 1000,
+      "input": {
+        "target": "endpoint-security"
+      },
+      "output": {
+        "sessionId": "session-20260120-101500",
+        "directoryCreated": true
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T10:15:02Z",
+      "durationMs": 180000,
+      "input": {
+        "searchQueries": [
+          "endpoint security challenges problems issues 2025 2026",
+          "endpoint detection response EDR challenges limitations enterprise",
+          "endpoint security pain points frustrations IT security teams",
+          "endpoint protection emerging threats challenges 2026",
+          "endpoint security patch management vulnerabilities enterprise",
+          "mobile device security MDM endpoint challenges BYOD",
+          "endpoint security skills shortage cybersecurity talent gap",
+          "XDR extended detection response adoption challenges",
+          "ransomware endpoint protection failures statistics",
+          "zero day vulnerability endpoint detection challenges",
+          "fileless malware endpoint security detection challenges"
+        ]
+      },
+      "output": {
+        "candidatesFound": 15,
+        "sourcesConsulted": 45
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T10:18:02Z",
+      "durationMs": 600000,
+      "input": {
+        "candidateCount": 15
+      },
+      "output": {
+        "problemsResearched": 10,
+        "averageSourcesPerProblem": 3
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T10:28:02Z",
+      "durationMs": 300000,
+      "input": {
+        "problemsToValidate": 10
+      },
+      "output": {
+        "approved": 10,
+        "rejected": 0,
+        "averageConfidence": 0.88,
+        "averageImpactScore": 73.8
+      },
+      "status": "completed"
+    },
+    {
+      "step": 6,
+      "action": "synthesis_storage",
+      "timestamp": "2026-01-20T10:33:02Z",
+      "durationMs": 300000,
+      "input": {
+        "problemsToStore": 10
+      },
+      "output": {
+        "fileWritten": "research-viewer/public/research-data/industries/technology-software/cybersecurity/fields/endpoint-security.json",
+        "problemsStored": 10
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 1800000,
+    "tokensUsed": 45000,
+    "apiCalls": 15,
+    "sourcesConsulted": 45
+  }
+}
