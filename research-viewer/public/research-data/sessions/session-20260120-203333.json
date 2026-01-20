@@ -1,0 +1,135 @@
+{
+  "id": "session-20260120-203333",
+  "startedAt": "2026-01-20T20:33:33Z",
+  "completedAt": "2026-01-20T20:45:00Z",
+  "target": {
+    "industry": "media-entertainment",
+    "domain": "content-creation",
+    "field": "gaming"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 12,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 2,
+    "problemIds": [
+      "g1a2b3c4-d5e6-7890-abcd-ef1234500001",
+      "g1a2b3c4-d5e6-7890-abcd-ef1234500002",
+      "g1a2b3c4-d5e6-7890-abcd-ef1234500003",
+      "g1a2b3c4-d5e6-7890-abcd-ef1234500004",
+      "g1a2b3c4-d5e6-7890-abcd-ef1234500005",
+      "g1a2b3c4-d5e6-7890-abcd-ef1234500006",
+      "g1a2b3c4-d5e6-7890-abcd-ef1234500007",
+      "g1a2b3c4-d5e6-7890-abcd-ef1234500008",
+      "g1a2b3c4-d5e6-7890-abcd-ef1234500009",
+      "g1a2b3c4-d5e6-7890-abcd-ef1234500010"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-20T20:33:33Z",
+      "durationMs": 1000,
+      "input": {
+        "rawInput": "media-entertainment content-creation gaming"
+      },
+      "output": {
+        "industry": "media-entertainment",
+        "domain": "content-creation",
+        "field": "gaming"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "initialize_session",
+      "timestamp": "2026-01-20T20:33:34Z",
+      "durationMs": 500,
+      "input": {
+        "sessionId": "session-20260120-203333"
+      },
+      "output": {
+        "directoriesCreated": true
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T20:33:35Z",
+      "durationMs": 60000,
+      "input": {
+        "searchQueries": [
+          "gaming industry challenges problems issues 2025 2026",
+          "video game emerging challenges future risks 2026 predictions",
+          "indie game development discoverability steam visibility challenges",
+          "cloud gaming latency technical challenges streaming infrastructure problems"
+        ]
+      },
+      "output": {
+        "candidatesFound": 15,
+        "sourcesConsulted": 40
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T20:34:35Z",
+      "durationMs": 300000,
+      "input": {
+        "candidates": 15
+      },
+      "output": {
+        "problemsResearched": 12
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T20:39:35Z",
+      "durationMs": 120000,
+      "input": {
+        "problemsToValidate": 12
+      },
+      "output": {
+        "approved": 10,
+        "rejected": 2,
+        "averageConfidence": 0.85
+      },
+      "status": "completed"
+    },
+    {
+      "step": 6,
+      "action": "synthesis_storage",
+      "timestamp": "2026-01-20T20:41:35Z",
+      "durationMs": 180000,
+      "input": {
+        "problemsToStore": 10
+      },
+      "output": {
+        "filesCreated": [
+          "research-viewer/public/research-data/industries/media-entertainment/content-creation/fields/gaming.json"
+        ],
+        "problemsStored": 10
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 700000,
+    "apiCalls": 8,
+    "sourcesConsulted": 40
+  }
+}
