@@ -14,22 +14,31 @@
       "slug": "software-engineering",
       "description": "The discipline of designing, developing, testing, and maintaining software systems using engineering principles.",
       "fieldCount": 8,
-      "problemCount": 21
+      "problemCount": 10
+    },
+    {
+      "id": "7ba8b820-9dad-11d1-80b4-00c04fd430c9",
+      "name": "Artificial Intelligence & Machine Learning",
+      "slug": "ai-ml",
+      "description": "The domain covering the development, training, deployment, and operation of artificial intelligence and machine learning systems.",
+      "fieldCount": 6,
+      "problemCount": 10
     }
   ],
   "statistics": {
-    "totalProblems": 21,
-    "totalDomains": 1,
-    "totalFields": 8,
-    "avgSeverity": 7.6,
-    "avgTractability": 5.7,
+    "totalProblems": 20,
+    "totalDomains": 2,
+    "totalFields": 14,
+    "avgSeverity": 7.4,
+    "avgTractability": 5.4,
     "topProblemTypes": [
-      { "type": "technical", "count": 12 },
-      { "type": "process", "count": 4 },
-      { "type": "market", "count": 2 },
-      { "type": "resource", "count": 2 }
+      { "type": "technical", "count": 9 },
+      { "type": "process", "count": 5 },
+      { "type": "resource", "count": 3 },
+      { "type": "knowledge", "count": 2 },
+      { "type": "ethical", "count": 1 }
     ]
   },
   "createdAt": "2026-01-20T14:30:52Z",
-  "updatedAt": "2026-01-20T16:30:52Z"
+  "updatedAt": "2026-01-20T15:52:30Z"
 }
