@@ -1,0 +1,63 @@
+{
+  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567891",
+  "name": "Clinical Care",
+  "slug": "clinical-care",
+  "description": "Clinical care domain covering primary care, specialty medicine, emergency medicine, surgical services, mental health, and rehabilitation.",
+  "parentIndustry": {
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d481",
+    "name": "Healthcare & Life Sciences",
+    "slug": "healthcare-life-sciences"
+  },
+  "fields": [
+    {
+      "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+      "name": "Primary Care",
+      "slug": "primary-care",
+      "subfields": ["Family Medicine", "Internal Medicine", "Pediatrics", "Preventive Care", "Chronic Disease Management", "Telemedicine"],
+      "problemCount": 10
+    },
+    {
+      "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+      "name": "Specialty Medicine",
+      "slug": "specialty-medicine",
+      "subfields": ["Cardiology", "Oncology", "Neurology", "Orthopedics", "Gastroenterology", "Dermatology"],
+      "problemCount": 0
+    },
+    {
+      "id": "d4e5f6a7-b8c9-0123-defa-234567890123",
+      "name": "Emergency Medicine",
+      "slug": "emergency-medicine",
+      "subfields": ["Trauma Care", "Critical Care", "Emergency Triage", "Pre-Hospital Care", "Disaster Medicine"],
+      "problemCount": 0
+    },
+    {
+      "id": "e5f6a7b8-c9d0-1234-efab-345678901234",
+      "name": "Surgical Services",
+      "slug": "surgical-services",
+      "subfields": ["General Surgery", "Minimally Invasive Surgery", "Robotic Surgery", "Transplant Surgery", "Surgical Planning"],
+      "problemCount": 0
+    },
+    {
+      "id": "f6a7b8c9-d0e1-2345-fabc-456789012345",
+      "name": "Mental Health",
+      "slug": "mental-health",
+      "subfields": ["Psychiatry", "Psychology", "Addiction Medicine", "Child Psychology", "Geriatric Psychiatry", "Crisis Intervention"],
+      "problemCount": 0
+    },
+    {
+      "id": "a7b8c9d0-e1f2-3456-abcd-567890123456",
+      "name": "Rehabilitation",
+      "slug": "rehabilitation",
+      "subfields": ["Physical Therapy", "Occupational Therapy", "Speech Therapy", "Cardiac Rehabilitation", "Neurological Rehabilitation"],
+      "problemCount": 0
+    }
+  ],
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 6,
+    "avgSeverity": 7.8,
+    "avgTractability": 5.35
+  },
+  "createdAt": "2026-01-20T16:15:00Z",
+  "updatedAt": "2026-01-20T16:15:00Z"
+}
