@@ -1,0 +1,29 @@
+{
+  "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+  "name": "Software Engineering",
+  "slug": "software-engineering",
+  "description": "The discipline of designing, developing, testing, and maintaining software systems using engineering principles. Encompasses web development, mobile development, cloud computing, DevOps, data engineering, enterprise architecture, software security, and quality assurance.",
+  "industry": {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "fields": [
+    { "name": "Web Development", "slug": "web-development" },
+    { "name": "Mobile Development", "slug": "mobile-development" },
+    { "name": "Cloud Computing", "slug": "cloud-computing" },
+    { "name": "DevOps & Infrastructure", "slug": "devops-infrastructure" },
+    { "name": "Data Engineering", "slug": "data-engineering" },
+    { "name": "Enterprise Architecture", "slug": "enterprise-architecture" },
+    { "name": "Software Security", "slug": "software-security" },
+    { "name": "Quality Assurance", "slug": "quality-assurance" }
+  ],
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 8,
+    "avgSeverity": 7.3,
+    "avgTractability": 5.6
+  },
+  "createdAt": "2026-01-20T14:30:52Z",
+  "updatedAt": "2026-01-20T14:30:52Z"
+}

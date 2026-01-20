@@ -1,0 +1,83 @@
+{
+  "id": "session-20260120-143052",
+  "startedAt": "2026-01-20T14:30:52Z",
+  "completedAt": "2026-01-20T14:45:00Z",
+  "target": {
+    "industry": "technology-software",
+    "domain": "software-engineering",
+    "field": null
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "standard"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 5,
+    "problemIds": [
+      "a1b2c3d4-e5f6-7890-1111-ef1234567890",
+      "a1b2c3d4-e5f6-7890-2222-ef1234567890",
+      "a1b2c3d4-e5f6-7890-3333-ef1234567890",
+      "a1b2c3d4-e5f6-7890-4444-ef1234567890",
+      "a1b2c3d4-e5f6-7890-5555-ef1234567890",
+      "a1b2c3d4-e5f6-7890-6666-ef1234567890",
+      "a1b2c3d4-e5f6-7890-7777-ef1234567890",
+      "a1b2c3d4-e5f6-7890-8888-ef1234567890",
+      "a1b2c3d4-e5f6-7890-9999-ef1234567890",
+      "a1b2c3d4-e5f6-7890-aaaa-ef1234567890",
+      "a1b2c3d4-e5f6-7890-bbbb-ef1234567890"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "initialize_session",
+      "timestamp": "2026-01-20T14:30:52Z",
+      "status": "completed",
+      "output": { "sessionCreated": true }
+    },
+    {
+      "step": 2,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T14:31:00Z",
+      "status": "completed",
+      "input": { "queries": 8 },
+      "output": { "candidatesFound": 15 }
+    },
+    {
+      "step": 3,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T14:35:00Z",
+      "status": "completed",
+      "input": { "candidatesAnalyzed": 15 },
+      "output": { "problemsResearched": 10 }
+    },
+    {
+      "step": 4,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T14:40:00Z",
+      "status": "completed",
+      "input": { "problemsValidated": 10 },
+      "output": { "problemsApproved": 10, "problemsRejected": 0 }
+    },
+    {
+      "step": 5,
+      "action": "storage_phase",
+      "timestamp": "2026-01-20T14:43:00Z",
+      "status": "completed",
+      "output": { "problemsStored": 10, "filesUpdated": 4 }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "sourcesConsulted": 25,
+    "webSearches": 8,
+    "webFetches": 10
+  }
+}
