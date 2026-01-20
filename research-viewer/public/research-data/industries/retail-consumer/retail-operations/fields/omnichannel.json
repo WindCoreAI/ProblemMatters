@@ -1,0 +1,283 @@
+{
+  "field": {
+    "id": "f4a02069-dbff-433a-9116-f717fa3e26f2",
+    "name": "Omnichannel",
+    "slug": "omnichannel",
+    "description": "Integration of online and offline retail channels including click & collect, ship from store, endless aisle, unified commerce, and customer journey orchestration."
+  },
+  "domain": {
+    "id": "42e1e6cd-c8a7-4b74-8a07-12b1a7f1e2d1",
+    "name": "Retail Operations",
+    "slug": "retail-operations"
+  },
+  "industry": {
+    "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+    "name": "Retail & Consumer",
+    "slug": "retail-consumer"
+  },
+  "problems": [
+    {
+      "id": "697b635c-8c07-4e8b-8e5f-e470f9c566b7",
+      "title": "Omnichannel Integration Failures and Data Silos Preventing Unified Commerce",
+      "slug": "omnichannel-integration-data-silos-unified-commerce",
+      "description": "Despite years of investment in omnichannel capabilities, retailers are failing to deliver the seamless experiences customers expect. Only 17% of modern retailers rate their unified commerce capabilities as mature, according to Manhattan Associates research. Customer data sits in separate systems that don't communicate, creating blind spots and inconsistent experiences. 54.85% of shoppers have experienced discrepancies between online and in-store stock levels, undermining brand trust. The organizational challenge is equally severe: e-commerce has typically been treated as a separate channel with distinct staff, skill sets, data architectures, metrics, and budgets—even though customers view all touchpoints as one brand. The technology is not the sole problem; 'disconnected operations' mean mobile apps ignore recent web activity, call center agents lack in-store conversation context, and promotional experiences differ across channels. Legacy workflows, siloed departments, and misaligned goals prevent retailers from turning unified data into unified experiences. The business impact is stark: companies without strong omnichannel capabilities see only 3.4% year-over-year revenue growth compared to 9.5% for those with mature omnichannel engagement. 44% of consumers abandon carts due to delivery option uncertainty, highlighting fulfillment integration gaps.",
+      "summary": "Only 17% of retailers have mature unified commerce capabilities, with data silos, organizational separation of channels, and technology gaps preventing seamless customer experiences and costing retailers significant revenue growth.",
+      "industry": {
+        "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+        "name": "Retail & Consumer",
+        "slug": "retail-consumer"
+      },
+      "domain": {
+        "id": "42e1e6cd-c8a7-4b74-8a07-12b1a7f1e2d1",
+        "name": "Retail Operations",
+        "slug": "retail-operations"
+      },
+      "field": {
+        "id": "f4a02069-dbff-433a-9116-f717fa3e26f2",
+        "name": "Omnichannel",
+        "slug": "omnichannel"
+      },
+      "problemType": "coordination",
+      "problemSubtypes": ["data-silos", "channel-integration", "unified-commerce", "customer-experience"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "All multi-channel retailers and their customers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 100000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 4,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Legacy systems not designed for integration",
+          "Organizational silos with separate P&Ls and incentives",
+          "High cost of unified commerce platforms",
+          "Data quality issues across systems",
+          "Change management and cultural resistance",
+          "Complexity of real-time inventory visibility"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Major consulting firms, technology vendors, retail associations",
+        "fundingLevel": "Significant investment, though often fragmented across initiatives"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "E-commerce and stores evolved as separate business units with different systems",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Legacy ERP and POS systems lack APIs for modern integration",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Channel-specific KPIs creating conflicting incentives",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Customer data privacy regulations complicating cross-channel data sharing",
+          "category": "regulatory",
+          "contributionLevel": "contributing"
+        },
+        {
+          "description": "Rapid pace of digital change outstripping organizational adaptation",
+          "category": "cultural",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Customers encountering different prices, promotions, and availability across channels",
+          "type": "direct",
+          "affectedArea": "Customer experience",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "6.1 percentage point revenue growth gap versus omnichannel leaders",
+          "type": "direct",
+          "affectedArea": "Revenue",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Cart abandonment due to delivery uncertainty (44% of consumers)",
+          "type": "direct",
+          "affectedArea": "Conversion",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Inefficient inventory allocation without cross-channel visibility",
+          "type": "indirect",
+          "affectedArea": "Operations",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Loss of customer trust when inventory information is inaccurate",
+          "type": "cascading",
+          "affectedArea": "Brand loyalty",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Unified Commerce Platforms",
+          "description": "End-to-end platforms replacing disparate systems with single commerce engine",
+          "type": "product",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["High implementation cost", "Long deployment timelines", "Organizational change required"]
+        },
+        {
+          "name": "Customer Data Platforms (CDPs)",
+          "description": "Systems that unify customer data from all touchpoints into single profiles",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Data quality dependencies", "Privacy compliance complexity", "Integration challenges"]
+        },
+        {
+          "name": "Order Management Systems (OMS)",
+          "description": "Centralized systems managing orders across all fulfillment channels",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Integration with legacy systems", "Real-time synchronization challenges"]
+        },
+        {
+          "name": "Composable Commerce Architecture",
+          "description": "Modular approach allowing best-of-breed components to be integrated via APIs",
+          "type": "framework",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Complexity of managing multiple vendors", "Integration overhead", "Skills requirements"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Affordable unified commerce solutions for mid-market retailers",
+          "gapType": "cost",
+          "opportunity": "Cloud-native, modular platforms with lower entry costs",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Real-time inventory visibility across all channels including third-party marketplaces",
+          "gapType": "integration",
+          "opportunity": "Universal inventory APIs and standards",
+          "difficulty": "high"
+        },
+        {
+          "description": "Organizational change management frameworks for omnichannel transformation",
+          "gapType": "awareness",
+          "opportunity": "Industry best practices for breaking down channel silos",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Customers expecting seamless cross-channel experiences",
+          "examples": ["Online shoppers picking up in-store", "Showrooming customers", "Cross-channel returns"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Retail executives driving digital transformation",
+          "examples": ["Chief Digital Officers", "CIOs", "CEOs"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Store and e-commerce teams managing separate channels",
+          "examples": ["Store managers", "E-commerce directors", "Call center managers"],
+          "interest": "medium",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Commerce technology vendors",
+          "examples": ["Salesforce Commerce Cloud", "Adobe Commerce", "Shopify", "Manhattan Associates"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "5 Omnichannel Trends in Retail for 2025",
+          "authors": ["Manhattan Associates"],
+          "url": "https://www.manh.com/our-insights/resources/articles/2025-omnichannel-trends-in-retail",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Manhattan Associates",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Only 17% of surveyed modern retailers rate their unified commerce capabilities as mature"
+        },
+        {
+          "type": "industry-report",
+          "title": "Top Omnichannel Retail Challenges In 2025 & How to Overcome Them",
+          "url": "https://www.trikatechnologies.com/post/top-5-challenges-omnichannel-retailers-face-in-2025-how-to-overcome-them",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Trika Technologies",
+          "credibilityScore": 0.75
+        },
+        {
+          "type": "industry-report",
+          "title": "Five integrated components to fortify omnichannel retail",
+          "authors": ["EY"],
+          "url": "https://www.ey.com/en_us/insights/transforming-retail/five-components-to-fortify-omnichannel-retail",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Ernst & Young",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Companies with strong omnichannel customer engagement see 9.5% year-over-year revenue growth versus 3.4% for those without"
+        },
+        {
+          "type": "academic",
+          "title": "Unveiling retail omnichannel challenges: developing an omnichannel obstacles scale",
+          "url": "https://www.emerald.com/ijrdm/article/53/13/1/1267276/Unveiling-retail-omnichannel-challenges-developing",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "International Journal of Retail & Distribution Management",
+          "credibilityScore": 0.9
+        }
+      ],
+      "tags": ["omnichannel", "unified-commerce", "data-silos", "integration", "customer-experience", "digital-transformation"],
+      "keywords": ["omnichannel integration", "unified commerce", "retail data silos", "cross-channel retail", "omnichannel challenges"],
+      "metrics": {
+        "searchVolume": 16500,
+        "academicPapers": 423,
+        "mediaArticles": 2100,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T17:41:51Z"
+      },
+      "researchSession": "session-20260120-174151",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T17:41:51Z",
+      "updatedAt": "2026-01-20T17:41:51Z",
+      "version": 1
+    }
+  ]
+}

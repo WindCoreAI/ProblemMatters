@@ -1,0 +1,281 @@
+{
+  "field": {
+    "id": "d1df365d-0e57-4947-b902-5191aeb6d5f8",
+    "name": "Merchandising",
+    "slug": "merchandising",
+    "description": "Assortment planning, pricing strategy, promotions, private label development, and category management for retail operations."
+  },
+  "domain": {
+    "id": "42e1e6cd-c8a7-4b74-8a07-12b1a7f1e2d1",
+    "name": "Retail Operations",
+    "slug": "retail-operations"
+  },
+  "industry": {
+    "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+    "name": "Retail & Consumer",
+    "slug": "retail-consumer"
+  },
+  "problems": [
+    {
+      "id": "ce3f2d62-f7f9-4efc-a68a-6097745afefa",
+      "title": "Retail Pricing Strategy Ineffectiveness and Margin Erosion Under Economic Pressure",
+      "slug": "pricing-strategy-ineffectiveness-margin-erosion",
+      "description": "Retailers face a critical pricing strategy crisis as years of inflation, supply chain disruptions, and rising costs have left customers scrutinizing every dollar, making broad price increases untenable. In the UK, grocery inflation hit 4.4% in May 2025, pushing shoppers to prioritize value. Approximately two-thirds of retail promotions are ineffective, leading to reduced profits, wasted labor, and missed sales opportunities year after year. Retailers are caught between maintaining margin integrity and losing price-sensitive customers: 67% of consumers say they will shop more frequently with smaller basket sizes, and 56% value lower prices over brand loyalty. Between supply chain disruptions, persistent inflation, and rising advertising costs, retailer margins are razor-thin. Premium brands like Samsung and LG have leaned into deeper discounts, while legacy value brands like Whirlpool are pulling back on promotions to maintain margin. The challenge is finding the data-informed sweet spot between price image optimization, key value item (KVI) pricing, and margin preservation—all while navigating tariff uncertainties and intensifying competitive pressures. AI-driven pricing optimization can deliver 1-2% sales increases and 1-2% margin improvements, yet many retailers still rely on outdated, spreadsheet-based pricing processes.",
+      "summary": "Two-thirds of retail promotions are ineffective while inflation-weary consumers demand value, forcing retailers to navigate between margin erosion and customer loss with inadequate pricing tools and processes.",
+      "industry": {
+        "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+        "name": "Retail & Consumer",
+        "slug": "retail-consumer"
+      },
+      "domain": {
+        "id": "42e1e6cd-c8a7-4b74-8a07-12b1a7f1e2d1",
+        "name": "Retail Operations",
+        "slug": "retail-operations"
+      },
+      "field": {
+        "id": "d1df365d-0e57-4947-b902-5191aeb6d5f8",
+        "name": "Merchandising",
+        "slug": "merchandising"
+      },
+      "problemType": "process",
+      "problemSubtypes": ["pricing-strategy", "promotion-effectiveness", "margin-management", "competitive-pricing"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "All retailers and consumers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 75000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 4,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 6.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Legacy pricing systems and manual processes",
+          "Lack of real-time competitive data",
+          "Organizational resistance to AI-driven pricing",
+          "Data quality issues across channels",
+          "Complexity of tariff and cost pass-through decisions"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Pricing consultants, AI vendors, retail analysts",
+        "fundingLevel": "Growing investment in pricing technology"
+      },
+      "impactScore": 65,
+      "rootCauses": [
+        {
+          "description": "Years of inflation leaving customers extremely price-sensitive",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Outdated promotion planning based on historical patterns rather than real-time data",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Siloed pricing decisions across channels, categories, and regions",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Inability to accurately measure promotion ROI across channels",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Competitive pressure driving race-to-bottom pricing",
+          "category": "economic",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Two-thirds of promotions failing to generate positive ROI",
+          "type": "direct",
+          "affectedArea": "Profitability",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Margin erosion as retailers absorb cost increases",
+          "type": "direct",
+          "affectedArea": "Financial health",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Customer defection to lower-priced competitors",
+          "type": "cascading",
+          "affectedArea": "Market share",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Brand value damage from excessive discounting",
+          "type": "indirect",
+          "affectedArea": "Brand equity",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Wasted labor and resources on ineffective promotional planning",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "AI-Powered Dynamic Pricing",
+          "description": "Machine learning systems that optimize prices based on demand, competition, and inventory",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Customer perception of price instability", "Integration complexity", "Regulatory scrutiny in some markets"]
+        },
+        {
+          "name": "Competitive Price Intelligence Platforms",
+          "description": "Tools that monitor competitor pricing in real-time",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Data freshness varies", "May not capture promotions", "Coverage gaps"]
+        },
+        {
+          "name": "Promotion Optimization Software",
+          "description": "Analytics tools that predict promotion performance and optimize calendars",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Historical data dependencies", "Cross-channel attribution challenges"]
+        },
+        {
+          "name": "Tiered/Good-Better-Best Pricing",
+          "description": "Strategy offering price tiers to capture different customer segments",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Product portfolio complexity", "Customer confusion risk"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Unified pricing strategy across online, in-store, and marketplace channels",
+          "gapType": "integration",
+          "opportunity": "Omnichannel pricing platforms with consistent price image management",
+          "difficulty": "high"
+        },
+        {
+          "description": "Real-time promotion ROI measurement across all customer touchpoints",
+          "gapType": "coverage",
+          "opportunity": "Attribution systems linking promotions to cross-channel sales",
+          "difficulty": "high"
+        },
+        {
+          "description": "Affordable pricing optimization for small and mid-market retailers",
+          "gapType": "cost",
+          "opportunity": "SaaS-based pricing tools with lower implementation costs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Retailers struggling with margin pressure",
+          "examples": ["Grocery chains", "Department stores", "Specialty retailers"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Price-sensitive consumers",
+          "examples": ["Budget shoppers", "Value seekers", "Deal hunters"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Merchandising and pricing executives",
+          "examples": ["Chief Merchandising Officers", "Pricing Directors", "Category Managers"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Pricing technology vendors",
+          "examples": ["RELEX Solutions", "Blue Yonder", "Revionics", "Impact Analytics"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Pricing Trends 2025: Winning in a Market That's Had Enough",
+          "url": "https://www.pricingsolutions.com/pricing-blog/pricing-trends-2025-winning-in-a-market-thats-had-enough/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Pricing Solutions",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Customers have faced years of relentless increases driven by inflation, supply chain disruptions, and rising costs"
+        },
+        {
+          "type": "industry-report",
+          "title": "3 essential pricing strategies grocers must master for 2025",
+          "url": "https://www.supermarketnews.com/grocery-technology/3-essential-pricing-strategies-grocers-must-master-for-2025",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Supermarket News",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Approximately two-thirds of retail promotions are ineffective"
+        },
+        {
+          "type": "industry-report",
+          "title": "The Ultimate Guide to Pricing & Promotion (2025 update)",
+          "url": "https://nielseniq.com/global/en/insights/education/2023/pricing-and-promotion-ultimate-guide/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "NielsenIQ",
+          "credibilityScore": 0.9
+        },
+        {
+          "type": "industry-report",
+          "title": "Retail price optimization: The complete guide to maximizing performance",
+          "url": "https://www.relexsolutions.com/resources/retail-price-optimization/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "RELEX Solutions",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "AI-driven pricing optimization can deliver 1-2% sales increases and 1-2% margin improvements"
+        }
+      ],
+      "tags": ["pricing", "promotions", "margins", "merchandising", "competitive-pricing", "discounting"],
+      "keywords": ["retail pricing strategy", "promotion effectiveness", "margin erosion", "pricing optimization", "retail promotions"],
+      "metrics": {
+        "searchVolume": 12300,
+        "academicPapers": 234,
+        "mediaArticles": 1800,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T17:41:51Z"
+      },
+      "researchSession": "session-20260120-174151",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T17:41:51Z",
+      "updatedAt": "2026-01-20T17:41:51Z",
+      "version": 1
+    }
+  ]
+}
