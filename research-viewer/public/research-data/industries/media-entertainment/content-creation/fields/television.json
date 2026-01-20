@@ -1,0 +1,2401 @@
+{
+  "field": {
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d501",
+    "name": "Television",
+    "slug": "television",
+    "description": "Broadcast TV, cable networks, production studios, news, and sports broadcasting."
+  },
+  "domain": {
+    "id": "d47ac10b-58cc-4372-a567-0e02b2c3d500",
+    "name": "Content Creation",
+    "slug": "content-creation"
+  },
+  "industry": {
+    "id": "c47ac10b-58cc-4372-a567-0e02b2c3d499",
+    "name": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "problems": [
+    {
+      "id": "tv-prob-001-58cc-4372-a567-0e02b2c3d001",
+      "title": "Cord-Cutting Crisis: Accelerating Decline of Traditional Television Subscriptions",
+      "slug": "cord-cutting-crisis-traditional-tv-decline",
+      "description": "The television industry faces an existential crisis as cord-cutting accelerates at unprecedented rates. By the end of 2026, 75% of U.S. households with a TV will no longer have a traditional TV subscription. Nielsen data from May 2025 showed streaming platforms commanding 44.8% of total TV viewership, surpassing the combined share of broadcast (20.1%) and cable (24.1%) for the first time in history. The U.S. cable network industry has formally entered the 'decline stage of its life cycle' according to S&P Global analysis. Over 54.3 million U.S. households are projected to cut cable subscriptions by 2026, with 80.7 million households expected to use non-pay TV services. The average cable network saw its subscriber base erode by 7.1% to just 31.4 million homes in 2024. This mass exodus is driven by high prices (80% cite cost as primary reason), fewer compelling original programs on cable, and the convenience of streaming alternatives. The decline threatens the entire traditional TV ecosystem including local affiliates, regional sports networks, and news operations that depend on carriage fees and bundled distribution.",
+      "summary": "By end of 2026, 75% of TV households will lack traditional subscriptions as streaming overtakes linear TV for the first time, with 54.3 million households cutting the cord.",
+      "industry": {
+        "id": "c47ac10b-58cc-4372-a567-0e02b2c3d499",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d47ac10b-58cc-4372-a567-0e02b2c3d500",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d501",
+        "name": "Television",
+        "slug": "television"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["disruption", "consumer-behavior", "business-model", "revenue-decline"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "critical",
+      "severity": {
+        "overall": 9.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "Thousands of TV stations, networks, and millions of industry workers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 60000000000,
+          "timeframe": "annual - affiliate fees and advertising losses"
+        },
+        "qualityOfLife": 6,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 3.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Consumer preference shift is irreversible",
+          "Streaming economics favor direct-to-consumer",
+          "Legacy distribution contracts limit flexibility",
+          "Regional sports rights fragmentation"
+        ]
+      },
+      "neglectedness": {
+        "overall": 2,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Extensive industry analysis and consulting focus",
+        "fundingLevel": "High - billions invested in streaming pivots"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "Cable bundle pricing became unaffordable at $100-200/month while streaming offers $10-20 alternatives",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "On-demand viewing fundamentally changed consumer expectations around content access",
+          "category": "cultural",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Original scripted programming virtually ceased on cable networks, eliminating key differentiation",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Younger generations never developed linear TV viewing habits",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Cable network closures accelerating - 5 major networks shut down in 2025, more expected in 2026",
+          "type": "direct",
+          "affectedArea": "Industry structure",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Affiliate fee revenue fell 3% to $38.7 billion in 2024, continuing decline",
+          "type": "direct",
+          "affectedArea": "Revenue",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Local news and journalism resources diminishing as stations lose revenue",
+          "type": "cascading",
+          "affectedArea": "Public information",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Regional sports networks facing bankruptcy and blackouts",
+          "type": "cascading",
+          "affectedArea": "Sports broadcasting",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Streaming Service Launches",
+          "description": "Networks launching own streaming platforms (Peacock, Paramount+, Max)",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": [
+            "Cannibalizes existing cable revenue",
+            "Profitability remains challenging",
+            "Market saturation causing subscriber fatigue"
+          ]
+        },
+        {
+          "name": "FAST Channels (Free Ad-Supported Streaming TV)",
+          "description": "Free streaming services like Pluto TV, Tubi offering linear-style experience",
+          "type": "product",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": [
+            "Lower revenue per user than cable",
+            "Limited premium content",
+            "Fragmented audience measurement"
+          ]
+        },
+        {
+          "name": "Virtual MVPDs",
+          "description": "Services like YouTube TV, Hulu Live offering streaming cable bundles",
+          "type": "product",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": [
+            "Prices rising toward cable levels",
+            "Same content cost issues as cable",
+            "Churn rates high"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No viable business model for local news in cord-cut world",
+          "gapType": "coverage",
+          "opportunity": "New local news revenue models combining streaming, digital, and community support",
+          "difficulty": "high"
+        },
+        {
+          "description": "Regional sports networks lack direct-to-consumer path",
+          "gapType": "accessibility",
+          "opportunity": "League-level streaming packages with local team options",
+          "difficulty": "high"
+        },
+        {
+          "description": "Audience measurement fragmented across platforms",
+          "gapType": "integration",
+          "opportunity": "Universal cross-platform measurement currency",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Cable and broadcast networks facing subscriber losses",
+          "examples": ["NBCUniversal", "Warner Bros Discovery", "Paramount Global", "Local TV station groups"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Cable and satellite distributors losing subscribers",
+          "examples": ["Comcast", "Charter", "DirecTV", "DISH"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Streaming platforms driving disruption",
+          "examples": ["Netflix", "YouTube", "Amazon Prime Video", "Apple TV+"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Television industry workforce facing layoffs",
+          "examples": ["Production crews", "Network employees", "Local station staff"],
+          "interest": "high",
+          "influence": "low"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Cable TV Statistics 2026 - Global Subscribers Data",
+          "url": "https://evoca.tv/cable-tv-statistics/",
+          "publishedAt": "2026-01-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Evoca TV",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "By 2026, over 80.7 million U.S. households are expected to use non-pay TV services."
+        },
+        {
+          "type": "news",
+          "title": "The Netflix-Paramount saga caps a 2025 turning point: Cable TV is in the 'decline stage'",
+          "url": "https://fortune.com/2025/12/29/cable-tv-decline-long-slow-bleedout-netflix-warner-paramount-sp-media-review/",
+          "publishedAt": "2025-12-29",
+          "accessedAt": "2026-01-20",
+          "publisher": "Fortune",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "The U.S. cable network industry has formally entered the 'decline stage of its life cycle.'"
+        },
+        {
+          "type": "industry-report",
+          "title": "Cord Cutting Statistics 2025",
+          "url": "https://evoca.tv/cord-cutting-statistics/",
+          "publishedAt": "2025-12-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Evoca TV",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Over 8 in 10 people stated price as the top reason for cutting cords."
+        }
+      ],
+      "tags": ["cord-cutting", "streaming", "cable-decline", "television", "disruption", "viewership"],
+      "keywords": ["cord cutting", "cable TV decline", "streaming overtakes cable", "television disruption", "pay TV subscribers"],
+      "metrics": {
+        "searchVolume": 45000,
+        "academicPapers": 320,
+        "mediaArticles": 5200,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-184530",
+      "confidence": 0.95,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:45:30Z",
+      "updatedAt": "2026-01-20T18:45:30Z",
+      "version": 1
+    },
+    {
+      "id": "tv-prob-002-58cc-4372-a567-0e02b2c3d002",
+      "title": "Television Audience Measurement Fragmentation: The Cross-Platform Currency Crisis",
+      "slug": "tv-audience-measurement-fragmentation-crisis",
+      "description": "The television industry's measurement infrastructure has fractured beyond repair as viewing fragments across dozens of platforms and devices. Nielsen, the century-old measurement monopoly, has lost accreditation and credibility after significant undercounting of pandemic-era viewing. The single currency model that enabled simple ad buying and selling has broken down. Today's fragmented measurement landscape makes planning, implementing, and validating cross-platform campaigns overly complex and increasingly less predictable. Multiple competing measurement providers now exist - panel-based (Nielsen, Comscore), ACR-based (iSpot.TV, Samba TV, TVision), and hybrid approaches (VideoAmp) - each producing different numbers. Streaming now commands 42%+ of TV share but measurement across Netflix, YouTube, and dozens of other platforms remains inconsistent. Traditional panels struggle with niche programming where lower ratings create unreliable measurement. The lack of unified measurement undermines advertiser confidence, makes content valuation inconsistent, and prevents accurate attribution of marketing spend across the television ecosystem.",
+      "summary": "Nielsen lost accreditation as TV viewing fragmented across platforms, creating competing measurement currencies that produce inconsistent numbers and undermine advertiser confidence.",
+      "industry": {
+        "id": "c47ac10b-58cc-4372-a567-0e02b2c3d499",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d47ac10b-58cc-4372-a567-0e02b2c3d500",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d501",
+        "name": "Television",
+        "slug": "television"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["measurement", "data-quality", "fragmentation", "standardization"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "All TV advertisers, networks, and platforms",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 25000000000,
+          "timeframe": "annual - misallocated ad spend and valuation disputes"
+        },
+        "qualityOfLife": 3,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Platforms unwilling to share viewing data",
+          "Privacy regulations limiting tracking",
+          "Competing commercial interests in measurement",
+          "Technical complexity of cross-device tracking"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Multiple measurement companies and industry coalitions",
+        "fundingLevel": "High - significant investment in new measurement solutions"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Viewing fragmented across 200+ streaming services and multiple device types",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Nielsen failed to adapt methodology for streaming and digital viewing",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Platforms treat viewing data as competitive advantage, limiting sharing",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Privacy regulations (GDPR, CCPA) complicate cross-platform tracking",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Advertisers unable to accurately plan and measure cross-platform campaigns",
+          "type": "direct",
+          "affectedArea": "Advertising effectiveness",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Content valuation disputes between networks, platforms, and advertisers",
+          "type": "direct",
+          "affectedArea": "Business negotiations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Younger digital-native audiences systematically undercounted",
+          "type": "indirect",
+          "affectedArea": "Programming decisions",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Ad dollars flowing to platforms with better measurement (digital) over TV",
+          "type": "cascading",
+          "affectedArea": "Revenue allocation",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Nielsen Big Data + Panel Approach",
+          "description": "Combining 30 million homes of set-top box data with traditional panels",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": [
+            "Still lacks streaming data access",
+            "MRC accreditation not fully restored",
+            "Doesn't cover all platforms"
+          ]
+        },
+        {
+          "name": "Alternative Measurement Providers",
+          "description": "iSpot.TV, VideoAmp, Comscore offering competing currencies",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": [
+            "Multiple currencies create confusion",
+            "Each has different methodology and coverage",
+            "Industry lacks consensus on standard"
+          ]
+        },
+        {
+          "name": "CIMM (Coalition for Innovative Media Measurement)",
+          "description": "Industry coalition working toward cross-platform standards",
+          "type": "standard",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": [
+            "Slow progress on consensus",
+            "Voluntary participation",
+            "Competing commercial interests"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No unified cross-platform measurement currency accepted by all parties",
+          "gapType": "integration",
+          "opportunity": "Industry-backed neutral measurement body with platform cooperation",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Privacy-compliant identity resolution across devices",
+          "gapType": "coverage",
+          "opportunity": "Privacy-preserving measurement technologies (clean rooms, differential privacy)",
+          "difficulty": "high"
+        },
+        {
+          "description": "Streaming platforms don't share granular viewing data",
+          "gapType": "accessibility",
+          "opportunity": "Regulatory requirements for measurement transparency",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "TV networks and programmers needing accurate audience data",
+          "examples": ["NBCUniversal", "Disney", "Warner Bros Discovery", "Fox"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Advertisers and agencies making media buying decisions",
+          "examples": ["P&G", "Unilever", "GroupM", "Omnicom"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Measurement companies developing solutions",
+          "examples": ["Nielsen", "Comscore", "iSpot.TV", "VideoAmp"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Streaming platforms controlling viewing data",
+          "examples": ["Netflix", "Amazon", "YouTube", "Disney+"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "The Future of Audience Measurement is Getting Clearer, but Nielsen May Not Carry the Torch",
+          "url": "https://cimm-us.org/the-future-of-audience-measurement-is-getting-clearer-but-nielsen-may-not-carry-the-torch/",
+          "publishedAt": "2025-11-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "CIMM",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Solving the current fragmentation issues may result in Nielsen becoming one of potentially four modes of audience measurement."
+        },
+        {
+          "type": "news",
+          "title": "Viewers Are Killing TV Measurement And Something Has To Change",
+          "url": "https://www.mediapost.com/publications/article/346948/viewers-are-killing-tv-measurement-and-something-h.html",
+          "publishedAt": "2025-09-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "MediaPost",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Today's fragmented measurement landscape makes planning, implementing, and validating cross-platform campaigns overly complex."
+        },
+        {
+          "type": "news",
+          "title": "Big data virtually eliminates zero ratings in national TV measurement",
+          "url": "https://www.nielsen.com/insights/2023/big-data-virtually-eliminates-zero-ratings-in-national-tv-measurement/",
+          "publishedAt": "2023-06-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Nielsen",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Nielsen is combining TV data from approximately 30 million homes with its 40,000 home panel."
+        }
+      ],
+      "tags": ["audience-measurement", "nielsen", "ratings", "cross-platform", "fragmentation", "advertising"],
+      "keywords": ["TV audience measurement", "Nielsen ratings crisis", "cross-platform measurement", "streaming measurement"],
+      "metrics": {
+        "searchVolume": 12000,
+        "academicPapers": 180,
+        "mediaArticles": 1800,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-184530",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:45:30Z",
+      "updatedAt": "2026-01-20T18:45:30Z",
+      "version": 1
+    },
+    {
+      "id": "tv-prob-003-58cc-4372-a567-0e02b2c3d003",
+      "title": "ATSC 3.0 NextGen TV Transition Stalled: Technical and Adoption Barriers",
+      "slug": "atsc-3-nextgen-tv-transition-barriers",
+      "description": "The broadcast television industry's transition to ATSC 3.0 (NextGen TV) has stalled due to multiple technical, regulatory, and market barriers. While promising 4K HDR video, immersive audio, and interactive features, the new standard faces critical challenges. Major TV manufacturers Samsung and LG dropped NextGen TV tuner support from many 2024 models, creating a chicken-and-egg problem where consumers can't receive broadcasts and broadcasters can't justify investment. External ATSC 3.0 tuners cost $90-$149, too expensive for mass adoption. The NAB has proposed phasing out legacy ATSC 1.0 signals by 2028 in major markets with complete transition by 2030, but current simulcasting requirements strain broadcaster spectrum and resources. DRM requirements in ATSC 3.0 have created controversy, as copy protection on free over-the-air broadcasts contradicts decades of consumer expectations. The technology promises enhanced emergency alerts and datacasting revenue, but without consumer device penetration, these benefits remain theoretical. Broadcasters face a $10+ billion infrastructure investment with uncertain return on investment.",
+      "summary": "ATSC 3.0 transition faces stalled adoption as major TV makers drop tuner support, external tuners cost $90-$149, and DRM controversies undermine consumer acceptance.",
+      "industry": {
+        "id": "c47ac10b-58cc-4372-a567-0e02b2c3d499",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d47ac10b-58cc-4372-a567-0e02b2c3d500",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d501",
+        "name": "Television",
+        "slug": "television"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["infrastructure", "adoption", "standards", "investment"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "All U.S. broadcast television stations and OTA viewers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 15000000000,
+          "timeframe": "transition investment over 5 years"
+        },
+        "qualityOfLife": 4,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "TV manufacturers not including tuners",
+          "Consumer awareness extremely low",
+          "Simulcasting requirements expensive",
+          "DRM controversy alienating early adopters",
+          "Unclear business case for datacasting"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "moderate",
+        "activeResearchers": "NAB, FCC, broadcast engineers",
+        "fundingLevel": "Moderate - regulatory process ongoing"
+      },
+      "impactScore": 64,
+      "rootCauses": [
+        {
+          "description": "No FCC mandate requiring TV manufacturers to include ATSC 3.0 tuners",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Chicken-and-egg problem: no viewers means no broadcaster investment incentive",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "DRM/copy protection requirements unprecedented for free OTA broadcasts",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Cord-cutting reduces urgency as OTA antenna users remain small minority",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Broadcast TV losing technical competitiveness against streaming quality",
+          "type": "direct",
+          "affectedArea": "Content quality",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Emergency alert modernization delayed, affecting public safety",
+          "type": "indirect",
+          "affectedArea": "Public safety",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Broadcasters stuck paying for dual transmission infrastructure",
+          "type": "direct",
+          "affectedArea": "Operating costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Potential spectrum reallocation pressure if transition fails",
+          "type": "cascading",
+          "affectedArea": "Industry structure",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "NAB Transition Timeline Proposal",
+          "description": "Phased transition with 2028 major market sunset, 2030 complete transition",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": [
+            "Requires FCC approval",
+            "May strand consumers with old TVs",
+            "Timeline may be too aggressive"
+          ]
+        },
+        {
+          "name": "External ATSC 3.0 Tuners",
+          "description": "Set-top boxes enabling NextGen TV reception on any TV",
+          "type": "product",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": [
+            "High cost ($90-$149)",
+            "Low consumer awareness",
+            "Adds complexity to TV setup"
+          ]
+        },
+        {
+          "name": "Broadcaster Lighthouse Stations",
+          "description": "Shared transmission facilities reducing individual station costs",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": [
+            "Requires market coordination",
+            "Regulatory complexity",
+            "May not work in all markets"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No tuner mandate forcing manufacturer compliance",
+          "gapType": "coverage",
+          "opportunity": "FCC rulemaking requiring ATSC 3.0 tuners in new TVs",
+          "difficulty": "high"
+        },
+        {
+          "description": "Consumer education about NextGen TV benefits non-existent",
+          "gapType": "awareness",
+          "opportunity": "Industry-funded consumer awareness campaign",
+          "difficulty": "medium"
+        },
+        {
+          "description": "DRM approach incompatible with consumer expectations for free TV",
+          "gapType": "quality",
+          "opportunity": "Revised DRM framework balancing content protection with user rights",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Broadcast television station owners investing in transition",
+          "examples": ["Nexstar", "Sinclair", "Gray Television", "Tegna"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Federal Communications Commission setting transition rules",
+          "examples": ["FCC Commissioners", "Media Bureau"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "TV manufacturers deciding on tuner inclusion",
+          "examples": ["Samsung", "LG", "Sony", "TCL", "Vizio"],
+          "interest": "low",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Over-the-air TV viewers dependent on broadcast signals",
+          "examples": ["Cord-cutters", "Rural viewers", "Low-income households"],
+          "interest": "medium",
+          "influence": "low"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "TV Tech's Top Regulatory Stories of the Year",
+          "url": "https://www.tvtechnology.com/regulatory-legal/tv-techs-top-regulatory-stories-of-the-year",
+          "publishedAt": "2025-12-20",
+          "accessedAt": "2026-01-20",
+          "publisher": "TV Technology",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "The NAB proposed a 2028 phaseout of ATSC 1.0 in major markets, facilitating increased spectrum for additional channels or datacasting."
+        },
+        {
+          "type": "government",
+          "title": "Future of Television Initiative Report",
+          "url": "https://blog.nab.org/wp-content/uploads/2025/01/01.17.2025-Future-of-Television-Initiative-Report.pdf",
+          "publishedAt": "2025-01-17",
+          "accessedAt": "2026-01-20",
+          "publisher": "NAB",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "NAB suggested a two-phase transition to the FCC, aiming for a complete switch to ATSC 3.0 by February 2030."
+        }
+      ],
+      "tags": ["atsc-3", "nextgen-tv", "broadcast", "infrastructure", "transition", "standards"],
+      "keywords": ["ATSC 3.0 transition", "NextGen TV adoption", "broadcast TV modernization", "TV tuner mandate"],
+      "metrics": {
+        "searchVolume": 8500,
+        "academicPapers": 95,
+        "mediaArticles": 1200,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-184530",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:45:30Z",
+      "updatedAt": "2026-01-20T18:45:30Z",
+      "version": 1
+    },
+    {
+      "id": "tv-prob-004-58cc-4372-a567-0e02b2c3d004",
+      "title": "Television Advertising Revenue Structural Decline and Market Share Erosion",
+      "slug": "tv-advertising-revenue-structural-decline",
+      "description": "Television advertising revenue faces a structural decline as advertisers shift budgets to digital platforms with better targeting and measurement. In 2024, gross advertising revenue for cable networks fell 5.9% to $20.2 billion, the lowest level since 2007. The industry outlook anticipates a 0.2% decline in core spot ad revenue to $17.49 billion in 2025, with total TV station ad revenue projected to decline 12.5% to $21.81 billion due to absence of 2024's political and Olympics spending. While a rebound to $24.67 billion is expected in 2026 driven by midterm elections and FIFA World Cup, the underlying trend shows persistent erosion of TV's advertising market share. Digital advertising now commands the majority of ad spend, with platforms like Google, Meta, and Amazon offering superior audience targeting, real-time optimization, and performance attribution. Television's advantages in brand-building and reach are increasingly questioned as streaming fragments audiences and measurement remains problematic. The industry faces a potential death spiral where declining viewership leads to reduced ad rates, causing further budget shifts to digital.",
+      "summary": "Cable ad revenue hit 17-year low of $20.2B in 2024, down 5.9%, as advertisers shift to digital platforms offering better targeting and measurement capabilities.",
+      "industry": {
+        "id": "c47ac10b-58cc-4372-a567-0e02b2c3d499",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d47ac10b-58cc-4372-a567-0e02b2c3d500",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d501",
+        "name": "Television",
+        "slug": "television"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["revenue", "competition", "advertising", "digital-disruption"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "All commercial television networks, stations, and production companies",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 40000000000,
+          "timeframe": "annual - combined broadcast and cable advertising"
+        },
+        "qualityOfLife": 5,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Digital platforms have inherent targeting advantages",
+          "Measurement fragmentation undermines TV value proposition",
+          "Generational shift away from linear viewing",
+          "Self-serve digital buying easier than TV upfront process"
+        ]
+      },
+      "neglectedness": {
+        "overall": 2,
+        "attentionLevel": "saturated",
+        "activeResearchers": "Extensive focus from networks, agencies, and analysts",
+        "fundingLevel": "High - significant investment in addressable and streaming advertising"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Digital platforms offer superior audience targeting using first-party data",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "TV measurement unable to provide attribution comparable to digital",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Audience fragmentation reduces individual program reach and value",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Upfront/scatter buying process inefficient compared to programmatic",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Networks reducing programming budgets due to lower ad revenue",
+          "type": "direct",
+          "affectedArea": "Content investment",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Local news and journalism losing advertising support",
+          "type": "cascading",
+          "affectedArea": "Public information",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Increased dependence on cyclical political and sports advertising",
+          "type": "indirect",
+          "affectedArea": "Revenue stability",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Ad-load increases to compensate for rate declines, worsening viewer experience",
+          "type": "cascading",
+          "affectedArea": "Viewer experience",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Addressable TV Advertising",
+          "description": "Delivering targeted ads to specific households via connected TVs and set-top boxes",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": [
+            "Limited scale compared to linear",
+            "Higher CPMs reduce volume",
+            "Technical fragmentation across platforms"
+          ]
+        },
+        {
+          "name": "Streaming Ad Tiers",
+          "description": "Ad-supported subscription options on major streaming platforms",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": [
+            "Cannibalizes ad-free subscribers",
+            "Limited inventory on premium content",
+            "Separate buying from linear TV"
+          ]
+        },
+        {
+          "name": "Advanced TV Measurement",
+          "description": "Cross-platform measurement combining linear and streaming audience data",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": [
+            "Multiple currencies create confusion",
+            "Platform cooperation limited",
+            "Still trails digital attribution"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No unified buying platform for linear, streaming, and digital video",
+          "gapType": "integration",
+          "opportunity": "Convergent TV/video buying platform with unified measurement",
+          "difficulty": "high"
+        },
+        {
+          "description": "Attribution for TV advertising lags digital capabilities",
+          "gapType": "quality",
+          "opportunity": "Outcome-based TV advertising with closed-loop measurement",
+          "difficulty": "high"
+        },
+        {
+          "description": "Local TV advertising tech underdeveloped versus national",
+          "gapType": "coverage",
+          "opportunity": "Self-serve local TV advertising platforms for SMBs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Television networks dependent on advertising revenue",
+          "examples": ["NBCUniversal", "Disney", "Paramount", "Warner Bros Discovery", "Fox"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Local TV stations relying on spot advertising",
+          "examples": ["Nexstar", "Sinclair", "Gray Television", "Local affiliates"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Advertisers and agencies allocating media budgets",
+          "examples": ["P&G", "Amazon", "Walmart", "GroupM", "Publicis"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Digital platforms competing for ad dollars",
+          "examples": ["Google/YouTube", "Meta", "Amazon", "TikTok"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Broadcast Outlook 2025: Challenges and Opportunities",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2025/10/broadcast-outlook-2025-challenges-opportunities-facing-us-tv-radio-stations",
+          "publishedAt": "2025-10-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "S&P Global Market Intelligence",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "The industry outlook anticipates a slight 0.2% decline in core spot ad revenue to $17.49 billion in 2025."
+        },
+        {
+          "type": "news",
+          "title": "Cable TV decline - long slow bleedout ahead",
+          "url": "https://fortune.com/2025/12/29/cable-tv-decline-long-slow-bleedout-netflix-warner-paramount-sp-media-review/",
+          "publishedAt": "2025-12-29",
+          "accessedAt": "2026-01-20",
+          "publisher": "Fortune",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "In 2024, gross advertising revenue for cable networks fell 5.9% to $20.2 billion, the lowest level recorded since 2007."
+        }
+      ],
+      "tags": ["advertising", "revenue-decline", "digital-disruption", "media-buying", "addressable-tv"],
+      "keywords": ["TV advertising decline", "digital advertising shift", "addressable TV", "media buying"],
+      "metrics": {
+        "searchVolume": 18000,
+        "academicPapers": 250,
+        "mediaArticles": 3500,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-184530",
+      "confidence": 0.92,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:45:30Z",
+      "updatedAt": "2026-01-20T18:45:30Z",
+      "version": 1
+    },
+    {
+      "id": "tv-prob-005-58cc-4372-a567-0e02b2c3d005",
+      "title": "Smart TV Platform Gatekeeping: OEMs Control Content Discovery and User Experience",
+      "slug": "smart-tv-platform-gatekeeping-content-discovery",
+      "description": "Smart television manufacturers have become powerful gatekeepers controlling how viewers discover and access content, threatening the position of traditional broadcasters and content providers. One of the most overlooked industry challenges involves the device ecosystem where Smart TVs control the user experience, search environment, and content discovery process - not broadcasters or content networks. TV manufacturers like Samsung, LG, Roku, and Amazon (Fire TV) now determine which apps get prime home screen placement, how search results are ranked, and what content is promoted to viewers. These platforms collect valuable viewer data and command advertising revenue that previously went to content providers. Broadcasters must negotiate for placement and often pay carriage fees to be included on smart TV platforms - a reversal of the traditional cable carriage model. The platforms' recommendation algorithms can bury smaller channels and networks, making discovery nearly impossible for niche content. Free Ad-Supported Streaming TV (FAST) channels integrated into TV interfaces compete directly with broadcast channels for attention. This power shift threatens broadcaster direct relationships with audiences and could further commoditize content providers.",
+      "summary": "Smart TV OEMs now control content discovery, search results, and home screen placement, reversing traditional power dynamics and threatening broadcaster relationships with audiences.",
+      "industry": {
+        "id": "c47ac10b-58cc-4372-a567-0e02b2c3d499",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d47ac10b-58cc-4372-a567-0e02b2c3d500",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d501",
+        "name": "Television",
+        "slug": "television"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["platform-power", "distribution", "content-discovery", "competition"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "All television content providers and broadcasters",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 8000000000,
+          "timeframe": "annual - platform fees and lost advertising"
+        },
+        "qualityOfLife": 4,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 4,
+        "existingProgress": 3,
+        "barriers": [
+          "TV manufacturers control hardware and OS",
+          "Consumers bought into existing platforms",
+          "Network effects favor dominant platforms",
+          "Regulatory intervention uncertain"
+        ]
+      },
+      "neglectedness": {
+        "overall": 6,
+        "attentionLevel": "underserved",
+        "activeResearchers": "Limited - overshadowed by streaming competition focus",
+        "fundingLevel": "Low - not a primary industry focus"
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "TV manufacturers built operating systems and app stores controlling access",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Consumers interact primarily through TV interface, not channel/network brands",
+          "category": "cultural",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Network effects and installed base make platform switching costly",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Content providers competed on price, ceding platform power to manufacturers",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Broadcasters paying for placement on smart TV platforms",
+          "type": "direct",
+          "affectedArea": "Distribution costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Smaller networks and channels buried in interface, losing discoverability",
+          "type": "direct",
+          "affectedArea": "Content discovery",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Viewer data captured by platforms rather than content providers",
+          "type": "indirect",
+          "affectedArea": "Data assets",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "FAST channels on platforms compete directly with broadcast apps",
+          "type": "cascading",
+          "affectedArea": "Competition",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Direct App Development",
+          "description": "Networks building and maintaining apps across all smart TV platforms",
+          "type": "product",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": [
+            "Still subject to platform placement decisions",
+            "Expensive to maintain across platforms",
+            "Platform takes cut of transactions"
+          ]
+        },
+        {
+          "name": "Aggregation Partnerships",
+          "description": "Content providers partnering with platforms for bundled distribution",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": [
+            "Reduces direct viewer relationship",
+            "Revenue sharing favors platforms",
+            "Limits pricing flexibility"
+          ]
+        },
+        {
+          "name": "ATSC 3.0 Broadcast Apps",
+          "description": "Using NextGen TV's interactive features to bypass platform gatekeeping",
+          "type": "product",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": [
+            "Requires ATSC 3.0 adoption",
+            "Limited current penetration",
+            "Uncertain consumer adoption"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No regulatory framework addressing smart TV platform power",
+          "gapType": "coverage",
+          "opportunity": "Digital markets regulation extending to connected TV platforms",
+          "difficulty": "high"
+        },
+        {
+          "description": "Content providers lack unified negotiating leverage",
+          "gapType": "coordination",
+          "opportunity": "Industry consortium for platform negotiations",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Viewer data captured by platforms not shared with content providers",
+          "gapType": "accessibility",
+          "opportunity": "Data portability requirements for viewer information",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "decision-maker",
+          "description": "Smart TV platform operators controlling interfaces",
+          "examples": ["Roku", "Amazon Fire TV", "Samsung Tizen", "LG webOS", "Google TV"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Broadcast networks and content providers seeking distribution",
+          "examples": ["NBCUniversal", "Disney", "Paramount", "Local broadcasters"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Consumers navigating fragmented content ecosystem",
+          "examples": ["Smart TV owners", "Streaming subscribers"],
+          "interest": "medium",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "FAST channel operators benefiting from platform integration",
+          "examples": ["Pluto TV", "Tubi", "Xumo", "Amazon Freevee"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Broadcast TV's Year in Review and Suggestions for 2026",
+          "url": "https://tvnewscheck.com/business/article/broadcast-tvs-year-in-review-and-suggestions-for-2026/",
+          "publishedAt": "2025-12-30",
+          "accessedAt": "2026-01-20",
+          "publisher": "TV News Check",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "One of the most overlooked industry challenges involved the device ecosystem. Smart TVs have become gatekeepers."
+        },
+        {
+          "type": "news",
+          "title": "The Future of Entertainment: Exploring New Technology in TV",
+          "url": "https://glance.com/us/articles/the-future-of-entertainment-exploring-new-technology-in-tv",
+          "publishedAt": "2025-11-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Glance",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "The user experience, search environment and content discovery process are controlled not by broadcasters, but by TV OEMs."
+        }
+      ],
+      "tags": ["smart-tv", "platform-power", "content-discovery", "gatekeeping", "distribution"],
+      "keywords": ["smart TV gatekeeping", "connected TV platforms", "content discovery", "TV OS competition"],
+      "metrics": {
+        "searchVolume": 5500,
+        "academicPapers": 45,
+        "mediaArticles": 680,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-184530",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:45:30Z",
+      "updatedAt": "2026-01-20T18:45:30Z",
+      "version": 1
+    },
+    {
+      "id": "tv-prob-006-58cc-4372-a567-0e02b2c3d006",
+      "title": "Local Television News Crisis: Declining Resources Threaten Community Journalism",
+      "slug": "local-tv-news-crisis-community-journalism",
+      "description": "Local television news operations face a severe resource crisis threatening their ability to serve communities with essential journalism. Without federal funding, local stations are eliminating or reducing local programs, including local history programs, community event coverage, agricultural programming, and local public affairs programming. Some public television stations will go dark in June 2026 due to funding cuts. The economics of local TV news have deteriorated as cord-cutting reduces carriage fees, local advertising shifts to digital platforms, and ownership consolidation leads to cost-cutting. Station groups have implemented shared services arrangements where a single news operation serves multiple markets, reducing local focus. News deserts are expanding as stations cut back or eliminate news operations entirely in smaller markets. The crisis threatens not just journalism but essential public services including emergency alerts, severe weather coverage, and community information. Sports rights costs have further squeezed news budgets as stations pay more for local sports content. The journalism workforce has been decimated through layoffs, with experienced reporters and anchors replaced by less expensive or automated alternatives.",
+      "summary": "Local TV news faces existential threat as funding cuts force stations to reduce programming, with some public stations going dark in 2026 and news deserts expanding.",
+      "industry": {
+        "id": "c47ac10b-58cc-4372-a567-0e02b2c3d499",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d47ac10b-58cc-4372-a567-0e02b2c3d500",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d501",
+        "name": "Television",
+        "slug": "television"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["journalism", "local-media", "public-service", "funding"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "Hundreds of local markets and millions of viewers dependent on local news",
+          "unit": "regions"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 5000000000,
+          "timeframe": "annual - local TV news industry"
+        },
+        "qualityOfLife": 8,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 4,
+        "barriers": [
+          "Local advertising economics don't support quality journalism",
+          "Federal funding politically contentious",
+          "Ownership consolidation prioritizes efficiency over coverage",
+          "Streaming doesn't provide viable local news distribution"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Journalism schools, press freedom organizations",
+        "fundingLevel": "Low - limited philanthropy for local TV"
+      },
+      "impactScore": 65,
+      "rootCauses": [
+        {
+          "description": "Cord-cutting eliminating retransmission fees that subsidized news operations",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Local advertising shifting to Google, Facebook, and digital platforms",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Ownership consolidation leading to cost-cutting and shared services",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Public broadcasting funding cuts at federal and state levels",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "News deserts expanding as stations cut or eliminate local news",
+          "type": "direct",
+          "affectedArea": "Community information",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Local government accountability journalism declining",
+          "type": "direct",
+          "affectedArea": "Democracy",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Emergency information and severe weather coverage becoming unreliable",
+          "type": "cascading",
+          "affectedArea": "Public safety",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Experienced journalists leaving industry, knowledge loss",
+          "type": "indirect",
+          "affectedArea": "Journalism quality",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Shared Services Arrangements",
+          "description": "Multiple stations sharing news production resources",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "mainstream",
+          "limitations": [
+            "Reduces local focus and coverage",
+            "Cookie-cutter content across markets",
+            "Further job losses"
+          ]
+        },
+        {
+          "name": "Non-Profit Local News Initiatives",
+          "description": "Philanthropic support for local journalism",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": [
+            "Limited scale and sustainability",
+            "Concentrated in major markets",
+            "Not focused on TV specifically"
+          ]
+        },
+        {
+          "name": "Local News Streaming Channels",
+          "description": "Streaming distribution for local news content",
+          "type": "product",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": [
+            "Monetization challenging",
+            "Fragmented across platforms",
+            "Doesn't solve production cost issues"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No sustainable business model for local TV news in streaming era",
+          "gapType": "coverage",
+          "opportunity": "Hybrid models combining streaming, digital, and community support",
+          "difficulty": "high"
+        },
+        {
+          "description": "Public broadcasting funding unstable and insufficient",
+          "gapType": "cost",
+          "opportunity": "Protected funding mechanism for local public interest journalism",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Technology to produce quality local news at lower cost underdeveloped",
+          "gapType": "quality",
+          "opportunity": "AI-assisted local news production tools",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Local TV station news operations",
+          "examples": ["Local network affiliates", "Public TV stations", "Independent stations"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Communities dependent on local news coverage",
+          "examples": ["Rural communities", "Smaller metro areas", "Underserved populations"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Station group owners making investment decisions",
+          "examples": ["Nexstar", "Sinclair", "Gray Television", "Tegna"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "funder",
+          "description": "Government and philanthropic funders of journalism",
+          "examples": ["Corporation for Public Broadcasting", "Knight Foundation", "MacArthur Foundation"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Broadcast Outlook 2025: Challenges and Opportunities",
+          "url": "https://www.spglobal.com/market-intelligence/en/news-insights/research/2025/10/broadcast-outlook-2025-challenges-opportunities-facing-us-tv-radio-stations",
+          "publishedAt": "2025-10-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "S&P Global",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Without federal funding, local stations are eliminating or reducing local programs. A few stations will go dark in June 2026."
+        },
+        {
+          "type": "news",
+          "title": "Broadcasters Mark Momentous Year of Challenges Amid Viewing Fragmentation",
+          "url": "https://www.tvtechnology.com/news/broadcasters-mark-momentous-year-of-challenges-amid-viewing-fragmentation",
+          "publishedAt": "2025-12-28",
+          "accessedAt": "2026-01-20",
+          "publisher": "TV Technology",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Profitability and business sustainability remain the defining challenges for the industry."
+        }
+      ],
+      "tags": ["local-news", "journalism", "public-broadcasting", "news-deserts", "community-media"],
+      "keywords": ["local TV news crisis", "journalism funding", "news deserts", "public broadcasting cuts"],
+      "metrics": {
+        "searchVolume": 9500,
+        "academicPapers": 185,
+        "mediaArticles": 2100,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-184530",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:45:30Z",
+      "updatedAt": "2026-01-20T18:45:30Z",
+      "version": 1
+    },
+    {
+      "id": "tv-prob-007-58cc-4372-a567-0e02b2c3d007",
+      "title": "Television Diversity and Representation Gaps: Persistent Inequities On and Off Screen",
+      "slug": "tv-diversity-representation-gaps",
+      "description": "The television industry continues to face significant diversity and representation challenges both on screen and behind the camera. UCLA's 10th annual Hollywood Diversity Report found that while top TV shows increasingly feature racially and ethnically diverse casts reflecting population demographics, people of color remain underrepresented as leads in broadcast and digital platforms, and actors with disabilities are clearly underrepresented across all platforms. Behind the scenes, showrunners and directors who reflect diverse identities remain underrepresented, with studies showing diversity in writers' rooms also lacking. The underrepresentation of Black talent is due in part to racial bias among industry decision makers and gatekeepers, with unconscious biases creating barriers to entry and limiting career progression. White male creators receive bigger budgets, with about half receiving more than $3 million per episode, while studios provide less funding to projects led by people of color and white women. When a Black creator leads a Netflix series, 72% of series regulars are Black, compared to 15.4% with non-Black creators, indicating Black creatives carry the burden of diversity. A McKinsey study found addressing racial inequities could generate an additional $10 billion in annual revenues for the industry.",
+      "summary": "People of color remain underrepresented as TV leads despite diverse ensemble casts, with creators of color receiving smaller budgets and facing systemic barriers to advancement.",
+      "industry": {
+        "id": "c47ac10b-58cc-4372-a567-0e02b2c3d499",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d47ac10b-58cc-4372-a567-0e02b2c3d500",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d501",
+        "name": "Television",
+        "slug": "television"
+      },
+      "problemType": "social",
+      "problemSubtypes": ["diversity", "equity", "representation", "discrimination"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "Underrepresented groups seeking careers and representation in TV",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 10000000000,
+          "timeframe": "annual - unrealized revenue from inequity"
+        },
+        "qualityOfLife": 7,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Unconscious bias among decision-makers",
+          "Pipeline and networking disadvantages",
+          "Risk-averse financing favoring established creators",
+          "Diversity initiatives face backlash"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Significant focus from advocacy groups, academics, studios",
+        "fundingLevel": "Moderate - diversity initiatives widespread but impact limited"
+      },
+      "impactScore": 62,
+      "rootCauses": [
+        {
+          "description": "Unconscious bias among executives, producers, and casting decision-makers",
+          "category": "cultural",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Networking and pipeline disadvantages for underrepresented groups",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Risk-averse financing favoring established (predominantly white male) creators",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Burden of representation placed on creators of color rather than industry-wide commitment",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Underrepresented audiences don't see themselves reflected on screen",
+          "type": "direct",
+          "affectedArea": "Cultural representation",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Career barriers and economic exclusion for diverse talent",
+          "type": "direct",
+          "affectedArea": "Employment equity",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Industry missing $10B+ in potential revenue from underserved audiences",
+          "type": "indirect",
+          "affectedArea": "Business performance",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Homogeneous perspectives leading to creative stagnation",
+          "type": "cascading",
+          "affectedArea": "Content quality",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Studio Diversity Initiatives",
+          "description": "Programs specifically supporting diverse writers, directors, and creators",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": [
+            "Limited pipeline to senior positions",
+            "Tokenism concerns",
+            "Inconsistent implementation"
+          ]
+        },
+        {
+          "name": "Inclusion Riders",
+          "description": "Contract provisions requiring diverse casting and crew hiring",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": [
+            "Enforcement challenges",
+            "Limited to A-list talent leverage",
+            "Varies in scope and requirements"
+          ]
+        },
+        {
+          "name": "AI Bias Detection Tools",
+          "description": "Tools analyzing scripts and content for representation balance",
+          "type": "tool",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": [
+            "Measures quantity not quality of representation",
+            "Doesn't address behind-camera issues",
+            "Technical limitations"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Budget equity for projects led by creators of color",
+          "gapType": "cost",
+          "opportunity": "Funding mandates or incentives for diverse-led productions",
+          "difficulty": "high"
+        },
+        {
+          "description": "Pathway from diversity programs to senior creative positions",
+          "gapType": "accessibility",
+          "opportunity": "Long-term career development and mentorship programs",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Accountability mechanisms for diversity commitments",
+          "gapType": "quality",
+          "opportunity": "Transparent reporting and consequences for failing to meet goals",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Underrepresented talent seeking opportunities in television",
+          "examples": ["Writers of color", "Women directors", "Disabled actors", "LGBTQ+ creators"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Studios and networks controlling hiring and greenlight decisions",
+          "examples": ["Netflix", "Disney", "Warner Bros Discovery", "NBCUniversal"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Advocacy organizations pushing for change",
+          "examples": ["NAACP", "Color of Change", "GLAAD", "RespectAbility"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "expert",
+          "description": "Researchers studying representation and industry practices",
+          "examples": ["UCLA Hollywood Diversity Report", "USC Annenberg", "Geena Davis Institute"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "10th Annual Hollywood Diversity Report",
+          "url": "https://newsroom.ucla.edu/releases/hollywood-diversity-report-fall-2023-tv-industry",
+          "publishedAt": "2023-10-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "UCLA",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "People of color remained underrepresented as leads in broadcast and digital, and actors with a disability were clearly underrepresented among leads across all three platforms."
+        },
+        {
+          "type": "industry-report",
+          "title": "Black Representation in Film and TV: The Challenges and Impact of Increasing Diversity",
+          "url": "https://www.mckinsey.com/featured-insights/diversity-and-inclusion/black-representation-in-film-and-tv-the-challenges-and-impact-of-increasing-diversity",
+          "publishedAt": "2021-03-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "McKinsey & Company",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "By addressing the persistent racial inequities, the industry could reap an additional $10 billion in annual revenues."
+        },
+        {
+          "type": "news",
+          "title": "Hollywood and Audiences Can Win with More Diverse Representation",
+          "url": "https://www.newamerica.org/the-thread/diversity-inclusion-storytelling-tv-film/",
+          "publishedAt": "2024-06-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "New America",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "White male creators were supported with bigger budgets: About half received more than $3 million per episode regardless of platform."
+        }
+      ],
+      "tags": ["diversity", "representation", "inclusion", "equity", "bias", "hollywood"],
+      "keywords": ["TV diversity", "Hollywood representation", "inclusive casting", "diversity in entertainment"],
+      "metrics": {
+        "searchVolume": 22000,
+        "academicPapers": 450,
+        "mediaArticles": 4200,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-184530",
+      "confidence": 0.9,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:45:30Z",
+      "updatedAt": "2026-01-20T18:45:30Z",
+      "version": 1
+    },
+    {
+      "id": "tv-prob-008-58cc-4372-a567-0e02b2c3d008",
+      "title": "Sports Broadcasting Rights Fragmentation: Viewers Unable to Access Local and National Sports",
+      "slug": "sports-broadcasting-rights-fragmentation",
+      "description": "Sports broadcasting has become increasingly fragmented and inaccessible as rights are spread across multiple streaming services, cable networks, and broadcast channels. Sports may no longer be the anchor that once kept consumers from cutting the video cord, with an S&P survey finding that 90% of households dropping pay TV for sports in the past year were sports fans, and nearly two-thirds spent five or more hours per week watching sports. Regional Sports Networks (RSNs) face a systemic crisis with Diamond Sports (Bally Sports) emerging from bankruptcy and multiple teams losing their RSN coverage entirely. Fans now need multiple subscriptions to follow a single team: local games on RSN or team streaming, some games on national broadcast, others on ESPN+, Amazon, Apple TV+, or league-specific services. The 'defining challenge for 2026 will be divorce' from traditional TV, as streamers buy up sports and live events while the traditional bundle unravels. Blackout rules designed for the cable era create absurd situations where fans can't watch games despite paying for services. The fragmentation particularly harms casual fans unwilling to navigate complex subscription stacks, potentially shrinking sports audiences over time.",
+      "summary": "Sports rights fragmented across 10+ platforms with RSNs in crisis, as 90% of cord-cutters who left pay TV for sports were actually sports fans, showing the bundle is breaking.",
+      "industry": {
+        "id": "c47ac10b-58cc-4372-a567-0e02b2c3d499",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d47ac10b-58cc-4372-a567-0e02b2c3d500",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d501",
+        "name": "Television",
+        "slug": "television"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["fragmentation", "access", "sports-media", "consumer-experience"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "Tens of millions of sports fans across the U.S.",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 20000000000,
+          "timeframe": "annual - sports media rights market"
+        },
+        "qualityOfLife": 7,
+        "productivity": 3
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 3,
+        "barriers": [
+          "Exclusive rights deals favor fragmentation",
+          "Leagues maximize revenue by selling to multiple bidders",
+          "Blackout rules designed for cable era",
+          "RSN business model failing"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Sports media analysts, industry consultants",
+        "fundingLevel": "High - billions flowing into sports rights"
+      },
+      "impactScore": 60,
+      "rootCauses": [
+        {
+          "description": "Leagues selling exclusive rights to multiple platforms to maximize revenue",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "RSN business model dependent on cable carriage fees no longer sustainable",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Tech platforms (Amazon, Apple, YouTube) bidding for sports to drive subscriptions",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Blackout rules designed for broadcast/cable era creating access barriers",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Fans need 5+ subscriptions costing $100+/month to follow teams comprehensively",
+          "type": "direct",
+          "affectedArea": "Consumer cost",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Casual fans dropping out, potentially shrinking long-term sports audiences",
+          "type": "cascading",
+          "affectedArea": "Audience development",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Teams losing RSN coverage and direct connection with local fans",
+          "type": "direct",
+          "affectedArea": "Team-fan relationships",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Sports bars and venues struggling to afford all needed subscriptions",
+          "type": "indirect",
+          "affectedArea": "Commercial venues",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "League Direct-to-Consumer Services",
+          "description": "MLB.TV, NBA League Pass, etc. offering streaming packages",
+          "type": "product",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": [
+            "Blackout rules limit local game access",
+            "Still fragmented across leagues",
+            "Pricing adds to subscription fatigue"
+          ]
+        },
+        {
+          "name": "Sports Streaming Bundles",
+          "description": "ESPN+/Disney+/Hulu, Venu Sports (upcoming)",
+          "type": "product",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": [
+            "Don't include all rights",
+            "Pricing still adds up",
+            "Venu facing antitrust challenges"
+          ]
+        },
+        {
+          "name": "Team-Owned Streaming",
+          "description": "Teams launching own streaming services for local games",
+          "type": "product",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": [
+            "Fragmented by team",
+            "Production quality varies",
+            "Revenue lower than RSN deals were"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No single service offering comprehensive local and national sports access",
+          "gapType": "integration",
+          "opportunity": "Universal sports access service with all leagues and local teams",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Blackout rules preventing paid subscribers from accessing local games",
+          "gapType": "accessibility",
+          "opportunity": "Blackout rule reform or elimination for streaming subscribers",
+          "difficulty": "high"
+        },
+        {
+          "description": "RSN replacement model for mid-market and small-market teams",
+          "gapType": "coverage",
+          "opportunity": "Sustainable local sports streaming model with league support",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Sports fans trying to follow their teams",
+          "examples": ["Local fans", "National followers", "Fantasy sports players"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Sports leagues controlling rights sales",
+          "examples": ["NFL", "NBA", "MLB", "NHL", "MLS", "NCAA"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Platforms acquiring sports rights",
+          "examples": ["ESPN/Disney", "Amazon", "Apple", "YouTube/Google", "NBC"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Regional Sports Networks facing viability crisis",
+          "examples": ["Bally Sports/Diamond", "NBC Sports Regional", "Team-owned RSNs"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Sports may no longer be an anchor for linear TV",
+          "url": "https://fortune.com/2025/12/29/cable-tv-decline-long-slow-bleedout-netflix-warner-paramount-sp-media-review/",
+          "publishedAt": "2025-12-29",
+          "accessedAt": "2026-01-20",
+          "publisher": "S&P Global via Fortune",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "90% of households dropping traditional pay TV for sports over the past year were sports fans, and nearly two-thirds of them spent five or more hours per week watching sports."
+        },
+        {
+          "type": "news",
+          "title": "Broadcast TV's Year in Review and Suggestions for 2026",
+          "url": "https://tvnewscheck.com/business/article/broadcast-tvs-year-in-review-and-suggestions-for-2026/",
+          "publishedAt": "2025-12-30",
+          "accessedAt": "2026-01-20",
+          "publisher": "TV News Check",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "The defining challenge for 2026 will be divorce. Linear broadcast's last strongholds (sport, news, live events) are crumbling as streamers buy up sport and live events."
+        }
+      ],
+      "tags": ["sports", "rsn", "streaming", "fragmentation", "blackouts", "cord-cutting"],
+      "keywords": ["sports rights fragmentation", "RSN crisis", "sports streaming", "blackout rules"],
+      "metrics": {
+        "searchVolume": 28000,
+        "academicPapers": 120,
+        "mediaArticles": 3800,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-184530",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:45:30Z",
+      "updatedAt": "2026-01-20T18:45:30Z",
+      "version": 1
+    },
+    {
+      "id": "tv-prob-009-58cc-4372-a567-0e02b2c3d009",
+      "title": "Television Production Infrastructure: Costly IP Transition and Technical Modernization",
+      "slug": "tv-production-infrastructure-ip-transition",
+      "description": "The broadcast and media industry's ongoing technical transformation is expected to reach several inflection points in 2026. Economic pressures are forcing faster decisions on infrastructure investments as IP transitions that have been planned for years move to implementation. Television production facilities face a complex and expensive transition from legacy SDI (Serial Digital Interface) infrastructure to IP-based systems. While IP offers significant advantages in flexibility, scalability, and remote production capabilities, the transition requires substantial capital investment at a time when traditional television revenues are declining. Facilities must often run hybrid SDI/IP systems during transition, doubling complexity and costs. The industry also faces cybersecurity concerns as IP-connected production systems create new attack surfaces requiring robust security measures. Staff require retraining on IP technologies, and the shortage of engineers with IP expertise creates bottlenecks. AI applications are shifting from experimentation to operational deployment, requiring additional infrastructure investment. Many smaller stations and production facilities lack the capital and expertise to execute these transitions, potentially creating a two-tier industry of modernized and legacy operations.",
+      "summary": "Television production faces complex IP infrastructure transition costing billions industry-wide, with cybersecurity concerns and skills gaps creating implementation challenges.",
+      "industry": {
+        "id": "c47ac10b-58cc-4372-a567-0e02b2c3d499",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d47ac10b-58cc-4372-a567-0e02b2c3d500",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d501",
+        "name": "Television",
+        "slug": "television"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["infrastructure", "modernization", "investment", "cybersecurity"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "All television production facilities and broadcast operations",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 12000000000,
+          "timeframe": "transition investment over 5-7 years"
+        },
+        "qualityOfLife": 3,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "High capital costs during revenue decline",
+          "Shortage of IP-skilled engineers",
+          "Cybersecurity requirements add complexity",
+          "Hybrid systems required during transition"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Broadcast engineering community, vendors",
+        "fundingLevel": "Moderate - vendor investment but facility capital constrained"
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "Legacy SDI infrastructure reaching end of life and support",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Remote and cloud production requirements demand IP connectivity",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Revenue pressures limiting capital available for infrastructure",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Workforce lacking IP and cybersecurity skills",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Production facilities running costly hybrid SDI/IP systems",
+          "type": "direct",
+          "affectedArea": "Operating costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Cybersecurity vulnerabilities as systems connect to networks",
+          "type": "cascading",
+          "affectedArea": "Security risk",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Two-tier industry emerging between modernized and legacy facilities",
+          "type": "indirect",
+          "affectedArea": "Competitive landscape",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Staff requiring significant retraining or replacement",
+          "type": "indirect",
+          "affectedArea": "Workforce",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "SMPTE ST 2110 Standards",
+          "description": "Industry standard for professional IP media transport",
+          "type": "standard",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "Requires complete infrastructure replacement",
+            "Interoperability issues between vendors",
+            "Complex to implement and manage"
+          ]
+        },
+        {
+          "name": "Cloud Production Services",
+          "description": "Cloud-based production platforms reducing on-premises infrastructure",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": [
+            "Bandwidth requirements for live production",
+            "Latency concerns for real-time",
+            "Ongoing subscription costs"
+          ]
+        },
+        {
+          "name": "Managed IP Transition Services",
+          "description": "Vendors offering managed transition and hybrid solutions",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": [
+            "Vendor dependency",
+            "High costs",
+            "May not address all facility needs"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Affordable IP transition paths for smaller stations and facilities",
+          "gapType": "cost",
+          "opportunity": "Simplified, lower-cost IP production solutions for smaller operations",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Broadcast-specific cybersecurity frameworks and tools",
+          "gapType": "coverage",
+          "opportunity": "Industry-specific security standards and managed security services",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Training and workforce development for IP production skills",
+          "gapType": "awareness",
+          "opportunity": "Industry-wide training programs and certification",
+          "difficulty": "low"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Television production facilities and broadcast operations",
+          "examples": ["Network production centers", "Local TV stations", "Mobile production units"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Broadcast equipment vendors driving IP solutions",
+          "examples": ["Sony", "Grass Valley", "Ross Video", "Evertz", "Imagine Communications"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Broadcast engineers managing transition",
+          "examples": ["Chief engineers", "IT staff", "Operations teams"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "expert",
+          "description": "Standards bodies and industry organizations",
+          "examples": ["SMPTE", "AES", "AIMS Alliance", "NAB"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "The Trends Shaping Broadcast and Media Production in 2026",
+          "url": "https://www.newscaststudio.com/2025/12/20/broadcast-media-industry-trends-2026/",
+          "publishedAt": "2025-12-20",
+          "accessedAt": "2026-01-20",
+          "publisher": "NewscastStudio",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Economic pressures are forcing faster decisions on infrastructure investments. IP transitions that have been planned for years are moving to implementation."
+        },
+        {
+          "type": "news",
+          "title": "Trends Affecting TV & Film Production in 2025",
+          "url": "https://www.sohonet.com/guide/trends-affecting-tv-film-production-in-2025",
+          "publishedAt": "2025-01-10",
+          "accessedAt": "2026-01-20",
+          "publisher": "Sohonet",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Challenges such as high costs and cybersecurity concerns must be addressed to ensure smooth adoption of new TV technologies."
+        }
+      ],
+      "tags": ["infrastructure", "ip-transition", "broadcast-engineering", "cybersecurity", "modernization"],
+      "keywords": ["broadcast IP transition", "SMPTE ST 2110", "television infrastructure", "production technology"],
+      "metrics": {
+        "searchVolume": 4200,
+        "academicPapers": 85,
+        "mediaArticles": 920,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-184530",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:45:30Z",
+      "updatedAt": "2026-01-20T18:45:30Z",
+      "version": 1
+    },
+    {
+      "id": "tv-prob-010-58cc-4372-a567-0e02b2c3d010",
+      "title": "Cable Network Consolidation and Closures: Industry Restructuring Accelerates",
+      "slug": "cable-network-consolidation-closures",
+      "description": "The cable television network landscape is undergoing rapid consolidation and closure as media conglomerates restructure for the streaming era. Building on momentum from 2025 when five major cable TV networks shuttered amid declining viewership, 2026 is poised to see even more closures as media conglomerates prioritize efficiency over breadth. Comcast finalized the spinoff of its cable networks (excluding Bravo) into a standalone entity named 'Versant' on January 2, 2026. Reports indicate Paramount is considering shutting down all of its cable networks to become a digital-only brand. Networks like Teen Nick saw viewership drop 25% in 2025 and now rank 135 out of 153 in primetime. Kids channels are particularly vulnerable as children shift to YouTube Kids and streaming services. These strategic exits signal that major media conglomerates are now willing to abandon cable networks in favor of streaming services. The closures result in job losses, reduced content diversity, and the end of established brands that served specific audiences for decades. The restructuring also creates uncertainty for cable distributors negotiating carriage agreements and advertisers planning media buys.",
+      "summary": "Major cable networks closing and spinning off as conglomerates pivot to streaming, with Paramount considering full cable exit and Comcast creating Versant spinoff.",
+      "industry": {
+        "id": "c47ac10b-58cc-4372-a567-0e02b2c3d499",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d47ac10b-58cc-4372-a567-0e02b2c3d500",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f47ac10b-58cc-4372-a567-0e02b2c3d501",
+        "name": "Television",
+        "slug": "television"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["consolidation", "restructuring", "closures", "industry-transition"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "Dozens of cable networks, thousands of employees, millions of niche viewers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual - cable network revenue at risk"
+        },
+        "qualityOfLife": 5,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 3.0,
+        "technicalFeasibility": 4,
+        "resourceRequirements": 3,
+        "existingProgress": 2,
+        "barriers": [
+          "Structural shift to streaming irreversible",
+          "Economics don't support niche cable networks",
+          "Conglomerates prioritizing streaming investment",
+          "Advertiser shift away from cable"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Media analysts extensively covering restructuring",
+        "fundingLevel": "N/A - industry managing decline not solving"
+      },
+      "impactScore": 61,
+      "rootCauses": [
+        {
+          "description": "Streaming provides better economics than cable distribution for content",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Cord-cutting eroding cable network subscriber bases",
+          "category": "cultural",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Niche networks can't justify costs with declining audiences",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Conglomerates consolidating streaming focus, shedding cable assets",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Thousands of job losses as networks close or spin off",
+          "type": "direct",
+          "affectedArea": "Employment",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Content diversity reduced as niche channels close",
+          "type": "direct",
+          "affectedArea": "Content availability",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Cable bundle value proposition further weakened",
+          "type": "cascading",
+          "affectedArea": "Cable ecosystem",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Uncertainty for cable distributors and advertisers",
+          "type": "indirect",
+          "affectedArea": "Business planning",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Streaming Migration",
+          "description": "Moving cable network content and brands to streaming platforms",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": [
+            "Not all content valuable enough for streaming",
+            "Brand equity may not transfer",
+            "Streaming already crowded"
+          ]
+        },
+        {
+          "name": "Spinoffs and Sales",
+          "description": "Separating cable networks into independent entities or selling",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "growing",
+          "limitations": [
+            "Limited buyer interest",
+            "Standalone economics challenging",
+            "May delay inevitable closure"
+          ]
+        },
+        {
+          "name": "FAST Channel Conversion",
+          "description": "Converting cable networks to free ad-supported streaming channels",
+          "type": "product",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": [
+            "Lower revenue than cable carriage",
+            "Crowded FAST landscape",
+            "Limited to library content"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No viable business model for niche content networks post-cable",
+          "gapType": "coverage",
+          "opportunity": "Sustainable models for specialty content in streaming era",
+          "difficulty": "high"
+        },
+        {
+          "description": "Workforce transition support for displaced cable network employees",
+          "gapType": "accessibility",
+          "opportunity": "Industry retraining and placement programs",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Content preservation for closing networks",
+          "gapType": "quality",
+          "opportunity": "Archive and preservation initiatives for cultural content",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "decision-maker",
+          "description": "Media conglomerates restructuring cable portfolios",
+          "examples": ["Comcast/NBCUniversal", "Paramount Global", "Warner Bros Discovery", "Disney"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Cable network employees facing layoffs",
+          "examples": ["Network staff", "Production teams", "Sales and marketing"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "affected",
+          "description": "Niche audiences losing dedicated channels",
+          "examples": ["Kids content viewers", "Specialty interest groups", "Ethnic audiences"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "affected",
+          "description": "Cable distributors negotiating with restructuring networks",
+          "examples": ["Comcast (distribution)", "Charter", "Cox"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Top 10 Cable TV Networks Most Likely to Shut Down in 2026",
+          "url": "https://cordcuttersnews.com/top-10-cable-tv-networks-most-likely-to-shut-down-in-2026/",
+          "publishedAt": "2026-01-05",
+          "accessedAt": "2026-01-20",
+          "publisher": "Cord Cutters News",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Building on the momentum from 2025, when five major cable TV networks shuttered amid declining viewership, 2026 is poised to see even more closures."
+        },
+        {
+          "type": "news",
+          "title": "Comcast Shutting Down Its TV Service, DISH Being Sold - 2026 Cord Cutting Predictions",
+          "url": "https://cordcuttersnews.com/comcast-shutting-down-its-tv-service-dish-being-sold-more-2026-cord-cutting-predictions/",
+          "publishedAt": "2026-01-02",
+          "accessedAt": "2026-01-20",
+          "publisher": "Cord Cutters News",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Comcast is set to finalize the spinoff of its cable networks into a standalone entity named 'Versant' on January 2, 2026."
+        },
+        {
+          "type": "news",
+          "title": "Cable TV decline - long slow bleedout ahead",
+          "url": "https://fortune.com/2025/12/29/cable-tv-decline-long-slow-bleedout-netflix-warner-paramount-sp-media-review/",
+          "publishedAt": "2025-12-29",
+          "accessedAt": "2026-01-20",
+          "publisher": "Fortune",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "These strategic exits signal that major media conglomerates are now willing to abandon cable networks in favor of streaming services."
+        }
+      ],
+      "tags": ["cable-networks", "consolidation", "closures", "restructuring", "streaming-transition"],
+      "keywords": ["cable network closures", "media consolidation", "cable TV shutdown", "streaming pivot"],
+      "metrics": {
+        "searchVolume": 15000,
+        "academicPapers": 75,
+        "mediaArticles": 2800,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-184530",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:45:30Z",
+      "updatedAt": "2026-01-20T18:45:30Z",
+      "version": 1
+    }
+  ]
+}

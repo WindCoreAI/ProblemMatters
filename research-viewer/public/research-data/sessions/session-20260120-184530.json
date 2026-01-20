@@ -1,0 +1,158 @@
+{
+  "id": "session-20260120-184530",
+  "startedAt": "2026-01-20T18:45:30Z",
+  "completedAt": "2026-01-20T19:15:00Z",
+  "target": {
+    "industry": "media-entertainment",
+    "domain": "content-creation",
+    "field": "television"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 5,
+    "problemIds": [
+      "tv-prob-001-58cc-4372-a567-0e02b2c3d001",
+      "tv-prob-002-58cc-4372-a567-0e02b2c3d002",
+      "tv-prob-003-58cc-4372-a567-0e02b2c3d003",
+      "tv-prob-004-58cc-4372-a567-0e02b2c3d004",
+      "tv-prob-005-58cc-4372-a567-0e02b2c3d005",
+      "tv-prob-006-58cc-4372-a567-0e02b2c3d006",
+      "tv-prob-007-58cc-4372-a567-0e02b2c3d007",
+      "tv-prob-008-58cc-4372-a567-0e02b2c3d008",
+      "tv-prob-009-58cc-4372-a567-0e02b2c3d009",
+      "tv-prob-010-58cc-4372-a567-0e02b2c3d010"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-20T18:45:30Z",
+      "status": "completed",
+      "output": {
+        "industry": "media-entertainment",
+        "domain": "content-creation",
+        "field": "television"
+      }
+    },
+    {
+      "step": 2,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T18:46:00Z",
+      "status": "completed",
+      "output": {
+        "searchQueries": 4,
+        "candidatesFound": 15
+      }
+    },
+    {
+      "step": 3,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T18:55:00Z",
+      "status": "completed",
+      "output": {
+        "problemsResearched": 15,
+        "sourcesConsulted": 18
+      }
+    },
+    {
+      "step": 4,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T19:05:00Z",
+      "status": "completed",
+      "output": {
+        "problemsValidated": 10,
+        "problemsRejected": 5,
+        "averageConfidence": 0.87
+      }
+    },
+    {
+      "step": 5,
+      "action": "synthesis_storage",
+      "timestamp": "2026-01-20T19:10:00Z",
+      "status": "completed",
+      "output": {
+        "fileCreated": "research-viewer/public/research-data/industries/media-entertainment/content-creation/fields/television.json",
+        "problemsStored": 10
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 1770000,
+    "sourcesConsulted": 18,
+    "searchQueries": 4
+  },
+  "problemsSummary": [
+    {
+      "id": "tv-prob-001-58cc-4372-a567-0e02b2c3d001",
+      "title": "Cord-Cutting Crisis: Accelerating Decline of Traditional Television Subscriptions",
+      "impactScore": 72,
+      "confidence": 0.95
+    },
+    {
+      "id": "tv-prob-002-58cc-4372-a567-0e02b2c3d002",
+      "title": "Television Audience Measurement Fragmentation: The Cross-Platform Currency Crisis",
+      "impactScore": 68,
+      "confidence": 0.88
+    },
+    {
+      "id": "tv-prob-003-58cc-4372-a567-0e02b2c3d003",
+      "title": "ATSC 3.0 NextGen TV Transition Stalled: Technical and Adoption Barriers",
+      "impactScore": 64,
+      "confidence": 0.85
+    },
+    {
+      "id": "tv-prob-004-58cc-4372-a567-0e02b2c3d004",
+      "title": "Television Advertising Revenue Structural Decline and Market Share Erosion",
+      "impactScore": 66,
+      "confidence": 0.92
+    },
+    {
+      "id": "tv-prob-005-58cc-4372-a567-0e02b2c3d005",
+      "title": "Smart TV Platform Gatekeeping: OEMs Control Content Discovery and User Experience",
+      "impactScore": 58,
+      "confidence": 0.82
+    },
+    {
+      "id": "tv-prob-006-58cc-4372-a567-0e02b2c3d006",
+      "title": "Local Television News Crisis: Declining Resources Threaten Community Journalism",
+      "impactScore": 65,
+      "confidence": 0.88
+    },
+    {
+      "id": "tv-prob-007-58cc-4372-a567-0e02b2c3d007",
+      "title": "Television Diversity and Representation Gaps: Persistent Inequities On and Off Screen",
+      "impactScore": 62,
+      "confidence": 0.90
+    },
+    {
+      "id": "tv-prob-008-58cc-4372-a567-0e02b2c3d008",
+      "title": "Sports Broadcasting Rights Fragmentation: Viewers Unable to Access Local and National Sports",
+      "impactScore": 60,
+      "confidence": 0.87
+    },
+    {
+      "id": "tv-prob-009-58cc-4372-a567-0e02b2c3d009",
+      "title": "Television Production Infrastructure: Costly IP Transition and Technical Modernization",
+      "impactScore": 58,
+      "confidence": 0.82
+    },
+    {
+      "id": "tv-prob-010-58cc-4372-a567-0e02b2c3d010",
+      "title": "Cable Network Consolidation and Closures: Industry Restructuring Accelerates",
+      "impactScore": 61,
+      "confidence": 0.88
+    }
+  ]
+}
