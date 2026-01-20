@@ -1,15 +1,16 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-20T14:30:52Z",
+  "lastUpdated": "2026-01-20T16:15:00Z",
   "statistics": {
-    "totalProblems": 10,
-    "totalIndustries": 1,
-    "totalDomains": 1,
-    "totalFields": 8,
+    "totalProblems": 20,
+    "totalIndustries": 2,
+    "totalDomains": 2,
+    "totalFields": 9,
     "problemsByIndustry": {
-      "technology-software": 10
+      "technology-software": 10,
+      "healthcare-life-sciences": 10
     },
-    "lastResearchSession": "2026-01-20T14:30:52Z"
+    "lastResearchSession": "2026-01-20T16:15:00Z"
   },
   "industries": [
     {
@@ -20,9 +21,27 @@
       "domainCount": 1,
       "problemCount": 10,
       "lastUpdated": "2026-01-20T14:30:52Z"
+    },
+    {
+      "id": "f47ac10b-58cc-4372-a567-0e02b2c3d481",
+      "name": "Healthcare & Life Sciences",
+      "slug": "healthcare-life-sciences",
+      "path": "industries/healthcare-life-sciences",
+      "domainCount": 1,
+      "problemCount": 10,
+      "lastUpdated": "2026-01-20T16:15:00Z"
     }
   ],
   "recentSessions": [
+    {
+      "id": "session-20260120-161500",
+      "timestamp": "2026-01-20T16:15:00Z",
+      "targetIndustry": "healthcare-life-sciences",
+      "targetDomain": "clinical-care",
+      "targetField": "primary-care",
+      "problemsDiscovered": 10,
+      "status": "completed"
+    },
     {
       "id": "session-20260120-143052",
       "timestamp": "2026-01-20T14:30:52Z",
