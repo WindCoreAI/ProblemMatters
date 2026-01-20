@@ -279,7 +279,7 @@ export default function ProblemDetailPage() {
                               </Badge>
                             )}
                           </div>
-                          {solution.limitations &&
+                          {Array.isArray(solution.limitations) &&
                             solution.limitations.length > 0 && (
                               <div className="mt-3">
                                 <p className="text-xs text-muted-foreground mb-1">

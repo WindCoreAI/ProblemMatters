@@ -72,21 +72,24 @@ export const useDataStore = create<DataStore>((set, get) => ({
                 const domainData: DomainMetadata = await domainResponse.json();
 
                 // Load problems from field files (the canonical storage format)
-                if (domainData.fields && domainData.fields.length > 0) {
-                  for (const field of domainData.fields) {
-                    try {
-                      const fieldResponse = await fetch(
-                        `/research-data/industries/${industry.slug}/${domainRef.slug}/fields/${field.slug}.json`
-                      );
-                      if (fieldResponse.ok) {
-                        const fieldData: FieldProblemsFile = await fieldResponse.json();
-                        if (fieldData.problems) {
-                          problems.push(...fieldData.problems);
-                        }
+                // Get field slugs from statistics.fieldProblems keys
+                const fieldSlugs = domainData.statistics?.fieldProblems
+                  ? Object.keys(domainData.statistics.fieldProblems)
+                  : [];
+
+                for (const fieldSlug of fieldSlugs) {
+                  try {
+                    const fieldResponse = await fetch(
+                      `/research-data/industries/${industry.slug}/${domainRef.slug}/fields/${fieldSlug}.json`
+                    );
+                    if (fieldResponse.ok) {
+                      const fieldData: FieldProblemsFile = await fieldResponse.json();
+                      if (fieldData.problems) {
+                        problems.push(...fieldData.problems);
                       }
-                    } catch {
-                      // Skip if field file doesn't exist
                     }
+                  } catch {
+                    // Skip if field file doesn't exist
                   }
                 }
               }

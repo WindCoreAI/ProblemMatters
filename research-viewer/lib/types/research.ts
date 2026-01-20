@@ -353,16 +353,19 @@ export interface DomainMetadata {
   id: string;
   name: string;
   slug: string;
-  description: string;
+  description?: string;
   industry: TaxonomyReference;
   fields?: FieldReference[];
   statistics?: {
     totalProblems: number;
     totalFields: number;
     avgSeverity?: number;
+    avgTractability?: number;
+    fieldProblems?: Record<string, number>;
   };
-  createdAt: string;
-  updatedAt: string;
+  createdAt?: string;
+  updatedAt?: string;
+  lastUpdated?: string;
 }
 
 // Problems File Type
