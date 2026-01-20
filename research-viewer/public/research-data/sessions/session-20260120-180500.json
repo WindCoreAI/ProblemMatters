@@ -1,0 +1,145 @@
+{
+  "id": "session-20260120-180500",
+  "startedAt": "2026-01-20T18:05:00Z",
+  "completedAt": "2026-01-20T18:35:00Z",
+  "target": {
+    "industry": "technology-software",
+    "domain": "ai-ml",
+    "field": "natural-language-processing",
+    "specificTopic": null
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 5,
+    "problemIds": [
+      "f47ac10b-58cc-4372-a567-0e02b2c3d001",
+      "f47ac10b-58cc-4372-a567-0e02b2c3d002",
+      "f47ac10b-58cc-4372-a567-0e02b2c3d003",
+      "f47ac10b-58cc-4372-a567-0e02b2c3d004",
+      "f47ac10b-58cc-4372-a567-0e02b2c3d005",
+      "f47ac10b-58cc-4372-a567-0e02b2c3d006",
+      "f47ac10b-58cc-4372-a567-0e02b2c3d007",
+      "f47ac10b-58cc-4372-a567-0e02b2c3d008",
+      "f47ac10b-58cc-4372-a567-0e02b2c3d009",
+      "f47ac10b-58cc-4372-a567-0e02b2c3d010"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_research_request",
+      "timestamp": "2026-01-20T18:05:00Z",
+      "durationMs": 500,
+      "input": {
+        "rawInput": "technology-software ai-ml natural-language-processing"
+      },
+      "output": {
+        "industry": "technology-software",
+        "domain": "ai-ml",
+        "field": "natural-language-processing"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "initialize_session",
+      "timestamp": "2026-01-20T18:05:30Z",
+      "durationMs": 1000,
+      "input": {
+        "sessionId": "session-20260120-180500"
+      },
+      "output": {
+        "sessionCreated": true,
+        "existingProblemsChecked": true,
+        "duplicatesFound": 0
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T18:06:00Z",
+      "durationMs": 180000,
+      "input": {
+        "searchQueries": [
+          "natural language processing challenges problems issues 2025 2026",
+          "NLP pain points frustrations limitations 2025",
+          "natural language processing unsolved problems research gaps",
+          "NLP technical limitations bottlenecks scalability issues",
+          "NLP industry challenges machine translation sentiment analysis 2025",
+          "large language models limitations hallucination bias problems",
+          "NLP low resource languages challenges multilingual models 2025",
+          "NLP explainability interpretability black box AI challenges",
+          "goal-oriented dialogue systems conversational AI limitations challenges"
+        ]
+      },
+      "output": {
+        "candidatesFound": 15,
+        "sourcesIdentified": 45
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T18:09:00Z",
+      "durationMs": 600000,
+      "input": {
+        "candidateCount": 15
+      },
+      "output": {
+        "problemsResearched": 15,
+        "detailedAnalysisCompleted": 10
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T18:19:00Z",
+      "durationMs": 300000,
+      "input": {
+        "problemsToValidate": 15
+      },
+      "output": {
+        "problemsApproved": 10,
+        "problemsRejected": 5,
+        "averageConfidence": 0.86
+      },
+      "status": "completed"
+    },
+    {
+      "step": 6,
+      "action": "synthesis_storage",
+      "timestamp": "2026-01-20T18:24:00Z",
+      "durationMs": 120000,
+      "input": {
+        "problemsToStore": 10
+      },
+      "output": {
+        "filesCreated": [
+          "research-viewer/public/research-data/industries/technology-software/ai-ml/fields/natural-language-processing.json"
+        ],
+        "problemsStored": 10
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 1800000,
+    "tokensUsed": 95000,
+    "apiCalls": 12,
+    "sourcesConsulted": 45
+  }
+}
