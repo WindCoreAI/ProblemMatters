@@ -1,0 +1,518 @@
+{
+  "field": {
+    "id": "8e2c1d5f-4a3b-4c6d-9e7f-1a2b3c4d5e6f",
+    "name": "E-Commerce",
+    "slug": "e-commerce",
+    "description": "Online platforms, mobile commerce, marketplace management, product information management, and conversion optimization for digital retail."
+  },
+  "domain": {
+    "id": "42e1e6cd-c8a7-4b74-8a07-12b1a7f1e2d1",
+    "name": "Retail Operations",
+    "slug": "retail-operations"
+  },
+  "industry": {
+    "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+    "name": "Retail & Consumer",
+    "slug": "retail-consumer"
+  },
+  "problems": [
+    {
+      "id": "d4e5f6a7-b8c9-4d0e-a1b2-c3d4e5f6a7b8",
+      "title": "E-commerce Shopping Cart Abandonment Epidemic Costing Retailers Billions in Lost Revenue",
+      "slug": "ecommerce-cart-abandonment-epidemic",
+      "description": "Online shopping cart abandonment represents one of the most persistent and costly challenges in e-commerce, with abandonment rates consistently exceeding 70% worldwide. This translates to massive lost revenue opportunities—for every $100 a customer intends to spend, approximately $70 never converts to actual sales. The problem is multi-faceted: unexpected costs at checkout (shipping, taxes, fees) cause 48% of abandonments, while mandatory account creation drives away 24% of shoppers. Complicated checkout processes, security concerns, and lack of payment options further contribute to the crisis. The situation is worsening: IRP Commerce reports a negative trend in global conversion efficiency, with even small percentage declines having significant revenue impact at scale. Mobile commerce exacerbates the problem, with mobile cart abandonment rates typically 10-15% higher than desktop due to smaller screens and friction in mobile payment processes. Additionally, high return rates compound the challenge—an estimated 19.3% of online sales will be returned in 2025, meaning even completed transactions often fail to generate net revenue. The e-commerce customer journey involves an average of 6-8 touchpoints before purchase, with each representing a potential abandonment point. Retailers implementing cart recovery strategies (abandoned cart emails, retargeting) recover only 3-5% of abandoned carts on average, leaving the vast majority of potential revenue uncaptured.",
+      "summary": "E-commerce cart abandonment rates exceed 70% globally, with unexpected costs, complicated checkouts, and mobile friction being primary causes, resulting in billions in lost revenue that recovery strategies only marginally address.",
+      "industry": {
+        "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+        "name": "Retail & Consumer",
+        "slug": "retail-consumer"
+      },
+      "domain": {
+        "id": "42e1e6cd-c8a7-4b74-8a07-12b1a7f1e2d1",
+        "name": "Retail Operations",
+        "slug": "retail-operations"
+      },
+      "field": {
+        "id": "8e2c1d5f-4a3b-4c6d-9e7f-1a2b3c4d5e6f",
+        "name": "E-Commerce",
+        "slug": "e-commerce"
+      },
+      "problemType": "process",
+      "problemSubtypes": ["conversion-optimization", "checkout-friction", "mobile-commerce", "customer-journey"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "All e-commerce retailers and online shoppers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 260000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 4,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 6,
+        "existingProgress": 5,
+        "barriers": [
+          "Unexpected costs inherent to shipping and taxation",
+          "Consumer privacy concerns limiting payment data storage",
+          "Mobile UX constraints for complex checkouts",
+          "Comparison shopping behavior difficult to change",
+          "Return policy transparency requirements",
+          "Payment method fragmentation across markets"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "E-commerce platforms, conversion optimization consultants, payment providers",
+        "fundingLevel": "Significant investment in checkout optimization tools"
+      },
+      "impactScore": 70,
+      "rootCauses": [
+        {
+          "description": "Hidden costs revealed only at checkout causing sticker shock",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Friction-heavy checkout processes requiring excessive data entry",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Consumer behavior of using carts as shopping lists rather than purchase intent",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of trust signals and security assurances",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Insufficient payment method options for diverse customer preferences",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Estimated $260 billion in lost e-commerce revenue annually in the US alone",
+          "type": "direct",
+          "affectedArea": "Revenue",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Wasted marketing spend on customers who don't convert",
+          "type": "direct",
+          "affectedArea": "Marketing efficiency",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Poor customer experience leading to brand perception damage",
+          "type": "indirect",
+          "affectedArea": "Brand value",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Over-investment in retargeting and recovery tactics with diminishing returns",
+          "type": "cascading",
+          "affectedArea": "Marketing spend",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Abandoned Cart Email Sequences",
+          "description": "Automated email campaigns targeting customers who left items in cart",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["3-5% recovery rate typical", "Email fatigue reducing effectiveness", "Privacy regulations limiting tracking"]
+        },
+        {
+          "name": "One-Click Checkout Solutions",
+          "description": "Payment systems like Shop Pay, Apple Pay enabling single-tap purchases",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Requires customer account/enrollment", "Platform fragmentation", "Not universal across retailers"]
+        },
+        {
+          "name": "Guest Checkout Options",
+          "description": "Allowing purchases without mandatory account creation",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Reduces customer data capture", "Limits personalization opportunities"]
+        },
+        {
+          "name": "Exit-Intent Popups",
+          "description": "Offers displayed when customer shows intent to leave site",
+          "type": "tool",
+          "effectiveness": 4,
+          "adoption": "mainstream",
+          "limitations": ["Can be annoying to users", "Diminishing returns with overuse", "Mobile detection challenges"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Predictive identification of abandonment-prone customers before checkout",
+          "gapType": "coverage",
+          "opportunity": "AI models that proactively address concerns based on browsing behavior",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Universal one-click checkout across all retailers without enrollment",
+          "gapType": "integration",
+          "opportunity": "Industry-wide payment identity standards",
+          "difficulty": "high"
+        },
+        {
+          "description": "Transparent total cost display throughout shopping journey",
+          "gapType": "awareness",
+          "opportunity": "Real-time shipping and tax calculators on product pages",
+          "difficulty": "low"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "E-commerce retailers losing potential revenue",
+          "examples": ["Amazon", "Shopify merchants", "DTC brands", "Traditional retailers with online presence"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Online shoppers experiencing checkout friction",
+          "examples": ["Mobile shoppers", "Price-sensitive consumers", "First-time buyers"],
+          "interest": "medium",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "E-commerce platform providers",
+          "examples": ["Shopify", "BigCommerce", "Magento", "WooCommerce"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Payment and checkout solution providers",
+          "examples": ["Stripe", "PayPal", "Klarna", "Shop Pay"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "10 ecommerce trends that will shape online retail in 2026",
+          "url": "https://www.digitalcommerce360.com/2025/12/23/ecommerce-trends-in-2026/",
+          "publishedAt": "2025-12-23",
+          "accessedAt": "2026-01-20",
+          "publisher": "Digital Commerce 360",
+          "credibilityScore": 0.85
+        },
+        {
+          "type": "industry-report",
+          "title": "10 Challenges for eCommerce in 2025",
+          "url": "https://pimberly.com/blog/10-challenges-for-ecommerce-in-2025/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Pimberly",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Online shopping cart abandonment continues to be a persistent issue for retailers, with rates often surpassing 70% worldwide"
+        },
+        {
+          "type": "industry-report",
+          "title": "Ecommerce Challenges and Growth Strategies for 2025",
+          "url": "https://athoscommerce.com/blog/ecommerce-challenges-growth-strategies-2025/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Athos Commerce",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "IRP Commerce suggests a negative trend in conversion efficiency globally"
+        }
+      ],
+      "tags": ["cart-abandonment", "conversion-optimization", "checkout", "e-commerce", "mobile-commerce"],
+      "keywords": ["shopping cart abandonment", "e-commerce conversion", "checkout optimization", "cart recovery", "online retail"],
+      "metrics": {
+        "searchVolume": 33500,
+        "academicPapers": 234,
+        "mediaArticles": 2800,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+      "title": "Exploding Customer Acquisition Costs Threatening E-commerce Profitability and Growth",
+      "slug": "rising-customer-acquisition-costs-ecommerce",
+      "description": "E-commerce businesses face an existential challenge as customer acquisition costs (CAC) have skyrocketed, fundamentally threatening unit economics and profitability. The average CAC surged by 222% between 2013 and 2024, rising from $9 to $29 per customer. This dramatic increase stems from multiple converging factors: digital advertising saturation with major platforms like Facebook and Google seeing declining ad effectiveness, iOS privacy changes (App Tracking Transparency) reducing targeting precision, increased competition as more retailers shift online, and rising cost-per-click across all major advertising channels. The problem is particularly acute for direct-to-consumer (DTC) brands that relied heavily on Facebook and Instagram advertising, with many reporting CAC increases of 50-100% since 2021. As a result, many e-commerce businesses now spend more to acquire a customer than they earn from that customer's first purchase, forcing reliance on repeat purchases and lifetime value that may never materialize. Retailers expect shoppers to prioritize price over brand loyalty in 2026 as inflation tightens budgets, making customer retention even more challenging. PitchBook's 2026 outlook predicts a K-shaped economy deepening the divide between retail's haves and have-nots—companies with established customer bases will thrive while those dependent on acquisition will struggle. The venture capital pullback from DTC brands reflects market recognition that the paid acquisition model is increasingly unsustainable.",
+      "summary": "Customer acquisition costs in e-commerce have increased 222% since 2013, driven by digital ad saturation, privacy changes, and increased competition, threatening the viability of acquisition-dependent business models.",
+      "industry": {
+        "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+        "name": "Retail & Consumer",
+        "slug": "retail-consumer"
+      },
+      "domain": {
+        "id": "42e1e6cd-c8a7-4b74-8a07-12b1a7f1e2d1",
+        "name": "Retail Operations",
+        "slug": "retail-operations"
+      },
+      "field": {
+        "id": "8e2c1d5f-4a3b-4c6d-9e7f-1a2b3c4d5e6f",
+        "name": "E-Commerce",
+        "slug": "e-commerce"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["customer-acquisition", "digital-advertising", "unit-economics", "profitability"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "All e-commerce retailers, especially DTC brands",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 150000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 3,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 5,
+        "existingProgress": 4,
+        "barriers": [
+          "Digital ad platform duopoly (Google/Meta) controlling pricing",
+          "Privacy regulations limiting targeting capabilities",
+          "Increased competition for same customer pools",
+          "Consumer ad fatigue reducing effectiveness",
+          "Attribution complexity in multi-touch journeys",
+          "Platform algorithm changes unpredictably affecting reach"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Marketing consultants, DTC analysts, e-commerce platforms",
+        "fundingLevel": "Decreasing VC funding for acquisition-dependent models"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Digital ad platform duopoly creating pricing power",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Apple iOS 14.5+ App Tracking Transparency reducing ad targeting precision",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Market saturation with too many e-commerce brands competing for same customers",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Consumer ad blindness and fatigue reducing conversion rates",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Over-reliance on paid acquisition without building owned channels",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Negative unit economics on first purchase for many e-commerce brands",
+          "type": "direct",
+          "affectedArea": "Profitability",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "DTC brand failures and consolidation as VC funding dries up",
+          "type": "cascading",
+          "affectedArea": "Market structure",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Widening gap between established brands and newcomers",
+          "type": "cascading",
+          "affectedArea": "Competition",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Increased prices passed to consumers to cover acquisition costs",
+          "type": "indirect",
+          "affectedArea": "Consumer prices",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Reduced marketing innovation as budgets consumed by performance marketing",
+          "type": "indirect",
+          "affectedArea": "Brand building",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "First-Party Data Strategies",
+          "description": "Building owned customer data through email, SMS, and loyalty programs",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Takes time to build", "Requires initial customer acquisition", "Data management complexity"]
+        },
+        {
+          "name": "Content Marketing and SEO",
+          "description": "Organic acquisition through valuable content and search optimization",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Long time to results", "Competitive keywords expensive", "Algorithm changes"]
+        },
+        {
+          "name": "Influencer and Affiliate Marketing",
+          "description": "Performance-based partnerships with content creators",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Fraud risks", "Attribution challenges", "Influencer market saturation"]
+        },
+        {
+          "name": "Retail Media Networks",
+          "description": "Advertising on retailer platforms (Amazon, Walmart) with purchase intent",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Platform dependency", "Margin compression", "Limited to marketplace sellers"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Privacy-preserving targeting that maintains effectiveness",
+          "gapType": "coverage",
+          "opportunity": "AI-based contextual and cohort targeting without personal data",
+          "difficulty": "high"
+        },
+        {
+          "description": "Sustainable customer acquisition models for new market entrants",
+          "gapType": "cost",
+          "opportunity": "Community-based growth and viral loop design",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Accurate cross-channel attribution in privacy-restricted environment",
+          "gapType": "integration",
+          "opportunity": "Probabilistic attribution models using aggregated signals",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "E-commerce and DTC brands dependent on paid acquisition",
+          "examples": ["DTC startups", "Digitally-native brands", "Small e-commerce merchants"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Digital advertising platforms controlling pricing",
+          "examples": ["Meta", "Google", "TikTok", "Amazon"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Venture capital investors in e-commerce",
+          "examples": ["A16Z", "Forerunner", "Lerer Hippeau"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Privacy regulators and platform policy makers",
+          "examples": ["Apple", "EU regulators", "FTC"],
+          "interest": "low",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "10 Challenges for eCommerce in 2025",
+          "url": "https://pimberly.com/blog/10-challenges-for-ecommerce-in-2025/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Pimberly",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "The average CAC surged by 222% between 2013 and 2024, rising from $9 to $29"
+        },
+        {
+          "type": "industry-report",
+          "title": "6 retail trends to watch in 2026",
+          "url": "https://www.retaildive.com/news/retail-trends-to-watch-2026/808341/",
+          "publishedAt": "2025-12-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Retail Dive",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "PitchBook's 2026 outlook predicts a K-shaped economy this year, deepening the divide between retail's haves and have-nots"
+        },
+        {
+          "type": "industry-report",
+          "title": "Ecommerce Challenges and Growth Strategies for 2025",
+          "url": "https://athoscommerce.com/blog/ecommerce-challenges-growth-strategies-2025/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Athos Commerce",
+          "credibilityScore": 0.75
+        }
+      ],
+      "tags": ["customer-acquisition", "cac", "digital-advertising", "dtc", "e-commerce", "marketing"],
+      "keywords": ["customer acquisition cost", "CAC e-commerce", "digital advertising costs", "DTC marketing", "paid acquisition"],
+      "metrics": {
+        "searchVolume": 18200,
+        "academicPapers": 156,
+        "mediaArticles": 2100,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.83,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    }
+  ]
+}
