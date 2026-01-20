@@ -1,0 +1,542 @@
+{
+  "field": {
+    "id": "f8a7b6c5-d4e3-42f1-a0b9-c8d7e6f5a4b3",
+    "name": "Epidemiology",
+    "slug": "epidemiology",
+    "description": "The study of how diseases spread, their patterns, causes, and effects in populations, including disease surveillance, outbreak investigation, and infectious and chronic disease epidemiology."
+  },
+  "domain": {
+    "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+    "name": "Public Health",
+    "slug": "public-health"
+  },
+  "industry": {
+    "id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+    "name": "Healthcare & Life Sciences",
+    "slug": "healthcare-life-sciences"
+  },
+  "problems": [
+    {
+      "id": "e1f2a3b4-c5d6-47e8-9f0a-1b2c3d4e5f67",
+      "title": "Antimicrobial Resistance Crisis Threatens Global Health Security and Modern Medicine",
+      "slug": "antimicrobial-resistance-crisis-global-health-threat",
+      "description": "Antimicrobial resistance (AMR) has emerged as one of the most critical global health threats of the 21st century, often described as a 'silent pandemic.' Drug-resistant bacteria and other pathogens are undermining the effectiveness of antibiotics and other antimicrobial medications that have been foundational to modern medicine. In 2021, AMR was linked to 4.7 million deaths worldwide, with over 1.1 million deaths directly caused by drug-resistant infections. Common infections are becoming harder—and sometimes impossible—to treat, with new WHO data showing that one in six bacterial infections globally are now resistant to standard antibiotics. The crisis is driven by the misuse and overuse of antibiotics in humans, animals, and agriculture, combined with poor infection control practices and limited access to quality medicines. Without urgent coordinated action, AMR is projected to cause 10 million deaths annually by 2050, rivaling cancer as a leading cause of mortality. The economic impact is equally severe, with projected losses of $3 trillion in global GDP per year by 2030. About 80% of antimicrobials used in animal husbandry are eliminated into the environment unmetabolized, contributing to resistance development in soil and water reservoirs.",
+      "summary": "Antimicrobial resistance kills 5 million people annually and could cause 10 million deaths per year by 2050 if unaddressed. Drug-resistant 'superbugs' threaten to make common infections untreatable and modern surgical procedures too risky to perform.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+        "name": "Public Health",
+        "slug": "public-health"
+      },
+      "field": {
+        "id": "f8a7b6c5-d4e3-42f1-a0b9-c8d7e6f5a4b3",
+        "name": "Epidemiology",
+        "slug": "epidemiology"
+      },
+      "problemType": "environmental",
+      "problemSubtypes": ["infectious-disease", "drug-resistance", "one-health", "global-health-security"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 9.5,
+        "affectedPopulation": {
+          "score": 10,
+          "estimate": "Global population - 8 billion+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 3000000000000,
+          "timeframe": "annual by 2030"
+        },
+        "qualityOfLife": 9,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 3,
+        "existingProgress": 5,
+        "barriers": [
+          "Global coordination across 195+ countries required",
+          "Misaligned incentives in pharmaceutical industry",
+          "Agricultural sector resistance to reducing antibiotic use",
+          "Lack of rapid diagnostic infrastructure",
+          "Behavioral change challenges in prescribing practices",
+          "Limited surveillance capacity in low-income countries"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "10,000+ globally working on AMR",
+        "fundingLevel": "Moderate - increasing but insufficient for crisis scale"
+      },
+      "impactScore": 78,
+      "rootCauses": [
+        {
+          "description": "Overuse and misuse of antibiotics in human medicine, including overprescription and patient non-compliance",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Excessive use of antimicrobials in animal agriculture for growth promotion and disease prevention",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of rapid point-of-care diagnostics leading to empirical broad-spectrum prescribing",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Poor infection prevention and control in healthcare settings",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Inadequate sanitation and water treatment allowing resistant organisms to spread",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Market failure in antibiotic development due to low return on investment",
+          "category": "economic",
+          "contributionLevel": "primary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Common infections becoming untreatable, leading to prolonged illness, disability, and death",
+          "type": "direct",
+          "affectedArea": "Patient outcomes",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Modern surgical procedures and cancer treatments becoming too risky due to infection risks",
+          "type": "cascading",
+          "affectedArea": "Healthcare delivery",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Economic losses projected at $3 trillion annually by 2030 from healthcare costs and lost productivity",
+          "type": "direct",
+          "affectedArea": "Global economy",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Increased healthcare costs due to longer hospital stays and more expensive second-line treatments",
+          "type": "direct",
+          "affectedArea": "Healthcare systems",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Disproportionate impact on low- and middle-income countries with weaker health systems",
+          "type": "cascading",
+          "affectedArea": "Global health equity",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Antimicrobial Stewardship Programs",
+          "description": "Hospital and outpatient programs promoting appropriate antibiotic prescribing through guidelines, education, and monitoring",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Implementation varies widely", "Resource-intensive", "Limited reach in outpatient settings"]
+        },
+        {
+          "name": "National Action Plans on AMR",
+          "description": "Country-level strategies aligned with WHO Global Action Plan including surveillance, infection prevention, and stewardship",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Uneven implementation", "Funding gaps", "Limited enforcement mechanisms"]
+        },
+        {
+          "name": "GLASS (Global Antimicrobial Resistance Surveillance System)",
+          "description": "WHO-coordinated global surveillance network for AMR data collection and sharing",
+          "type": "framework",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Coverage gaps in LMICs", "Data quality variations", "Delayed reporting"]
+        },
+        {
+          "name": "Phage Therapy",
+          "description": "Use of bacteriophages to target and destroy specific drug-resistant bacteria",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "experimental",
+          "limitations": ["Regulatory hurdles", "Need for personalized matching", "Limited clinical trial data"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Insufficient pipeline of new antibiotic classes with novel mechanisms of action",
+          "gapType": "coverage",
+          "opportunity": "AI-driven drug discovery and novel targets like phage therapy and antimicrobial peptides",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Lack of affordable rapid point-of-care diagnostics in low-resource settings",
+          "gapType": "accessibility",
+          "opportunity": "Development of low-cost, field-deployable molecular diagnostics",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Economic incentives misaligned—new antibiotics not commercially viable",
+          "gapType": "cost",
+          "opportunity": "Pull incentives like subscription models and milestone payments",
+          "difficulty": "high"
+        },
+        {
+          "description": "Fragmented global surveillance with major gaps in LMICs",
+          "gapType": "coverage",
+          "opportunity": "Integrated One Health surveillance systems with digital infrastructure",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients worldwide requiring antibiotic treatment for infections",
+          "examples": ["Surgery patients", "Cancer patients on chemotherapy", "Immunocompromised individuals"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Government health ministries and regulatory agencies",
+          "examples": ["WHO", "FDA", "EMA", "National health ministries"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Pharmaceutical companies and biotechnology firms",
+          "examples": ["GSK", "Pfizer", "Smaller biotech companies"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "expert",
+          "description": "Infectious disease specialists and microbiologists",
+          "examples": ["Clinical microbiologists", "Epidemiologists", "Antimicrobial stewardship pharmacists"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "government",
+          "title": "WHO Global Report on Antimicrobial Resistance Surveillance",
+          "url": "https://www.who.int/health-topics/antimicrobial-resistance",
+          "publishedAt": "2025-10-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "World Health Organization",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "One in six bacterial infections globally are resistant to standard antibiotics, with average annual resistance increases of 5-15%"
+        },
+        {
+          "type": "news",
+          "title": "Antibiotic resistance surges globally, UN health agency warns",
+          "url": "https://news.un.org/en/story/2025/10/1166087",
+          "publishedAt": "2025-10-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "UN News",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Superbugs kill an estimated 5 million people a year, projected to cause 10 million deaths annually by 2050"
+        },
+        {
+          "type": "academic",
+          "title": "Antimicrobial Resistance: A Growing Serious Threat for Global Public Health",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10340576/",
+          "publishedAt": "2023-07-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "PMC/NIH",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "In 2021, AMR was linked to 4.7 million deaths worldwide, including over 1.1 million deaths directly caused by drug-resistant infections"
+        },
+        {
+          "type": "industry-report",
+          "title": "What is antimicrobial resistance and how can we tackle it?",
+          "url": "https://www.weforum.org/stories/2025/11/antimicrobial-resistance-superbugs-antibiotics/",
+          "publishedAt": "2025-11-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "World Economic Forum",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Without action, resistant infections could cause $3 trillion in global GDP losses per year by 2030"
+        }
+      ],
+      "tags": ["antimicrobial-resistance", "superbugs", "antibiotics", "infectious-disease", "one-health", "global-health", "drug-resistance", "public-health-emergency"],
+      "keywords": ["antimicrobial resistance", "AMR", "superbugs", "antibiotic resistance", "drug-resistant infections", "global health threat"],
+      "metrics": {
+        "searchVolume": 45000,
+        "academicPapers": 15000,
+        "patentApplications": 850,
+        "mediaArticles": 5000,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.92,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "b2c3d4e5-f6a7-48b9-0c1d-2e3f4a5b6c78",
+      "title": "Fragmented Global Disease Surveillance Systems Delay Outbreak Detection and Response",
+      "slug": "fragmented-disease-surveillance-outbreak-detection-gaps",
+      "description": "Global disease surveillance systems remain fragmented and inadequate, creating critical delays in detecting and responding to infectious disease outbreaks. Traditional passive surveillance systems suffer from incomplete and inconsistent case detection, delayed reporting, and poor integration with response mechanisms. Many countries, particularly low- and middle-income nations, lack the basic infrastructure for effective surveillance, with gaps in laboratory capacity, trained personnel, and data systems. The 2014 West Africa Ebola epidemic and subsequent outbreaks have exposed persistent weaknesses in timely disease detection, contact tracing, and quarantine procedures. Progress toward meeting International Health Regulations has been uneven, with many countries unable to meet basic compliance requirements. While digital epidemiology tools offer promise, challenges remain with real-time adaptability, multilingual data handling, misinformation filtering, and policy alignment. A critical gap exists between epidemiological model predictions and healthcare resource allocation, with forecasts often failing to translate into effective coordinated responses. The COVID-19 pandemic demonstrated that even wealthy nations struggled with surveillance integration and data sharing.",
+      "summary": "Disease surveillance systems worldwide suffer from fragmentation, delayed reporting, and infrastructure gaps that hamper early detection of outbreaks. Low-income countries face systematic underreporting while even advanced nations struggle with data integration and real-time response coordination.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+        "name": "Public Health",
+        "slug": "public-health"
+      },
+      "field": {
+        "id": "f8a7b6c5-d4e3-42f1-a0b9-c8d7e6f5a4b3",
+        "name": "Epidemiology",
+        "slug": "epidemiology"
+      },
+      "problemType": "coordination",
+      "problemSubtypes": ["surveillance", "data-integration", "outbreak-response", "global-coordination"],
+      "scope": "global",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 10,
+          "estimate": "Global population at risk during outbreaks",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 500000000000,
+          "timeframe": "per major pandemic"
+        },
+        "qualityOfLife": 7,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 4,
+        "existingProgress": 6,
+        "barriers": [
+          "National sovereignty concerns over data sharing",
+          "Disparate data standards and systems",
+          "Limited laboratory capacity in LMICs",
+          "Political reluctance to report outbreaks",
+          "Funding gaps for surveillance infrastructure"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "5,000+ working on surveillance systems",
+        "fundingLevel": "Moderate - increased post-COVID but still fragmented"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "Reliance on passive, voluntary reporting systems that miss many cases",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of standardized data formats and interoperability between national systems",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Insufficient investment in public health infrastructure in low-income countries",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Political disincentives to report outbreaks due to economic and reputational concerns",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Shortage of trained epidemiologists and laboratory technicians globally",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Delayed detection allows outbreaks to spread beyond containable stages",
+          "type": "direct",
+          "affectedArea": "Disease control",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Underreporting leads to inaccurate risk assessments and resource misallocation",
+          "type": "direct",
+          "affectedArea": "Public health planning",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Local outbreaks escalate into regional epidemics or global pandemics",
+          "type": "cascading",
+          "affectedArea": "Global health security",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Erosion of public trust when outbreaks are discovered through non-official channels",
+          "type": "indirect",
+          "affectedArea": "Public confidence",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "International Health Regulations (IHR)",
+          "description": "WHO framework requiring member states to develop core surveillance capacities and report public health emergencies",
+          "type": "framework",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Uneven compliance", "No enforcement mechanisms", "Reporting delays persist"]
+        },
+        {
+          "name": "ProMED and GPHIN",
+          "description": "Early warning systems using media monitoring and informal reports to detect emerging threats",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Signal-to-noise challenges", "Language barriers", "Verification difficulties"]
+        },
+        {
+          "name": "One Health Surveillance",
+          "description": "Integrated approach monitoring human, animal, and environmental health data for zoonotic threats",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Siloed implementation", "Data integration challenges", "Limited in most countries"]
+        },
+        {
+          "name": "AI-Driven Epidemic Intelligence",
+          "description": "Machine learning systems analyzing diverse data sources for early outbreak signals",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Misinformation filtering", "Real-time adaptability", "Policy integration gaps"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Real-time global data sharing platform with standardized formats across all countries",
+          "gapType": "integration",
+          "opportunity": "Blockchain-secured, interoperable surveillance network with WHO coordination",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Affordable point-of-care diagnostics for resource-limited settings",
+          "gapType": "accessibility",
+          "opportunity": "Paper-based and mobile-connected rapid tests for priority pathogens",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Integration of outbreak predictions with healthcare resource allocation systems",
+          "gapType": "integration",
+          "opportunity": "Real-time decision support systems connecting forecasts to logistics",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "decision-maker",
+          "description": "National health ministries and CDC-equivalent agencies",
+          "examples": ["US CDC", "ECDC", "Africa CDC", "National public health institutes"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "International health organizations coordinating global response",
+          "examples": ["WHO", "GAVI", "Global Fund", "CEPI"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Populations in areas with weak surveillance systems",
+          "examples": ["Rural communities in LMICs", "Urban poor", "Displaced populations"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "expert",
+          "description": "Epidemiologists and public health informaticists",
+          "examples": ["Field epidemiologists", "Data scientists", "Laboratory specialists"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Emerging Challenges and Opportunities in Infectious Disease Epidemiology",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7109842/",
+          "publishedAt": "2020-03-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "PMC/NIH",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Passive systems of disease reporting have proven invaluable, but their limitations in incomplete detection and delayed outbreak identification are well documented"
+        },
+        {
+          "type": "academic",
+          "title": "AI-driven epidemic intelligence: the future of outbreak detection and response",
+          "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1645467/full",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Frontiers",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Several challenges remain including real-time adaptability, multilingual data handling, misinformation, and public health policy alignment"
+        },
+        {
+          "type": "academic",
+          "title": "Progress and challenges in infectious disease surveillance and early warning",
+          "url": "https://www.sciencedirect.com/science/article/pii/S2950347725000027",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "ScienceDirect",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "A gap remains—epidemiological models often function in isolation, failing to integrate outbreak predictions with healthcare resource allocation"
+        }
+      ],
+      "tags": ["disease-surveillance", "outbreak-detection", "global-health-security", "epidemiology", "pandemic-preparedness", "IHR", "one-health"],
+      "keywords": ["disease surveillance", "outbreak detection", "epidemic intelligence", "public health surveillance", "pandemic preparedness"],
+      "metrics": {
+        "searchVolume": 12000,
+        "academicPapers": 8500,
+        "patentApplications": 320,
+        "mediaArticles": 2500,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    }
+  ]
+}

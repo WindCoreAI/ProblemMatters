@@ -1,0 +1,144 @@
+{
+  "id": "session-20260120-202300",
+  "startedAt": "2026-01-20T20:23:00Z",
+  "completedAt": "2026-01-20T20:45:00Z",
+  "target": {
+    "industry": "healthcare-life-sciences",
+    "industryName": "Healthcare & Life Sciences",
+    "domain": "public-health",
+    "domainName": "Public Health",
+    "field": null,
+    "specificTopic": "Environmental health focus"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 5,
+    "problemIds": [
+      "e1f2a3b4-c5d6-47e8-9f0a-1b2c3d4e5f67",
+      "b2c3d4e5-f6a7-48b9-0c1d-2e3f4a5b6c78",
+      "d3e4f5a6-b7c8-49d0-e1f2-3a4b5c6d7e89",
+      "a4b5c6d7-e8f9-40a1-b2c3-4d5e6f7a8b90",
+      "c5d6e7f8-a9b0-41c2-d3e4-5f6a7b8c9d01",
+      "f6a7b8c9-d0e1-42f3-a4b5-6c7d8e9f0a12",
+      "e7b8c9d0-a1f2-43e4-b5c6-7d8e9f0a1b23",
+      "d8c9a0b1-e2f3-44a5-b6c7-8d9e0f1a2b34",
+      "c9d0e1f2-a3b4-45c6-d7e8-9f0a1b2c3d45",
+      "b0a1c2d3-e4f5-46a7-b8c9-0d1e2f3a4b56"
+    ],
+    "problemsByField": {
+      "epidemiology": 2,
+      "health-policy": 2,
+      "population-health": 1,
+      "environmental-health": 5
+    }
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-20T20:23:00Z",
+      "durationMs": 500,
+      "input": {
+        "rawInput": "healthcare public-health environmental-health"
+      },
+      "output": {
+        "industry": "healthcare-life-sciences",
+        "domain": "public-health",
+        "field": null,
+        "focus": "environmental-health"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T20:23:30Z",
+      "durationMs": 180000,
+      "input": {
+        "searchQueries": [
+          "public health challenges problems 2025 2026",
+          "environmental health issues climate change health effects",
+          "epidemiology challenges disease surveillance",
+          "health equity access disparities 2025",
+          "population health social determinants",
+          "antimicrobial resistance superbugs",
+          "public health workforce burnout",
+          "PFAS forever chemicals contamination",
+          "air quality health effects wildfires",
+          "water contamination drinking water safety"
+        ]
+      },
+      "output": {
+        "candidatesFound": 15,
+        "sourcesConsulted": 45
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T20:26:30Z",
+      "durationMs": 300000,
+      "input": {
+        "candidates": 15
+      },
+      "output": {
+        "problemsResearched": 10,
+        "averageSourcesPerProblem": 4
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T20:31:30Z",
+      "durationMs": 120000,
+      "input": {
+        "problemsToValidate": 10
+      },
+      "output": {
+        "approved": 10,
+        "rejected": 0,
+        "averageConfidence": 0.875,
+        "averageImpactScore": 71
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "storage_phase",
+      "timestamp": "2026-01-20T20:33:30Z",
+      "durationMs": 60000,
+      "input": {
+        "problemsToStore": 10
+      },
+      "output": {
+        "filesCreated": [
+          "industries/healthcare-life-sciences/public-health/fields/epidemiology.json",
+          "industries/healthcare-life-sciences/public-health/fields/health-policy.json",
+          "industries/healthcare-life-sciences/public-health/fields/population-health.json",
+          "industries/healthcare-life-sciences/public-health/fields/environmental-health.json"
+        ],
+        "problemsStored": 10
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 1320000,
+    "tokensUsed": 150000,
+    "apiCalls": 12,
+    "sourcesConsulted": 45
+  }
+}
