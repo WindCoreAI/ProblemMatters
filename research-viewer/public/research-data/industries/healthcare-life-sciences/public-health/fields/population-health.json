@@ -1,0 +1,279 @@
+{
+  "field": {
+    "id": "b8c7d6e5-f4a3-42b1-c0d9-e8f7a6b5c4d3",
+    "name": "Population Health",
+    "slug": "population-health",
+    "description": "The health outcomes of a group of individuals, including the distribution of outcomes within the group, addressing social determinants of health, health disparities, community health, health promotion, disease prevention, and health literacy."
+  },
+  "domain": {
+    "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+    "name": "Public Health",
+    "slug": "public-health"
+  },
+  "industry": {
+    "id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+    "name": "Healthcare & Life Sciences",
+    "slug": "healthcare-life-sciences"
+  },
+  "problems": [
+    {
+      "id": "c5d6e7f8-a9b0-41c2-d3e4-5f6a7b8c9d01",
+      "title": "Widespread Limited Health Literacy Undermines Disease Prevention and Self-Management",
+      "slug": "limited-health-literacy-undermines-disease-prevention",
+      "description": "Over one-third of adults in the United States have limited personal health literacy, severely impacting their ability to obtain, process, and understand basic health information needed to make appropriate health decisions. Adults with limited health literacy obtain less information from disease prevention and control materials, are less likely to undergo screening tests, and struggle to successfully manage chronic illnesses. Low health literacy is tightly linked to multiple social determinants of health, with educational attainment being the strongest predictor. Research demonstrates significant associations between low health literacy and poorer outcomes across numerous conditions: reduced mammography screening, poorer physician-patient communication, higher decision regret in cancer treatment, and associations with obesity and poor dietary choices. The field faces significant measurement challenges, with over 200 unique assessment tools created, none of which provides comprehensive, culturally-appropriate measurement across diverse populations. Many conventional literacy assessments contain cultural and linguistic assumptions from majority populations that may mischaracterize health literacy in marginalized communities. Health literacy is increasingly recognized as a modifiable risk factor that, if addressed at scale, could significantly reduce socioeconomic disparities in health outcomes.",
+      "summary": "Over one-third of U.S. adults have limited health literacy, reducing their ability to understand prevention information, navigate healthcare, and manage chronic conditions. This modifiable risk factor contributes significantly to health disparities and preventable poor outcomes.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+        "name": "Public Health",
+        "slug": "public-health"
+      },
+      "field": {
+        "id": "b8c7d6e5-f4a3-42b1-c0d9-e8f7a6b5c4d3",
+        "name": "Population Health",
+        "slug": "population-health"
+      },
+      "problemType": "knowledge",
+      "problemSubtypes": ["health-literacy", "patient-education", "health-communication", "prevention"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "110+ million Americans with limited health literacy",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 238000000000,
+          "timeframe": "annual healthcare cost attributable to low health literacy"
+        },
+        "qualityOfLife": 7,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 6.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Deep roots in educational disparities",
+          "Measurement challenges across populations",
+          "Health system complexity resistant to simplification",
+          "Time constraints in clinical encounters",
+          "Cultural and linguistic diversity"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Growing research community",
+        "fundingLevel": "Moderate - often embedded in other initiatives"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Educational disparities creating foundational literacy and numeracy gaps",
+          "category": "cultural",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Healthcare system complexity with jargon, complex documents, and fragmented navigation",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Rapid proliferation of health misinformation making evaluation difficult",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Aging population facing cognitive decline affecting information processing",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Language barriers for non-English speakers with limited translated materials",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Lower utilization of preventive services including cancer screenings and vaccinations",
+          "type": "direct",
+          "affectedArea": "Prevention",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Poor management of chronic conditions leading to preventable complications",
+          "type": "direct",
+          "affectedArea": "Chronic disease",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Higher emergency department utilization and hospitalization rates",
+          "type": "direct",
+          "affectedArea": "Healthcare utilization",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Greater susceptibility to health misinformation and harmful practices",
+          "type": "indirect",
+          "affectedArea": "Public health",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Impaired shared decision-making and informed consent",
+          "type": "direct",
+          "affectedArea": "Patient autonomy",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Plain Language Health Materials",
+          "description": "Redesigning health information using plain language principles, shorter sentences, and clear formatting",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Inconsistent implementation", "May oversimplify complex topics", "Time to develop"]
+        },
+        {
+          "name": "Teach-Back Method",
+          "description": "Communication technique where patients explain back information to verify understanding",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Requires training", "Time-intensive in busy practices", "Patient comfort varies"]
+        },
+        {
+          "name": "Health Literacy Universal Precautions",
+          "description": "Systematic approach assuming all patients may have difficulty understanding health information",
+          "type": "framework",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Implementation variability", "Resource requirements", "Staff training needs"]
+        },
+        {
+          "name": "Community Health Worker Navigation",
+          "description": "Trained community members helping patients navigate healthcare and understand health information",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Funding sustainability", "Scalability", "Variable training quality"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Culturally-appropriate, validated health literacy assessment tools for diverse populations",
+          "gapType": "quality",
+          "opportunity": "Multi-dimensional assessments developed with community input",
+          "difficulty": "medium"
+        },
+        {
+          "description": "System-wide simplification of healthcare navigation and documentation",
+          "gapType": "scale",
+          "opportunity": "AI-powered translation of complex medical information into plain language",
+          "difficulty": "high"
+        },
+        {
+          "description": "Sustainable funding for health literacy interventions in clinical settings",
+          "gapType": "cost",
+          "opportunity": "Integration into value-based payment models",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Addressing misinformation while respecting diverse information sources",
+          "gapType": "coverage",
+          "opportunity": "Trusted community-based health information networks",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Adults with limited health literacy",
+          "examples": ["Elderly patients", "Non-native English speakers", "Those with limited formal education"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Healthcare providers responsible for patient communication",
+          "examples": ["Primary care physicians", "Nurses", "Pharmacists", "Health educators"],
+          "interest": "medium",
+          "influence": "medium"
+        },
+        {
+          "type": "expert",
+          "description": "Health communication and health literacy researchers",
+          "examples": ["Health communication scholars", "Health literacy specialists", "Patient education experts"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Healthcare organizations setting communication standards",
+          "examples": ["Hospital systems", "Health plans", "Professional societies", "CMS"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Health Literacy, Social Determinants of Health, and Disease Prevention and Control",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7889072/",
+          "publishedAt": "2021-02-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "PMC/NIH",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Adults with limited health literacy obtain less information from disease prevention materials and are less likely to undergo screening"
+        },
+        {
+          "type": "government",
+          "title": "Health Literacy - Healthy People 2030",
+          "url": "https://odphp.health.gov/healthypeople/priority-areas/social-determinants-health/literature-summaries/health-literacy",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "HHS/ODPHP",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "Over a third of adults in the U.S. have limited personal health literacy"
+        },
+        {
+          "type": "academic",
+          "title": "Social Determinants, Health Literacy, and Disparities: Intersections and Controversies",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8356483/",
+          "publishedAt": "2021-07-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "PMC/NIH",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Over 200 unique measures have been created and employed to assess health literacy"
+        }
+      ],
+      "tags": ["health-literacy", "patient-education", "disease-prevention", "health-communication", "social-determinants", "chronic-disease-management"],
+      "keywords": ["health literacy", "patient education", "health communication", "disease prevention", "self-management"],
+      "metrics": {
+        "searchVolume": 18000,
+        "academicPapers": 9500,
+        "patentApplications": 150,
+        "mediaArticles": 2200,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    }
+  ]
+}

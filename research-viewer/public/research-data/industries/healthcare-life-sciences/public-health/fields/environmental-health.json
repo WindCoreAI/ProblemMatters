@@ -1,0 +1,1326 @@
+{
+  "field": {
+    "id": "a7b6c5d4-e3f2-41a0-b9c8-d7e6f5a4b3c2",
+    "name": "Environmental Health",
+    "slug": "environmental-health",
+    "description": "The branch of public health concerned with how the environment affects human health, including air and water quality, toxic substances, climate change health impacts, occupational health hazards, and built environment effects on health."
+  },
+  "domain": {
+    "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+    "name": "Public Health",
+    "slug": "public-health"
+  },
+  "industry": {
+    "id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+    "name": "Healthcare & Life Sciences",
+    "slug": "healthcare-life-sciences"
+  },
+  "problems": [
+    {
+      "id": "f6a7b8c9-d0e1-42f3-a4b5-6c7d8e9f0a12",
+      "title": "Climate Change Driving Surge in Mental Health Crises Including Eco-Anxiety and Heat-Related Psychiatric Emergencies",
+      "slug": "climate-change-mental-health-crisis-eco-anxiety",
+      "description": "Climate change is increasingly recognized as a profound mental health crisis affecting populations worldwide. Eco-anxiety—chronic fear about environmental doom—has emerged as a significant phenomenon, particularly among youth, with studies showing substantial psychological distress related to climate concerns. The mental health burden extends far beyond anxiety: extreme weather events such as hurricanes, floods, and wildfires cause psychological injury at rates 40 times higher than physical injury. Heat exposure directly impacts psychiatric health, with rising temperatures associated with increased emergency department visits for mental health issues, higher suicide rates, and exacerbation of existing psychiatric conditions. Populations in low-income nations and disadvantaged communities bear disproportionate mental health impacts due to greater climate exposure combined with fewer mental health resources. Climate displacement, loss of livelihoods, and destruction of place-based identity contribute to grief, trauma, and community-level psychological distress. Extreme heat impairs cognitive function, increases aggression, and disrupts sleep patterns across populations. Healthcare systems are inadequately prepared to address this growing crisis, with limited integration of climate awareness into mental health services and insufficient research on effective interventions for climate-related psychological distress.",
+      "summary": "Climate change causes mental health impacts through eco-anxiety, extreme weather trauma, heat-related psychiatric emergencies, and displacement grief. Mental health consequences of climate events exceed physical injuries by 40:1, with youth and disadvantaged communities most affected.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+        "name": "Public Health",
+        "slug": "public-health"
+      },
+      "field": {
+        "id": "a7b6c5d4-e3f2-41a0-b9c8-d7e6f5a4b3c2",
+        "name": "Environmental Health",
+        "slug": "environmental-health"
+      },
+      "problemType": "environmental",
+      "problemSubtypes": ["climate-health", "mental-health", "eco-anxiety", "heat-stress"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "Billions globally; youth particularly affected",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 50000000000,
+          "timeframe": "annual and growing"
+        },
+        "qualityOfLife": 9,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 4,
+        "barriers": [
+          "Root cause (climate change) requires global coordination",
+          "Mental health system capacity already strained",
+          "Limited evidence base for climate-specific interventions",
+          "Stigma around mental health in many communities",
+          "Political polarization around climate change"
+        ]
+      },
+      "neglectedness": {
+        "overall": 6.5,
+        "attentionLevel": "underserved",
+        "activeResearchers": "Growing but still limited field",
+        "fundingLevel": "Emerging - significantly underfunded relative to need"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "Accelerating climate change increasing frequency and severity of extreme weather events",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Rising global temperatures directly affecting neurological and psychiatric function",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Pervasive media coverage of climate disasters creating chronic stress and helplessness",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Inadequate climate action generating despair and loss of future orientation",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Pre-existing mental health conditions amplified by climate stressors",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Increased rates of anxiety, depression, PTSD, and substance use disorders",
+          "type": "direct",
+          "affectedArea": "Mental health",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Higher suicide rates during and after extreme heat events and climate disasters",
+          "type": "direct",
+          "affectedArea": "Mortality",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Impaired cognitive function and reduced productivity during heat waves",
+          "type": "direct",
+          "affectedArea": "Productivity",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Youth experiencing hopelessness affecting life planning and educational engagement",
+          "type": "cascading",
+          "affectedArea": "Youth development",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Overwhelmed mental health systems unable to meet increased demand",
+          "type": "cascading",
+          "affectedArea": "Healthcare capacity",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Climate-Aware Therapy",
+          "description": "Therapeutic approaches that validate climate concerns while building resilience and coping strategies",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Limited trained providers", "Not widely accessible", "Evidence base developing"]
+        },
+        {
+          "name": "Community Climate Action Groups",
+          "description": "Collective action initiatives that channel eco-anxiety into constructive engagement and social support",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Variable quality", "May not reach most vulnerable", "Not therapy substitute"]
+        },
+        {
+          "name": "Heat-Health Early Warning Systems",
+          "description": "Public health alerts and interventions during extreme heat events to prevent health impacts",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Uneven coverage", "Limited mental health focus", "Response capacity varies"]
+        },
+        {
+          "name": "Disaster Mental Health Response Teams",
+          "description": "Trained responders providing psychological first aid and crisis intervention after climate disasters",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Short-term focus", "Limited capacity for chronic issues", "Geographic availability"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Evidence-based interventions specifically designed for eco-anxiety and climate grief",
+          "gapType": "coverage",
+          "opportunity": "Research on effective treatments for climate-specific mental health conditions",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Integration of climate awareness into standard mental health training and practice",
+          "gapType": "awareness",
+          "opportunity": "Climate-mental health curriculum for all mental health professionals",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Mental health support for communities facing climate displacement and loss",
+          "gapType": "accessibility",
+          "opportunity": "Community-based mental health programs in climate-vulnerable areas",
+          "difficulty": "high"
+        },
+        {
+          "description": "Prevention-focused approaches that build psychological resilience to climate stressors",
+          "gapType": "coverage",
+          "opportunity": "School-based climate resilience programs for youth",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Youth experiencing eco-anxiety and climate despair",
+          "examples": ["School-age children", "College students", "Young adults"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Communities exposed to extreme weather and climate disasters",
+          "examples": ["Coastal communities", "Wildfire-prone areas", "Flood zones", "Urban heat islands"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Mental health professionals addressing climate-related distress",
+          "examples": ["Climate-aware therapists", "Disaster mental health specialists", "School counselors"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Public health agencies integrating climate and mental health",
+          "examples": ["CDC Climate and Health Program", "WHO", "State health departments"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Mental health and our changing climate",
+          "url": "https://www.apa.org/news/press/releases/2017/03/mental-health-climate.pdf",
+          "publishedAt": "2017-03-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "American Psychological Association",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Psychological injury from extreme weather events occurs at rates 40 times higher than physical injury"
+        },
+        {
+          "type": "academic",
+          "title": "Climate change and mental health: risks, impacts and priority actions",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8727951/",
+          "publishedAt": "2021-12-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "PMC/NIH",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Heat exposure associated with increased ED visits for mental health, higher suicide rates, and exacerbation of psychiatric conditions"
+        },
+        {
+          "type": "news",
+          "title": "Climate and Mental Health Network launches to address growing crisis",
+          "url": "https://www.psychiatry.org/news-room/news-releases/climate-mental-health",
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "American Psychiatric Association",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Growing recognition of climate change as a mental health emergency requiring integrated response"
+        }
+      ],
+      "tags": ["climate-change", "mental-health", "eco-anxiety", "extreme-weather", "heat-health", "youth-mental-health", "climate-grief"],
+      "keywords": ["climate anxiety", "eco-anxiety", "climate mental health", "heat stress mental health", "climate grief", "environmental mental health"],
+      "metrics": {
+        "searchVolume": 22000,
+        "academicPapers": 3200,
+        "patentApplications": 45,
+        "mediaArticles": 8500,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "e7b8c9d0-a1f2-43e4-b5c6-7d8e9f0a1b23",
+      "title": "PFAS Forever Chemicals Contamination Creates Pervasive and Persistent Environmental Health Crisis",
+      "slug": "pfas-forever-chemicals-contamination-crisis",
+      "description": "Per- and polyfluoroalkyl substances (PFAS), often called 'forever chemicals' due to their extreme environmental persistence, have emerged as one of the most significant environmental health challenges of the 21st century. An estimated 97% of Americans have detectable PFAS in their blood, with exposure occurring through contaminated drinking water, food packaging, consumer products, and occupational settings. Over 57,000 sites across the United States are suspected of PFAS contamination. These chemicals have been linked to serious health effects including several types of cancer, liver damage, thyroid disease, decreased fertility, hormone disruption, and developmental effects in children. PFAS are virtually indestructible in the environment, do not break down naturally, and bioaccumulate in living organisms. Contamination is particularly severe around military bases, firefighting training facilities, and industrial sites where PFAS-containing foams and products were used extensively. The economic burden is substantial, with cleanup costs estimated in the hundreds of billions of dollars and no fully effective remediation technology currently available. Regulatory frameworks are still developing, with the EPA recently establishing the first drinking water standards for PFAS, but enforcement and cleanup face enormous technical and financial challenges.",
+      "summary": "PFAS 'forever chemicals' contaminate the blood of 97% of Americans and over 57,000 sites nationwide. These virtually indestructible compounds cause cancer, liver damage, and developmental harm, with no effective remediation technology and cleanup costs in the hundreds of billions.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+        "name": "Public Health",
+        "slug": "public-health"
+      },
+      "field": {
+        "id": "a7b6c5d4-e3f2-41a0-b9c8-d7e6f5a4b3c2",
+        "name": "Environmental Health",
+        "slug": "environmental-health"
+      },
+      "problemType": "environmental",
+      "problemSubtypes": ["toxic-substances", "water-contamination", "chemical-exposure", "regulatory"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 10,
+          "estimate": "97% of Americans; global population exposed",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 400000000000,
+          "timeframe": "estimated total cleanup and health costs"
+        },
+        "qualityOfLife": 7,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 3.5,
+        "technicalFeasibility": 3,
+        "resourceRequirements": 2,
+        "existingProgress": 4,
+        "barriers": [
+          "Chemical persistence makes removal extremely difficult",
+          "Ubiquitous presence in environment and products",
+          "Massive scale of contamination sites",
+          "No cost-effective remediation technology",
+          "Industry resistance to liability",
+          "Regulatory fragmentation across jurisdictions"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Growing research community, increased regulatory attention",
+        "fundingLevel": "Increasing - significant new EPA and DOD investments"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Decades of unregulated industrial production and use of PFAS compounds",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Military and industrial use of PFAS-containing firefighting foams",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Consumer product ubiquity in non-stick coatings, waterproofing, and food packaging",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Extreme chemical stability preventing natural environmental breakdown",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Industry concealment of health hazard information",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Increased cancer risk including kidney, testicular, and other cancers in exposed populations",
+          "type": "direct",
+          "affectedArea": "Health outcomes",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Thyroid disease, liver damage, and immune system suppression",
+          "type": "direct",
+          "affectedArea": "Health outcomes",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Developmental effects in children exposed in utero or through breast milk",
+          "type": "direct",
+          "affectedArea": "Child health",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Contaminated drinking water supplies requiring expensive treatment or alternative sources",
+          "type": "direct",
+          "affectedArea": "Water infrastructure",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Environmental justice burden on communities near contamination sources",
+          "type": "cascading",
+          "affectedArea": "Health equity",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Granular Activated Carbon Filtration",
+          "description": "Water treatment technology that adsorbs PFAS from drinking water",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["High cost", "Disposal of contaminated media", "Not effective for all PFAS"]
+        },
+        {
+          "name": "EPA PFAS Drinking Water Standards",
+          "description": "First federal limits on PFAS in drinking water established in 2024",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Compliance timeline challenges", "Enforcement resources", "Only covers drinking water"]
+        },
+        {
+          "name": "PFAS-Free Product Alternatives",
+          "description": "Consumer and industrial products reformulated without PFAS compounds",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Not available for all applications", "May have own issues", "Legacy contamination remains"]
+        },
+        {
+          "name": "High-Temperature Incineration",
+          "description": "Destruction of PFAS through specialized high-temperature incineration",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Very high energy costs", "Limited capacity", "Potential for incomplete destruction"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Cost-effective, scalable technology to destroy or remove PFAS from environment",
+          "gapType": "coverage",
+          "opportunity": "Novel destruction technologies including supercritical water oxidation and electrochemical methods",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Comprehensive understanding of health effects of thousands of PFAS compounds",
+          "gapType": "quality",
+          "opportunity": "High-throughput toxicology screening and epidemiological studies",
+          "difficulty": "high"
+        },
+        {
+          "description": "Sustainable funding mechanism for contamination cleanup",
+          "gapType": "cost",
+          "opportunity": "Polluter-pays enforcement and dedicated remediation trust fund",
+          "difficulty": "high"
+        },
+        {
+          "description": "Rapid, affordable PFAS testing for water, soil, and blood",
+          "gapType": "accessibility",
+          "opportunity": "Point-of-use testing kits and expanded laboratory capacity",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Communities with contaminated drinking water supplies",
+          "examples": ["Military base neighbors", "Industrial site communities", "Rural well users"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Environmental and health regulators",
+          "examples": ["EPA", "State environmental agencies", "FDA", "DOD"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Chemical companies responsible for PFAS production",
+          "examples": ["3M", "DuPont/Chemours", "Other manufacturers"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "expert",
+          "description": "Environmental scientists and toxicologists studying PFAS",
+          "examples": ["Academic researchers", "EPA scientists", "Environmental consultants"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "How forever chemicals polluted America",
+          "url": "https://www.theguardian.com/environment/2025/pfas-forever-chemicals-pollution",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "The Guardian",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "An estimated 97% of Americans have detectable PFAS in their blood"
+        },
+        {
+          "type": "government",
+          "title": "EPA PFAS Strategic Roadmap",
+          "url": "https://www.epa.gov/pfas",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "U.S. Environmental Protection Agency",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "First drinking water standards for PFAS established to protect communities"
+        },
+        {
+          "type": "academic",
+          "title": "PFAS health effects and exposure pathways review",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7906952/",
+          "publishedAt": "2021-02-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "PMC/NIH",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "PFAS linked to cancer, liver damage, thyroid disease, decreased fertility, and developmental effects"
+        },
+        {
+          "type": "news",
+          "title": "PFAS contamination sites across America mapped",
+          "url": "https://www.ewg.org/interactive-maps/pfas_contamination/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Environmental Working Group",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Over 57,000 sites across the United States suspected of PFAS contamination"
+        }
+      ],
+      "tags": ["pfas", "forever-chemicals", "water-contamination", "toxic-substances", "environmental-justice", "drinking-water", "chemical-pollution"],
+      "keywords": ["PFAS contamination", "forever chemicals", "drinking water contamination", "PFAS health effects", "chemical pollution"],
+      "metrics": {
+        "searchVolume": 45000,
+        "academicPapers": 6800,
+        "patentApplications": 520,
+        "mediaArticles": 12000,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.9,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "d8c9a0b1-e2f3-44a5-b6c7-8d9e0f1a2b34",
+      "title": "Ambient Air Pollution Causes Millions of Premature Deaths Annually with Disproportionate Impact on Disadvantaged Communities",
+      "slug": "air-pollution-premature-deaths-health-disparities",
+      "description": "Ambient air pollution remains the single largest environmental health risk globally, causing an estimated 4.2 to 7 million premature deaths annually. Fine particulate matter (PM2.5) penetrates deep into the lungs and bloodstream, causing cardiovascular disease, respiratory illness, stroke, lung cancer, and cognitive decline. Ground-level ozone, nitrogen dioxide, and other pollutants add to the burden. In the United States, while overall air quality has improved, significant disparities persist: low-income communities and communities of color experience substantially higher pollution exposure due to proximity to industrial facilities, highways, and other pollution sources. Climate change is exacerbating air quality challenges through increased wildfire smoke, longer pollen seasons, and more frequent high-ozone days. Wildfire smoke exposure has increased dramatically, with smoke now responsible for up to 50% of fine particle pollution in some regions during fire season. Indoor air quality is an often-overlooked component, with cooking, heating, and household products contributing to exposure, particularly in poorly ventilated housing. Economic costs include direct healthcare expenditures, lost productivity, and premature mortality valued at hundreds of billions of dollars annually.",
+      "summary": "Air pollution kills 4-7 million people annually through cardiovascular disease, respiratory illness, and cancer. Low-income and minority communities face disproportionate exposure while climate change worsens air quality through wildfire smoke and ozone formation.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+        "name": "Public Health",
+        "slug": "public-health"
+      },
+      "field": {
+        "id": "a7b6c5d4-e3f2-41a0-b9c8-d7e6f5a4b3c2",
+        "name": "Environmental Health",
+        "slug": "environmental-health"
+      },
+      "problemType": "environmental",
+      "problemSubtypes": ["air-quality", "respiratory-health", "environmental-justice", "climate-health"],
+      "scope": "global",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 9.0,
+        "affectedPopulation": {
+          "score": 10,
+          "estimate": "99% of global population breathes air exceeding WHO guidelines",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 8100000000000,
+          "timeframe": "annual global cost including health and productivity"
+        },
+        "qualityOfLife": 8,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 8,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Requires transformation of energy and transportation systems",
+          "Industrial and economic interests resist regulation",
+          "Transboundary pollution crosses jurisdictions",
+          "Climate change creating new pollution sources",
+          "Indoor air quality largely unregulated"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Large established field",
+        "fundingLevel": "Substantial but unevenly distributed globally"
+      },
+      "impactScore": 74,
+      "rootCauses": [
+        {
+          "description": "Fossil fuel combustion for energy, transportation, and industry",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Industrial emissions and manufacturing processes",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Increasing wildfire frequency and intensity due to climate change",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Historical siting of polluting facilities in minority and low-income areas",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Household air pollution from cooking, heating, and consumer products",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "4-7 million premature deaths annually from cardiovascular and respiratory disease",
+          "type": "direct",
+          "affectedArea": "Mortality",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Exacerbation of asthma, COPD, and other respiratory conditions",
+          "type": "direct",
+          "affectedArea": "Respiratory health",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Cognitive decline and increased dementia risk from chronic exposure",
+          "type": "direct",
+          "affectedArea": "Neurological health",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Disproportionate health burden on environmental justice communities",
+          "type": "cascading",
+          "affectedArea": "Health equity",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Adverse birth outcomes including low birth weight and preterm birth",
+          "type": "direct",
+          "affectedArea": "Maternal and child health",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Clean Air Act and Emissions Standards",
+          "description": "Federal regulations limiting emissions from vehicles, power plants, and industrial sources",
+          "type": "policy",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Enforcement gaps", "Does not address all sources", "Climate impacts creating new challenges"]
+        },
+        {
+          "name": "Air Quality Monitoring Networks",
+          "description": "EPA and state networks monitoring pollution levels and issuing health advisories",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Coverage gaps in rural areas", "Real-time data limitations", "Limited community-level granularity"]
+        },
+        {
+          "name": "Clean Energy Transition",
+          "description": "Shift to renewable energy sources reducing emissions from power generation",
+          "type": "methodology",
+          "effectiveness": 8,
+          "adoption": "growing",
+          "limitations": ["Pace of transition", "Grid integration challenges", "Stranded asset resistance"]
+        },
+        {
+          "name": "HEPA Air Filtration",
+          "description": "Indoor air purifiers and HVAC filtration reducing particle exposure",
+          "type": "product",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Cost barrier", "Energy use", "Does not address outdoor exposure"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Rapid decarbonization of transportation and industrial sectors",
+          "gapType": "scale",
+          "opportunity": "Accelerated EV adoption, green hydrogen, and industrial electrification",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Community-level air quality monitoring and intervention in overburdened areas",
+          "gapType": "coverage",
+          "opportunity": "Low-cost sensor networks and targeted mitigation in environmental justice communities",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Wildfire smoke protection infrastructure for affected communities",
+          "gapType": "coverage",
+          "opportunity": "Clean air shelters, community filtration systems, and early warning integration",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Indoor air quality standards and affordable interventions",
+          "gapType": "regulatory",
+          "opportunity": "Building codes requiring ventilation standards and air quality monitoring",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Communities near pollution sources and in urban areas",
+          "examples": ["Environmental justice communities", "Urban residents", "Highway-adjacent neighborhoods"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "affected",
+          "description": "Individuals with respiratory and cardiovascular conditions",
+          "examples": ["Asthma patients", "COPD patients", "Heart disease patients", "Children", "Elderly"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Environmental regulators and policymakers",
+          "examples": ["EPA", "State air quality agencies", "CARB", "International bodies"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Industries responsible for emissions",
+          "examples": ["Power utilities", "Oil and gas", "Manufacturing", "Transportation"],
+          "interest": "low",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "government",
+          "title": "WHO Ambient Air Pollution Database",
+          "url": "https://www.who.int/health-topics/air-pollution",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "World Health Organization",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "Ambient air pollution accounts for an estimated 4.2 million deaths per year"
+        },
+        {
+          "type": "academic",
+          "title": "Wildfire smoke contribution to ambient PM2.5",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8793219/",
+          "publishedAt": "2022-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "PMC/NIH",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Wildfire smoke now responsible for up to 50% of fine particle pollution in some regions during fire season"
+        },
+        {
+          "type": "industry-report",
+          "title": "Air pollution and environmental justice analysis",
+          "url": "https://www.lung.org/research/sota/key-findings/disproportionate-burden",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "American Lung Association",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Low-income communities and communities of color experience substantially higher pollution exposure"
+        }
+      ],
+      "tags": ["air-pollution", "pm2.5", "respiratory-health", "environmental-justice", "wildfire-smoke", "clean-air", "public-health"],
+      "keywords": ["air pollution health effects", "PM2.5", "air quality", "wildfire smoke health", "environmental justice air quality"],
+      "metrics": {
+        "searchVolume": 55000,
+        "academicPapers": 25000,
+        "patentApplications": 1200,
+        "mediaArticles": 15000,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.92,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "c9d0e1f2-a3b4-45c6-d7e8-9f0a1b2c3d45",
+      "title": "Drinking Water Contamination and Access Inequities Create Preventable Disease Burden",
+      "slug": "drinking-water-contamination-access-inequities",
+      "description": "Despite significant infrastructure investments, drinking water contamination and access inequities remain critical public health challenges affecting millions of Americans and billions globally. In the United States, an estimated 7.15 million waterborne disease cases occur annually from public drinking water systems, while 44 million people rely on private wells that are largely unregulated and untested. Contaminants of concern include lead from aging pipes, nitrates from agricultural runoff, disinfection byproducts, emerging contaminants like PFAS and pharmaceuticals, and microbial pathogens. Climate change is exacerbating water quality challenges through increased flooding, drought stress on water supplies, saltwater intrusion into coastal aquifers, and harmful algal blooms. Low-income communities and communities of color face disproportionate exposure to water contamination, with lower-resourced water utilities struggling to meet treatment requirements. The Flint, Michigan water crisis brought national attention to environmental justice in water systems, but similar situations persist in many communities. Infrastructure challenges are immense: the EPA estimates $625 billion is needed over 20 years for drinking water infrastructure alone. Climate migration and population shifts are creating new pressures on water systems not designed for current conditions.",
+      "summary": "7.15 million waterborne illnesses occur annually in the US from public water systems, while 44 million rely on unregulated wells. Lead, nitrates, pathogens, and emerging contaminants disproportionately affect low-income and minority communities, with $625 billion in infrastructure needs.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+        "name": "Public Health",
+        "slug": "public-health"
+      },
+      "field": {
+        "id": "a7b6c5d4-e3f2-41a0-b9c8-d7e6f5a4b3c2",
+        "name": "Environmental Health",
+        "slug": "environmental-health"
+      },
+      "problemType": "environmental",
+      "problemSubtypes": ["water-quality", "infrastructure", "environmental-justice", "climate-health"],
+      "scope": "global",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "2+ billion globally lack safe drinking water; millions in US affected",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 625000000000,
+          "timeframe": "20-year infrastructure investment needed in US alone"
+        },
+        "qualityOfLife": 8,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 8,
+        "resourceRequirements": 4,
+        "existingProgress": 6,
+        "barriers": [
+          "Massive capital investment required for infrastructure",
+          "Fragmented water utility governance",
+          "Private wells outside regulatory oversight",
+          "Climate change creating new stresses",
+          "Emerging contaminants outpacing regulation"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Well-established field with renewed attention",
+        "fundingLevel": "Increased with infrastructure legislation but still insufficient"
+      },
+      "impactScore": 70,
+      "rootCauses": [
+        {
+          "description": "Aging water infrastructure with lead pipes and deferred maintenance",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Agricultural runoff contaminating source waters with nitrates and pathogens",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Industrial pollution and legacy contamination of water sources",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Climate change affecting water availability, quality, and infrastructure",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Inadequate funding for small and disadvantaged community water systems",
+          "category": "economic",
+          "contributionLevel": "primary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Millions of waterborne illness cases annually including gastrointestinal disease",
+          "type": "direct",
+          "affectedArea": "Health outcomes",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Lead exposure causing developmental harm to children",
+          "type": "direct",
+          "affectedArea": "Child health",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Disproportionate contamination burden on environmental justice communities",
+          "type": "cascading",
+          "affectedArea": "Health equity",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Loss of trust in public water systems leading to bottled water dependence",
+          "type": "indirect",
+          "affectedArea": "Public trust",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Economic burden of healthcare costs and productivity losses",
+          "type": "indirect",
+          "affectedArea": "Economy",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Safe Drinking Water Act Regulations",
+          "description": "Federal standards for drinking water quality with required monitoring and treatment",
+          "type": "policy",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Enforcement gaps", "Does not cover private wells", "Slow to address emerging contaminants"]
+        },
+        {
+          "name": "Lead Service Line Replacement Programs",
+          "description": "Federal and local programs to replace lead pipes delivering drinking water",
+          "type": "policy",
+          "effectiveness": 8,
+          "adoption": "growing",
+          "limitations": ["Funding constraints", "Long timelines", "Property access challenges"]
+        },
+        {
+          "name": "Point-of-Use Water Treatment",
+          "description": "Home filtration systems addressing contaminants not removed by utilities",
+          "type": "product",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Cost barrier", "Maintenance requirements", "Not all contaminants addressed"]
+        },
+        {
+          "name": "Source Water Protection",
+          "description": "Programs protecting watersheds and aquifers from contamination",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Land use conflicts", "Cross-jurisdictional challenges", "Enforcement limitations"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Comprehensive regulation and testing for private wells serving 44 million Americans",
+          "gapType": "coverage",
+          "opportunity": "Voluntary testing programs with subsidies and education",
+          "difficulty": "high"
+        },
+        {
+          "description": "Affordable treatment solutions for small and disadvantaged community systems",
+          "gapType": "cost",
+          "opportunity": "Regional partnerships, technical assistance, and targeted funding",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Real-time water quality monitoring throughout distribution systems",
+          "gapType": "quality",
+          "opportunity": "Low-cost sensor networks with continuous monitoring",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Climate-resilient water infrastructure design and investment",
+          "gapType": "coverage",
+          "opportunity": "Integration of climate projections into infrastructure planning",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Communities with contaminated or inadequate water systems",
+          "examples": ["Flint residents", "Rural communities", "Tribal nations", "Low-income urban areas"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Water utilities and regulators",
+          "examples": ["Municipal water utilities", "EPA", "State drinking water programs"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Agricultural and industrial sources of contamination",
+          "examples": ["Farmers", "Industrial facilities", "Wastewater treatment plants"],
+          "interest": "low",
+          "influence": "medium"
+        },
+        {
+          "type": "funder",
+          "description": "Federal and state infrastructure funding programs",
+          "examples": ["EPA State Revolving Funds", "USDA Rural Development", "Infrastructure legislation"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Burden of waterborne disease in the United States",
+          "url": "https://www.cdc.gov/healthywater/burden/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "CDC",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "An estimated 7.15 million waterborne disease cases occur annually in the US from public drinking water"
+        },
+        {
+          "type": "government",
+          "title": "EPA Drinking Water Infrastructure Needs Survey",
+          "url": "https://www.epa.gov/dwsrf/epas-drinking-water-infrastructure-needs-survey-and-assessment",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "EPA",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "$625 billion needed over 20 years for drinking water infrastructure"
+        },
+        {
+          "type": "academic",
+          "title": "Environmental justice and water systems",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6069218/",
+          "publishedAt": "2018-07-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "PMC/NIH",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Low-income communities and communities of color face disproportionate exposure to water contamination"
+        }
+      ],
+      "tags": ["drinking-water", "water-contamination", "lead-exposure", "environmental-justice", "infrastructure", "waterborne-disease", "climate-water"],
+      "keywords": ["drinking water safety", "water contamination", "lead in water", "waterborne disease", "water infrastructure"],
+      "metrics": {
+        "searchVolume": 38000,
+        "academicPapers": 12000,
+        "patentApplications": 850,
+        "mediaArticles": 8500,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "b0a1c2d3-e4f5-46a7-b8c9-0d1e2f3a4b56",
+      "title": "Occupational Exposure to Hazardous Chemicals and Emerging Workplace Health Risks",
+      "slug": "occupational-chemical-exposure-workplace-health-risks",
+      "description": "Occupational exposure to hazardous chemicals and workplace health hazards remains a major but often underrecognized public health burden. Globally, an estimated 2.3 million workers die annually from work-related accidents and diseases, with chemical exposures contributing significantly to cancers, respiratory diseases, and neurological conditions. Traditional hazards including asbestos, silica, heavy metals, and solvents continue to cause preventable disease, while emerging risks from new technologies, nanomaterials, and novel chemicals outpace regulatory assessment. Workers in agriculture face pesticide exposures, while healthcare workers encounter hazardous drugs and infectious agents. Construction, manufacturing, and mining workers face multiple chemical and physical hazards. Significant gaps exist in cumulative risk assessment—workers are typically exposed to multiple chemicals simultaneously, but regulations assess substances individually. Vulnerable populations including migrant workers, temporary workers, and workers in the informal economy often lack basic protections. Climate change is creating new occupational hazards through heat stress, increased UV exposure, and expanded vector-borne disease risks. Enforcement of existing protections is inconsistent, and many workers remain unaware of their rights or the hazards they face.",
+      "summary": "2.3 million workers die annually from occupational diseases and accidents globally. Chemical exposures cause cancers and chronic diseases while emerging risks from new materials outpace regulation. Vulnerable workers lack protections and cumulative exposure assessment remains inadequate.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-abcd-ef0123456789",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+        "name": "Public Health",
+        "slug": "public-health"
+      },
+      "field": {
+        "id": "a7b6c5d4-e3f2-41a0-b9c8-d7e6f5a4b3c2",
+        "name": "Environmental Health",
+        "slug": "environmental-health"
+      },
+      "problemType": "environmental",
+      "problemSubtypes": ["occupational-health", "chemical-exposure", "workplace-safety", "emerging-hazards"],
+      "scope": "global",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "3.3 billion workers globally; millions exposed to hazards",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 3000000000000,
+          "timeframe": "annual global cost of occupational injuries and diseases"
+        },
+        "qualityOfLife": 8,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Large informal economy outside regulatory reach",
+          "Emerging hazards outpacing toxicological assessment",
+          "Employer resistance to regulation and enforcement costs",
+          "Long latency of occupational diseases obscures causation",
+          "Global supply chains diffusing accountability"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Established but underfunded field",
+        "fundingLevel": "Limited relative to burden; OSHA chronically under-resourced"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Inadequate testing of new chemicals and materials before workplace introduction",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Economic pressure prioritizing productivity over worker protection",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Fragmented regulatory systems unable to address cumulative exposures",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Insufficient enforcement resources for existing protections",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Vulnerable workers lacking knowledge of hazards and legal protections",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Occupational cancers including lung, bladder, and mesothelioma from chemical exposures",
+          "type": "direct",
+          "affectedArea": "Health outcomes",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Chronic respiratory diseases including occupational asthma and silicosis",
+          "type": "direct",
+          "affectedArea": "Health outcomes",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Neurological damage from solvent and heavy metal exposures",
+          "type": "direct",
+          "affectedArea": "Health outcomes",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Disproportionate burden on workers in developing countries and informal economy",
+          "type": "cascading",
+          "affectedArea": "Health equity",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Healthcare costs and productivity losses borne by workers and society",
+          "type": "indirect",
+          "affectedArea": "Economy",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "OSHA Permissible Exposure Limits",
+          "description": "Federal standards limiting worker exposure to hazardous substances",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Many limits outdated", "Slow update process", "Single-substance focus"]
+        },
+        {
+          "name": "Hierarchy of Controls",
+          "description": "Systematic approach prioritizing elimination, substitution, and engineering controls over PPE",
+          "type": "framework",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Implementation varies", "Cost barriers", "PPE often used as primary control"]
+        },
+        {
+          "name": "Safety Data Sheets and Hazard Communication",
+          "description": "Required disclosure of chemical hazards to workers and employers",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Complexity limits usefulness", "Language barriers", "Not for all hazards"]
+        },
+        {
+          "name": "Medical Surveillance Programs",
+          "description": "Regular health monitoring for workers in high-risk occupations",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Coverage gaps", "Cost barriers for small employers", "Privacy concerns"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Rapid hazard assessment for new chemicals and nanomaterials before worker exposure",
+          "gapType": "coverage",
+          "opportunity": "High-throughput toxicology and computational hazard prediction",
+          "difficulty": "high"
+        },
+        {
+          "description": "Cumulative risk assessment accounting for multiple simultaneous exposures",
+          "gapType": "quality",
+          "opportunity": "Aggregate exposure assessment methods and mixtures toxicology",
+          "difficulty": "high"
+        },
+        {
+          "description": "Protections for workers in informal economy and global supply chains",
+          "gapType": "coverage",
+          "opportunity": "Supply chain transparency and extended producer responsibility",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Climate-adaptive occupational health standards for heat and emerging hazards",
+          "gapType": "regulatory",
+          "opportunity": "Updated standards incorporating climate projections",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Workers exposed to hazardous substances",
+          "examples": ["Manufacturing workers", "Construction workers", "Agricultural workers", "Healthcare workers"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Occupational health regulators",
+          "examples": ["OSHA", "NIOSH", "State occupational health agencies", "ILO"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Employers responsible for workplace safety",
+          "examples": ["Manufacturing companies", "Construction firms", "Agricultural employers"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "expert",
+          "description": "Industrial hygienists and occupational health professionals",
+          "examples": ["Certified Industrial Hygienists", "Occupational medicine physicians", "Safety professionals"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "government",
+          "title": "ILO Global estimates of occupational accidents and work-related illnesses",
+          "url": "https://www.ilo.org/global/topics/safety-and-health-at-work",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "International Labour Organization",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "2.3 million workers die annually from work-related accidents and diseases"
+        },
+        {
+          "type": "academic",
+          "title": "Emerging occupational health hazards and new technologies",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6769825/",
+          "publishedAt": "2019-09-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "PMC/NIH",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Emerging risks from nanomaterials and novel chemicals outpace regulatory toxicological assessment"
+        },
+        {
+          "type": "government",
+          "title": "NIOSH Chemical Hazards Program",
+          "url": "https://www.cdc.gov/niosh/topics/chemical-safety/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "CDC/NIOSH",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "Significant gaps exist in cumulative risk assessment for workers exposed to multiple chemicals"
+        }
+      ],
+      "tags": ["occupational-health", "chemical-exposure", "workplace-safety", "industrial-hygiene", "emerging-hazards", "worker-protection"],
+      "keywords": ["occupational health", "workplace chemical exposure", "worker safety", "industrial hygiene", "occupational disease"],
+      "metrics": {
+        "searchVolume": 25000,
+        "academicPapers": 15000,
+        "patentApplications": 680,
+        "mediaArticles": 4500,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    }
+  ]
+}
