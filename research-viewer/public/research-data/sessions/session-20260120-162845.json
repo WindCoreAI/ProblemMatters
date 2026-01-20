@@ -1,0 +1,96 @@
+{
+  "id": "session-20260120-162845",
+  "startedAt": "2026-01-20T16:28:45Z",
+  "completedAt": "2026-01-20T16:45:00Z",
+  "target": {
+    "industry": "technology-software",
+    "domain": "ai-ml",
+    "field": "deep-learning"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 12,
+    "problemsStored": 10,
+    "duplicatesSkipped": 1,
+    "lowConfidenceSkipped": 1,
+    "problemIds": [
+      "b2c3d4e5-f6a7-8901-bcde-f23456789011",
+      "c3d4e5f6-a7b8-9012-cdef-345678901234",
+      "d4e5f6a7-b8c9-0123-def0-456789012345",
+      "e5f6a7b8-c9d0-1234-ef01-567890123456",
+      "f6a7b8c9-d0e1-2345-0123-678901234567",
+      "a7b8c9d0-e1f2-3456-1234-789012345678",
+      "b8c9d0e1-f2a3-4567-2345-890123456789",
+      "c9d0e1f2-a3b4-5678-3456-901234567890",
+      "d0e1f2a3-b4c5-6789-4567-012345678901",
+      "e1f2a3b4-c5d6-7890-5678-123456789012"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "Parse research request",
+      "timestamp": "2026-01-20T16:28:45Z",
+      "status": "completed",
+      "output": {
+        "industry": "technology-software",
+        "domain": "ai-ml",
+        "field": "deep-learning"
+      }
+    },
+    {
+      "step": 2,
+      "action": "Discovery Phase - Web search",
+      "timestamp": "2026-01-20T16:29:00Z",
+      "status": "completed",
+      "output": {
+        "queriesExecuted": 8,
+        "candidatesFound": 12
+      }
+    },
+    {
+      "step": 3,
+      "action": "Research Phase - Deep analysis",
+      "timestamp": "2026-01-20T16:35:00Z",
+      "status": "completed",
+      "output": {
+        "problemsAnalyzed": 12,
+        "sourcesConsulted": 35
+      }
+    },
+    {
+      "step": 4,
+      "action": "Validation Phase - Scoring",
+      "timestamp": "2026-01-20T16:40:00Z",
+      "status": "completed",
+      "output": {
+        "problemsValidated": 10,
+        "averageConfidence": 0.86,
+        "averageImpactScore": 66.5
+      }
+    },
+    {
+      "step": 5,
+      "action": "Synthesis & Storage",
+      "timestamp": "2026-01-20T16:43:00Z",
+      "status": "completed",
+      "output": {
+        "fileUpdated": "research-viewer/public/research-data/industries/technology-software/ai-ml/fields/deep-learning.json",
+        "problemsAdded": 10
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 975000,
+    "apiCalls": 12,
+    "sourcesConsulted": 35
+  }
+}
