@@ -1,0 +1,138 @@
+{
+  "id": "session-20260120-202806",
+  "startedAt": "2026-01-20T20:28:06Z",
+  "completedAt": "2026-01-20T20:45:00Z",
+  "target": {
+    "industry": "transportation-logistics",
+    "domain": "freight-logistics",
+    "field": "road-freight"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 2,
+    "problemIds": [
+      "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+      "c2d3e4f5-a6b7-8c9d-0e1f-2a3b4c5d6e7f",
+      "d3e4f5a6-b7c8-9d0e-1f2a-3b4c5d6e7f8a",
+      "e4f5a6b7-c8d9-0e1f-2a3b-4c5d6e7f8a9b",
+      "f5a6b7c8-d9e0-1f2a-3b4c-5d6e7f8a9b0c",
+      "a6b7c8d9-e0f1-2a3b-4c5d-6e7f8a9b0c1d",
+      "b7c8d9e0-f1a2-3b4c-5d6e-7f8a9b0c1d2e",
+      "c8d9e0f1-a2b3-4c5d-6e7f-8a9b0c1d2e3f",
+      "d9e0f1a2-b3c4-5d6e-7f8a-9b0c1d2e3f4a",
+      "e0f1a2b3-c4d5-6e7f-8a9b-0c1d2e3f4a5b",
+      "f1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-20T20:28:06Z",
+      "durationMs": 500,
+      "input": {
+        "rawInput": "transportation-logistics freight-logistics road-freight"
+      },
+      "output": {
+        "industry": "transportation-logistics",
+        "domain": "freight-logistics",
+        "field": "road-freight"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "validate_taxonomy",
+      "timestamp": "2026-01-20T20:28:07Z",
+      "durationMs": 2000,
+      "input": {
+        "taxonomyFile": "docs/research/industry-taxonomy-hierarchy.md"
+      },
+      "output": {
+        "valid": true,
+        "industryName": "Transportation & Logistics",
+        "domainName": "Freight & Logistics",
+        "fieldName": "Road Freight"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T20:28:10Z",
+      "durationMs": 45000,
+      "input": {
+        "searchQueries": [
+          "trucking industry pain points driver shortages frustrations",
+          "LTL FTL freight broker fraud double brokering problems 2025",
+          "trucking EPA 2027 emissions regulations zero emission trucks challenges"
+        ]
+      },
+      "output": {
+        "candidatesFound": 15,
+        "sourcesIdentified": 25
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T20:29:00Z",
+      "durationMs": 300000,
+      "input": {
+        "candidates": 15
+      },
+      "output": {
+        "problemsResearched": 12,
+        "sourcesAnalyzed": 20
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T20:34:00Z",
+      "durationMs": 180000,
+      "input": {
+        "problemsToValidate": 12
+      },
+      "output": {
+        "approved": 10,
+        "rejected": 2,
+        "avgConfidence": 0.85
+      },
+      "status": "completed"
+    },
+    {
+      "step": 6,
+      "action": "synthesis_storage",
+      "timestamp": "2026-01-20T20:37:00Z",
+      "durationMs": 120000,
+      "input": {
+        "problemsToStore": 10
+      },
+      "output": {
+        "filesWritten": [
+          "research-viewer/public/research-data/industries/transportation-logistics/freight-logistics/fields/road-freight.json"
+        ],
+        "problemsStored": 10
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 1020000,
+    "sourcesConsulted": 25
+  }
+}

@@ -1,0 +1,2417 @@
+{
+  "field": {
+    "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+    "name": "Road Freight",
+    "slug": "road-freight",
+    "description": "Road freight encompasses the movement of goods by trucks and other road vehicles, including full truckload (FTL), less-than-truckload (LTL), drayage, intermodal, and cross-border trucking operations."
+  },
+  "domain": {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Freight & Logistics",
+    "slug": "freight-logistics"
+  },
+  "industry": {
+    "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+    "name": "Transportation & Logistics",
+    "slug": "transportation-logistics"
+  },
+  "problems": [
+    {
+      "id": "b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+      "title": "Chronic Driver Shortage and High Turnover Crisis in Trucking Industry",
+      "slug": "driver-shortage-high-turnover-crisis-trucking",
+      "description": "The trucking industry faces a persistent driver shortage that has reached critical levels, with the American Trucking Associations reporting a shortage of 80,000 drivers in 2021, projected to reach 160,000 by 2030. However, industry experts argue this is fundamentally a turnover and retention problem rather than a true labor shortage. Long-haul trucking experiences turnover rates exceeding 90%, with some carriers operating at over 100% annual turnover. The root causes include poor working conditions, unpaid detention time at shipping facilities, inadequate compensation structures that fail to account for non-driving work hours, restrictive Hours of Service regulations, and the demographic challenge of an aging workforce with insufficient younger replacements. Federal requirements mandating drivers be 21 years old for interstate commerce further limit the recruitment pool. The industry's image problem, combined with extended time away from home and inconsistent schedules, makes trucking careers unappealing to younger workers.",
+      "summary": "The trucking industry struggles with 90%+ driver turnover rates and projected shortages of 160,000 drivers by 2030, driven by poor working conditions, unpaid time, aging demographics, and regulatory barriers to younger workforce entry.",
+      "industry": {
+        "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+        "name": "Transportation & Logistics",
+        "slug": "transportation-logistics"
+      },
+      "domain": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Freight & Logistics",
+        "slug": "freight-logistics"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Road Freight",
+        "slug": "road-freight"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["workforce", "retention", "demographic", "compensation"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "3.5 million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 75000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 4,
+        "existingProgress": 4,
+        "barriers": [
+          "Federal age requirements for interstate drivers",
+          "Industry-wide compensation structure changes needed",
+          "Cultural perception of trucking careers",
+          "Regulatory constraints on Hours of Service flexibility",
+          "High capital requirements for independent operators"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "500+",
+        "fundingLevel": "Moderate - significant industry attention but limited structural solutions"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "Unpaid detention time at shipping and receiving facilities causing drivers to work long hours without compensation",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Aging workforce with average driver age significantly higher than general workforce and insufficient younger replacements",
+          "category": "cultural",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Federal requirement that interstate commercial drivers must be at least 21 years old",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Hours of Service regulations perceived as reducing earning potential and job flexibility",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Extended time away from home making the profession unattractive to younger workers with families",
+          "category": "cultural",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Supply chain delays and increased shipping costs passed to consumers",
+          "type": "direct",
+          "affectedArea": "Economy",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Carriers forced to increase driver pay, squeezing already thin profit margins",
+          "type": "direct",
+          "affectedArea": "Business operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Increased pressure to adopt autonomous trucking technologies before they are fully ready",
+          "type": "cascading",
+          "affectedArea": "Technology adoption",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Small carriers unable to compete for drivers, leading to industry consolidation",
+          "type": "indirect",
+          "affectedArea": "Market structure",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "DRIVE-Safe Act Apprenticeship Programs",
+          "description": "Pilot programs allowing 18-20 year olds to drive interstate under supervised apprenticeship conditions",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Limited scope", "Requires supervision infrastructure", "Insurance complications"]
+        },
+        {
+          "name": "Sign-on Bonuses and Increased Pay",
+          "description": "Carriers offering $10,000+ sign-on bonuses and higher per-mile rates to attract drivers",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "mainstream",
+          "limitations": ["Unsustainable cost increases", "Does not address root retention issues", "Creates bidding wars"]
+        },
+        {
+          "name": "Dedicated and Regional Routes",
+          "description": "Shifting drivers from long-haul to regional routes that allow more home time",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Not applicable to all freight types", "May reduce driver earnings", "Limited availability"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No industry-wide standard for compensating detention time at facilities",
+          "gapType": "coverage",
+          "opportunity": "Regulatory or industry consortium approach to mandatory detention pay",
+          "difficulty": "high"
+        },
+        {
+          "description": "Lack of career pathway programs integrating trucking with high school vocational training",
+          "gapType": "awareness",
+          "opportunity": "Public-private partnerships for CDL training in schools",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Insufficient technology solutions for improving driver quality of life on the road",
+          "gapType": "quality",
+          "opportunity": "Smart truck stops, improved parking apps, and wellness programs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Commercial truck drivers experiencing poor working conditions",
+          "examples": ["Long-haul drivers", "Owner-operators", "Company drivers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Trucking carriers struggling to maintain adequate driver capacity",
+          "examples": ["Large carriers (Werner, Schneider)", "Regional fleets", "Small fleet operators"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Federal agencies controlling transportation regulations",
+          "examples": ["FMCSA", "DOT", "Congress"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Industry associations advocating for policy changes",
+          "examples": ["American Trucking Associations", "OOIDA"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top Trucking Challenges in 2025: What Motor Carriers & Owner-Operators are Facing",
+          "url": "https://truckstop.com/blog/top-trucking-challenges-in-2025/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Truckstop",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "We have a driver turnover problem with over 90% turnover in the long-haul trucking industry"
+        },
+        {
+          "type": "news",
+          "title": "America's trucking industry is in deep trouble",
+          "url": "https://www.newsweek.com/us-trucking-industry-deep-trouble-10861497",
+          "accessedAt": "2026-01-20",
+          "publisher": "Newsweek",
+          "credibilityScore": 0.80,
+          "relevantExcerpt": "ATA reported shortage of 80,000 drivers in 2021, projected to reach 160,000 by 2030"
+        },
+        {
+          "type": "industry-report",
+          "title": "Navigating the complexities of the truck driver shortage",
+          "url": "https://www.ccjdigital.com/workforce/article/15662866/navigating-the-complexities-of-the-truck-driver-shortage",
+          "accessedAt": "2026-01-20",
+          "publisher": "Commercial Carrier Journal",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["driver-shortage", "workforce", "retention", "turnover", "trucking", "labor"],
+      "keywords": ["truck driver shortage", "driver retention", "trucking turnover rate", "CDL drivers", "long-haul trucking"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:06Z"
+      },
+      "researchSession": "session-20260120-202806",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:06Z",
+      "updatedAt": "2026-01-20T20:28:06Z",
+      "version": 1
+    },
+    {
+      "id": "c2d3e4f5-a6b7-8c9d-0e1f-2a3b4c5d6e7f",
+      "title": "Double Brokering and Freight Fraud Epidemic Causing Billions in Annual Losses",
+      "slug": "double-brokering-freight-fraud-epidemic",
+      "description": "Double brokering has emerged as one of the most disruptive forms of fraud in the freight industry, with occurrences increasing 400% year-over-year from 2021-2022. The practice occurs when a freight broker tenders a load to a carrier who then illegally re-brokers it to another carrier without authorization, often disappearing with payment before the actual hauler is compensated. Fraud-related losses in trucking exceeded $800 million in 2023, with double brokering alone accounting for $500-700 million annually according to the Wall Street Journal. Sophisticated fraud rings now operate like businesses, using multiple phones, stolen carrier identities, spoofed insurance certificates, and fake email addresses. The problem has worsened due to remote work reducing oversight, the ease of obtaining motor carrier authority, and inadequate identity verification systems. In surveys, 50% of freight brokers cite double brokering as their top fraud concern, with 85% reporting they have been directly impacted.",
+      "summary": "Double brokering fraud has increased 400% since 2021, causing $500-800 million in annual losses as sophisticated fraud rings exploit identity theft and inadequate carrier verification systems in the trucking industry.",
+      "industry": {
+        "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+        "name": "Transportation & Logistics",
+        "slug": "transportation-logistics"
+      },
+      "domain": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Freight & Logistics",
+        "slug": "freight-logistics"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Road Freight",
+        "slug": "road-freight"
+      },
+      "problemType": "ethical",
+      "problemSubtypes": ["fraud", "identity-theft", "financial-crime", "supply-chain-security"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "100,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 800000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Fragmented carrier identity verification systems",
+          "Ease of obtaining fraudulent MC authority",
+          "Lack of real-time load tracking standards",
+          "Limited regulatory enforcement resources",
+          "Cross-state jurisdiction complications"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "200+",
+        "fundingLevel": "Growing - TIA and industry associations increasing focus"
+      },
+      "impactScore": 71,
+      "rootCauses": [
+        {
+          "description": "Inadequate carrier identity verification allowing fraudsters to operate with stolen or fake credentials",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Easy process to obtain motor carrier authority with minimal vetting",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Remote work and reduced in-person oversight creating more fraud opportunities",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of standardized real-time load tracking and visibility systems",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Legitimate carriers not receiving payment for completed hauls",
+          "type": "direct",
+          "affectedArea": "Carrier finances",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Increased insurance premiums and operational costs for all industry participants",
+          "type": "indirect",
+          "affectedArea": "Industry costs",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Cargo theft and damage when unvetted carriers handle freight",
+          "type": "cascading",
+          "affectedArea": "Supply chain security",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Erosion of trust in freight brokerage relationships",
+          "type": "indirect",
+          "affectedArea": "Business relationships",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "RMIS Carrier Verification Software",
+          "description": "Software that validates MC numbers, scans IP/email addresses, and checks insurance certificates",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Fraudsters adapt to bypass checks", "Not universally adopted", "Data can be outdated"]
+        },
+        {
+          "name": "Highway Carrier Identity Platform",
+          "description": "Real-time carrier identity verification and fraud detection platform",
+          "type": "product",
+          "effectiveness": 7,
+          "adoption": "early",
+          "limitations": ["Requires industry-wide adoption", "Cost barrier for small brokers"],
+          "url": "https://highway.com"
+        },
+        {
+          "name": "TIA Watchdog Reports",
+          "description": "Transportation Intermediaries Association fraud alert system and reporting",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Reactive rather than preventive", "Limited to TIA members"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No universal, real-time carrier identity verification standard across the industry",
+          "gapType": "integration",
+          "opportunity": "Industry-wide blockchain or distributed ledger for carrier credentials",
+          "difficulty": "high"
+        },
+        {
+          "description": "Insufficient regulatory penalties and enforcement against fraud perpetrators",
+          "gapType": "coverage",
+          "opportunity": "Federal legislation specifically targeting freight fraud with meaningful penalties",
+          "difficulty": "high"
+        },
+        {
+          "description": "Lack of affordable fraud protection tools for small brokers and carriers",
+          "gapType": "cost",
+          "opportunity": "Cooperative fraud detection networks with shared costs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Freight brokers who unknowingly contract with fraudulent carriers",
+          "examples": ["Independent brokers", "3PLs", "Large brokerage firms"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Legitimate carriers who lose loads to fraud or don't receive payment",
+          "examples": ["Small fleet operators", "Owner-operators", "Regional carriers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Technology companies developing fraud prevention solutions",
+          "examples": ["Highway", "RMIS", "Carrier411"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Industry associations pushing for regulatory changes",
+          "examples": ["TIA", "FMCSA", "ATA"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Double Brokering Scams Are Back—How to Protect Your Freight",
+          "url": "https://www.transcredit.com/double-brokering-scams-freight-prevention-2025.html",
+          "accessedAt": "2026-01-20",
+          "publisher": "TransCredit",
+          "credibilityScore": 0.80,
+          "relevantExcerpt": "Double brokering alone claims $500 million – $700 million from carriers and brokers annually, with occurrences increasing 400% year over year"
+        },
+        {
+          "type": "industry-report",
+          "title": "Double brokering fraud in the transportation industry: What is it?",
+          "url": "https://www.grantthornton.com/insights/articles/transportation/2023/double-brokering-fraud-in-the-transportation-industry",
+          "accessedAt": "2026-01-20",
+          "publisher": "Grant Thornton",
+          "credibilityScore": 0.90
+        },
+        {
+          "type": "industry-report",
+          "title": "The Future of Carrier Identity: Combating Fraud and Double Brokering",
+          "url": "https://highway.com/posts/the-future-of-carrier-identity-combating-fraud-and-double-brokering-in-the-freight-industry",
+          "accessedAt": "2026-01-20",
+          "publisher": "Highway",
+          "credibilityScore": 0.80,
+          "relevantExcerpt": "Fraud-related losses in trucking exceeded $800 million in 2023, 85% of respondents reported being impacted by double brokering"
+        }
+      ],
+      "tags": ["fraud", "double-brokering", "carrier-identity", "freight-fraud", "supply-chain-security"],
+      "keywords": ["double brokering", "freight fraud", "carrier verification", "trucking scams", "load theft"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:06Z"
+      },
+      "researchSession": "session-20260120-202806",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:06Z",
+      "updatedAt": "2026-01-20T20:28:06Z",
+      "version": 1
+    },
+    {
+      "id": "d3e4f5a6-b7c8-9d0e-1f2a-3b4c5d6e7f8a",
+      "title": "Nuclear Verdicts and Litigation Crisis Devastating Trucking Insurance Markets",
+      "slug": "nuclear-verdicts-litigation-crisis-trucking-insurance",
+      "description": "The trucking industry faces an escalating insurance and litigation crisis driven by 'nuclear verdicts' - jury awards exceeding $10 million that have become increasingly common in trucking accident cases. According to ATRI research, average verdict sizes in trucking cases increased 967% between 2010 and 2018, with the average verdict now exceeding $27.5 million. Third-party litigation funding, where investors finance lawsuits in exchange for a portion of settlements, has amplified plaintiff strategies and prolonged litigation. This has caused commercial trucking insurance premiums to skyrocket, with some carriers seeing 30-50% annual increases. Lawsuit abuse reform and insurance availability have climbed to the number two and three positions respectively in ATRI's annual industry concerns ranking. Small and medium carriers are particularly impacted, with some being forced out of business or unable to obtain adequate coverage. The crisis has also led to defensive driving behaviors that may paradoxically reduce efficiency and increase other safety risks.",
+      "summary": "Nuclear verdicts averaging $27.5 million and 967% increase in trucking lawsuit awards since 2010 have created an insurance crisis, with premiums rising 30-50% annually and threatening the viability of small carriers.",
+      "industry": {
+        "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+        "name": "Transportation & Logistics",
+        "slug": "transportation-logistics"
+      },
+      "domain": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Freight & Logistics",
+        "slug": "freight-logistics"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Road Freight",
+        "slug": "road-freight"
+      },
+      "problemType": "regulatory",
+      "problemSubtypes": ["litigation", "insurance", "legal-reform", "financial-risk"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "500,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 25000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 3,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Requires state-by-state tort reform legislation",
+          "Powerful plaintiff attorney lobby opposition",
+          "Third-party litigation funding difficult to regulate",
+          "Public perception favoring accident victims over corporations",
+          "Constitutional constraints on damage caps"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "300+",
+        "fundingLevel": "Significant industry lobbying but limited legislative success"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Third-party litigation funding enabling prolonged, aggressive lawsuit strategies",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Erosion of tort reform protections in many states",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Reptile theory and emotional plaintiff attorney tactics influencing juries",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Perception of trucking companies as deep-pocketed corporate defendants",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Insurance premiums increasing 30-50% annually for many carriers",
+          "type": "direct",
+          "affectedArea": "Operating costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Small carriers forced out of business or unable to obtain adequate coverage",
+          "type": "direct",
+          "affectedArea": "Industry structure",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Increased freight costs passed through to shippers and consumers",
+          "type": "cascading",
+          "affectedArea": "Economy",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Reduced insurance market capacity as insurers exit trucking",
+          "type": "indirect",
+          "affectedArea": "Insurance availability",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Advanced Safety Technology Investment",
+          "description": "Cameras, telematics, and driver monitoring systems to reduce accidents and provide evidence",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["High upfront costs", "Does not address litigation dynamics", "Privacy concerns"]
+        },
+        {
+          "name": "State Tort Reform Advocacy",
+          "description": "Industry lobbying for damage caps and litigation funding disclosure requirements",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["State-by-state approach is slow", "Strong opposition", "Constitutional challenges"]
+        },
+        {
+          "name": "Risk Management Programs",
+          "description": "Comprehensive driver training, safety culture programs, and incident response protocols",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Cannot prevent all accidents", "Does not address litigation abuse"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No federal standards limiting third-party litigation funding in trucking cases",
+          "gapType": "coverage",
+          "opportunity": "Federal legislation requiring disclosure and regulation of litigation funding",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Lack of standardized evidence preservation and sharing protocols",
+          "gapType": "integration",
+          "opportunity": "Industry-wide telematics data standards for litigation defense",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Insufficient public education about trucking safety improvements",
+          "gapType": "awareness",
+          "opportunity": "Industry PR campaigns highlighting safety technology and declining accident rates",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Trucking carriers facing catastrophic insurance costs",
+          "examples": ["Large fleets", "Small carriers", "Owner-operators"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Commercial auto insurers facing unsustainable loss ratios",
+          "examples": ["Progressive Commercial", "Great West", "Northland Insurance"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "State legislatures with authority over tort law",
+          "examples": ["State legislators", "Governors", "Courts"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Industry associations advocating for reform",
+          "examples": ["ATA", "ATRI", "Trucking Alliance"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top Trucking Challenges in 2025",
+          "url": "https://truckstop.com/blog/top-trucking-challenges-in-2025/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Truckstop",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Lawsuit abuse reform and insurance availability climbed to the number two and three positions respectively"
+        },
+        {
+          "type": "industry-report",
+          "title": "Trucking Pains: Overcoming Challenges in the Industry",
+          "url": "https://truckx.com/trucking-pains/",
+          "accessedAt": "2026-01-20",
+          "publisher": "TruckX",
+          "credibilityScore": 0.80,
+          "relevantExcerpt": "Average verdict sizes increased 967% between 2010 and 2018"
+        }
+      ],
+      "tags": ["nuclear-verdicts", "insurance", "litigation", "tort-reform", "legal-costs"],
+      "keywords": ["trucking nuclear verdicts", "commercial auto insurance crisis", "trucking litigation", "tort reform trucking"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:06Z"
+      },
+      "researchSession": "session-20260120-202806",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:06Z",
+      "updatedAt": "2026-01-20T20:28:06Z",
+      "version": 1
+    },
+    {
+      "id": "e4f5a6b7-c8d9-0e1f-2a3b-4c5d6e7f8a9b",
+      "title": "Critical Truck Parking Shortage Creating Safety Hazards Nationwide",
+      "slug": "truck-parking-shortage-safety-hazards",
+      "description": "The United States faces a severe shortage of safe truck parking spaces, with estimates indicating a deficit of over 40,000 spaces nationally. Truck drivers spend an average of 56 minutes per day searching for parking, resulting in significant lost productivity and safety risks. The National Transportation Safety Board has designated truck parking as a safety issue, noting that drivers unable to find legal parking often park illegally on highway shoulders, ramps, or in unsafe locations, contributing to accidents. The problem has worsened as freight volumes have increased while parking infrastructure development has not kept pace. Hours of Service regulations compound the issue by requiring drivers to stop within specific time windows regardless of parking availability. The parking crisis intersects with driver quality of life concerns, contributing to high turnover rates as drivers cite parking difficulty as a major frustration with the profession.",
+      "summary": "A shortage of 40,000+ truck parking spaces forces drivers to spend 56 minutes daily searching for parking and often park illegally, creating safety hazards identified by the NTSB and contributing to driver dissatisfaction.",
+      "industry": {
+        "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+        "name": "Transportation & Logistics",
+        "slug": "transportation-logistics"
+      },
+      "domain": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Freight & Logistics",
+        "slug": "freight-logistics"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Road Freight",
+        "slug": "road-freight"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["infrastructure", "safety", "capacity", "driver-welfare"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "3.5 million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 5000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "High real estate costs for parking development",
+          "Local zoning and NIMBY opposition",
+          "Fragmented responsibility between public and private sectors",
+          "Hours of Service regulations creating inflexible demand patterns",
+          "Insufficient federal funding for parking infrastructure"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "100+",
+        "fundingLevel": "Underfunded relative to need - Jason's Law provides limited federal support"
+      },
+      "impactScore": 67,
+      "rootCauses": [
+        {
+          "description": "Freight volume growth outpacing parking infrastructure development",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Hours of Service regulations requiring drivers to stop within rigid time windows",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Local zoning restrictions and community opposition to truck parking facilities",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Insufficient public and private investment in parking infrastructure",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Drivers parking illegally on highway shoulders and ramps, creating accident risks",
+          "type": "direct",
+          "affectedArea": "Highway safety",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Lost driver productivity averaging 56 minutes per day searching for parking",
+          "type": "direct",
+          "affectedArea": "Operational efficiency",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Driver fatigue from stress and inability to comply with rest regulations",
+          "type": "cascading",
+          "affectedArea": "Safety and wellness",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Contribution to driver turnover as parking is cited as major frustration",
+          "type": "indirect",
+          "affectedArea": "Workforce retention",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Jason's Law Federal Funding",
+          "description": "Federal program providing grants for truck parking capacity projects",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "mainstream",
+          "limitations": ["Insufficient funding levels", "Slow implementation", "Complex grant process"]
+        },
+        {
+          "name": "Truck Parking Apps (Trucker Path, Park My Truck)",
+          "description": "Mobile applications showing real-time parking availability",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Incomplete coverage", "Data accuracy issues", "Does not create new capacity"]
+        },
+        {
+          "name": "Reserved Parking Services",
+          "description": "Paid parking reservation systems at truck stops",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Added cost burden on drivers", "Limited availability", "Not universally adopted"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No comprehensive national truck parking network development strategy",
+          "gapType": "coverage",
+          "opportunity": "Public-private partnership for systematic parking expansion",
+          "difficulty": "high"
+        },
+        {
+          "description": "Lack of real-time, accurate parking availability data across all facilities",
+          "gapType": "integration",
+          "opportunity": "IoT-based parking sensors with universal data sharing",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Insufficient integration of parking availability with Hours of Service planning",
+          "gapType": "integration",
+          "opportunity": "ELD integration with parking availability for automated trip planning",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Truck drivers struggling to find safe, legal parking",
+          "examples": ["Long-haul drivers", "Team drivers", "Owner-operators"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Truck stop and travel center operators",
+          "examples": ["Pilot Flying J", "Love's", "TA/Petro"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Federal and state transportation agencies",
+          "examples": ["FHWA", "State DOTs", "FMCSA"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "General public affected by unsafe parking on highways",
+          "examples": ["Other motorists", "Local communities"],
+          "interest": "low",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Trucking Pains: Overcoming Challenges in the Industry",
+          "url": "https://truckx.com/trucking-pains/",
+          "accessedAt": "2026-01-20",
+          "publisher": "TruckX",
+          "credibilityScore": 0.80,
+          "relevantExcerpt": "At the top of the list for the majority of truckers is the current parking situation"
+        },
+        {
+          "type": "industry-report",
+          "title": "Trucking & Freight Challenges 2025",
+          "url": "https://www.fleetio.com/blog/trucking-and-freight-challenges",
+          "accessedAt": "2026-01-20",
+          "publisher": "Fleetio",
+          "credibilityScore": 0.80
+        }
+      ],
+      "tags": ["truck-parking", "infrastructure", "safety", "driver-welfare", "hours-of-service"],
+      "keywords": ["truck parking shortage", "trucking infrastructure", "Jason's Law", "truck stop capacity"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:06Z"
+      },
+      "researchSession": "session-20260120-202806",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:06Z",
+      "updatedAt": "2026-01-20T20:28:06Z",
+      "version": 1
+    },
+    {
+      "id": "f5a6b7c8-d9e0-1f2a-3b4c-5d6e7f8a9b0c",
+      "title": "EPA 2027 Emissions Regulations Creating Significant Cost and Technology Challenges",
+      "slug": "epa-2027-emissions-regulations-cost-technology-challenges",
+      "description": "The EPA's 2027 emissions regulations represent the most stringent heavy-duty vehicle emissions standards in history, requiring an 80%+ reduction in NOx emissions and 50% reduction in particulate matter compared to current standards. The rules also extend warranty requirements to 450,000 miles and useful life limits to 650,000 miles. For fleets, this translates to an estimated $20,000-40,000 price increase per new diesel truck, with current Class 8 trucks priced at $180,000-200,000 potentially rising to $220,000+. The regulations also set aggressive zero-emission vehicle targets, requiring roughly 25% of long-haul trucks sold by 2032 to be zero-emission vehicles, despite only 0.3% of 2023 heavy-duty truck sales being ZEVs. Industry groups argue the timeline is unrealistic given current electric truck costs of $350,000-500,000 and the lack of charging infrastructure. The regulatory landscape faces additional uncertainty with potential policy changes from the incoming administration.",
+      "summary": "EPA 2027 emissions rules requiring 80%+ NOx reduction will increase new truck costs by $20,000-40,000 while zero-emission mandates face infrastructure gaps, with electric trucks costing 2-3x conventional vehicles.",
+      "industry": {
+        "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+        "name": "Transportation & Logistics",
+        "slug": "transportation-logistics"
+      },
+      "domain": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Freight & Logistics",
+        "slug": "freight-logistics"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Road Freight",
+        "slug": "road-freight"
+      },
+      "problemType": "regulatory",
+      "problemSubtypes": ["emissions", "compliance", "technology-transition", "cost-burden"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "500,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 50000000000,
+          "timeframe": "cumulative 2027-2035"
+        },
+        "qualityOfLife": 4,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 3,
+        "existingProgress": 5,
+        "barriers": [
+          "Electric truck costs 2-3x conventional vehicles",
+          "Inadequate charging infrastructure particularly for long-haul",
+          "Grid capacity limitations in many regions",
+          "Battery technology limitations for range and weight",
+          "Regulatory uncertainty with potential policy changes"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "1,000+",
+        "fundingLevel": "Significant - billions in public and private investment in EV transition"
+      },
+      "impactScore": 63,
+      "rootCauses": [
+        {
+          "description": "Environmental regulations advancing faster than commercially viable technology deployment",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Electric truck battery technology insufficient for long-haul range requirements",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Charging infrastructure development lagging behind vehicle availability",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Higher capital costs making fleet transition uneconomical for many carriers",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Significant equipment cost increases passed through supply chain",
+          "type": "direct",
+          "affectedArea": "Operating costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Fleet purchase decisions delayed pending regulatory clarity",
+          "type": "direct",
+          "affectedArea": "Capital planning",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Small carriers unable to afford compliance potentially forced from market",
+          "type": "cascading",
+          "affectedArea": "Industry structure",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Extended use of older, higher-emission equipment if new trucks unaffordable",
+          "type": "indirect",
+          "affectedArea": "Environmental goals",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "EPA 2027 Compliant Diesel Engines",
+          "description": "New diesel engines with advanced aftertreatment meeting 2027 NOx standards",
+          "type": "product",
+          "effectiveness": 7,
+          "adoption": "early",
+          "limitations": ["Higher cost", "Increased maintenance complexity", "Uncertain long-term regulatory status"]
+        },
+        {
+          "name": "Battery Electric Trucks",
+          "description": "Zero-emission trucks from Freightliner, Volvo, Tesla, and others",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["High cost ($350K-500K)", "Limited range", "Charging infrastructure gaps", "Weight penalties"]
+        },
+        {
+          "name": "Hydrogen Fuel Cell Trucks",
+          "description": "Zero-emission trucks using hydrogen fuel cells for extended range",
+          "type": "product",
+          "effectiveness": 5,
+          "adoption": "experimental",
+          "limitations": ["Very limited hydrogen infrastructure", "High fuel costs", "Early technology stage"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No nationwide heavy-duty truck charging network for long-haul operations",
+          "gapType": "coverage",
+          "opportunity": "Public-private investment in highway charging corridors",
+          "difficulty": "high"
+        },
+        {
+          "description": "Insufficient incentives to offset higher ZEV capital costs",
+          "gapType": "cost",
+          "opportunity": "Enhanced tax credits and grants for fleet electrification",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Lack of used electric truck market for secondary buyers",
+          "gapType": "accessibility",
+          "opportunity": "Battery warranty and refurbishment programs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Trucking carriers facing equipment cost increases",
+          "examples": ["Large fleets", "Small carriers", "Owner-operators"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Truck and engine manufacturers developing compliant vehicles",
+          "examples": ["Daimler Trucks", "PACCAR", "Volvo", "Cummins"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Federal agencies setting and enforcing regulations",
+          "examples": ["EPA", "CARB", "DOT"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "funder",
+          "description": "Government programs funding clean truck transitions",
+          "examples": ["DOE", "State incentive programs", "IRA funding"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "government",
+          "title": "Final Rule: Greenhouse Gas Emissions Standards for Heavy-Duty Vehicles – Phase 3",
+          "url": "https://www.epa.gov/regulations-emissions-vehicles-and-engines/final-rule-greenhouse-gas-emissions-standards-heavy-duty",
+          "accessedAt": "2026-01-20",
+          "publisher": "US EPA",
+          "credibilityScore": 0.95
+        },
+        {
+          "type": "industry-report",
+          "title": "EPA 2027 NOx Rule: 7 Essential Challenges and Opportunities for Fleets",
+          "url": "https://tanktransport.com/2025/11/epa-2027-nox-rule-fleets/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Tank Transport",
+          "credibilityScore": 0.80,
+          "relevantExcerpt": "Price of a 2027 model year diesel truck will jump about $20,000 to $40,000 over the current price"
+        },
+        {
+          "type": "industry-report",
+          "title": "EPA Rejects Trucking Industry Plea, Will Keep 2027 NOx Rule Timeline",
+          "url": "https://www.ccjdigital.com/regulations/emissions/article/15771994/epa-rejects-trucking-industry-plea-will-keep-2027-nox-rule-timeline",
+          "accessedAt": "2026-01-20",
+          "publisher": "Commercial Carrier Journal",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["emissions", "EPA-2027", "zero-emission-vehicles", "electric-trucks", "regulations"],
+      "keywords": ["EPA 2027 trucking regulations", "zero emission trucks", "electric truck costs", "NOx emissions standards"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:06Z"
+      },
+      "researchSession": "session-20260120-202806",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:06Z",
+      "updatedAt": "2026-01-20T20:28:06Z",
+      "version": 1
+    },
+    {
+      "id": "a6b7c8d9-e0f1-2a3b-4c5d-6e7f8a9b0c1d",
+      "title": "Historic Freight Recession Creating Prolonged Market Instability and Carrier Failures",
+      "slug": "freight-recession-market-instability-carrier-failures",
+      "description": "The trucking industry has experienced what ATRI describes as a 'historic freight recession' lasting over three years, making it the longest downturn in modern industry history. The economy remains the number one concern for trucking companies for the third consecutive year, with freight rates and tonnage remaining flat while operational costs continue to surge. This margin squeeze has forced difficult decisions including cost-cutting, layoffs, and carriers leaving the industry entirely. The 2020-2021 pandemic boom created a capacity bubble as new carriers entered the market, followed by demand normalization that left significant overcapacity. Spot rates have fallen dramatically from pandemic peaks, and contract rates have compressed. Small and medium carriers have been disproportionately affected, with thousands exiting the market since 2022. The prolonged downturn has also created a 'survival mode' mentality that may delay necessary investments in safety, technology, and driver welfare.",
+      "summary": "A historic three-year freight recession has created severe margin pressure with flat rates and rising costs, causing thousands of carrier failures and industry-wide financial stress unprecedented in modern trucking history.",
+      "industry": {
+        "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+        "name": "Transportation & Logistics",
+        "slug": "transportation-logistics"
+      },
+      "domain": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Freight & Logistics",
+        "slug": "freight-logistics"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Road Freight",
+        "slug": "road-freight"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["recession", "overcapacity", "profitability", "market-cycle"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "500,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 30000000000,
+          "timeframe": "annual revenue impact"
+        },
+        "qualityOfLife": 7,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 3.5,
+        "technicalFeasibility": 3,
+        "resourceRequirements": 2,
+        "existingProgress": 4,
+        "barriers": [
+          "Macroeconomic conditions largely outside industry control",
+          "Fragmented industry makes coordinated response difficult",
+          "Low barriers to entry create persistent overcapacity risk",
+          "Contract rate structures slow to adjust to market conditions",
+          "Customer procurement practices favor lowest cost over stability"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "500+",
+        "fundingLevel": "Not directly fundable - market-driven problem"
+      },
+      "impactScore": 62,
+      "rootCauses": [
+        {
+          "description": "Pandemic-era capacity expansion creating structural overcapacity",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Freight demand normalization after pandemic-driven surge",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Low barriers to entry allowing rapid capacity additions during boom periods",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Operational costs increasing while revenue remains flat",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Thousands of carriers forced to exit the market since 2022",
+          "type": "direct",
+          "affectedArea": "Industry structure",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Deferred investment in equipment, technology, and safety",
+          "type": "direct",
+          "affectedArea": "Fleet quality",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Downward pressure on driver wages and benefits",
+          "type": "cascading",
+          "affectedArea": "Workforce",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Industry consolidation potentially reducing competition long-term",
+          "type": "indirect",
+          "affectedArea": "Market dynamics",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Cost Optimization Programs",
+          "description": "Fuel efficiency, route optimization, and operational efficiency improvements",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Limited savings potential", "May require capital investment", "Already optimized in many cases"]
+        },
+        {
+          "name": "Diversification Strategies",
+          "description": "Expanding into different freight types, dedicated services, or logistics offerings",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Requires capital and expertise", "Not viable for all carriers", "May dilute focus"]
+        },
+        {
+          "name": "Contract Rate Renegotiation",
+          "description": "Working with shippers to adjust rates or add fuel surcharges",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "mainstream",
+          "limitations": ["Limited carrier leverage in oversupplied market", "May damage relationships", "Slow process"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No industry mechanism to manage capacity cycles and prevent boom-bust extremes",
+          "gapType": "coverage",
+          "opportunity": "Industry data sharing and forecasting to inform capacity decisions",
+          "difficulty": "high"
+        },
+        {
+          "description": "Limited financial instruments to help carriers weather extended downturns",
+          "gapType": "accessibility",
+          "opportunity": "Industry-specific financing products and insurance for market cycles",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Insufficient shipper-carrier partnership models for market stability",
+          "gapType": "integration",
+          "opportunity": "Long-term contracts with fair adjustment mechanisms",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Trucking carriers facing margin pressure",
+          "examples": ["Small fleet operators", "Medium carriers", "Owner-operators"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "affected",
+          "description": "Trucking employees facing job uncertainty",
+          "examples": ["Drivers", "Dispatchers", "Maintenance staff"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Shippers benefiting from lower rates",
+          "examples": ["Retailers", "Manufacturers", "3PLs"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "expert",
+          "description": "Industry analysts and economists tracking market conditions",
+          "examples": ["ATRI", "FreightWaves", "FTR Transportation Intelligence"],
+          "interest": "high",
+          "influence": "low"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top Trucking Challenges in 2025",
+          "url": "https://truckstop.com/blog/top-trucking-challenges-in-2025/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Truckstop",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Economy remains the number one concern for the third consecutive year... three years into what ATRI describes as a 'historic freight recession'"
+        },
+        {
+          "type": "news",
+          "title": "America's trucking industry is in deep trouble",
+          "url": "https://www.newsweek.com/us-trucking-industry-deep-trouble-10861497",
+          "accessedAt": "2026-01-20",
+          "publisher": "Newsweek",
+          "credibilityScore": 0.80
+        }
+      ],
+      "tags": ["freight-recession", "market-conditions", "overcapacity", "carrier-failures", "profitability"],
+      "keywords": ["trucking freight recession", "trucking market conditions", "carrier bankruptcies", "freight rates"],
+      "metrics": {
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T20:28:06Z"
+      },
+      "researchSession": "session-20260120-202806",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:06Z",
+      "updatedAt": "2026-01-20T20:28:06Z",
+      "version": 1
+    },
+    {
+      "id": "b7c8d9e0-f1a2-3b4c-5d6e-7f8a9b0c1d2e",
+      "title": "Rising Fuel Costs and Operational Expense Volatility Squeezing Carrier Margins",
+      "slug": "fuel-costs-operational-expense-volatility-margins",
+      "description": "Fuel costs represent the largest single expense for most trucking operations, and volatile fuel prices create significant financial planning challenges. Beyond fuel, carriers face escalating costs across multiple categories including insurance premiums (rising 30-50% annually), equipment prices, maintenance costs, and labor expenses. The combination of flat or declining freight rates with rising operational costs has created an unprecedented margin squeeze. Many carriers operate on thin margins of 3-5%, leaving little room to absorb cost increases. The unpredictability of fuel prices makes long-term contract pricing difficult, while fuel surcharge mechanisms often lag actual price movements. Small carriers and owner-operators are particularly vulnerable as they lack the scale to negotiate favorable fuel prices or absorb temporary spikes. This cost pressure contributes to the broader industry financial stress and carrier exit trends.",
+      "summary": "Volatile fuel costs combined with surging insurance, equipment, and labor expenses are creating severe margin pressure for carriers already operating on 3-5% margins amid flat freight rates.",
+      "industry": {
+        "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+        "name": "Transportation & Logistics",
+        "slug": "transportation-logistics"
+      },
+      "domain": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Freight & Logistics",
+        "slug": "freight-logistics"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Road Freight",
+        "slug": "road-freight"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["costs", "fuel", "margins", "volatility"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "500,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 20000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 5,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Global oil markets beyond industry control",
+          "Insurance costs driven by litigation environment",
+          "Equipment costs driven by emissions regulations",
+          "Competitive market limits ability to pass costs to customers",
+          "Small carrier scale disadvantages in procurement"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "300+",
+        "fundingLevel": "Moderate - primarily addressed through technology and efficiency investments"
+      },
+      "impactScore": 60,
+      "rootCauses": [
+        {
+          "description": "Global oil price volatility driven by geopolitical and economic factors",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Insurance premium increases driven by nuclear verdicts and litigation",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Equipment cost increases from emissions regulations and supply chain issues",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Labor cost pressures from driver shortage and wage competition",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Carrier profit margins compressed to unsustainable levels",
+          "type": "direct",
+          "affectedArea": "Financial performance",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Deferred maintenance and equipment replacement",
+          "type": "direct",
+          "affectedArea": "Fleet condition",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Reduced investment in driver pay and benefits",
+          "type": "cascading",
+          "affectedArea": "Workforce retention",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Small carrier consolidation and market exit",
+          "type": "indirect",
+          "affectedArea": "Industry structure",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Fuel Hedging Programs",
+          "description": "Financial instruments to lock in fuel costs and reduce volatility exposure",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Complexity and expertise required", "Capital requirements", "May miss savings when prices fall"]
+        },
+        {
+          "name": "Fuel Efficiency Technology",
+          "description": "Aerodynamic devices, tire management, and driver training to reduce fuel consumption",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Upfront investment required", "Diminishing returns", "Already implemented by many"]
+        },
+        {
+          "name": "Fuel Card Programs and Discounts",
+          "description": "Network discounts and optimized fueling through fleet fuel cards",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Limited discount potential", "Network restrictions", "Administrative overhead"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Fuel surcharge mechanisms that don't accurately reflect actual carrier costs",
+          "gapType": "quality",
+          "opportunity": "Real-time, transparent fuel cost passthrough mechanisms",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Limited affordable hedging options for small carriers",
+          "gapType": "accessibility",
+          "opportunity": "Cooperative hedging programs or simplified derivatives",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Insufficient total cost of ownership tools for fleet planning",
+          "gapType": "awareness",
+          "opportunity": "Comprehensive TCO analytics including all cost categories",
+          "difficulty": "low"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Carriers facing rising operational costs",
+          "examples": ["Fleet operators", "Owner-operators", "Small carriers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Fuel and service providers",
+          "examples": ["Truck stops", "Fuel card companies", "OEMs"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Shippers facing rate increase requests",
+          "examples": ["Retailers", "Manufacturers", "Distributors"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Trucking Pains: Overcoming Challenges in the Industry",
+          "url": "https://truckx.com/trucking-pains/",
+          "accessedAt": "2026-01-20",
+          "publisher": "TruckX",
+          "credibilityScore": 0.80,
+          "relevantExcerpt": "Fuel costs typically take the top spot in a trucker's expenses. Fluctuating fuel prices and fuel consumption can make or break a driver or fleet's bottom line"
+        },
+        {
+          "type": "industry-report",
+          "title": "Top Trucking Challenges in 2025",
+          "url": "https://truckstop.com/blog/top-trucking-challenges-in-2025/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Truckstop",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["fuel-costs", "operational-costs", "margins", "insurance", "expenses"],
+      "keywords": ["trucking fuel costs", "trucking operating expenses", "carrier margins", "trucking profitability"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:06Z"
+      },
+      "researchSession": "session-20260120-202806",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:06Z",
+      "updatedAt": "2026-01-20T20:28:06Z",
+      "version": 1
+    },
+    {
+      "id": "c8d9e0f1-a2b3-4c5d-6e7f-8a9b0c1d2e3f",
+      "title": "Hours of Service Regulations Reducing Operational Flexibility and Driver Productivity",
+      "slug": "hours-of-service-regulations-flexibility-productivity",
+      "description": "Federal Hours of Service (HOS) regulations limit commercial drivers to 11 hours of driving within a 14-hour on-duty window, followed by mandatory 10-hour rest periods. While designed for safety, these rules create significant operational challenges and are a top driver complaint. The regulations restrict drivers' ability to work efficiently, particularly when combined with unpredictable detention times at shipping facilities. Electronic Logging Devices (ELDs), mandated since 2017, enforce strict compliance but remove the flexibility drivers previously had to manage their schedules. Many drivers feel these regulations make their jobs harder without improving their pay or working conditions, as they cannot adjust for traffic, weather, or facility delays. The rigid rules also intersect with the parking shortage, forcing drivers to stop within specific time windows regardless of parking availability. The HOS framework has remained largely unchanged despite industry calls for reform to allow more flexibility while maintaining safety standards.",
+      "summary": "Hours of Service regulations limiting drivers to 11 hours of driving with mandatory rest periods reduce operational flexibility and, combined with ELD enforcement, are a major driver complaint contributing to turnover.",
+      "industry": {
+        "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+        "name": "Transportation & Logistics",
+        "slug": "transportation-logistics"
+      },
+      "domain": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Freight & Logistics",
+        "slug": "freight-logistics"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Road Freight",
+        "slug": "road-freight"
+      },
+      "problemType": "regulatory",
+      "problemSubtypes": ["compliance", "flexibility", "productivity", "driver-welfare"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "3.5 million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 10000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Safety advocacy group opposition to any relaxation",
+          "Political sensitivity around trucking safety",
+          "Federal rulemaking process is slow and complex",
+          "Difficulty balancing safety with operational needs",
+          "ELD technology limitations for flexible approaches"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "200+",
+        "fundingLevel": "Significant industry lobbying but limited regulatory movement"
+      },
+      "impactScore": 56,
+      "rootCauses": [
+        {
+          "description": "Regulatory framework designed without accounting for real-world operational variability",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "ELD mandate removing informal flexibility drivers previously used",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Detention times at facilities consuming driving hours without compensation",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of regulatory mechanisms to account for traffic, weather, and parking availability",
+          "category": "regulatory",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Reduced driver productivity and earning potential",
+          "type": "direct",
+          "affectedArea": "Driver income",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Drivers stopping in unsafe locations when HOS clock expires",
+          "type": "direct",
+          "affectedArea": "Safety",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Contribution to driver dissatisfaction and turnover",
+          "type": "indirect",
+          "affectedArea": "Workforce retention",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Reduced freight capacity as drivers cannot maximize productive time",
+          "type": "cascading",
+          "affectedArea": "Industry capacity",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Split Sleeper Berth Provision",
+          "description": "Allows drivers to split their 10-hour rest into two periods for more flexibility",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Complex rules", "Still limited flexibility", "Not always practical"]
+        },
+        {
+          "name": "Short-Haul Exemption",
+          "description": "Drivers operating within 150 air-miles exempt from some ELD and HOS requirements",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Geographic limitations", "Paperwork requirements", "Limited applicability"]
+        },
+        {
+          "name": "Adverse Driving Conditions Exception",
+          "description": "Allows 2 extra hours of driving in unexpected adverse conditions",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "mainstream",
+          "limitations": ["Narrow definition of adverse conditions", "Documentation requirements", "Inconsistent enforcement"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No provision to pause HOS clock during unpaid detention time",
+          "gapType": "coverage",
+          "opportunity": "Regulatory reform to exclude documented detention from on-duty time",
+          "difficulty": "high"
+        },
+        {
+          "description": "Insufficient flexibility for unexpected delays and conditions",
+          "gapType": "quality",
+          "opportunity": "Expanded exceptions with technology-verified documentation",
+          "difficulty": "medium"
+        },
+        {
+          "description": "ELD systems lack integration with parking and traffic data for proactive planning",
+          "gapType": "integration",
+          "opportunity": "Smart HOS management integrating real-time conditions",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Truck drivers constrained by HOS rules",
+          "examples": ["Long-haul drivers", "Regional drivers", "Owner-operators"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Federal agencies administering HOS regulations",
+          "examples": ["FMCSA", "DOT", "Congress"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Safety advocacy organizations",
+          "examples": ["Advocates for Highway and Auto Safety", "IIHS"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Industry groups advocating for reform",
+          "examples": ["ATA", "OOIDA"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Trucking Pains: Overcoming Challenges in the Industry",
+          "url": "https://truckx.com/trucking-pains/",
+          "accessedAt": "2026-01-20",
+          "publisher": "TruckX",
+          "credibilityScore": 0.80,
+          "relevantExcerpt": "Federal rules like Hours of Service limits and Electronic Logging Devices were introduced to improve safety, but they also restrict drivers' ability to work efficiently"
+        },
+        {
+          "type": "industry-report",
+          "title": "The Ongoing Truck Driver Shortage: Causes, Effects and Solutions",
+          "url": "https://www.prepassalliance.org/the-ongoing-truck-driver-shortage-causes-effects-and-solutions/",
+          "accessedAt": "2026-01-20",
+          "publisher": "PrePass Safety Alliance",
+          "credibilityScore": 0.80
+        }
+      ],
+      "tags": ["hours-of-service", "ELD", "regulations", "driver-productivity", "compliance"],
+      "keywords": ["hours of service trucking", "ELD mandate", "trucking regulations", "driver HOS"],
+      "metrics": {
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T20:28:06Z"
+      },
+      "researchSession": "session-20260120-202806",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:06Z",
+      "updatedAt": "2026-01-20T20:28:06Z",
+      "version": 1
+    },
+    {
+      "id": "d9e0f1a2-b3c4-5d6e-7f8a-9b0c1d2e3f4a",
+      "title": "Detention Time at Shipping Facilities Causing Unpaid Work and Driver Dissatisfaction",
+      "slug": "detention-time-shipping-facilities-unpaid-driver-dissatisfaction",
+      "description": "Excessive detention time at shipping and receiving facilities represents one of the most significant yet underaddressed problems in trucking. Drivers frequently wait hours beyond scheduled appointment times for loading or unloading, time that often goes uncompensated or is paid at rates far below driving pay. OOIDA and other driver advocacy groups identify detention as a root cause of driver dissatisfaction and turnover. The problem is systemic: shippers and receivers face no penalty for inefficient dock operations while drivers bear the cost of lost driving time, reduced miles, and HOS clock erosion. Average detention times have increased as supply chains have become more just-in-time and facilities operate at capacity. While some carriers charge detention fees after 2-4 hours, collection is inconsistent and rates are often inadequate. The lack of industry standards for detention compensation perpetuates a system that effectively transfers costs from shippers to carriers and drivers.",
+      "summary": "Excessive unpaid detention time at shipping facilities causes drivers to wait hours without compensation, eroding HOS clocks and earning potential, and is a primary driver of workforce dissatisfaction and turnover.",
+      "industry": {
+        "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+        "name": "Transportation & Logistics",
+        "slug": "transportation-logistics"
+      },
+      "domain": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Freight & Logistics",
+        "slug": "freight-logistics"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Road Freight",
+        "slug": "road-freight"
+      },
+      "problemType": "process",
+      "problemSubtypes": ["compensation", "efficiency", "driver-welfare", "shipper-relations"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "3.5 million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 8000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 4,
+        "barriers": [
+          "Shipper market power limits carrier negotiating leverage",
+          "No regulatory requirement for detention compensation",
+          "Fragmented industry makes collective action difficult",
+          "Appointment scheduling systems often ineffective",
+          "Just-in-time supply chains create inherent variability"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "100+",
+        "fundingLevel": "Limited - primarily addressed through carrier-shipper negotiations"
+      },
+      "impactScore": 64,
+      "rootCauses": [
+        {
+          "description": "Power imbalance allowing shippers to externalize dock inefficiency costs to carriers",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of industry standards or regulations requiring fair detention compensation",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Inadequate dock scheduling and management systems at many facilities",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Just-in-time inventory practices creating unpredictable facility workloads",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Lost driver income from unpaid waiting time",
+          "type": "direct",
+          "affectedArea": "Driver compensation",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Reduced productive driving hours due to HOS clock erosion",
+          "type": "direct",
+          "affectedArea": "Productivity",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Driver frustration and turnover contributing to shortage",
+          "type": "cascading",
+          "affectedArea": "Workforce retention",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Increased freight costs as carriers attempt to build detention into rates",
+          "type": "indirect",
+          "affectedArea": "Shipping costs",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Detention Fee Policies",
+          "description": "Carrier policies charging shippers for wait time beyond free time allowance",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "mainstream",
+          "limitations": ["Inconsistent enforcement", "Low rates", "Difficult to collect", "May damage relationships"]
+        },
+        {
+          "name": "Appointment Scheduling Systems",
+          "description": "Technology platforms for scheduling dock appointments to reduce wait times",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Requires shipper adoption", "Appointments often not honored", "System fragmentation"]
+        },
+        {
+          "name": "Drop and Hook Operations",
+          "description": "Pre-loaded trailers that drivers can exchange quickly without waiting for loading",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Requires trailer assets", "Not suitable for all freight", "Shipper investment needed"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No federal standard requiring fair compensation for detention time",
+          "gapType": "coverage",
+          "opportunity": "Regulatory mandate for minimum detention pay after reasonable free time",
+          "difficulty": "high"
+        },
+        {
+          "description": "Lack of transparent detention time tracking and reporting",
+          "gapType": "awareness",
+          "opportunity": "Industry database of facility detention performance",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Insufficient technology integration between carrier ELDs and facility systems",
+          "gapType": "integration",
+          "opportunity": "Automated detention time capture and billing",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Truck drivers waiting at facilities without compensation",
+          "examples": ["Company drivers", "Owner-operators", "LTL drivers"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "affected",
+          "description": "Carriers absorbing detention costs",
+          "examples": ["Truckload carriers", "LTL carriers", "Small fleets"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Shippers and receivers causing detention",
+          "examples": ["Distribution centers", "Manufacturers", "Retailers"],
+          "interest": "low",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Driver advocacy organizations",
+          "examples": ["OOIDA", "Teamsters"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Navigating the complexities of the truck driver shortage",
+          "url": "https://www.ccjdigital.com/workforce/article/15662866/navigating-the-complexities-of-the-truck-driver-shortage",
+          "accessedAt": "2026-01-20",
+          "publisher": "Commercial Carrier Journal",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "OOIDA argues that policies fail to address the root problems of driver dissatisfaction including excessive detention times at shipping and receiving facilities"
+        },
+        {
+          "type": "industry-report",
+          "title": "Trucking Pains: Overcoming Challenges in the Industry",
+          "url": "https://truckx.com/trucking-pains/",
+          "accessedAt": "2026-01-20",
+          "publisher": "TruckX",
+          "credibilityScore": 0.80
+        }
+      ],
+      "tags": ["detention-time", "shipper-relations", "driver-compensation", "facility-operations", "productivity"],
+      "keywords": ["truck detention time", "driver detention pay", "shipper detention", "trucking wait times"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:06Z"
+      },
+      "researchSession": "session-20260120-202806",
+      "confidence": 0.86,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:06Z",
+      "updatedAt": "2026-01-20T20:28:06Z",
+      "version": 1
+    },
+    {
+      "id": "e0f1a2b3-c4d5-6e7f-8a9b-0c1d2e3f4a5b",
+      "title": "Technology Adoption Gaps Limiting Efficiency and Competitiveness in Trucking",
+      "slug": "technology-adoption-gaps-efficiency-competitiveness-trucking",
+      "description": "Despite the availability of advanced technologies for fleet management, route optimization, predictive maintenance, and real-time visibility, significant adoption gaps persist across the trucking industry. Many carriers, particularly small and medium-sized operators, continue to rely on manual processes, basic spreadsheets, and phone-based dispatch. The technology gap creates competitive disadvantages, operational inefficiencies, and missed opportunities for cost savings. Barriers to adoption include high implementation costs, lack of technical expertise, integration challenges with existing systems, and resistance to change. The fragmented nature of the industry with over 90% of carriers operating 6 or fewer trucks makes enterprise technology solutions impractical for many. Additionally, the rapid pace of technology change creates uncertainty about which solutions will provide lasting value. This technology gap also extends to data analytics, where many carriers lack the ability to leverage operational data for decision-making despite generating vast amounts of information through ELDs and telematics.",
+      "summary": "Significant technology adoption gaps persist in trucking, with many carriers lacking modern TMS, analytics, and automation capabilities due to cost barriers, expertise gaps, and the fragmented nature of the industry.",
+      "industry": {
+        "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+        "name": "Transportation & Logistics",
+        "slug": "transportation-logistics"
+      },
+      "domain": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Freight & Logistics",
+        "slug": "freight-logistics"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Road Freight",
+        "slug": "road-freight"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["adoption", "digitization", "efficiency", "competitiveness"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "400,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual opportunity cost"
+        },
+        "qualityOfLife": 4,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.5,
+        "technicalFeasibility": 8,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "High implementation costs for small carriers",
+          "Lack of technical expertise in operations teams",
+          "Integration challenges with legacy systems",
+          "Rapid technology change creating uncertainty",
+          "Resistance to change in traditional industry"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "1,000+",
+        "fundingLevel": "Significant VC and technology investment but focused on larger carriers"
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "Fragmented industry structure with 90%+ carriers having 6 or fewer trucks",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "High upfront costs and complexity of enterprise technology solutions",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of technical expertise and training resources for small operators",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Thin operating margins limiting technology investment capacity",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Operational inefficiencies and higher costs for technology laggards",
+          "type": "direct",
+          "affectedArea": "Competitiveness",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Inability to meet shipper visibility and reporting requirements",
+          "type": "direct",
+          "affectedArea": "Customer relationships",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Widening competitive gap between technology leaders and laggards",
+          "type": "cascading",
+          "affectedArea": "Industry structure",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Missed opportunities for safety improvements through technology",
+          "type": "indirect",
+          "affectedArea": "Safety",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Cloud-Based TMS Platforms",
+          "description": "Subscription-based transportation management systems with lower upfront costs",
+          "type": "product",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Monthly costs add up", "Feature limitations for complex operations", "Data security concerns"]
+        },
+        {
+          "name": "Mobile-First Fleet Apps",
+          "description": "Smartphone-based fleet management tools for small carriers",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Limited enterprise features", "Driver smartphone requirements", "Integration challenges"]
+        },
+        {
+          "name": "Load Boards with Digital Features",
+          "description": "Enhanced load boards offering basic TMS functionality",
+          "type": "product",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Not comprehensive solutions", "Varying quality", "Transaction fees"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Lack of affordable, easy-to-implement solutions for very small carriers",
+          "gapType": "accessibility",
+          "opportunity": "Simplified, low-cost technology packages for 1-6 truck operations",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Insufficient training and support resources for technology adoption",
+          "gapType": "awareness",
+          "opportunity": "Industry training programs and technology implementation support",
+          "difficulty": "low"
+        },
+        {
+          "description": "Limited interoperability between different technology platforms",
+          "gapType": "integration",
+          "opportunity": "Industry data standards enabling system-to-system connectivity",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Small carriers lacking technology capabilities",
+          "examples": ["Owner-operators", "Small fleets", "Regional carriers"],
+          "interest": "medium",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Technology vendors serving trucking industry",
+          "examples": ["TMS providers", "Telematics companies", "Load board platforms"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Shippers requiring carrier technology capabilities",
+          "examples": ["Enterprise shippers", "3PLs", "Retailers"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Trucking & Freight Challenges 2025",
+          "url": "https://www.fleetio.com/blog/trucking-and-freight-challenges",
+          "accessedAt": "2026-01-20",
+          "publisher": "Fleetio",
+          "credibilityScore": 0.80
+        },
+        {
+          "type": "industry-report",
+          "title": "Top Trucking Challenges in 2025",
+          "url": "https://truckstop.com/blog/top-trucking-challenges-in-2025/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Truckstop",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["technology", "digitization", "TMS", "efficiency", "adoption"],
+      "keywords": ["trucking technology adoption", "fleet management systems", "trucking digitization", "carrier technology"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:06Z"
+      },
+      "researchSession": "session-20260120-202806",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:06Z",
+      "updatedAt": "2026-01-20T20:28:06Z",
+      "version": 1
+    },
+    {
+      "id": "f1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c",
+      "title": "Cross-Border Trucking Complexity and Trade Uncertainty Disrupting North American Freight",
+      "slug": "cross-border-trucking-complexity-trade-uncertainty",
+      "description": "Cross-border trucking between the US, Canada, and Mexico faces increasing complexity from trade policy uncertainty, regulatory differences, and operational challenges. Recent tariff discussions and trade policy shifts have created planning uncertainty for carriers operating international routes. Border crossing delays can add hours to transit times, with wait times varying unpredictably. Different regulatory requirements between countries, including driver qualification, vehicle standards, and Hours of Service rules, create compliance complexity. The drayage segment connecting ports and rail terminals to cross-border facilities faces particular challenges with congestion and equipment availability. Cabotage restrictions prevent foreign carriers from operating domestic routes, limiting operational flexibility. Currency fluctuations add financial planning complexity for carriers operating across borders. The USMCA trade agreement provides some framework but ongoing trade tensions and potential policy changes create persistent uncertainty for carriers investing in cross-border operations.",
+      "summary": "Cross-border trucking faces mounting challenges from trade policy uncertainty, border delays, regulatory differences between countries, and cabotage restrictions that limit operational flexibility across North American trade routes.",
+      "industry": {
+        "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+        "name": "Transportation & Logistics",
+        "slug": "transportation-logistics"
+      },
+      "domain": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Freight & Logistics",
+        "slug": "freight-logistics"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Road Freight",
+        "slug": "road-freight"
+      },
+      "problemType": "regulatory",
+      "problemSubtypes": ["trade-policy", "compliance", "border-operations", "international"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 6,
+          "estimate": "50,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 12000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 5,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Trade policy controlled by national governments",
+          "Complex international regulatory harmonization",
+          "Political sensitivity of cross-border operations",
+          "Infrastructure limitations at border crossings",
+          "Security requirements adding to processing time"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "200+",
+        "fundingLevel": "Limited - primarily addressed through trade agreements and customs programs"
+      },
+      "impactScore": 56,
+      "rootCauses": [
+        {
+          "description": "Trade policy uncertainty and potential tariff changes creating planning challenges",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of regulatory harmonization between US, Canada, and Mexico",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Inadequate border crossing infrastructure for freight volumes",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Cabotage restrictions limiting operational efficiency",
+          "category": "regulatory",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Extended transit times and unpredictable border delays",
+          "type": "direct",
+          "affectedArea": "Service reliability",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Higher compliance costs for multi-country operations",
+          "type": "direct",
+          "affectedArea": "Operating costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Investment uncertainty in cross-border capacity",
+          "type": "indirect",
+          "affectedArea": "Capital planning",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Supply chain restructuring to reduce cross-border dependence",
+          "type": "cascading",
+          "affectedArea": "Trade patterns",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "C-TPAT and PIP Trusted Trader Programs",
+          "description": "Customs programs providing expedited processing for vetted carriers",
+          "type": "policy",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Enrollment requirements", "Audit burden", "Benefits vary by crossing"]
+        },
+        {
+          "name": "FAST Card Programs",
+          "description": "Pre-approved driver credentials for expedited border processing",
+          "type": "policy",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Driver background check requirements", "Renewal process", "Not universally available"]
+        },
+        {
+          "name": "Cross-Border Technology Platforms",
+          "description": "Software managing customs documentation and compliance across countries",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Regulatory changes require updates", "Integration complexity", "Cost"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No unified regulatory framework for North American trucking operations",
+          "gapType": "coverage",
+          "opportunity": "Expanded USMCA provisions for transportation harmonization",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Inadequate border crossing infrastructure and technology",
+          "gapType": "quality",
+          "opportunity": "Investment in ports of entry with automated processing",
+          "difficulty": "high"
+        },
+        {
+          "description": "Limited real-time visibility into border wait times and conditions",
+          "gapType": "awareness",
+          "opportunity": "Comprehensive border crossing information systems",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Carriers operating cross-border routes",
+          "examples": ["International carriers", "Drayage operators", "Intermodal providers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Shippers with cross-border supply chains",
+          "examples": ["Auto manufacturers", "Retailers", "Agricultural exporters"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Government trade and customs agencies",
+          "examples": ["CBP", "CBSA", "USTR", "Mexican customs"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top Trucking Challenges in 2025",
+          "url": "https://truckstop.com/blog/top-trucking-challenges-in-2025/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Truckstop",
+          "credibilityScore": 0.85
+        },
+        {
+          "type": "news",
+          "title": "America's trucking industry is in deep trouble",
+          "url": "https://www.newsweek.com/us-trucking-industry-deep-trouble-10861497",
+          "accessedAt": "2026-01-20",
+          "publisher": "Newsweek",
+          "credibilityScore": 0.80
+        }
+      ],
+      "tags": ["cross-border", "international-trade", "USMCA", "customs", "border-operations"],
+      "keywords": ["cross border trucking", "Mexico trucking", "Canada trucking", "USMCA transportation", "border delays"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:06Z"
+      },
+      "researchSession": "session-20260120-202806",
+      "confidence": 0.80,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:06Z",
+      "updatedAt": "2026-01-20T20:28:06Z",
+      "version": 1
+    }
+  ]
+}
