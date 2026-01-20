@@ -1,0 +1,138 @@
+{
+  "id": "session-20260120-202400",
+  "startedAt": "2026-01-20T20:24:00Z",
+  "completedAt": "2026-01-20T20:45:00Z",
+  "target": {
+    "industry": "manufacturing-industrial",
+    "domain": "discrete-manufacturing",
+    "field": "electronics"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 12,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 2,
+    "problemIds": [
+      "d4e5f6a7-b8c9-0123-def0-456789012345",
+      "e5f6a7b8-c9d0-1234-ef01-567890123456",
+      "f6a7b8c9-d0e1-2345-f012-678901234567",
+      "a7b8c9d0-e1f2-3456-0123-789012345678",
+      "b8c9d0e1-f2a3-4567-1234-890123456789",
+      "c9d0e1f2-a3b4-5678-2345-901234567890",
+      "d0e1f2a3-b4c5-6789-3456-012345678901",
+      "e1f2a3b4-c5d6-7890-4567-123456789012",
+      "f2a3b4c5-d6e7-8901-5678-234567890123",
+      "a3b4c5d6-e7f8-9012-6789-345678901234"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-20T20:24:00Z",
+      "durationMs": 500,
+      "input": {
+        "userInput": "manufacturing discrete-manufacturing electronics"
+      },
+      "output": {
+        "industry": "manufacturing-industrial",
+        "domain": "discrete-manufacturing",
+        "field": "electronics"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "initialize_session",
+      "timestamp": "2026-01-20T20:24:01Z",
+      "durationMs": 1000,
+      "input": {
+        "target": "electronics manufacturing"
+      },
+      "output": {
+        "sessionId": "session-20260120-202400",
+        "directories": "created"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T20:24:02Z",
+      "durationMs": 180000,
+      "input": {
+        "queries": [
+          "electronics manufacturing challenges problems 2025 2026",
+          "semiconductor industry challenges",
+          "PCB manufacturing problems defects",
+          "chip fabrication process limits",
+          "electronics supply chain risks",
+          "manufacturing cybersecurity threats"
+        ]
+      },
+      "output": {
+        "candidatesFound": 12,
+        "sourcesConsulted": 45
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T20:27:02Z",
+      "durationMs": 600000,
+      "input": {
+        "candidates": 12
+      },
+      "output": {
+        "problemsResearched": 12,
+        "sourcesAnalyzed": 65
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T20:37:02Z",
+      "durationMs": 300000,
+      "input": {
+        "problemsToValidate": 12
+      },
+      "output": {
+        "approved": 10,
+        "rejected": 2,
+        "averageConfidence": 0.87
+      },
+      "status": "completed"
+    },
+    {
+      "step": 6,
+      "action": "storage_phase",
+      "timestamp": "2026-01-20T20:42:02Z",
+      "durationMs": 120000,
+      "input": {
+        "problemsToStore": 10
+      },
+      "output": {
+        "filesCreated": 1,
+        "filesUpdated": 0,
+        "path": "research-viewer/public/research-data/industries/manufacturing-industrial/discrete-manufacturing/fields/electronics.json"
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 1260000,
+    "apiCalls": 18,
+    "sourcesConsulted": 65
+  }
+}
