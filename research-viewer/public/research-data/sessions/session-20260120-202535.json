@@ -1,0 +1,187 @@
+{
+  "id": "session-20260120-202535",
+  "startedAt": "2026-01-20T20:25:35Z",
+  "completedAt": "2026-01-20T20:45:00Z",
+  "target": {
+    "industry": "energy-utilities",
+    "industryName": "Energy & Utilities",
+    "domain": "oil-gas",
+    "domainName": "Oil & Gas",
+    "field": "upstream",
+    "fieldName": "Upstream"
+  },
+  "configuration": {
+    "maxProblems": 10,
+    "depthLevel": "deep",
+    "minConfidence": 0.7
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 5,
+    "averageConfidence": 0.866,
+    "averageImpactScore": 70.2
+  },
+  "problems": [
+    {
+      "id": "dac8f563-51e3-475e-8206-b2fcad51e75d",
+      "title": "Accelerating Shale Well Production Decline Rates and Diminishing Returns from Infill Drilling",
+      "impactScore": 72,
+      "confidence": 0.88,
+      "verdict": "approved"
+    },
+    {
+      "id": "d4be8a63-2f64-4971-a448-d9af4389784f",
+      "title": "Critical Workforce Talent Shortage and Widening Skills Gap in Upstream Operations",
+      "impactScore": 70,
+      "confidence": 0.85,
+      "verdict": "approved"
+    },
+    {
+      "id": "1c9d2d69-1b27-425c-8799-40c8bbf6aeaa",
+      "title": "Methane Emissions Detection Gaps and Flaring Inefficiency Undermining Climate Goals",
+      "impactScore": 78,
+      "confidence": 0.90,
+      "verdict": "approved"
+    },
+    {
+      "id": "0e689a6d-73e5-48c6-a53f-73ad1f5fadce",
+      "title": "Oil Price Volatility Below Breakeven Costs Threatening Upstream Investment Viability",
+      "impactScore": 68,
+      "confidence": 0.92,
+      "verdict": "approved"
+    },
+    {
+      "id": "3e3d7828-93b3-4a6c-aa56-62fd127c12a6",
+      "title": "Subsurface Uncertainty and Reservoir Modeling Limitations Impeding Optimal Development Decisions",
+      "impactScore": 69,
+      "confidence": 0.85,
+      "verdict": "approved"
+    },
+    {
+      "id": "b39ec587-1df5-46e9-b411-144710455b38",
+      "title": "Cybersecurity Vulnerabilities in Operational Technology Systems Threatening Critical Infrastructure",
+      "impactScore": 73,
+      "confidence": 0.87,
+      "verdict": "approved"
+    },
+    {
+      "id": "973c078b-a816-4075-841d-9cd9d90c6e37",
+      "title": "Natural Gas Takeaway Capacity Constraints Causing Negative Prices and Stranded Production",
+      "impactScore": 68,
+      "confidence": 0.88,
+      "verdict": "approved"
+    },
+    {
+      "id": "a5ad4e08-91a0-418c-95e3-86647f26b392",
+      "title": "Deepwater and Ultra-Deepwater Drilling Safety Challenges and Blowout Prevention Complexity",
+      "impactScore": 71,
+      "confidence": 0.85,
+      "verdict": "approved"
+    },
+    {
+      "id": "2e3c4c25-8822-4710-80ab-706a620d9347",
+      "title": "CO2-Enhanced Oil Recovery Integration with Carbon Capture and Storage at Economic Scale",
+      "impactScore": 64,
+      "confidence": 0.82,
+      "verdict": "approved"
+    },
+    {
+      "id": "d1e66781-5221-4a48-b30c-3d6008d12831",
+      "title": "Aging Upstream Infrastructure and Equipment Beyond Design Life Creating Integrity Risks",
+      "impactScore": 69,
+      "confidence": 0.84,
+      "verdict": "approved"
+    }
+  ],
+  "steps": [
+    {
+      "phase": "discovery",
+      "startedAt": "2026-01-20T20:26:00Z",
+      "completedAt": "2026-01-20T20:30:00Z",
+      "searchQueries": [
+        "oil gas upstream challenges problems issues 2025 2026",
+        "oil gas upstream emerging challenges future risks 2026",
+        "enhanced oil recovery EOR challenges carbon capture utilization storage",
+        "oil gas reservoir data management subsurface modeling uncertainty problems"
+      ],
+      "candidatesFound": 15
+    },
+    {
+      "phase": "research",
+      "startedAt": "2026-01-20T20:30:00Z",
+      "completedAt": "2026-01-20T20:38:00Z",
+      "problemsAnalyzed": 15,
+      "sourcesFetched": 4
+    },
+    {
+      "phase": "validation",
+      "startedAt": "2026-01-20T20:38:00Z",
+      "completedAt": "2026-01-20T20:42:00Z",
+      "problemsValidated": 10,
+      "problemsRejected": 5
+    },
+    {
+      "phase": "synthesis",
+      "startedAt": "2026-01-20T20:42:00Z",
+      "completedAt": "2026-01-20T20:45:00Z",
+      "filesWritten": 2
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.deloitte.com/us/en/insights/industry/oil-and-gas/oil-and-gas-industry-outlook.html",
+      "title": "2026 Oil and Gas Industry Outlook | Deloitte Insights",
+      "type": "industry-report"
+    },
+    {
+      "url": "https://www.woodmac.com/news/opinion/upstream-oil-gas-2026-outlook/",
+      "title": "Upstream oil & gas: region-by-region predictions for 2026 | Wood Mackenzie",
+      "type": "industry-report"
+    },
+    {
+      "url": "https://energiesmedia.com/oil-upstream-spending-cuts-point-to-tough-2026/",
+      "title": "Sharp upstream spending cuts point to tough 2026 ahead for oil and gas sector",
+      "type": "news"
+    },
+    {
+      "url": "https://www.oilfield-international-services.com/blog/navigating-the-shifting-sands-oil-and-gas-exploration-challenges-in-2026",
+      "title": "Oil & Gas Exploration in 2026: Top Challenges & Outlook",
+      "type": "industry-report"
+    },
+    {
+      "url": "https://www.offshore-technology.com/features/year-in-oil-and-gas-2025-2026/",
+      "title": "The year in oil and gas: 2025 review and 2026 outlook",
+      "type": "news"
+    },
+    {
+      "url": "https://www.lathropgpm.com/insights/u-s-oil-and-gas-outlook-2026-how-energy-companies-can-navigate-a-plateau-year/",
+      "title": "U.S. Oil & Gas Outlook 2026",
+      "type": "industry-report"
+    },
+    {
+      "url": "https://energy-oil-gas.com/news/6-key-trends-that-will-define-the-oil-and-gas-industry-in-2026/",
+      "title": "6 key trends that will define the oil and gas industry in 2026",
+      "type": "news"
+    },
+    {
+      "url": "https://www.iea.org/commentaries/can-co2-eor-really-provide-carbon-negative-oil",
+      "title": "Can CO2-EOR really provide carbon-negative oil?",
+      "type": "academic"
+    },
+    {
+      "url": "https://ieefa.org/resources/carbon-capture-serve-enhanced-oil-recovery-overpromise-and-underperformance",
+      "title": "Carbon capture to serve enhanced oil recovery",
+      "type": "academic"
+    },
+    {
+      "url": "https://www.dgi.com/blog/subsurface-uncertainty/",
+      "title": "Reducing Subsurface Uncertainty with Data Integration and Visualization",
+      "type": "technical"
+    }
+  ],
+  "errors": [],
+  "notes": "Research focused on upstream oil and gas sector including exploration, drilling, production, reservoir engineering, and enhanced recovery. All 10 problems validated with confidence above 0.7 threshold."
+}

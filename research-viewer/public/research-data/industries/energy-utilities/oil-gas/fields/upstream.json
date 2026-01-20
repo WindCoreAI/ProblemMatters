@@ -1,0 +1,2109 @@
+{
+  "field": {
+    "id": "38a7f0ed-bccb-4b53-993d-da315d0deb83",
+    "name": "Upstream",
+    "slug": "upstream",
+    "description": "Upstream operations in the oil and gas industry encompassing exploration, drilling, production, reservoir engineering, well completion, and enhanced recovery activities."
+  },
+  "domain": {
+    "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+    "name": "Oil & Gas",
+    "slug": "oil-gas"
+  },
+  "industry": {
+    "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+    "name": "Energy & Utilities",
+    "slug": "energy-utilities"
+  },
+  "problems": [
+    {
+      "id": "dac8f563-51e3-475e-8206-b2fcad51e75d",
+      "title": "Accelerating Shale Well Production Decline Rates and Diminishing Returns from Infill Drilling",
+      "slug": "accelerating-shale-well-production-decline-rates",
+      "description": "Unconventional shale wells experience rapid production decline rates that significantly exceed conventional reservoirs, with first-year decline rates often exceeding 70% and ultimate recovery factors below 10% of original oil in place. This steep decline curve forces operators into a continuous drilling treadmill, requiring constant capital expenditure to maintain production levels. The problem is compounded by parent-child well interference, where infill drilling near existing wells causes production losses in both parent and child wells due to pressure depletion and frac hits. As sweet spots become exhausted, operators move to lower-quality acreage with even steeper declines, creating a fundamental sustainability challenge for shale production economics.",
+      "summary": "Shale wells decline 70%+ in the first year with sub-10% recovery rates, forcing continuous drilling while infill wells suffer from interference effects, challenging long-term production sustainability.",
+      "industry": {
+        "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+        "name": "Oil & Gas",
+        "slug": "oil-gas"
+      },
+      "field": {
+        "id": "38a7f0ed-bccb-4b53-993d-da315d0deb83",
+        "name": "Upstream",
+        "slug": "upstream"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["production-optimization", "reservoir-depletion", "capital-efficiency"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.2,
+        "affectedPopulation": 7.5,
+        "economicImpact": 9.0,
+        "qualityOfLifeImpact": 5.0,
+        "productivityImpact": 8.5
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 5.5,
+        "resourceRequirements": 4.0,
+        "existingProgress": 5.5,
+        "barrierCount": 5.0
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "researchActivity": 3.0,
+        "fundingLevel": 3.0,
+        "organizationCount": 4.0,
+        "mediaAttention": 4.0
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "Low permeability of shale formations requiring hydraulic fracturing, which creates finite drainage areas",
+          "category": "geological",
+          "contributionLevel": "high",
+          "evidence": "Shale permeability measured in nanodarcies vs millidarcies for conventional reservoirs"
+        },
+        {
+          "description": "Pressure depletion occurring faster than oil can migrate through tight rock matrix",
+          "category": "physical",
+          "contributionLevel": "high",
+          "evidence": "First-year decline rates of 70-80% documented across major shale basins"
+        },
+        {
+          "description": "Parent-child well interference from frac hits and pressure communication",
+          "category": "operational",
+          "contributionLevel": "medium",
+          "evidence": "Studies showing 20-40% production losses in parent wells from nearby infill drilling"
+        },
+        {
+          "description": "Exhaustion of Tier 1 drilling locations forcing movement to lower-quality acreage",
+          "category": "resource",
+          "contributionLevel": "medium",
+          "evidence": "Declining initial production rates in mature basins despite improved completion techniques"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Continuous capital expenditure required to maintain flat production",
+          "type": "economic",
+          "affectedArea": "operator-finances",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Production plateau expected in US shale basins despite drilling activity",
+          "type": "operational",
+          "affectedArea": "energy-supply",
+          "timeframe": "2025-2030"
+        },
+        {
+          "description": "Stranded reserves where recovery factor remains below 10%",
+          "type": "resource",
+          "affectedArea": "resource-utilization",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Investor concerns about capital efficiency and returns",
+          "type": "financial",
+          "affectedArea": "capital-markets",
+          "timeframe": "ongoing"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Extended lateral lengths",
+          "description": "Drilling longer horizontal sections to access more reservoir volume per well",
+          "type": "engineering",
+          "effectiveness": 6,
+          "adoptionLevel": "widespread",
+          "limitations": "Surface constraints, diminishing returns beyond certain lengths"
+        },
+        {
+          "name": "Optimized completion designs",
+          "description": "Improved fracturing techniques, stage spacing, and proppant loading",
+          "type": "engineering",
+          "effectiveness": 5,
+          "adoptionLevel": "widespread",
+          "limitations": "Incremental improvements reaching plateau"
+        },
+        {
+          "name": "Refracturing existing wells",
+          "description": "Re-stimulating older wells to access bypassed pay",
+          "type": "remedial",
+          "effectiveness": 4,
+          "adoptionLevel": "limited",
+          "limitations": "Economics often marginal, risk of wellbore damage"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Enhanced oil recovery techniques viable at shale economics",
+          "gapType": "technical",
+          "opportunity": "Developing EOR methods that work in ultra-low permeability formations",
+          "difficulty": "high"
+        },
+        {
+          "description": "Predictive models for optimal well spacing to minimize interference",
+          "gapType": "knowledge",
+          "opportunity": "Machine learning models incorporating subsurface uncertainty",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Technologies to increase ultimate recovery factor beyond 10%",
+          "gapType": "technical",
+          "opportunity": "Novel stimulation or production techniques",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "operator",
+          "description": "E&P companies developing shale assets",
+          "examples": ["EOG Resources", "Pioneer Natural Resources", "Devon Energy"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "investor",
+          "description": "Shareholders demanding capital discipline and returns",
+          "examples": ["Institutional investors", "Private equity"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "service-company",
+          "description": "Oilfield services providing drilling and completion",
+          "examples": ["Halliburton", "Schlumberger", "Baker Hughes"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "2026 Oil and Gas Industry Outlook",
+          "url": "https://www.deloitte.com/us/en/insights/industry/oil-and-gas/oil-and-gas-industry-outlook.html",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["U.S. oil production is expected to plateau with a 13.5 mb/d average forecasted through 2026"]
+        },
+        {
+          "type": "industry-report",
+          "title": "Upstream oil & gas: region-by-region predictions for 2026",
+          "url": "https://www.woodmac.com/news/opinion/upstream-oil-gas-2026-outlook/",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["Brownfield rejuvenation and recovery factors gaining prominence"]
+        }
+      ],
+      "tags": ["shale", "decline-curves", "production", "drilling", "reservoir"],
+      "keywords": ["shale decline", "production decline", "infill drilling", "parent-child interference", "recovery factor"],
+      "metrics": {
+        "economicImpact": {
+          "value": 50000000000,
+          "unit": "USD",
+          "description": "Annual capital expenditure required to offset natural decline in US shale"
+        },
+        "affectedPopulation": {
+          "value": 500,
+          "unit": "companies",
+          "description": "US shale operators affected by decline curve economics"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["SPE technical papers", "DOE research programs", "University studies"]
+      },
+      "researchSession": "session-20260120-202535",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:35Z",
+      "updatedAt": "2026-01-20T20:25:35Z",
+      "version": 1
+    },
+    {
+      "id": "d4be8a63-2f64-4971-a448-d9af4389784f",
+      "title": "Critical Workforce Talent Shortage and Widening Skills Gap in Upstream Operations",
+      "slug": "workforce-talent-shortage-skills-gap-upstream",
+      "description": "The upstream oil and gas industry faces a severe workforce crisis as experienced personnel retire without adequate replacement, while the sector struggles to attract young talent amid energy transition narratives. Over 50% of the current workforce is aged 45 or older, creating an impending wave of retirements that will eliminate decades of institutional knowledge. Simultaneously, the industry's digital transformation demands new competencies in data science, automation, and AI that existing workers lack, while competition from tech companies draws potential recruits away. The cyclical nature of oil prices exacerbates the problem through boom-bust hiring patterns that create workforce instability and damage the industry's reputation as a stable career path.",
+      "summary": "Over 50% of upstream workforce nearing retirement with insufficient young talent pipeline, while digital transformation creates skills gaps and tech sector competition draws talent away.",
+      "industry": {
+        "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+        "name": "Oil & Gas",
+        "slug": "oil-gas"
+      },
+      "field": {
+        "id": "38a7f0ed-bccb-4b53-993d-da315d0deb83",
+        "name": "Upstream",
+        "slug": "upstream"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["human-capital", "knowledge-transfer", "recruitment"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.8,
+        "affectedPopulation": 8.0,
+        "economicImpact": 7.5,
+        "qualityOfLifeImpact": 6.0,
+        "productivityImpact": 8.5
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7.0,
+        "resourceRequirements": 5.5,
+        "existingProgress": 5.0,
+        "barrierCount": 6.5
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "researchActivity": 4.0,
+        "fundingLevel": 5.0,
+        "organizationCount": 4.5,
+        "mediaAttention": 4.5
+      },
+      "impactScore": 70,
+      "rootCauses": [
+        {
+          "description": "Negative perception of oil and gas careers among younger generations concerned about climate",
+          "category": "social",
+          "contributionLevel": "high",
+          "evidence": "Surveys showing petroleum engineering enrollment declining 50%+ at major universities"
+        },
+        {
+          "description": "Boom-bust hiring cycles creating career instability perception",
+          "category": "economic",
+          "contributionLevel": "high",
+          "evidence": "Mass layoffs during 2015-2016 and 2020 price crashes"
+        },
+        {
+          "description": "Competition from tech sector offering higher salaries and better work-life balance",
+          "category": "market",
+          "contributionLevel": "medium",
+          "evidence": "Starting salaries and remote work options favoring tech companies"
+        },
+        {
+          "description": "Insufficient investment in training and development programs",
+          "category": "organizational",
+          "contributionLevel": "medium",
+          "evidence": "Training budgets cut during downturns, creating capability gaps"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Loss of critical institutional knowledge as experienced workers retire",
+          "type": "operational",
+          "affectedArea": "operational-capability",
+          "timeframe": "2025-2035"
+        },
+        {
+          "description": "Inability to execute digital transformation initiatives due to skills gaps",
+          "type": "strategic",
+          "affectedArea": "technology-adoption",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Increased safety incidents from less experienced workforce",
+          "type": "safety",
+          "affectedArea": "workplace-safety",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Higher labor costs from scarcity-driven wage inflation",
+          "type": "economic",
+          "affectedArea": "operating-costs",
+          "timeframe": "ongoing"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Industry-university partnerships",
+          "description": "Scholarship programs and curriculum development with petroleum engineering schools",
+          "type": "educational",
+          "effectiveness": 5,
+          "adoptionLevel": "moderate",
+          "limitations": "Declining interest in petroleum programs regardless of funding"
+        },
+        {
+          "name": "Rebranding as energy companies",
+          "description": "Positioning as broad energy providers to appeal to sustainability-minded recruits",
+          "type": "marketing",
+          "effectiveness": 4,
+          "adoptionLevel": "growing",
+          "limitations": "Perceived as greenwashing by skeptical candidates"
+        },
+        {
+          "name": "Reskilling programs",
+          "description": "Training existing workforce in digital skills and new technologies",
+          "type": "training",
+          "effectiveness": 5,
+          "adoptionLevel": "moderate",
+          "limitations": "Resistance to change, training capacity constraints"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Effective knowledge capture and transfer systems for tacit expertise",
+          "gapType": "process",
+          "opportunity": "AI-powered knowledge management and mentorship platforms",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Career pathways bridging oil and gas with energy transition roles",
+          "gapType": "structural",
+          "opportunity": "Integrated energy career tracks spanning fossil and renewable",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "operator",
+          "description": "Oil and gas companies needing workforce",
+          "examples": ["ExxonMobil", "Chevron", "ConocoPhillips"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "educational-institution",
+          "description": "Universities with petroleum engineering programs",
+          "examples": ["Texas A&M", "Colorado School of Mines", "University of Tulsa"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "industry-association",
+          "description": "Organizations promoting industry careers",
+          "examples": ["Energy Workforce & Technology Council", "SPE"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Navigating the Future: Key Trends Shaping the Oil and Gas Industry in 2025",
+          "url": "https://www.energyworkforce.org/navigating-the-future-key-trends-shaping-the-oil-and-gas-industry-in-2025/",
+          "date": "2025-01-01",
+          "relevantExcerpts": ["Workforce challenges remain a top concern for industry executives"]
+        },
+        {
+          "type": "industry-report",
+          "title": "2026 Oil and Gas Industry Outlook",
+          "url": "https://www.deloitte.com/us/en/insights/industry/oil-and-gas/oil-and-gas-industry-outlook.html",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["Digital transformation requires new workforce competencies"]
+        }
+      ],
+      "tags": ["workforce", "talent", "skills-gap", "recruitment", "training"],
+      "keywords": ["workforce shortage", "skills gap", "talent pipeline", "retirement wave", "digital skills"],
+      "metrics": {
+        "economicImpact": {
+          "value": 25000000000,
+          "unit": "USD",
+          "description": "Estimated annual cost of workforce challenges including productivity loss and higher wages"
+        },
+        "affectedPopulation": {
+          "value": 1200000,
+          "unit": "workers",
+          "description": "Global upstream oil and gas workforce"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["SPE workforce studies", "Industry association reports"]
+      },
+      "researchSession": "session-20260120-202535",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:35Z",
+      "updatedAt": "2026-01-20T20:25:35Z",
+      "version": 1
+    },
+    {
+      "id": "1c9d2d69-1b27-425c-8799-40c8bbf6aeaa",
+      "title": "Methane Emissions Detection Gaps and Flaring Inefficiency Undermining Climate Goals",
+      "slug": "methane-emissions-flaring-inefficiency",
+      "description": "Upstream oil and gas operations release significant methane emissions through intentional venting, unintentional leaks, and inefficient flaring that severely undermine the industry's climate credentials and face increasing regulatory scrutiny. Satellite measurements reveal actual emissions are often 2-3 times higher than reported figures, with flares malfunctioning 10% of the time and venting 5 times more methane than assumed. Legacy infrastructure lacks continuous monitoring capabilities, creating blind spots where super-emitters go undetected for extended periods. The problem is compounded by fragmented ownership of midstream infrastructure, misaligned incentives between operators and gas gatherers, and insufficient penalties that make venting economically preferable to investing in capture equipment.",
+      "summary": "Upstream methane emissions are 2-3x higher than reported with 10% flare malfunction rates, while detection gaps, infrastructure constraints, and misaligned incentives impede mitigation.",
+      "industry": {
+        "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+        "name": "Oil & Gas",
+        "slug": "oil-gas"
+      },
+      "field": {
+        "id": "38a7f0ed-bccb-4b53-993d-da315d0deb83",
+        "name": "Upstream",
+        "slug": "upstream"
+      },
+      "problemType": "environmental",
+      "problemSubtypes": ["emissions", "monitoring", "regulatory-compliance"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": 9.0,
+        "economicImpact": 7.0,
+        "qualityOfLifeImpact": 8.0,
+        "productivityImpact": 5.0
+      },
+      "tractability": {
+        "overall": 7.0,
+        "technicalFeasibility": 8.0,
+        "resourceRequirements": 6.0,
+        "existingProgress": 6.5,
+        "barrierCount": 7.0
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "researchActivity": 3.5,
+        "fundingLevel": 4.0,
+        "organizationCount": 4.0,
+        "mediaAttention": 4.5
+      },
+      "impactScore": 78,
+      "rootCauses": [
+        {
+          "description": "Legacy infrastructure lacking continuous emission monitoring systems",
+          "category": "infrastructure",
+          "contributionLevel": "high",
+          "evidence": "Majority of US production facilities built before LDAR requirements"
+        },
+        {
+          "description": "Insufficient gas gathering and processing capacity in rapidly developed basins",
+          "category": "infrastructure",
+          "contributionLevel": "high",
+          "evidence": "Permian Basin flaring volumes exceed regulatory targets"
+        },
+        {
+          "description": "Misaligned incentives between operators and midstream companies",
+          "category": "economic",
+          "contributionLevel": "medium",
+          "evidence": "Operators pay penalties lower than gas capture costs"
+        },
+        {
+          "description": "Inaccurate emissions factors in regulatory reporting",
+          "category": "regulatory",
+          "contributionLevel": "medium",
+          "evidence": "Satellite data showing 2-3x discrepancy with reported emissions"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Accelerated near-term climate warming from potent greenhouse gas",
+          "type": "environmental",
+          "affectedArea": "climate",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Regulatory fines and methane fees under IRA and state regulations",
+          "type": "financial",
+          "affectedArea": "operating-costs",
+          "timeframe": "2024-2030"
+        },
+        {
+          "description": "Market access restrictions for LNG exports under EU methane regulations",
+          "type": "market",
+          "affectedArea": "export-markets",
+          "timeframe": "2025-2030"
+        },
+        {
+          "description": "Reputational damage undermining social license to operate",
+          "type": "social",
+          "affectedArea": "public-perception",
+          "timeframe": "ongoing"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Continuous emission monitoring systems (CEMS)",
+          "description": "Real-time methane detection using optical gas imaging and sensors",
+          "type": "technology",
+          "effectiveness": 7,
+          "adoptionLevel": "growing",
+          "limitations": "High upfront cost, coverage gaps in remote locations"
+        },
+        {
+          "name": "Satellite-based detection",
+          "description": "Space-based monitoring identifying large emission sources",
+          "type": "technology",
+          "effectiveness": 6,
+          "adoptionLevel": "growing",
+          "limitations": "Detection threshold limits, temporal resolution gaps"
+        },
+        {
+          "name": "LDAR programs",
+          "description": "Leak detection and repair using periodic surveys",
+          "type": "process",
+          "effectiveness": 5,
+          "adoptionLevel": "widespread",
+          "limitations": "Point-in-time snapshots miss intermittent emissions"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Cost-effective continuous monitoring for small and marginal wells",
+          "gapType": "technical",
+          "opportunity": "Low-cost IoT sensors with edge computing",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Integrated midstream infrastructure in rapidly developing basins",
+          "gapType": "infrastructure",
+          "opportunity": "Pre-built gathering systems and modular processing",
+          "difficulty": "high"
+        },
+        {
+          "description": "Accurate emissions quantification from diverse source types",
+          "gapType": "knowledge",
+          "opportunity": "Improved measurement protocols and emission factors",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "operator",
+          "description": "E&P companies managing production emissions",
+          "examples": ["BP", "Shell", "ExxonMobil"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "regulator",
+          "description": "Environmental agencies enforcing emission standards",
+          "examples": ["EPA", "State environmental agencies", "EU Commission"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "ngo",
+          "description": "Environmental groups monitoring industry emissions",
+          "examples": ["Environmental Defense Fund", "Clean Air Task Force"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "U.S. Oil & Gas Outlook 2026",
+          "url": "https://www.lathropgpm.com/insights/u-s-oil-and-gas-outlook-2026-how-energy-companies-can-navigate-a-plateau-year/",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["U.S. upstream and midstream firms continue to prepare for methane-fee escalation and new climate-disclosure rules"]
+        },
+        {
+          "type": "industry-report",
+          "title": "2026 Oil and Gas Industry Outlook",
+          "url": "https://www.deloitte.com/us/en/insights/industry/oil-and-gas/oil-and-gas-industry-outlook.html",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["Even with short-term relief, prudent operators are staying proactive on emissions to preserve market access"]
+        }
+      ],
+      "tags": ["methane", "emissions", "flaring", "climate", "monitoring"],
+      "keywords": ["methane emissions", "flaring", "LDAR", "emissions monitoring", "climate compliance"],
+      "metrics": {
+        "economicImpact": {
+          "value": 15000000000,
+          "unit": "USD",
+          "description": "Annual value of wasted gas and projected regulatory penalties"
+        },
+        "affectedPopulation": {
+          "value": 8000000000,
+          "unit": "people",
+          "description": "Global population affected by climate impacts"
+        },
+        "trendDirection": "improving",
+        "researchActivityIndicators": ["EPA methane regulations", "IEA methane tracker", "Satellite monitoring programs"]
+      },
+      "researchSession": "session-20260120-202535",
+      "confidence": 0.90,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:35Z",
+      "updatedAt": "2026-01-20T20:25:35Z",
+      "version": 1
+    },
+    {
+      "id": "0e689a6d-73e5-48c6-a53f-73ad1f5fadce",
+      "title": "Oil Price Volatility Below Breakeven Costs Threatening Upstream Investment Viability",
+      "slug": "oil-price-volatility-below-breakeven-costs",
+      "description": "Oil prices projected between $49-57 per barrel in 2026 fall significantly below the $61-70 per barrel breakeven costs for new drilling in major US basins, creating a fundamental threat to upstream investment economics. This price-cost squeeze is driven by anticipated oversupply of several million barrels per day from OPEC+ production increases, US shale growth, and new international projects coming online, while global demand growth remains weak. The volatility is amplified by geopolitical uncertainties including potential Russian sanctions relief flooding markets with previously restricted supply. Operators face impossible choices between drilling uneconomic wells to maintain lease positions, shutting in production, or accepting permanent impairments to reserve portfolios.",
+      "summary": "Oil prices of $49-57/bbl fall below $61-70/bbl breakeven costs, with oversupply projections and geopolitical uncertainty threatening upstream investment economics.",
+      "industry": {
+        "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+        "name": "Oil & Gas",
+        "slug": "oil-gas"
+      },
+      "field": {
+        "id": "38a7f0ed-bccb-4b53-993d-da315d0deb83",
+        "name": "Upstream",
+        "slug": "upstream"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["price-volatility", "investment-economics", "supply-demand"],
+      "scope": "global",
+      "maturity": "mature",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.8,
+        "affectedPopulation": 8.0,
+        "economicImpact": 9.5,
+        "qualityOfLifeImpact": 6.0,
+        "productivityImpact": 8.0
+      },
+      "tractability": {
+        "overall": 3.5,
+        "technicalFeasibility": 4.0,
+        "resourceRequirements": 3.0,
+        "existingProgress": 4.0,
+        "barrierCount": 3.0
+      },
+      "neglectedness": {
+        "overall": 2.5,
+        "researchActivity": 2.0,
+        "fundingLevel": 3.0,
+        "organizationCount": 2.5,
+        "mediaAttention": 2.5
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Anticipated global oversupply from OPEC+ and US shale production growth",
+          "category": "market",
+          "contributionLevel": "high",
+          "evidence": "Forecasts of multi-million barrel per day oversupply in 2026"
+        },
+        {
+          "description": "Weak global demand growth from economic slowdown and efficiency gains",
+          "category": "economic",
+          "contributionLevel": "high",
+          "evidence": "IEA and EIA demand growth forecasts revised downward"
+        },
+        {
+          "description": "Geopolitical uncertainties including potential Russian sanctions relief",
+          "category": "political",
+          "contributionLevel": "medium",
+          "evidence": "Market scenarios modeling Russian supply return"
+        },
+        {
+          "description": "Cost inflation in drilling and completion services",
+          "category": "economic",
+          "contributionLevel": "medium",
+          "evidence": "Breakeven costs rising despite efficiency improvements"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Sharp cuts in upstream capital spending for second consecutive year",
+          "type": "financial",
+          "affectedArea": "investment",
+          "timeframe": "2025-2026"
+        },
+        {
+          "description": "Production curtailments and shut-ins of marginal wells",
+          "type": "operational",
+          "affectedArea": "production",
+          "timeframe": "2026"
+        },
+        {
+          "description": "Workforce reductions and industry consolidation",
+          "type": "social",
+          "affectedArea": "employment",
+          "timeframe": "2026"
+        },
+        {
+          "description": "Reserve impairments and asset write-downs",
+          "type": "financial",
+          "affectedArea": "balance-sheets",
+          "timeframe": "2026"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Hedging programs",
+          "description": "Using financial derivatives to lock in future prices",
+          "type": "financial",
+          "effectiveness": 6,
+          "adoptionLevel": "widespread",
+          "limitations": "Limits upside capture, counterparty risk, hedge costs"
+        },
+        {
+          "name": "Capital discipline",
+          "description": "Strict investment criteria and spending controls",
+          "type": "management",
+          "effectiveness": 5,
+          "adoptionLevel": "widespread",
+          "limitations": "May strand assets and lose lease positions"
+        },
+        {
+          "name": "Cost reduction initiatives",
+          "description": "Efficiency improvements and vendor negotiations",
+          "type": "operational",
+          "effectiveness": 5,
+          "adoptionLevel": "widespread",
+          "limitations": "Diminishing returns as easy savings exhausted"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Structural cost reduction to achieve lower breakeven thresholds",
+          "gapType": "technical",
+          "opportunity": "Automation and AI-driven operations",
+          "difficulty": "high"
+        },
+        {
+          "description": "Portfolio diversification beyond commodity price exposure",
+          "gapType": "strategic",
+          "opportunity": "Integrated energy business models",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "operator",
+          "description": "E&P companies facing margin compression",
+          "examples": ["Independent producers", "IOCs", "NOCs"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "investor",
+          "description": "Shareholders exposed to oil price risk",
+          "examples": ["Institutional investors", "Retail shareholders"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "government",
+          "description": "Producing countries dependent on oil revenues",
+          "examples": ["Saudi Arabia", "Russia", "US states"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Sharp upstream spending cuts point to tough 2026 ahead",
+          "url": "https://energiesmedia.com/oil-upstream-spending-cuts-point-to-tough-2026/",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["Oil and gas companies will be bracing themselves for strong macro headwinds. Lower oil prices will force more structural cost reductions"]
+        },
+        {
+          "type": "industry-report",
+          "title": "Oil & Gas Exploration in 2026: Top Challenges & Outlook",
+          "url": "https://www.oilfield-international-services.com/blog/navigating-the-shifting-sands-oil-and-gas-exploration-challenges-in-2026",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["WTI oil prices across 2026 range from approximately $49 to $57 per barrel, but average breakeven costs range from $61 to $70 per barrel"]
+        },
+        {
+          "type": "industry-report",
+          "title": "Upstream oil & gas: region-by-region predictions for 2026",
+          "url": "https://www.woodmac.com/news/opinion/upstream-oil-gas-2026-outlook/",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["Sub-US$60/bbl, the upstream sector will remain optimistic yet shackled by capital discipline and financial constraints"]
+        }
+      ],
+      "tags": ["oil-price", "economics", "investment", "volatility", "breakeven"],
+      "keywords": ["oil price", "breakeven cost", "capital spending", "oversupply", "price volatility"],
+      "metrics": {
+        "economicImpact": {
+          "value": 200000000000,
+          "unit": "USD",
+          "description": "Annual global upstream investment at risk from price weakness"
+        },
+        "affectedPopulation": {
+          "value": 2000,
+          "unit": "companies",
+          "description": "Global upstream operators affected"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["IEA World Energy Outlook", "EIA forecasts", "Industry analyst reports"]
+      },
+      "researchSession": "session-20260120-202535",
+      "confidence": 0.92,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:35Z",
+      "updatedAt": "2026-01-20T20:25:35Z",
+      "version": 1
+    },
+    {
+      "id": "3e3d7828-93b3-4a6c-aa56-62fd127c12a6",
+      "title": "Subsurface Uncertainty and Reservoir Modeling Limitations Impeding Optimal Development Decisions",
+      "slug": "subsurface-uncertainty-reservoir-modeling-limitations",
+      "description": "Reservoir engineers face fundamental challenges in accurately characterizing subsurface conditions despite unprecedented volumes of data, with uncertainties in geology, fluid properties, and dynamic behavior propagating through development decisions worth billions of dollars. Complex geologies, particularly in carbonate formations containing 60% of remaining oil reserves, exhibit heterogeneities that defy accurate modeling. The deterministic approaches historically used provide false precision while stochastic methods that better capture uncertainty remain underutilized due to computational costs and interpretation complexity. Integration of diverse data sources including seismic, well logs, core data, and production history remains one of the industry's biggest challenges, with each data type carrying its own uncertainties that compound through workflows.",
+      "summary": "Subsurface uncertainty in complex formations impedes development decisions worth billions, with data integration challenges and underutilization of uncertainty quantification methods.",
+      "industry": {
+        "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+        "name": "Oil & Gas",
+        "slug": "oil-gas"
+      },
+      "field": {
+        "id": "38a7f0ed-bccb-4b53-993d-da315d0deb83",
+        "name": "Upstream",
+        "slug": "upstream"
+      },
+      "problemType": "knowledge",
+      "problemSubtypes": ["data-integration", "modeling", "uncertainty-quantification"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": 7.0,
+        "economicImpact": 8.5,
+        "qualityOfLifeImpact": 3.0,
+        "productivityImpact": 8.0
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 6.5,
+        "resourceRequirements": 5.5,
+        "existingProgress": 6.0,
+        "barrierCount": 6.0
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "researchActivity": 3.5,
+        "fundingLevel": 4.0,
+        "organizationCount": 4.0,
+        "mediaAttention": 5.0
+      },
+      "impactScore": 69,
+      "rootCauses": [
+        {
+          "description": "Inherent geological complexity and heterogeneity exceeding measurement resolution",
+          "category": "geological",
+          "contributionLevel": "high",
+          "evidence": "Reservoir properties varying over scales smaller than well spacing"
+        },
+        {
+          "description": "Limited subsurface sampling creating data gaps between wells",
+          "category": "technical",
+          "contributionLevel": "high",
+          "evidence": "Wells sample less than 1% of reservoir volume"
+        },
+        {
+          "description": "Non-unique solutions in history matching and inverse problems",
+          "category": "technical",
+          "contributionLevel": "medium",
+          "evidence": "Multiple geological models can match historical production"
+        },
+        {
+          "description": "Organizational barriers to integrated multidisciplinary workflows",
+          "category": "organizational",
+          "contributionLevel": "medium",
+          "evidence": "Siloed disciplines with different software and data formats"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Suboptimal well placement and completion designs",
+          "type": "operational",
+          "affectedArea": "drilling-efficiency",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Development cost overruns from unexpected subsurface conditions",
+          "type": "financial",
+          "affectedArea": "project-economics",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Stranded reserves from poorly understood reservoir connectivity",
+          "type": "resource",
+          "affectedArea": "recovery-factor",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Facilities over or under-designed relative to actual reservoir deliverability",
+          "type": "engineering",
+          "affectedArea": "capital-efficiency",
+          "timeframe": "ongoing"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Integrated reservoir modeling platforms",
+          "description": "Software combining geological, geophysical, and engineering data",
+          "type": "technology",
+          "effectiveness": 6,
+          "adoptionLevel": "widespread",
+          "limitations": "Still requires significant interpretation, high cost"
+        },
+        {
+          "name": "Ensemble-based uncertainty quantification",
+          "description": "Multiple model realizations spanning parameter uncertainty",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoptionLevel": "moderate",
+          "limitations": "Computationally expensive, interpretation complexity"
+        },
+        {
+          "name": "Machine learning for pattern recognition",
+          "description": "AI identifying reservoir patterns from historical data",
+          "type": "technology",
+          "effectiveness": 5,
+          "adoptionLevel": "growing",
+          "limitations": "Black box concerns, data quality dependencies"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Real-time model updating with continuous production data",
+          "gapType": "technical",
+          "opportunity": "Digital twin integration with automated history matching",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Quantifying and communicating uncertainty to non-technical decision makers",
+          "gapType": "process",
+          "opportunity": "Visualization tools and decision frameworks",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Physics-informed machine learning combining data and principles",
+          "gapType": "technical",
+          "opportunity": "Hybrid AI models respecting physical constraints",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "technical",
+          "description": "Reservoir engineers and geoscientists",
+          "examples": ["Asset teams", "Technical centers"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "operator",
+          "description": "Companies making development investment decisions",
+          "examples": ["IOCs", "Independents", "NOCs"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "technology-provider",
+          "description": "Software and service companies providing modeling tools",
+          "examples": ["SLB", "Halliburton", "AspenTech"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "technical",
+          "title": "Reducing Subsurface Uncertainty with Data Integration and Visualization",
+          "url": "https://www.dgi.com/blog/subsurface-uncertainty/",
+          "date": "2025-01-01",
+          "relevantExcerpts": ["Utilizing data sources to provide a more detailed and accurate model of subsurface conditions remains one of the biggest industry challenges"]
+        },
+        {
+          "type": "technical",
+          "title": "Reservoir Characterization: An Essential Guide",
+          "url": "https://www.ssdynamics.com/reservoir-characterization-importance/",
+          "date": "2025-01-01",
+          "relevantExcerpts": ["Reservoir characterization involves integrating geological, petrophysical, geophysical, and engineering data to develop accurate models that capture the complexities and uncertainties"]
+        },
+        {
+          "type": "technical",
+          "title": "Managing Subsurface Uncertainties in Facilities Design",
+          "url": "https://jpt.spe.org/managing-subsurface-uncertainties-facilities-design",
+          "date": "2025-01-01",
+          "relevantExcerpts": ["We're not going to be able to resolve the uncertainty. What we can do is manage the uncertainty"]
+        }
+      ],
+      "tags": ["reservoir-engineering", "modeling", "uncertainty", "data-integration", "subsurface"],
+      "keywords": ["subsurface uncertainty", "reservoir modeling", "data integration", "history matching", "geological complexity"],
+      "metrics": {
+        "economicImpact": {
+          "value": 30000000000,
+          "unit": "USD",
+          "description": "Annual value at risk from suboptimal development decisions"
+        },
+        "affectedPopulation": {
+          "value": 50000,
+          "unit": "professionals",
+          "description": "Reservoir engineers and geoscientists globally"
+        },
+        "trendDirection": "stable",
+        "researchActivityIndicators": ["SPE technical papers", "EAGE conferences", "Software vendor R&D"]
+      },
+      "researchSession": "session-20260120-202535",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:35Z",
+      "updatedAt": "2026-01-20T20:25:35Z",
+      "version": 1
+    },
+    {
+      "id": "b39ec587-1df5-46e9-b411-144710455b38",
+      "title": "Cybersecurity Vulnerabilities in Operational Technology Systems Threatening Critical Infrastructure",
+      "slug": "cybersecurity-vulnerabilities-operational-technology",
+      "description": "Oil and gas upstream operations face escalating cybersecurity threats targeting operational technology (OT) systems that control drilling rigs, production platforms, and pipeline infrastructure, with attacks increasing 46% year-over-year. Legacy industrial control systems were designed for reliability and safety without security considerations, creating vulnerabilities that sophisticated threat actors exploit to cause operational shutdowns, safety incidents, or data theft. The convergence of IT and OT networks, combined with remote monitoring capabilities and IoT sensor deployment, expands the attack surface while globally distributed assets complicate security monitoring. Cybersecurity incidents are increasingly viewed as potential operational shutdowns rather than mere IT issues, yet skills shortages in OT security and fragmented regulatory frameworks impede defense improvements.",
+      "summary": "OT system attacks up 46% targeting legacy infrastructure designed without security, while IT/OT convergence expands attack surface and skills shortages impede defense.",
+      "industry": {
+        "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+        "name": "Oil & Gas",
+        "slug": "oil-gas"
+      },
+      "field": {
+        "id": "38a7f0ed-bccb-4b53-993d-da315d0deb83",
+        "name": "Upstream",
+        "slug": "upstream"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["security", "infrastructure", "risk-management"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": 7.5,
+        "economicImpact": 8.5,
+        "qualityOfLifeImpact": 7.0,
+        "productivityImpact": 8.0
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6.0,
+        "resourceRequirements": 5.0,
+        "existingProgress": 5.5,
+        "barrierCount": 5.5
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "researchActivity": 4.0,
+        "fundingLevel": 4.5,
+        "organizationCount": 4.5,
+        "mediaAttention": 5.0
+      },
+      "impactScore": 73,
+      "rootCauses": [
+        {
+          "description": "Legacy OT systems designed for reliability without security considerations",
+          "category": "technical",
+          "contributionLevel": "high",
+          "evidence": "Many SCADA systems running decades-old software without security patches"
+        },
+        {
+          "description": "IT/OT convergence expanding attack surface through network connections",
+          "category": "technical",
+          "contributionLevel": "high",
+          "evidence": "Digital transformation connecting previously air-gapped systems"
+        },
+        {
+          "description": "Shortage of personnel with combined OT and cybersecurity expertise",
+          "category": "resource",
+          "contributionLevel": "medium",
+          "evidence": "Industry surveys showing unfilled OT security positions"
+        },
+        {
+          "description": "Geopolitical tensions motivating state-sponsored attacks on critical infrastructure",
+          "category": "political",
+          "contributionLevel": "medium",
+          "evidence": "Documented attacks attributed to nation-state actors"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Operational shutdowns causing production losses and safety risks",
+          "type": "operational",
+          "affectedArea": "production",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Data theft of proprietary reservoir and operational data",
+          "type": "financial",
+          "affectedArea": "intellectual-property",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Safety system compromises potentially causing physical harm",
+          "type": "safety",
+          "affectedArea": "personnel-safety",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Regulatory penalties and insurance cost increases",
+          "type": "financial",
+          "affectedArea": "operating-costs",
+          "timeframe": "ongoing"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Network segmentation",
+          "description": "Isolating OT networks from IT and external connections",
+          "type": "technical",
+          "effectiveness": 6,
+          "adoptionLevel": "moderate",
+          "limitations": "Reduces functionality, difficult with remote monitoring needs"
+        },
+        {
+          "name": "OT-specific security monitoring",
+          "description": "Intrusion detection designed for industrial protocols",
+          "type": "technology",
+          "effectiveness": 6,
+          "adoptionLevel": "growing",
+          "limitations": "High false positive rates, expertise required"
+        },
+        {
+          "name": "Security frameworks (IEC 62443)",
+          "description": "Industry standards for industrial control system security",
+          "type": "process",
+          "effectiveness": 5,
+          "adoptionLevel": "moderate",
+          "limitations": "Implementation gaps, compliance vs security"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Secure-by-design OT systems replacing legacy infrastructure",
+          "gapType": "technical",
+          "opportunity": "Next-generation control systems with built-in security",
+          "difficulty": "high"
+        },
+        {
+          "description": "Unified IT/OT security operations with appropriate expertise",
+          "gapType": "organizational",
+          "opportunity": "Integrated security operations centers",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Threat intelligence specific to oil and gas OT environments",
+          "gapType": "knowledge",
+          "opportunity": "Industry information sharing and collaboration",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "operator",
+          "description": "Companies responsible for OT security",
+          "examples": ["Majors", "Independents", "NOCs"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "technology-provider",
+          "description": "OT and cybersecurity vendors",
+          "examples": ["Dragos", "Claroty", "Nozomi Networks"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "regulator",
+          "description": "Agencies overseeing critical infrastructure security",
+          "examples": ["CISA", "TSA", "BSEE"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "6 key trends that will define the oil and gas industry in 2026",
+          "url": "https://energy-oil-gas.com/news/6-key-trends-that-will-define-the-oil-and-gas-industry-in-2026/",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["Operational technology, AI models, and production data now carry real business risk. Cybersecurity incidents are increasingly viewed as potential operational shutdowns"]
+        },
+        {
+          "type": "industry-report",
+          "title": "Oil & Gas Exploration in 2026: Top Challenges",
+          "url": "https://www.oilfield-international-services.com/blog/navigating-the-shifting-sands-oil-and-gas-exploration-challenges-in-2026",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["Increased reliance on digital systems also elevates cybersecurity threats that could compromise sensitive exploration data or operational control"]
+        }
+      ],
+      "tags": ["cybersecurity", "OT", "SCADA", "critical-infrastructure", "security"],
+      "keywords": ["OT security", "SCADA", "industrial control systems", "cyber threats", "critical infrastructure"],
+      "metrics": {
+        "economicImpact": {
+          "value": 10000000000,
+          "unit": "USD",
+          "description": "Annual global cost of cyber incidents and security investments"
+        },
+        "affectedPopulation": {
+          "value": 5000,
+          "unit": "facilities",
+          "description": "Global upstream facilities with OT systems"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["CISA advisories", "OT-CERT alerts", "Industry conferences"]
+      },
+      "researchSession": "session-20260120-202535",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:35Z",
+      "updatedAt": "2026-01-20T20:25:35Z",
+      "version": 1
+    },
+    {
+      "id": "973c078b-a816-4075-841d-9cd9d90c6e37",
+      "title": "Natural Gas Takeaway Capacity Constraints Causing Negative Prices and Stranded Production",
+      "slug": "natural-gas-takeaway-capacity-constraints",
+      "description": "Rapid oil production growth in basins like the Permian has outpaced natural gas gathering and pipeline infrastructure, creating bottlenecks that result in negative gas prices at hubs like Waha and force operators to flare or vent associated gas. When pipeline capacity is insufficient, producers must pay to dispose of gas rather than receiving revenue, fundamentally distorting project economics for oil-focused developments. The problem is compounded by regulatory delays in pipeline permitting, opposition from environmental and landowner groups, and the long lead times required to construct processing and transmission infrastructure. Similar constraints affect emerging plays in South America where inadequate infrastructure limits full gas monetization despite significant production potential.",
+      "summary": "Pipeline bottlenecks cause negative gas prices at Waha hub, forcing flaring and distorting economics while permitting delays and opposition slow infrastructure buildout.",
+      "industry": {
+        "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+        "name": "Oil & Gas",
+        "slug": "oil-gas"
+      },
+      "field": {
+        "id": "38a7f0ed-bccb-4b53-993d-da315d0deb83",
+        "name": "Upstream",
+        "slug": "upstream"
+      },
+      "problemType": "infrastructure",
+      "problemSubtypes": ["capacity", "midstream", "regulatory"],
+      "scope": "regional",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": 6.5,
+        "economicImpact": 8.0,
+        "qualityOfLifeImpact": 5.0,
+        "productivityImpact": 8.5
+      },
+      "tractability": {
+        "overall": 6.5,
+        "technicalFeasibility": 8.0,
+        "resourceRequirements": 5.0,
+        "existingProgress": 6.0,
+        "barrierCount": 6.5
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "researchActivity": 4.5,
+        "fundingLevel": 3.5,
+        "organizationCount": 4.0,
+        "mediaAttention": 4.0
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Production growth outpacing infrastructure development timelines",
+          "category": "timing",
+          "contributionLevel": "high",
+          "evidence": "Permian gas production growing faster than takeaway additions"
+        },
+        {
+          "description": "Regulatory and permitting delays for new pipeline construction",
+          "category": "regulatory",
+          "contributionLevel": "high",
+          "evidence": "Multi-year approval processes for interstate pipelines"
+        },
+        {
+          "description": "Fragmented ownership between producers and midstream operators",
+          "category": "structural",
+          "contributionLevel": "medium",
+          "evidence": "Misaligned incentives between E&P and midstream companies"
+        },
+        {
+          "description": "Environmental and landowner opposition to pipeline routes",
+          "category": "social",
+          "contributionLevel": "medium",
+          "evidence": "Pipeline projects facing legal challenges and protests"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Negative gas prices at constrained hubs destroying value",
+          "type": "economic",
+          "affectedArea": "producer-economics",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Increased flaring and venting with environmental impacts",
+          "type": "environmental",
+          "affectedArea": "emissions",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Production curtailments in oil-rich areas due to gas constraints",
+          "type": "operational",
+          "affectedArea": "production",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Stranded reserves where gas cannot be economically produced",
+          "type": "resource",
+          "affectedArea": "resource-development",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Pipeline expansion projects",
+          "description": "New and expanded pipelines to demand centers",
+          "type": "infrastructure",
+          "effectiveness": 8,
+          "adoptionLevel": "growing",
+          "limitations": "Long lead times, permitting challenges"
+        },
+        {
+          "name": "LNG export capacity",
+          "description": "Gulf Coast terminals providing demand outlet",
+          "type": "infrastructure",
+          "effectiveness": 7,
+          "adoptionLevel": "growing",
+          "limitations": "Still requires pipeline to coast"
+        },
+        {
+          "name": "On-site gas processing",
+          "description": "Modular plants to extract NGLs and condition gas",
+          "type": "technology",
+          "effectiveness": 5,
+          "adoptionLevel": "moderate",
+          "limitations": "Still need outlets for processed gas"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Faster permitting processes for critical energy infrastructure",
+          "gapType": "regulatory",
+          "opportunity": "Streamlined federal and state coordination",
+          "difficulty": "high"
+        },
+        {
+          "description": "Proactive infrastructure development ahead of production growth",
+          "gapType": "planning",
+          "opportunity": "Basin-wide infrastructure master planning",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Alternative gas utilization at wellsite",
+          "gapType": "technical",
+          "opportunity": "Gas-to-power, GTL, or on-site consumption",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "operator",
+          "description": "Producers impacted by gas takeaway constraints",
+          "examples": ["Permian operators", "Eagle Ford producers"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "midstream",
+          "description": "Pipeline and processing companies",
+          "examples": ["Kinder Morgan", "Enterprise Products", "Williams"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "regulator",
+          "description": "Agencies overseeing pipeline permitting",
+          "examples": ["FERC", "State regulatory agencies"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "2026 Oil and Gas Industry Outlook",
+          "url": "https://www.deloitte.com/us/en/insights/industry/oil-and-gas/oil-and-gas-industry-outlook.html",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["The Permian region faces challenges related to natural gas takeaway capacity and infrastructure constraints, resulting in negative natural gas prices at the Waha hub"]
+        },
+        {
+          "type": "industry-report",
+          "title": "Outlook 2026: South America's oil growth story masks hidden risks",
+          "url": "https://pemedianetwork.com/petroleum-economist/articles/upstream/2025/outlook-2026-south-america-s-oil-growth-story-masks-hidden-risks/",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["In Brazil, inadequate infrastructure limits full gas monetisation. Argentina faces potential logistics slowdowns if crude production grows faster than pipeline and port expansions"]
+        }
+      ],
+      "tags": ["infrastructure", "pipeline", "gas-takeaway", "permitting", "midstream"],
+      "keywords": ["takeaway capacity", "pipeline constraints", "negative gas prices", "Waha hub", "infrastructure bottleneck"],
+      "metrics": {
+        "economicImpact": {
+          "value": 8000000000,
+          "unit": "USD",
+          "description": "Annual value destruction from negative basis differentials and flaring"
+        },
+        "affectedPopulation": {
+          "value": 300,
+          "unit": "operators",
+          "description": "Producers in constrained basins"
+        },
+        "trendDirection": "stable",
+        "researchActivityIndicators": ["EIA pipeline tracking", "FERC proceedings", "Industry conferences"]
+      },
+      "researchSession": "session-20260120-202535",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:35Z",
+      "updatedAt": "2026-01-20T20:25:35Z",
+      "version": 1
+    },
+    {
+      "id": "a5ad4e08-91a0-418c-95e3-86647f26b392",
+      "title": "Deepwater and Ultra-Deepwater Drilling Safety Challenges and Blowout Prevention Complexity",
+      "slug": "deepwater-drilling-safety-blowout-prevention",
+      "description": "Offshore exploration pushing into deeper waters presents escalating technical and safety challenges, with water depths exceeding 10,000 feet and high-pressure, high-temperature (HPHT) reservoirs taxing the limits of current blowout prevention technology. The extreme pressures and temperatures encountered overwhelm conventional equipment ratings, while the long water column creates delays in well control response and complicates intervention options. Emergency disconnect systems, when activated, leave the well in an uncontrolled state requiring complex capping operations. The Macondo disaster demonstrated catastrophic consequences of deepwater blowout failures, yet the fundamental engineering challenges of controlling wells at these depths remain incompletely solved, with the industry relying on probabilistic redundancy rather than deterministic prevention.",
+      "summary": "Ultra-deepwater drilling in HPHT reservoirs taxes BOP equipment limits, with long intervention distances and incomplete engineering solutions for extreme conditions.",
+      "industry": {
+        "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+        "name": "Oil & Gas",
+        "slug": "oil-gas"
+      },
+      "field": {
+        "id": "38a7f0ed-bccb-4b53-993d-da315d0deb83",
+        "name": "Upstream",
+        "slug": "upstream"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["safety", "drilling", "well-control"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": 6.0,
+        "economicImpact": 8.0,
+        "qualityOfLifeImpact": 7.5,
+        "productivityImpact": 6.5
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 5.5,
+        "resourceRequirements": 4.5,
+        "existingProgress": 5.5,
+        "barrierCount": 4.5
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "researchActivity": 3.5,
+        "fundingLevel": 4.0,
+        "organizationCount": 4.5,
+        "mediaAttention": 4.0
+      },
+      "impactScore": 71,
+      "rootCauses": [
+        {
+          "description": "Extreme pressures exceeding 20,000 psi in HPHT reservoirs",
+          "category": "geological",
+          "contributionLevel": "high",
+          "evidence": "Gulf of Mexico ultra-deep discoveries with extreme pressures"
+        },
+        {
+          "description": "Long water column creating intervention delays and equipment challenges",
+          "category": "physical",
+          "contributionLevel": "high",
+          "evidence": "Water depths exceeding 10,000 feet in frontier areas"
+        },
+        {
+          "description": "Material and equipment limitations at extreme temperature/pressure combinations",
+          "category": "technical",
+          "contributionLevel": "high",
+          "evidence": "Metallurgical challenges with HPHT environments"
+        },
+        {
+          "description": "Limited subsea intervention options compared to shallow water operations",
+          "category": "operational",
+          "contributionLevel": "medium",
+          "evidence": "Dependence on ROVs with limited capability"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Catastrophic blowouts with massive environmental damage",
+          "type": "environmental",
+          "affectedArea": "marine-ecosystems",
+          "timeframe": "event-driven"
+        },
+        {
+          "description": "Loss of life and platform destruction in worst cases",
+          "type": "safety",
+          "affectedArea": "personnel-safety",
+          "timeframe": "event-driven"
+        },
+        {
+          "description": "Multi-billion dollar cleanup and liability costs",
+          "type": "financial",
+          "affectedArea": "operator-finances",
+          "timeframe": "event-driven"
+        },
+        {
+          "description": "Regulatory drilling moratoriums following incidents",
+          "type": "regulatory",
+          "affectedArea": "industry-access",
+          "timeframe": "post-incident"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Redundant BOP systems",
+          "description": "Multiple shear rams and redundant control systems",
+          "type": "engineering",
+          "effectiveness": 7,
+          "adoptionLevel": "widespread",
+          "limitations": "Still probability-based, single-point failures possible"
+        },
+        {
+          "name": "Managed pressure drilling",
+          "description": "Precise wellbore pressure control during operations",
+          "type": "technology",
+          "effectiveness": 7,
+          "adoptionLevel": "growing",
+          "limitations": "Complexity, cost, training requirements"
+        },
+        {
+          "name": "Capping stacks and containment",
+          "description": "Pre-positioned equipment for post-blowout response",
+          "type": "contingency",
+          "effectiveness": 6,
+          "adoptionLevel": "widespread",
+          "limitations": "Response after failure, deployment challenges"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "BOP systems rated for extreme HPHT conditions",
+          "gapType": "technical",
+          "opportunity": "New materials and designs for ultra-high pressure",
+          "difficulty": "high"
+        },
+        {
+          "description": "Rapid intervention capability at ultra-deepwater depths",
+          "gapType": "technical",
+          "opportunity": "Advanced subsea robotics and intervention systems",
+          "difficulty": "high"
+        },
+        {
+          "description": "Real-time wellbore integrity monitoring",
+          "gapType": "technology",
+          "opportunity": "Continuous downhole sensing and early warning",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "operator",
+          "description": "Companies conducting deepwater drilling",
+          "examples": ["Shell", "Chevron", "Petrobras", "BP"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "drilling-contractor",
+          "description": "Rig owners and drilling service providers",
+          "examples": ["Transocean", "Noble", "Valaris"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "regulator",
+          "description": "Offshore safety regulators",
+          "examples": ["BSEE", "NOPSEMA", "HSE UK"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "The year in oil and gas: 2025 review and 2026 outlook",
+          "url": "https://www.offshore-technology.com/features/year-in-oil-and-gas-2025-2026/",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["Deeper waters and ultra-deepwater areas present significant technical hurdles, higher drilling costs, and increased environmental risks"]
+        },
+        {
+          "type": "industry-report",
+          "title": "Oil & Gas Exploration in 2026: Top Challenges",
+          "url": "https://www.oilfield-international-services.com/blog/navigating-the-shifting-sands-oil-and-gas-exploration-challenges-in-2026",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["The 'easy oil' has largely been found, pushing exploration into increasingly challenging environments"]
+        }
+      ],
+      "tags": ["deepwater", "drilling", "safety", "BOP", "HPHT"],
+      "keywords": ["deepwater drilling", "blowout prevention", "HPHT", "well control", "offshore safety"],
+      "metrics": {
+        "economicImpact": {
+          "value": 50000000000,
+          "unit": "USD",
+          "description": "Potential liability exposure for major deepwater incident"
+        },
+        "affectedPopulation": {
+          "value": 100000,
+          "unit": "workers",
+          "description": "Offshore workers in deepwater operations"
+        },
+        "trendDirection": "stable",
+        "researchActivityIndicators": ["API standards development", "BSEE regulations", "OTC technical papers"]
+      },
+      "researchSession": "session-20260120-202535",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:35Z",
+      "updatedAt": "2026-01-20T20:25:35Z",
+      "version": 1
+    },
+    {
+      "id": "2e3c4c25-8822-4710-80ab-706a620d9347",
+      "title": "CO2-Enhanced Oil Recovery Integration with Carbon Capture and Storage at Economic Scale",
+      "slug": "co2-eor-carbon-capture-storage-integration",
+      "description": "While CO2-enhanced oil recovery (EOR) represents the largest-scale commercial use of captured carbon dioxide, significant gaps remain between the technology's potential for combined oil production and carbon storage and its actual deployment. Current CO2-EOR operations primarily use naturally sourced CO2 rather than anthropogenic captures due to cost differentials and infrastructure gaps between capture facilities and suitable reservoirs. The economic case requires high oil prices and often government subsidies, while the climate benefits remain contested given that incremental oil production generates new emissions. Technical challenges including gas breakthrough, heterogeneous sweep efficiency, and long-term storage integrity monitoring further complicate the path to scaling CO2-EOR as a meaningful carbon management solution.",
+      "summary": "CO2-EOR potential limited by capture costs, infrastructure gaps, contested climate benefits, and technical challenges in sweep efficiency and storage verification.",
+      "industry": {
+        "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+        "name": "Oil & Gas",
+        "slug": "oil-gas"
+      },
+      "field": {
+        "id": "38a7f0ed-bccb-4b53-993d-da315d0deb83",
+        "name": "Upstream",
+        "slug": "upstream"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["enhanced-recovery", "carbon-management", "economics"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "medium",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": 7.5,
+        "economicImpact": 7.0,
+        "qualityOfLifeImpact": 6.5,
+        "productivityImpact": 5.5
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6.5,
+        "resourceRequirements": 4.5,
+        "existingProgress": 6.0,
+        "barrierCount": 5.0
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "researchActivity": 4.0,
+        "fundingLevel": 4.5,
+        "organizationCount": 5.0,
+        "mediaAttention": 4.5
+      },
+      "impactScore": 64,
+      "rootCauses": [
+        {
+          "description": "High cost differential between captured and naturally-sourced CO2",
+          "category": "economic",
+          "contributionLevel": "high",
+          "evidence": "70%+ of EOR CO2 comes from natural sources due to cost"
+        },
+        {
+          "description": "Geographic mismatch between major emission sources and suitable reservoirs",
+          "category": "infrastructure",
+          "contributionLevel": "high",
+          "evidence": "Limited CO2 pipeline infrastructure connecting sources to sinks"
+        },
+        {
+          "description": "Contested climate benefits when incremental oil is produced and combusted",
+          "category": "environmental",
+          "contributionLevel": "medium",
+          "evidence": "Lifecycle analysis debates on net carbon impact"
+        },
+        {
+          "description": "Reservoir heterogeneity causing poor sweep efficiency and early CO2 breakthrough",
+          "category": "technical",
+          "contributionLevel": "medium",
+          "evidence": "Significant CO2 recycling requirements in many projects"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Underutilization of carbon storage potential in depleted reservoirs",
+          "type": "environmental",
+          "affectedArea": "climate-mitigation",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Stranded enhanced recovery potential in mature fields",
+          "type": "resource",
+          "affectedArea": "reserves",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Policy uncertainty discouraging long-term investment",
+          "type": "regulatory",
+          "affectedArea": "investment-decisions",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Missed opportunity for viable carbon management pathway",
+          "type": "strategic",
+          "affectedArea": "energy-transition",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "45Q tax credits",
+          "description": "US tax incentives for CO2 capture and storage",
+          "type": "policy",
+          "effectiveness": 6,
+          "adoptionLevel": "growing",
+          "limitations": "Inadequate to close full cost gap, policy uncertainty"
+        },
+        {
+          "name": "Carbon markets",
+          "description": "Pricing mechanisms valuing stored carbon",
+          "type": "economic",
+          "effectiveness": 5,
+          "adoptionLevel": "limited",
+          "limitations": "Prices too low, verification challenges"
+        },
+        {
+          "name": "CO2 pipeline networks",
+          "description": "Infrastructure connecting sources to EOR fields",
+          "type": "infrastructure",
+          "effectiveness": 7,
+          "adoptionLevel": "limited",
+          "limitations": "High capital cost, permitting challenges"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Low-cost anthropogenic CO2 capture integrated with EOR operations",
+          "gapType": "technical",
+          "opportunity": "Direct air capture or industrial capture cost reductions",
+          "difficulty": "high"
+        },
+        {
+          "description": "Robust lifecycle accounting for CO2-EOR climate benefits",
+          "gapType": "knowledge",
+          "opportunity": "Standardized accounting frameworks",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Improved sweep efficiency in heterogeneous reservoirs",
+          "gapType": "technical",
+          "opportunity": "Foam flooding, WAG optimization, conformance control",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "operator",
+          "description": "Companies operating CO2-EOR projects",
+          "examples": ["Occidental", "Denbury", "ExxonMobil"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "industrial-emitter",
+          "description": "Facilities that could supply captured CO2",
+          "examples": ["Power plants", "Ethanol facilities", "Refineries"],
+          "interestLevel": "medium",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "policy-maker",
+          "description": "Government agencies setting carbon policy",
+          "examples": ["DOE", "EPA", "State agencies"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Can CO2-EOR really provide carbon-negative oil?",
+          "url": "https://www.iea.org/commentaries/can-co2-eor-really-provide-carbon-negative-oil",
+          "date": "2024-01-01",
+          "relevantExcerpts": ["To produce 'carbon-negative oil', EOR projects would need to inject CO2 from biomass combustion or direct air capture"]
+        },
+        {
+          "type": "academic",
+          "title": "Carbon capture to serve enhanced oil recovery",
+          "url": "https://ieefa.org/resources/carbon-capture-serve-enhanced-oil-recovery-overpromise-and-underperformance",
+          "date": "2022-03-01",
+          "relevantExcerpts": ["Projects have been unable to capture the volumes of CO2 they were designed for, not for technical reasons but for economic reasons"]
+        },
+        {
+          "type": "industry-report",
+          "title": "Enhanced oil recovery with captured CO2: insights on CCS-EOR",
+          "url": "https://www.woodmac.com/news/opinion/enhanced-oil-recovery-with-captured-co2-insights-on-ccs-eor/",
+          "date": "2025-01-01",
+          "relevantExcerpts": ["CCS-EOR momentum has declined in recent years due to arguments that it empowers incremental global hydrocarbon production"]
+        }
+      ],
+      "tags": ["EOR", "CCUS", "carbon-capture", "enhanced-recovery", "climate"],
+      "keywords": ["CO2-EOR", "carbon capture", "enhanced oil recovery", "carbon storage", "CCUS"],
+      "metrics": {
+        "economicImpact": {
+          "value": 20000000000,
+          "unit": "USD",
+          "description": "Annual potential value of expanded CO2-EOR with proper incentives"
+        },
+        "affectedPopulation": {
+          "value": 500,
+          "unit": "fields",
+          "description": "Mature oil fields potentially suitable for CO2-EOR"
+        },
+        "trendDirection": "growing",
+        "researchActivityIndicators": ["DOE research programs", "IEA analysis", "Academic studies"]
+      },
+      "researchSession": "session-20260120-202535",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:35Z",
+      "updatedAt": "2026-01-20T20:25:35Z",
+      "version": 1
+    },
+    {
+      "id": "d1e66781-5221-4a48-b30c-3d6008d12831",
+      "title": "Aging Upstream Infrastructure and Equipment Beyond Design Life Creating Integrity Risks",
+      "slug": "aging-infrastructure-equipment-integrity-risks",
+      "description": "A significant portion of global upstream infrastructure including platforms, pipelines, and production facilities has exceeded its original design life of 20-30 years, creating escalating integrity management challenges and asset retirement liabilities. Corrosion, fatigue, and material degradation accelerate in harsh offshore and remote environments, while life extension programs struggle to keep pace with deteriorating conditions. Many assets designed for original reservoir conditions now face different operating environments as fields mature, with water cuts, sand production, and changing fluid compositions stressing equipment beyond design parameters. The combination of aging infrastructure and cyclical underinvestment during price downturns creates deferred maintenance backlogs that increase failure risk and emergency shutdown frequency.",
+      "summary": "Many platforms and facilities exceed 30-year design life with accelerating deterioration, while cyclical underinvestment creates maintenance backlogs and increases failure risk.",
+      "industry": {
+        "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+        "name": "Oil & Gas",
+        "slug": "oil-gas"
+      },
+      "field": {
+        "id": "38a7f0ed-bccb-4b53-993d-da315d0deb83",
+        "name": "Upstream",
+        "slug": "upstream"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["asset-integrity", "maintenance", "lifecycle-management"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.8,
+        "affectedPopulation": 7.0,
+        "economicImpact": 8.0,
+        "qualityOfLifeImpact": 6.0,
+        "productivityImpact": 8.0
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7.0,
+        "resourceRequirements": 5.0,
+        "existingProgress": 6.0,
+        "barrierCount": 6.0
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "researchActivity": 5.0,
+        "fundingLevel": 5.0,
+        "organizationCount": 5.0,
+        "mediaAttention": 5.0
+      },
+      "impactScore": 69,
+      "rootCauses": [
+        {
+          "description": "Original design life exceeded without adequate life extension engineering",
+          "category": "design",
+          "contributionLevel": "high",
+          "evidence": "North Sea platforms averaging 30+ years old"
+        },
+        {
+          "description": "Cyclical underinvestment during commodity price downturns",
+          "category": "economic",
+          "contributionLevel": "high",
+          "evidence": "Maintenance budgets cut during 2015-2016 and 2020 downturns"
+        },
+        {
+          "description": "Changed operating conditions from original design assumptions",
+          "category": "operational",
+          "contributionLevel": "medium",
+          "evidence": "Higher water cuts, sand production, corrosive fluids"
+        },
+        {
+          "description": "Loss of institutional knowledge about original construction",
+          "category": "knowledge",
+          "contributionLevel": "medium",
+          "evidence": "Original designers and operators retired, documentation gaps"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Increased unplanned shutdowns and production losses",
+          "type": "operational",
+          "affectedArea": "production",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Safety incidents from equipment failures",
+          "type": "safety",
+          "affectedArea": "personnel-safety",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Environmental releases from pipeline and equipment failures",
+          "type": "environmental",
+          "affectedArea": "environment",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Escalating decommissioning liabilities",
+          "type": "financial",
+          "affectedArea": "balance-sheets",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Risk-based inspection programs",
+          "description": "Prioritizing inspection based on failure probability and consequence",
+          "type": "process",
+          "effectiveness": 6,
+          "adoptionLevel": "widespread",
+          "limitations": "Data quality dependencies, model limitations"
+        },
+        {
+          "name": "Condition monitoring",
+          "description": "Sensors tracking equipment health in real-time",
+          "type": "technology",
+          "effectiveness": 6,
+          "adoptionLevel": "growing",
+          "limitations": "Retrofit challenges on legacy equipment"
+        },
+        {
+          "name": "Life extension studies",
+          "description": "Engineering analysis supporting continued operation",
+          "type": "engineering",
+          "effectiveness": 6,
+          "adoptionLevel": "widespread",
+          "limitations": "Uncertainty in remaining life predictions"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Comprehensive digital twins for aging assets",
+          "gapType": "technical",
+          "opportunity": "Integrated asset models with real-time health monitoring",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Predictive maintenance algorithms for equipment approaching end of life",
+          "gapType": "technical",
+          "opportunity": "Machine learning on failure patterns and sensor data",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Economic frameworks for optimal timing of retirement vs life extension",
+          "gapType": "process",
+          "opportunity": "Decision analysis tools integrating technical and economic factors",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "operator",
+          "description": "Companies managing aging assets",
+          "examples": ["Operators of mature basins", "North Sea producers"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "regulator",
+          "description": "Safety agencies overseeing asset integrity",
+          "examples": ["HSE UK", "BSEE", "NOPSEMA"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "service-company",
+          "description": "Inspection and maintenance providers",
+          "examples": ["Oceaneering", "TechnipFMC", "Aker Solutions"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Upstream oil & gas: region-by-region predictions for 2026",
+          "url": "https://www.woodmac.com/news/opinion/upstream-oil-gas-2026-outlook/",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["Brownfield rejuvenation and recovery factors gaining prominence"]
+        },
+        {
+          "type": "industry-report",
+          "title": "Sharp upstream spending cuts point to tough 2026",
+          "url": "https://energiesmedia.com/oil-upstream-spending-cuts-point-to-tough-2026/",
+          "date": "2026-01-01",
+          "relevantExcerpts": ["Spending cuts paired with sharper efficiency focus"]
+        }
+      ],
+      "tags": ["asset-integrity", "aging-infrastructure", "maintenance", "lifecycle", "decommissioning"],
+      "keywords": ["aging infrastructure", "asset integrity", "life extension", "deferred maintenance", "equipment failure"],
+      "metrics": {
+        "economicImpact": {
+          "value": 40000000000,
+          "unit": "USD",
+          "description": "Global deferred maintenance and decommissioning liabilities"
+        },
+        "affectedPopulation": {
+          "value": 10000,
+          "unit": "facilities",
+          "description": "Aging upstream installations globally"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["API standards", "Industry conferences", "Operator integrity programs"]
+      },
+      "researchSession": "session-20260120-202535",
+      "confidence": 0.84,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:35Z",
+      "updatedAt": "2026-01-20T20:25:35Z",
+      "version": 1
+    }
+  ]
+}
