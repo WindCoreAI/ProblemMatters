@@ -19,11 +19,11 @@
     { "name": "Quality Assurance", "slug": "quality-assurance" }
   ],
   "statistics": {
-    "totalProblems": 10,
+    "totalProblems": 21,
     "totalFields": 8,
-    "avgSeverity": 7.3,
-    "avgTractability": 5.6
+    "avgSeverity": 7.6,
+    "avgTractability": 5.7
   },
   "createdAt": "2026-01-20T14:30:52Z",
-  "updatedAt": "2026-01-20T14:30:52Z"
+  "updatedAt": "2026-01-20T16:30:52Z"
 }
