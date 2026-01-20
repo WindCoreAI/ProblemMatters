@@ -267,6 +267,16 @@ For each researched problem:
 
 **Objective:** Generate final schema-valid entries and store them.
 
+> **IMPORTANT: Parallel-Safe Write Strategy**
+>
+> This skill is designed to run in parallel with other discover-problems sessions.
+> To avoid conflicts, this skill ONLY writes to:
+> 1. **Field-specific problem file** - One file per field, isolated from other sessions
+> 2. **Session log** - Unique per session
+>
+> Statistics aggregation (`index.json`, `_metadata.json`) is handled by a separate
+> post-processing step. **DO NOT** update index or metadata files from this skill.
+
 For each approved problem:
 
 1. **Generate Identifiers:**
@@ -280,9 +290,38 @@ For each approved problem:
 
 3. **Write Problem Entry:**
 
-   File location: `research-data/industries/{industry-slug}/{domain-slug}/problems.json`
+   **File location (MUST use field-based structure):**
+   ```
+   research-viewer/public/research-data/industries/{industry-slug}/{domain-slug}/fields/{field-slug}.json
+   ```
 
-   If file exists, append to the `problems` array. If not, create new file.
+   **If field is not specified:** Use `general.json` as the field file for domain-general problems.
+
+   **File structure (FieldProblemsFile):**
+   ```json
+   {
+     "field": {
+       "id": "uuid",
+       "name": "Field Name",
+       "slug": "field-slug",
+       "description": "Field description..."
+     },
+     "domain": {
+       "id": "uuid",
+       "name": "Domain Name",
+       "slug": "domain-slug"
+     },
+     "industry": {
+       "id": "uuid",
+       "name": "Industry Name",
+       "slug": "industry-slug"
+     },
+     "problems": [...]
+   }
+   ```
+
+   If the field file exists, **append** new problems to the `problems` array.
+   If not, **create** the file with the field/domain/industry metadata and problems array.
 
    **Problem JSON structure:**
    ```json
@@ -322,12 +361,16 @@ For each approved problem:
    }
    ```
 
-4. **Update Index Files:**
-   - Update `research-data/index.json` with new statistics
-   - Update industry `_metadata.json` if needed
+4. **DO NOT Update Index Files:**
+
+   > **Statistics are aggregated separately.** Do not modify:
+   > - `index.json`
+   > - `_metadata.json` files
+   >
+   > After discovery sessions complete, run the aggregation to update statistics.
 
 5. **Finalize Session Log:**
-   - Write complete session to `research-data/sessions/{session-id}.json`
+   - Write complete session to `research-viewer/public/research-data/sessions/{session-id}.json`
    - Include all steps, results, errors, and metrics
 
 ### Step 6: Report Results
@@ -360,15 +403,14 @@ Present a summary to the user:
 
 ### Files Updated
 
-- `research-data/industries/{industry}/{domain}/problems.json`
-- `research-data/sessions/{session-id}.json`
-- `research-data/index.json`
+- `research-viewer/public/research-data/industries/{industry}/{domain}/fields/{field}.json`
+- `research-viewer/public/research-data/sessions/{session-id}.json`
 
 ### Next Steps
 
-- Run `/discover-problems {different-target}` to research another area
-- Review problems at `research-data/` directory
-- Build the viewer app to explore results
+- Run `/discover-problems {different-target}` to research another area in parallel
+- After all parallel sessions complete, run statistics aggregation to update index files
+- Review problems at `research-viewer/public/research-data/` directory
 ```
 
 ## Quality Guidelines
@@ -390,22 +432,25 @@ Present a summary to the user:
 ## Directory Structure Reference
 
 ```
-research-data/
-├── index.json                           # Master index
+research-viewer/public/research-data/
+├── index.json                           # Master index (updated by aggregation, NOT by this skill)
 ├── industries/
 │   ├── technology-software/
-│   │   ├── _metadata.json
+│   │   ├── _metadata.json               # Industry metadata (updated by aggregation)
 │   │   ├── software-engineering/
-│   │   │   ├── _metadata.json
-│   │   │   └── problems.json
+│   │   │   ├── _metadata.json           # Domain metadata (updated by aggregation)
+│   │   │   └── fields/                  # Field-specific problem files (THIS SKILL WRITES HERE)
+│   │   │       ├── web-development.json
+│   │   │       ├── mobile-development.json
+│   │   │       ├── cloud-computing.json
+│   │   │       └── general.json         # For domain-general problems without specific field
 │   │   └── ...
 │   └── ...
-├── schemas/
-│   ├── problem.schema.json
-│   └── research-session.schema.json
 └── sessions/
-    └── {session-id}.json
+    └── {session-id}.json                # Session logs (THIS SKILL WRITES HERE)
 ```
+
+**Note:** The `problems.json` file at domain level is DEPRECATED. Always use the `fields/` subfolder structure.
 
 ## Important Notes
 
