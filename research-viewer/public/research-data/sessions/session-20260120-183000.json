@@ -1,0 +1,139 @@
+{
+  "id": "session-20260120-183000",
+  "startedAt": "2026-01-20T18:30:00Z",
+  "completedAt": "2026-01-20T18:55:00Z",
+  "target": {
+    "industry": "healthcare-life-sciences",
+    "domain": "clinical-care",
+    "field": "rehabilitation"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 5,
+    "problemIds": [
+      "rehab-20260120-183000-001",
+      "rehab-20260120-183000-002",
+      "rehab-20260120-183000-003",
+      "rehab-20260120-183000-004",
+      "rehab-20260120-183000-005",
+      "rehab-20260120-183000-006",
+      "rehab-20260120-183000-007",
+      "rehab-20260120-183000-008",
+      "rehab-20260120-183000-009",
+      "rehab-20260120-183000-010"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_research_request",
+      "timestamp": "2026-01-20T18:30:00Z",
+      "durationMs": 500,
+      "input": {
+        "rawInput": "healthcare clinical-care rehabilitation"
+      },
+      "output": {
+        "industry": "healthcare-life-sciences",
+        "domain": "clinical-care",
+        "field": "rehabilitation"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "initialize_session",
+      "timestamp": "2026-01-20T18:30:30Z",
+      "durationMs": 1000,
+      "input": {
+        "sessionId": "session-20260120-183000"
+      },
+      "output": {
+        "sessionCreated": true,
+        "existingProblemsChecked": true,
+        "duplicatesFound": 0
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T18:31:00Z",
+      "durationMs": 300000,
+      "input": {
+        "searchQueries": [
+          "rehabilitation medicine unsolved problems research gaps clinical care",
+          "speech therapy rehabilitation workforce shortage access problems 2025",
+          "pediatric rehabilitation challenges children therapy access equity 2025"
+        ]
+      },
+      "output": {
+        "candidatesFound": 15,
+        "sourcesIdentified": 25
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T18:36:00Z",
+      "durationMs": 600000,
+      "input": {
+        "candidateCount": 15
+      },
+      "output": {
+        "problemsResearched": 15,
+        "detailedAnalysisCompleted": 10
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T18:46:00Z",
+      "durationMs": 300000,
+      "input": {
+        "problemsToValidate": 15
+      },
+      "output": {
+        "problemsApproved": 10,
+        "problemsRejected": 5,
+        "averageConfidence": 0.845,
+        "averageImpactScore": 65.7
+      },
+      "status": "completed"
+    },
+    {
+      "step": 6,
+      "action": "synthesis_storage",
+      "timestamp": "2026-01-20T18:51:00Z",
+      "durationMs": 120000,
+      "input": {
+        "problemsToStore": 10
+      },
+      "output": {
+        "filesCreated": [
+          "research-viewer/public/research-data/industries/healthcare-life-sciences/clinical-care/fields/rehabilitation.json"
+        ],
+        "problemsStored": 10
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 1500000,
+    "tokensUsed": 85000,
+    "apiCalls": 8,
+    "sourcesConsulted": 25
+  }
+}
