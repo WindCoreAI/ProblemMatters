@@ -1,0 +1,2447 @@
+{
+  "field": {
+    "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+    "name": "Risk Management",
+    "slug": "risk-management",
+    "description": "Identification, assessment, and mitigation of financial risks in capital markets including market risk, credit risk, operational risk, and liquidity risk."
+  },
+  "domain": {
+    "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+    "name": "Capital Markets",
+    "slug": "capital-markets"
+  },
+  "industry": {
+    "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+    "name": "Financial Services",
+    "slug": "financial-services"
+  },
+  "problems": [
+    {
+      "id": "a8a48a07-baf4-4ab2-a372-206b3b3c95a1",
+      "title": "Risk Data Aggregation and Quality Failures Hindering BCBS 239 Compliance",
+      "slug": "risk-data-aggregation-quality-failures-bcbs-239-compliance",
+      "description": "Financial institutions worldwide face persistent challenges in aggregating risk data accurately and efficiently, resulting in widespread non-compliance with BCBS 239 principles established over a decade ago. Currently, only 2 out of 31 global systemically important banks (G-SIBs) fully comply with all principles, with six of the eleven principles showing regression or stalled implementation. The root causes include fragmented legacy systems, data silos across departments, inconsistent data definitions, manual processes, and lack of clear ownership and accountability at the board level. The ECB has made remediation of deficiencies in risk data aggregation and reporting a top supervisory priority for 2025-2027, with increasing penalties for non-compliance. Banks struggle with scattered data across dozens or hundreds of siloed systems, inadequate data governance, and the inability to generate timely risk reports. This creates systemic risks as institutions cannot accurately assess their aggregate risk exposures during stress events, potentially leading to cascading failures across the financial system.",
+      "summary": "Only 2 of 31 G-SIBs fully comply with BCBS 239 risk data aggregation principles, with legacy systems, data silos, and lack of governance creating systemic risks.",
+      "industry": {
+        "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+        "name": "Capital Markets",
+        "slug": "capital-markets"
+      },
+      "field": {
+        "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+        "name": "Risk Management",
+        "slug": "risk-management"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["data-quality", "regulatory-compliance", "legacy-systems", "governance"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "31+ G-SIBs, hundreds of regional banks",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 50000000000,
+          "timeframe": "annual regulatory penalties and operational losses"
+        },
+        "qualityOfLife": 4,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Legacy system complexity",
+          "Organizational silos",
+          "Lack of board-level ownership",
+          "High implementation costs",
+          "Multi-year transformation timelines"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "5,000+ professionals in data governance",
+        "fundingLevel": "High - billions spent on compliance programs"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "Data scattered across dozens or hundreds of siloed systems with little governance or accountability",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of prioritization and insufficient ownership by board and senior management",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Different departments using different definitions for the same data with no centralized repository",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Manual processes and inadequate systems hindering timely report generation",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Legacy data architecture challenges and resistance to IT infrastructure modernization",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Regulatory penalties and increased supervisory scrutiny from ECB and other authorities",
+          "type": "direct",
+          "affectedArea": "Compliance",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Inability to accurately assess aggregate risk exposures during market stress events",
+          "type": "direct",
+          "affectedArea": "Risk Management",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Delayed and inaccurate risk reporting to regulators and board",
+          "type": "direct",
+          "affectedArea": "Governance",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Systemic risk amplification as institutions cannot identify concentrated exposures",
+          "type": "cascading",
+          "affectedArea": "Financial Stability",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Enterprise Data Management Platforms",
+          "description": "Comprehensive data governance and integration platforms from vendors like Informatica, Collibra, and Alation",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["High implementation costs", "Multi-year deployment timelines", "Requires organizational change management"]
+        },
+        {
+          "name": "Data Lineage and Cataloging Tools",
+          "description": "Tools for tracking data flow and maintaining metadata catalogs",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Does not address underlying data quality issues", "Requires continuous maintenance"]
+        },
+        {
+          "name": "Cloud Data Platforms",
+          "description": "Modern cloud-based data architectures enabling better integration",
+          "type": "product",
+          "effectiveness": 7,
+          "adoption": "early",
+          "limitations": ["Regulatory concerns about data residency", "Migration complexity from legacy systems"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Automated legacy system data extraction and standardization without full modernization",
+          "gapType": "coverage",
+          "opportunity": "AI-powered data extraction and normalization tools",
+          "difficulty": "high"
+        },
+        {
+          "description": "Real-time data quality monitoring and remediation across heterogeneous systems",
+          "gapType": "quality",
+          "opportunity": "Continuous data quality assurance platforms",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Board-level education and accountability frameworks for data governance",
+          "gapType": "awareness",
+          "opportunity": "Executive training and governance frameworks",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Chief Risk Officers and risk management teams requiring accurate data",
+          "examples": ["CROs", "Risk Analysts", "Risk Committees"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Bank boards and senior management accountable under RDARR guidelines",
+          "examples": ["Board Members", "CEOs", "CFOs"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Technology and data governance teams implementing solutions",
+          "examples": ["CDOs", "CIOs", "Data Engineers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "funder",
+          "description": "Regulatory bodies enforcing compliance requirements",
+          "examples": ["ECB", "Federal Reserve", "Basel Committee"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Why BCBS 239 Compliance is essential in 2025",
+          "authors": ["EY Netherlands"],
+          "url": "https://www.ey.com/en_nl/industries/banking-capital-markets/why-bcbs-239-compliance-is-essential-in-2025",
+          "publishedAt": "2025-01-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "EY",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Currently, only two out of 31 global systemically important banks (G-SIBs) fully comply with all principles."
+        },
+        {
+          "type": "industry-report",
+          "title": "BCBS 239 Guide 2025: Key Goals, Compliance Best Practices, & Solutions",
+          "authors": ["Alation"],
+          "url": "https://www.alation.com/blog/bcbs-239-guide-compliance-best-practices-2025/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Alation",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "The ECB included remediation of deficiencies in risk data aggregation and reporting among its top supervisory priorities for 2025-2027."
+        },
+        {
+          "type": "government",
+          "title": "ECB Final Guidelines Complements BCBS 239 to Improve Banks' Risk Data Aggregation Frameworks",
+          "authors": ["Capco"],
+          "url": "https://www.capco.com/intelligence/capco-intelligence/ecb-final-guidelines",
+          "publishedAt": "2024-05-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Capco",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "The RDARR Guide holds management bodies accountable for implementing effective governance arrangements."
+        }
+      ],
+      "tags": ["bcbs-239", "data-aggregation", "data-quality", "regulatory-compliance", "risk-reporting", "governance"],
+      "keywords": ["BCBS 239 compliance", "risk data aggregation", "data quality", "G-SIB", "ECB RDARR", "data governance"],
+      "metrics": {
+        "searchVolume": 8500,
+        "academicPapers": 420,
+        "patentApplications": 85,
+        "mediaArticles": 1200,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+      "confidence": 0.92,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:22:42Z",
+      "updatedAt": "2026-01-20T20:22:42Z",
+      "version": 1
+    },
+    {
+      "id": "c4ec7357-7c6b-49d1-9fb1-98e6c585946e",
+      "title": "AI and Machine Learning Model Risk Validation Challenges in Capital Markets",
+      "slug": "ai-ml-model-risk-validation-challenges-capital-markets",
+      "description": "The rapid adoption of artificial intelligence and machine learning models for risk management, trading, and credit decisions in capital markets has outpaced the development of robust validation frameworks. Risk managers face the dual challenge of harnessing AI's benefits while mitigating its unique and evolving risks. Key challenges include model explainability (the 'black box' problem), dynamic model behavior that changes over time, data drift detection, bias identification, and maintaining human oversight. Traditional model validation approaches designed for parametric models are inadequate for complex neural networks and ensemble methods. Regulators are increasingly focused on AI governance, requiring comprehensive frameworks that many institutions lack. The integration of AI/ML into low-latency trading systems presents additional challenges, as ML models typically introduce latency unacceptable in high-frequency trading environments. Organizations must develop AI governance structures that balance innovation with risk control, addressing concerns about model stability, adversarial attacks, and the potential for AI-amplified systemic risks.",
+      "summary": "AI/ML adoption in capital markets risk management outpaces validation frameworks, creating challenges in explainability, bias detection, and regulatory compliance.",
+      "industry": {
+        "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+        "name": "Capital Markets",
+        "slug": "capital-markets"
+      },
+      "field": {
+        "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+        "name": "Risk Management",
+        "slug": "risk-management"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["model-risk", "ai-governance", "explainability", "validation"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "All major financial institutions using AI",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 30000000000,
+          "timeframe": "annual potential losses from model failures"
+        },
+        "qualityOfLife": 3,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Inherent complexity of deep learning models",
+          "Lack of industry standards for AI validation",
+          "Rapidly evolving technology landscape",
+          "Shortage of qualified AI risk specialists"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "3,000+ in AI safety and finance",
+        "fundingLevel": "Growing - significant RegTech investment"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Inherent opacity of complex neural network architectures preventing traditional validation approaches",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Dynamic model behavior and data drift causing models to degrade unpredictably over time",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Regulatory frameworks lagging behind technological innovation",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Shortage of professionals with both quantitative finance and AI expertise",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Undetected model failures leading to significant trading losses or risk misestimation",
+          "type": "direct",
+          "affectedArea": "Risk Management",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Regulatory penalties for inadequate model governance and documentation",
+          "type": "direct",
+          "affectedArea": "Compliance",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Amplification of systemic risks through correlated AI model failures",
+          "type": "cascading",
+          "affectedArea": "Financial Stability",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Algorithmic bias leading to unfair credit decisions and reputational damage",
+          "type": "indirect",
+          "affectedArea": "Ethics and Fairness",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Explainable AI (XAI) Techniques",
+          "description": "Methods like SHAP, LIME, and attention visualization for model interpretation",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["May not capture all model behaviors", "Computationally expensive", "Explanations may be misleading"]
+        },
+        {
+          "name": "Model Monitoring Platforms",
+          "description": "Continuous monitoring solutions for drift detection and performance tracking",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Reactive rather than predictive", "High false positive rates"]
+        },
+        {
+          "name": "SR 11-7 Model Risk Management Framework",
+          "description": "Federal Reserve guidance on model risk management",
+          "type": "framework",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Designed for traditional models", "Requires significant adaptation for AI"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Industry-wide standards for AI model validation in financial services",
+          "gapType": "coverage",
+          "opportunity": "Develop comprehensive AI validation standards with regulatory input",
+          "difficulty": "high"
+        },
+        {
+          "description": "Real-time explainability for high-frequency trading AI systems",
+          "gapType": "quality",
+          "opportunity": "Hardware-accelerated XAI for low-latency environments",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Adversarial robustness testing frameworks for financial AI",
+          "gapType": "coverage",
+          "opportunity": "Standardized adversarial testing methodologies",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Model validation teams struggling with AI complexity",
+          "examples": ["Model Validators", "Quantitative Analysts", "Risk Officers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Risk committees and boards requiring AI governance",
+          "examples": ["Model Risk Committees", "Board Risk Committees", "CROs"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "AI researchers and RegTech vendors developing solutions",
+          "examples": ["AI Safety Researchers", "RegTech Companies", "Academic Institutions"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top 5 risks for financial risk managers in 2026",
+          "authors": ["Informa Connect"],
+          "url": "https://informaconnect.com/top-5-risks-for-financial-risk-managers-in-2026/",
+          "publishedAt": "2025-12-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Informa Connect",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "For risk managers preparing for 2026, the key challenge will be developing comprehensive AI governance structures that maintain human oversight while leveraging AI's predictive capabilities."
+        },
+        {
+          "type": "industry-report",
+          "title": "Risk Management Trends & Strategies for 2025 Success",
+          "authors": ["FIS Global"],
+          "url": "https://www.fisglobal.com/insights/risk-management-strategies-to-help-tackle-2025-biggest-challenges",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "FIS Global",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "As AI continues to transform organisations, risk managers face the dual challenge of harnessing its benefits while mitigating its unique and evolving risks."
+        }
+      ],
+      "tags": ["ai-risk", "model-validation", "machine-learning", "explainability", "ai-governance", "model-risk"],
+      "keywords": ["AI model risk", "ML validation", "explainable AI", "model governance", "algorithmic risk"],
+      "metrics": {
+        "searchVolume": 12000,
+        "academicPapers": 850,
+        "patentApplications": 320,
+        "mediaArticles": 2500,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:22:42Z",
+      "updatedAt": "2026-01-20T20:22:42Z",
+      "version": 1
+    },
+    {
+      "id": "244486a6-83b7-4027-9c07-bc9a22aba355",
+      "title": "Climate Risk Stress Testing Methodological Limitations and Data Gaps",
+      "slug": "climate-risk-stress-testing-methodological-limitations",
+      "description": "Financial institutions face significant challenges in developing robust climate risk stress testing methodologies, representing one of the most complex systemic risks facing the financial system. Climate change presents multi-faceted challenges that require understanding across physical risks (extreme weather, sea level rise), transition risks (policy changes, technology shifts), and liability risks. Current stress testing approaches suffer from fundamental limitations including inadequate climate scenario modeling, lack of granular asset-level climate exposure data, difficulty modeling non-linear tipping points and feedback effects, and challenges in translating climate impacts to financial metrics over appropriate time horizons. Regulatory frameworks continue to evolve with requirements from the ECB, Bank of England, and other supervisors, but methodological standards remain inconsistent. Banks struggle to integrate climate scenarios into existing risk frameworks designed for shorter time horizons. The complexity of modeling second and third-order effects, such as supply chain disruptions and migration patterns, further complicates accurate risk assessment.",
+      "summary": "Climate risk stress testing faces fundamental limitations in scenario modeling, data availability, and translation of long-term climate impacts to financial metrics.",
+      "industry": {
+        "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+        "name": "Capital Markets",
+        "slug": "capital-markets"
+      },
+      "field": {
+        "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+        "name": "Risk Management",
+        "slug": "risk-management"
+      },
+      "problemType": "knowledge",
+      "problemSubtypes": ["climate-risk", "stress-testing", "methodology", "data-gaps"],
+      "scope": "global",
+      "maturity": "emerging",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "Global financial system",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 2500000000000,
+          "timeframe": "potential stranded assets and transition losses"
+        },
+        "qualityOfLife": 7,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 4,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Unprecedented nature of climate scenarios",
+          "Long time horizons beyond typical risk models",
+          "Data availability for granular exposures",
+          "Non-linear dynamics and tipping points",
+          "Cross-sector interdependencies"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "2,000+ in climate finance",
+        "fundingLevel": "Growing - NGFS and regulatory support"
+      },
+      "impactScore": 70,
+      "rootCauses": [
+        {
+          "description": "Unprecedented nature of climate scenarios with no historical analogues for calibration",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Mismatch between long-term climate horizons (30+ years) and typical risk model timeframes",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of standardized, granular asset-level climate exposure data",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Difficulty modeling non-linear tipping points and cascading feedback effects",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Underestimation of climate-related financial risks in portfolios",
+          "type": "direct",
+          "affectedArea": "Risk Assessment",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Mispricing of climate risk leading to market inefficiencies",
+          "type": "direct",
+          "affectedArea": "Market Pricing",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Stranded assets as transition accelerates beyond modeled scenarios",
+          "type": "cascading",
+          "affectedArea": "Asset Values",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Systemic financial instability from correlated climate exposures",
+          "type": "cascading",
+          "affectedArea": "Financial Stability",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "NGFS Climate Scenarios",
+          "description": "Network for Greening the Financial System standardized climate scenarios",
+          "type": "framework",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Highly uncertain parameters", "Limited granularity", "Orderly transition assumptions"]
+        },
+        {
+          "name": "TCFD Disclosure Framework",
+          "description": "Task Force on Climate-related Financial Disclosures reporting standards",
+          "type": "standard",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Focuses on disclosure not risk measurement", "Inconsistent implementation"]
+        },
+        {
+          "name": "Climate Data Providers",
+          "description": "Third-party climate risk data and analytics from providers like MSCI, Sustainalytics",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Methodology inconsistencies", "Coverage gaps", "High costs"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Standardized methodologies for translating climate scenarios to credit losses",
+          "gapType": "coverage",
+          "opportunity": "Industry-wide credit loss models for climate scenarios",
+          "difficulty": "high"
+        },
+        {
+          "description": "Granular geospatial climate risk data for all asset classes",
+          "gapType": "coverage",
+          "opportunity": "Comprehensive climate exposure databases",
+          "difficulty": "high"
+        },
+        {
+          "description": "Models capturing non-linear tipping points and feedback loops",
+          "gapType": "quality",
+          "opportunity": "Advanced climate-economic integrated assessment models",
+          "difficulty": "very-high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Banks and asset managers needing to assess climate exposures",
+          "examples": ["Banks", "Asset Managers", "Insurance Companies"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Central banks and financial regulators requiring climate stress tests",
+          "examples": ["ECB", "Bank of England", "Federal Reserve", "NGFS"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "expert",
+          "description": "Climate scientists and economists developing scenarios",
+          "examples": ["IPCC", "Climate Research Institutions", "Academic Centers"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top five risks for financial institutions in 2025",
+          "authors": ["WTW"],
+          "url": "https://www.wtwco.com/en-us/insights/2025/03/top-five-risks-for-financial-institutions-in-2025",
+          "publishedAt": "2025-03-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Willis Towers Watson",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Climate change presents one of the most significant systemic risks facing our world today, with far-reaching implications for economies, societies, and ecosystems."
+        },
+        {
+          "type": "industry-report",
+          "title": "Risk Management Trends & Strategies for 2025 Success",
+          "authors": ["FIS Global"],
+          "url": "https://www.fisglobal.com/insights/risk-management-strategies-to-help-tackle-2025-biggest-challenges",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "FIS Global",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "It has emerged as a critical focus area for risk management, with significant developments in regulatory frameworks, disclosure requirements, and strategic approaches."
+        }
+      ],
+      "tags": ["climate-risk", "stress-testing", "scenario-analysis", "physical-risk", "transition-risk", "ngfs"],
+      "keywords": ["climate risk stress testing", "NGFS scenarios", "climate financial risk", "transition risk", "physical risk"],
+      "metrics": {
+        "searchVolume": 15000,
+        "academicPapers": 1200,
+        "patentApplications": 45,
+        "mediaArticles": 3500,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:22:42Z",
+      "updatedAt": "2026-01-20T20:22:42Z",
+      "version": 1
+    },
+    {
+      "id": "a537ed7c-3ee8-449a-ae0b-5ebd557bbd6c",
+      "title": "Real-Time Risk Monitoring Latency Constraints in High-Frequency Trading",
+      "slug": "real-time-risk-monitoring-latency-hft",
+      "description": "Capital markets firms face an increasingly difficult challenge in performing real-time risk monitoring within the ultra-low latency requirements of modern trading systems. The HFT market has grown to $7.147 billion in 2025, racing toward $28.96 billion by 2033, with AI-driven algorithmic trading accounting for 70% of US stock market volume. Modern trading systems compete at the nanosecond level, where being one microsecond behind competition means losing profitable opportunities. Traditional risk checks that take milliseconds are completely inadequate; they must be compressed into nanosecond-scale operations requiring pre-computed risk limits and real-time P&L calculations. Large sell-side banks handle millions of positions daily with streaming market data involving hundreds of thousands of updates per second. Risk systems must ingest this data firehose while computing exposures, P&L, VaR, and liquidity metrics on the fly. Traditional computing platforms suffer from non-deterministic latency, making consistent trading performance impossible. Regulatory requirements like SEC Rule 15c3-5, MiFID II RTS 6, and Basel III mandate near real-time detection of erroneous trades and risk limit breaches, adding compliance complexity to the technical challenge.",
+      "summary": "HFT systems require nanosecond-scale risk checks, but traditional risk monitoring approaches add unacceptable latency, creating tension between speed and risk control.",
+      "industry": {
+        "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+        "name": "Capital Markets",
+        "slug": "capital-markets"
+      },
+      "field": {
+        "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+        "name": "Risk Management",
+        "slug": "risk-management"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["latency", "real-time-systems", "high-frequency-trading", "infrastructure"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "500+ HFT firms and major banks",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 10000000000,
+          "timeframe": "annual losses from latency and risk failures"
+        },
+        "qualityOfLife": 2,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 6,
+        "barriers": [
+          "Physical limits of signal propagation",
+          "Cost of specialized hardware",
+          "Complexity of FPGA development",
+          "Trade-off between latency and risk granularity"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "2,000+ in low-latency systems",
+        "fundingLevel": "High within firms, limited public research"
+      },
+      "impactScore": 65,
+      "rootCauses": [
+        {
+          "description": "Fundamental tension between thorough risk checks and latency requirements",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Non-deterministic latency in traditional CPU/GPU computing platforms",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Exponential growth in market data volume requiring processing",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Regulatory requirements adding mandatory risk check overhead",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Competitive disadvantage from slower execution speeds",
+          "type": "direct",
+          "affectedArea": "Trading Performance",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Risk limit breaches when checks cannot keep pace with trading",
+          "type": "direct",
+          "affectedArea": "Risk Management",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Regulatory penalties for inadequate pre-trade risk controls",
+          "type": "direct",
+          "affectedArea": "Compliance",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Flash crashes from inadequate real-time circuit breakers",
+          "type": "cascading",
+          "affectedArea": "Market Stability",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "FPGA-Based Risk Engines",
+          "description": "Field Programmable Gate Arrays providing deterministic, hardware-level risk calculations",
+          "type": "product",
+          "effectiveness": 8,
+          "adoption": "growing",
+          "limitations": ["High development cost", "Specialized expertise required", "Limited flexibility for complex models"]
+        },
+        {
+          "name": "Pre-Computed Risk Limits",
+          "description": "Pre-calculating risk thresholds to enable nanosecond-scale limit checking",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["May not reflect real-time market conditions", "Requires frequent recalibration"]
+        },
+        {
+          "name": "eBPF Telemetry Probes",
+          "description": "Lightweight monitoring tools that minimize performance overhead",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Observability overhead still exists", "Limited risk calculation capability"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "AI/ML risk models optimized for nanosecond inference",
+          "gapType": "quality",
+          "opportunity": "Hardware-accelerated ML inference for real-time risk",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Standardized FPGA risk frameworks reducing development costs",
+          "gapType": "accessibility",
+          "opportunity": "Open-source or vendor-neutral FPGA risk libraries",
+          "difficulty": "high"
+        },
+        {
+          "description": "Integrated market data and risk calculation pipelines",
+          "gapType": "integration",
+          "opportunity": "Unified streaming architectures for data and risk",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "HFT firms and algorithmic trading desks",
+          "examples": ["Citadel Securities", "Virtu Financial", "Two Sigma", "Bank Trading Desks"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Low-latency technology vendors",
+          "examples": ["Xilinx", "Intel FPGA", "Exegy", "Corvil"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Market regulators requiring risk controls",
+          "examples": ["SEC", "ESMA", "CFTC"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "HFT Platform Development: Solving Latency & Infra Challenges",
+          "authors": ["WebMobInfo"],
+          "url": "https://www.webmobinfo.ch/blog/hft-platform-development-solving-latency-infra-challenges",
+          "publishedAt": "2025-06-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "WebMobInfo",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "HFT platform development has grown into a $7.147 billion market in 2025, with traditional risk checks requiring compression into nanosecond-scale operations."
+        },
+        {
+          "type": "industry-report",
+          "title": "The Real-Time Revolution in Risk Management",
+          "authors": ["3forge"],
+          "url": "https://3forge.com/insights/the-real-time-revolution-in-risk-management",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "3forge",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Large sell-side banks handle millions of positions daily. Risk systems must not only ingest this firehose but compute exposures, P&L, VaR, and liquidity metrics on the fly."
+        },
+        {
+          "type": "industry-report",
+          "title": "Real-Time AI for Trading: Ultra-Low Latency GPU Infrastructure Design",
+          "authors": ["Introl"],
+          "url": "https://introl.com/blog/real-time-ai-trading-ultra-low-latency-gpu-infrastructure-2025",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Introl",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "AI-driven algorithmic trading now accounts for 70% of US stock market volume, with the market growing 12.2% annually through 2030."
+        }
+      ],
+      "tags": ["high-frequency-trading", "latency", "real-time-risk", "fpga", "algorithmic-trading", "market-data"],
+      "keywords": ["HFT risk management", "ultra-low latency", "real-time risk monitoring", "FPGA trading", "pre-trade risk"],
+      "metrics": {
+        "searchVolume": 9500,
+        "academicPapers": 380,
+        "patentApplications": 520,
+        "mediaArticles": 1800,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:22:42Z",
+      "updatedAt": "2026-01-20T20:22:42Z",
+      "version": 1
+    },
+    {
+      "id": "8db9c5e7-e515-4917-9c55-539054d13faa",
+      "title": "Geopolitical Risk Quantification and Integration into Financial Risk Models",
+      "slug": "geopolitical-risk-quantification-financial-models",
+      "description": "Financial institutions struggle to effectively quantify and integrate geopolitical risks into their risk management frameworks, despite geopolitical risk being considered the most likely risk to materialize in 2025-2026. Unlike market or credit risk, geopolitical risks are inherently multi-faceted, non-quantifiable through traditional methods, and can spread quickly across supply chains, economies, and markets creating systemic effects that are difficult to predict. Financial institutions find geopolitical risks less well embedded in their risk management frameworks compared to sectors with more experience (such as oil and gas). The challenges include modeling the financial impacts of military conflicts, tariff structures, international diplomatic shifts, and trade rule changes. These events often have non-linear impacts with second and third-order effects that cascade through global markets. Traditional scenario analysis approaches fail to capture the full range of possible outcomes, and the interconnected nature of modern economies means that regional conflicts can have global financial implications. The lack of historical data for calibration and the uniqueness of each geopolitical event makes quantitative modeling extremely difficult.",
+      "summary": "Geopolitical risk is considered most likely to materialize but remains poorly integrated into financial risk frameworks due to its multi-faceted, non-quantifiable nature.",
+      "industry": {
+        "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+        "name": "Capital Markets",
+        "slug": "capital-markets"
+      },
+      "field": {
+        "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+        "name": "Risk Management",
+        "slug": "risk-management"
+      },
+      "problemType": "knowledge",
+      "problemSubtypes": ["geopolitical-risk", "scenario-analysis", "risk-modeling", "systemic-risk"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "All globally exposed financial institutions",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 500000000000,
+          "timeframe": "potential annual market disruption"
+        },
+        "qualityOfLife": 5,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 4,
+        "resourceRequirements": 5,
+        "existingProgress": 4,
+        "barriers": [
+          "Inherent unpredictability of political events",
+          "Lack of historical data for calibration",
+          "Multi-faceted nature defying simple models",
+          "Cascading effects difficult to trace",
+          "Need for cross-disciplinary expertise"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "1,500+ in political risk analysis",
+        "fundingLevel": "Moderate - growing interest post-2022"
+      },
+      "impactScore": 69,
+      "rootCauses": [
+        {
+          "description": "Multi-faceted nature of geopolitical risk not directly quantifiable through traditional methods",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of historical analogues for calibrating models to unprecedented events",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Financial sector less experienced with geopolitical risk compared to energy sector",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Rapid transmission of shocks across interconnected global markets",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Unexpected losses from geopolitical events not captured in risk models",
+          "type": "direct",
+          "affectedArea": "Portfolio Management",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Inadequate capital buffers for geopolitical tail risks",
+          "type": "direct",
+          "affectedArea": "Capital Adequacy",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Supply chain disruptions affecting corporate exposures",
+          "type": "cascading",
+          "affectedArea": "Credit Risk",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Correlated market moves as geopolitical shocks spread globally",
+          "type": "cascading",
+          "affectedArea": "Market Risk",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Geopolitical Risk Indices",
+          "description": "Quantitative indices tracking geopolitical risk levels (e.g., GPR Index)",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Backward-looking", "Limited predictive power", "Aggregated nature loses specificity"]
+        },
+        {
+          "name": "Political Risk Insurance",
+          "description": "Insurance products covering specific geopolitical events",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Coverage gaps", "High premiums for high-risk regions", "Excludes systemic events"]
+        },
+        {
+          "name": "Scenario-Based Stress Testing",
+          "description": "Qualitative scenario development for geopolitical events",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Scenarios may not capture actual events", "Difficult to assign probabilities"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Quantitative models translating geopolitical events to financial impacts",
+          "gapType": "coverage",
+          "opportunity": "AI-powered event impact modeling",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Real-time geopolitical risk monitoring integrated with trading systems",
+          "gapType": "integration",
+          "opportunity": "NLP-based news analysis and risk alerting",
+          "difficulty": "high"
+        },
+        {
+          "description": "Cross-sector geopolitical risk expertise within financial institutions",
+          "gapType": "awareness",
+          "opportunity": "Specialized geopolitical risk teams and training",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Global banks and asset managers with international exposure",
+          "examples": ["Global Banks", "Sovereign Wealth Funds", "Multinational Corporates"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "expert",
+          "description": "Political risk analysts and consultancies",
+          "examples": ["Eurasia Group", "Control Risks", "Oxford Analytica"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Central banks and international financial institutions",
+          "examples": ["IMF", "BIS", "World Bank", "Central Banks"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top five risks for financial institutions in 2025",
+          "authors": ["WTW"],
+          "url": "https://www.wtwco.com/en-us/insights/2025/03/top-five-risks-for-financial-institutions-in-2025",
+          "publishedAt": "2025-03-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Willis Towers Watson",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Geopolitical risk has been considered the most likely risk to materialise, creating systemic risks that are difficult to predict but can spread quickly across supply chains, economies, and markets."
+        },
+        {
+          "type": "industry-report",
+          "title": "Deutsche Bank Capital Markets Outlook 2026",
+          "authors": ["Deutsche Bank"],
+          "url": "https://www.db.com/news/detail/20251126-deutsche-bank-capital-markets-outlook-2026-artificial-intelligence-as-a-growth-engine-in-a-world-of-risks",
+          "publishedAt": "2025-11-26",
+          "accessedAt": "2026-01-20",
+          "publisher": "Deutsche Bank",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "The global economy will remain shaped by geopolitical risks and political uncertainties."
+        }
+      ],
+      "tags": ["geopolitical-risk", "political-risk", "scenario-analysis", "systemic-risk", "global-markets"],
+      "keywords": ["geopolitical risk quantification", "political risk modeling", "scenario analysis", "systemic risk"],
+      "metrics": {
+        "searchVolume": 18000,
+        "academicPapers": 650,
+        "patentApplications": 25,
+        "mediaArticles": 8500,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:22:42Z",
+      "updatedAt": "2026-01-20T20:22:42Z",
+      "version": 1
+    },
+    {
+      "id": "d36a06df-739d-437d-8fdd-84f9ce715b59",
+      "title": "Cyber Risk in Capital Markets Trading Infrastructure",
+      "slug": "cyber-risk-capital-markets-trading-infrastructure",
+      "description": "Cyber risk continues to present significant and evolving challenges for capital markets institutions, with attacks increasing in sophistication and frequency through AI-powered methods. The financial stakes continue to rise, putting immense pressure on risk managers to prevent costly breaches and regulatory scrutiny. Trading infrastructure represents a high-value target due to the potential for immediate financial gain, market manipulation, and systemic disruption. Key challenges include protecting ultra-low-latency trading systems where security measures cannot add significant overhead, defending against AI-powered attacks that adapt in real-time, managing third-party and supply chain cyber risks, and maintaining resilience during coordinated attacks. The interconnected nature of capital markets means that a successful attack on one major institution could cascade across the financial system. Regulatory requirements continue to expand, with supervisors increasingly focused on operational resilience and cyber incident reporting. The shortage of cybersecurity professionals with capital markets expertise compounds the challenge.",
+      "summary": "AI-powered cyber attacks on trading infrastructure are increasing in sophistication, while latency constraints limit security measures and talent shortages persist.",
+      "industry": {
+        "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+        "name": "Capital Markets",
+        "slug": "capital-markets"
+      },
+      "field": {
+        "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+        "name": "Risk Management",
+        "slug": "risk-management"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["cybersecurity", "operational-risk", "infrastructure", "resilience"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "All capital markets participants",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 20000000000,
+          "timeframe": "annual cyber-related losses in financial services"
+        },
+        "qualityOfLife": 4,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 4,
+        "existingProgress": 6,
+        "barriers": [
+          "Rapidly evolving threat landscape",
+          "Latency constraints limiting security measures",
+          "Talent shortage in financial cybersecurity",
+          "Third-party and supply chain vulnerabilities",
+          "Attacker asymmetry advantage"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "10,000+ in financial cybersecurity",
+        "fundingLevel": "High - major investment across industry"
+      },
+      "impactScore": 71,
+      "rootCauses": [
+        {
+          "description": "AI-powered attacks increasing in sophistication and adapting in real-time",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Latency-sensitive trading systems cannot accommodate heavy security overhead",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Complex third-party and supply chain dependencies creating attack surfaces",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Shortage of cybersecurity professionals with capital markets expertise",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Direct financial losses from theft, fraud, and ransom payments",
+          "type": "direct",
+          "affectedArea": "Financial",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Trading disruptions and market manipulation from compromised systems",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Regulatory penalties and increased supervisory scrutiny",
+          "type": "direct",
+          "affectedArea": "Compliance",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Systemic risk from coordinated attacks on multiple institutions",
+          "type": "cascading",
+          "affectedArea": "Financial Stability",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Zero Trust Architecture",
+          "description": "Security model assuming no implicit trust, verifying every access request",
+          "type": "framework",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Implementation complexity", "Performance overhead", "Legacy system challenges"]
+        },
+        {
+          "name": "AI-Powered Threat Detection",
+          "description": "Machine learning systems for anomaly detection and threat identification",
+          "type": "product",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["False positives", "Adversarial attacks on AI itself", "Training data requirements"]
+        },
+        {
+          "name": "Industry Threat Sharing (FS-ISAC)",
+          "description": "Financial Services Information Sharing and Analysis Center",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Reporting delays", "Confidentiality concerns limiting sharing"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Security solutions optimized for ultra-low-latency trading environments",
+          "gapType": "quality",
+          "opportunity": "Hardware-accelerated security for HFT",
+          "difficulty": "high"
+        },
+        {
+          "description": "Proactive AI-vs-AI defensive capabilities",
+          "gapType": "coverage",
+          "opportunity": "Autonomous cyber defense systems",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Industry-wide cyber resilience testing and coordination",
+          "gapType": "integration",
+          "opportunity": "Cross-institutional red team exercises",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "All capital markets participants and their customers",
+          "examples": ["Banks", "Exchanges", "Asset Managers", "Retail Investors"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Cybersecurity vendors and consultants",
+          "examples": ["CrowdStrike", "Palo Alto Networks", "Deloitte Cyber"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Financial regulators and supervisors",
+          "examples": ["SEC", "CFTC", "ECB", "FCA"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top 5 risks for financial risk managers in 2026",
+          "authors": ["Informa Connect"],
+          "url": "https://informaconnect.com/top-5-risks-for-financial-risk-managers-in-2026/",
+          "publishedAt": "2025-12-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Informa Connect",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Cyber risk continues to present significant challenges for risk managers in 2026, evolving in complexity and impact. Cyber risk management has seen further challenges from AI-powered attacks which have increased in sophistication and frequency."
+        },
+        {
+          "type": "industry-report",
+          "title": "Top five risks for financial institutions in 2025",
+          "authors": ["WTW"],
+          "url": "https://www.wtwco.com/en-us/insights/2025/03/top-five-risks-for-financial-institutions-in-2025",
+          "publishedAt": "2025-03-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Willis Towers Watson",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "The financial stakes continue to rise, putting immense pressure on risk managers to prevent costly breaches and regulatory scrutiny."
+        }
+      ],
+      "tags": ["cyber-risk", "cybersecurity", "operational-resilience", "trading-infrastructure", "ai-threats"],
+      "keywords": ["cyber risk capital markets", "trading infrastructure security", "AI cyber attacks", "financial cybersecurity"],
+      "metrics": {
+        "searchVolume": 22000,
+        "academicPapers": 1800,
+        "patentApplications": 950,
+        "mediaArticles": 12000,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+      "confidence": 0.9,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:22:42Z",
+      "updatedAt": "2026-01-20T20:22:42Z",
+      "version": 1
+    },
+    {
+      "id": "603140d9-69d6-410d-ac73-a3722a8e7747",
+      "title": "Regulatory Fragmentation in FRTB and Basel IV Cross-Border Implementation",
+      "slug": "regulatory-fragmentation-frtb-basel-iv-implementation",
+      "description": "Capital markets firms operating across multiple jurisdictions face increasing challenges from regulatory fragmentation in the implementation of the Fundamental Review of the Trading Book (FRTB) and broader Basel IV requirements. While the Basel Committee has established global standards, national implementations vary significantly in timing, scope, and specific requirements. This creates operational complexity as firms must maintain multiple calculation engines, reporting systems, and compliance frameworks for different jurisdictions. The regulatory pressure points include increasing complexity with limited harmonization, ever-increasing focus on regulatory specifics rather than principles, and fragmented technology stacks that cannot scale effectively across asset classes and geographies. In Europe, the Basel Committee continues to articulate new ways to think about managing risk through evolving recommendations for IRRBB and ICAAP. The US has delayed implementation while the EU moves forward, creating competitive imbalances. Banks responding with incremental upgrades find this piecemeal approach insufficient for the scale of regulatory change required.",
+      "summary": "FRTB and Basel IV implementation varies significantly across jurisdictions, creating operational complexity and competitive imbalances for global capital markets firms.",
+      "industry": {
+        "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+        "name": "Capital Markets",
+        "slug": "capital-markets"
+      },
+      "field": {
+        "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+        "name": "Risk Management",
+        "slug": "risk-management"
+      },
+      "problemType": "regulatory",
+      "problemSubtypes": ["compliance", "cross-border", "capital-requirements", "frtb"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "All globally active banks and trading firms",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual compliance and capital costs"
+        },
+        "qualityOfLife": 2,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "National sovereignty in regulation",
+          "Political factors driving implementation timing",
+          "Legacy systems requiring major upgrades",
+          "Complexity of internal model approaches"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "5,000+ in regulatory compliance",
+        "fundingLevel": "High - major compliance investments"
+      },
+      "impactScore": 62,
+      "rootCauses": [
+        {
+          "description": "National regulators implementing Basel standards with local variations and timing differences",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Political considerations delaying or modifying implementation in major jurisdictions",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Legacy technology infrastructure not designed for multi-jurisdictional calculations",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Complexity of internal model approaches requiring extensive regulatory approval",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Increased operational costs from maintaining multiple compliance frameworks",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Competitive imbalances between jurisdictions with different implementation timelines",
+          "type": "direct",
+          "affectedArea": "Market Competition",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Capital inefficiencies from conservative approaches to handle uncertainty",
+          "type": "direct",
+          "affectedArea": "Capital Management",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Regulatory arbitrage opportunities distorting market activity",
+          "type": "indirect",
+          "affectedArea": "Market Structure",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Regulatory Technology Platforms",
+          "description": "RegTech solutions automating multi-jurisdictional compliance calculations",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["High implementation costs", "Customization requirements", "Keeping pace with changes"]
+        },
+        {
+          "name": "Internal Model Approach (IMA)",
+          "description": "Bank-developed models for capital calculation with regulatory approval",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Extensive approval process", "Ongoing validation requirements", "Model risk"]
+        },
+        {
+          "name": "Standardized Approach",
+          "description": "Regulatory-prescribed calculation methodology",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Less risk-sensitive", "May overstate capital for some portfolios"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Automated tracking and implementation of regulatory changes across jurisdictions",
+          "gapType": "coverage",
+          "opportunity": "AI-powered regulatory change management",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Unified calculation engines handling multiple regulatory frameworks",
+          "gapType": "integration",
+          "opportunity": "Cloud-native multi-jurisdiction risk platforms",
+          "difficulty": "high"
+        },
+        {
+          "description": "Industry coordination on regulatory harmonization advocacy",
+          "gapType": "awareness",
+          "opportunity": "Strengthened industry associations and dialogue",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Global banks and trading firms subject to multiple regimes",
+          "examples": ["G-SIBs", "Global Broker-Dealers", "Universal Banks"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "National regulators implementing Basel standards",
+          "examples": ["Federal Reserve", "ECB", "PRA", "FINMA"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Basel Committee and international standard setters",
+          "examples": ["Basel Committee", "FSB", "IOSCO"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "The 3 Pressing Challenges Facing the Capital Markets Industry in 2025",
+          "authors": ["Exegy"],
+          "url": "https://www.exegy.com/challenges-capital-markets-2025/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Exegy",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "In 2025, the real pressure points for capital markets firms are increasing regulatory complexity, limited data center capacity, and fragmented technology stacks."
+        },
+        {
+          "type": "industry-report",
+          "title": "Risk Management Trends & Strategies for 2025 Success",
+          "authors": ["FIS Global"],
+          "url": "https://www.fisglobal.com/insights/risk-management-strategies-to-help-tackle-2025-biggest-challenges",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "FIS Global",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "In Europe especially, the Basel Committee continues to articulate new ways to think about and manage risk through evolving recommendations for both managing IRRBB and running the ICAAP."
+        }
+      ],
+      "tags": ["frtb", "basel-iv", "regulatory-compliance", "cross-border", "capital-requirements", "regulatory-fragmentation"],
+      "keywords": ["FRTB implementation", "Basel IV compliance", "regulatory fragmentation", "capital requirements"],
+      "metrics": {
+        "searchVolume": 11000,
+        "academicPapers": 420,
+        "patentApplications": 35,
+        "mediaArticles": 2800,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+      "confidence": 0.86,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:22:42Z",
+      "updatedAt": "2026-01-20T20:22:42Z",
+      "version": 1
+    },
+    {
+      "id": "f1b02505-a2f7-473d-b757-7f1cf32d0e58",
+      "title": "Systemic Risk from Non-Bank Financial Intermediary Interconnectedness",
+      "slug": "systemic-risk-nbfi-interconnectedness",
+      "description": "The rapid growth of non-bank financial intermediaries (NBFIs) - including hedge funds, private equity, money market funds, and other shadow banking entities - has created new channels for systemic risk transmission that traditional risk frameworks struggle to capture. NBFIs now account for over 50% of global financial assets, yet they operate with less regulatory oversight and transparency than traditional banks. The interconnectedness between NBFIs and the regulated banking sector creates hidden concentration risks and potential for rapid contagion during market stress. Key challenges include limited visibility into NBFI leverage and liquidity positions, procyclical behavior amplifying market volatility, maturity and liquidity mismatches, and inadequate margin and collateral frameworks. The 2022-2023 LDI crisis in UK pension funds and the 2021 Archegos collapse demonstrated how NBFI failures can rapidly transmit stress to the broader financial system. Regulators are increasingly focused on NBFI risks, but data gaps and jurisdictional limitations constrain effective supervision.",
+      "summary": "NBFIs account for 50%+ of financial assets but operate with limited oversight, creating hidden concentration risks and contagion channels during market stress.",
+      "industry": {
+        "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+        "name": "Capital Markets",
+        "slug": "capital-markets"
+      },
+      "field": {
+        "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+        "name": "Risk Management",
+        "slug": "risk-management"
+      },
+      "problemType": "coordination",
+      "problemSubtypes": ["systemic-risk", "shadow-banking", "interconnectedness", "concentration-risk"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "Global financial system",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 1000000000000,
+          "timeframe": "potential systemic crisis impact"
+        },
+        "qualityOfLife": 5,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 4,
+        "existingProgress": 4,
+        "barriers": [
+          "Limited regulatory authority over NBFIs",
+          "Data gaps and opacity",
+          "Cross-border coordination challenges",
+          "Industry resistance to disclosure",
+          "Rapid innovation outpacing regulation"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "1,500+ in systemic risk",
+        "fundingLevel": "Moderate - increasing post-2022"
+      },
+      "impactScore": 71,
+      "rootCauses": [
+        {
+          "description": "Rapid growth of NBFI sector outpacing regulatory frameworks designed for banks",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Opacity in NBFI leverage, positions, and interconnections with banks",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Procyclical behavior amplifying market moves during stress",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Maturity and liquidity mismatches creating run risk",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Rapid contagion from NBFI stress to banking sector through counterparty exposures",
+          "type": "cascading",
+          "affectedArea": "Banking Sector",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Amplification of market volatility through forced selling and margin calls",
+          "type": "direct",
+          "affectedArea": "Market Stability",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Hidden concentration risks materializing unexpectedly",
+          "type": "direct",
+          "affectedArea": "Risk Management",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Potential need for government intervention to prevent systemic collapse",
+          "type": "cascading",
+          "affectedArea": "Public Finance",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "FSB NBFI Work Program",
+          "description": "Financial Stability Board initiatives on NBFI monitoring and policy",
+          "type": "framework",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Non-binding recommendations", "Slow implementation", "Data gaps persist"]
+        },
+        {
+          "name": "Counterparty Risk Management",
+          "description": "Bank-level management of NBFI counterparty exposures",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Limited visibility into NBFI activities", "Aggregate concentration missed"]
+        },
+        {
+          "name": "Central Clearing Expansion",
+          "description": "Moving more NBFI activity through central counterparties",
+          "type": "policy",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Concentration risk at CCPs", "Not all products suitable", "Cost barriers"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Comprehensive data collection on NBFI leverage and positions",
+          "gapType": "coverage",
+          "opportunity": "Mandatory reporting frameworks for large NBFIs",
+          "difficulty": "high"
+        },
+        {
+          "description": "Real-time interconnectedness mapping across financial system",
+          "gapType": "quality",
+          "opportunity": "Network analysis tools for systemic risk monitoring",
+          "difficulty": "high"
+        },
+        {
+          "description": "Macroprudential tools applicable to NBFI sector",
+          "gapType": "coverage",
+          "opportunity": "Activity-based regulation for systemic activities",
+          "difficulty": "very-high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Banks exposed to NBFI counterparties",
+          "examples": ["Prime Brokers", "Custodian Banks", "Universal Banks"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "NBFIs and their industry associations",
+          "examples": ["Hedge Funds", "Private Equity", "AIMA", "MFA"],
+          "interest": "medium",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Financial stability authorities and macroprudential regulators",
+          "examples": ["FSB", "FSOC", "ESRB", "Central Banks"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "2026 banking and capital markets outlook",
+          "authors": ["Deloitte"],
+          "url": "https://www.deloitte.com/us/en/insights/industry/financial-services/financial-services-industry-outlooks/banking-industry-outlook.html",
+          "publishedAt": "2025-12-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Deloitte Insights",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Stablecoins could herald a new era of money, presenting both challenges and opportunities for banks."
+        },
+        {
+          "type": "industry-report",
+          "title": "The year ahead in financial services: 12 trends to watch in 2026",
+          "authors": ["Lexology"],
+          "url": "https://www.lexology.com/library/detail.aspx?g=8ed99bd0-432f-47ec-8e8a-61530f81ae04",
+          "publishedAt": "2025-12-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Lexology",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "2026 could be a pivotal year to develop strategies and address the risks related to non-bank financial intermediaries."
+        }
+      ],
+      "tags": ["nbfi", "shadow-banking", "systemic-risk", "interconnectedness", "hedge-funds", "financial-stability"],
+      "keywords": ["NBFI risk", "shadow banking", "systemic risk", "interconnectedness", "hedge fund risk"],
+      "metrics": {
+        "searchVolume": 8500,
+        "academicPapers": 720,
+        "patentApplications": 15,
+        "mediaArticles": 3200,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:22:42Z",
+      "updatedAt": "2026-01-20T20:22:42Z",
+      "version": 1
+    },
+    {
+      "id": "c06a04fa-f3df-4f48-9746-f5e71fcbf5a3",
+      "title": "Talent Retention and Human Capital Risk in Risk Management Functions",
+      "slug": "talent-retention-human-capital-risk-management",
+      "description": "Financial institutions face intensifying human capital risks within risk management functions, with talent retention emerging as a critical concern for 2026. The specialized skills required for modern risk management - including quantitative modeling, AI/ML expertise, climate risk analysis, and cyber risk - are in short supply, creating fierce competition for qualified professionals. Human capital risks reflect growing concerns about workforce stability and the failure to attract or retain top talent in risk roles. The problem is exacerbated by the rapid evolution of risk management requirements, meaning skills that were adequate a few years ago may now be insufficient. Key challenges include competition from technology firms offering higher compensation, aging workforce in traditional risk areas, difficulty training junior staff on complex systems, and knowledge concentration in key individuals. The loss of experienced risk professionals can leave institutions vulnerable during stress events when institutional knowledge is most critical.",
+      "summary": "Risk management talent shortage intensifies as specialized skills in AI, climate, and cyber risk become essential, while competition from tech firms drives attrition.",
+      "industry": {
+        "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+        "name": "Capital Markets",
+        "slug": "capital-markets"
+      },
+      "field": {
+        "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+        "name": "Risk Management",
+        "slug": "risk-management"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["talent-management", "human-capital", "skills-gap", "retention"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "All financial institutions with risk functions",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 5000000000,
+          "timeframe": "annual recruitment and training costs"
+        },
+        "qualityOfLife": 6,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Competition from technology sector",
+          "Rapid skill obsolescence",
+          "Long training timelines for risk expertise",
+          "Compensation constraints"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "3,000+ in financial HR",
+        "fundingLevel": "Moderate - training investments growing"
+      },
+      "impactScore": 63,
+      "rootCauses": [
+        {
+          "description": "Fierce competition from technology firms offering higher compensation and flexibility",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Rapid evolution of required skills outpacing workforce development",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Aging workforce in traditional risk areas with limited succession planning",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Knowledge concentration in key individuals creating single points of failure",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Operational risk from understaffed or underqualified risk teams",
+          "type": "direct",
+          "affectedArea": "Risk Management Quality",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Project delays in implementing new risk frameworks and systems",
+          "type": "direct",
+          "affectedArea": "Program Delivery",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Knowledge loss when experienced staff depart",
+          "type": "direct",
+          "affectedArea": "Institutional Knowledge",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Regulatory findings from inadequate risk management resources",
+          "type": "indirect",
+          "affectedArea": "Compliance",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Competitive Compensation Packages",
+          "description": "Enhanced salaries, bonuses, and benefits to compete with tech sector",
+          "type": "policy",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Budget constraints", "May not match tech offers", "Creates internal equity issues"]
+        },
+        {
+          "name": "Internal Training Programs",
+          "description": "Development programs to upskill existing staff in new risk areas",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Long development timelines", "Staff may leave after training"]
+        },
+        {
+          "name": "University Partnerships",
+          "description": "Collaborations with academic institutions for talent pipeline",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Graduates require extensive on-the-job training", "Competition for graduates"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Automation of routine risk tasks to reduce headcount requirements",
+          "gapType": "quality",
+          "opportunity": "AI-powered risk automation tools",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Industry-wide standards for risk management certifications",
+          "gapType": "coverage",
+          "opportunity": "Professional certification bodies for emerging risk areas",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Knowledge management systems to capture institutional expertise",
+          "gapType": "integration",
+          "opportunity": "AI-assisted knowledge bases for risk procedures",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Risk management professionals and teams",
+          "examples": ["Risk Analysts", "Quantitative Analysts", "CROs"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "HR leaders and senior management",
+          "examples": ["CHROs", "CEOs", "Risk Committee Chairs"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Educational institutions and training providers",
+          "examples": ["Business Schools", "GARP", "PRMIA"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top 5 risks for financial risk managers in 2026",
+          "authors": ["Informa Connect"],
+          "url": "https://informaconnect.com/top-5-risks-for-financial-risk-managers-in-2026/",
+          "publishedAt": "2025-12-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Informa Connect",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Human capital risks are intensifying rapidly, with talent retention remaining high on risk leaders' agenda for 2026. This reflects growing concerns about workforce stability and failure to attract or retain top talent."
+        }
+      ],
+      "tags": ["talent-management", "human-capital", "skills-gap", "retention", "workforce", "training"],
+      "keywords": ["risk management talent", "human capital risk", "skills gap finance", "talent retention financial services"],
+      "metrics": {
+        "searchVolume": 6500,
+        "academicPapers": 280,
+        "patentApplications": 10,
+        "mediaArticles": 1800,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+      "confidence": 0.84,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:22:42Z",
+      "updatedAt": "2026-01-20T20:22:42Z",
+      "version": 1
+    },
+    {
+      "id": "237339b7-ebfe-4f6f-bb84-06387ca297b2",
+      "title": "Stablecoin and Digital Asset Risk Management Framework Gaps",
+      "slug": "stablecoin-digital-asset-risk-management-gaps",
+      "description": "The emergence of stablecoins and digital assets presents novel challenges for capital markets risk management, with 2026 identified as a pivotal year for addressing these risks. Stablecoins could herald a new era of money, presenting both challenges and opportunities for banks and payment companies. However, existing risk management frameworks were not designed to address the unique characteristics of digital assets, including 24/7 trading, smart contract risks, custody challenges, and the novel failure modes of algorithmic stablecoins. Financial institutions must develop strategies to assess the creditworthiness of stablecoin issuers, manage collateral that may include digital assets, understand the contagion risks from crypto market volatility, and comply with evolving regulations across jurisdictions. The opacity of stablecoin reserve compositions, the potential for de-pegging events, and the integration of digital assets with traditional finance create risks that existing VaR models and stress tests cannot adequately capture.",
+      "summary": "Stablecoins and digital assets create novel risk management challenges including 24/7 markets, smart contract risks, and failure modes that existing frameworks cannot address.",
+      "industry": {
+        "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+        "name": "Capital Markets",
+        "slug": "capital-markets"
+      },
+      "field": {
+        "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+        "name": "Risk Management",
+        "slug": "risk-management"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["digital-assets", "stablecoins", "crypto-risk", "emerging-technology"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "Financial institutions with digital asset exposure",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 50000000000,
+          "timeframe": "potential losses from stablecoin/crypto failures"
+        },
+        "qualityOfLife": 3,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 5,
+        "existingProgress": 4,
+        "barriers": [
+          "Rapid technological evolution",
+          "Regulatory uncertainty",
+          "Lack of historical data",
+          "Novel failure modes",
+          "24/7 market requirements"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "2,000+ in crypto risk",
+        "fundingLevel": "Growing but fragmented"
+      },
+      "impactScore": 65,
+      "rootCauses": [
+        {
+          "description": "Traditional risk frameworks designed for conventional assets not applicable to digital assets",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of historical data for calibrating risk models for novel asset class",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Regulatory frameworks still evolving across jurisdictions",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Opacity in stablecoin reserve compositions and audit practices",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Unexpected losses from stablecoin de-pegging or issuer failures",
+          "type": "direct",
+          "affectedArea": "Portfolio Value",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Operational failures from 24/7 market requirements",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Regulatory action for inadequate risk controls",
+          "type": "direct",
+          "affectedArea": "Compliance",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Contagion from crypto market volatility to traditional finance",
+          "type": "cascading",
+          "affectedArea": "Financial Stability",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Crypto-Specific Risk Platforms",
+          "description": "Specialized risk management tools for digital asset portfolios",
+          "type": "product",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Limited track record", "May not integrate with traditional systems"]
+        },
+        {
+          "name": "Stablecoin Reserve Attestations",
+          "description": "Third-party attestations of stablecoin reserve holdings",
+          "type": "service",
+          "effectiveness": 4,
+          "adoption": "growing",
+          "limitations": ["Point-in-time snapshots", "Varying attestation standards", "Not full audits"]
+        },
+        {
+          "name": "Basel Crypto Asset Framework",
+          "description": "Basel Committee guidance on prudential treatment of crypto assets",
+          "type": "framework",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Conservative capital requirements", "Limited practical guidance"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Real-time monitoring of stablecoin reserve compositions",
+          "gapType": "quality",
+          "opportunity": "On-chain reserve verification tools",
+          "difficulty": "medium"
+        },
+        {
+          "description": "VaR and stress testing models for digital assets",
+          "gapType": "coverage",
+          "opportunity": "Crypto-native risk metrics development",
+          "difficulty": "high"
+        },
+        {
+          "description": "Smart contract risk assessment frameworks",
+          "gapType": "coverage",
+          "opportunity": "Automated smart contract auditing tools",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Financial institutions with digital asset exposure",
+          "examples": ["Custodian Banks", "Asset Managers", "Payment Providers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Stablecoin issuers and crypto infrastructure providers",
+          "examples": ["Circle", "Tether", "Coinbase", "Crypto Custodians"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Financial regulators developing crypto frameworks",
+          "examples": ["SEC", "OCC", "MiCA Authorities", "Basel Committee"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "2026 banking and capital markets outlook",
+          "authors": ["Deloitte"],
+          "url": "https://www.deloitte.com/us/en/insights/industry/financial-services/financial-services-industry-outlooks/banking-industry-outlook.html",
+          "publishedAt": "2025-12-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Deloitte Insights",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Stablecoins could herald a new era of money, presenting both challenges and opportunities for banks and payment companies. 2026 could be a pivotal year to develop strategies and address the risks."
+        },
+        {
+          "type": "industry-report",
+          "title": "The year ahead in financial services: 12 trends to watch in 2026",
+          "authors": ["Lexology"],
+          "url": "https://www.lexology.com/library/detail.aspx?g=8ed99bd0-432f-47ec-8e8a-61530f81ae04",
+          "publishedAt": "2025-12-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Lexology",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "2026 could be a pivotal year to develop strategies and address the risks related to stablecoins."
+        }
+      ],
+      "tags": ["stablecoins", "digital-assets", "crypto-risk", "emerging-technology", "defi", "smart-contracts"],
+      "keywords": ["stablecoin risk", "digital asset risk management", "crypto risk framework", "blockchain risk"],
+      "metrics": {
+        "searchVolume": 14000,
+        "academicPapers": 580,
+        "patentApplications": 420,
+        "mediaArticles": 9500,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+      "confidence": 0.83,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:22:42Z",
+      "updatedAt": "2026-01-20T20:22:42Z",
+      "version": 1
+    },
+    {
+      "id": "31eed041-96bd-46cd-a9e9-c45e40a968ff",
+      "title": "Economic Uncertainty and Interest Rate Risk Model Inadequacy",
+      "slug": "economic-uncertainty-interest-rate-risk-model-inadequacy",
+      "description": "Financial institutions face persistent challenges in managing economic uncertainty and interest rate risk, driven by fluctuating interest rates, inflation, tariffs, and global instability. Traditional interest rate risk models, calibrated on historical data from periods of relative stability, have proven inadequate for the volatile rate environment experienced since 2022. The Basel Committee continues to articulate new requirements for managing interest rate risk in the banking book (IRRBB) and running the Internal Capital Adequacy Assessment Process (ICAAP), but institutions struggle to implement models that capture the current dynamics. Challenges include modeling the unprecedented pace of rate changes, understanding deposit behavior in a high-rate environment, capturing basis risks between different rate indices, and stress testing for scenarios without historical precedent. The combination of inflation uncertainty, central bank policy shifts, and geopolitical factors creates a multi-dimensional risk landscape that stress testing frameworks struggle to address. Institutions must adopt proactive risk management strategies, including enhanced scenario analysis, revenue diversification, and dynamic hedging, but many lack the technical capabilities to implement these effectively.",
+      "summary": "Interest rate risk models calibrated on stable periods fail to capture current volatility, while IRRBB requirements continue to evolve amid economic uncertainty.",
+      "industry": {
+        "id": "354f852b-5e83-48b1-a799-b9aeedb867a8",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "c0170fc7-11fe-40a9-913f-72aa3e9ad5d3",
+        "name": "Capital Markets",
+        "slug": "capital-markets"
+      },
+      "field": {
+        "id": "c0b5a16f-ff4d-42a3-9fe5-8b7ec8c8d99a",
+        "name": "Risk Management",
+        "slug": "risk-management"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["interest-rate-risk", "economic-uncertainty", "model-risk", "irrbb"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "All banks and fixed income investors",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 100000000000,
+          "timeframe": "2023 bank failures and unrealized losses"
+        },
+        "qualityOfLife": 4,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Lack of historical data for current regime",
+          "Behavioral model uncertainty",
+          "Multi-factor dependencies",
+          "Regulatory model approval timelines"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "8,000+ in interest rate risk",
+        "fundingLevel": "High - major focus post-SVB"
+      },
+      "impactScore": 67,
+      "rootCauses": [
+        {
+          "description": "Historical model calibration periods not representative of current rate volatility",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Deposit behavior changing unpredictably in high-rate environment",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Multiple interacting factors including inflation, policy, and geopolitics",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Legacy systems and processes not designed for rapid rate changes",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Large unrealized losses on fixed income portfolios",
+          "type": "direct",
+          "affectedArea": "Balance Sheet",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Bank failures when unrealized losses interact with liquidity stress",
+          "type": "cascading",
+          "affectedArea": "Financial Stability",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Net interest margin volatility affecting earnings",
+          "type": "direct",
+          "affectedArea": "Profitability",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Regulatory findings for inadequate IRRBB management",
+          "type": "direct",
+          "affectedArea": "Compliance",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "IRRBB Management Frameworks",
+          "description": "Basel-compliant interest rate risk management programs",
+          "type": "framework",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Backward-looking calibration", "May miss tail risks"]
+        },
+        {
+          "name": "Dynamic Hedging Strategies",
+          "description": "Active management of interest rate exposures using derivatives",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Hedge accounting complexity", "Basis risk", "Cost"]
+        },
+        {
+          "name": "Deposit Behavior Modeling",
+          "description": "Statistical models for predicting deposit flows and repricing",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Historical relationships may not hold", "Requires frequent recalibration"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Regime-switching models that adapt to different rate environments",
+          "gapType": "quality",
+          "opportunity": "ML-based regime detection and model selection",
+          "difficulty": "high"
+        },
+        {
+          "description": "Real-time deposit behavior monitoring and early warning systems",
+          "gapType": "quality",
+          "opportunity": "Digital deposit analytics platforms",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Integrated scenarios combining rates, inflation, and macro factors",
+          "gapType": "integration",
+          "opportunity": "Multi-factor integrated stress testing",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Banks and fixed income investors managing rate risk",
+          "examples": ["Commercial Banks", "Regional Banks", "Bond Funds"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Bank supervisors and prudential regulators",
+          "examples": ["FDIC", "OCC", "ECB Banking Supervision"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "ALM system vendors and consultants",
+          "examples": ["QRM", "Moody's Analytics", "Wolters Kluwer"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top five risks for financial institutions in 2025",
+          "authors": ["WTW"],
+          "url": "https://www.wtwco.com/en-us/insights/2025/03/top-five-risks-for-financial-institutions-in-2025",
+          "publishedAt": "2025-03-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Willis Towers Watson",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Economic uncertainty remains a significant risk for financial institutions in 2025, driven by factors such as fluctuating interest rates, inflation, tariffs and global instability."
+        },
+        {
+          "type": "industry-report",
+          "title": "Risk Management Trends & Strategies for 2025 Success",
+          "authors": ["FIS Global"],
+          "url": "https://www.fisglobal.com/insights/risk-management-strategies-to-help-tackle-2025-biggest-challenges",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "FIS Global",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "The Basel Committee continues to articulate new ways to think about and manage risk through evolving recommendations for both managing IRRBB and running the ICAAP."
+        }
+      ],
+      "tags": ["interest-rate-risk", "irrbb", "economic-uncertainty", "alm", "deposit-risk", "market-risk"],
+      "keywords": ["interest rate risk", "IRRBB", "economic uncertainty", "ALM", "deposit behavior"],
+      "metrics": {
+        "searchVolume": 16000,
+        "academicPapers": 920,
+        "patentApplications": 45,
+        "mediaArticles": 8200,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:22:42Z",
+      "updatedAt": "2026-01-20T20:22:42Z",
+      "version": 1
+    }
+  ]
+}
