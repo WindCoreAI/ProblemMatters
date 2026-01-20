@@ -1,0 +1,2148 @@
+{
+  "field": {
+    "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+    "name": "Wind Energy",
+    "slug": "wind",
+    "description": "Wind energy encompasses the technologies, infrastructure, and systems used to harness wind power for electricity generation, including onshore and offshore wind farms, turbine technology, and grid integration."
+  },
+  "domain": {
+    "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+    "name": "Renewable Energy",
+    "slug": "renewable-energy"
+  },
+  "industry": {
+    "id": "c6b5a493-8271-4069-8d8c-9b0a19283746",
+    "name": "Energy & Utilities",
+    "slug": "energy-utilities"
+  },
+  "problems": [
+    {
+      "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+      "title": "Rare Earth Element Supply Chain Vulnerability in Wind Turbine Manufacturing",
+      "slug": "rare-earth-supply-chain-vulnerability-wind-turbines",
+      "description": "The global wind energy industry faces a critical supply chain vulnerability due to its heavy dependence on rare earth elements (REEs) for permanent magnet generators used in modern wind turbines. China dominates 92% of global rare earth magnet production and 58% of rare earth mining, creating significant geopolitical and economic risks for wind energy deployment worldwide. A single large offshore wind turbine can require up to 5 tons of permanent magnets containing neodymium, praseodymium, dysprosium, and terbium. Recent Chinese export controls on additional rare earth elements, including holmium which magnet makers had turned to as an alternative, have further exacerbated supply concerns. Western efforts to build domestic 'mine-to-magnet' supply chains face challenges including 8-year average lead times for new mining projects, technically complex refining processes, and the presence of radioactive elements in many ore deposits. The concentration of supply at every downstream stage creates vulnerability to trade disputes, export restrictions, and geopolitical tensions that could significantly disrupt wind energy deployment globally.",
+      "summary": "Wind turbines rely heavily on rare earth permanent magnets, with China controlling 92% of global production. This concentration creates critical supply chain vulnerabilities that threaten global wind energy deployment.",
+      "industry": {
+        "id": "c6b5a493-8271-4069-8d8c-9b0a19283746",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Wind Energy",
+        "slug": "wind"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["supply-chain", "geopolitical", "critical-minerals"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.2,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "Global wind industry",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8.5,
+          "estimateUSD": 50000000000,
+          "timeframe": "annual market exposure"
+        },
+        "qualityOfLife": 6,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "8-year average lead time for new mining projects",
+          "Technically complex refining processes",
+          "Radioactive elements in ore deposits",
+          "Massive capital requirements",
+          "Environmental permitting challenges"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Moderate - increasing government focus",
+        "fundingLevel": "$620M+ in US DoD funding, growing private investment"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "Decades of Chinese investment in rare earth mining and processing while Western nations neglected the sector",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Environmental regulations making rare earth mining and refining difficult in Western countries",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Wind turbine designs increasingly dependent on direct-drive permanent magnet generators for efficiency",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of viable alternative magnet technologies at commercial scale",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Wind turbine manufacturers face supply disruptions and price volatility",
+          "type": "direct",
+          "affectedArea": "Manufacturing",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Slowed deployment of offshore wind projects due to component shortages",
+          "type": "direct",
+          "affectedArea": "Project development",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Increased costs passed to consumers and reduced competitiveness of wind energy",
+          "type": "cascading",
+          "affectedArea": "Energy markets",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Delayed progress toward renewable energy and climate targets",
+          "type": "cascading",
+          "affectedArea": "Climate policy",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Domestic Mine-to-Magnet Initiatives",
+          "description": "Government-funded programs to establish domestic rare earth supply chains, such as MP Materials and Lynas USA",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["Long development timelines", "Still dwarfed by Chinese production capacity"]
+        },
+        {
+          "name": "Rare Earth Recycling",
+          "description": "Recovery of rare earth elements from end-of-life electronics and industrial waste",
+          "type": "methodology",
+          "effectiveness": 3,
+          "adoption": "experimental",
+          "limitations": ["Limited supply from recycling streams", "Complex separation processes"]
+        },
+        {
+          "name": "Alternative Generator Designs",
+          "description": "Geared turbines and electrically excited generators that reduce or eliminate rare earth requirements",
+          "type": "product",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Lower efficiency", "Higher maintenance requirements", "Not suitable for all applications"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Scalable rare-earth-free permanent magnet technology for high-power applications",
+          "gapType": "coverage",
+          "opportunity": "Development of alternative magnetic materials or superconducting generators",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Rapid scaling of non-Chinese rare earth processing capacity",
+          "gapType": "scale",
+          "opportunity": "Investment in processing facilities in allied nations",
+          "difficulty": "high"
+        },
+        {
+          "description": "Efficient rare earth recovery from wind turbine components at end-of-life",
+          "gapType": "coverage",
+          "opportunity": "Circular economy solutions for wind turbine magnets",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Wind turbine manufacturers dependent on rare earth magnets",
+          "examples": ["Vestas", "Siemens Gamesa", "GE Vernova", "Goldwind"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Government agencies overseeing critical mineral supply chains",
+          "examples": ["US Department of Energy", "European Commission", "National security agencies"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Mining and processing companies developing alternative supply",
+          "examples": ["MP Materials", "Lynas Rare Earths", "Ucore Rare Metals"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Geopolitical risk and the global supply of rare earth permanent magnets",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0140988325003202",
+          "accessedAt": "2026-01-20",
+          "publisher": "ScienceDirect",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "China dominates each major stage in the supply chain for magnets used in wind turbines and electric vehicles"
+        },
+        {
+          "type": "government",
+          "title": "With new export controls on critical minerals, supply concentration risks become reality",
+          "url": "https://www.iea.org/commentaries/with-new-export-controls-on-critical-minerals-supply-concentration-risks-become-reality",
+          "accessedAt": "2026-01-20",
+          "publisher": "International Energy Agency",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "The list of rare earth elements subject to Chinese controls has been expanded to include five additional elements"
+        },
+        {
+          "type": "government",
+          "title": "Rare Earth Permanent Magnets Supply Chain Deep Dive Assessment",
+          "url": "https://www.energy.gov/sites/default/files/2022-02/Neodymium%20Magnets%20Supply%20Chain%20Report%20-%20Final.pdf",
+          "accessedAt": "2026-01-20",
+          "publisher": "US Department of Energy",
+          "credibilityScore": 0.95
+        }
+      ],
+      "tags": ["rare-earth", "supply-chain", "china", "permanent-magnets", "critical-minerals", "geopolitics"],
+      "keywords": ["rare earth elements wind turbines", "neodymium magnets", "china rare earth dominance", "wind turbine supply chain"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-200500",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+      "title": "Wind Turbine Equipment Reliability and Premature Component Failures",
+      "slug": "wind-turbine-equipment-reliability-premature-failures",
+      "description": "The wind energy industry faces significant challenges with equipment reliability, particularly in newer, larger turbine models. Shorter development cycles, new turbine designs, and price pressures have resulted in machines that are not durable enough, leading to a rash of failures during initial operating periods. Gearboxes, one of the most critical components, are among the most failure-prone, responsible for converting the rotor's slow 10-20 RPM rotation to the high speeds needed for efficient power generation. Main bearings on newer turbines with large rotor diameters experience particularly long replacement delays, leaving turbines offline for extended periods. Blade defects from manufacturing, transport damage, and excessive loading during operation drive higher downtime and spiraling maintenance costs that often far exceed original project model predictions. Steel prices increased 86% in the US and 53% in Europe in 2022, making replacement parts more expensive and harder to source. ONYX Insight's survey of 40+ owners and operators found 57% cited supply chain issues as their main operational obstacle, with major component replacements leaving turbines offline for days to months depending on parts availability and weather conditions.",
+      "summary": "Wind turbines face significant reliability issues due to shortened development cycles and price pressures, with gearbox failures and blade defects causing extended downtime and costs exceeding original projections.",
+      "industry": {
+        "id": "c6b5a493-8271-4069-8d8c-9b0a19283746",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Wind Energy",
+        "slug": "wind"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["reliability", "maintenance", "quality-control"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.8,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "14,000+ wind turbines monitored by ONYX alone",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 25000000000,
+          "timeframe": "annual maintenance and lost production"
+        },
+        "qualityOfLife": 4,
+        "productivity": 9
+      },
+      "tractability": {
+        "overall": 6,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Competitive pressure to reduce turbine costs",
+          "Shortened development cycles",
+          "Supply chain constraints for replacement parts",
+          "Remote turbine locations complicating maintenance"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "High - major OEM focus area",
+        "fundingLevel": "Significant investment from turbine manufacturers"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Shortened development cycles to rush larger turbines to market",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Competitive pressure squeezing turbine prices and quality",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Scaling to larger rotor diameters outpacing materials science and engineering validation",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Supply chain disruptions affecting quality of components and replacement parts",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Extended turbine downtime reducing energy production and revenue",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Maintenance costs exceeding project financial models",
+          "type": "direct",
+          "affectedArea": "Financial performance",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Reduced investor confidence in wind energy projects",
+          "type": "cascading",
+          "affectedArea": "Investment",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Wind energy stocks declining due to turbine troubles",
+          "type": "cascading",
+          "affectedArea": "Financial markets",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Predictive Maintenance Systems",
+          "description": "AI and sensor-based monitoring to predict failures before they occur",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Requires significant data collection", "Not all failures are predictable"]
+        },
+        {
+          "name": "Condition Monitoring",
+          "description": "Real-time monitoring of vibration, temperature, and other indicators",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Reactive rather than preventive for many failure modes"]
+        },
+        {
+          "name": "Extended Warranty Programs",
+          "description": "OEM warranties covering major component failures",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Warranty disputes", "Does not prevent downtime"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Comprehensive validation programs for new turbine designs before market deployment",
+          "gapType": "quality",
+          "opportunity": "Industry-wide testing standards and longer development cycles",
+          "difficulty": "high"
+        },
+        {
+          "description": "Rapid component replacement logistics for remote and offshore locations",
+          "gapType": "accessibility",
+          "opportunity": "Strategic parts inventory and rapid deployment systems",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Alternative gearbox and drivetrain designs with higher reliability",
+          "gapType": "coverage",
+          "opportunity": "Direct-drive systems, advanced materials, modular designs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Wind farm operators experiencing higher than expected maintenance costs",
+          "examples": ["Orsted", "Iberdrola", "NextEra Energy", "Independent power producers"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Wind turbine OEMs responsible for design and quality",
+          "examples": ["Vestas", "Siemens Gamesa", "GE Vernova", "Nordex"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "expert",
+          "description": "Maintenance and monitoring service providers",
+          "examples": ["ONYX Insight", "Bachmann", "SKF"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "6 Biggest Challenges of Wind Turbine Maintenance",
+          "url": "https://worktrek.com/blog/wind-turbine-maintenance-challenges/",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Gearboxes are among the most critical and failure-prone components in wind turbines"
+        },
+        {
+          "type": "news",
+          "title": "Turbine troubles have sent wind energy stocks tumbling",
+          "url": "https://www.cnbc.com/2023/10/20/turbine-troubles-have-sent-wind-energy-stocks-tumbling-and-a-slew-of-issues-remain.html",
+          "accessedAt": "2026-01-20",
+          "publisher": "CNBC",
+          "credibilityScore": 0.85
+        },
+        {
+          "type": "industry-report",
+          "title": "5 Critical Challenges of Wind Energy and Potential Solutions",
+          "url": "https://www.vhive.ai/5-critical-challenges-of-wind-energy-and-potential-solutions/",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "The initial operating period of newer turbines are seeing a rash of failures due to shorter development cycles"
+        }
+      ],
+      "tags": ["reliability", "maintenance", "gearbox", "blade-defects", "turbine-failures", "downtime"],
+      "keywords": ["wind turbine reliability", "gearbox failures", "turbine maintenance costs", "blade defects"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-200500",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+      "title": "Community Opposition and Social Acceptance Barriers to Wind Energy Development",
+      "slug": "community-opposition-social-acceptance-wind-energy",
+      "description": "Wind energy projects face significant community opposition that delays or blocks development despite broad public support for renewable energy at the national level. While approximately 89% of Americans support more wind turbine farms, specific local projects encounter intense resistance labeled as NIMBYism (Not In My Back Yard). Common concerns include noise pollution from turbine operation, shadow flicker effects from rotating blades, visual impact on landscapes, and perceived property value decreases. Research by Stephen Jarvis at the London School of Economics found that NIMBYism in Britain can raise the cost of wind power by 10-29%. A study by MIT researchers identified 53 utility-scale wind, solar, and geothermal projects delayed or blocked between 2008 and 2021 due to local opposition. While claims of 'wind turbine syndrome' causing health effects have been debunked by extensive research, unfounded health concerns continue to fuel opposition. The high-profile defeat of the Cape Wind project in Nantucket Sound, despite support from Massachusetts and federal government, demonstrates how well-funded opposition can halt projects. The challenge is particularly acute for onshore wind, which has become highly politicized in many regions.",
+      "summary": "Despite 89% national support for wind energy, local projects face intense NIMBY opposition over noise, visual impact, and property values, increasing costs by 10-29% and blocking numerous projects.",
+      "industry": {
+        "id": "c6b5a493-8271-4069-8d8c-9b0a19283746",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Wind Energy",
+        "slug": "wind"
+      },
+      "problemType": "social",
+      "problemSubtypes": ["community-relations", "nimby", "public-acceptance"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "Thousands of proposed wind projects globally",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7.5,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual cost increases and delayed projects"
+        },
+        "qualityOfLife": 6,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Deeply held personal beliefs and property concerns",
+          "Well-funded opposition groups",
+          "Politicization of renewable energy",
+          "Complex local permitting processes"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Moderate - social science and policy researchers",
+        "fundingLevel": "Limited compared to technical research"
+      },
+      "impactScore": 65,
+      "rootCauses": [
+        {
+          "description": "Gap between abstract support for renewable energy and acceptance of local impacts",
+          "category": "cultural",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Insufficient community benefit-sharing from wind projects",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Misinformation about health effects and property values",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Top-down project development without meaningful community engagement",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Project delays adding 10-29% to wind energy costs",
+          "type": "direct",
+          "affectedArea": "Project economics",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Complete cancellation of viable wind projects",
+          "type": "direct",
+          "affectedArea": "Deployment capacity",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Slowed progress toward renewable energy targets",
+          "type": "cascading",
+          "affectedArea": "Climate policy",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Increased polarization around energy transition",
+          "type": "cascading",
+          "affectedArea": "Political discourse",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Community Ownership Models",
+          "description": "Requirements for local ownership stakes, such as Denmark's 20% community ownership mandate",
+          "type": "policy",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Requires regulatory support", "Complex to implement"]
+        },
+        {
+          "name": "Community Benefit Agreements",
+          "description": "Direct payments and benefits to host communities",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["May not address all concerns", "Can be seen as bribery"]
+        },
+        {
+          "name": "Enhanced Public Engagement",
+          "description": "Early and ongoing community consultation processes",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Time-consuming", "No guarantee of acceptance"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Standardized frameworks for equitable community benefit distribution",
+          "gapType": "coverage",
+          "opportunity": "Policy templates and best practice guidelines",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Effective counter-messaging to misinformation about health effects",
+          "gapType": "awareness",
+          "opportunity": "Public health communication campaigns backed by research",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Scalable community engagement approaches for rapid deployment",
+          "gapType": "scale",
+          "opportunity": "Digital engagement platforms and trained community liaisons",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Local residents near proposed wind farms",
+          "examples": ["Rural landowners", "Coastal communities", "Indigenous communities"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Wind project developers facing opposition",
+          "examples": ["Orsted", "Avangrid", "Pattern Energy"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Local planning and zoning authorities",
+          "examples": ["County planning boards", "Township councils"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Explaining NIMBY Opposition to Wind Power",
+          "url": "https://smith.faculty.polsci.ucsb.edu/wind.pdf",
+          "accessedAt": "2026-01-20",
+          "publisher": "UC Santa Barbara",
+          "credibilityScore": 0.9
+        },
+        {
+          "type": "news",
+          "title": "How Climate NIMBYism Prevents Net Zero",
+          "url": "https://www.generationim.com/our-thinking/insights/how-climate-nimbyism-prevents-net-zero/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Generation Investment Management",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "NIMBYism in Britain can raise the cost of wind power by 10-29%"
+        },
+        {
+          "type": "academic",
+          "title": "Wind power and the NIMBY-myth: Institutional capacity",
+          "url": "https://www.researchgate.net/publication/233870398_Wind_power_and_the_NIMBY-myth_Institutional_capacity_and_the_limited_significance_of_public_support",
+          "accessedAt": "2026-01-20",
+          "publisher": "ResearchGate",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["nimby", "community-opposition", "social-acceptance", "public-engagement", "noise", "visual-impact"],
+      "keywords": ["wind farm opposition", "nimby wind energy", "community acceptance", "wind turbine noise complaints"],
+      "metrics": {
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-200500",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+      "title": "Permitting Delays and Grid Interconnection Bottlenecks for Wind Projects",
+      "slug": "permitting-delays-grid-interconnection-bottlenecks-wind",
+      "description": "Wind energy projects face critical bottlenecks in permitting and grid interconnection that significantly delay deployment and increase costs. The pre-construction permitting process typically takes about five years, with developers needing to secure dozens of permits from local, tribal, state, regional, and federal agencies. Most European power markets have major issues with planning and connection of wind projects, with approval processes not designed to cope with the huge volumes of renewable project applications. This is particularly acute for onshore wind, which has become highly politicized. Grid interconnection queues have grown exponentially, with projects waiting years just to receive study results, let alone actual connection approval. The electricity grid requires significant upgrades to accommodate wind power from remote or offshore locations, but transmission infrastructure investment has lagged far behind generation capacity growth. These delays strand ready-to-build projects, increase financing costs, and create uncertainty that deters investment. The interconnection challenge is further complicated by the need for submarine cables for offshore wind, with cable manufacturers operating at full capacity due to unprecedented global demand.",
+      "summary": "Wind projects face 5+ year permitting timelines and overwhelmed grid interconnection queues, with approval processes not designed for the volume of renewable applications, significantly delaying deployment.",
+      "industry": {
+        "id": "c6b5a493-8271-4069-8d8c-9b0a19283746",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Wind Energy",
+        "slug": "wind"
+      },
+      "problemType": "regulatory",
+      "problemSubtypes": ["permitting", "grid-connection", "bureaucracy"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "Majority of wind projects globally",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8.5,
+          "estimateUSD": 40000000000,
+          "timeframe": "annual delayed investment"
+        },
+        "qualityOfLife": 5,
+        "productivity": 9
+      },
+      "tractability": {
+        "overall": 5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 4,
+        "barriers": [
+          "Multiple overlapping jurisdictions",
+          "Aging grid infrastructure",
+          "Transmission line siting challenges",
+          "Insufficient grid planning coordination",
+          "Cable manufacturing capacity constraints"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "High policy attention",
+        "fundingLevel": "Growing but insufficient infrastructure investment"
+      },
+      "impactScore": 74,
+      "rootCauses": [
+        {
+          "description": "Permitting frameworks designed for fossil fuel era, not renewable energy scale-up",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Decades of underinvestment in transmission infrastructure",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Fragmented regulatory authority across multiple agencies and jurisdictions",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Grid operators using first-come-first-served queuing without prioritization",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Project costs increase 15-30% due to extended development timelines",
+          "type": "direct",
+          "affectedArea": "Project economics",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Ready-to-build wind farms stranded waiting for grid connection",
+          "type": "direct",
+          "affectedArea": "Deployment",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Renewable energy targets missed due to deployment bottlenecks",
+          "type": "cascading",
+          "affectedArea": "Climate policy",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Investment capital flowing to jurisdictions with faster permitting",
+          "type": "cascading",
+          "affectedArea": "Economic competitiveness",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Permitting Reform Legislation",
+          "description": "Policy reforms to streamline and accelerate renewable energy approvals",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Political opposition", "Slow implementation"]
+        },
+        {
+          "name": "Grid Modernization Programs",
+          "description": "Federal and state investments in transmission infrastructure",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Long construction timelines", "Cost allocation disputes"]
+        },
+        {
+          "name": "Interconnection Queue Reform",
+          "description": "FERC and regional reforms to prioritize viable projects",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["Implementation challenges", "Transition period disruption"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Coordinated national transmission planning for renewable energy zones",
+          "gapType": "coordination",
+          "opportunity": "Regional transmission organizations with renewable mandates",
+          "difficulty": "high"
+        },
+        {
+          "description": "One-stop permitting shops for renewable energy projects",
+          "gapType": "integration",
+          "opportunity": "Federal coordination of multi-agency reviews",
+          "difficulty": "high"
+        },
+        {
+          "description": "Proactive grid infrastructure buildout ahead of generation",
+          "gapType": "scale",
+          "opportunity": "Anticipatory transmission investment models",
+          "difficulty": "very-high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Wind project developers waiting in permitting and interconnection queues",
+          "examples": ["Invenergy", "Apex Clean Energy", "EDF Renewables"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Regulatory agencies controlling permitting and grid access",
+          "examples": ["FERC", "State utility commissions", "Regional transmission organizations"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Transmission owners and utilities managing grid connections",
+          "examples": ["National Grid", "American Electric Power", "Xcel Energy"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "5 challenges facing wind",
+          "url": "https://timera-energy.com/blog/5-challenges-facing-wind/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Timera Energy",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Most European power markets have major issues with planning and connection of wind projects"
+        },
+        {
+          "type": "industry-report",
+          "title": "4 challenges to overcome when transmitting offshore wind power",
+          "url": "https://www.stantec.com/en/ideas/4-challenges-to-overcome-when-transmitting-offshore-wind-power",
+          "accessedAt": "2026-01-20",
+          "publisher": "Stantec",
+          "credibilityScore": 0.85
+        },
+        {
+          "type": "news",
+          "title": "Wind power gets a federal boost but faces challenges",
+          "url": "https://www.npr.org/2022/08/15/1117607516/wind-power-challenges-landowners-fed",
+          "accessedAt": "2026-01-20",
+          "publisher": "NPR",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "The pre-construction process takes about five years, and developers may need to secure dozens of permits"
+        }
+      ],
+      "tags": ["permitting", "grid-interconnection", "transmission", "regulatory-delays", "infrastructure"],
+      "keywords": ["wind permitting delays", "grid interconnection queue", "transmission bottlenecks", "renewable permitting reform"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-200500",
+      "confidence": 0.9,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b",
+      "title": "Offshore Wind Project Cost Escalation and Financial Viability Crisis",
+      "slug": "offshore-wind-cost-escalation-financial-viability-crisis",
+      "description": "The offshore wind industry faces a severe financial viability crisis as project costs have escalated dramatically since 2021, threatening the deployment of gigawatts of planned capacity. Material costs, particularly steel which increased 86% in the US and 53% in Europe in 2022, have significantly raised both new project costs and replacement part expenses. The cost of submarine cables has surged due to unprecedented global demand, with most cable manufacturers operating at full capacity, extending procurement and installation timelines. Higher interest rates have substantially increased financing costs for capital-intensive offshore projects. Major developers including Orsted, BP, and Equinor have written off billions of dollars on offshore wind projects, with some canceling contracts and returning development rights. The cost escalation has rendered many projects awarded under earlier power purchase agreements financially unviable at contracted prices. Supply chain constraints, workforce shortages, and vessel availability for installation have compounded cost pressures. This crisis has sent wind energy stocks tumbling and raised serious questions about the pace at which offshore wind can be deployed to meet climate targets.",
+      "summary": "Offshore wind faces a financial crisis with costs escalating 30-50% since 2021 due to material prices, interest rates, and supply constraints, forcing project cancellations and billion-dollar writeoffs.",
+      "industry": {
+        "id": "c6b5a493-8271-4069-8d8c-9b0a19283746",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Wind Energy",
+        "slug": "wind"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["cost-escalation", "financial-viability", "supply-chain"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.8,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "All major offshore wind developers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 100000000000,
+          "timeframe": "project writeoffs and cost overruns since 2021"
+        },
+        "qualityOfLife": 4,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 4,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Global inflationary pressures",
+          "Supply chain capacity constraints",
+          "High interest rate environment",
+          "Fixed-price contract structures"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "saturated",
+        "activeResearchers": "Very high - major industry crisis",
+        "fundingLevel": "Significant policy attention but structural issues remain"
+      },
+      "impactScore": 71,
+      "rootCauses": [
+        {
+          "description": "Global inflation and supply chain disruptions post-pandemic",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Aggressive bidding in early auctions assuming continued cost declines",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Interest rate increases raising cost of capital",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Limited supply of installation vessels and specialized equipment",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Developers canceling projects and returning lease rights",
+          "type": "direct",
+          "affectedArea": "Project pipeline",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Billions in asset writeoffs by major developers",
+          "type": "direct",
+          "affectedArea": "Financial performance",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Reduced investor confidence in offshore wind sector",
+          "type": "cascading",
+          "affectedArea": "Investment",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Offshore wind deployment falling short of targets",
+          "type": "cascading",
+          "affectedArea": "Climate policy",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Contract Price Renegotiation",
+          "description": "Governments allowing developers to renegotiate power purchase agreement prices",
+          "type": "policy",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Political sensitivity", "Sets precedent for future bids"]
+        },
+        {
+          "name": "Inflation-Indexed Contracts",
+          "description": "Contract structures that adjust prices based on inflation indices",
+          "type": "policy",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Shifts risk to ratepayers", "Complex to structure"]
+        },
+        {
+          "name": "Supply Chain Investment",
+          "description": "Government and private investment in domestic supply chains",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["Long lead times", "Significant capital required"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Auction mechanisms that account for cost uncertainty and supply chain constraints",
+          "gapType": "coverage",
+          "opportunity": "Flexible contract structures with cost-sharing mechanisms",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Rapid scaling of installation vessel and component manufacturing capacity",
+          "gapType": "scale",
+          "opportunity": "Coordinated industry investment in supply chain",
+          "difficulty": "high"
+        },
+        {
+          "description": "Standardization to reduce per-project engineering costs",
+          "gapType": "quality",
+          "opportunity": "Industry-wide design standardization initiatives",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Offshore wind developers facing financial losses",
+          "examples": ["Orsted", "Equinor", "BP", "Shell", "Avangrid"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Governments setting offshore wind policy and auction rules",
+          "examples": ["BOEM", "UK Crown Estate", "European governments"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "funder",
+          "description": "Banks and investors providing project finance",
+          "examples": ["Infrastructure funds", "Project finance banks"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Why Offshore Wind Power Is Struggling",
+          "url": "https://www.governing.com/resilience/why-offshore-wind-power-is-struggling",
+          "accessedAt": "2026-01-20",
+          "publisher": "Governing",
+          "credibilityScore": 0.85
+        },
+        {
+          "type": "news",
+          "title": "Turbine troubles have sent wind energy stocks tumbling",
+          "url": "https://www.cnbc.com/2023/10/20/turbine-troubles-have-sent-wind-energy-stocks-tumbling-and-a-slew-of-issues-remain.html",
+          "accessedAt": "2026-01-20",
+          "publisher": "CNBC",
+          "credibilityScore": 0.85
+        },
+        {
+          "type": "industry-report",
+          "title": "5 Critical Challenges of Wind Energy and Potential Solutions",
+          "url": "https://www.vhive.ai/5-critical-challenges-of-wind-energy-and-potential-solutions/",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Steel prices increased by 86% in the U.S. and 53% in Europe in 2022"
+        }
+      ],
+      "tags": ["offshore-wind", "cost-escalation", "financial-crisis", "supply-chain", "project-cancellations"],
+      "keywords": ["offshore wind costs", "wind project writeoffs", "offshore wind financial crisis"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-200500",
+      "confidence": 0.92,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c",
+      "title": "Wind Energy Workforce Skills Shortage and Training Gap",
+      "slug": "wind-energy-workforce-skills-shortage-training-gap",
+      "description": "The wind energy industry faces a critical workforce shortage that threatens to constrain growth and increase operational costs. The industry lacks a well-trained workforce for manufacturing, construction, and operation of both onshore and offshore wind farms. Specialized skills required for wind turbine maintenance, including working at heights, electrical systems, mechanical systems, and composite materials repair, are in short supply. The offshore wind sector faces particularly acute challenges, requiring workers with maritime skills combined with wind energy expertise. Remote turbine locations create additional workforce challenges, as technicians must be willing to travel to isolated areas and work in challenging conditions. The rapid scale-up of wind energy deployment has outpaced training program capacity, with technical schools and apprenticeship programs unable to produce sufficient qualified workers. Competition for skilled workers from other industries, including oil and gas, construction, and other renewable sectors, exacerbates the shortage. This workforce gap results in higher labor costs, extended maintenance timelines, and operational inefficiencies across the wind industry.",
+      "summary": "The wind industry faces critical workforce shortages in manufacturing, construction, and O&M, with training programs unable to keep pace with rapid deployment and specialized skill requirements.",
+      "industry": {
+        "id": "c6b5a493-8271-4069-8d8c-9b0a19283746",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Wind Energy",
+        "slug": "wind"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["workforce", "training", "skills-gap"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.2,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "Global wind industry employers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 10000000000,
+          "timeframe": "annual labor cost premiums and delays"
+        },
+        "qualityOfLife": 5,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 6.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Training program capacity constraints",
+          "Competition from other industries",
+          "Remote work locations",
+          "Physical demands of the work"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Growing focus from industry and educators",
+        "fundingLevel": "Moderate - increasing government training investments"
+      },
+      "impactScore": 64,
+      "rootCauses": [
+        {
+          "description": "Rapid industry growth outpacing training infrastructure",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Specialized skill requirements unique to wind energy",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Competition for workers from higher-paying industries",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Geographic mismatch between workforce and wind farm locations",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Higher labor costs passed through to project economics",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Extended turbine downtime due to maintenance scheduling delays",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Slower wind energy deployment than planned",
+          "type": "cascading",
+          "affectedArea": "Deployment",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Safety incidents due to undertrained workers",
+          "type": "cascading",
+          "affectedArea": "Safety",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Technical Training Programs",
+          "description": "Community colleges and technical schools offering wind energy certificates",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Limited capacity", "Geographic distribution"]
+        },
+        {
+          "name": "OEM Training Academies",
+          "description": "Manufacturer-operated training programs for technicians",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Brand-specific", "Limited throughput"]
+        },
+        {
+          "name": "Apprenticeship Programs",
+          "description": "Structured on-the-job training with experienced technicians",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Requires experienced mentors", "Time-intensive"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Scalable training infrastructure to meet deployment targets",
+          "gapType": "scale",
+          "opportunity": "National training center network with standardized curricula",
+          "difficulty": "high"
+        },
+        {
+          "description": "Cross-training programs for workers from adjacent industries",
+          "gapType": "coverage",
+          "opportunity": "Bridge programs for oil & gas, maritime, electrical workers",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Remote and virtual training technologies",
+          "gapType": "accessibility",
+          "opportunity": "VR/AR training simulators and remote learning platforms",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Wind farm operators struggling to hire qualified technicians",
+          "examples": ["Pattern Energy", "Avangrid", "EDF Renewables"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Educational institutions developing wind energy programs",
+          "examples": ["Community colleges", "Technical schools", "Universities"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Workers seeking careers in wind energy",
+          "examples": ["Veterans", "Transitioning fossil fuel workers", "Recent graduates"],
+          "interest": "high",
+          "influence": "low"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "4 challenges to overcome when transmitting offshore wind power",
+          "url": "https://www.stantec.com/en/ideas/4-challenges-to-overcome-when-transmitting-offshore-wind-power",
+          "accessedAt": "2026-01-20",
+          "publisher": "Stantec",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "The industry also lacks a well-trained workforce for manufacturing, construction and operation of offshore wind farms"
+        },
+        {
+          "type": "industry-report",
+          "title": "6 Biggest Challenges of Wind Turbine Maintenance",
+          "url": "https://worktrek.com/blog/wind-turbine-maintenance-challenges/",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.8
+        }
+      ],
+      "tags": ["workforce", "skills-shortage", "training", "technicians", "labor-market"],
+      "keywords": ["wind energy workforce shortage", "wind turbine technician training", "renewable energy jobs"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-200500",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d",
+      "title": "Wind Flow Modeling Accuracy in Complex Terrain and Atmospheric Conditions",
+      "slug": "wind-flow-modeling-accuracy-complex-terrain",
+      "description": "Major knowledge gaps exist in understanding wind flows in complex terrain and varying atmospheric conditions, limiting the accuracy of wind resource assessment and turbine performance predictions. These conditions need to be modeled more accurately so that large-scale wind power plants can be most productive and cost-effective. Current atmospheric models struggle to capture turbulence, wind shear, and wake effects at the scales relevant to modern large wind turbines with rotor diameters exceeding 150 meters. The interaction between turbines in large wind farms creates complex wake patterns that can reduce downstream turbine output by 10-40%, yet accurate prediction of these losses remains challenging. Offshore environments add additional complexity with marine boundary layer dynamics, stability effects, and the interaction between wind and waves. These modeling limitations lead to energy production estimates that often miss actual performance by 10-15%, creating financial risk for project developers and investors. The problem is compounded by limited observational data in many regions, particularly offshore and in developing markets where wind deployment is expanding.",
+      "summary": "Wind flow modeling in complex terrain and atmospheric conditions remains inaccurate, with energy production estimates often missing actual performance by 10-15%, creating financial risks for developers.",
+      "industry": {
+        "id": "c6b5a493-8271-4069-8d8c-9b0a19283746",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Wind Energy",
+        "slug": "wind"
+      },
+      "problemType": "knowledge",
+      "problemSubtypes": ["modeling", "resource-assessment", "atmospheric-science"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.8,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "All wind project developers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 8000000000,
+          "timeframe": "annual underperformance and financing costs"
+        },
+        "qualityOfLife": 3,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Computational complexity of high-fidelity simulations",
+          "Limited observational data for validation",
+          "Turbulence at multiple scales",
+          "Non-stationary atmospheric conditions"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Active research at national labs and universities",
+        "fundingLevel": "Moderate government and industry R&D investment"
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "Fundamental complexity of atmospheric turbulence physics",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Insufficient observational data for model validation",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Computational limits preventing high-resolution simulations at scale",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Proprietary data limiting open research collaboration",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Energy production 10-15% below or above predictions",
+          "type": "direct",
+          "affectedArea": "Project performance",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Higher financing costs due to production uncertainty",
+          "type": "direct",
+          "affectedArea": "Project economics",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Suboptimal turbine placement reducing farm efficiency",
+          "type": "direct",
+          "affectedArea": "Design",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Unexpected turbine loading reducing component life",
+          "type": "cascading",
+          "affectedArea": "Operations",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Mesoscale-Microscale Coupled Models",
+          "description": "Numerical weather prediction models coupled with computational fluid dynamics",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Computational cost", "Boundary condition uncertainties"]
+        },
+        {
+          "name": "LiDAR Wind Measurement",
+          "description": "Remote sensing technology for detailed wind profile measurement",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Cost", "Point measurements"]
+        },
+        {
+          "name": "Machine Learning Corrections",
+          "description": "AI/ML models trained on operational data to improve predictions",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Requires extensive training data", "Limited extrapolation"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Real-time high-fidelity wind farm simulations for operational optimization",
+          "gapType": "quality",
+          "opportunity": "GPU-accelerated and AI-enhanced simulation tools",
+          "difficulty": "high"
+        },
+        {
+          "description": "Open datasets for model validation and improvement",
+          "gapType": "accessibility",
+          "opportunity": "Industry-government data sharing initiatives",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Probabilistic forecasting with well-calibrated uncertainty quantification",
+          "gapType": "quality",
+          "opportunity": "Ensemble methods and Bayesian approaches",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Wind project developers relying on resource assessments",
+          "examples": ["All wind developers", "Independent engineers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "expert",
+          "description": "Research institutions developing improved models",
+          "examples": ["NREL", "DTU Wind Energy", "Fraunhofer IWES"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "funder",
+          "description": "Banks and investors assessing project risk",
+          "examples": ["Project finance banks", "Infrastructure investors"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Grand challenges in the science of wind energy",
+          "url": "https://www.science.org/doi/10.1126/science.aau2027",
+          "accessedAt": "2026-01-20",
+          "publisher": "Science",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "Major gaps exist in knowledge of wind flows in complex terrain and varying atmospheric conditions"
+        },
+        {
+          "type": "government",
+          "title": "Grand Challenges in Wind Energy Science",
+          "url": "https://www.nrel.gov/wind/grand-challenges",
+          "accessedAt": "2026-01-20",
+          "publisher": "NREL",
+          "credibilityScore": 0.95
+        },
+        {
+          "type": "government",
+          "title": "Addressing Wind Energy Innovation Challenges",
+          "url": "https://www.energy.gov/eere/articles/addressing-wind-energy-innovation-challenges",
+          "accessedAt": "2026-01-20",
+          "publisher": "US Department of Energy",
+          "credibilityScore": 0.95
+        }
+      ],
+      "tags": ["wind-modeling", "atmospheric-science", "resource-assessment", "turbulence", "wake-effects"],
+      "keywords": ["wind resource assessment", "atmospheric modeling", "turbine wake effects", "wind flow prediction"],
+      "metrics": {
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-200500",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2e",
+      "title": "Wind Turbine Maintenance Access Challenges in Remote and Offshore Locations",
+      "slug": "wind-turbine-maintenance-access-remote-offshore",
+      "description": "Wind turbines are typically installed in remote locations where wind resources are strongest—on offshore platforms, mountain ridges, or in isolated rural areas—creating significant logistical hurdles for maintenance teams. Geographic isolation means technicians may need to travel hours or days to reach turbines, with weather windows often limiting access to offshore installations. During component replacement, turbines may be offline for anywhere from a few days to several months, depending on parts availability and weather conditions, with every day offline representing lost revenue for operators. Offshore wind presents particularly acute challenges, requiring specialized crew transfer vessels, service operation vessels, or helicopter access, all subject to weather restrictions. Harsh maritime environments accelerate component wear while simultaneously making access for repairs more difficult. The industry lacks sufficient specialized vessels for offshore maintenance, creating bottlenecks during peak maintenance seasons. Emergency repairs are especially challenging when heavy-lift vessels or jack-up barges are required but unavailable. These access constraints drive up maintenance costs and extend downtime, significantly impacting wind farm economics and reliability.",
+      "summary": "Remote and offshore wind turbine locations create major maintenance access challenges, with weather windows, vessel availability, and travel logistics causing extended downtime and high costs.",
+      "industry": {
+        "id": "c6b5a493-8271-4069-8d8c-9b0a19283746",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Wind Energy",
+        "slug": "wind"
+      },
+      "problemType": "process",
+      "problemSubtypes": ["logistics", "maintenance-access", "offshore-operations"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "All remote and offshore wind operators",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7.5,
+          "estimateUSD": 12000000000,
+          "timeframe": "annual extended downtime and logistics costs"
+        },
+        "qualityOfLife": 4,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Weather dependency for offshore access",
+          "Limited specialized vessel fleet",
+          "High cost of marine operations",
+          "Geographic constraints of turbine siting"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Industry focus on O&M optimization",
+        "fundingLevel": "Growing investment in service vessels and technology"
+      },
+      "impactScore": 63,
+      "rootCauses": [
+        {
+          "description": "Fundamental requirement to site turbines where wind resource is strongest",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Limited fleet of specialized offshore service vessels",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Weather-dependent marine and helicopter operations",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Heavy component weights requiring specialized lifting equipment",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Extended turbine downtime awaiting maintenance access",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Higher per-turbine O&M costs in remote locations",
+          "type": "direct",
+          "affectedArea": "Financial performance",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Worker safety risks during challenging access operations",
+          "type": "direct",
+          "affectedArea": "Safety",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Lower capacity factors reducing project returns",
+          "type": "cascading",
+          "affectedArea": "Investment",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Service Operation Vessels (SOVs)",
+          "description": "Specialized ships allowing technicians to live offshore and access turbines in higher sea states",
+          "type": "product",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["High capital cost", "Limited fleet availability"]
+        },
+        {
+          "name": "Condition-Based Maintenance",
+          "description": "Predictive analytics to optimize maintenance scheduling around weather windows",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Not all failures predictable", "Requires extensive monitoring"]
+        },
+        {
+          "name": "Walk-to-Work Gangway Systems",
+          "description": "Motion-compensated gangways for safer turbine access from vessels",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Sea state limitations", "Capital investment required"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Autonomous or remote maintenance capabilities",
+          "gapType": "coverage",
+          "opportunity": "Robotics and drones for inspection and minor repairs",
+          "difficulty": "high"
+        },
+        {
+          "description": "All-weather access systems for offshore turbines",
+          "gapType": "quality",
+          "opportunity": "Advanced vessel designs and access technologies",
+          "difficulty": "high"
+        },
+        {
+          "description": "Modular turbine designs for faster component replacement",
+          "gapType": "coverage",
+          "opportunity": "Design-for-maintainability standards",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Wind farm O&M teams managing remote assets",
+          "examples": ["GE Vernova Services", "Siemens Gamesa Service", "Independent service providers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Marine service vessel operators",
+          "examples": ["Edda Wind", "Bibby Marine", "Atlantic Offshore"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Wind farm asset owners bearing maintenance costs",
+          "examples": ["Orsted", "SSE Renewables", "Equinor"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "6 Biggest Challenges of Wind Turbine Maintenance",
+          "url": "https://worktrek.com/blog/wind-turbine-maintenance-challenges/",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Wind turbines are typically installed in remote locations where wind resources are strongest"
+        },
+        {
+          "type": "industry-report",
+          "title": "4 challenges to overcome when transmitting offshore wind power",
+          "url": "https://www.stantec.com/en/ideas/4-challenges-to-overcome-when-transmitting-offshore-wind-power",
+          "accessedAt": "2026-01-20",
+          "publisher": "Stantec",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["maintenance", "offshore-access", "remote-locations", "logistics", "vessels"],
+      "keywords": ["wind turbine maintenance access", "offshore wind O&M", "service operation vessels"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-200500",
+      "confidence": 0.84,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3f",
+      "title": "Technology Integration and Data Management Fragmentation in Wind Operations",
+      "slug": "technology-integration-data-fragmentation-wind-operations",
+      "description": "Many wind farms have yet to embrace leading-edge technologies for inspections and predictive maintenance, and those that have adopted new technologies face challenges managing different dashboards and systems throughout normal operations. The lack of integration between SCADA systems, condition monitoring platforms, asset management software, and operational analytics creates data silos that prevent holistic optimization of wind farm performance. Operators struggle with multiple vendor-specific platforms that don't communicate effectively, requiring manual data transfer and reconciliation. The rapid pace of technology development means legacy turbines may lack the sensors and connectivity needed for modern analytics, while newer systems generate massive data volumes that existing IT infrastructure struggles to handle. Cybersecurity concerns add another layer of complexity, as connected operational technology creates potential attack vectors. This fragmentation results in suboptimal maintenance decisions, missed opportunities for performance improvement, and higher operational costs due to inefficient workflows and duplicate systems.",
+      "summary": "Wind operations suffer from fragmented technology systems and data silos, with operators managing multiple non-integrated platforms that prevent holistic optimization and create operational inefficiencies.",
+      "industry": {
+        "id": "c6b5a493-8271-4069-8d8c-9b0a19283746",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Wind Energy",
+        "slug": "wind"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["data-integration", "digital-infrastructure", "operations-technology"],
+      "scope": "organization",
+      "maturity": "growing",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "Most wind farm operators",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 5000000000,
+          "timeframe": "annual inefficiency and missed optimization"
+        },
+        "qualityOfLife": 3,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Proprietary vendor systems",
+          "Legacy turbine limitations",
+          "Cybersecurity requirements",
+          "High integration costs"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Growing focus from digital solution providers",
+        "fundingLevel": "Significant but fragmented investment"
+      },
+      "impactScore": 56,
+      "rootCauses": [
+        {
+          "description": "Multiple vendors with proprietary, non-interoperable systems",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Organic growth of wind portfolios combining different turbine generations",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of industry-wide data standards and APIs",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "IT/OT convergence security concerns limiting integration",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Suboptimal maintenance decisions from incomplete data",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Higher operational costs from duplicate systems and manual processes",
+          "type": "direct",
+          "affectedArea": "Financial performance",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Slower adoption of AI and advanced analytics",
+          "type": "cascading",
+          "affectedArea": "Technology adoption",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Reduced ability to optimize across fleet of assets",
+          "type": "cascading",
+          "affectedArea": "Performance optimization",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Integrated Operations Platforms",
+          "description": "Unified platforms aggregating data from multiple sources",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["High implementation cost", "Integration complexity"]
+        },
+        {
+          "name": "Data Lakes and Warehouses",
+          "description": "Centralized data storage enabling cross-system analytics",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Requires data engineering expertise", "Ongoing maintenance"]
+        },
+        {
+          "name": "API-Based Integration",
+          "description": "Modern APIs enabling system interconnection",
+          "type": "standard",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Vendor cooperation required", "Not available for legacy systems"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Open industry data standards for wind energy systems",
+          "gapType": "integration",
+          "opportunity": "Industry consortium to develop interoperability standards",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Affordable integration solutions for smaller operators",
+          "gapType": "cost",
+          "opportunity": "Cloud-based SaaS platforms with pre-built connectors",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Retrofit solutions for legacy turbine monitoring",
+          "gapType": "coverage",
+          "opportunity": "Low-cost sensor and connectivity upgrades",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Wind farm operators managing fragmented systems",
+          "examples": ["Operations managers", "Control room operators", "Asset managers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Digital solution providers offering integration platforms",
+          "examples": ["Uptake", "SparkCognition", "WindESCo"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Turbine OEMs with proprietary monitoring systems",
+          "examples": ["Vestas", "Siemens Gamesa", "GE Vernova"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "5 Critical Challenges of Wind Energy and Potential Solutions",
+          "url": "https://www.vhive.ai/5-critical-challenges-of-wind-energy-and-potential-solutions/",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Many wind farms have yet to embrace leading-edge technologies... those who have adopted new tech are faced with managing different dashboards and systems"
+        }
+      ],
+      "tags": ["data-integration", "digital-transformation", "SCADA", "operations-technology", "interoperability"],
+      "keywords": ["wind farm data integration", "SCADA systems", "predictive maintenance platforms"],
+      "metrics": {
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-200500",
+      "confidence": 0.8,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "d0e1f2a3-b4c5-4d6e-7f8a-9b0c1d2e3f4a",
+      "title": "Wind Turbine Wildlife Impacts and Ecological Conflicts",
+      "slug": "wind-turbine-wildlife-impacts-ecological-conflicts",
+      "description": "Wind turbines pose significant threats to wildlife, particularly birds and bats, creating conflicts between renewable energy deployment and biodiversity conservation goals. Bird mortality from turbine collisions affects numerous species, with raptors and migratory birds particularly vulnerable due to their flight patterns and behaviors. The concern is especially acute for endangered species, where even small mortality numbers can impact population viability. Bats are disproportionately affected, with studies showing turbines can kill hundreds of thousands annually through both direct blade strikes and barotrauma from pressure changes near rotating blades. These wildlife impacts fuel opposition to wind projects from conservation groups and provide ammunition for general project opposition. Regulatory requirements for wildlife surveys and mitigation add costs and delays to project development. Offshore wind introduces additional concerns about marine mammals, fish, and seabirds during both construction and operation. The challenge of balancing climate goals (which require rapid renewable deployment) with biodiversity protection creates tension among environmental advocates and complicates permitting decisions.",
+      "summary": "Wind turbines cause significant bird and bat mortality, creating conflicts between renewable energy deployment and biodiversity conservation, fueling project opposition and regulatory challenges.",
+      "industry": {
+        "id": "c6b5a493-8271-4069-8d8c-9b0a19283746",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Wind Energy",
+        "slug": "wind"
+      },
+      "problemType": "environmental",
+      "problemSubtypes": ["wildlife", "biodiversity", "conservation"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.8,
+        "affectedPopulation": {
+          "score": 6,
+          "estimate": "Wildlife populations globally",
+          "unit": "regions"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 3000000000,
+          "timeframe": "annual mitigation and delayed projects"
+        },
+        "qualityOfLife": 5,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Limited understanding of wildlife behavior",
+          "Site-specific variation in impacts",
+          "Effectiveness of deterrent technologies uncertain",
+          "Regulatory complexity"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Active research from wildlife agencies and academics",
+        "fundingLevel": "Moderate research and mitigation investment"
+      },
+      "impactScore": 57,
+      "rootCauses": [
+        {
+          "description": "Turbines sited in areas with high wildlife activity for wind resource",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Blade tip speeds approaching 200 mph difficult for wildlife to avoid",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Migratory flyways overlapping with optimal wind resource areas",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Limited understanding of bat attraction to turbines",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Hundreds of thousands of birds and bats killed annually",
+          "type": "direct",
+          "affectedArea": "Biodiversity",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Project delays and cancellations due to wildlife concerns",
+          "type": "direct",
+          "affectedArea": "Development",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Ammunition for general opposition to wind energy",
+          "type": "cascading",
+          "affectedArea": "Public acceptance",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Potential impacts on endangered species populations",
+          "type": "cascading",
+          "affectedArea": "Conservation",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Radar-Activated Curtailment",
+          "description": "Systems that detect approaching birds and temporarily stop turbines",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Production losses", "Detection limitations", "Cost"]
+        },
+        {
+          "name": "Seasonal Curtailment",
+          "description": "Reducing operations during peak migration or bat activity periods",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Significant production losses", "Imprecise timing"]
+        },
+        {
+          "name": "Blade Painting",
+          "description": "Painting one blade black to increase visibility to birds",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "experimental",
+          "limitations": ["Limited research", "May not work for all species"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Effective bat deterrent technologies that don't impact production",
+          "gapType": "coverage",
+          "opportunity": "Ultrasonic or other deterrent systems",
+          "difficulty": "high"
+        },
+        {
+          "description": "Real-time wildlife detection and response systems",
+          "gapType": "quality",
+          "opportunity": "AI-powered detection with automated curtailment",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Comprehensive understanding of cumulative population impacts",
+          "gapType": "awareness",
+          "opportunity": "Long-term population monitoring programs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Wildlife populations impacted by turbines",
+          "examples": ["Raptors", "Migratory birds", "Bat species"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Wildlife agencies and conservation organizations",
+          "examples": ["US Fish and Wildlife Service", "Audubon Society", "Bat Conservation International"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Wind developers navigating wildlife requirements",
+          "examples": ["All wind project developers"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Wind Power and NIMBYism; Why Some People Aren't Fans",
+          "url": "https://www.sustainableauraria.org/post/wind-power-and-nimbyism-why-some-people-aren-t-fans",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "Locals often do not support wind power near their homes, with complaints that they cause bird mortality"
+        },
+        {
+          "type": "news",
+          "title": "Local Opposition to Wind Energy Projects",
+          "url": "https://blog.ansi.org/ansi/local-opposition-to-wind-energy-projects/",
+          "accessedAt": "2026-01-20",
+          "publisher": "ANSI",
+          "credibilityScore": 0.8
+        }
+      ],
+      "tags": ["wildlife", "birds", "bats", "conservation", "biodiversity", "environmental-impact"],
+      "keywords": ["wind turbine bird mortality", "bat deaths wind farms", "wildlife wind energy impacts"],
+      "metrics": {
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-200500",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    }
+  ]
+}
