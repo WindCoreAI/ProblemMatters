@@ -1,0 +1,273 @@
+{
+  "field": {
+    "id": "d4e5f6a7-b8c9-0123-defg-234567890002",
+    "name": "Payments",
+    "slug": "payments",
+    "description": "Payment processing, digital payments, and financial transaction systems."
+  },
+  "domain": {
+    "id": "b2c3d4e5-f6a7-8901-bcde-f12345670001",
+    "name": "Banking",
+    "slug": "banking"
+  },
+  "industry": {
+    "id": "c3d4e5f6-a7b8-9012-cdef-123456780001",
+    "name": "Financial Services",
+    "slug": "financial-services"
+  },
+  "problems": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567008",
+      "title": "Real-Time Payments Implementation and Operational Transformation",
+      "slug": "real-time-payments-implementation-operational-transformation",
+      "description": "Banks face significant challenges implementing real-time payments as most operate on decades-old technology built for daily settlement and batch processing, not 24/7 real-time execution. The speed, finality, and around-the-clock operation of instant payments create unique fraud prevention challenges since prevention must occur before initiation. While 92% of US banks offering instant payments consider interoperability between payment schemes, only 2% have implemented it. The dual-rail approach (RTP and FedNow) is adopted by 58% of institutions but adds cost and operational complexity. Running multiple real-time rails exacerbates liquidity fragmentation as banks lack real-time visibility into balances scattered across siloed systems. Staff augmentation or system revisions may be necessary to ensure AML reviews, OFAC screening, and customer due diligence remain compliant in real-time. The lack of ubiquity and interoperability is the leading challenge at 59% for non-FI participants, while 58% of FIs cite high upfront costs.",
+      "summary": "Banks struggle to implement real-time payments due to legacy batch-processing systems, with only 2% achieving interoperability despite 92% considering it, while facing fraud, liquidity, and 24/7 operational challenges.",
+      "industry": {
+        "id": "c3d4e5f6-a7b8-9012-cdef-123456780001",
+        "name": "Financial Services",
+        "slug": "financial-services"
+      },
+      "domain": {
+        "id": "b2c3d4e5-f6a7-8901-bcde-f12345670001",
+        "name": "Banking",
+        "slug": "banking"
+      },
+      "field": {
+        "id": "d4e5f6a7-b8c9-0123-defg-234567890002",
+        "name": "Payments",
+        "slug": "payments"
+      },
+      "problemType": "technical",
+      "problemSubtypes": [
+        "payments",
+        "infrastructure",
+        "operations",
+        "real-time"
+      ],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "All US banks and payment processors",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 25000000000,
+          "timeframe": "estimated implementation and operational costs"
+        },
+        "qualityOfLife": 5,
+        "productivity": 6.5
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5.5,
+        "barriers": [
+          "Legacy batch-processing infrastructure",
+          "Real-time fraud prevention complexity",
+          "Liquidity management across multiple rails",
+          "24/7 operational capability requirements",
+          "Interoperability between competing networks"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Major payments industry focus",
+        "fundingLevel": "Significant investment but execution challenges"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Core banking systems designed for batch processing not real-time",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Multiple competing real-time payment networks (RTP, FedNow)",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Fraud prevention systems not designed for instant decisions",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Organizational structures built around batch cycles",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "High implementation costs competing with other priorities",
+          "type": "direct",
+          "affectedArea": "Financial performance",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Increased fraud risk from instant irreversible payments",
+          "type": "direct",
+          "affectedArea": "Risk management",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Customer experience gaps vs. competitors with real-time capability",
+          "type": "indirect",
+          "affectedArea": "Customer experience",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Third-Party Payment Processors",
+          "description": "Outsourcing real-time payment capability to specialized providers",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "Dependency on vendor",
+            "Integration complexity",
+            "Cost"
+          ]
+        },
+        {
+          "name": "Dual-Rail Strategy",
+          "description": "Connecting to both RTP and FedNow for maximum coverage",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": [
+            "Operational complexity",
+            "Liquidity fragmentation",
+            "Higher costs"
+          ]
+        },
+        {
+          "name": "Real-Time Fraud Detection",
+          "description": "ML-based instant transaction scoring and blocking",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "False positive rates",
+            "Requires significant data",
+            "Constant tuning"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Unified liquidity management across multiple real-time rails",
+          "gapType": "integration",
+          "opportunity": "Cross-rail liquidity optimization platforms",
+          "difficulty": "high"
+        },
+        {
+          "description": "True interoperability between RTP and FedNow",
+          "gapType": "coverage",
+          "opportunity": "Network bridging solutions",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Banks and credit unions implementing real-time payments",
+          "examples": [
+            "Community banks",
+            "Regional banks",
+            "Large banks"
+          ],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Payment network operators and regulators",
+          "examples": [
+            "Federal Reserve",
+            "The Clearing House",
+            "NACHA"
+          ],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Businesses and consumers expecting instant payments",
+          "examples": [
+            "Gig workers",
+            "E-commerce businesses",
+            "Bill payers"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "government",
+          "title": "Key Risk Considerations for Implementing Instant Payments",
+          "url": "https://www.atlantafed.org/economy-matters/banking-and-finance/2023/02/16/key-risk-considerations-for-implementing-instant-real-time-payments",
+          "publishedAt": "2023-02-16",
+          "accessedAt": "2026-01-20",
+          "publisher": "Federal Reserve Bank of Atlanta",
+          "credibilityScore": 0.95
+        },
+        {
+          "type": "industry-report",
+          "title": "Real-Time Payments Interoperability Analysis",
+          "url": "https://www.pymnts.com/real-time-payments/2025/how-banks-are-making-instant-payments-interoperable/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "PYMNTS",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "While 92% of US banks consider interoperability, only 2% have implemented it"
+        },
+        {
+          "type": "government",
+          "title": "Developments in Retail Fast Payments",
+          "url": "https://www.bis.org/cpmi/publ/d201.pdf",
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Bank for International Settlements",
+          "credibilityScore": 0.95
+        }
+      ],
+      "tags": [
+        "real-time-payments",
+        "instant-payments",
+        "fednow",
+        "rtp",
+        "payments-infrastructure"
+      ],
+      "keywords": [
+        "real-time payments",
+        "instant payments implementation",
+        "FedNow",
+        "RTP network",
+        "payment modernization"
+      ],
+      "metrics": {
+        "searchVolume": 5400,
+        "academicPapers": 180,
+        "mediaArticles": 2400,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T16:30:45Z"
+      },
+      "researchSession": "session-20260120-163045",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T16:30:45Z",
+      "updatedAt": "2026-01-20T16:30:45Z",
+      "version": 1
+    }
+  ]
+}

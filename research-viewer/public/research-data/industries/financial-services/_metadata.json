@@ -1,0 +1,65 @@
+{
+  "id": "c3d4e5f6-a7b8-9012-cdef-123456780001",
+  "name": "Financial Services",
+  "slug": "financial-services",
+  "description": "The financial services industry encompasses banking, insurance, asset management, capital markets, and fintech. This sector provides essential services including deposit-taking, lending, payments, investment management, risk transfer, and financial advisory services to individuals, businesses, and governments worldwide.",
+  "icon": "landmark",
+  "color": "#1e40af",
+  "keywords": [
+    "banking",
+    "insurance",
+    "investment",
+    "payments",
+    "fintech",
+    "lending",
+    "capital markets",
+    "wealth management"
+  ],
+  "naicsCode": "52",
+  "sicCode": "60-67",
+  "domains": [
+    {
+      "id": "b2c3d4e5-f6a7-8901-bcde-f12345670001",
+      "name": "Banking",
+      "slug": "banking",
+      "description": "Banking services including retail banking, commercial banking, investment banking, and private banking",
+      "fieldCount": 2,
+      "problemCount": 10
+    }
+  ],
+  "statistics": {
+    "totalProblems": 10,
+    "totalDomains": 1,
+    "totalFields": 5,
+    "avgSeverity": 7.8,
+    "avgTractability": 5.25,
+    "topProblemTypes": [
+      {
+        "type": "technical",
+        "count": 4
+      },
+      {
+        "type": "market",
+        "count": 2
+      },
+      {
+        "type": "regulatory",
+        "count": 1
+      },
+      {
+        "type": "social",
+        "count": 1
+      },
+      {
+        "type": "process",
+        "count": 1
+      },
+      {
+        "type": "resource",
+        "count": 1
+      }
+    ]
+  },
+  "createdAt": "2026-01-20T16:30:45Z",
+  "updatedAt": "2026-01-20T11:08:03.574Z"
+}

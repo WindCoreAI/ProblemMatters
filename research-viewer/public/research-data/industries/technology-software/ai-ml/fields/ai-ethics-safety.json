@@ -1,0 +1,290 @@
+{
+  "field": {
+    "id": "8ba9b834-9dad-11d1-80b4-00c04fd430ce",
+    "name": "AI Ethics & Safety",
+    "slug": "ai-ethics-safety",
+    "description": "Ethical considerations, safety mechanisms, and responsible AI development practices."
+  },
+  "domain": {
+    "id": "7ba8b820-9dad-11d1-80b4-00c04fd430c9",
+    "name": "Artificial Intelligence & Machine Learning",
+    "slug": "ai-ml"
+  },
+  "industry": {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "problems": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567006",
+      "title": "AI Bias and Algorithmic Fairness: Perpetuating Discrimination at Scale",
+      "slug": "ai-bias-algorithmic-fairness-discrimination",
+      "description": "AI systems trained on historical data often inherit and amplify existing societal biases, leading to discriminatory outcomes in high-stakes decisions like hiring, lending, criminal justice, and healthcare. A 2025 University of Melbourne study found AI hiring tools struggled to accurately evaluate candidates with speech disabilities or heavy non-native accents. With nearly 90% of companies now using some form of AI in hiring, these biases affect millions. The problem encompasses input bias (biased training data), system bias (algorithmic design choices), and application bias (deployment context). Despite great efforts, biases cannot be completely eliminated from AI systems - some we must learn to manage. The EU AI Act and state-level regulations in California and New York are driving compliance requirements, while Japan passed its first AI-specific Basic Act in May 2025 emphasizing fairness audits.",
+      "summary": "AI systems perpetuate and amplify societal biases, causing discrimination in hiring, lending, and other critical decisions affecting millions, with complete elimination proving impossible.",
+      "industry": {
+        "id": "550e8400-e29b-41d4-a716-446655440000",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "7ba8b820-9dad-11d1-80b4-00c04fd430c9",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "8ba9b834-9dad-11d1-80b4-00c04fd430ce",
+        "name": "AI Ethics & Safety",
+        "slug": "ai-ethics-safety"
+      },
+      "problemType": "ethical",
+      "problemSubtypes": [
+        "bias",
+        "fairness",
+        "discrimination",
+        "ethics"
+      ],
+      "scope": "global",
+      "maturity": "mature",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "Billions affected by AI decisions",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 20000000000,
+          "timeframe": "annual - litigation, compliance, lost opportunity"
+        },
+        "qualityOfLife": 9,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Biases often latent and hard to detect",
+          "Multiple conflicting definitions of fairness",
+          "Historical bias embedded in training data",
+          "Trade-offs between accuracy and fairness"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Large and growing research community",
+        "fundingLevel": "High - regulatory and reputational drivers"
+      },
+      "impactScore": 74,
+      "rootCauses": [
+        {
+          "description": "Historical biases encoded in training data from past human decisions",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Algorithmic design choices that optimize for aggregate metrics at expense of minorities",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of diversity in AI development teams",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Deployment in contexts not considered during development",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Discrimination against protected groups in hiring, lending, and services",
+          "type": "direct",
+          "affectedArea": "Civil rights",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Legal liability and regulatory penalties under AI governance laws",
+          "type": "direct",
+          "affectedArea": "Compliance",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Erosion of public trust in AI systems",
+          "type": "cascading",
+          "affectedArea": "Society",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Perpetuation and amplification of societal inequalities",
+          "type": "cascading",
+          "affectedArea": "Society",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Fairness Toolkits (IBM AI Fairness 360, Google What-If Tool)",
+          "description": "Libraries for measuring and mitigating bias in ML models",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": [
+            "Multiple conflicting fairness metrics",
+            "Post-hoc fixes may not address root causes",
+            "Requires expertise to use correctly"
+          ]
+        },
+        {
+          "name": "Bias Auditing Services",
+          "description": "Third-party assessments of AI systems for bias and discrimination",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": [
+            "Expensive",
+            "Point-in-time assessments",
+            "No standard methodology"
+          ]
+        },
+        {
+          "name": "Diverse and Representative Training Data",
+          "description": "Ensuring training data includes adequate representation of all groups",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "Diverse data not always available",
+            "Doesn't address all bias types",
+            "Privacy concerns in collecting demographic data"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Unified fairness metrics that work across different contexts and stakeholders",
+          "gapType": "quality",
+          "opportunity": "Context-aware fairness frameworks",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Bias detection for complex, intersectional identities",
+          "gapType": "coverage",
+          "opportunity": "Intersectionality-aware bias detection",
+          "difficulty": "high"
+        },
+        {
+          "description": "Real-time bias monitoring in production systems",
+          "gapType": "integration",
+          "opportunity": "Continuous fairness monitoring tools",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Individuals subject to AI-driven decisions",
+          "examples": [
+            "Job applicants",
+            "Loan applicants",
+            "Criminal defendants"
+          ],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Regulators and policymakers",
+          "examples": [
+            "EU AI Act regulators",
+            "EEOC",
+            "State attorneys general"
+          ],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "AI ethics researchers and advocacy groups",
+          "examples": [
+            "AI Now Institute",
+            "Partnership on AI",
+            "ACLU"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Organizations deploying AI facing compliance and reputation risks",
+          "examples": [
+            "HR tech companies",
+            "Financial services",
+            "Healthcare providers"
+          ],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Biases in AI: acknowledging and addressing the inevitable ethical issues",
+          "url": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1614105/full",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Despite great efforts, the problem prevails. So far, biases cannot be eliminated from AI systems."
+        },
+        {
+          "type": "academic",
+          "title": "Ethical and Bias Considerations in AI/ML",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0893395224002667",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Biases in terms of race, sex, gender, age, socioeconomic status, and ableism are well-documented and undermine the principles of justice and fairness."
+        },
+        {
+          "type": "news",
+          "title": "New Research on AI and Fairness in Hiring",
+          "url": "https://hbr.org/2025/12/new-research-on-ai-and-fairness-in-hiring",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "With nearly 90% of companies now using some form of AI in hiring, debates continue about whether algorithms make hiring fairer."
+        }
+      ],
+      "tags": [
+        "bias",
+        "fairness",
+        "ethics",
+        "discrimination",
+        "regulation",
+        "governance"
+      ],
+      "keywords": [
+        "AI bias",
+        "algorithmic fairness",
+        "ML discrimination",
+        "AI ethics"
+      ],
+      "metrics": {
+        "searchVolume": 28000,
+        "academicPapers": 3200,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T15:52:30Z"
+      },
+      "researchSession": "session-20260120-155230",
+      "confidence": 0.93,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T15:52:30Z",
+      "updatedAt": "2026-01-20T15:52:30Z",
+      "version": 1
+    }
+  ]
+}

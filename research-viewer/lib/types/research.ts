@@ -372,3 +372,29 @@ export interface ProblemsFile {
   problems: Problem[];
   lastUpdated: string;
 }
+
+// Field-level Problems File Type
+export interface FieldProblemsFile {
+  field: TaxonomyReference;
+  domain: TaxonomyReference;
+  industry: TaxonomyReference;
+  problems: Problem[];
+  lastUpdated?: string;
+}
+
+// Field Metadata Type
+export interface FieldMetadata {
+  id: string;
+  name: string;
+  slug: string;
+  description?: string;
+  domain: TaxonomyReference;
+  industry: TaxonomyReference;
+  statistics?: {
+    totalProblems: number;
+    avgSeverity?: number;
+    avgTractability?: number;
+  };
+  createdAt?: string;
+  updatedAt?: string;
+}

@@ -4,11 +4,15 @@ import type {
   ResearchIndex,
   IndustryMetadata,
   DomainMetadata,
+  FieldMetadata,
   Problem,
   ProblemsFile,
+  FieldProblemsFile,
 } from '@/lib/types/research';
 
-const DATA_PATH = process.env.DATA_PATH || '../research-data';
+// Data is stored in public/research-data for static serving
+// The path is relative to the research-viewer directory
+const DATA_PATH = process.env.DATA_PATH || 'public/research-data';
 
 function getDataPath(): string {
   return path.join(process.cwd(), DATA_PATH);
@@ -54,21 +58,108 @@ export async function loadDomain(
   }
 }
 
+export async function loadFieldProblems(
+  industrySlug: string,
+  domainSlug: string,
+  fieldSlug: string
+): Promise<Problem[]> {
+  try {
+    const filePath = path.join(
+      getDataPath(),
+      'industries',
+      industrySlug,
+      domainSlug,
+      'fields',
+      `${fieldSlug}.json`
+    );
+    const content = await fs.readFile(filePath, 'utf-8');
+    const data: FieldProblemsFile = JSON.parse(content);
+    return data.problems || [];
+  } catch {
+    return [];
+  }
+}
+
+export async function loadField(
+  industrySlug: string,
+  domainSlug: string,
+  fieldSlug: string
+): Promise<FieldMetadata | null> {
+  try {
+    const filePath = path.join(
+      getDataPath(),
+      'industries',
+      industrySlug,
+      domainSlug,
+      'fields',
+      `${fieldSlug}.json`
+    );
+    const content = await fs.readFile(filePath, 'utf-8');
+    const data: FieldProblemsFile = JSON.parse(content);
+    return {
+      id: data.field.id,
+      name: data.field.name,
+      slug: data.field.slug,
+      description: (data.field as { description?: string }).description,
+      domain: data.domain,
+      industry: data.industry,
+      statistics: {
+        totalProblems: data.problems.length,
+        avgSeverity: data.problems.length > 0
+          ? data.problems.reduce((sum, p) => sum + p.severity.overall, 0) / data.problems.length
+          : 0,
+        avgTractability: data.problems.length > 0
+          ? data.problems.reduce((sum, p) => sum + p.tractability.overall, 0) / data.problems.length
+          : 0,
+      },
+    };
+  } catch {
+    return null;
+  }
+}
+
+async function listFieldFiles(
+  industrySlug: string,
+  domainSlug: string
+): Promise<string[]> {
+  try {
+    const fieldsDir = path.join(
+      getDataPath(),
+      'industries',
+      industrySlug,
+      domainSlug,
+      'fields'
+    );
+    const files = await fs.readdir(fieldsDir);
+    return files
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => f.replace('.json', ''));
+  } catch {
+    return [];
+  }
+}
+
 export async function loadProblems(
   industrySlug: string,
-  domainSlug?: string
+  domainSlug?: string,
+  fieldSlug?: string
 ): Promise<Problem[]> {
   const basePath = path.join(getDataPath(), 'industries', industrySlug);
 
+  // If field is specified, load from field file
+  if (domainSlug && fieldSlug) {
+    return loadFieldProblems(industrySlug, domainSlug, fieldSlug);
+  }
+
   if (domainSlug) {
-    try {
-      const filePath = path.join(basePath, domainSlug, 'problems.json');
-      const content = await fs.readFile(filePath, 'utf-8');
-      const data: ProblemsFile = JSON.parse(content);
-      return data.problems || [];
-    } catch {
-      return [];
+    // Load problems from field files (the canonical storage format)
+    const fieldSlugs = await listFieldFiles(industrySlug, domainSlug);
+    const problems: Problem[] = [];
+    for (const slug of fieldSlugs) {
+      const fieldProblems = await loadFieldProblems(industrySlug, domainSlug, slug);
+      problems.push(...fieldProblems);
     }
+    return problems;
   }
 
   // Load all problems for industry
@@ -135,4 +226,21 @@ export async function loadDomains(
   }
 
   return domains;
+}
+
+export async function loadFields(
+  industrySlug: string,
+  domainSlug: string
+): Promise<FieldMetadata[]> {
+  const fieldSlugs = await listFieldFiles(industrySlug, domainSlug);
+  const fields: FieldMetadata[] = [];
+
+  for (const slug of fieldSlugs) {
+    const field = await loadField(industrySlug, domainSlug, slug);
+    if (field) {
+      fields.push(field);
+    }
+  }
+
+  return fields;
 }

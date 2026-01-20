@@ -6,6 +6,8 @@ import type {
   Problem,
   IndustryReference,
   IndustryMetadata,
+  DomainMetadata,
+  FieldProblemsFile,
 } from '@/lib/types/research';
 
 interface DataStore {
@@ -21,6 +23,7 @@ interface DataStore {
   getProblemBySlug: (slug: string) => Problem | undefined;
   getProblemsByIndustry: (industrySlug: string) => Problem[];
   getProblemsByDomain: (industrySlug: string, domainSlug: string) => Problem[];
+  getProblemsByField: (industrySlug: string, domainSlug: string, fieldSlug: string) => Problem[];
 }
 
 export const useDataStore = create<DataStore>((set, get) => ({
@@ -57,20 +60,38 @@ export const useDataStore = create<DataStore>((set, get) => ({
 
           const industryData: IndustryMetadata = await industryResponse.json();
 
-          // Load problems for each domain
-          for (const domain of industryData.domains) {
+          // Load problems for each domain from field files
+          for (const domainRef of industryData.domains) {
             try {
-              const problemsResponse = await fetch(
-                `/research-data/industries/${industry.slug}/${domain.slug}/problems.json`
+              // Load domain metadata to get field list
+              const domainResponse = await fetch(
+                `/research-data/industries/${industry.slug}/${domainRef.slug}/_metadata.json`
               );
-              if (!problemsResponse.ok) continue;
 
-              const problemsData = await problemsResponse.json();
-              if (problemsData.problems) {
-                problems.push(...problemsData.problems);
+              if (domainResponse.ok) {
+                const domainData: DomainMetadata = await domainResponse.json();
+
+                // Load problems from field files (the canonical storage format)
+                if (domainData.fields && domainData.fields.length > 0) {
+                  for (const field of domainData.fields) {
+                    try {
+                      const fieldResponse = await fetch(
+                        `/research-data/industries/${industry.slug}/${domainRef.slug}/fields/${field.slug}.json`
+                      );
+                      if (fieldResponse.ok) {
+                        const fieldData: FieldProblemsFile = await fieldResponse.json();
+                        if (fieldData.problems) {
+                          problems.push(...fieldData.problems);
+                        }
+                      }
+                    } catch {
+                      // Skip if field file doesn't exist
+                    }
+                  }
+                }
               }
             } catch {
-              // Skip if problems file doesn't exist
+              // Skip if domain metadata doesn't exist
               continue;
             }
           }
@@ -110,6 +131,15 @@ export const useDataStore = create<DataStore>((set, get) => ({
   getProblemsByDomain: (industrySlug: string, domainSlug: string) => {
     return get().problems.filter(
       (p) => p.industry.slug === industrySlug && p.domain.slug === domainSlug
+    );
+  },
+
+  getProblemsByField: (industrySlug: string, domainSlug: string, fieldSlug: string) => {
+    return get().problems.filter(
+      (p) =>
+        p.industry.slug === industrySlug &&
+        p.domain.slug === domainSlug &&
+        p.field?.slug === fieldSlug
     );
   },
 }));

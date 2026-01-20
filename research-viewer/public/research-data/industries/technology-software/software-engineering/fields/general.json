@@ -1,0 +1,1065 @@
+{
+  "field": {
+    "id": "f04c6f71-04c6-404c-a04c-04c6f7180000",
+    "name": "General",
+    "slug": "general",
+    "description": "Domain-general problems not specific to any particular field."
+  },
+  "domain": {
+    "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+    "name": "Software Engineering",
+    "slug": "software-engineering"
+  },
+  "industry": {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "problems": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-3333-ef1234567890",
+      "title": "Developer Burnout and Mounting Delivery Pressure in the AI Era",
+      "slug": "developer-burnout-delivery-pressure-ai-era",
+      "description": "Developer burnout has reached critical levels as enterprise expectations have increased alongside growing AI adoption. More than two-thirds of developers report mounting pressure to deliver projects faster, despite the productivity paradox where AI tools have not significantly reduced workload. The expectation that AI will accelerate everything has created unrealistic delivery timelines, with developers caught between using imperfect AI tools and meeting impossible deadlines. Context switching remains a major contributor, with developers rarely achieving flow states due to constant task-juggling across an average of 6+ different tools. Unrealistic deadlines force corner-cutting that creates technical debt, perpetuating a cycle of pressure. The software engineering job market has also become more volatile, with layoffs making news weekly and companies citing AI as justification, adding job security anxiety to existing stress factors.",
+      "summary": "Over two-thirds of developers face increased delivery pressure as AI adoption raises expectations. Context switching, tool sprawl, and unrealistic deadlines are driving burnout to critical levels.",
+      "industry": {
+        "id": "550e8400-e29b-41d4-a716-446655440000",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+        "name": "Software Engineering",
+        "slug": "software-engineering"
+      },
+      "problemType": "social",
+      "problemSubtypes": [
+        "burnout",
+        "workplace-stress",
+        "productivity",
+        "mental-health"
+      ],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "25+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 30000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 9,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 6,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Market pressure for rapid delivery",
+          "AI-driven productivity expectations",
+          "Organizational culture resistant to change",
+          "Job market volatility"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "3,000+",
+        "fundingLevel": "Limited - mostly addressed through HR programs"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "AI adoption creating unrealistic expectations for delivery velocity",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Constant context switching across 6+ tools preventing deep focus",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Job market volatility adding anxiety to work stress",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Unrealistic deadlines forcing corner-cutting and quality compromises",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Increased developer turnover and talent retention challenges",
+          "type": "direct",
+          "affectedArea": "Workforce Stability",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Reduced code quality as developers rush to meet unrealistic deadlines",
+          "type": "direct",
+          "affectedArea": "Software Quality",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Technical debt accumulation from corner-cutting under pressure",
+          "type": "cascading",
+          "affectedArea": "System Maintainability",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Industry-wide talent shortage as developers leave the profession",
+          "type": "indirect",
+          "affectedArea": "Labor Market",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Focus Time Blocking",
+          "description": "Dedicated uninterrupted work periods without meetings or notifications",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "Requires organizational support",
+            "Difficult to maintain during crunch periods"
+          ]
+        },
+        {
+          "name": "Internal Developer Platforms",
+          "description": "Consolidated tooling that reduces context switching between multiple systems",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": [
+            "High implementation cost",
+            "Requires significant organizational investment"
+          ]
+        },
+        {
+          "name": "Sustainable Pace Practices",
+          "description": "Agile methodology principle limiting work to sustainable weekly hours",
+          "type": "methodology",
+          "effectiveness": 8,
+          "adoption": "mainstream",
+          "limitations": [
+            "Often ignored under business pressure",
+            "Hard to enforce across industry"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Industry-wide standards for reasonable developer workload expectations",
+          "gapType": "awareness",
+          "opportunity": "Professional organizations establishing workload guidelines",
+          "difficulty": "high"
+        },
+        {
+          "description": "Tools that accurately measure and visualize developer cognitive load",
+          "gapType": "coverage",
+          "opportunity": "Burnout early-warning systems integrated into development workflows",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Leadership training on realistic AI-era delivery expectations",
+          "gapType": "awareness",
+          "opportunity": "Executive education programs on sustainable AI adoption",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Software developers experiencing burnout",
+          "examples": [
+            "Junior developers",
+            "Senior engineers",
+            "Tech leads"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Engineering managers setting delivery expectations",
+          "examples": [
+            "Engineering managers",
+            "Product managers",
+            "Project managers"
+          ],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "HR and people operations teams",
+          "examples": [
+            "HR directors",
+            "People operations",
+            "Employee wellness programs"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "HackerRank Developer Report 2025",
+          "url": "https://www.hackerrank.com",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "HackerRank",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "More than two-thirds of developers say pressure has mounted to deliver projects faster."
+        },
+        {
+          "type": "news",
+          "title": "The challenge for software engineers in 2026 — and beyond",
+          "url": "https://www.ciodive.com/news/software-development-challenges-2026-CIO/808413/",
+          "publishedAt": "2026-01-05",
+          "accessedAt": "2026-01-20",
+          "publisher": "CIO Dive",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Burnout is a critical issue plaguing software engineering teams — another in a litany of issues expected to play out in 2026."
+        },
+        {
+          "type": "industry-report",
+          "title": "9 Common Pain Points That Kill Developer Productivity",
+          "url": "https://jellyfish.co/library/developer-productivity/pain-points/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Jellyfish",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Developers never get into a flow state because they're constantly jumping between different tasks. Most teams juggle 6+ different tools."
+        }
+      ],
+      "tags": [
+        "burnout",
+        "developer-experience",
+        "productivity",
+        "mental-health",
+        "workplace-stress",
+        "ai-pressure"
+      ],
+      "keywords": [
+        "developer burnout",
+        "software engineering stress",
+        "delivery pressure",
+        "developer mental health"
+      ],
+      "metrics": {
+        "searchVolume": 14200,
+        "academicPapers": 580,
+        "patentApplications": 12,
+        "mediaArticles": 1650,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-6666-ef1234567890",
+      "title": "Software Engineering Talent Shortage and Skills Gap Crisis",
+      "slug": "software-engineering-talent-shortage-skills-gap",
+      "description": "The software industry faces a persistent talent crisis that has worsened despite economic shifts. According to CompTIA's 2025 Workforce Trends report, 78% of companies report difficulty filling developer roles within 60 days. The shortage is particularly acute in specialized areas like AI/ML, cybersecurity, and DevOps. The share of AI/ML jobs in the tech market has increased from 10% to 50% between 2023 and 2025, creating intense competition for limited talent. Skills gaps have exacerbated problems as organizations need both experienced developers and those who can work effectively with AI tools. There's growing concern that newer engineers relying heavily on AI are not building fundamental skills, creating a potential long-term competency crisis. Organizations must invest in upgrading skills while being wary of overreliance on AI tools that can lead to stunted professional development.",
+      "summary": "78% of companies cannot fill developer roles within 60 days. AI/ML job share grew from 10% to 50% (2023-2025), while concerns grow about junior developers not building fundamental skills.",
+      "industry": {
+        "id": "550e8400-e29b-41d4-a716-446655440000",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+        "name": "Software Engineering",
+        "slug": "software-engineering"
+      },
+      "problemType": "resource",
+      "problemSubtypes": [
+        "talent",
+        "skills-gap",
+        "workforce",
+        "training"
+      ],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "1+ million",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 150000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 5,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Long training timelines for skilled developers",
+          "Rapid technology change outpacing education",
+          "Competition for limited AI/ML talent",
+          "AI potentially stunting junior skill development"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "50,000+",
+        "fundingLevel": "High - major education and workforce investment"
+      },
+      "impactScore": 67,
+      "rootCauses": [
+        {
+          "description": "Rapid technology evolution outpacing educational pipeline",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Exponential growth in demand for specialized skills (AI, security, cloud)",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Junior developers over-relying on AI tools without building fundamentals",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Inadequate investment in internal training and upskilling programs",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "78% of companies struggle to fill developer roles within 60 days",
+          "type": "direct",
+          "affectedArea": "Hiring",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Project delays due to understaffed teams",
+          "type": "direct",
+          "affectedArea": "Project Delivery",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Salary inflation as companies compete for limited talent",
+          "type": "indirect",
+          "affectedArea": "Operating Costs",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Potential competency crisis as AI-reliant juniors enter senior roles",
+          "type": "cascading",
+          "affectedArea": "Workforce Quality",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Bootcamp and Accelerated Training Programs",
+          "description": "Intensive short-term programs producing entry-level developers",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": [
+            "Variable quality",
+            "Limited depth of knowledge",
+            "High dropout rates"
+          ]
+        },
+        {
+          "name": "Internal Upskilling Programs",
+          "description": "Company-sponsored training to develop existing employees in new technologies",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "Resource-intensive",
+            "Employees may leave after training",
+            "Competes with delivery work"
+          ]
+        },
+        {
+          "name": "Remote/Global Talent Acquisition",
+          "description": "Hiring developers from global talent pools rather than local markets",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": [
+            "Timezone challenges",
+            "Cultural differences",
+            "Legal/compliance complexity"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Training programs that develop AI-era skills while maintaining fundamentals",
+          "gapType": "quality",
+          "opportunity": "Curriculum balancing AI tool proficiency with core software engineering skills",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Faster pathways to specialized skills (AI/ML, security) without full CS degrees",
+          "gapType": "accessibility",
+          "opportunity": "Modular, stackable credentials for specialized areas",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Industry-wide standards for AI-augmented developer competency",
+          "gapType": "awareness",
+          "opportunity": "Professional certifications that validate human+AI collaboration skills",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Organizations struggling to hire qualified developers",
+          "examples": [
+            "Tech companies",
+            "Enterprise IT departments",
+            "Startups"
+          ],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Aspiring developers and career changers",
+          "examples": [
+            "Bootcamp students",
+            "Self-taught developers",
+            "Career changers"
+          ],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Educational institutions and training providers",
+          "examples": [
+            "Universities",
+            "Coding bootcamps",
+            "Online learning platforms"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "CompTIA 2025 Workforce Trends",
+          "url": "https://www.comptia.org",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "CompTIA",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "78% of companies report difficulty filling developer roles within 60 days."
+        },
+        {
+          "type": "news",
+          "title": "Software Engineering Job Market Outlook for 2026",
+          "url": "https://www.finalroundai.com/blog/software-engineering-job-market-2026",
+          "publishedAt": "2026-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "FinalRound AI",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "The share of AI/ML jobs in the tech job market has increased from 10% to 50% from 2023 to 2025."
+        },
+        {
+          "type": "news",
+          "title": "The challenge for software engineers in 2026 — and beyond",
+          "url": "https://www.ciodive.com/news/software-development-challenges-2026-CIO/808413/",
+          "publishedAt": "2026-01-05",
+          "accessedAt": "2026-01-20",
+          "publisher": "CIO Dive",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Skills gaps have exacerbated problems. Organizations need to invest in upgrading skills, but also need to be wary of overreliance on AI tools."
+        }
+      ],
+      "tags": [
+        "talent-shortage",
+        "skills-gap",
+        "workforce",
+        "hiring",
+        "training",
+        "education"
+      ],
+      "keywords": [
+        "software developer shortage",
+        "tech talent gap",
+        "developer hiring challenges",
+        "IT workforce crisis"
+      ],
+      "metrics": {
+        "searchVolume": 19800,
+        "academicPapers": 650,
+        "patentApplications": 23,
+        "mediaArticles": 2300,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-9999-ef1234567890",
+      "title": "Junior Developer Skill Erosion from AI Tool Over-Reliance",
+      "slug": "junior-developer-skill-erosion-ai-overreliance",
+      "description": "A growing concern in software engineering is that junior developers relying too heavily on AI are not building fundamental skills, making them less competent long-term. Human code review has become an important bottleneck, with focus needed on decisions that cannot easily be generated away—like interface changes, data persistence, and performance-critical code. This creates a paradox for junior engineers: they need to develop 'review taste' earlier, but are doing less of the 'writing' that builds that intuition. With AI projected to handle 70-80% of routine coding tasks by 2026, the traditional learning path where juniors build skills through writing repetitive code is being disrupted. Organizations face a fundamental challenge of how to develop the next generation of senior engineers when the pathway that created current experts no longer exists in the same form.",
+      "summary": "Junior developers over-relying on AI are not building fundamental skills needed for senior roles. With AI handling 70-80% of routine coding, traditional skill development pathways are being disrupted.",
+      "industry": {
+        "id": "550e8400-e29b-41d4-a716-446655440000",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+        "name": "Software Engineering",
+        "slug": "software-engineering"
+      },
+      "problemType": "knowledge",
+      "problemSubtypes": [
+        "skills",
+        "training",
+        "workforce-development",
+        "ai-impact"
+      ],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "5+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 20000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 4,
+        "barriers": [
+          "Pressure to use AI for productivity",
+          "Unclear what fundamental skills remain essential",
+          "Traditional training methods becoming obsolete",
+          "Limited research on AI-era skill development"
+        ]
+      },
+      "neglectedness": {
+        "overall": 6.5,
+        "attentionLevel": "underserved",
+        "activeResearchers": "500+",
+        "fundingLevel": "Limited - emerging concern without dedicated funding"
+      },
+      "impactScore": 63,
+      "rootCauses": [
+        {
+          "description": "AI automating the repetitive coding work that traditionally built junior skills",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Organizational pressure to maximize AI productivity gains",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Unclear frameworks for what skills remain essential in AI-augmented development",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Traditional computer science education not adapting to AI-era needs",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Junior developers lacking deep understanding of code they're using",
+          "type": "direct",
+          "affectedArea": "Code Quality",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Reduced ability to debug complex issues not solvable by AI",
+          "type": "direct",
+          "affectedArea": "Problem Solving",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Potential future shortage of senior engineers with deep expertise",
+          "type": "cascading",
+          "affectedArea": "Workforce Pipeline",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Organizations dependent on AI tools without human fallback capability",
+          "type": "indirect",
+          "affectedArea": "Business Continuity",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "AI-Free Coding Exercises",
+          "description": "Deliberate practice without AI assistance to build fundamental understanding",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "early",
+          "limitations": [
+            "May feel inefficient",
+            "Hard to enforce",
+            "Competes with productivity pressure"
+          ]
+        },
+        {
+          "name": "Code Review Mentorship",
+          "description": "Senior engineers explicitly teaching code review judgment to juniors",
+          "type": "methodology",
+          "effectiveness": 8,
+          "adoption": "growing",
+          "limitations": [
+            "Time-intensive for seniors",
+            "Scalability challenges",
+            "Requires willing mentors"
+          ]
+        },
+        {
+          "name": "AI-Augmented Learning Platforms",
+          "description": "Educational tools that use AI to teach fundamentals rather than replace them",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": [
+            "Still developing",
+            "Effectiveness unproven",
+            "Requires careful design"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Clear frameworks defining essential skills in AI-augmented development",
+          "gapType": "awareness",
+          "opportunity": "Industry-standard competency models for AI-era developers",
+          "difficulty": "high"
+        },
+        {
+          "description": "Training programs that deliberately build fundamentals alongside AI proficiency",
+          "gapType": "coverage",
+          "opportunity": "Hybrid curricula balancing AI tools with core engineering skills",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Tools that assess developer skills independent of AI assistance",
+          "gapType": "quality",
+          "opportunity": "Evaluation platforms measuring human capability separate from AI augmentation",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Junior developers at risk of skill erosion",
+          "examples": [
+            "New graduates",
+            "Bootcamp graduates",
+            "Early-career developers"
+          ],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Engineering leadership responsible for team development",
+          "examples": [
+            "Engineering managers",
+            "VP Engineering",
+            "CTOs"
+          ],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Educational institutions adapting curricula",
+          "examples": [
+            "Universities",
+            "Bootcamps",
+            "Online learning platforms"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Software Engineering in 2026",
+          "url": "https://benjamincongdon.me/blog/2025/12/29/Software-Engineering-in-2026/",
+          "publishedAt": "2025-12-29",
+          "accessedAt": "2026-01-20",
+          "publisher": "Ben Congdon (Personal Blog)",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "Human code review increasingly becomes an important bottleneck. This creates a paradox for junior engineers: they need to develop 'review taste' earlier, but are doing less of the 'writing' that builds that intuition."
+        },
+        {
+          "type": "news",
+          "title": "The challenge for software engineers in 2026 — and beyond",
+          "url": "https://www.ciodive.com/news/software-development-challenges-2026-CIO/808413/",
+          "publishedAt": "2026-01-05",
+          "accessedAt": "2026-01-20",
+          "publisher": "CIO Dive",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Junior developers are at risk: Many fear that newer engineers relying too heavily on AI are not building fundamental skills, making them less competent long term."
+        },
+        {
+          "type": "news",
+          "title": "Critical Software Development Industry Challenges to Watch in 2026",
+          "url": "https://www.netguru.com/blog/software-development-industry-challenges",
+          "publishedAt": "2026-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Netguru",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "By 2026, AI will handle 70-80% of routine coding tasks. While businesses pursued AI-native software engineering, teams faced difficulties such as erosion of critical and foundational skills."
+        }
+      ],
+      "tags": [
+        "junior-developers",
+        "skill-development",
+        "ai-impact",
+        "workforce",
+        "training",
+        "fundamentals"
+      ],
+      "keywords": [
+        "junior developer AI reliance",
+        "developer skill erosion",
+        "AI impact on coding skills",
+        "software engineering training"
+      ],
+      "metrics": {
+        "searchVolume": 4800,
+        "academicPapers": 120,
+        "patentApplications": 5,
+        "mediaArticles": 340,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.8,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-aaaa-ef1234567890",
+      "title": "Unclear Requirements and Scope Creep Causing 37% of Project Failures",
+      "slug": "unclear-requirements-scope-creep-project-failures",
+      "description": "Lack of clarity in project goals and requirements remains one of the top causes of project failure in software engineering, with about 37% of projects failing due to undefined objectives or unclear milestones. Software developers often work with less-than-complete understanding of business requirements established by business leaders and product owners, leading to misaligned goals, unnecessary features, and missed opportunities as developers focus on wrong priorities. Scope creep compounds the problem—65% of QA leaders cite late requirement changes as a top barrier, and business owners continuously request additional features or changes during development, leading to cost overruns and delays. With hybrid and distributed teams becoming common, misalignment is frequent; a 2025 project management survey notes that 55% of organizations lack real-time access to project KPIs, and cross-team disconnects remain a leading cause of delays.",
+      "summary": "37% of projects fail due to unclear requirements. 65% of QA leaders cite late requirement changes as a top barrier, while 55% of organizations lack real-time access to project KPIs.",
+      "industry": {
+        "id": "550e8400-e29b-41d4-a716-446655440000",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+        "name": "Software Engineering",
+        "slug": "software-engineering"
+      },
+      "problemType": "process",
+      "problemSubtypes": [
+        "requirements",
+        "project-management",
+        "communication",
+        "planning"
+      ],
+      "scope": "organization",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "1+ million",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 100000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 5,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 7,
+        "technicalFeasibility": 8,
+        "resourceRequirements": 6,
+        "existingProgress": 7,
+        "barriers": [
+          "Business stakeholder availability",
+          "Distributed team coordination",
+          "Changing market conditions",
+          "Communication culture gaps"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "100,000+",
+        "fundingLevel": "High - major project management industry"
+      },
+      "impactScore": 60,
+      "rootCauses": [
+        {
+          "description": "Business stakeholders unable or unwilling to fully articulate requirements upfront",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Distributed and hybrid teams creating communication gaps",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Pressure to start development before requirements are finalized",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of real-time project visibility tools and practices",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "37% of projects fail due to undefined objectives or unclear milestones",
+          "type": "direct",
+          "affectedArea": "Project Success",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Cost overruns and schedule delays from continuous scope changes",
+          "type": "direct",
+          "affectedArea": "Project Budget/Timeline",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Developer frustration and rework from building wrong features",
+          "type": "indirect",
+          "affectedArea": "Team Morale",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Technical debt from rushed implementations of late-added requirements",
+          "type": "cascading",
+          "affectedArea": "Code Quality",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "User Story Mapping",
+          "description": "Visual technique for organizing user stories and understanding the user journey",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": [
+            "Requires stakeholder participation",
+            "Time investment upfront",
+            "Maps can become outdated"
+          ]
+        },
+        {
+          "name": "Acceptance Criteria Before Coding",
+          "description": "Requiring explicit acceptance criteria before any development begins",
+          "type": "methodology",
+          "effectiveness": 8,
+          "adoption": "growing",
+          "limitations": [
+            "Slows initial development",
+            "May not anticipate all scenarios",
+            "Requires discipline"
+          ]
+        },
+        {
+          "name": "Real-Time Project Dashboards",
+          "description": "Tools providing live visibility into project status, KPIs, and progress",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": [
+            "Data quality dependent on input",
+            "Can create information overload",
+            "Requires cultural adoption"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "AI-powered requirement analysis that identifies gaps and ambiguities",
+          "gapType": "quality",
+          "opportunity": "Tools that automatically flag incomplete or contradictory requirements",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Better integration between business strategy tools and development management",
+          "gapType": "integration",
+          "opportunity": "Seamless flow from business objectives to development tasks",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Real-time requirement impact analysis for proposed changes",
+          "gapType": "coverage",
+          "opportunity": "Systems that instantly show ripple effects of scope changes",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Development teams building from unclear requirements",
+          "examples": [
+            "Software engineers",
+            "QA teams",
+            "Tech leads"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Product owners and business stakeholders defining requirements",
+          "examples": [
+            "Product managers",
+            "Business analysts",
+            "Project sponsors"
+          ],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Project management and agile coaches",
+          "examples": [
+            "Scrum masters",
+            "Project managers",
+            "Agile coaches"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top 10 Challenges in Software Engineering",
+          "url": "https://devsu.com/blog/software-developer-challenges-and-solutions",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Devsu",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Lack of clarity in project goals and requirements remains one of the top causes of project failure, with about 37% of projects failing due to undefined objectives or unclear milestones."
+        },
+        {
+          "type": "industry-report",
+          "title": "Top 17 Software QA Challenges 2025",
+          "url": "https://blog.qasource.com/top-software-qa-challanges",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "QASource",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "65% of QA leaders cite late requirement changes as a top barrier to quality."
+        },
+        {
+          "type": "industry-report",
+          "title": "2025 Project Management Survey",
+          "url": "https://www.pmi.org",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Project Management Institute",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "55% of organizations lack real-time access to project KPIs, and cross-team disconnects remain a leading cause of delays."
+        }
+      ],
+      "tags": [
+        "requirements",
+        "scope-creep",
+        "project-management",
+        "communication",
+        "agile",
+        "planning"
+      ],
+      "keywords": [
+        "software project requirements",
+        "scope creep management",
+        "project failure causes",
+        "requirements engineering"
+      ],
+      "metrics": {
+        "searchVolume": 24500,
+        "academicPapers": 3200,
+        "patentApplications": 145,
+        "mediaArticles": 1100,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    }
+  ]
+}

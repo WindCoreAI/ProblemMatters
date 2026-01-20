@@ -3,25 +3,6 @@
 import FlexSearch from 'flexsearch';
 import type { Problem } from '@/lib/types/research';
 
-interface SearchDocument {
-  id: string;
-  title: string;
-  description: string;
-  summary: string;
-  industry: string;
-  industrySlug: string;
-  domain: string;
-  domainSlug: string;
-  field: string;
-  fieldSlug: string;
-  tags: string;
-  keywords: string;
-  problemType: string;
-  severity: number;
-  tractability: number;
-  impactScore: number;
-}
-
 export interface SearchOptions {
   limit?: number;
   industry?: string;
@@ -42,63 +23,35 @@ export interface SearchResult {
 }
 
 class SearchEngine {
-  private index: FlexSearch.Document<SearchDocument, string[]> | null = null;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  private index: any = null;
   private problems: Map<string, Problem> = new Map();
   private initialized = false;
 
   async initialize(problems: Problem[]): Promise<void> {
     if (this.initialized) return;
 
-    this.index = new FlexSearch.Document<SearchDocument, string[]>({
-      document: {
-        id: 'id',
-        index: [
-          'title',
-          'description',
-          'summary',
-          'industry',
-          'domain',
-          'field',
-          'tags',
-          'keywords',
-          'problemType',
-        ],
-        store: [
-          'id',
-          'title',
-          'industry',
-          'industrySlug',
-          'domain',
-          'domainSlug',
-          'severity',
-          'impactScore',
-        ],
-      },
+    // Use simple index for better compatibility
+    this.index = new FlexSearch.Index({
       tokenize: 'forward',
       cache: true,
     });
 
     for (const problem of problems) {
-      const doc: SearchDocument = {
-        id: problem.id,
-        title: problem.title,
-        description: problem.description,
-        summary: problem.summary || '',
-        industry: problem.industry.name,
-        industrySlug: problem.industry.slug,
-        domain: problem.domain.name,
-        domainSlug: problem.domain.slug,
-        field: problem.field?.name || '',
-        fieldSlug: problem.field?.slug || '',
-        tags: problem.tags.join(' '),
-        keywords: problem.keywords.join(' '),
-        problemType: problem.problemType,
-        severity: problem.severity.overall,
-        tractability: problem.tractability.overall,
-        impactScore: problem.impactScore,
-      };
+      // Create searchable text from problem
+      const searchText = [
+        problem.title,
+        problem.description,
+        problem.summary || '',
+        problem.industry.name,
+        problem.domain.name,
+        problem.field?.name || '',
+        problem.tags.join(' '),
+        problem.keywords.join(' '),
+        problem.problemType,
+      ].join(' ');
 
-      this.index.add(doc);
+      this.index.add(problem.id, searchText);
       this.problems.set(problem.id, problem);
     }
 
@@ -110,29 +63,21 @@ class SearchEngine {
       return [];
     }
 
-    const results = this.index.search(query, {
+    const resultIds = this.index.search(query, {
       limit: options?.limit || 50,
-      enrich: true,
     });
 
-    // Flatten and deduplicate results from different fields
-    const seen = new Set<string>();
+    // Build results from IDs
     const matches: SearchResult[] = [];
 
-    for (const fieldResult of results) {
-      for (const item of fieldResult.result) {
-        const id = item.id as string;
-        if (!seen.has(id)) {
-          seen.add(id);
-          const problem = this.problems.get(id);
-          if (problem) {
-            matches.push({
-              problem,
-              score: 1,
-              matchedFields: [fieldResult.field],
-            });
-          }
-        }
+    for (const id of resultIds) {
+      const problem = this.problems.get(id as string);
+      if (problem) {
+        matches.push({
+          problem,
+          score: 1,
+          matchedFields: ['text'],
+        });
       }
     }
 
@@ -201,22 +146,19 @@ class SearchEngine {
   getSuggestions(query: string): string[] {
     if (!this.index || query.length < 2) return [];
 
-    const results = this.index.search(query, {
+    const resultIds = this.index.search(query, {
       limit: 10,
     });
 
     const suggestions = new Set<string>();
 
-    for (const fieldResult of results) {
-      for (const item of fieldResult.result) {
-        const id = item.id as string;
-        const problem = this.problems.get(id);
-        if (problem) {
-          suggestions.add(problem.industry.name);
-          suggestions.add(problem.domain.name);
-          if (problem.field) {
-            suggestions.add(problem.field.name);
-          }
+    for (const id of resultIds) {
+      const problem = this.problems.get(id as string);
+      if (problem) {
+        suggestions.add(problem.industry.name);
+        suggestions.add(problem.domain.name);
+        if (problem.field) {
+          suggestions.add(problem.field.name);
         }
       }
     }

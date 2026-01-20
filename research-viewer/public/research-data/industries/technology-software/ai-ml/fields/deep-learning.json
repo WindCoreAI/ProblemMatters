@@ -1,0 +1,291 @@
+{
+  "field": {
+    "id": "8ba9b831-9dad-11d1-80b4-00c04fd430cb",
+    "name": "Deep Learning",
+    "slug": "deep-learning",
+    "description": "Neural networks, deep learning architectures, and advanced AI model development."
+  },
+  "domain": {
+    "id": "7ba8b820-9dad-11d1-80b4-00c04fd430c9",
+    "name": "Artificial Intelligence & Machine Learning",
+    "slug": "ai-ml"
+  },
+  "industry": {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "problems": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567010",
+      "title": "AI Compute Costs and Environmental Impact: Unsustainable Training Economics",
+      "slug": "ai-compute-costs-environmental-impact",
+      "description": "Training state-of-the-art AI models has become extraordinarily expensive and environmentally impactful. Training GPT-4 cost over $100 million and consumed 50 gigawatt-hours of energy - enough to power San Francisco for three days. GPT-3 training produced 502 tons of CO2, equivalent to driving 1.2 million miles. Server energy use more than tripled from 2014 to 2023, with GPU-accelerated AI servers growing from less than 2 TWh in 2017 to more than 40 TWh in 2023. Google expects to spend $75 billion on AI infrastructure in 2025 alone. Critically, over 80% of AI electricity consumption comes from inference (usage), not training - meaning the environmental impact compounds as models are deployed at scale. The IEA projects US energy consumption will grow by California's entire annual power usage by 2027, largely driven by data centers. Researchers projected AI will withdraw 4.2-6.6 billion cubic meters of water by 2027.",
+      "summary": "Training GPT-4 cost $100M+ and used 50 GWh of energy; AI data centers are driving unprecedented energy and water consumption with significant environmental justice concerns.",
+      "industry": {
+        "id": "550e8400-e29b-41d4-a716-446655440000",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "7ba8b820-9dad-11d1-80b4-00c04fd430c9",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "8ba9b831-9dad-11d1-80b4-00c04fd430cb",
+        "name": "Deep Learning",
+        "slug": "deep-learning"
+      },
+      "problemType": "environmental",
+      "problemSubtypes": [
+        "sustainability",
+        "cost",
+        "energy",
+        "climate"
+      ],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "Global population affected by climate impact",
+          "unit": "regions"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 100000000000,
+          "timeframe": "annual - infrastructure and energy costs"
+        },
+        "qualityOfLife": 7,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Model capability correlated with scale",
+          "Competitive pressure to train larger models",
+          "Infrastructure already built on high-energy designs",
+          "Lack of transparency in compute usage"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Growing green AI movement",
+        "fundingLevel": "Moderate - efficiency research increasing"
+      },
+      "impactScore": 70,
+      "rootCauses": [
+        {
+          "description": "Scaling laws showing capability improvements with compute drive ever-larger models",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Competitive pressure among AI labs to train state-of-the-art models",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Inference costs scale with deployment - billions of queries compound energy use",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of transparency requirements for AI compute footprint",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Massive energy consumption contributing to climate change",
+          "type": "direct",
+          "affectedArea": "Environment",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Water consumption straining local resources (4.2-6.6B cubic meters projected)",
+          "type": "direct",
+          "affectedArea": "Environment",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Environmental justice issues with data center placement in low-income communities",
+          "type": "cascading",
+          "affectedArea": "Society",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Only well-resourced organizations can train frontier models, concentrating AI power",
+          "type": "indirect",
+          "affectedArea": "Market competition",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Model Efficiency Techniques (Pruning, Quantization, Distillation)",
+          "description": "Methods to reduce model size and computational requirements",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "Some performance degradation",
+            "Requires expertise",
+            "May not work for all architectures"
+          ]
+        },
+        {
+          "name": "Green Data Center Locations",
+          "description": "Training models in regions with renewable energy grids (Quebec, Norway)",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "early",
+          "limitations": [
+            "Limited locations available",
+            "Network latency",
+            "Doesn't reduce total energy use"
+          ]
+        },
+        {
+          "name": "Efficient Architectures (MoE, Early Exit)",
+          "description": "Model designs that reduce compute per inference or per training step",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "More complex to implement",
+            "May trade off other properties",
+            "Active research area"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Transparency and standardized reporting of AI compute footprints",
+          "gapType": "awareness",
+          "opportunity": "AI environmental impact disclosure standards",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Regulatory frameworks for sustainable AI development",
+          "gapType": "coverage",
+          "opportunity": "Green AI regulations and incentives",
+          "difficulty": "high"
+        },
+        {
+          "description": "Breakthrough efficiency gains without capability trade-offs",
+          "gapType": "coverage",
+          "opportunity": "Novel compute paradigms (neuromorphic, photonic)",
+          "difficulty": "very-high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "contributor",
+          "description": "AI labs training large models",
+          "examples": [
+            "OpenAI",
+            "Anthropic",
+            "Google DeepMind",
+            "Meta AI"
+          ],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Communities near data centers",
+          "examples": [
+            "Rural communities",
+            "Low-income neighborhoods",
+            "Water-stressed regions"
+          ],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Environmental regulators and policymakers",
+          "examples": [
+            "EPA",
+            "EU environmental agencies",
+            "State regulators"
+          ],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Green AI researchers and advocates",
+          "examples": [
+            "Climate AI initiatives",
+            "Sustainability researchers",
+            "NGOs"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "We did the math on AI's energy footprint",
+          "url": "https://www.technologyreview.com/2025/05/20/1116327/ai-energy-usage-climate-footprint-big-tech/",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Server energy use more than tripled from 2014 to 2023. GPU-accelerated AI servers grew from less than 2 TWh in 2017 to more than 40 TWh in 2023."
+        },
+        {
+          "type": "news",
+          "title": "Explained: Generative AI's environmental impact",
+          "url": "https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Training GPT-4 took over $100 million and consumed 50 gigawatt-hours of energy—enough to power San Francisco for three days."
+        },
+        {
+          "type": "academic",
+          "title": "The Hidden Costs of AI: Energy, E-Waste, and Inequality",
+          "url": "https://arxiv.org/html/2507.09611v1",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Researchers projected that AI will withdraw between 4.2–6.6 billion cubic meters of water in 2027."
+        }
+      ],
+      "tags": [
+        "sustainability",
+        "energy",
+        "climate",
+        "cost",
+        "environment",
+        "green-AI"
+      ],
+      "keywords": [
+        "AI energy consumption",
+        "ML environmental impact",
+        "green AI",
+        "sustainable AI"
+      ],
+      "metrics": {
+        "searchVolume": 11000,
+        "academicPapers": 450,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T15:52:30Z"
+      },
+      "researchSession": "session-20260120-155230",
+      "confidence": 0.89,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T15:52:30Z",
+      "updatedAt": "2026-01-20T15:52:30Z",
+      "version": 1
+    }
+  ]
+}

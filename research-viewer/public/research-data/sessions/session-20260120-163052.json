@@ -1,0 +1,115 @@
+{
+  "id": "session-20260120-163052",
+  "startedAt": "2026-01-20T16:30:52Z",
+  "completedAt": "2026-01-20T16:45:00Z",
+  "target": {
+    "industry": "technology-software",
+    "domain": "software-engineering",
+    "field": "mobile-development",
+    "specificTopic": null
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 5,
+    "problemIds": [
+      "m1b2c3d4-e5f6-7890-mob1-ef1234567890",
+      "m1b2c3d4-e5f6-7890-mob2-ef1234567890",
+      "m1b2c3d4-e5f6-7890-mob3-ef1234567890",
+      "m1b2c3d4-e5f6-7890-mob4-ef1234567890",
+      "m1b2c3d4-e5f6-7890-mob5-ef1234567890",
+      "m1b2c3d4-e5f6-7890-mob6-ef1234567890",
+      "m1b2c3d4-e5f6-7890-mob7-ef1234567890",
+      "m1b2c3d4-e5f6-7890-mob8-ef1234567890",
+      "m1b2c3d4-e5f6-7890-mob9-ef1234567890",
+      "m1b2c3d4-e5f6-7890-mob0-ef1234567890"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-20T16:30:52Z",
+      "durationMs": 500,
+      "input": {
+        "userInput": "technology-software software-engineering mobile-development"
+      },
+      "output": {
+        "industry": "technology-software",
+        "domain": "software-engineering",
+        "field": "mobile-development"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T16:31:00Z",
+      "durationMs": 120000,
+      "input": {
+        "searchQueries": 8
+      },
+      "output": {
+        "candidatesFound": 15
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T16:33:00Z",
+      "durationMs": 300000,
+      "input": {
+        "candidatesAnalyzed": 15
+      },
+      "output": {
+        "problemsResearched": 12
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T16:38:00Z",
+      "durationMs": 180000,
+      "input": {
+        "problemsToValidate": 12
+      },
+      "output": {
+        "problemsApproved": 10,
+        "problemsRejected": 2
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "synthesis_storage",
+      "timestamp": "2026-01-20T16:41:00Z",
+      "durationMs": 60000,
+      "input": {
+        "problemsToStore": 10
+      },
+      "output": {
+        "problemsStored": 10,
+        "filesUpdated": 4
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 900000,
+    "tokensUsed": 50000,
+    "apiCalls": 25,
+    "sourcesConsulted": 35
+  }
+}

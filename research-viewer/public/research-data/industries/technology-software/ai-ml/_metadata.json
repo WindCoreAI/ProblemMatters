@@ -1,0 +1,75 @@
+{
+  "id": "7ba8b820-9dad-11d1-80b4-00c04fd430c9",
+  "name": "Artificial Intelligence & Machine Learning",
+  "slug": "ai-ml",
+  "description": "The domain covering the development, training, deployment, and operation of artificial intelligence and machine learning systems. This includes deep learning, natural language processing, computer vision, MLOps, and emerging areas like generative AI and AI safety.",
+  "icon": "brain",
+  "color": "#8B5CF6",
+  "keywords": [
+    "artificial intelligence",
+    "machine learning",
+    "deep learning",
+    "neural networks",
+    "AI",
+    "ML",
+    "NLP",
+    "computer vision",
+    "MLOps",
+    "generative AI"
+  ],
+  "fields": [
+    {
+      "name": "Machine Learning",
+      "slug": "machine-learning"
+    },
+    {
+      "name": "MLOps",
+      "slug": "mlops"
+    },
+    {
+      "name": "AI Ethics & Safety",
+      "slug": "ai-ethics-safety"
+    },
+    {
+      "name": "Generative AI",
+      "slug": "generative-ai"
+    },
+    {
+      "name": "Deep Learning",
+      "slug": "deep-learning"
+    }
+  ],
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 5,
+    "avgSeverity": 7.4,
+    "avgTractability": 5.2,
+    "topProblemTypes": [
+      {
+        "type": "technical",
+        "count": 5
+      },
+      {
+        "type": "process",
+        "count": 2
+      },
+      {
+        "type": "resource",
+        "count": 2
+      },
+      {
+        "type": "ethical",
+        "count": 1
+      }
+    ],
+    "fieldProblems": {
+      "machine-learning": 5,
+      "mlops": 2,
+      "ai-ethics-safety": 1,
+      "generative-ai": 1,
+      "deep-learning": 1
+    }
+  },
+  "createdAt": "2026-01-20T15:52:30Z",
+  "updatedAt": "2026-01-20T11:08:03.570Z"
+}

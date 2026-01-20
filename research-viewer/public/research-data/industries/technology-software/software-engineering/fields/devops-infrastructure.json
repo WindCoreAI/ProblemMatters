@@ -1,0 +1,287 @@
+{
+  "field": {
+    "id": "6ba7b813-9dad-11d1-80b4-00c04fd430c8",
+    "name": "DevOps & Infrastructure",
+    "slug": "devops-infrastructure",
+    "description": "Continuous integration, deployment pipelines, infrastructure as code, and site reliability engineering."
+  },
+  "domain": {
+    "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+    "name": "Software Engineering",
+    "slug": "software-engineering"
+  },
+  "industry": {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "problems": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-4444-ef1234567890",
+      "title": "CI/CD Pipeline Complexity and Long Feedback Cycles Blocking Developer Flow",
+      "slug": "cicd-pipeline-complexity-long-feedback-cycles",
+      "description": "CI/CD pipelines have become increasingly complex, with many organizations struggling to achieve optimal efficiency. Long-running pipelines are a frequent pain point—when build, test, or deployment steps drag on too long, developers are left waiting to see whether their changes passed. This delay disrupts flow and creates frustration across teams. Many organizations are caught mid-migration, running legacy pipelines (Azure DevOps, Jenkins) alongside newer solutions (GitHub Actions, GitLab CI), sometimes taking years to fully transition. Toolchain fragmentation requires managing multiple CI/CD tools with different configurations, increasing complexity and maintenance overhead. Environment inconsistencies between dev, test, and production create debugging nightmares, as tests pass locally but fail in specific deployment environments. Security vulnerabilities in pipelines have become a growing concern as insecure dependencies and weak access controls expand attack surfaces.",
+      "summary": "CI/CD pipelines suffer from long feedback cycles, toolchain fragmentation, and environment inconsistencies. Many teams run legacy and modern pipelines simultaneously, creating complexity and security risks.",
+      "industry": {
+        "id": "550e8400-e29b-41d4-a716-446655440000",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+        "name": "Software Engineering",
+        "slug": "software-engineering"
+      },
+      "field": {
+        "id": "6ba7b813-9dad-11d1-80b4-00c04fd430c8",
+        "name": "DevOps & Infrastructure",
+        "slug": "devops-infrastructure"
+      },
+      "problemType": "process",
+      "problemSubtypes": [
+        "automation",
+        "tooling",
+        "workflow",
+        "integration"
+      ],
+      "scope": "organization",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "500,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 25000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 6.5,
+        "technicalFeasibility": 8,
+        "resourceRequirements": 5,
+        "existingProgress": 7,
+        "barriers": [
+          "Legacy tool dependencies",
+          "Migration complexity and risk",
+          "Cultural resistance to change",
+          "Security skill gaps"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "15,000+",
+        "fundingLevel": "High - active market with multiple vendors"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Legacy CI/CD tools still critical to operations, making migration risky",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Accumulated configuration complexity from years of incremental changes",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of standardization across pipeline configurations",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Environment inconsistencies not properly addressed with infrastructure-as-code",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Developers waiting for pipeline results, disrupting flow states",
+          "type": "direct",
+          "affectedArea": "Developer Productivity",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Tests passing locally but failing in deployment environments",
+          "type": "direct",
+          "affectedArea": "Quality Assurance",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Security vulnerabilities from poorly maintained pipeline configurations",
+          "type": "cascading",
+          "affectedArea": "Application Security",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "New engineers struggling with complex onboarding to pipeline systems",
+          "type": "indirect",
+          "affectedArea": "Team Productivity",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Container-Based Build Environments",
+          "description": "Docker and containerization ensuring consistent build environments across stages",
+          "type": "tool",
+          "effectiveness": 8,
+          "adoption": "mainstream",
+          "limitations": [
+            "Learning curve",
+            "Additional infrastructure overhead",
+            "Container management complexity"
+          ]
+        },
+        {
+          "name": "Parallel Test Execution",
+          "description": "Running tests concurrently across cloud infrastructure to reduce feedback time",
+          "type": "methodology",
+          "effectiveness": 8,
+          "adoption": "growing",
+          "limitations": [
+            "Cloud costs",
+            "Test isolation challenges",
+            "Infrastructure scaling"
+          ]
+        },
+        {
+          "name": "DevSecOps Integration",
+          "description": "Embedding security scanning into CI/CD pipelines from early stages",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "Adds pipeline time",
+            "False positive management",
+            "Tool integration complexity"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Seamless migration paths from legacy to modern CI/CD without disruption",
+          "gapType": "integration",
+          "opportunity": "Migration automation tools that translate legacy configurations",
+          "difficulty": "high"
+        },
+        {
+          "description": "Unified CI/CD platforms that reduce toolchain fragmentation",
+          "gapType": "coverage",
+          "opportunity": "Comprehensive platforms supporting all major build/deploy patterns",
+          "difficulty": "medium"
+        },
+        {
+          "description": "AI-powered pipeline optimization that identifies and fixes bottlenecks",
+          "gapType": "quality",
+          "opportunity": "Intelligent systems that analyze and optimize pipeline performance",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "DevOps engineers managing pipeline infrastructure",
+          "examples": [
+            "DevOps engineers",
+            "Platform engineers",
+            "SREs"
+          ],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Developers waiting on pipeline results",
+          "examples": [
+            "Software engineers",
+            "QA engineers"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "CI/CD tool vendors",
+          "examples": [
+            "GitHub",
+            "GitLab",
+            "CircleCI",
+            "Jenkins"
+          ],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top 10 CI/CD Pipeline Challenges With Resolution",
+          "url": "https://www.testmu.ai/blog/cicd-pipeline-challenges/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "TestMu AI",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "A frequent pain point is long-running CI/CD pipelines. When build, test, or deployment steps drag on for too long, developers are left waiting around."
+        },
+        {
+          "type": "industry-report",
+          "title": "The State of CI/CD in 2025",
+          "url": "https://blog.jetbrains.com/teamcity/2025/10/the-state-of-cicd/",
+          "publishedAt": "2025-10-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "JetBrains",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Many respondents mentioned sticking to Jenkins and other older tools simply because critical systems depend on them."
+        },
+        {
+          "type": "industry-report",
+          "title": "12 Biggest DevOps Challenges in 2026",
+          "url": "https://spacelift.io/blog/devops-challenges",
+          "publishedAt": "2025-09-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Spacelift",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Long-running pipelines disrupt developer flow. Toolchain fragmentation requires managing multiple CI/CD tools with different configurations."
+        }
+      ],
+      "tags": [
+        "cicd",
+        "devops",
+        "pipelines",
+        "automation",
+        "tooling",
+        "developer-experience"
+      ],
+      "keywords": [
+        "CI/CD pipeline challenges",
+        "DevOps automation",
+        "build pipeline optimization",
+        "continuous integration"
+      ],
+      "metrics": {
+        "searchVolume": 28500,
+        "academicPapers": 890,
+        "patentApplications": 234,
+        "mediaArticles": 1200,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    }
+  ]
+}

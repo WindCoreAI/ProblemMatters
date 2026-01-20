@@ -1,0 +1,289 @@
+{
+  "field": {
+    "id": "6ba7b815-9dad-11d1-80b4-00c04fd430c8",
+    "name": "Cloud Computing",
+    "slug": "cloud-computing",
+    "description": "Cloud infrastructure, services, and deployment strategies including AWS, Azure, and GCP."
+  },
+  "domain": {
+    "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+    "name": "Software Engineering",
+    "slug": "software-engineering"
+  },
+  "industry": {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "problems": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-bbbb-ef1234567890",
+      "title": "Cloud Infrastructure Cost Unpredictability and FinOps Challenges",
+      "slug": "cloud-infrastructure-cost-unpredictability-finops",
+      "description": "Cloud and AI costs are no longer predictable or linear. Ephemeral environments, GPU workloads, managed services, and AI inference can change spend dramatically in days, not months. Organizations that treat cost as 'someone else's problem' are struggling as AI workloads create unexpected budget overruns—some organizations running AI at scale now pay tens of millions each month. IDC's 2025 research shows that 47% of IT leaders cite technical debt as a major contributor to overspending on cloud and digital infrastructure. Many teams experimented with DIY automation in 2024-2025 and now face 'integration tax': dozens of custom scripts, inconsistent standards, unclear ownership, and slow onboarding for new developers. Heading into 2026, the focus is shifting from experimentation to ensuring reliability and repeatability while controlling costs. The challenge is balancing speed of delivery with cost efficiency and preventing runaway infrastructure spending.",
+      "summary": "Cloud and AI costs have become unpredictable, with some organizations paying tens of millions monthly. 47% of IT leaders cite technical debt as contributing to cloud overspending.",
+      "industry": {
+        "id": "550e8400-e29b-41d4-a716-446655440000",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+        "name": "Software Engineering",
+        "slug": "software-engineering"
+      },
+      "field": {
+        "id": "6ba7b815-9dad-11d1-80b4-00c04fd430c8",
+        "name": "Cloud Computing",
+        "slug": "cloud-computing"
+      },
+      "problemType": "resource",
+      "problemSubtypes": [
+        "cost-management",
+        "cloud",
+        "infrastructure",
+        "finops"
+      ],
+      "scope": "organization",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "500,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 75000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 4,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 6.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 6,
+        "existingProgress": 6,
+        "barriers": [
+          "Complex multi-cloud environments",
+          "Rapid AI workload growth",
+          "Lack of cost visibility tools",
+          "Organizational silos between engineering and finance"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "moderate",
+        "activeResearchers": "10,000+",
+        "fundingLevel": "Growing - active FinOps vendor ecosystem"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "AI and GPU workloads creating unpredictable and exponential cost growth",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Engineering teams not accountable for infrastructure costs",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "DIY automation creating inconsistent and unoptimized infrastructure",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of real-time cost visibility and forecasting tools",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Organizations paying tens of millions monthly for AI workloads",
+          "type": "direct",
+          "affectedArea": "Operating Costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Unexpected budget overruns impacting business planning",
+          "type": "direct",
+          "affectedArea": "Financial Planning",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Deferred AI investments due to cost uncertainty",
+          "type": "indirect",
+          "affectedArea": "Innovation",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Integration tax from inconsistent DIY automation accumulating",
+          "type": "cascading",
+          "affectedArea": "Technical Operations",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "FinOps Practices and Frameworks",
+          "description": "Operational model bringing financial accountability to cloud spending",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "Requires organizational change",
+            "Cross-functional coordination needed",
+            "Tooling complexity"
+          ]
+        },
+        {
+          "name": "Cloud Cost Management Platforms",
+          "description": "Tools like AWS Cost Explorer, Kubecost, and Infracost for visibility and optimization",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": [
+            "Multi-cloud complexity",
+            "Requires consistent tagging",
+            "May miss AI-specific costs"
+          ]
+        },
+        {
+          "name": "Reserved Instances and Savings Plans",
+          "description": "Pre-committed capacity purchases for predictable workloads at lower rates",
+          "type": "product",
+          "effectiveness": 8,
+          "adoption": "mainstream",
+          "limitations": [
+            "Requires accurate forecasting",
+            "Commitment risk",
+            "Less flexible"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "AI-workload-specific cost prediction and optimization tools",
+          "gapType": "coverage",
+          "opportunity": "Platforms designed specifically for GPU/AI cost management",
+          "difficulty": "high"
+        },
+        {
+          "description": "Real-time cost alerts integrated into development workflows",
+          "gapType": "integration",
+          "opportunity": "IDE and CI/CD integrated cost impact visibility",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Engineering team accountability frameworks for cloud costs",
+          "gapType": "awareness",
+          "opportunity": "Organizational models making teams responsible for their infrastructure spend",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Engineering teams consuming cloud resources",
+          "examples": [
+            "Platform engineers",
+            "DevOps teams",
+            "ML engineers"
+          ],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Finance and IT leadership managing budgets",
+          "examples": [
+            "CFOs",
+            "CTOs",
+            "FinOps managers"
+          ],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Cloud providers and FinOps tool vendors",
+          "examples": [
+            "AWS",
+            "Azure",
+            "GCP",
+            "CloudHealth",
+            "Spot by NetApp"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Critical Software Development Industry Challenges to Watch in 2026",
+          "url": "https://www.netguru.com/blog/software-development-industry-challenges",
+          "publishedAt": "2026-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Netguru",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Cloud and AI costs are no longer predictable or linear. Some organizations running AI at scale now pay tens of millions each month. In 2026, teams that treat cost as 'someone else's problem' will struggle."
+        },
+        {
+          "type": "industry-report",
+          "title": "IDC 2025 Cloud Cost Research",
+          "url": "https://www.idc.com",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "IDC",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "47% of IT leaders cite technical debt as a major contributor to overspending on cloud and digital infrastructure."
+        },
+        {
+          "type": "news",
+          "title": "6 Software Development and DevOps Trends Shaping 2026",
+          "url": "https://dzone.com/articles/software-devops-trends-shaping-2026",
+          "publishedAt": "2025-12-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "DZone",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Many teams experimented with DIY automation in 2024–2025 and now face 'integration tax': dozens of custom scripts, inconsistent standards, unclear ownership."
+        }
+      ],
+      "tags": [
+        "cloud-costs",
+        "finops",
+        "infrastructure",
+        "ai-costs",
+        "budget",
+        "cost-management"
+      ],
+      "keywords": [
+        "cloud cost management",
+        "FinOps",
+        "AI infrastructure costs",
+        "cloud budget optimization"
+      ],
+      "metrics": {
+        "searchVolume": 21300,
+        "academicPapers": 450,
+        "patentApplications": 89,
+        "mediaArticles": 1450,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    }
+  ]
+}

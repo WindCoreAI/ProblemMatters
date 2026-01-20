@@ -1,0 +1,286 @@
+{
+  "field": {
+    "id": "6ba7b814-9dad-11d1-80b4-00c04fd430c8",
+    "name": "Quality Assurance",
+    "slug": "quality-assurance",
+    "description": "Software testing, test automation, quality metrics, and defect management."
+  },
+  "domain": {
+    "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+    "name": "Software Engineering",
+    "slug": "software-engineering"
+  },
+  "industry": {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "problems": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-7777-ef1234567890",
+      "title": "Software Quality Assurance Struggling to Keep Pace with AI-Accelerated Development",
+      "slug": "qa-struggling-ai-accelerated-development",
+      "description": "Quality assurance teams face unprecedented challenges as AI accelerates development cycles from quarterly to weekly or even daily releases. The increasing use of AI means code is often AI-generated and deployed faster than QA teams can review it. A skills shortage compounds the problem—the shortage of skilled QA professionals is one of the most pressing challenges, with only 25 QA engineers per 100,000 citizens in regions like the UK while demand grows 25% yearly. 85% of QA managers report difficulty delivering innovation faster without compromising quality, as testing remains too time-consuming. Test automation maturity is lacking, with many teams still relying heavily on manual testing. The EU AI Act, effective August 2024, adds regulatory pressure requiring new standards for testing AI-driven systems, with penalties up to €35 million or 7% of global revenue. PwC estimates 70% of companies deploying AI applications in Europe will need to adapt their QA processes for compliance.",
+      "summary": "85% of QA managers struggle to deliver innovation without compromising quality. AI-accelerated releases outpace testing capacity, while skilled QA talent remains scarce with 25% yearly demand growth.",
+      "industry": {
+        "id": "550e8400-e29b-41d4-a716-446655440000",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+        "name": "Software Engineering",
+        "slug": "software-engineering"
+      },
+      "field": {
+        "id": "6ba7b814-9dad-11d1-80b4-00c04fd430c8",
+        "name": "Quality Assurance",
+        "slug": "quality-assurance"
+      },
+      "problemType": "process",
+      "problemSubtypes": [
+        "testing",
+        "automation",
+        "quality",
+        "compliance"
+      ],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "500,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 60000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 5,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Rapid AI-driven release cycles",
+          "QA talent shortage",
+          "Regulatory compliance requirements",
+          "Test automation maturity gaps"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "8,000+",
+        "fundingLevel": "Moderate - growing investment in test automation tools"
+      },
+      "impactScore": 70,
+      "rootCauses": [
+        {
+          "description": "AI-accelerated development producing code faster than QA can review",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Shortage of skilled QA professionals with automation expertise",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of test automation maturity in many organizations",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "New regulatory requirements for testing AI-driven systems",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "85% of managers struggle to balance speed with quality",
+          "type": "direct",
+          "affectedArea": "Software Quality",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Production bugs and security vulnerabilities reaching customers",
+          "type": "direct",
+          "affectedArea": "Customer Experience",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Potential regulatory fines up to €35M or 7% revenue under EU AI Act",
+          "type": "cascading",
+          "affectedArea": "Compliance",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Technical debt accumulation from inadequately tested code",
+          "type": "indirect",
+          "affectedArea": "System Maintainability",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "AI-Powered Test Generation",
+          "description": "Tools that automatically generate test cases from code or requirements",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "May miss edge cases",
+            "Requires human validation",
+            "Quality varies by tool"
+          ]
+        },
+        {
+          "name": "Continuous Testing in CI/CD",
+          "description": "Automated test execution integrated into deployment pipelines",
+          "type": "methodology",
+          "effectiveness": 8,
+          "adoption": "mainstream",
+          "limitations": [
+            "Test maintenance overhead",
+            "Can slow pipelines",
+            "Coverage gaps"
+          ]
+        },
+        {
+          "name": "Risk-Based Testing Prioritization",
+          "description": "Focusing testing effort on highest-risk areas rather than comprehensive coverage",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "Requires accurate risk assessment",
+            "May miss unexpected issues"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "AI systems that can comprehensively test other AI-generated code",
+          "gapType": "coverage",
+          "opportunity": "Meta-testing systems designed specifically for AI code validation",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Standardized testing frameworks for AI/ML system compliance",
+          "gapType": "awareness",
+          "opportunity": "Industry standards and certification for AI testing practices",
+          "difficulty": "high"
+        },
+        {
+          "description": "Rapid upskilling pathways for QA professionals in AI testing",
+          "gapType": "accessibility",
+          "opportunity": "Specialized training programs for AI-era QA skills",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "QA engineers and test automation specialists",
+          "examples": [
+            "QA engineers",
+            "SDET",
+            "Test architects"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "QA leadership and engineering management",
+          "examples": [
+            "QA managers",
+            "VP Engineering",
+            "Release managers"
+          ],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Test automation tool vendors",
+          "examples": [
+            "Selenium",
+            "Cypress",
+            "AI testing startups"
+          ],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Top 17 Software QA Challenges 2025",
+          "url": "https://blog.qasource.com/top-software-qa-challanges",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "QASource",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "The shortage of skilled QA professionals is one of organizations' most pressing quality assurance challenges."
+        },
+        {
+          "type": "news",
+          "title": "Software testing in 2026: Key QA trends and the impact of AI",
+          "url": "https://www.valido.ai/en/software-testing-in-2026-key-qa-trends-and-the-impact-of-ai/",
+          "publishedAt": "2026-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Valido AI",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "85% of managers say that it is hard to deliver innovation faster, without compromising on quality. PwC estimates that 70% of companies deploying AI applications in Europe will need to adapt their QA processes for compliance."
+        },
+        {
+          "type": "industry-report",
+          "title": "QA and Software Testing in 2025",
+          "url": "https://qasolve.ai/qa-and-software-testing-in-2025/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "QASolve",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "The increasing use of AI has rapidly changed the pace of software development. Code is often AI-generated and deployed faster than QA teams can review it."
+        }
+      ],
+      "tags": [
+        "qa",
+        "testing",
+        "automation",
+        "quality",
+        "ai-testing",
+        "compliance"
+      ],
+      "keywords": [
+        "software testing challenges",
+        "QA automation",
+        "AI testing",
+        "software quality assurance"
+      ],
+      "metrics": {
+        "searchVolume": 16500,
+        "academicPapers": 920,
+        "patentApplications": 189,
+        "mediaArticles": 780,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    }
+  ]
+}
