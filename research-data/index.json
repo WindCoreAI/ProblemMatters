@@ -4,8 +4,8 @@
   "statistics": {
     "totalProblems": 20,
     "totalIndustries": 1,
-    "totalDomains": 1,
-    "totalFields": 8,
+    "totalDomains": 2,
+    "totalFields": 14,
     "problemsByIndustry": {
       "technology-software": 20
     },
