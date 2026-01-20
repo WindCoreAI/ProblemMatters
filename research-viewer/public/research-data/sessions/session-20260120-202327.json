@@ -1,0 +1,106 @@
+{
+  "id": "session-20260120-202327",
+  "startedAt": "2026-01-20T20:23:27Z",
+  "completedAt": "2026-01-20T20:45:00Z",
+  "target": {
+    "industry": "manufacturing-industrial",
+    "domain": "discrete-manufacturing",
+    "field": "automotive"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 5,
+    "problemIds": [
+      "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+      "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+      "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+      "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+      "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b",
+      "f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c",
+      "a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d",
+      "b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2e",
+      "c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3f",
+      "d0e1f2a3-b4c5-4d6e-7f8a-9b0c1d2e3f4a"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "Initialize session",
+      "timestamp": "2026-01-20T20:23:27Z",
+      "durationMs": 500,
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "Discovery phase - web search",
+      "timestamp": "2026-01-20T20:23:30Z",
+      "durationMs": 120000,
+      "input": {
+        "queries": [
+          "automotive industry supply chain disruptions bottlenecks 2025 2026",
+          "automotive quality control defects recalls manufacturing problems",
+          "automotive workforce skills gap labor shortage manufacturing 2025 2026"
+        ]
+      },
+      "output": {
+        "candidatesFound": 15,
+        "sourcesGathered": 28
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "Research phase - deep analysis",
+      "timestamp": "2026-01-20T20:25:30Z",
+      "durationMs": 600000,
+      "input": {
+        "candidateCount": 15
+      },
+      "output": {
+        "analyzedProblems": 15,
+        "additionalSourcesFetched": 8
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "Validation phase",
+      "timestamp": "2026-01-20T20:35:30Z",
+      "durationMs": 300000,
+      "output": {
+        "approvedProblems": 10,
+        "rejectedProblems": 5,
+        "averageConfidence": 0.85
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "Synthesis and storage",
+      "timestamp": "2026-01-20T20:40:30Z",
+      "durationMs": 270000,
+      "output": {
+        "problemsWritten": 10,
+        "targetFile": "research-viewer/public/research-data/industries/manufacturing-industrial/discrete-manufacturing/fields/automotive.json"
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 1293000,
+    "apiCalls": 8,
+    "sourcesConsulted": 28
+  }
+}
