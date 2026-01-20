@@ -1,0 +1,91 @@
+{
+  "id": "27a9456f-ae11-4b81-9a28-ca780f63930f",
+  "startedAt": "2026-01-20T20:22:23Z",
+  "completedAt": "2026-01-20T20:45:00Z",
+  "target": {
+    "industry": "financial-services",
+    "domain": "capital-markets",
+    "field": "market-infrastructure"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 12,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 2,
+    "problemIds": [
+      "a1ee4318-b165-4bdc-afd0-b72ed16f1f93",
+      "f4cac055-4883-4391-9144-ac27d45f86b3",
+      "740bc94e-5135-468e-bf34-ad2bbb5bba4e",
+      "4cf62e65-bbff-40fc-9556-294ca5d86d0a",
+      "cbcde783-9c04-49bc-bd94-ebfc9ae35b4a",
+      "24c70d46-4fa4-43a5-8a06-04f04df137ea",
+      "6442ed91-d939-440c-b9b0-0327655a908b",
+      "4d54f5f9-d42f-4c55-be73-22647f780264",
+      "6301344e-d939-4480-9779-59ed611726de",
+      "00a8e562-5798-4eaf-a2fd-924e433b42fc",
+      "dc0ede9d-3a4e-4b15-a7c8-2ca13bd0ea23"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "Initialize session",
+      "timestamp": "2026-01-20T20:22:23Z",
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "Discovery Phase - Web searches",
+      "timestamp": "2026-01-20T20:23:00Z",
+      "status": "completed",
+      "output": {
+        "queriesExecuted": 5,
+        "candidatesIdentified": 12
+      }
+    },
+    {
+      "step": 3,
+      "action": "Research Phase - Deep analysis",
+      "timestamp": "2026-01-20T20:30:00Z",
+      "status": "completed",
+      "output": {
+        "problemsResearched": 12,
+        "sourcesConsulted": 25
+      }
+    },
+    {
+      "step": 4,
+      "action": "Validation Phase - Scoring and verification",
+      "timestamp": "2026-01-20T20:38:00Z",
+      "status": "completed",
+      "output": {
+        "problemsValidated": 10,
+        "avgConfidence": 0.83
+      }
+    },
+    {
+      "step": 5,
+      "action": "Storage Phase - Write problems to field file",
+      "timestamp": "2026-01-20T20:42:00Z",
+      "status": "completed",
+      "output": {
+        "fileWritten": "research-viewer/public/research-data/industries/financial-services/capital-markets/fields/market-infrastructure.json",
+        "problemsStored": 10
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 1357000,
+    "apiCalls": 8,
+    "sourcesConsulted": 25
+  }
+}
