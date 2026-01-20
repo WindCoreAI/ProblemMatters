@@ -1,0 +1,140 @@
+{
+  "id": "session-20260120-202419",
+  "startedAt": "2026-01-20T20:24:19Z",
+  "completedAt": "2026-01-20T20:45:00Z",
+  "target": {
+    "industry": "manufacturing-industrial",
+    "domain": "industrial-operations",
+    "field": "production-planning",
+    "specificTopic": null
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 0,
+    "problemIds": [
+      "80052f67-222d-4dc7-a7dc-d49028a87d86",
+      "b42bad1d-0d0f-4837-8ac7-32c1fce436fa",
+      "281788e0-4b13-4a7d-8e37-289fc9225412",
+      "3ca547aa-29d8-4b11-a629-bf4e2f01264a",
+      "7d918f45-36d8-404e-9c2a-668adb3df2b3",
+      "57e32f2e-72ec-4139-8dd0-da9d83b3c481",
+      "57d53e81-d79f-499b-80b0-b07dee15771e",
+      "da2a8fa6-49bc-4d96-a779-454cab29a39c",
+      "a9cde221-70bf-432f-acbc-bf0859873f19",
+      "3ba159ac-61fd-4348-93bb-3405bf1d086d",
+      "4e67b390-b1bd-4344-a374-594e325ef66d"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-20T20:24:19Z",
+      "durationMs": 1000,
+      "input": {
+        "rawInput": "manufacturing industrial-operations production-planning"
+      },
+      "output": {
+        "industry": "manufacturing-industrial",
+        "domain": "industrial-operations",
+        "field": "production-planning"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "initialize_session",
+      "timestamp": "2026-01-20T20:24:20Z",
+      "durationMs": 2000,
+      "input": {
+        "sessionId": "session-20260120-202419"
+      },
+      "output": {
+        "directoriesCreated": [
+          "research-viewer/public/research-data/sessions",
+          "research-viewer/public/research-data/industries/manufacturing-industrial/industrial-operations/fields"
+        ]
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T20:24:22Z",
+      "durationMs": 180000,
+      "input": {
+        "searchQueries": [
+          "manufacturing production planning challenges problems 2025 2026",
+          "production planning supply chain disruption tariff manufacturing 2025",
+          "S&OP sales operations planning manufacturing coordination problems"
+        ]
+      },
+      "output": {
+        "candidatesIdentified": 15,
+        "sourcesFound": 25
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T20:27:22Z",
+      "durationMs": 300000,
+      "input": {
+        "candidateCount": 15
+      },
+      "output": {
+        "problemsResearched": 10,
+        "sourcesAnalyzed": 20
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T20:32:22Z",
+      "durationMs": 180000,
+      "input": {
+        "problemsToValidate": 10
+      },
+      "output": {
+        "approved": 10,
+        "rejected": 0,
+        "needsMoreResearch": 0
+      },
+      "status": "completed"
+    },
+    {
+      "step": 6,
+      "action": "synthesis_storage",
+      "timestamp": "2026-01-20T20:35:22Z",
+      "durationMs": 120000,
+      "input": {
+        "approvedProblems": 10
+      },
+      "output": {
+        "filesCreated": [
+          "research-viewer/public/research-data/industries/manufacturing-industrial/industrial-operations/fields/production-planning.json"
+        ],
+        "problemsStored": 10
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 1241000,
+    "apiCalls": 8,
+    "sourcesConsulted": 25
+  }
+}
