@@ -1,0 +1,130 @@
+{
+  "id": "1c521b3d-82b0-4c6d-a2ab-f148955f7dcd",
+  "sessionName": "session-20260120-202827",
+  "startedAt": "2026-01-20T20:28:27Z",
+  "completedAt": "2026-01-20T20:45:00Z",
+  "target": {
+    "industry": "real-estate-construction",
+    "industryName": "Real Estate & Construction",
+    "domain": "real-estate",
+    "domainName": "Real Estate",
+    "field": "commercial-real-estate",
+    "fieldName": "Commercial Real Estate"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 12,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 2,
+    "problemIds": [
+      "d95816fa-9a30-4ae6-9e07-8b67c4d1a4ff",
+      "0cedebcf-0fc2-4cec-9e55-00df6a2d7535",
+      "dd78abf1-2fc8-4a83-93b0-9d577338f01d",
+      "5ac4dbec-f7f0-4880-adda-522ad68a4d6c",
+      "c85913fc-173a-49bb-8836-ff4e7523d14c",
+      "335fb0eb-ea9f-477f-bbd1-326ffb37ec50",
+      "71224174-9325-447f-b6ae-dcafa6577ac8",
+      "0563d0a6-367c-4010-8602-04c7b1fc969c",
+      "4b8d6fbc-aa4b-4087-9c4f-96d9c5f1f609",
+      "a48c8d92-986b-4824-a3d3-ae3fae0d8e75"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-20T20:28:27Z",
+      "durationMs": 1000,
+      "status": "completed",
+      "input": {
+        "userInput": "real-estate-construction real-estate commercial-real-estate"
+      },
+      "output": {
+        "industry": "real-estate-construction",
+        "domain": "real-estate",
+        "field": "commercial-real-estate"
+      }
+    },
+    {
+      "step": 2,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T20:29:00Z",
+      "durationMs": 180000,
+      "status": "completed",
+      "input": {
+        "searchQueries": [
+          "commercial real estate challenges problems issues 2025 2026",
+          "commercial real estate climate change sustainability ESG challenges",
+          "office building conversion adaptive reuse challenges costs feasibility"
+        ]
+      },
+      "output": {
+        "candidatesFound": 12,
+        "sourcesConsulted": 30
+      }
+    },
+    {
+      "step": 3,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T20:32:00Z",
+      "durationMs": 420000,
+      "status": "completed",
+      "input": {
+        "candidatesToResearch": 12
+      },
+      "output": {
+        "problemsFullyResearched": 10,
+        "problemsPartiallyResearched": 2
+      }
+    },
+    {
+      "step": 4,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T20:39:00Z",
+      "durationMs": 240000,
+      "status": "completed",
+      "input": {
+        "problemsToValidate": 12
+      },
+      "output": {
+        "approved": 10,
+        "rejected": 2,
+        "averageConfidence": 0.86
+      }
+    },
+    {
+      "step": 5,
+      "action": "storage_phase",
+      "timestamp": "2026-01-20T20:43:00Z",
+      "durationMs": 120000,
+      "status": "completed",
+      "input": {
+        "problemsToStore": 10
+      },
+      "output": {
+        "filesCreated": 1,
+        "filesUpdated": 0,
+        "problemsWritten": 10
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 996000,
+    "apiCalls": 15,
+    "sourcesConsulted": 30,
+    "searchesPerformed": 3
+  },
+  "filesAffected": [
+    "research-viewer/public/research-data/industries/real-estate-construction/real-estate/fields/commercial-real-estate.json",
+    "research-viewer/public/research-data/sessions/session-20260120-202827.json"
+  ]
+}
