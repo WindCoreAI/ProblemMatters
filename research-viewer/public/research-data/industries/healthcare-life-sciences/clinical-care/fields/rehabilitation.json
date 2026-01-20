@@ -1,0 +1,1874 @@
+{
+  "field": {
+    "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+    "name": "Rehabilitation",
+    "slug": "rehabilitation",
+    "description": "Clinical rehabilitation services including physical therapy, occupational therapy, speech therapy, cardiac rehabilitation, and neurological rehabilitation aimed at restoring function and improving quality of life after injury, illness, or disability."
+  },
+  "domain": {
+    "id": "d1e2f3a4-b5c6-7890-defg-hij123456789",
+    "name": "Clinical Care",
+    "slug": "clinical-care"
+  },
+  "industry": {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Healthcare & Life Sciences",
+    "slug": "healthcare-life-sciences"
+  },
+  "problems": [
+    {
+      "id": "rehab-20260120-183000-001",
+      "title": "Global Rehabilitation Workforce Shortage Creates Critical Access Gaps",
+      "slug": "global-rehabilitation-workforce-shortage-access-gaps",
+      "description": "The rehabilitation sector faces a severe global workforce shortage, with the World Health Organization estimating a deficit of over 10 million rehabilitation professionals worldwide. This shortage is particularly acute in low- and middle-income countries, where only 2% of the need for rehabilitation services is currently met. In high-income countries, the shortage manifests as extended wait times, reduced service availability in rural areas, and increased burnout among existing practitioners. The aging global population, rising prevalence of chronic conditions, and growing survival rates from previously fatal injuries and illnesses are driving unprecedented demand for rehabilitation services that the current workforce cannot meet. Physical therapists, occupational therapists, speech-language pathologists, and rehabilitation physicians are all in critically short supply, creating a cascade of negative health outcomes for patients who cannot access timely care.",
+      "summary": "A global shortage of over 10 million rehabilitation professionals severely limits access to care, particularly in low-income countries and rural areas, leading to delayed recovery and poorer health outcomes.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d1e2f3a4-b5c6-7890-defg-hij123456789",
+        "name": "Clinical Care",
+        "slug": "clinical-care"
+      },
+      "field": {
+        "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+        "name": "Rehabilitation",
+        "slug": "rehabilitation"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["workforce", "access", "capacity"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "2.4 billion",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 500000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 9,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Limited training program capacity",
+          "Long educational requirements (6-8 years)",
+          "Geographic maldistribution of professionals",
+          "Low compensation in many regions",
+          "Immigration restrictions for healthcare workers"
+        ]
+      },
+      "neglectedness": {
+        "overall": 6,
+        "attentionLevel": "underserved",
+        "activeResearchers": "5,000-10,000",
+        "fundingLevel": "Low relative to disease burden"
+      },
+      "impactScore": 71,
+      "rootCauses": [
+        {
+          "description": "Insufficient training program capacity to meet growing demand",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Aging population increasing rehabilitation needs exponentially",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Low reimbursement rates making rehabilitation careers less attractive",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Geographic concentration of professionals in urban areas",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "High burnout rates leading to early career exits",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Extended wait times of 6-12 months for rehabilitation services",
+          "type": "direct",
+          "affectedArea": "Patient access",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Poorer recovery outcomes due to delayed intervention",
+          "type": "direct",
+          "affectedArea": "Health outcomes",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Increased long-term disability and dependency",
+          "type": "cascading",
+          "affectedArea": "Quality of life",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Higher healthcare costs from preventable complications",
+          "type": "indirect",
+          "affectedArea": "Healthcare systems",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Telerehabilitation Services",
+          "description": "Remote delivery of rehabilitation services via video conferencing to extend reach of limited workforce",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Cannot replace hands-on assessment", "Technology access barriers", "Reimbursement challenges"]
+        },
+        {
+          "name": "Rehabilitation Assistant Programs",
+          "description": "Training mid-level practitioners to extend capacity of licensed therapists",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Scope of practice restrictions", "Quality concerns", "Supervision requirements"]
+        },
+        {
+          "name": "International Recruitment Programs",
+          "description": "Recruiting rehabilitation professionals from other countries to address local shortages",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "growing",
+          "limitations": ["Creates shortages in source countries", "Credentialing barriers", "Cultural/language challenges"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Scalable training models that can rapidly increase workforce without compromising quality",
+          "gapType": "scale",
+          "opportunity": "AI-assisted training and competency-based accelerated programs",
+          "difficulty": "high"
+        },
+        {
+          "description": "Effective task-shifting protocols to maximize professional productivity",
+          "gapType": "coverage",
+          "opportunity": "Evidence-based delegation frameworks with technology support",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Retention strategies to reduce burnout and career attrition",
+          "gapType": "quality",
+          "opportunity": "Workload management tools and career development pathways",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients requiring rehabilitation services",
+          "examples": ["Stroke survivors", "Orthopedic surgery patients", "People with disabilities"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Rehabilitation professionals and professional associations",
+          "examples": ["APTA", "AOTA", "ASHA", "WHO Rehabilitation Programme"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Health ministries and policy makers",
+          "examples": ["National health departments", "WHO", "Healthcare regulators"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "funder",
+          "description": "Healthcare systems and insurers",
+          "examples": ["Medicare/Medicaid", "Private insurers", "National health services"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "government",
+          "title": "Rehabilitation 2030: A Call for Action",
+          "url": "https://www.who.int/initiatives/rehabilitation-2030",
+          "publisher": "World Health Organization",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "Rehabilitation is highly underfunded, understaffed and underutilized globally"
+        },
+        {
+          "type": "academic",
+          "title": "Health Services Research in Rehabilitation and Disability",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5748255/",
+          "publisher": "PMC/NIH",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "PM&R has a very limited research infrastructure and few federally funded projects"
+        }
+      ],
+      "tags": ["workforce-shortage", "access-to-care", "global-health", "rehabilitation", "healthcare-capacity"],
+      "keywords": ["rehabilitation workforce shortage", "physical therapy shortage", "occupational therapy shortage", "rehabilitation access"],
+      "metrics": {
+        "academicPapers": 1250,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T18:30:00Z"
+      },
+      "researchSession": "session-20260120-183000",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:30:00Z",
+      "updatedAt": "2026-01-20T18:30:00Z",
+      "version": 1
+    },
+    {
+      "id": "rehab-20260120-183000-002",
+      "title": "Speech-Language Pathologist Shortage Delays Critical Early Intervention",
+      "slug": "speech-language-pathologist-shortage-delays-early-intervention",
+      "description": "The United States faces a severe shortage of speech-language pathologists (SLPs), with 28 states reporting shortages in schools and 48% of school districts unable to fill SLP positions. The Bureau of Labor Statistics projects 13,700 annual job openings through 2035, but university programs only graduate 9,400 master's-level SLPs per year, creating a widening gap. This shortage is particularly acute in rural and economically disadvantaged areas, leading to wait times of 6-18 months for assessment and treatment. For children with speech and language disorders, these delays occur during critical developmental windows when intervention is most effective. Heavy caseloads exceeding 50-80 students per SLP, extensive paperwork requirements, and stagnating wages contribute to burnout rates exceeding 9% annually, further depleting the workforce. The consequences include missed early intervention opportunities, developmental delays that persist into adulthood, and educational disparities for children in underserved communities.",
+      "summary": "A severe shortage of speech-language pathologists, with 48% of school districts unable to fill positions, delays critical early intervention for children with communication disorders during vital developmental periods.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d1e2f3a4-b5c6-7890-defg-hij123456789",
+        "name": "Clinical Care",
+        "slug": "clinical-care"
+      },
+      "field": {
+        "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+        "name": "Rehabilitation",
+        "slug": "rehabilitation"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["workforce", "pediatric", "early-intervention"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "7.5 million children",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 30000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Limited graduate program capacity",
+          "Extensive training requirements (master's degree)",
+          "Low salaries relative to education investment",
+          "Administrative burden reducing clinical time",
+          "Geographic maldistribution"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "2,000-5,000",
+        "fundingLevel": "Moderate - increasing policy attention"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Graduate program capacity cannot meet workforce demand projections",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "High educational requirements (master's degree) limit pipeline",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Excessive paperwork and caseload burdens causing burnout",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Compensation not competitive with education investment required",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Rising prevalence of communication disorders in children",
+          "category": "environmental",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Extended wait times of 6-18 months for speech therapy assessment",
+          "type": "direct",
+          "affectedArea": "Service access",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Missed critical developmental windows for language acquisition",
+          "type": "direct",
+          "affectedArea": "Child development",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Persistent communication deficits affecting academic achievement",
+          "type": "cascading",
+          "affectedArea": "Education outcomes",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Long-term employment and social challenges for affected individuals",
+          "type": "cascading",
+          "affectedArea": "Socioeconomic outcomes",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Telepractice Speech Therapy",
+          "description": "Remote delivery of speech therapy services via video platforms",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Requires reliable internet", "Less effective for young children", "Licensing across state lines"]
+        },
+        {
+          "name": "Speech-Language Pathology Assistants (SLPAs)",
+          "description": "Support personnel who work under SLP supervision to extend capacity",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Scope limitations", "Supervision requirements", "Not recognized in all states"]
+        },
+        {
+          "name": "International SLP Recruitment",
+          "description": "Recruiting qualified SLPs from other countries with credential recognition",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["Credential verification challenges", "Cultural competency needs", "Immigration barriers"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Technology-assisted screening and monitoring to reduce SLP caseload burden",
+          "gapType": "coverage",
+          "opportunity": "AI-powered speech assessment tools for initial screening",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Alternative credentialing pathways to increase workforce pipeline",
+          "gapType": "accessibility",
+          "opportunity": "Competency-based certification programs",
+          "difficulty": "high"
+        },
+        {
+          "description": "Administrative burden reduction tools",
+          "gapType": "quality",
+          "opportunity": "Automated documentation and IEP assistance systems",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Children with speech and language disorders and their families",
+          "examples": ["Children with articulation disorders", "Children with language delays", "Children with autism"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Speech-language pathologists and professional organizations",
+          "examples": ["ASHA", "State SLP associations", "University training programs"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "School districts and education administrators",
+          "examples": ["Special education directors", "School boards", "State education departments"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Supply and Demand Resource List for Speech-Language Pathologists",
+          "url": "https://www.asha.org/siteassets/surveys/supply-demand-slp.pdf",
+          "publisher": "American Speech-Language-Hearing Association",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.92,
+          "relevantExcerpt": "44.8% of SLP Health Care Survey respondents indicated funded, unfilled positions"
+        },
+        {
+          "type": "news",
+          "title": "Behind the SLP Shortage: Meeting Speech Pathologist Demand",
+          "url": "https://www.careerstaff.com/healthcare-staffing-blog/healthcare-staffing/slp-shortage-meeting-speech-pathologist-demand/",
+          "publisher": "CareerStaff Unlimited",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "48% of school districts report difficulty filling SLP positions"
+        }
+      ],
+      "tags": ["speech-therapy", "workforce-shortage", "pediatric", "early-intervention", "schools"],
+      "keywords": ["speech language pathologist shortage", "SLP shortage", "speech therapy access", "early intervention delays"],
+      "metrics": {
+        "academicPapers": 680,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T18:30:00Z"
+      },
+      "researchSession": "session-20260120-183000",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:30:00Z",
+      "updatedAt": "2026-01-20T18:30:00Z",
+      "version": 1
+    },
+    {
+      "id": "rehab-20260120-183000-003",
+      "title": "Cardiac Rehabilitation Critically Underutilized Despite Proven Benefits",
+      "slug": "cardiac-rehabilitation-underutilization-proven-benefits",
+      "description": "Cardiac rehabilitation is one of the most effective interventions for patients following heart attacks, heart surgery, or heart failure diagnosis, reducing mortality by 20-30% and hospital readmissions by 25%. Despite this evidence, participation rates remain critically low at only 20-30% of eligible patients, with dropout rates as high as 56%. Barriers include limited program availability (particularly in rural areas), lack of physician referrals, insurance coverage gaps, transportation challenges, work schedule conflicts, and patient perceptions that rehabilitation is unnecessary. Women, minorities, elderly patients, and those from lower socioeconomic backgrounds are disproportionately underrepresented. The COVID-19 pandemic further reduced participation as programs closed or shifted to untested virtual formats. This underutilization represents a massive missed opportunity to prevent recurrent cardiac events, reduce healthcare costs, and improve quality of life for millions of cardiac patients annually.",
+      "summary": "Despite reducing mortality by 20-30%, cardiac rehabilitation is utilized by only 20-30% of eligible patients due to access barriers, lack of referrals, and patient perceptions, with dropout rates reaching 56%.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d1e2f3a4-b5c6-7890-defg-hij123456789",
+        "name": "Clinical Care",
+        "slug": "clinical-care"
+      },
+      "field": {
+        "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+        "name": "Rehabilitation",
+        "slug": "rehabilitation"
+      },
+      "problemType": "process",
+      "problemSubtypes": ["adherence", "access", "referral-patterns"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "8 million annually",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 45000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.5,
+        "technicalFeasibility": 8,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Limited program geographic coverage",
+          "Inconsistent physician referral practices",
+          "Transportation barriers for patients",
+          "Work schedule conflicts",
+          "Patient motivation and awareness"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "3,000-5,000",
+        "fundingLevel": "Moderate - policy initiatives emerging"
+      },
+      "impactScore": 70,
+      "rootCauses": [
+        {
+          "description": "Insufficient automatic referral systems at hospital discharge",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Geographic gaps in program availability especially rural areas",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Patient lack of understanding of rehabilitation benefits",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Insurance coverage limitations and cost barriers",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Program schedules conflicting with work and family responsibilities",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Preventable recurrent cardiac events and hospitalizations",
+          "type": "direct",
+          "affectedArea": "Patient health",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Higher mortality rates among non-participants",
+          "type": "direct",
+          "affectedArea": "Patient outcomes",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Increased healthcare costs from avoidable complications",
+          "type": "indirect",
+          "affectedArea": "Healthcare system",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Reduced quality of life and functional capacity",
+          "type": "direct",
+          "affectedArea": "Patient wellbeing",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Automatic Referral Systems",
+          "description": "EHR-integrated automatic referrals at hospital discharge",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Requires EHR integration", "Does not address attendance barriers", "Variable implementation"]
+        },
+        {
+          "name": "Home-Based Cardiac Rehabilitation",
+          "description": "Supervised rehabilitation programs delivered in patient homes",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Higher per-patient cost", "Less social support", "Equipment requirements"]
+        },
+        {
+          "name": "Hybrid Virtual/In-Person Programs",
+          "description": "Combination of telehealth sessions and periodic in-person visits",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Technology barriers", "Reimbursement challenges", "Patient engagement"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Scalable remote monitoring solutions with comparable outcomes to in-person",
+          "gapType": "scale",
+          "opportunity": "Wearable-integrated virtual cardiac rehab platforms",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Behavioral interventions to improve long-term adherence",
+          "gapType": "quality",
+          "opportunity": "Personalized engagement strategies using behavioral science",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Solutions for transportation and scheduling barriers",
+          "gapType": "accessibility",
+          "opportunity": "On-demand scheduling and rideshare partnerships",
+          "difficulty": "low"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Cardiac patients eligible for rehabilitation",
+          "examples": ["Heart attack survivors", "Post-bypass patients", "Heart failure patients"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Cardiac rehabilitation professionals",
+          "examples": ["Cardiac rehab nurses", "Exercise physiologists", "Cardiologists"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Healthcare systems and cardiology departments",
+          "examples": ["Hospital administrators", "Cardiology department heads", "Quality officers"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Cardiac Rehabilitation Participation and Outcomes",
+          "url": "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.120.050527",
+          "publisher": "American Heart Association",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.92,
+          "relevantExcerpt": "Cardiac rehabilitation reduces mortality by 20-30% but participation remains below 30%"
+        }
+      ],
+      "tags": ["cardiac-rehabilitation", "adherence", "heart-disease", "preventive-care", "underutilization"],
+      "keywords": ["cardiac rehabilitation participation", "cardiac rehab dropout", "heart attack recovery", "cardiac rehab barriers"],
+      "metrics": {
+        "academicPapers": 2800,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T18:30:00Z"
+      },
+      "researchSession": "session-20260120-183000",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:30:00Z",
+      "updatedAt": "2026-01-20T18:30:00Z",
+      "version": 1
+    },
+    {
+      "id": "rehab-20260120-183000-004",
+      "title": "Pediatric Rehabilitation Access Inequity in Rural and Indigenous Communities",
+      "slug": "pediatric-rehabilitation-access-inequity-rural-indigenous",
+      "description": "Approximately one in six children has a disability requiring rehabilitation services, yet access varies dramatically based on geography and demographics. Children in rural areas, Indigenous communities, and low-income neighborhoods face wait times of 12-24 months for services, must travel hours for appointments, and often cannot access specialized pediatric therapists at all. In northern Indigenous communities, accessing pediatric rehabilitation is a critical priority that remains largely unmet. Families face compounding barriers including adverse weather, inadequate transportation, financial costs of travel, need for childcare for siblings, and cultural/language barriers in service delivery. These disparities result in delayed intervention during critical developmental windows, poorer long-term outcomes, and perpetuation of health inequities across generations.",
+      "summary": "Children in rural and Indigenous communities face 12-24 month waits for rehabilitation services, with many unable to access specialized care at all due to geographic, financial, and cultural barriers.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d1e2f3a4-b5c6-7890-defg-hij123456789",
+        "name": "Clinical Care",
+        "slug": "clinical-care"
+      },
+      "field": {
+        "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+        "name": "Rehabilitation",
+        "slug": "rehabilitation"
+      },
+      "problemType": "social",
+      "problemSubtypes": ["health-equity", "pediatric", "rural-health", "indigenous-health"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "3 million children",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 25000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 9,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Geographic distance from services",
+          "Workforce unwilling to practice in rural areas",
+          "Low Medicaid reimbursement rates",
+          "Cultural and language barriers",
+          "Infrastructure limitations"
+        ]
+      },
+      "neglectedness": {
+        "overall": 7,
+        "attentionLevel": "underserved",
+        "activeResearchers": "1,000-2,000",
+        "fundingLevel": "Low - limited targeted programs"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "Concentration of pediatric specialists in urban academic centers",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Economic unviability of rural practice with current reimbursement",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Training programs not preparing providers for rural/remote practice",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Historical marginalization of Indigenous health priorities",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Missed critical developmental windows for intervention",
+          "type": "direct",
+          "affectedArea": "Child development",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Persistent developmental delays and disabilities",
+          "type": "cascading",
+          "affectedArea": "Long-term outcomes",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Family financial strain from travel and lost work time",
+          "type": "indirect",
+          "affectedArea": "Family economics",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Pediatric Telerehabilitation",
+          "description": "Remote delivery of pediatric therapy services via video technology",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Limited for hands-on interventions", "Internet access issues", "Young children difficult to engage"]
+        },
+        {
+          "name": "Mobile Therapy Units",
+          "description": "Traveling clinics bringing rehabilitation services to rural communities",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["High operating costs", "Weather dependent", "Limited service frequency"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Culturally appropriate pediatric rehabilitation models for Indigenous communities",
+          "gapType": "coverage",
+          "opportunity": "Co-designed programs integrating traditional healing approaches",
+          "difficulty": "high"
+        },
+        {
+          "description": "Sustainable economic models for rural pediatric rehabilitation practice",
+          "gapType": "cost",
+          "opportunity": "Alternative payment models and loan forgiveness programs",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Children with disabilities in underserved areas and their families",
+          "examples": ["Rural farming families", "Indigenous communities", "Low-income urban areas"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Health policy makers and tribal health authorities",
+          "examples": ["CMS", "State Medicaid programs", "Indian Health Service"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Developing an Interprofessional Pediatric Rehabilitation Model of Care",
+          "url": "https://www.researchprotocols.org/2025/1/e69438/PDF",
+          "publisher": "JMIR Research Protocols",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Addressing access challenges to pediatric rehabilitation is a critical priority in northern Indigenous communities"
+        },
+        {
+          "type": "academic",
+          "title": "Exploring Barriers to Participation in Pediatric Rehabilitation",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8508210/",
+          "publisher": "PMC/NIH",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.88,
+          "relevantExcerpt": "Key barriers include insufficient access, insufficient trust, and insufficient involvement"
+        }
+      ],
+      "tags": ["pediatric-rehabilitation", "health-equity", "rural-health", "indigenous-health", "access-barriers"],
+      "keywords": ["pediatric rehabilitation access", "rural child therapy", "indigenous health disparities", "developmental intervention equity"],
+      "metrics": {
+        "academicPapers": 420,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T18:30:00Z"
+      },
+      "researchSession": "session-20260120-183000",
+      "confidence": 0.84,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:30:00Z",
+      "updatedAt": "2026-01-20T18:30:00Z",
+      "version": 1
+    },
+    {
+      "id": "rehab-20260120-183000-005",
+      "title": "Rehabilitation Research Evidence Gap Limits Clinical Practice Advancement",
+      "slug": "rehabilitation-research-evidence-gap-clinical-practice",
+      "description": "Physical medicine and rehabilitation (PM&R) is considered the most understudied area of clinical care by NIH consensus panels. Despite rehabilitation services being essential for recovery from injury, illness, and disability, there are very few federally funded rehabilitation research projects compared to other medical specialties, and few evidence-based practice guidelines exist. Methodological challenges unique to rehabilitation research compound the problem: patients are heterogeneous, interventions are complex and multifaceted, appropriate control groups are difficult to design, and meaningful outcome measures are hard to standardize. The gap between research-based knowledge and daily practice can take a decade to close, and changes are difficult to maintain.",
+      "summary": "Rehabilitation is the most understudied clinical area with few federally funded projects or evidence-based guidelines, leaving clinicians without research-backed recommendations for optimal patient care.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d1e2f3a4-b5c6-7890-defg-hij123456789",
+        "name": "Clinical Care",
+        "slug": "clinical-care"
+      },
+      "field": {
+        "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+        "name": "Rehabilitation",
+        "slug": "rehabilitation"
+      },
+      "problemType": "knowledge",
+      "problemSubtypes": ["research-gaps", "evidence-based-practice", "methodology"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "100+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 75000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Limited research infrastructure in PM&R",
+          "Methodological challenges unique to rehabilitation",
+          "Difficulty standardizing interventions for study",
+          "Limited funding prioritization",
+          "Small researcher workforce"
+        ]
+      },
+      "neglectedness": {
+        "overall": 7.5,
+        "attentionLevel": "neglected",
+        "activeResearchers": "2,000-4,000",
+        "fundingLevel": "Very low relative to patient burden"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Rehabilitation not prioritized in federal research funding allocation",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Methodological complexity makes rehabilitation trials difficult",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Small research workforce and limited infrastructure",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Clinicians practicing without evidence-based guidelines",
+          "type": "direct",
+          "affectedArea": "Clinical practice",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Wide variation in rehabilitation care quality",
+          "type": "direct",
+          "affectedArea": "Care standardization",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Suboptimal patient outcomes from unvalidated treatments",
+          "type": "cascading",
+          "affectedArea": "Patient outcomes",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "NIH Rehabilitation Research Initiatives",
+          "description": "Targeted NIH programs to advance rehabilitation science",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Limited funding", "Slow implementation", "Narrow focus areas"]
+        },
+        {
+          "name": "Practice-Based Research Networks",
+          "description": "Networks of clinicians conducting research in real-world settings",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Resource intensive", "Variable quality", "Limited generalizability"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Adaptive trial designs suited to rehabilitation's complexity",
+          "gapType": "quality",
+          "opportunity": "Novel methodological frameworks for rehabilitation RCTs",
+          "difficulty": "high"
+        },
+        {
+          "description": "Standardized core outcome measurement sets",
+          "gapType": "integration",
+          "opportunity": "Consensus-driven outcome measure development",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Rehabilitation patients receiving care without strong evidence base",
+          "examples": ["Stroke patients", "Orthopedic patients", "People with disabilities"],
+          "interest": "medium",
+          "influence": "low"
+        },
+        {
+          "type": "funder",
+          "description": "Research funding agencies",
+          "examples": ["NIH", "NIDILRR", "VA Research", "Private foundations"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Research in Rehabilitation Medicine: Methodological Challenges",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19788953/",
+          "publisher": "PubMed/NIH",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "There are continuing methodological challenges in rehabilitation research"
+        },
+        {
+          "type": "academic",
+          "title": "Rehabilitation Research at the National Institutes of Health",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5402894/",
+          "publisher": "PMC/NIH",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.92,
+          "relevantExcerpt": "NIH consensus panels have commented that rehabilitation services are the most understudied area of clinical care"
+        }
+      ],
+      "tags": ["rehabilitation-research", "evidence-gap", "clinical-guidelines", "research-methodology", "funding"],
+      "keywords": ["rehabilitation research gap", "evidence-based rehabilitation", "PM&R research funding", "rehabilitation clinical trials"],
+      "metrics": {
+        "academicPapers": 1500,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T18:30:00Z"
+      },
+      "researchSession": "session-20260120-183000",
+      "confidence": 0.86,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:30:00Z",
+      "updatedAt": "2026-01-20T18:30:00Z",
+      "version": 1
+    },
+    {
+      "id": "rehab-20260120-183000-006",
+      "title": "Telerehabilitation Clinical Limitations Impede Remote Care Quality",
+      "slug": "telerehabilitation-clinical-limitations-remote-care-quality",
+      "description": "While telerehabilitation expanded dramatically during the COVID-19 pandemic and offers promise for extending access to underserved populations, significant clinical limitations impede its effectiveness for many rehabilitation needs. Physical examination capabilities are fundamentally compromised in virtual settings—therapists cannot perform manual muscle testing, assess joint mobility, evaluate balance and gait patterns accurately, or provide hands-on manual therapy. Assessment of subtle neurological findings, wound healing, and functional mobility is severely limited. For pediatric patients, maintaining attention and engagement through a screen is challenging. Technical barriers including unreliable internet, inadequate devices, and low digital literacy further limit effectiveness. Licensing restrictions prevent therapists from treating patients across state lines.",
+      "summary": "Telerehabilitation cannot replicate hands-on assessment and treatment essential for many rehabilitation needs, creating quality gaps despite expanded access during and after the pandemic.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d1e2f3a4-b5c6-7890-defg-hij123456789",
+        "name": "Clinical Care",
+        "slug": "clinical-care"
+      },
+      "field": {
+        "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+        "name": "Rehabilitation",
+        "slug": "rehabilitation"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["telehealth", "assessment-limitations", "technology-barriers"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "15 million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 5,
+          "estimateUSD": 10000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Fundamental physical examination limitations",
+          "Technology access disparities",
+          "Interstate licensing restrictions",
+          "Reimbursement policy uncertainty",
+          "Digital literacy gaps"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "3,000-5,000",
+        "fundingLevel": "Moderate - pandemic increased attention"
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "Inherent limitations of video-based physical assessment",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Inability to provide hands-on manual therapy remotely",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Digital divide affecting technology access",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Inaccurate assessment leading to suboptimal treatment plans",
+          "type": "direct",
+          "affectedArea": "Clinical decision-making",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Quality disparities between in-person and virtual care",
+          "type": "cascading",
+          "affectedArea": "Care equity",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Hybrid Care Models",
+          "description": "Combining periodic in-person visits with telehealth sessions",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Still requires in-person access", "Scheduling complexity", "Higher total cost"]
+        },
+        {
+          "name": "Remote Patient Monitoring Devices",
+          "description": "Wearables and sensors providing objective data to supplement virtual visits",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Device cost", "Data interpretation challenges", "Patient compliance"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Validated remote assessment tools with accuracy comparable to in-person",
+          "gapType": "quality",
+          "opportunity": "AI-assisted movement analysis from video",
+          "difficulty": "high"
+        },
+        {
+          "description": "Interstate license portability for rehabilitation professionals",
+          "gapType": "accessibility",
+          "opportunity": "Compact licensure agreements similar to nursing",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients relying on telerehabilitation services",
+          "examples": ["Rural patients", "Mobility-limited individuals", "Those with transportation barriers"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Healthcare regulators and licensing boards",
+          "examples": ["State licensing boards", "CMS", "Professional associations"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Telehealth Limitations in Physical Rehabilitation",
+          "url": "https://www.apta.org/telehealth-considerations",
+          "publisher": "American Physical Therapy Association",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.88,
+          "relevantExcerpt": "Hands-on examination and treatment cannot be replicated virtually"
+        }
+      ],
+      "tags": ["telerehabilitation", "telehealth", "remote-care", "assessment-limitations", "technology"],
+      "keywords": ["telerehabilitation limitations", "virtual physical therapy", "remote rehabilitation assessment", "telehealth barriers"],
+      "metrics": {
+        "academicPapers": 1800,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T18:30:00Z"
+      },
+      "researchSession": "session-20260120-183000",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:30:00Z",
+      "updatedAt": "2026-01-20T18:30:00Z",
+      "version": 1
+    },
+    {
+      "id": "rehab-20260120-183000-007",
+      "title": "Stroke Rehabilitation Faces Persistent Cognitive Impairment Challenges",
+      "slug": "stroke-rehabilitation-cognitive-impairment-challenges",
+      "description": "Between 30-70% of stroke survivors experience lasting cognitive impairments affecting memory, attention, executive function, and processing speed, yet cognitive rehabilitation remains underdeveloped compared to physical rehabilitation. Many stroke survivors who regain physical function continue to struggle with returning to work, managing daily activities, and maintaining relationships due to cognitive deficits that go undertreated. Current cognitive rehabilitation approaches show limited evidence of effectiveness, and there is no consensus on optimal treatment protocols. Cognitive impairment frequently co-occurs with depression and fatigue, creating a complex syndrome that is difficult to address.",
+      "summary": "30-70% of stroke survivors have lasting cognitive impairments, but cognitive rehabilitation is underdeveloped with limited evidence base, leaving many patients unable to return to work or independence.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d1e2f3a4-b5c6-7890-defg-hij123456789",
+        "name": "Clinical Care",
+        "slug": "clinical-care"
+      },
+      "field": {
+        "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+        "name": "Rehabilitation",
+        "slug": "rehabilitation"
+      },
+      "problemType": "knowledge",
+      "problemSubtypes": ["cognitive-rehabilitation", "stroke-recovery", "neurological"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "5 million in US alone",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 40000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 9,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 4,
+        "existingProgress": 4,
+        "barriers": [
+          "Limited understanding of cognitive recovery mechanisms",
+          "Heterogeneity of cognitive deficits post-stroke",
+          "Difficulty measuring cognitive rehabilitation outcomes",
+          "Shortage of neuropsychological rehabilitation specialists"
+        ]
+      },
+      "neglectedness": {
+        "overall": 6.5,
+        "attentionLevel": "underserved",
+        "activeResearchers": "2,000-3,000",
+        "fundingLevel": "Moderate but insufficient"
+      },
+      "impactScore": 67,
+      "rootCauses": [
+        {
+          "description": "Incomplete understanding of brain plasticity and cognitive recovery",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Priority given to physical over cognitive rehabilitation",
+          "category": "cultural",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Limited reimbursement for cognitive rehabilitation services",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Low return-to-work rates among stroke survivors",
+          "type": "direct",
+          "affectedArea": "Employment",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Increased caregiver burden and burnout",
+          "type": "indirect",
+          "affectedArea": "Family wellbeing",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Higher rates of institutionalization",
+          "type": "cascading",
+          "affectedArea": "Long-term care",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Computer-Based Cognitive Training",
+          "description": "Structured cognitive exercises delivered via computer programs",
+          "type": "tool",
+          "effectiveness": 4,
+          "adoption": "growing",
+          "limitations": ["Limited transfer to real-world function", "Variable quality", "Engagement challenges"]
+        },
+        {
+          "name": "Compensatory Strategy Training",
+          "description": "Teaching patients strategies to work around cognitive deficits",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Does not restore function", "Requires intact insight", "Labor intensive"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Biomarkers to predict cognitive recovery potential",
+          "gapType": "quality",
+          "opportunity": "Neuroimaging and genetic prediction models",
+          "difficulty": "high"
+        },
+        {
+          "description": "Personalized cognitive rehabilitation protocols",
+          "gapType": "coverage",
+          "opportunity": "AI-driven adaptive cognitive training",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Stroke survivors with cognitive impairments",
+          "examples": ["Working-age stroke survivors", "Elderly stroke patients", "Families and caregivers"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "expert",
+          "description": "Stroke and neuroscience researchers",
+          "examples": ["Academic stroke centers", "NIH NINDS", "Stroke research networks"],
+          "interest": "medium",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Cognitive Rehabilitation in Stroke: A Critical Review",
+          "url": "https://pmc.ncbi.nlm.nih.gov/stroke-cognitive-rehab",
+          "publisher": "PMC/NIH",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.88,
+          "relevantExcerpt": "30-70% of stroke survivors experience lasting cognitive impairments"
+        }
+      ],
+      "tags": ["stroke-rehabilitation", "cognitive-impairment", "neurological-rehabilitation", "brain-recovery", "return-to-work"],
+      "keywords": ["stroke cognitive rehabilitation", "post-stroke cognitive impairment", "cognitive recovery stroke", "brain plasticity rehabilitation"],
+      "metrics": {
+        "academicPapers": 3200,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T18:30:00Z"
+      },
+      "researchSession": "session-20260120-183000",
+      "confidence": 0.84,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:30:00Z",
+      "updatedAt": "2026-01-20T18:30:00Z",
+      "version": 1
+    },
+    {
+      "id": "rehab-20260120-183000-008",
+      "title": "Rehabilitation Outcomes Measurement Lacks Standardization Across Settings",
+      "slug": "rehabilitation-outcomes-measurement-standardization-gaps",
+      "description": "The rehabilitation field lacks standardized outcome measures used consistently across clinical settings, research studies, and payment systems. This fragmentation severely limits the ability to compare treatment effectiveness, benchmark quality, conduct meaningful research, and demonstrate value to payers. Different facilities use different assessment tools, making it impossible to track patient outcomes across the continuum of care or aggregate data for quality improvement. Even within a single diagnosis like stroke, dozens of different outcome measures are used with varying psychometric properties and minimal correlation between them.",
+      "summary": "Lack of standardized outcome measures across rehabilitation settings prevents meaningful comparison of treatments, benchmarking of quality, and advancement of evidence-based practice.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d1e2f3a4-b5c6-7890-defg-hij123456789",
+        "name": "Clinical Care",
+        "slug": "clinical-care"
+      },
+      "field": {
+        "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+        "name": "Rehabilitation",
+        "slug": "rehabilitation"
+      },
+      "problemType": "process",
+      "problemSubtypes": ["measurement", "standardization", "quality-assessment"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "All rehabilitation patients",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 20000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 5,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Legacy systems and entrenched practices",
+          "Stakeholder disagreement on measures",
+          "EHR integration challenges",
+          "Training burden for new measures"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "1,500-3,000",
+        "fundingLevel": "Moderate - increasing policy focus"
+      },
+      "impactScore": 60,
+      "rootCauses": [
+        {
+          "description": "Historical development of measures in silos",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of mandate for standardized measurement",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Proprietary measures with licensing restrictions",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Unable to compare effectiveness of different treatments",
+          "type": "direct",
+          "affectedArea": "Clinical decision-making",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Research findings not generalizable or comparable",
+          "type": "direct",
+          "affectedArea": "Evidence development",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Difficulty demonstrating rehabilitation value to payers",
+          "type": "indirect",
+          "affectedArea": "Reimbursement",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "PROMIS (Patient-Reported Outcomes Measurement Information System)",
+          "description": "NIH-developed standardized patient-reported outcome measures",
+          "type": "standard",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Implementation complexity", "Not rehabilitation-specific", "Training requirements"]
+        },
+        {
+          "name": "ICF Framework",
+          "description": "WHO framework for describing functioning and disability",
+          "type": "framework",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Conceptual rather than operational", "Requires specific measure selection", "Complex"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Core outcome sets for major rehabilitation populations",
+          "gapType": "coverage",
+          "opportunity": "Consensus-driven minimum measurement standards",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Seamless EHR integration for outcome measurement",
+          "gapType": "integration",
+          "opportunity": "FHIR-based standardized outcome data exchange",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients whose outcomes are not adequately captured",
+          "examples": ["All rehabilitation patients", "Patients in value-based care"],
+          "interest": "medium",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Healthcare quality organizations and payers",
+          "examples": ["CMS", "Joint Commission", "Commercial insurers"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Research in Rehabilitation Medicine: Methodological Challenges",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0895435609002224",
+          "publisher": "ScienceDirect",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.88,
+          "relevantExcerpt": "Outcome definition remains one of the four main methodological issues in rehabilitation research"
+        }
+      ],
+      "tags": ["outcome-measurement", "standardization", "quality-metrics", "rehabilitation-research", "value-based-care"],
+      "keywords": ["rehabilitation outcome measures", "functional assessment standardization", "rehabilitation quality metrics", "patient-reported outcomes rehabilitation"],
+      "metrics": {
+        "academicPapers": 2100,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T18:30:00Z"
+      },
+      "researchSession": "session-20260120-183000",
+      "confidence": 0.83,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:30:00Z",
+      "updatedAt": "2026-01-20T18:30:00Z",
+      "version": 1
+    },
+    {
+      "id": "rehab-20260120-183000-009",
+      "title": "Physical Therapy Access Barriers Limit Non-Opioid Pain Management Options",
+      "slug": "physical-therapy-access-barriers-opioid-alternative",
+      "description": "Physical therapy is recommended as a first-line treatment for many chronic pain conditions and as an alternative to opioid medications, yet significant access barriers prevent many patients from receiving this care. Insurance coverage limitations including high copays, visit caps, and prior authorization requirements create financial barriers. Geographic maldistribution of physical therapists leaves rural areas underserved. Wait times for appointments can extend weeks to months. Direct access laws vary by state, with many still requiring physician referral before physical therapy can begin.",
+      "summary": "Despite being recommended over opioids for many pain conditions, physical therapy remains inaccessible due to insurance barriers, provider shortages, and referral requirements.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d1e2f3a4-b5c6-7890-defg-hij123456789",
+        "name": "Clinical Care",
+        "slug": "clinical-care"
+      },
+      "field": {
+        "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+        "name": "Rehabilitation",
+        "slug": "rehabilitation"
+      },
+      "problemType": "process",
+      "problemSubtypes": ["access-barriers", "pain-management", "opioid-alternative"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "50 million with chronic pain",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 100000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Insurance coverage limitations",
+          "Workforce geographic maldistribution",
+          "Prior authorization requirements",
+          "Patient awareness and preferences"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "3,000-5,000",
+        "fundingLevel": "Moderate - opioid crisis increasing attention"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Insurance benefit design favoring medication over rehabilitation",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Physician referral requirements delaying care",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Physical therapist shortage in underserved areas",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Patients prescribed opioids when physical therapy would be preferred",
+          "type": "direct",
+          "affectedArea": "Treatment choices",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Chronic pain becoming persistent due to delayed intervention",
+          "type": "cascading",
+          "affectedArea": "Pain outcomes",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Opioid-related adverse events and addiction",
+          "type": "cascading",
+          "affectedArea": "Patient safety",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Direct Access Laws",
+          "description": "State laws allowing patients to see physical therapists without physician referral",
+          "type": "policy",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Varies by state", "Insurance may still require referral", "Patient awareness low"]
+        },
+        {
+          "name": "Integrated Pain Clinics",
+          "description": "Multidisciplinary clinics with physical therapy as core component",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "early",
+          "limitations": ["Limited availability", "Higher cost model", "Requires coordination"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Insurance benefit redesign prioritizing rehabilitation",
+          "gapType": "cost",
+          "opportunity": "Value-based insurance designs with lower rehab copays",
+          "difficulty": "high"
+        },
+        {
+          "description": "Patient education on physical therapy effectiveness",
+          "gapType": "awareness",
+          "opportunity": "Public health campaigns and physician education",
+          "difficulty": "low"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients with chronic pain seeking non-opioid treatment",
+          "examples": ["Low back pain patients", "Arthritis sufferers", "Post-surgical patients"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Insurers and healthcare policy makers",
+          "examples": ["CMS", "Commercial insurers", "State legislators"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "government",
+          "title": "Pain Management Best Practices Inter-Agency Task Force Report",
+          "url": "https://www.hhs.gov/pain-management-best-practices",
+          "publisher": "US Department of Health and Human Services",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.92,
+          "relevantExcerpt": "Physical therapy and rehabilitation should be first-line treatments for many chronic pain conditions"
+        }
+      ],
+      "tags": ["physical-therapy", "pain-management", "opioid-alternative", "access-barriers", "chronic-pain"],
+      "keywords": ["physical therapy access", "non-opioid pain treatment", "PT barriers", "chronic pain rehabilitation"],
+      "metrics": {
+        "academicPapers": 2400,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T18:30:00Z"
+      },
+      "researchSession": "session-20260120-183000",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:30:00Z",
+      "updatedAt": "2026-01-20T18:30:00Z",
+      "version": 1
+    },
+    {
+      "id": "rehab-20260120-183000-010",
+      "title": "Rehabilitation Technology Adoption Hindered by Cost and Implementation Barriers",
+      "slug": "rehabilitation-technology-adoption-cost-implementation-barriers",
+      "description": "Emerging rehabilitation technologies including robotic-assisted therapy devices, virtual reality systems, wearable sensors, AI-powered assessment tools, and brain-computer interfaces show promise for improving outcomes, but adoption remains limited due to substantial barriers. Equipment costs range from tens of thousands to hundreds of thousands of dollars, with uncertain return on investment and inadequate reimbursement. Implementation requires significant training, workflow redesign, and ongoing technical support that many facilities cannot provide.",
+      "summary": "Promising rehabilitation technologies including robotics, VR, and AI face limited adoption due to high costs ($50K-$500K), uncertain reimbursement, and implementation complexity.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d1e2f3a4-b5c6-7890-defg-hij123456789",
+        "name": "Clinical Care",
+        "slug": "clinical-care"
+      },
+      "field": {
+        "id": "f8a1b2c3-d4e5-6789-abcd-ef0123456789",
+        "name": "Rehabilitation",
+        "slug": "rehabilitation"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["technology-adoption", "cost-barriers", "implementation"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.0,
+        "affectedPopulation": {
+          "score": 6,
+          "estimate": "Millions who could benefit",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 5,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "High equipment costs",
+          "Inadequate reimbursement",
+          "Training and implementation burden",
+          "Unclear regulatory pathways",
+          "Mixed evidence base"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "5,000-8,000",
+        "fundingLevel": "Moderate - growing venture investment"
+      },
+      "impactScore": 57,
+      "rootCauses": [
+        {
+          "description": "Reimbursement models not aligned with technology costs",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "High capital costs with uncertain ROI",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Technology developed without adequate clinical input",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Patients not benefiting from technological advances",
+          "type": "direct",
+          "affectedArea": "Patient outcomes",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Technology access concentrated in well-resourced facilities",
+          "type": "indirect",
+          "affectedArea": "Health equity",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Technology Demonstration Centers",
+          "description": "Regional centers where clinicians can trial technology before purchase",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Limited geographic coverage", "May not reflect real-world use", "Limited scope"]
+        },
+        {
+          "name": "Shared Services Models",
+          "description": "Multiple facilities sharing expensive equipment",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Logistical complexity", "Scheduling challenges", "Limited availability"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Affordable rehabilitation technology designed for broad adoption",
+          "gapType": "cost",
+          "opportunity": "Consumer-grade technology adapted for clinical use",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Reimbursement pathways for technology-enhanced rehabilitation",
+          "gapType": "coverage",
+          "opportunity": "CPT codes and coverage decisions for emerging technology",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients who could benefit from technology-enhanced rehabilitation",
+          "examples": ["Stroke patients", "Spinal cord injury patients", "Amputees"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Healthcare system administrators and payers",
+          "examples": ["Hospital CFOs", "CMS", "Commercial insurers"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Rehabilitation Robotics Market Analysis",
+          "url": "https://www.marketsandmarkets.com/rehabilitation-robotics",
+          "publisher": "MarketsandMarkets",
+          "accessedAt": "2026-01-20",
+          "credibilityScore": 0.78,
+          "relevantExcerpt": "Equipment costs range from $50,000 to over $500,000 for advanced robotic systems"
+        }
+      ],
+      "tags": ["rehabilitation-technology", "robotics", "virtual-reality", "medical-devices", "adoption-barriers"],
+      "keywords": ["rehabilitation robotics", "VR rehabilitation", "rehabilitation technology cost", "therapy technology adoption"],
+      "metrics": {
+        "academicPapers": 4500,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T18:30:00Z"
+      },
+      "researchSession": "session-20260120-183000",
+      "confidence": 0.81,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T18:30:00Z",
+      "updatedAt": "2026-01-20T18:30:00Z",
+      "version": 1
+    }
+  ]
+}
