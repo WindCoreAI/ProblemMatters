@@ -1,15 +1,15 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-20T14:30:52Z",
+  "lastUpdated": "2026-01-20T15:30:00Z",
   "statistics": {
-    "totalProblems": 10,
+    "totalProblems": 20,
     "totalIndustries": 1,
     "totalDomains": 1,
     "totalFields": 8,
     "problemsByIndustry": {
-      "technology-software": 10
+      "technology-software": 20
     },
-    "lastResearchSession": "2026-01-20T14:30:52Z"
+    "lastResearchSession": "2026-01-20T15:30:00Z"
   },
   "industries": [
     {
@@ -18,11 +18,20 @@
       "slug": "technology-software",
       "path": "industries/technology-software",
       "domainCount": 1,
-      "problemCount": 10,
-      "lastUpdated": "2026-01-20T14:30:52Z"
+      "problemCount": 20,
+      "lastUpdated": "2026-01-20T15:30:00Z"
     }
   ],
   "recentSessions": [
+    {
+      "id": "session-20260120-153000",
+      "timestamp": "2026-01-20T15:30:00Z",
+      "targetIndustry": "technology-software",
+      "targetDomain": "software-engineering",
+      "targetField": "web-development",
+      "problemsDiscovered": 10,
+      "status": "completed"
+    },
     {
       "id": "session-20260120-143052",
       "timestamp": "2026-01-20T14:30:52Z",
