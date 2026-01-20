@@ -1,0 +1,2266 @@
+{
+  "field": {
+    "id": "f8d92a1c-4e7b-4a3d-9c8e-1f2a3b4c5d6e",
+    "name": "Music",
+    "slug": "music",
+    "description": "Music creation, production, distribution, and performance including recording, publishing, live music, artist management, and music technology."
+  },
+  "domain": {
+    "id": "d7c81b2a-3f6e-4b2c-8d7f-0e1a2b3c4d5e",
+    "name": "Content Creation",
+    "slug": "content-creation"
+  },
+  "industry": {
+    "id": "a5b60c3d-2e5f-4a1b-7c6e-9d8a7b6c5d4e",
+    "name": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "problems": [
+    {
+      "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "title": "AI Music Generation Copyright and Authorship Uncertainty",
+      "slug": "ai-music-generation-copyright-authorship-uncertainty",
+      "description": "The rapid advancement of AI music generation tools like Suno and Udio has created fundamental uncertainty around copyright ownership, licensing obligations, and authorship rights. AI models trained on copyrighted music without permission or compensation raise serious legal and ethical questions. The music industry argues that 'ingestion without permission is theft,' while AI companies claim fair use protections. This has resulted in multiple lawsuits, with Universal Music Group and Warner Music Group reaching settlements with Udio and Suno in late 2025. The lack of clear legal frameworks means artists cannot definitively know if their work was used to train AI systems, and the ownership of AI-generated music remains legally ambiguous. This uncertainty threatens both human creators who may be displaced and the integrity of music rights systems built over decades.",
+      "summary": "AI music generation tools trained on copyrighted music without permission have created legal uncertainty around ownership, licensing, and authorship, resulting in major industry lawsuits and settlements.",
+      "industry": {
+        "id": "a5b60c3d-2e5f-4a1b-7c6e-9d8a7b6c5d4e",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3f6e-4b2c-8d7f-0e1a2b3c4d5e",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1c-4e7b-4a3d-9c8e-1f2a3b4c5d6e",
+        "name": "Music",
+        "slug": "music"
+      },
+      "problemType": "regulatory",
+      "problemSubtypes": ["ethical", "legal", "technical"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "10+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 5000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 4,
+        "barriers": [
+          "Lack of international legal consensus",
+          "Rapidly evolving technology outpacing regulation",
+          "Difficulty tracking AI training data provenance",
+          "Conflicting stakeholder interests"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "1,000+",
+        "fundingLevel": "High - significant legal resources being deployed"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "AI companies trained models on copyrighted music without obtaining licenses or consent",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Copyright law written before AI technology existed lacks clear provisions for machine learning",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Difficulty technically proving which specific works were used in training datasets",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Global nature of internet makes jurisdictional enforcement complex",
+          "category": "regulatory",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Artists unable to protect or monetize their creative work from AI replication",
+          "type": "direct",
+          "affectedArea": "Artist income",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Chilling effect on new music investment due to uncertain IP protection",
+          "type": "indirect",
+          "affectedArea": "Industry investment",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Potential devaluation of human-created music as AI content floods market",
+          "type": "cascading",
+          "affectedArea": "Music ecosystem",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Expensive litigation costs diverting resources from music creation",
+          "type": "direct",
+          "affectedArea": "Industry operations",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Industry Litigation",
+          "description": "Major labels suing AI companies for copyright infringement, resulting in settlements with Udio and Suno",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Expensive", "Slow", "Only accessible to major labels", "Settlements don't establish legal precedent"]
+        },
+        {
+          "name": "AI Licensing Agreements",
+          "description": "Voluntary licensing deals between AI companies and rights holders like the UMG-Udio settlement",
+          "type": "framework",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["Fragmented approach", "Doesn't address past training", "Excludes independent artists"]
+        },
+        {
+          "name": "Content Identification Technology",
+          "description": "Tools to detect AI-generated music or identify if specific works were used in training",
+          "type": "tool",
+          "effectiveness": 3,
+          "adoption": "experimental",
+          "limitations": ["Technical limitations", "Not yet reliable", "Can be circumvented"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No standardized framework for compensating artists whose work trained AI models",
+          "gapType": "coverage",
+          "opportunity": "Collective licensing system for AI training similar to radio royalties",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Lack of technical standards for AI training data transparency",
+          "gapType": "integration",
+          "opportunity": "Mandatory disclosure requirements for AI training datasets",
+          "difficulty": "high"
+        },
+        {
+          "description": "Independent artists have no practical recourse against AI companies",
+          "gapType": "accessibility",
+          "opportunity": "Class action frameworks or collective representation for indie artists",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Musicians, songwriters, and composers whose work may have been used in AI training",
+          "examples": ["Independent artists", "Session musicians", "Songwriters"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Major record labels controlling significant music catalogs",
+          "examples": ["Universal Music Group", "Sony Music", "Warner Music Group"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "AI music generation companies",
+          "examples": ["Suno", "Udio", "Google", "OpenAI"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Legislators and regulators developing AI copyright policy",
+          "examples": ["US Copyright Office", "EU Commission", "UK IPO"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Music and AI: 2025's developments that will shape 2026's disputes",
+          "url": "https://completemusicupdate.com/music-and-ai-2025s-developments-that-will-shape-2026s-disputes/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Complete Music Update",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "AI remained a big talking point across the music industry in 2025, with big disputes continuing over the copyright obligations of AI companies"
+        },
+        {
+          "type": "news",
+          "title": "AI Music Deals, a Rock Comeback and Country's Coastal Invasion: Trends That Defined the Music Business in 2025",
+          "url": "https://www.hollywoodreporter.com/music/music-industry-news/music-industry-trends-of-2025-1236460904/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Hollywood Reporter",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Universal Music Group was the first to close a deal with Udio at the end of October 2025"
+        },
+        {
+          "type": "industry-report",
+          "title": "Music Industry 2025 Status Report: Streaming, Concerts, AI and More",
+          "url": "https://variety.com/2025/music/news/music-industry-streaming-live-concerts-ai-1236476625/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Variety",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "AI was the dominating trend in the music business in 2025, and nothing else comes particularly close"
+        }
+      ],
+      "tags": ["ai", "copyright", "music-generation", "intellectual-property", "licensing", "ethics"],
+      "keywords": ["AI music copyright", "AI training data", "music generation ethics", "Suno lawsuit", "Udio settlement"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-music-discovery",
+      "confidence": 0.92,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+      "title": "Streaming Royalty Inequity for Independent and Emerging Artists",
+      "slug": "streaming-royalty-inequity-independent-emerging-artists",
+      "description": "The current streaming royalty model creates severe economic disparities between major label artists and independent or emerging musicians. With per-stream payouts averaging $0.003-0.005, artists need millions of streams to earn meaningful income. The pro-rata payment model, where all subscription revenue is pooled and distributed based on total stream share, heavily favors already-popular artists and major labels. Independent artists often earn less than minimum wage equivalent for their music despite significant listener engagement. This structural inequity makes it nearly impossible for most musicians to sustain careers solely through streaming revenue, forcing them to rely on touring, merchandise, or outside employment. The problem is compounded by the power imbalance in negotiations, where streaming platforms can dictate terms to artists with limited leverage.",
+      "summary": "Streaming royalty structures pay artists $0.003-0.005 per stream, with pro-rata models favoring established artists, making it economically unsustainable for independent and emerging musicians.",
+      "industry": {
+        "id": "a5b60c3d-2e5f-4a1b-7c6e-9d8a7b6c5d4e",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3f6e-4b2c-8d7f-0e1a2b3c4d5e",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1c-4e7b-4a3d-9c8e-1f2a3b4c5d6e",
+        "name": "Music",
+        "slug": "music"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["economic", "resource", "social"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "8+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 10000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 4,
+        "existingProgress": 4,
+        "barriers": [
+          "Platform market power and lack of competition",
+          "Major label dominance in negotiations",
+          "User expectations of low subscription prices",
+          "Global complexity of rights and payments"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "moderate",
+        "activeResearchers": "500+",
+        "fundingLevel": "Moderate - some advocacy groups active"
+      },
+      "impactScore": 70,
+      "rootCauses": [
+        {
+          "description": "Pro-rata payment model distributes revenue based on total stream share, concentrating payments to top artists",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Major labels negotiate favorable deals while independent artists have no collective bargaining power",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Streaming platforms prioritize user acquisition over creator compensation",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of transparency in how royalties are calculated and distributed",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Most independent artists cannot sustain careers through streaming revenue alone",
+          "type": "direct",
+          "affectedArea": "Artist livelihoods",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Talented musicians abandon music careers due to financial unsustainability",
+          "type": "indirect",
+          "affectedArea": "Industry talent pool",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Homogenization of music as only commercially viable sounds get investment",
+          "type": "cascading",
+          "affectedArea": "Musical diversity",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Artists forced into exploitative touring schedules to compensate for low streaming income",
+          "type": "indirect",
+          "affectedArea": "Artist wellbeing",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "User-Centric Payment System (UCPS)",
+          "description": "Alternative model where subscriber fees go directly to artists they listen to, being piloted by some platforms",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "experimental",
+          "limitations": ["Limited platform adoption", "May not significantly change outcomes for niche artists", "Implementation complexity"]
+        },
+        {
+          "name": "Direct Fan Support Platforms",
+          "description": "Platforms like Bandcamp, Patreon allowing fans to directly support artists",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Requires existing fanbase", "Fragmented approach", "Lower discoverability"]
+        },
+        {
+          "name": "Streaming Royalty Advocacy Groups",
+          "description": "Organizations like Union of Musicians and Allied Workers pushing for fair pay",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "growing",
+          "limitations": ["Limited political leverage", "Slow progress", "Platform resistance"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No industry-standard minimum per-stream payment rate",
+          "gapType": "coverage",
+          "opportunity": "Regulatory minimum royalty rates similar to radio mechanical royalties",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Independent artists lack collective negotiating power with platforms",
+          "gapType": "accessibility",
+          "opportunity": "Indie artist unions or collective bargaining frameworks",
+          "difficulty": "high"
+        },
+        {
+          "description": "Lack of transparent, verifiable royalty accounting",
+          "gapType": "quality",
+          "opportunity": "Blockchain-based transparent royalty tracking systems",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Independent and emerging artists relying on streaming income",
+          "examples": ["DIY musicians", "Indie label artists", "Emerging songwriters"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Streaming platforms controlling payment models",
+          "examples": ["Spotify", "Apple Music", "Amazon Music", "YouTube Music"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Music distributors connecting artists to platforms",
+          "examples": ["DistroKid", "TuneCore", "CD Baby"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "funder",
+          "description": "Music fans paying subscription fees",
+          "examples": ["Premium subscribers", "Free-tier listeners"],
+          "interest": "low",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Music Industry 2025 Status Report",
+          "url": "https://variety.com/2025/music/news/music-industry-streaming-live-concerts-ai-1236476625/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Variety",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "The music industry faces slowing streaming growth as exceptional challenges that will require shifting the status quo to solve"
+        },
+        {
+          "type": "news",
+          "title": "Top Challenges for Music Professionals in 2025",
+          "url": "https://www.music-jobs.com/usa/article/news/top-challenges-for-music-professionals-in-2025-part-1-2",
+          "accessedAt": "2026-01-20",
+          "publisher": "Music Jobs USA",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Music professionals across the United States are facing unstable earnings and mounting challenges"
+        },
+        {
+          "type": "news",
+          "title": "Music's Biggest Problems",
+          "url": "https://www.wheremusicsgoing.com/p/musicsbiggestproblems",
+          "accessedAt": "2026-01-20",
+          "publisher": "Where Music's Going",
+          "credibilityScore": 0.75
+        }
+      ],
+      "tags": ["streaming", "royalties", "independent-artists", "spotify", "economic-inequality", "music-business"],
+      "keywords": ["streaming royalty rates", "artist compensation", "pro-rata model", "music streaming economics", "indie artist income"],
+      "metrics": {
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-music-discovery",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+      "title": "Artist Mental Health Crisis and Creative Burnout Epidemic",
+      "slug": "artist-mental-health-crisis-creative-burnout-epidemic",
+      "description": "Musicians experience depression at rates up to three times higher than the general population, with over 73% of independent music makers reporting symptoms of mental illness. The music industry faces a systemic mental health crisis driven by financial instability, grueling touring schedules, social media pressure, and a culture that normalizes anxiety, burnout, and addiction. Artists face constant pressure to create, promote, and maintain visibility online while managing irregular income and lack of job security. The industry has historically invested heavily in branding and marketing while neglecting artist wellbeing and emotional resilience. Organizations like Backline and Amber Health have emerged to address the crisis, with services being brought on major tours, but support remains fragmented and inaccessible to most artists. Calls for an industry-wide Code of Practice around mental health are growing, but implementation remains slow.",
+      "summary": "Musicians are 3x more likely to experience depression than the general population, with 73% of indie artists reporting mental illness symptoms due to financial instability, touring demands, and social media pressure.",
+      "industry": {
+        "id": "a5b60c3d-2e5f-4a1b-7c6e-9d8a7b6c5d4e",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3f6e-4b2c-8d7f-0e1a2b3c4d5e",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1c-4e7b-4a3d-9c8e-1f2a3b4c5d6e",
+        "name": "Music",
+        "slug": "music"
+      },
+      "problemType": "social",
+      "problemSubtypes": ["resource", "process", "ethical"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 9,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "5+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 2000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 10,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 6,
+        "technicalFeasibility": 8,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Stigma around mental health in industry culture",
+          "Fragmented support landscape",
+          "Cost of mental health services",
+          "Inconsistent access for touring professionals"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "200+",
+        "fundingLevel": "Growing but insufficient"
+      },
+      "impactScore": 76,
+      "rootCauses": [
+        {
+          "description": "Financial pressure and income instability causing chronic stress",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Industry culture that normalizes overwork, anxiety, and substance use",
+          "category": "cultural",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Social media pressure for constant engagement and visibility",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Touring demands creating physical exhaustion and isolation",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of investment in artist wellbeing compared to marketing",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "High rates of depression, anxiety, and substance abuse among musicians",
+          "type": "direct",
+          "affectedArea": "Artist health",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Artist suicides and premature deaths due to untreated mental health issues",
+          "type": "direct",
+          "affectedArea": "Loss of life",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Talented artists leaving the industry due to burnout",
+          "type": "indirect",
+          "affectedArea": "Industry talent",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Reduced creative output and quality when artists are struggling",
+          "type": "indirect",
+          "affectedArea": "Music quality",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Backline",
+          "description": "Organization providing case management, customized care plans, and support groups for music industry professionals",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Limited capacity", "US-focused", "Requires awareness of services"]
+        },
+        {
+          "name": "Amber Health",
+          "description": "Offers therapy, crisis support, on-tour care, and wellness education; used by major artists like Ed Sheeran",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "early",
+          "limitations": ["Expensive", "Primarily accessible to touring artists", "Limited global reach"]
+        },
+        {
+          "name": "Music Minds Matter (UK)",
+          "description": "UK-based mental health support service reporting 200% increase in those seeking support",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["UK-only", "Overwhelmed by demand"]
+        },
+        {
+          "name": "Industry Code of Practice",
+          "description": "Emerging framework for mental health standards in the music industry",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "experimental",
+          "limitations": ["Not yet widely adopted", "Voluntary compliance", "Enforcement challenges"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No standardized mental health support requirements in artist contracts",
+          "gapType": "coverage",
+          "opportunity": "Mandatory mental health provisions in recording and touring contracts",
+          "difficulty": "high"
+        },
+        {
+          "description": "Mental health support not integrated into artist development from start",
+          "gapType": "integration",
+          "opportunity": "Mental health professionals as standard part of artist management teams",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Affordable mental health care inaccessible to independent artists",
+          "gapType": "cost",
+          "opportunity": "Industry-funded mental health insurance or subsidized services",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Musicians, performers, and touring professionals experiencing mental health challenges",
+          "examples": ["Independent artists", "Session musicians", "Tour crew", "DJs"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Mental health organizations serving the music industry",
+          "examples": ["Backline", "Amber Health", "Music Minds Matter", "MusiCares"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Labels, managers, and industry executives who can implement wellbeing policies",
+          "examples": ["Record labels", "Artist managers", "Booking agents", "Venue operators"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "expert",
+          "description": "Mental health researchers studying music industry impacts",
+          "examples": ["University researchers", "Occupational psychologists"],
+          "interest": "high",
+          "influence": "low"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Exploring the Mental Health Challenges of Music Industry Professionals",
+          "url": "https://journals.sagepub.com/doi/10.1177/20592043251394824",
+          "accessedAt": "2026-01-20",
+          "publisher": "SAGE Journals",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "Recommendation for an Industry-Wide Code of Practice for mental health"
+        },
+        {
+          "type": "news",
+          "title": "The Music Industry Is Having a Mental Health Crisis",
+          "url": "https://online.berklee.edu/takenote/the-music-industry-is-having-a-mental-health-crisis/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Berklee Online",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Musicians are up to three times more likely to experience clinical depression than the general population"
+        },
+        {
+          "type": "news",
+          "title": "How the Music Industry Is Fighting the Mental-Health Crisis",
+          "url": "https://www.rollingstone.com/music/music-features/we-cant-have-all-our-artists-die-how-the-music-industry-is-fighting-the-mental-health-crisis-939171/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Rolling Stone",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "We Can't Have All Our Artists Die"
+        },
+        {
+          "type": "news",
+          "title": "The Music Industry's Growing Mental Health Crisis",
+          "url": "https://www.clashmusic.com/features/the-music-industrys-growing-mental-health-crisis/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Clash Magazine",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "More than 73% of independent music makers suffer from symptoms of mental illness"
+        }
+      ],
+      "tags": ["mental-health", "burnout", "artist-wellbeing", "depression", "anxiety", "touring", "industry-culture"],
+      "keywords": ["musician mental health", "artist burnout", "music industry depression", "touring mental health", "creative burnout"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-music-discovery",
+      "confidence": 0.94,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+      "title": "Live Music Ticket Affordability and Fan Accessibility Crisis",
+      "slug": "live-music-ticket-affordability-fan-accessibility-crisis",
+      "description": "Concert ticket prices have reached all-time highs, with significant increases since 2019 pricing out many fans from live music experiences. Dynamic pricing, service fees that can add 30-50% to ticket costs, and ticket scalping have made attending concerts increasingly unaffordable for average consumers. The Live Nation-Ticketmaster monopoly faces antitrust lawsuits from the FTC and Department of Justice over market control and pricing practices. Despite claims of a 'historic year for live music,' Live Nation reported an 11% drop in Q1 2025 earnings including a 14% dip in concert revenue and 4% decline in ticketing, suggesting price elasticity limits are being reached. This affordability crisis threatens the long-term sustainability of live music by alienating younger and lower-income fans who cannot develop concert-going habits.",
+      "summary": "Concert ticket prices have reached all-time highs with dynamic pricing and excessive service fees, while Live Nation-Ticketmaster face antitrust scrutiny for monopolistic practices that limit fan accessibility.",
+      "industry": {
+        "id": "a5b60c3d-2e5f-4a1b-7c6e-9d8a7b6c5d4e",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3f6e-4b2c-8d7f-0e1a2b3c4d5e",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1c-4e7b-4a3d-9c8e-1f2a3b4c5d6e",
+        "name": "Music",
+        "slug": "music"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["economic", "social", "regulatory"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "100+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 8000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 4,
+        "existingProgress": 4,
+        "barriers": [
+          "Live Nation-Ticketmaster market dominance",
+          "Complex web of venue exclusive deals",
+          "Artist reliance on touring revenue",
+          "Regulatory capture and slow enforcement"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "300+",
+        "fundingLevel": "High - active litigation and regulatory scrutiny"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Live Nation-Ticketmaster monopoly controlling venues, ticketing, and promotion",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Dynamic pricing algorithms maximizing extraction from high-demand events",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Artists increasingly reliant on touring revenue as streaming pays less",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Inadequate regulation of ticketing industry practices",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Bot-driven scalping inflating secondary market prices",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Lower and middle-income fans priced out of concert experiences",
+          "type": "direct",
+          "affectedArea": "Fan access",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Declining concert attendance as prices exceed affordability thresholds",
+          "type": "direct",
+          "affectedArea": "Industry revenue",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Younger fans unable to develop live music habits may reduce future demand",
+          "type": "cascading",
+          "affectedArea": "Industry sustainability",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Consumer trust erosion due to hidden fees and pricing manipulation",
+          "type": "indirect",
+          "affectedArea": "Industry reputation",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "FTC/DOJ Antitrust Actions",
+          "description": "Federal lawsuits and investigations into Live Nation-Ticketmaster monopoly practices",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Slow legal process", "May result in behavioral remedies rather than breakup", "Uncertainty of outcome"]
+        },
+        {
+          "name": "All-In Pricing Initiatives",
+          "description": "Some platforms and jurisdictions requiring upfront display of total ticket cost",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["Doesn't reduce prices", "Inconsistent implementation", "Doesn't address underlying causes"]
+        },
+        {
+          "name": "Artist-Controlled Ticketing",
+          "description": "Some artists using direct fan sales or limiting pricing to maintain accessibility",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Only works for artists with leverage", "Limited scale", "May not apply to major tours"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No effective antitrust remedy implemented to increase competition",
+          "gapType": "coverage",
+          "opportunity": "Structural separation of Live Nation and Ticketmaster or venue divestiture",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Lack of standardized service fee caps or transparency requirements",
+          "gapType": "quality",
+          "opportunity": "Federal legislation capping ticket service fees as percentage of face value",
+          "difficulty": "high"
+        },
+        {
+          "description": "Ineffective bot prevention allowing scalping to persist",
+          "gapType": "integration",
+          "opportunity": "Verified identity-based ticket sales with transfer restrictions",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Music fans seeking affordable access to live performances",
+          "examples": ["Concert-goers", "Festival attendees", "Young fans"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Live music industry controlling pricing and distribution",
+          "examples": ["Live Nation", "Ticketmaster", "AEG", "Major venues"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Regulators and legislators addressing competition concerns",
+          "examples": ["FTC", "DOJ Antitrust Division", "State attorneys general"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Artists who can influence ticketing practices for their shows",
+          "examples": ["Major touring artists", "Artist managers", "Booking agents"],
+          "interest": "medium",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Challenges for the Live Music Industry",
+          "url": "https://musically.com/2025/07/30/challenges-for-the-live-music-industry/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Music Ally",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Live Nation reported an 11% drop in Q1 earnings, including a 14% dip in concert revenue and a 4% decline in ticketing"
+        },
+        {
+          "type": "industry-report",
+          "title": "Music Industry 2025 Status Report",
+          "url": "https://variety.com/2025/music/news/music-industry-streaming-live-concerts-ai-1236476625/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Variety",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "The music industry faces all-time high concert ticket prices as exceptional challenges"
+        },
+        {
+          "type": "news",
+          "title": "Canadian Music Industry Leaders on Issues That Will Define 2025",
+          "url": "https://ca.billboard.com/fyi/canadian-music-issues-2026",
+          "accessedAt": "2026-01-20",
+          "publisher": "Billboard Canada",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Live Nation facing ongoing antitrust lawsuits and public scrutiny over their monopoly"
+        }
+      ],
+      "tags": ["live-music", "ticket-prices", "ticketmaster", "live-nation", "antitrust", "affordability", "monopoly"],
+      "keywords": ["concert ticket prices", "ticketing monopoly", "live music affordability", "dynamic pricing", "ticketmaster fees"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-music-discovery",
+      "confidence": 0.9,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+      "title": "Music Discovery Algorithm Bias Against Emerging Artists",
+      "slug": "music-discovery-algorithm-bias-emerging-artists",
+      "description": "Major streaming platforms' recommendation algorithms systematically favor established artists and familiar sounds over emerging talent, creating a discovery barrier for new musicians. Platforms like Spotify have come under fire for algorithmic bias that optimizes for engagement metrics rather than musical exploration, resulting in a 'rich get richer' dynamic. As one industry voice notes, 'Authentic discovery occurs when tastemakers take risks and surface music before the data confirms it is safe.' The shift away from human curation toward algorithmic recommendations has reduced serendipitous discovery. This creates a challenging environment for breaking new artists who cannot gain algorithmic visibility without existing popularity, trapping them in an exposure paradox. The problem affects both artists struggling to build audiences and fans missing out on music they would enjoy.",
+      "summary": "Streaming platform algorithms favor established artists and familiar content over emerging talent, creating discovery barriers that trap new artists in an exposure paradox while limiting musical diversity.",
+      "industry": {
+        "id": "a5b60c3d-2e5f-4a1b-7c6e-9d8a7b6c5d4e",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3f6e-4b2c-8d7f-0e1a2b3c4d5e",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1c-4e7b-4a3d-9c8e-1f2a3b4c5d6e",
+        "name": "Music",
+        "slug": "music"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["market", "process"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "5+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 3000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 6,
+        "existingProgress": 5,
+        "barriers": [
+          "Platform incentives aligned with engagement over discovery",
+          "Technical complexity of balancing familiarity and novelty",
+          "Major label influence on playlist placement",
+          "User preference for familiar content"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "150+",
+        "fundingLevel": "Moderate - some industry and academic attention"
+      },
+      "impactScore": 65,
+      "rootCauses": [
+        {
+          "description": "Algorithms optimized for engagement metrics favor familiar content with proven appeal",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Platform business models incentivize user retention over musical exploration",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Reduction in human editorial curation in favor of automated recommendations",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Major label catalog dominance and playlist payola practices",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Emerging artists cannot break through without existing popularity or marketing budgets",
+          "type": "direct",
+          "affectedArea": "Artist careers",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Homogenization of popular music as algorithms reward familiar sounds",
+          "type": "cascading",
+          "affectedArea": "Musical diversity",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Listeners missing music they would enjoy due to filter bubbles",
+          "type": "indirect",
+          "affectedArea": "Fan experience",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Independent labels and distributors struggling to compete for visibility",
+          "type": "indirect",
+          "affectedArea": "Industry structure",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Platform Discovery Features",
+          "description": "Spotify's Fresh Finds, Apple Music's New Music Daily attempting to surface emerging artists",
+          "type": "product",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Limited visibility vs main recommendations", "Still influenced by label relationships", "Algorithmic component remains"]
+        },
+        {
+          "name": "Human-Curated Playlists",
+          "description": "Return to editorial curation by human tastemakers for some playlists",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Doesn't scale", "Limited reach", "Subjectivity concerns"]
+        },
+        {
+          "name": "Independent Discovery Platforms",
+          "description": "Platforms like Bandcamp, SoundCloud, and specialty blogs focusing on new music",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "stable",
+          "limitations": ["Smaller user bases", "Fragmented audience", "Less mainstream penetration"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No requirement for algorithmic transparency or bias auditing",
+          "gapType": "quality",
+          "opportunity": "Third-party algorithm auditing and transparency requirements",
+          "difficulty": "high"
+        },
+        {
+          "description": "Limited interoperability between discovery platforms",
+          "gapType": "integration",
+          "opportunity": "Cross-platform discovery tools that aggregate emerging artist exposure",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Users lack control over algorithm novelty vs familiarity balance",
+          "gapType": "accessibility",
+          "opportunity": "User-adjustable discovery settings controlling recommendation diversity",
+          "difficulty": "low"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Emerging and independent artists seeking audience growth",
+          "examples": ["DIY musicians", "Indie label artists", "Genre-specific creators"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Streaming platforms controlling recommendation algorithms",
+          "examples": ["Spotify", "Apple Music", "YouTube Music", "Amazon Music"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Music fans seeking diverse discovery experiences",
+          "examples": ["Music enthusiasts", "Playlist curators", "Genre explorers"],
+          "interest": "medium",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Music curators and tastemakers bridging algorithm gaps",
+          "examples": ["Music bloggers", "Radio programmers", "Playlist editors"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "What will the music industry look like in 2026?",
+          "url": "https://identitymusic.com/blog/what-will-the-music-industry-look-like-in-2026",
+          "accessedAt": "2026-01-20",
+          "publisher": "Identity Music",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Major DSPs like Spotify have come under fire for their bias towards established artists"
+        },
+        {
+          "type": "news",
+          "title": "The Future of Music in 2026: Dynamic, Decentralized, Driven by Fans",
+          "url": "https://www.rollingstone.com/culture-council/articles/future-music-2026-dynamic-decentralized-driven-fans-1235493394/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Rolling Stone Culture Council",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Human curation will play a critical role in discovery as algorithms continue to optimize for familiarity"
+        },
+        {
+          "type": "news",
+          "title": "8 Predictions For 2026 From Around the Music Industry",
+          "url": "https://www.hypebot.com/hypebot/2025/12/8-predictions-for-2026-from-around-the-music-industry.html",
+          "accessedAt": "2026-01-20",
+          "publisher": "Hypebot",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Authentic discovery occurs when tastemakers take risks and surface music before the data confirms it's 'safe'"
+        }
+      ],
+      "tags": ["algorithms", "discovery", "streaming", "emerging-artists", "curation", "playlists", "recommendation-systems"],
+      "keywords": ["music discovery algorithm", "streaming recommendation bias", "emerging artist visibility", "playlist placement", "algorithmic curation"],
+      "metrics": {
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-music-discovery",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c",
+      "title": "Rising Touring Costs Threatening Mid-Tier Artist Viability",
+      "slug": "rising-touring-costs-threatening-mid-tier-artist-viability",
+      "description": "The economics of touring have become increasingly unsustainable, particularly for mid-tier artists. Production costs, transportation, accommodation, crew wages, and visa expenses have escalated dramatically, with US visa costs nearly quadrupling in recent years. The pandemic's aftershocks continue to reverberate through higher insurance costs and supply chain disruptions. While touring was traditionally how artists compensated for low streaming revenue, rising costs are squeezing margins to the point where many tours are financially unviable. International touring has become especially challenging due to visa restrictions and cross-border logistics. This threatens the ability of developing artists to build audiences through live performance, which remains the most effective way to convert casual listeners into dedicated fans.",
+      "summary": "Touring costs have escalated dramatically with visa expenses quadrupling and production costs rising, making tours financially unviable for mid-tier artists who relied on live performance income.",
+      "industry": {
+        "id": "a5b60c3d-2e5f-4a1b-7c6e-9d8a7b6c5d4e",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3f6e-4b2c-8d7f-0e1a2b3c4d5e",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1c-4e7b-4a3d-9c8e-1f2a3b4c5d6e",
+        "name": "Music",
+        "slug": "music"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["economic", "regulatory", "process"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "500,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 4000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 4,
+        "existingProgress": 4,
+        "barriers": [
+          "Global inflation and supply chain issues",
+          "Immigration policy complexity",
+          "Venue consolidation reducing competition",
+          "Insurance market conditions"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "100+",
+        "fundingLevel": "Low - limited industry investment in solutions"
+      },
+      "impactScore": 63,
+      "rootCauses": [
+        {
+          "description": "Post-pandemic inflation affecting all touring inputs from fuel to hotels",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Increasingly restrictive visa regimes and rising government fees",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Venue consolidation reducing bargaining power for artists",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Rising insurance costs and stricter requirements post-pandemic",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Crew and production labor shortages increasing wages",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Mid-tier artists canceling tours or losing money on the road",
+          "type": "direct",
+          "affectedArea": "Artist income",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Reduced international touring limiting global fan development",
+          "type": "indirect",
+          "affectedArea": "Artist growth",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Fewer live music options in non-major markets as artists concentrate on profitable routes",
+          "type": "cascading",
+          "affectedArea": "Fan access",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Developing artists unable to tour leading to career stagnation",
+          "type": "indirect",
+          "affectedArea": "Industry pipeline",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Tour Support Advances",
+          "description": "Labels providing financial support for touring artists to offset losses",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Recoupable costs", "Only for signed artists", "Increasing debt burden"]
+        },
+        {
+          "name": "Regional Touring Strategies",
+          "description": "Focusing on regional tours to reduce transportation and logistics costs",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Limits audience reach", "May reduce overall revenue", "Market saturation risk"]
+        },
+        {
+          "name": "Festival-Focused Strategy",
+          "description": "Prioritizing festival appearances with guaranteed fees over self-promoted tours",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Seasonal dependency", "Limited slots available", "Doesn't build dedicated audience"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No industry-wide cost-sharing infrastructure for touring logistics",
+          "gapType": "coverage",
+          "opportunity": "Cooperative touring networks sharing transportation, production, and crew",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Visa processes not adapted for touring musician needs",
+          "gapType": "integration",
+          "opportunity": "Artist visa programs with streamlined multi-country access",
+          "difficulty": "high"
+        },
+        {
+          "description": "Limited access to affordable touring finance for developing artists",
+          "gapType": "cost",
+          "opportunity": "Touring-specific funding instruments with revenue-sharing rather than debt",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Mid-tier and developing touring artists",
+          "examples": ["Club-level headliners", "Festival circuit artists", "International touring acts"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Tour managers and booking agents arranging logistics",
+          "examples": ["Booking agencies", "Tour managers", "Production companies"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Immigration authorities controlling visa access",
+          "examples": ["USCIS", "UK Home Office", "Schengen area authorities"],
+          "interest": "low",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Tour crew and production workers affected by tour cancellations",
+          "examples": ["Sound engineers", "Lighting techs", "Tour bus drivers"],
+          "interest": "high",
+          "influence": "low"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Challenges for the Live Music Industry",
+          "url": "https://musically.com/2025/07/30/challenges-for-the-live-music-industry/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Music Ally",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Increasingly restrictive visa regulations in the US where expenses have almost quadrupled, and mounting touring costs"
+        },
+        {
+          "type": "news",
+          "title": "Top Challenges for Music Professionals in 2025",
+          "url": "https://www.music-jobs.com/usa/article/news/top-challenges-for-music-professionals-in-2025-part-1-2",
+          "accessedAt": "2026-01-20",
+          "publisher": "Music Jobs USA",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Music professionals facing unstable earnings as pandemic aftershocks continue to reverberate"
+        }
+      ],
+      "tags": ["touring", "live-music", "costs", "visas", "logistics", "mid-tier-artists", "economics"],
+      "keywords": ["touring costs", "artist visa expenses", "live music economics", "tour profitability", "international touring"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-music-discovery",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+      "title": "Artificial Streaming and Bot Farm Manipulation",
+      "slug": "artificial-streaming-bot-farm-manipulation",
+      "description": "Bot farms generating artificial streams pose a persistent threat to legitimate artists and the integrity of streaming platform economics. Fraudulent streaming operations inflate play counts for certain tracks, distorting royalty distributions and chart positions. This diverts revenue from genuine artists to fraudulent operations and undermines trust in streaming metrics as indicators of actual popularity. While major DSPs have invested heavily in detection and prevention technology throughout 2025, the battle continues as fraud operations evolve to evade detection. The problem affects legitimate artists who lose revenue share, labels investing based on manipulated data, and platforms whose credibility depends on accurate metrics. Industry estimates suggest billions of fraudulent streams occur annually, representing significant misdirected royalties.",
+      "summary": "Bot farms generate billions of artificial streams annually, distorting royalty distributions and chart positions while diverting revenue from legitimate artists to fraudulent operations.",
+      "industry": {
+        "id": "a5b60c3d-2e5f-4a1b-7c6e-9d8a7b6c5d4e",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3f6e-4b2c-8d7f-0e1a2b3c4d5e",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1c-4e7b-4a3d-9c8e-1f2a3b4c5d6e",
+        "name": "Music",
+        "slug": "music"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["ethical", "market", "process"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "10+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 1500000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 5,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Evolving fraud techniques",
+          "Global operation across jurisdictions",
+          "Difficulty distinguishing sophisticated bots from real users",
+          "Economic incentives for fraud"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "200+",
+        "fundingLevel": "Moderate - platforms investing in detection"
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "Economic incentives for fraud with royalties tied to stream counts",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Difficulty verifying listener authenticity at scale",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Global nature of streaming makes jurisdiction enforcement difficult",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Artists and labels under pressure to show streaming success",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Legitimate artists receive smaller share of royalty pool",
+          "type": "direct",
+          "affectedArea": "Artist income",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Chart positions and metrics become unreliable indicators",
+          "type": "indirect",
+          "affectedArea": "Industry decision-making",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Labels and investors make decisions based on manipulated data",
+          "type": "indirect",
+          "affectedArea": "Industry investment",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Erosion of trust in streaming platform credibility",
+          "type": "cascading",
+          "affectedArea": "Platform reputation",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Platform Detection Systems",
+          "description": "AI-powered fraud detection systems deployed by major streaming platforms",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Ongoing arms race with fraudsters", "False positives affect legitimate users", "Reactive rather than preventive"]
+        },
+        {
+          "name": "Stream Auditing Services",
+          "description": "Third-party services verifying stream authenticity for labels and distributors",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Additional cost", "Limited access to platform data", "Post-hoc analysis"]
+        },
+        {
+          "name": "Payment Withholding",
+          "description": "Platforms withholding royalties from suspected fraudulent activity",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["May affect innocent parties", "Doesn't prevent initial fraud", "Appeals process challenging"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No industry-wide fraud prevention standards or information sharing",
+          "gapType": "integration",
+          "opportunity": "Cross-platform fraud intelligence sharing consortium",
+          "difficulty": "high"
+        },
+        {
+          "description": "Limited legal consequences for streaming fraud operators",
+          "gapType": "coverage",
+          "opportunity": "International enforcement cooperation and legal frameworks",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Platforms retain disputed royalties rather than redistributing to legitimate artists",
+          "gapType": "quality",
+          "opportunity": "Clear redistribution mechanisms for recovered fraudulent royalties",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Legitimate artists losing royalty share to fraud",
+          "examples": ["Independent artists", "Emerging musicians", "Mid-tier performers"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Streaming platforms responsible for detection and prevention",
+          "examples": ["Spotify", "Apple Music", "Amazon Music", "Deezer"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Distributors and aggregators handling content uploads",
+          "examples": ["DistroKid", "TuneCore", "CD Baby"],
+          "interest": "medium",
+          "influence": "medium"
+        },
+        {
+          "type": "affected",
+          "description": "Labels making decisions based on streaming metrics",
+          "examples": ["Major labels", "Independent labels", "A&R departments"],
+          "interest": "medium",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "What will the music industry look like in 2026?",
+          "url": "https://identitymusic.com/blog/what-will-the-music-industry-look-like-in-2026",
+          "accessedAt": "2026-01-20",
+          "publisher": "Identity Music",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Bot farms that generate artificial streams continue to pose a threat to legitimate artists, though most major DSPs have invested heavily in detection and prevention technology"
+        },
+        {
+          "type": "news",
+          "title": "8 Predictions For 2026 From Around the Music Industry",
+          "url": "https://www.hypebot.com/hypebot/2025/12/8-predictions-for-2026-from-around-the-music-industry.html",
+          "accessedAt": "2026-01-20",
+          "publisher": "Hypebot",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "In 2026, the battle between artificial streaming and detection/prevention will continue"
+        }
+      ],
+      "tags": ["streaming-fraud", "bot-farms", "artificial-streams", "royalties", "detection", "platform-integrity"],
+      "keywords": ["stream manipulation", "bot farms music", "fake streams", "streaming fraud detection", "royalty fraud"],
+      "metrics": {
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-music-discovery",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
+      "title": "Major Label Consolidation Threatening Independent Artist Choice",
+      "slug": "major-label-consolidation-threatening-independent-artist-choice",
+      "description": "The music industry faces growing consolidation as major labels acquire or partner with formerly independent distribution, publishing, and artist services companies. Universal Music Group's proposed acquisition of Downtown Music has dominated 2025 headlines, raising concerns about the choices available to independent artists and labels. With many 'independent' companies now controlled by or associated with majors, staying truly independent has become increasingly challenging. This consolidation reduces competition, limits artist bargaining power, and threatens the diversity of the music ecosystem. Independent artists face fewer truly independent options for distribution, publishing, and services, potentially forcing them into major label ecosystems regardless of their preferences.",
+      "summary": "Major label acquisitions of indie distributors and services companies are reducing choices for independent artists, with UMG's Downtown acquisition raising concerns about industry consolidation.",
+      "industry": {
+        "id": "a5b60c3d-2e5f-4a1b-7c6e-9d8a7b6c5d4e",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3f6e-4b2c-8d7f-0e1a2b3c4d5e",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1c-4e7b-4a3d-9c8e-1f2a3b4c5d6e",
+        "name": "Music",
+        "slug": "music"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["regulatory", "coordination", "economic"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "2+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 5000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 4,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 3,
+        "barriers": [
+          "Regulatory approval often granted for acquisitions",
+          "Major label financial resources for acquisitions",
+          "Network effects favoring large platforms",
+          "Artist dependency on established infrastructure"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "moderate",
+        "activeResearchers": "100+",
+        "fundingLevel": "Moderate - some advocacy and regulatory attention"
+      },
+      "impactScore": 60,
+      "rootCauses": [
+        {
+          "description": "Major labels seeking to control more of the value chain",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Independent companies selling due to financial pressures or exit opportunities",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Regulatory authorities approving acquisitions without adequate competition analysis",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Network effects making it difficult for new independent platforms to compete",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Fewer truly independent options for artist distribution and services",
+          "type": "direct",
+          "affectedArea": "Artist choice",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Reduced bargaining power for artists negotiating deals",
+          "type": "indirect",
+          "affectedArea": "Contract terms",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Homogenization of music as major label priorities dominate",
+          "type": "cascading",
+          "affectedArea": "Musical diversity",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Independent labels struggling to compete with major-owned alternatives",
+          "type": "indirect",
+          "affectedArea": "Industry structure",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Antitrust Scrutiny",
+          "description": "Regulatory review of major acquisitions like UMG-Downtown",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "growing",
+          "limitations": ["Often results in approval with conditions", "Slow process", "Difficulty proving harm"]
+        },
+        {
+          "name": "Artist-Owned Alternatives",
+          "description": "Artist cooperatives and artist-owned distribution platforms",
+          "type": "service",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["Limited scale", "Requires collective action", "Resource intensive"]
+        },
+        {
+          "name": "Independent Advocacy Organizations",
+          "description": "Groups like A2IM advocating for independent sector interests",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "stable",
+          "limitations": ["Limited political power vs major labels", "Reactive rather than preventive"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No framework requiring divestiture of conflicting interests in acquisitions",
+          "gapType": "coverage",
+          "opportunity": "Stricter antitrust standards for vertical integration in music",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Limited access to capital for independent companies to remain independent",
+          "gapType": "cost",
+          "opportunity": "Independent music investment funds providing alternatives to sale",
+          "difficulty": "high"
+        },
+        {
+          "description": "Lack of transparency about major label ownership of 'independent' services",
+          "gapType": "quality",
+          "opportunity": "Mandatory disclosure of corporate ownership in artist services",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Independent artists seeking non-major distribution options",
+          "examples": ["DIY musicians", "Indie label artists", "Self-releasing creators"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Major labels pursuing consolidation strategy",
+          "examples": ["Universal Music Group", "Sony Music", "Warner Music Group"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Independent labels and distributors facing acquisition pressure",
+          "examples": ["Indie labels", "Independent distributors", "Artist services companies"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Antitrust regulators reviewing acquisitions",
+          "examples": ["FTC", "DOJ", "European Commission"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "What will the music industry look like in 2026?",
+          "url": "https://identitymusic.com/blog/what-will-the-music-industry-look-like-in-2026",
+          "accessedAt": "2026-01-20",
+          "publisher": "Identity Music",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Discussions about mergers, acquisitions, and the challenge of remaining independent dominated many music industry headlines throughout 2025"
+        },
+        {
+          "type": "news",
+          "title": "8 Predictions For 2026 From Around the Music Industry",
+          "url": "https://www.hypebot.com/hypebot/2025/12/8-predictions-for-2026-from-around-the-music-industry.html",
+          "accessedAt": "2026-01-20",
+          "publisher": "Hypebot",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "With so many 'independent' distribution, publishing and other artist services companies now being controlled by or associated with the major labels"
+        }
+      ],
+      "tags": ["consolidation", "major-labels", "independent", "acquisitions", "antitrust", "distribution", "artist-services"],
+      "keywords": ["music industry consolidation", "major label acquisitions", "independent music", "UMG Downtown", "artist services"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-music-discovery",
+      "confidence": 0.83,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
+      "title": "AI-Generated Content Threatening Human Creator Market Value",
+      "slug": "ai-generated-content-threatening-human-creator-market-value",
+      "description": "The proliferation of AI-generated music threatens to flood streaming platforms with synthetic content, potentially devaluing human-created music. AI tools can now generate unlimited quantities of music at near-zero marginal cost, raising concerns about market saturation and the economic viability of human music creators. With streaming royalty pools divided by total plays, an influx of AI content could dilute payments to human artists even further. Beyond economics, there are concerns about the cultural and artistic implications of a music landscape increasingly populated by algorithmic creations. The industry is grappling with how to differentiate human and AI content, whether AI music should receive the same royalty treatment, and how to preserve space for human creativity in an AI-saturated market.",
+      "summary": "AI music generation at near-zero cost threatens to flood streaming platforms, potentially diluting royalty pools and devaluing human-created music while raising questions about artistic authenticity.",
+      "industry": {
+        "id": "a5b60c3d-2e5f-4a1b-7c6e-9d8a7b6c5d4e",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3f6e-4b2c-8d7f-0e1a2b3c4d5e",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1c-4e7b-4a3d-9c8e-1f2a3b4c5d6e",
+        "name": "Music",
+        "slug": "music"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["technical", "ethical", "social"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "10+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 8000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 4,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 4,
+        "existingProgress": 3,
+        "barriers": [
+          "Rapid pace of AI advancement",
+          "Difficulty distinguishing AI from human music",
+          "Platform incentives to maximize content",
+          "No consensus on policy approaches"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "500+",
+        "fundingLevel": "Moderate - significant industry and policy attention"
+      },
+      "impactScore": 64,
+      "rootCauses": [
+        {
+          "description": "AI music generation technology becoming increasingly sophisticated and accessible",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Near-zero marginal cost of AI content production incentivizing volume",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Platform business models that benefit from more content regardless of origin",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of clear labeling requirements for AI-generated content",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Dilution of streaming royalty pool as more content competes for plays",
+          "type": "direct",
+          "affectedArea": "Artist income",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Devaluation of human creativity as AI content becomes indistinguishable",
+          "type": "indirect",
+          "affectedArea": "Creative profession",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Confusion among listeners about authenticity of music",
+          "type": "indirect",
+          "affectedArea": "Fan experience",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Potential collapse of professional music creation as viable career",
+          "type": "cascading",
+          "affectedArea": "Music ecosystem",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "AI Content Labeling",
+          "description": "Some platforms requiring disclosure when content is AI-generated",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["Easy to circumvent", "Inconsistent enforcement", "No standard definition"]
+        },
+        {
+          "name": "Human-Created Content Certification",
+          "description": "Emerging certification systems to verify human authorship",
+          "type": "standard",
+          "effectiveness": 3,
+          "adoption": "experimental",
+          "limitations": ["Not widely adopted", "Verification challenges", "Cost of certification"]
+        },
+        {
+          "name": "Platform Upload Limits",
+          "description": "Some platforms limiting uploads from AI-focused accounts or requiring human verification",
+          "type": "policy",
+          "effectiveness": 3,
+          "adoption": "early",
+          "limitations": ["Easily circumvented", "May affect legitimate AI-assisted human creators"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No reliable technical method to distinguish AI from human-created music",
+          "gapType": "coverage",
+          "opportunity": "Audio watermarking or provenance tracking technology",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "No policy framework for differential treatment of AI vs human content in royalties",
+          "gapType": "integration",
+          "opportunity": "Separate royalty pools or reduced rates for AI-generated content",
+          "difficulty": "high"
+        },
+        {
+          "description": "Listeners lack tools to filter for human-created music",
+          "gapType": "accessibility",
+          "opportunity": "Consumer-facing filters for AI content preferences",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Human musicians and composers facing AI competition",
+          "examples": ["Professional musicians", "Session players", "Songwriters", "Composers"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "AI music companies developing generation tools",
+          "examples": ["Suno", "Udio", "Mubert", "AIVA"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Streaming platforms determining content policies",
+          "examples": ["Spotify", "Apple Music", "Amazon Music"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Music consumers seeking authentic experiences",
+          "examples": ["Music fans", "Playlist curators", "Music collectors"],
+          "interest": "medium",
+          "influence": "low"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Music Industry 2025 Status Report",
+          "url": "https://variety.com/2025/music/news/music-industry-streaming-live-concerts-ai-1236476625/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Variety",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "The rise of AI as exceptional challenges that will require shifting the status quo to solve"
+        },
+        {
+          "type": "news",
+          "title": "Music and AI: 2025's developments that will shape 2026's disputes",
+          "url": "https://completemusicupdate.com/music-and-ai-2025s-developments-that-will-shape-2026s-disputes/",
+          "accessedAt": "2026-01-20",
+          "publisher": "Complete Music Update",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "The main debate in the music industry is the ethics of training AI using human-made music"
+        }
+      ],
+      "tags": ["ai-music", "market-saturation", "human-creators", "streaming", "content-flooding", "artistic-value"],
+      "keywords": ["AI music saturation", "human creator devaluation", "AI content flooding", "music authenticity", "AI vs human music"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-music-discovery",
+      "confidence": 0.8,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z",
+      "version": 1
+    },
+    {
+      "id": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
+      "title": "Social Media Pressure Distorting Artist Development and Creativity",
+      "slug": "social-media-pressure-distorting-artist-development-creativity",
+      "description": "The demands of social media marketing have fundamentally altered artist development, often prioritizing viral content creation over musical artistry. Artists face constant pressure to maintain visibility through TikTok, Instagram, and other platforms, with follower counts and engagement metrics increasingly determining career opportunities. This pressure contributes to creative exhaustion and burnout, with many artists feeling isolated and overwhelmed by the need to constantly create promotional content in addition to their music. Record labels and streaming platforms reward social media success, creating incentives that may not align with artistic development. The emphasis on short-form viral content may be changing how music is created, favoring hook-driven snippets over cohesive artistic works.",
+      "summary": "Artists face constant pressure to maintain social media presence and create viral content, leading to burnout and distorting creative priorities away from musical artistry toward algorithmic optimization.",
+      "industry": {
+        "id": "a5b60c3d-2e5f-4a1b-7c6e-9d8a7b6c5d4e",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3f6e-4b2c-8d7f-0e1a2b3c4d5e",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1c-4e7b-4a3d-9c8e-1f2a3b4c5d6e",
+        "name": "Music",
+        "slug": "music"
+      },
+      "problemType": "social",
+      "problemSubtypes": ["process", "knowledge", "ethical"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "medium",
+      "severity": {
+        "overall": 7,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "5+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 5,
+          "estimateUSD": 1000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 4,
+        "barriers": [
+          "Platform algorithms reward engagement over artistry",
+          "Industry expectations tied to social metrics",
+          "Artist fear of missing out on opportunities",
+          "No alternative pathways to visibility"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "100+",
+        "fundingLevel": "Low - limited organized response"
+      },
+      "impactScore": 62,
+      "rootCauses": [
+        {
+          "description": "Industry adoption of social metrics as proxies for talent and potential",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Platform algorithms designed to maximize engagement through frequent posting",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Decline of traditional music discovery channels like radio and press",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Artist fear of being left behind by peers who engage heavily",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Artists spending more time on content creation than music creation",
+          "type": "direct",
+          "affectedArea": "Creative output",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Mental health impacts from constant public exposure and engagement anxiety",
+          "type": "direct",
+          "affectedArea": "Artist wellbeing",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Music optimized for short-form virality rather than artistic integrity",
+          "type": "indirect",
+          "affectedArea": "Musical quality",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Talented artists who don't fit social media mold overlooked",
+          "type": "indirect",
+          "affectedArea": "Talent pipeline",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Social Media Management Teams",
+          "description": "Delegating social media to professionals to reduce artist burden",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Expensive", "May feel inauthentic", "Still requires artist input"]
+        },
+        {
+          "name": "Scheduled Posting Tools",
+          "description": "Tools allowing batch content creation to reduce constant pressure",
+          "type": "tool",
+          "effectiveness": 4,
+          "adoption": "mainstream",
+          "limitations": ["Doesn't address underlying expectation", "Algorithm penalties for scheduled content"]
+        },
+        {
+          "name": "Artist Boundary Setting",
+          "description": "Some artists publicly limiting social media engagement to protect mental health",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["May impact career opportunities", "Requires existing fanbase", "Going against industry norms"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No alternative artist development paths that don't require social media presence",
+          "gapType": "coverage",
+          "opportunity": "Label development programs focused on artistry over social metrics",
+          "difficulty": "high"
+        },
+        {
+          "description": "Industry lacks standards for reasonable social media expectations",
+          "gapType": "quality",
+          "opportunity": "Industry guidelines on sustainable promotional demands",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Artists lack training on sustainable social media practices",
+          "gapType": "accessibility",
+          "opportunity": "Mental health-focused social media education for artists",
+          "difficulty": "low"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Artists pressured to maintain constant social presence",
+          "examples": ["Emerging artists", "Independent musicians", "Signed artists with promotional obligations"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Labels and managers setting promotional expectations",
+          "examples": ["Record labels", "Artist managers", "Marketing departments"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Social media platforms shaping engagement requirements",
+          "examples": ["TikTok", "Instagram", "YouTube"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Fans seeking authentic connection with artists",
+          "examples": ["Social media followers", "Superfans", "Concert attendees"],
+          "interest": "medium",
+          "influence": "low"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Top Challenges for Music Professionals in 2025",
+          "url": "https://www.music-jobs.com/usa/article/news/top-challenges-for-music-professionals-in-2025-part-1-2",
+          "accessedAt": "2026-01-20",
+          "publisher": "Music Jobs USA",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "The pressure to constantly create, share, promote, and stay visible online can lead to creative exhaustion"
+        },
+        {
+          "type": "news",
+          "title": "Beyond the Spotlight: Tackling Burnout & Mental Health in the Music Industry",
+          "url": "https://riotnoise.com/blogs/news/beyond-the-spotlight-tackling-burnout-mental-health-in-the-music-industry-ronnie-traynor-chief-music-mental-health-officer-riot-noise",
+          "accessedAt": "2026-01-20",
+          "publisher": "Riot Noise",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "The toxicity around trolling, but also the pressure of followers, likes, engagement, because it seems to be the only thing that people care about anymore"
+        }
+      ],
+      "tags": ["social-media", "artist-development", "tiktok", "burnout", "marketing", "creativity", "engagement"],
+      "keywords": ["social media pressure music", "artist social media burnout", "TikTok music marketing", "creative exhaustion", "artist visibility"],
+      "metrics": {
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T00:00:00Z"
+      },
+      "researchSession": "session-20260120-music-discovery",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T00:00:00Z",
+      "updatedAt": "2026-01-20T00:00:00Z",
+      "version": 1
+    }
+  ]
+}
