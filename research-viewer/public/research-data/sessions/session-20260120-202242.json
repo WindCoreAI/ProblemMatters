@@ -1,0 +1,124 @@
+{
+  "id": "8528975e-27e8-4cc7-8a6b-506c036f3c7a",
+  "startedAt": "2026-01-20T20:22:42Z",
+  "completedAt": "2026-01-20T20:35:00Z",
+  "target": {
+    "industry": "financial-services",
+    "domain": "capital-markets",
+    "field": "risk-management",
+    "specificTopic": null
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 12,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 2,
+    "problemIds": [
+      "a8a48a07-baf4-4ab2-a372-206b3b3c95a1",
+      "c4ec7357-7c6b-49d1-9fb1-98e6c585946e",
+      "244486a6-83b7-4027-9c07-bc9a22aba355",
+      "a537ed7c-3ee8-449a-ae0b-5ebd557bbd6c",
+      "8db9c5e7-e515-4917-9c55-539054d13faa",
+      "d36a06df-739d-437d-8fdd-84f9ce715b59",
+      "603140d9-69d6-410d-ac73-a3722a8e7747",
+      "f1b02505-a2f7-473d-b757-7f1cf32d0e58",
+      "c06a04fa-f3df-4f48-9746-f5e71fcbf5a3",
+      "237339b7-ebfe-4f6f-bb84-06387ca297b2",
+      "31eed041-96bd-46cd-a9e9-c45e40a968ff"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-20T20:22:42Z",
+      "durationMs": 500,
+      "input": {
+        "rawInput": "financial-services capital-markets risk-management"
+      },
+      "output": {
+        "industry": "financial-services",
+        "domain": "capital-markets",
+        "field": "risk-management"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T20:22:43Z",
+      "durationMs": 45000,
+      "input": {
+        "searchQueries": [
+          "capital markets risk management challenges problems 2025 2026",
+          "real-time risk monitoring trading systems latency challenges 2025",
+          "risk data aggregation quality challenges BCBS 239 compliance 2025"
+        ]
+      },
+      "output": {
+        "candidatesFound": 12,
+        "sourcesConsulted": 30
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T20:23:30Z",
+      "durationMs": 300000,
+      "input": {
+        "candidates": 12
+      },
+      "output": {
+        "problemsResearched": 12,
+        "averageConfidence": 0.87
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T20:28:30Z",
+      "durationMs": 120000,
+      "input": {
+        "problemsToValidate": 12
+      },
+      "output": {
+        "approved": 10,
+        "rejected": 2,
+        "averageImpactScore": 67.3
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "storage_phase",
+      "timestamp": "2026-01-20T20:30:30Z",
+      "durationMs": 60000,
+      "input": {
+        "problemsToStore": 10
+      },
+      "output": {
+        "filesCreated": 1,
+        "filesUpdated": 0,
+        "filePath": "research-viewer/public/research-data/industries/financial-services/capital-markets/fields/risk-management.json"
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 738000,
+    "tokensUsed": 85000,
+    "apiCalls": 6,
+    "sourcesConsulted": 30
+  }
+}
