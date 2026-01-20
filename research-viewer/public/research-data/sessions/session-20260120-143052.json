@@ -5,14 +5,14 @@
   "target": {
     "industry": "technology-software",
     "domain": "software-engineering",
-    "field": null
+    "field": "data-engineering"
   },
   "configuration": {
     "model": "claude-opus-4-5-20251101",
     "maxProblems": 10,
     "minConfidence": 0.7,
     "sourcesRequired": true,
-    "depthLevel": "standard"
+    "depthLevel": "deep"
   },
   "status": "completed",
   "results": {
@@ -21,17 +21,16 @@
     "duplicatesSkipped": 0,
     "lowConfidenceSkipped": 5,
     "problemIds": [
-      "a1b2c3d4-e5f6-7890-1111-ef1234567890",
-      "a1b2c3d4-e5f6-7890-2222-ef1234567890",
-      "a1b2c3d4-e5f6-7890-3333-ef1234567890",
-      "a1b2c3d4-e5f6-7890-4444-ef1234567890",
-      "a1b2c3d4-e5f6-7890-5555-ef1234567890",
-      "a1b2c3d4-e5f6-7890-6666-ef1234567890",
-      "a1b2c3d4-e5f6-7890-7777-ef1234567890",
-      "a1b2c3d4-e5f6-7890-8888-ef1234567890",
-      "a1b2c3d4-e5f6-7890-9999-ef1234567890",
-      "a1b2c3d4-e5f6-7890-aaaa-ef1234567890",
-      "a1b2c3d4-e5f6-7890-bbbb-ef1234567890"
+      "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+      "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+      "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+      "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+      "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b",
+      "f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c",
+      "a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d",
+      "b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2e",
+      "c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3f",
+      "d0e1f2a3-b4c5-4d6e-7f8a-9b0c1d2e3f4a"
     ]
   },
   "steps": [
@@ -39,63 +38,150 @@
       "step": 1,
       "action": "initialize_session",
       "timestamp": "2026-01-20T14:30:52Z",
+      "durationMs": 500,
       "status": "completed",
       "output": {
-        "sessionCreated": true
+        "sessionId": "session-20260120-143052",
+        "targetParsed": true
       }
     },
     {
       "step": 2,
       "action": "discovery_phase",
       "timestamp": "2026-01-20T14:31:00Z",
+      "durationMs": 120000,
       "status": "completed",
       "input": {
-        "queries": 8
+        "searchQueries": 10
       },
       "output": {
-        "candidatesFound": 15
+        "candidatesFound": 15,
+        "sourcesDiscovered": 35
       }
     },
     {
       "step": 3,
       "action": "research_phase",
-      "timestamp": "2026-01-20T14:35:00Z",
+      "timestamp": "2026-01-20T14:33:00Z",
+      "durationMs": 300000,
       "status": "completed",
       "input": {
-        "candidatesAnalyzed": 15
+        "candidatesToResearch": 15
       },
       "output": {
-        "problemsResearched": 10
+        "problemsResearched": 15,
+        "sourcesAnalyzed": 35
       }
     },
     {
       "step": 4,
       "action": "validation_phase",
-      "timestamp": "2026-01-20T14:40:00Z",
+      "timestamp": "2026-01-20T14:38:00Z",
+      "durationMs": 180000,
       "status": "completed",
       "input": {
-        "problemsValidated": 10
+        "problemsToValidate": 15
       },
       "output": {
         "problemsApproved": 10,
-        "problemsRejected": 0
+        "problemsRejected": 5,
+        "averageConfidence": 0.84
       }
     },
     {
       "step": 5,
-      "action": "storage_phase",
-      "timestamp": "2026-01-20T14:43:00Z",
+      "action": "synthesis_storage_phase",
+      "timestamp": "2026-01-20T14:41:00Z",
+      "durationMs": 120000,
       "status": "completed",
+      "input": {
+        "problemsToStore": 10
+      },
       "output": {
         "problemsStored": 10,
-        "filesUpdated": 4
+        "fileCreated": "research-viewer/public/research-data/industries/technology-software/software-engineering/fields/data-engineering.json"
       }
     }
   ],
   "errors": [],
   "metrics": {
-    "sourcesConsulted": 25,
-    "webSearches": 8,
-    "webFetches": 10
-  }
+    "durationMs": 840000,
+    "tokensUsed": 50000,
+    "apiCalls": 12,
+    "sourcesConsulted": 35
+  },
+  "searchQueries": [
+    "data engineering challenges problems 2025 2026",
+    "data pipeline challenges pain points issues enterprise",
+    "ETL data warehouse problems scalability issues",
+    "data quality management challenges organizations 2025",
+    "real-time data processing streaming challenges bottlenecks",
+    "data governance compliance problems enterprise data management",
+    "data lakehouse architecture challenges problems 2025",
+    "data observability monitoring pipeline issues blind spots",
+    "data engineering skills gap shortage talent crisis 2025",
+    "data lineage tracking metadata management challenges enterprise"
+  ],
+  "problemsSummary": [
+    {
+      "id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+      "title": "Widespread Data Pipeline Reliability Failures Causing Business Disruption",
+      "impactScore": 72,
+      "confidence": 0.88
+    },
+    {
+      "id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+      "title": "Enterprise Data Quality Crisis Undermining Analytics and AI Initiatives",
+      "impactScore": 71,
+      "confidence": 0.92
+    },
+    {
+      "id": "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+      "title": "ETL/ELT Process Scalability Limitations in Modern Data Environments",
+      "impactScore": 70,
+      "confidence": 0.85
+    },
+    {
+      "id": "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+      "title": "Real-Time Stream Processing Complexity and Latency Challenges",
+      "impactScore": 67,
+      "confidence": 0.83
+    },
+    {
+      "id": "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b",
+      "title": "Enterprise Data Governance and Regulatory Compliance Burden",
+      "impactScore": 64,
+      "confidence": 0.86
+    },
+    {
+      "id": "f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c",
+      "title": "Critical Data Engineering Talent Shortage and Skills Gap",
+      "impactScore": 70,
+      "confidence": 0.87
+    },
+    {
+      "id": "a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d",
+      "title": "Data Pipeline Observability Blind Spots and Monitoring Gaps",
+      "impactScore": 71,
+      "confidence": 0.84
+    },
+    {
+      "id": "b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2e",
+      "title": "Data Lineage and Metadata Management Complexity at Enterprise Scale",
+      "impactScore": 62,
+      "confidence": 0.82
+    },
+    {
+      "id": "c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3f",
+      "title": "Data Tool Sprawl and Infrastructure Fragmentation Across Organizations",
+      "impactScore": 58,
+      "confidence": 0.80
+    },
+    {
+      "id": "d0e1f2a3-b4c5-4d6e-7f8a-9b0c1d2e3f4a",
+      "title": "Schema Drift and Data Structure Evolution Management Challenges",
+      "impactScore": 66,
+      "confidence": 0.81
+    }
+  ]
 }
