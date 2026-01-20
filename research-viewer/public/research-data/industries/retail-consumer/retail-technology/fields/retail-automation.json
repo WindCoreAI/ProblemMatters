@@ -1,0 +1,282 @@
+{
+  "field": {
+    "id": "bdaac0f5-4ae8-4d7e-ad50-5ea4d9186fe2",
+    "name": "Retail Automation",
+    "slug": "retail-automation",
+    "description": "Automated checkout, robotics, inventory robots, automated fulfillment, and smart shelves for retail technology modernization."
+  },
+  "domain": {
+    "id": "5f43e968-e7ae-4245-bf73-ea2778066632",
+    "name": "Retail Technology",
+    "slug": "retail-technology"
+  },
+  "industry": {
+    "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+    "name": "Retail & Consumer",
+    "slug": "retail-consumer"
+  },
+  "problems": [
+    {
+      "id": "9e747d4a-362d-46d9-89db-614328dd280a",
+      "title": "Legacy System Integration Barriers Impeding Retail Digital Transformation",
+      "slug": "legacy-system-integration-barriers-digital-transformation",
+      "description": "Retailers face severe challenges modernizing their technology infrastructure due to entrenched legacy systems. Outdated systems drain up to 75% of IT budgets, leaving little room for innovation. Large companies spend an average of $17.7 billion on complete digital transformation according to Deloitte, yet 53% of professionals cite insufficient change enablement capabilities as a major barrier, and 57% report insufficient funding for digital investments. Retailers often operate fragmented infrastructures including outdated ERP systems, standalone CRMs, and inflexible POS systems that weren't designed for modern integration. Introducing next-generation technologies like AI, automation, and predictive analytics into this environment creates both technical and strategic complexity. 71% of retailers identify 'lack of real-time inventory visibility' as a significant obstacle—a direct consequence of systems that don't communicate. The fundamental issue is that legacy systems were built for transactions, not relationships; organizational and data silos are optimized for departmental metrics rather than customer outcomes. Beyond technology, the rapid pace of change has created a skills gap, with retailers struggling to hire or train staff proficient in new digital tools. Meanwhile, e-commerce now accounts for 23% of all U.S. retail sales and is growing at twice the rate of traditional retail, increasing pressure to modernize quickly.",
+      "summary": "Legacy systems consume 75% of IT budgets while integration barriers prevent retailers from deploying modern AI and automation technologies, with 71% citing lack of real-time inventory visibility as a direct consequence.",
+      "industry": {
+        "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+        "name": "Retail & Consumer",
+        "slug": "retail-consumer"
+      },
+      "domain": {
+        "id": "5f43e968-e7ae-4245-bf73-ea2778066632",
+        "name": "Retail Technology",
+        "slug": "retail-technology"
+      },
+      "field": {
+        "id": "bdaac0f5-4ae8-4d7e-ad50-5ea4d9186fe2",
+        "name": "Retail Automation",
+        "slug": "retail-automation"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["legacy-systems", "digital-transformation", "integration", "technology-modernization"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "All traditional retailers with legacy infrastructure",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 80000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 3,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "High cost of enterprise-wide transformation ($17.7B average)",
+          "Skills gap in modern digital technologies",
+          "Organizational resistance to change",
+          "Risk of business disruption during migration",
+          "Vendor lock-in with legacy providers",
+          "Complex data migration requirements"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "System integrators, consulting firms, technology vendors",
+        "fundingLevel": "Significant but often insufficient - 57% cite funding gaps"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Decades of incremental technology additions creating fragmented architecture",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Vendor lock-in through proprietary systems and data formats",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Organizational silos with separate technology decisions per department",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "IT budget constraints limiting modernization investment",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Shortage of technical talent for modern platforms",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "75% of IT budgets consumed by maintaining legacy systems",
+          "type": "direct",
+          "affectedArea": "IT spending",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Inability to deploy AI, automation, and modern analytics",
+          "type": "direct",
+          "affectedArea": "Innovation capacity",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Lack of real-time visibility creating inventory and fulfillment problems",
+          "type": "cascading",
+          "affectedArea": "Operations",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Competitive disadvantage versus digitally-native retailers",
+          "type": "cascading",
+          "affectedArea": "Market position",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Security vulnerabilities in unsupported legacy systems",
+          "type": "indirect",
+          "affectedArea": "Security",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Cloud-Native Commerce Platforms",
+          "description": "Modern SaaS platforms that replace legacy systems with integrated cloud architecture",
+          "type": "product",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["High migration cost and risk", "Customization limitations", "Change management required"]
+        },
+        {
+          "name": "API-Led Integration",
+          "description": "Middleware and iPaaS solutions that connect legacy and modern systems via APIs",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Adds integration layer complexity", "May not address underlying legacy issues"]
+        },
+        {
+          "name": "Strangler Fig Migration Pattern",
+          "description": "Incremental modernization approach replacing legacy components piece by piece",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Slow time to value", "Complex routing during transition", "Requires careful planning"]
+        },
+        {
+          "name": "Low-Code Integration Platforms",
+          "description": "Tools enabling business users to create integrations without extensive coding",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["May not handle complex legacy scenarios", "Governance challenges"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Affordable modernization paths for mid-market retailers",
+          "gapType": "cost",
+          "opportunity": "Modular, phased transformation approaches with faster ROI",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Talent development and upskilling programs for retail IT",
+          "gapType": "coverage",
+          "opportunity": "Industry-specific digital transformation training programs",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Standardized data migration and legacy replacement frameworks",
+          "gapType": "integration",
+          "opportunity": "Retail-specific migration accelerators and best practices",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Traditional retailers with legacy infrastructure",
+          "examples": ["Department stores", "Grocery chains", "Specialty retailers"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "IT and technology executives",
+          "examples": ["CIOs", "CTOs", "VPs of IT"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "System integrators and consultants",
+          "examples": ["Accenture", "Deloitte", "Cognizant", "Infosys"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Modern commerce platform vendors",
+          "examples": ["Salesforce", "Adobe", "SAP", "Oracle"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Digital Transformation in the Retail Industry in 2026",
+          "url": "https://whatfix.com/blog/retail-digital-transformation/",
+          "publishedAt": "2025-12-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Whatfix",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Outdated systems drain up to 75% of IT budgets"
+        },
+        {
+          "type": "industry-report",
+          "title": "2025 Digital Transformation: Overcome Legacy System Challenges",
+          "url": "https://premiernx.com/blog/digital-transformation/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "PremierNX",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "53% of professionals believe digital transformation is difficult because of insufficient change enablement"
+        },
+        {
+          "type": "industry-report",
+          "title": "Digital Transformation in Retail: Key Elements, Technologies, and Use Cases",
+          "url": "https://intellias.com/retail-digital-transformation/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Intellias",
+          "credibilityScore": 0.8
+        },
+        {
+          "type": "industry-report",
+          "title": "What Is Digital Transformation in Retail? Trends and Examples (2025)",
+          "url": "https://www.shopify.com/retail/digital-transformation-in-retail",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Shopify",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "E-commerce accounts for 23% of all U.S. retail sales, growing at twice the rate of traditional retail"
+        }
+      ],
+      "tags": ["legacy-systems", "digital-transformation", "integration", "modernization", "retail-technology"],
+      "keywords": ["retail legacy systems", "digital transformation retail", "retail technology modernization", "system integration retail"],
+      "metrics": {
+        "searchVolume": 11200,
+        "academicPapers": 289,
+        "mediaArticles": 1600,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T17:41:51Z"
+      },
+      "researchSession": "session-20260120-174151",
+      "confidence": 0.84,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T17:41:51Z",
+      "updatedAt": "2026-01-20T17:41:51Z",
+      "version": 1
+    }
+  ]
+}

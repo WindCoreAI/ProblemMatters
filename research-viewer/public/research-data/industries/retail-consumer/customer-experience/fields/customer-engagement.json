@@ -1,0 +1,284 @@
+{
+  "field": {
+    "id": "43ca566f-b97f-4007-91e8-461da7e823ef",
+    "name": "Customer Engagement",
+    "slug": "customer-engagement",
+    "description": "Loyalty programs, personalization, customer analytics, CRM, and marketing automation for retail customer experience."
+  },
+  "domain": {
+    "id": "0ccbe024-e062-46d5-808e-62a75fa94b5c",
+    "name": "Customer Experience",
+    "slug": "customer-experience"
+  },
+  "industry": {
+    "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+    "name": "Retail & Consumer",
+    "slug": "retail-consumer"
+  },
+  "problems": [
+    {
+      "id": "483e4f35-c071-4beb-a9c0-3ba563e0255b",
+      "title": "AI-Driven Personalization Implementation Challenges Failing to Deliver ROI Despite Heavy Investment",
+      "slug": "ai-personalization-implementation-challenges",
+      "description": "Retailers investing heavily in AI-driven personalization face a paradox: despite advanced data systems and recommendation engines, fragmented execution, mistimed engagement, and lack of financial accountability undermine impact. While 87% of retailers report AI has positively impacted revenue and 71% of consumers want GenAI integrated into shopping experiences, the reality is that retailers have spent heavily building 'single customer views' through cloud migrations and data platforms, but the technology alone doesn't solve the real challenge of disconnected operations. Mobile apps commonly ignore recent web activity, call center agents lack context from in-store conversations, and legacy workflows prevent unified experiences. A critical measurement problem compounds the issue: retailers judge AI personalization success solely on online conversion metrics, ignoring that over 73% of consumers use multiple channels before purchasing—a shopper might discover a product through AI recommendation but buy in-store, making that touchpoint appear to fail. Furthermore, treating personalization as purely a technology challenge fails without organizational buy-in; AI demands cultural shifts, not just software. Privacy, bias, and ethical concerns add complexity, with regulators scrutinizing AI applications under frameworks like the EU AI Act. The potential is significant: properly calibrated AI can enhance customer satisfaction by 15-20%, increase revenue by 5-8%, and reduce cost to serve by 20-30%, but most retailers are far from realizing these benefits.",
+      "summary": "Despite heavy investment, AI personalization fails to deliver ROI for most retailers due to disconnected operations, measurement challenges focused only on online conversions, and organizational barriers to cultural change.",
+      "industry": {
+        "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+        "name": "Retail & Consumer",
+        "slug": "retail-consumer"
+      },
+      "domain": {
+        "id": "0ccbe024-e062-46d5-808e-62a75fa94b5c",
+        "name": "Customer Experience",
+        "slug": "customer-experience"
+      },
+      "field": {
+        "id": "43ca566f-b97f-4007-91e8-461da7e823ef",
+        "name": "Customer Engagement",
+        "slug": "customer-engagement"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["ai-implementation", "personalization", "data-integration", "organizational-change"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "All retailers investing in personalization",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 40000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 3,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Disconnected operations across channels",
+          "Measurement focused on single-channel metrics",
+          "Organizational resistance to AI-driven decisions",
+          "Privacy and regulatory compliance requirements",
+          "Data quality issues across touchpoints",
+          "Cultural barriers to treating personalization holistically"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Consulting firms, AI vendors, customer experience experts",
+        "fundingLevel": "Significant - 41% of retailers want to improve personalization in 2025"
+      },
+      "impactScore": 64,
+      "rootCauses": [
+        {
+          "description": "Treating personalization as technology problem rather than organizational transformation",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Measuring success only on online conversion rather than cross-channel impact",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Legacy workflows and siloed departments preventing unified data activation",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Insufficient data quality and integration across touchpoints",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Consumer concerns about AI replacing human interaction",
+          "category": "cultural",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Failed ROI on significant personalization technology investments",
+          "type": "direct",
+          "affectedArea": "Financial",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Missed 15-20% customer satisfaction improvement opportunity",
+          "type": "indirect",
+          "affectedArea": "Customer experience",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Disjointed customer experiences damaging brand perception",
+          "type": "direct",
+          "affectedArea": "Brand value",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Regulatory risk from non-compliant AI implementations",
+          "type": "cascading",
+          "affectedArea": "Legal/Compliance",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Competitive disadvantage versus AI-mature competitors",
+          "type": "cascading",
+          "affectedArea": "Market position",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Customer Data Platforms with AI",
+          "description": "Unified data platforms with built-in AI for real-time personalization",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Integration complexity", "Data quality dependencies", "Still requires organizational alignment"]
+        },
+        {
+          "name": "Cross-Channel Attribution Platforms",
+          "description": "Systems that track customer journeys across online and offline touchpoints",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Privacy regulation constraints", "Offline tracking challenges", "Complex implementation"]
+        },
+        {
+          "name": "Personalization-as-a-Service",
+          "description": "Cloud-based personalization engines that can be deployed quickly",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["May not address underlying organizational issues", "Generic rather than brand-specific"]
+        },
+        {
+          "name": "Incremental Personalization Strategy",
+          "description": "Approach of personalizing 'when ready' rather than everywhere immediately",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Slower time to value", "Requires patience from stakeholders"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Cross-channel personalization ROI measurement that captures offline impact",
+          "gapType": "coverage",
+          "opportunity": "AI-powered attribution linking online personalization to offline conversions",
+          "difficulty": "high"
+        },
+        {
+          "description": "Organizational change frameworks specific to AI personalization",
+          "gapType": "awareness",
+          "opportunity": "Industry best practices for building cross-functional personalization teams",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Privacy-preserving personalization that maintains effectiveness",
+          "gapType": "integration",
+          "opportunity": "Federated learning and differential privacy techniques",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Retailers investing in AI personalization",
+          "examples": ["E-commerce leaders", "Omnichannel retailers", "Direct-to-consumer brands"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Consumers receiving personalized experiences",
+          "examples": ["Online shoppers", "Loyalty program members", "App users"],
+          "interest": "medium",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Marketing and customer experience executives",
+          "examples": ["CMOs", "Chief Customer Officers", "Chief Digital Officers"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "AI and personalization technology vendors",
+          "examples": ["Dynamic Yield", "Bloomreach", "Coveo", "Adobe"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "AI optimize a retail omnichannel customer experience",
+          "authors": ["Grant Thornton"],
+          "url": "https://www.grantthornton.com/insights/articles/retail/2025/use-ai-optimize-retail-omnichannel-customer-experience",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Grant Thornton",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Shifting from 'personalize everything now' to 'personalize when ready' creates a more respectful, effective experience"
+        },
+        {
+          "type": "industry-report",
+          "title": "Next best experience: How AI can power every customer interaction",
+          "authors": ["McKinsey & Company"],
+          "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/next-best-experience-how-ai-can-power-every-customer-interaction",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "McKinsey & Company",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "AI-powered next best experience can enhance customer satisfaction by 15-20%, increase revenue by 5-8%"
+        },
+        {
+          "type": "industry-report",
+          "title": "Personalization and testing in the age of AI: A roadmap for retail leaders",
+          "url": "https://www.retailcustomerexperience.com/blogs/personalization-and-testing-in-the-age-of-ai-a-roadmap-for-retail-leaders/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Retail Customer Experience",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Retailers face a paradox: despite advanced data systems, fragmented execution undermines impact"
+        },
+        {
+          "type": "industry-report",
+          "title": "6 customer experience trends to watch in 2026",
+          "url": "https://www.customerexperiencedive.com/news/6-customer-experience-trends-2026/808761/",
+          "publishedAt": "2025-12-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "CX Dive",
+          "credibilityScore": 0.8
+        }
+      ],
+      "tags": ["ai-personalization", "customer-experience", "machine-learning", "cross-channel", "data-integration"],
+      "keywords": ["AI personalization retail", "customer personalization challenges", "retail AI implementation", "personalization ROI"],
+      "metrics": {
+        "searchVolume": 15600,
+        "academicPapers": 378,
+        "mediaArticles": 2400,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T17:41:51Z"
+      },
+      "researchSession": "session-20260120-174151",
+      "confidence": 0.83,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T17:41:51Z",
+      "updatedAt": "2026-01-20T17:41:51Z",
+      "version": 1
+    }
+  ]
+}
