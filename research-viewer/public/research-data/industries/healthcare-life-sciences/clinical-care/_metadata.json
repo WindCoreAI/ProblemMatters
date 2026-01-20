@@ -2,27 +2,21 @@
   "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567891",
   "name": "Clinical Care",
   "slug": "clinical-care",
-  "description": "Clinical care domain covering primary care, specialty medicine, emergency medicine, surgical services, mental health, and rehabilitation.",
-  "parentIndustry": {
+  "industry": {
     "id": "f47ac10b-58cc-4372-a567-0e02b2c3d481",
     "name": "Healthcare & Life Sciences",
     "slug": "healthcare-life-sciences"
   },
-  "fields": [
-    {
-      "name": "Primary Care",
-      "slug": "primary-care"
-    }
-  ],
   "statistics": {
-    "totalProblems": 10,
-    "totalFields": 1,
-    "avgSeverity": 7.8,
-    "avgTractability": 5.35,
+    "totalProblems": 31,
+    "totalFields": 3,
+    "avgSeverity": 7.78,
+    "avgTractability": 5.32,
     "fieldProblems": {
+      "mental-health": 11,
+      "rehabilitation": 10,
       "primary-care": 10
     }
   },
-  "createdAt": "2026-01-20T16:15:00Z",
-  "updatedAt": "2026-01-20T11:08:03.572Z"
+  "lastUpdated": "2026-01-20T22:26:21Z"
 }

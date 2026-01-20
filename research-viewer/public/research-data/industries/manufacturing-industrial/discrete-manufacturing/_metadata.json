@@ -1,0 +1,21 @@
+{
+  "id": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
+  "name": "Discrete Manufacturing",
+  "slug": "discrete-manufacturing",
+  "industry": {
+    "id": "d334a8be-d359-4ec2-92e3-f889603eb120",
+    "name": "Manufacturing & Industrial",
+    "slug": "manufacturing-industrial"
+  },
+  "statistics": {
+    "totalProblems": 20,
+    "totalFields": 2,
+    "avgSeverity": 7.68,
+    "avgTractability": 4.95,
+    "fieldProblems": {
+      "automotive": 10,
+      "electronics": 10
+    }
+  },
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

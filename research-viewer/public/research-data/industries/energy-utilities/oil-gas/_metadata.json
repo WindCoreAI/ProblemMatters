@@ -1,0 +1,20 @@
+{
+  "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+  "name": "Oil & Gas",
+  "slug": "oil-gas",
+  "industry": {
+    "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+    "name": "Energy & Utilities",
+    "slug": "energy-utilities"
+  },
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 1,
+    "avgSeverity": 7.96,
+    "avgTractability": 5.6,
+    "fieldProblems": {
+      "upstream": 10
+    }
+  },
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "fd97e3e8-c631-4ef2-abdb-ce884757464c",
+  "name": "Real Estate",
+  "slug": "real-estate",
+  "industry": {
+    "id": "ab64fa2e-20e4-423c-8d5e-150c3dbdf4fb",
+    "name": "Real Estate & Construction",
+    "slug": "real-estate-construction"
+  },
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 1,
+    "avgSeverity": 6.9,
+    "avgTractability": 4.6,
+    "fieldProblems": {
+      "commercial-real-estate": 10
+    }
+  },
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

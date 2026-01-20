@@ -1,0 +1,22 @@
+{
+  "id": "968e83f8-18e9-462a-a00d-5781046a9b45",
+  "name": "Capital Markets",
+  "slug": "capital-markets",
+  "industry": {
+    "id": "c3d4e5f6-a7b8-9012-cdef-123456780001",
+    "name": "Financial Services",
+    "slug": "financial-services"
+  },
+  "statistics": {
+    "totalProblems": 32,
+    "totalFields": 3,
+    "avgSeverity": 7.45,
+    "avgTractability": 5.04,
+    "fieldProblems": {
+      "trading": 10,
+      "risk-management": 11,
+      "market-infrastructure": 11
+    }
+  },
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "d4c3b2a1-9087-6543-21fe-dcba98765432",
+  "name": "Content Creation",
+  "slug": "content-creation",
+  "industry": {
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "statistics": {
+    "totalProblems": 40,
+    "totalFields": 4,
+    "avgSeverity": 7.4,
+    "avgTractability": 4.66,
+    "fieldProblems": {
+      "music": 10,
+      "film-production": 10,
+      "television": 10,
+      "gaming": 10
+    }
+  },
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

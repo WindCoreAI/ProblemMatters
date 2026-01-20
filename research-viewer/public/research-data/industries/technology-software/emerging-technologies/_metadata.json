@@ -1,0 +1,20 @@
+{
+  "id": "8b09c936-0dae-41d1-90b4-00c04fd530d0",
+  "name": "Emerging Technologies",
+  "slug": "emerging-technologies",
+  "industry": {
+    "id": "550e8400-e29b-41d4-a716-446655440000",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 1,
+    "avgSeverity": 7.75,
+    "avgTractability": 4.9,
+    "fieldProblems": {
+      "blockchain-web3": 10
+    }
+  },
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

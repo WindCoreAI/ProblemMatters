@@ -1,0 +1,24 @@
+{
+  "id": "42e1e6cd-c8a7-4b74-8a07-12b1a7f1e2d1",
+  "name": "Retail Operations",
+  "slug": "retail-operations",
+  "industry": {
+    "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+    "name": "Retail & Consumer",
+    "slug": "retail-consumer"
+  },
+  "statistics": {
+    "totalProblems": 11,
+    "totalFields": 5,
+    "avgSeverity": 7.62,
+    "avgTractability": 5.68,
+    "fieldProblems": {
+      "store-operations": 4,
+      "supply-chain": 3,
+      "e-commerce": 2,
+      "merchandising": 1,
+      "omnichannel": 1
+    }
+  },
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

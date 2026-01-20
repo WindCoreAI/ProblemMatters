@@ -1,0 +1,27 @@
+{
+  "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+  "name": "Energy & Utilities",
+  "slug": "energy-utilities",
+  "statistics": {
+    "totalProblems": 31,
+    "avgSeverity": 7.7,
+    "avgTractability": 5.54
+  },
+  "domains": [
+    {
+      "id": "e7613bf8-a864-4f22-8272-836a724a687f",
+      "name": "Oil & Gas",
+      "slug": "oil-gas",
+      "fieldCount": 1,
+      "problemCount": 10
+    },
+    {
+      "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+      "name": "Renewable Energy",
+      "slug": "renewable-energy",
+      "fieldCount": 2,
+      "problemCount": 21
+    }
+  ],
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

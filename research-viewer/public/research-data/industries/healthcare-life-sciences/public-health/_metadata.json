@@ -1,0 +1,23 @@
+{
+  "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
+  "name": "Public Health",
+  "slug": "public-health",
+  "industry": {
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d481",
+    "name": "Healthcare & Life Sciences",
+    "slug": "healthcare-life-sciences"
+  },
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 4,
+    "avgSeverity": 8.05,
+    "avgTractability": 5.58,
+    "fieldProblems": {
+      "population-health": 1,
+      "environmental-health": 5,
+      "epidemiology": 2,
+      "health-policy": 2
+    }
+  },
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

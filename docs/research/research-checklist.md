@@ -22,23 +22,24 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Industry | Domains | Fields | Completed | Problems |
 |----------|---------|--------|-----------|----------|
-| Technology & Software | 5 | 39 | 3 | 41 |
-| Healthcare & Life Sciences | 5 | 27 | 1 | 10 |
-| Financial Services | 5 | 25 | 1 | 10 |
-| Manufacturing & Industrial | 4 | 19 | 0 | 0 |
-| Energy & Utilities | 4 | 18 | 0 | 0 |
-| Retail & Consumer | 4 | 15 | 0 | 0 |
-| Transportation & Logistics | 4 | 21 | 0 | 0 |
-| Real Estate & Construction | 4 | 16 | 0 | 0 |
+| Technology & Software | 4 | 19 | 19 | 92 |
+| Healthcare & Life Sciences | 2 | 7 | 7 | 41 |
+| Financial Services | 4 | 6 | 6 | 62 |
+| Manufacturing & Industrial | 2 | 4 | 4 | 31 |
+| Manufacturing | 2 | 2 | 2 | 20 |
+| Energy & Utilities | 2 | 3 | 3 | 31 |
+| Retail & Consumer | 3 | 8 | 8 | 14 |
+| Transportation & Logistics | 1 | 1 | 1 | 11 |
+| Real Estate & Construction | 1 | 1 | 1 | 10 |
+| Media & Entertainment | 1 | 4 | 4 | 40 |
 | Agriculture & Food | 5 | 22 | 0 | 0 |
-| Media & Entertainment | 4 | 16 | 0 | 0 |
 | Telecommunications | 3 | 13 | 0 | 0 |
 | Education | 4 | 16 | 0 | 0 |
 | Government & Public Sector | 4 | 15 | 0 | 0 |
 | Professional Services | 4 | 17 | 0 | 0 |
 | Hospitality & Tourism | 3 | 11 | 0 | 0 |
 | Non-Profit & Social Impact | 3 | 11 | 0 | 0 |
-| **Total** | **64** | **240+** | **5** | **61** |
+| **Total** | **22** | **53** | **53** | **352** |
 
 ---
 
@@ -50,24 +51,24 @@ This checklist tracks research progress across all industries, domains, and fiel
 |--------|-------|---------|--------------|----------------|
 | ✅ | Web Development | `/discover-problems technology-software software-engineering web-development` | 2026-01-20 | 10 |
 | ✅ | Mobile Development | `/discover-problems technology-software software-engineering mobile-development` | 2026-01-20 | 10 |
-| ⬜ | Cloud Computing | `/discover-problems technology-software software-engineering cloud-computing` | - | - |
-| ⬜ | DevOps & Infrastructure | `/discover-problems technology-software software-engineering devops-infrastructure` | - | - |
-| ⬜ | Data Engineering | `/discover-problems technology-software software-engineering data-engineering` | - | - |
-| ⬜ | Enterprise Architecture | `/discover-problems technology-software software-engineering enterprise-architecture` | - | - |
-| ⬜ | Software Security | `/discover-problems technology-software software-engineering software-security` | - | - |
-| ⬜ | Quality Assurance | `/discover-problems technology-software software-engineering quality-assurance` | - | - |
+| ✅ | Cloud Computing | `/discover-problems technology-software software-engineering cloud-computing` | 2026-01-20 | 1 |
+| ✅ | DevOps & Infrastructure | `/discover-problems technology-software software-engineering devops-infrastructure` | 2026-01-20 | 1 |
+| ✅ | Data Engineering | `/discover-problems technology-software software-engineering data-engineering` | 2026-01-20 | 11 |
+| ✅ | Enterprise Architecture | `/discover-problems technology-software software-engineering enterprise-architecture` | 2026-01-20 | 2 |
+| ✅ | Software Security | `/discover-problems technology-software software-engineering software-security` | 2026-01-20 | 2 |
+| ✅ | Quality Assurance | `/discover-problems technology-software software-engineering quality-assurance` | 2026-01-20 | 1 |
 
 ### 1.2 Artificial Intelligence & Machine Learning
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ✅ | Machine Learning | `/discover-problems technology-software ai-ml machine-learning` | 2026-01-20 | 10 |
-| ⬜ | Deep Learning | `/discover-problems technology-software ai-ml deep-learning` | - | - |
-| ⬜ | Natural Language Processing | `/discover-problems technology-software ai-ml natural-language-processing` | - | - |
+| ✅ | Machine Learning | `/discover-problems technology-software ai-ml machine-learning` | 2026-01-20 | 5 |
+| ✅ | Deep Learning | `/discover-problems technology-software ai-ml deep-learning` | 2026-01-20 | 11 |
+| ✅ | Natural Language Processing | `/discover-problems technology-software ai-ml natural-language-processing` | 2026-01-20 | 10 |
 | ⬜ | Computer Vision | `/discover-problems technology-software ai-ml computer-vision` | - | - |
-| ⬜ | MLOps | `/discover-problems technology-software ai-ml mlops` | - | - |
-| ⬜ | AI Ethics & Safety | `/discover-problems technology-software ai-ml ai-ethics-safety` | - | - |
-| ⬜ | Generative AI | `/discover-problems technology-software ai-ml generative-ai` | - | - |
+| ✅ | MLOps | `/discover-problems technology-software ai-ml mlops` | 2026-01-20 | 2 |
+| ✅ | AI Ethics & Safety | `/discover-problems technology-software ai-ml ai-ethics-safety` | 2026-01-20 | 1 |
+| ✅ | Generative AI | `/discover-problems technology-software ai-ml generative-ai` | 2026-01-20 | 1 |
 | ⬜ | Robotics AI | `/discover-problems technology-software ai-ml robotics-ai` | - | - |
 
 ### 1.3 Cybersecurity
@@ -75,7 +76,7 @@ This checklist tracks research progress across all industries, domains, and fiel
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
 | ⬜ | Network Security | `/discover-problems technology-software cybersecurity network-security` | - | - |
-| ⬜ | Endpoint Security | `/discover-problems technology-software cybersecurity endpoint-security` | - | - |
+| ✅ | Endpoint Security | `/discover-problems technology-software cybersecurity endpoint-security` | 2026-01-20 | 10 |
 | ⬜ | Identity & Access Management | `/discover-problems technology-software cybersecurity identity-access-management` | - | - |
 | ⬜ | Security Operations | `/discover-problems technology-software cybersecurity security-operations` | - | - |
 | ⬜ | Cloud Security | `/discover-problems technology-software cybersecurity cloud-security` | - | - |
@@ -96,7 +97,7 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Blockchain & Web3 | `/discover-problems technology-software emerging-technologies blockchain-web3` | - | - |
+| ✅ | Blockchain & Web3 | `/discover-problems technology-software emerging-technologies blockchain-web3` | 2026-01-20 | 10 |
 | ⬜ | Quantum Computing | `/discover-problems technology-software emerging-technologies quantum-computing` | - | - |
 | ⬜ | Extended Reality | `/discover-problems technology-software emerging-technologies extended-reality` | - | - |
 | ⬜ | Edge Computing | `/discover-problems technology-software emerging-technologies edge-computing` | - | - |
@@ -114,8 +115,8 @@ This checklist tracks research progress across all industries, domains, and fiel
 | ⬜ | Specialty Medicine | `/discover-problems healthcare clinical-care specialty-medicine` | - | - |
 | ⬜ | Emergency Medicine | `/discover-problems healthcare clinical-care emergency-medicine` | - | - |
 | ⬜ | Surgical Services | `/discover-problems healthcare clinical-care surgical-services` | - | - |
-| ⬜ | Mental Health | `/discover-problems healthcare clinical-care mental-health` | - | - |
-| ⬜ | Rehabilitation | `/discover-problems healthcare clinical-care rehabilitation` | - | - |
+| ✅ | Mental Health | `/discover-problems healthcare clinical-care mental-health` | 2026-01-20 | 11 |
+| ✅ | Rehabilitation | `/discover-problems healthcare clinical-care rehabilitation` | 2026-01-20 | 10 |
 
 ### 2.2 Healthcare Operations
 
@@ -151,10 +152,10 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Epidemiology | `/discover-problems healthcare public-health epidemiology` | - | - |
-| ⬜ | Health Policy | `/discover-problems healthcare public-health health-policy` | - | - |
-| ⬜ | Population Health | `/discover-problems healthcare public-health population-health` | - | - |
-| ⬜ | Environmental Health | `/discover-problems healthcare public-health environmental-health` | - | - |
+| ✅ | Epidemiology | `/discover-problems healthcare public-health epidemiology` | 2026-01-20 | 2 |
+| ✅ | Health Policy | `/discover-problems healthcare public-health health-policy` | 2026-01-20 | 2 |
+| ✅ | Population Health | `/discover-problems healthcare public-health population-health` | 2026-01-20 | 1 |
+| ✅ | Environmental Health | `/discover-problems healthcare public-health environmental-health` | 2026-01-20 | 5 |
 
 ---
 
@@ -164,18 +165,18 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ✅ | Retail Banking | `/discover-problems financial-services banking retail-banking` | 2026-01-20 | 10 |
+| ✅ | Retail Banking | `/discover-problems financial-services banking retail-banking` | 2026-01-20 | 9 |
 | ⬜ | Commercial Banking | `/discover-problems financial-services banking commercial-banking` | - | - |
 | ⬜ | Investment Banking | `/discover-problems financial-services banking investment-banking` | - | - |
 | ⬜ | Private Banking | `/discover-problems financial-services banking private-banking` | - | - |
-| ⬜ | Payments | `/discover-problems financial-services banking payments` | - | - |
+| ✅ | Payments | `/discover-problems financial-services banking payments` | 2026-01-20 | 1 |
 
 ### 3.2 Insurance
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
 | ⬜ | Life & Health Insurance | `/discover-problems financial-services insurance life-health-insurance` | - | - |
-| ⬜ | Property & Casualty | `/discover-problems financial-services insurance property-casualty` | - | - |
+| ✅ | Property & Casualty | `/discover-problems financial-services insurance property-casualty` | 2026-01-20 | 10 |
 | ⬜ | Specialty Insurance | `/discover-problems financial-services insurance specialty-insurance` | - | - |
 | ⬜ | Reinsurance | `/discover-problems financial-services insurance reinsurance` | - | - |
 | ⬜ | Insurance Operations | `/discover-problems financial-services insurance insurance-operations` | - | - |
@@ -194,9 +195,9 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Trading | `/discover-problems financial-services capital-markets trading` | - | - |
-| ⬜ | Market Infrastructure | `/discover-problems financial-services capital-markets market-infrastructure` | - | - |
-| ⬜ | Risk Management | `/discover-problems financial-services capital-markets risk-management` | - | - |
+| ✅ | Trading | `/discover-problems financial-services capital-markets trading` | 2026-01-20 | 10 |
+| ✅ | Market Infrastructure | `/discover-problems financial-services capital-markets market-infrastructure` | 2026-01-20 | 11 |
+| ✅ | Risk Management | `/discover-problems financial-services capital-markets risk-management` | 2026-01-20 | 11 |
 | ⬜ | Regulatory & Compliance | `/discover-problems financial-services capital-markets regulatory-compliance` | - | - |
 
 ### 3.5 FinTech
@@ -204,7 +205,7 @@ This checklist tracks research progress across all industries, domains, and fiel
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
 | ⬜ | Digital Payments | `/discover-problems financial-services fintech digital-payments` | - | - |
-| ⬜ | Lending Technology | `/discover-problems financial-services fintech lending-technology` | - | - |
+| ✅ | Lending Technology | `/discover-problems financial-services fintech lending-technology` | 2026-01-20 | 10 |
 | ⬜ | WealthTech | `/discover-problems financial-services fintech wealthtech` | - | - |
 | ⬜ | InsurTech | `/discover-problems financial-services fintech insurtech` | - | - |
 | ⬜ | RegTech | `/discover-problems financial-services fintech regtech` | - | - |
@@ -217,9 +218,9 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Automotive | `/discover-problems manufacturing discrete-manufacturing automotive` | - | - |
-| ⬜ | Aerospace & Defense | `/discover-problems manufacturing discrete-manufacturing aerospace-defense` | - | - |
-| ⬜ | Electronics | `/discover-problems manufacturing discrete-manufacturing electronics` | - | - |
+| ✅ | Automotive | `/discover-problems manufacturing-industrial discrete-manufacturing automotive` | 2026-01-20 | 10 |
+| ✅ | Aerospace & Defense | `/discover-problems manufacturing discrete-manufacturing aerospace-defense` | 2026-01-20 | 10 |
+| ✅ | Electronics | `/discover-problems manufacturing-industrial discrete-manufacturing electronics` | 2026-01-20 | 10 |
 | ⬜ | Machinery & Equipment | `/discover-problems manufacturing discrete-manufacturing machinery-equipment` | - | - |
 | ⬜ | Consumer Goods | `/discover-problems manufacturing discrete-manufacturing consumer-goods` | - | - |
 
@@ -237,8 +238,8 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Production Planning | `/discover-problems manufacturing industrial-operations production-planning` | - | - |
-| ⬜ | Quality Management | `/discover-problems manufacturing industrial-operations quality-management` | - | - |
+| ✅ | Production Planning | `/discover-problems manufacturing-industrial industrial-operations production-planning` | 2026-01-20 | 11 |
+| ✅ | Quality Management | `/discover-problems manufacturing industrial-operations quality-management` | 2026-01-20 | 10 |
 | ⬜ | Maintenance | `/discover-problems manufacturing industrial-operations maintenance` | - | - |
 | ⬜ | Industrial Automation | `/discover-problems manufacturing industrial-operations industrial-automation` | - | - |
 | ⬜ | Supply Chain | `/discover-problems manufacturing industrial-operations supply-chain` | - | - |
@@ -260,7 +261,7 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Upstream | `/discover-problems energy-utilities oil-gas upstream` | - | - |
+| ✅ | Upstream | `/discover-problems energy-utilities oil-gas upstream` | 2026-01-20 | 10 |
 | ⬜ | Midstream | `/discover-problems energy-utilities oil-gas midstream` | - | - |
 | ⬜ | Downstream | `/discover-problems energy-utilities oil-gas downstream` | - | - |
 | ⬜ | Oilfield Services | `/discover-problems energy-utilities oil-gas oilfield-services` | - | - |
@@ -269,8 +270,8 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Solar | `/discover-problems energy-utilities renewable-energy solar` | - | - |
-| ⬜ | Wind | `/discover-problems energy-utilities renewable-energy wind` | - | - |
+| ✅ | Solar | `/discover-problems energy-utilities renewable-energy solar` | 2026-01-20 | 11 |
+| ✅ | Wind | `/discover-problems energy-utilities renewable-energy wind` | 2026-01-20 | 10 |
 | ⬜ | Hydropower | `/discover-problems energy-utilities renewable-energy hydropower` | - | - |
 | ⬜ | Other Renewables | `/discover-problems energy-utilities renewable-energy other-renewables` | - | - |
 | ⬜ | Energy Storage | `/discover-problems energy-utilities renewable-energy energy-storage` | - | - |
@@ -302,11 +303,11 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Store Operations | `/discover-problems retail-consumer retail-operations store-operations` | - | - |
-| ⬜ | E-Commerce | `/discover-problems retail-consumer retail-operations e-commerce` | - | - |
-| ⬜ | Omnichannel | `/discover-problems retail-consumer retail-operations omnichannel` | - | - |
-| ⬜ | Supply Chain | `/discover-problems retail-consumer retail-operations supply-chain` | - | - |
-| ⬜ | Merchandising | `/discover-problems retail-consumer retail-operations merchandising` | - | - |
+| ✅ | Store Operations | `/discover-problems retail-consumer retail-operations store-operations` | 2026-01-20 | 4 |
+| ✅ | E-Commerce | `/discover-problems retail-consumer retail-operations e-commerce` | 2026-01-20 | 2 |
+| ✅ | Omnichannel | `/discover-problems retail-consumer retail-operations omnichannel` | 2026-01-20 | 1 |
+| ✅ | Supply Chain | `/discover-problems retail-consumer retail-operations supply-chain` | 2026-01-20 | 3 |
+| ✅ | Merchandising | `/discover-problems retail-consumer retail-operations merchandising` | 2026-01-20 | 1 |
 
 ### 6.2 Consumer Goods
 
@@ -321,8 +322,8 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Customer Engagement | `/discover-problems retail-consumer customer-experience customer-engagement` | - | - |
-| ⬜ | Digital Experience | `/discover-problems retail-consumer customer-experience digital-experience` | - | - |
+| ✅ | Customer Engagement | `/discover-problems retail-consumer customer-experience customer-engagement` | 2026-01-20 | 1 |
+| ✅ | Digital Experience | `/discover-problems retail-consumer customer-experience digital-experience` | 2026-01-20 | 1 |
 | ⬜ | Customer Service | `/discover-problems retail-consumer customer-experience customer-service` | - | - |
 
 ### 6.4 Retail Technology
@@ -331,7 +332,7 @@ This checklist tracks research progress across all industries, domains, and fiel
 |--------|-------|---------|--------------|----------------|
 | ⬜ | Point of Sale | `/discover-problems retail-consumer retail-technology point-of-sale` | - | - |
 | ⬜ | Retail Analytics | `/discover-problems retail-consumer retail-technology retail-analytics` | - | - |
-| ⬜ | Retail Automation | `/discover-problems retail-consumer retail-technology retail-automation` | - | - |
+| ✅ | Retail Automation | `/discover-problems retail-consumer retail-technology retail-automation` | 2026-01-20 | 1 |
 
 ---
 
@@ -341,7 +342,7 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Road Freight | `/discover-problems transportation-logistics freight-logistics road-freight` | - | - |
+| ✅ | Road Freight | `/discover-problems transportation-logistics freight-logistics road-freight` | 2026-01-20 | 11 |
 | ⬜ | Rail Freight | `/discover-problems transportation-logistics freight-logistics rail-freight` | - | - |
 | ⬜ | Ocean Freight | `/discover-problems transportation-logistics freight-logistics ocean-freight` | - | - |
 | ⬜ | Air Freight | `/discover-problems transportation-logistics freight-logistics air-freight` | - | - |
@@ -385,7 +386,7 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Commercial Real Estate | `/discover-problems real-estate-construction real-estate commercial-real-estate` | - | - |
+| ✅ | Commercial Real Estate | `/discover-problems real-estate-construction real-estate commercial-real-estate` | 2026-01-20 | 10 |
 | ⬜ | Residential Real Estate | `/discover-problems real-estate-construction real-estate residential-real-estate` | - | - |
 | ⬜ | Real Estate Investment | `/discover-problems real-estate-construction real-estate real-estate-investment` | - | - |
 | ⬜ | Property Management | `/discover-problems real-estate-construction real-estate property-management` | - | - |
@@ -477,10 +478,10 @@ This checklist tracks research progress across all industries, domains, and fiel
 
 | Status | Field | Command | Last Updated | Problems Found |
 |--------|-------|---------|--------------|----------------|
-| ⬜ | Film Production | `/discover-problems media-entertainment content-creation film-production` | - | - |
-| ⬜ | Television | `/discover-problems media-entertainment content-creation television` | - | - |
-| ⬜ | Music | `/discover-problems media-entertainment content-creation music` | - | - |
-| ⬜ | Gaming | `/discover-problems media-entertainment content-creation gaming` | - | - |
+| ✅ | Film Production | `/discover-problems media-entertainment content-creation film-production` | 2026-01-20 | 10 |
+| ✅ | Television | `/discover-problems media-entertainment content-creation television` | 2026-01-20 | 10 |
+| ✅ | Music | `/discover-problems media-entertainment content-creation music` | 2026-01-20 | 10 |
+| ✅ | Gaming | `/discover-problems media-entertainment content-creation gaming` | 2026-01-20 | 10 |
 | ⬜ | Publishing | `/discover-problems media-entertainment content-creation publishing` | - | - |
 
 ### 10.2 Digital Media
@@ -783,12 +784,16 @@ To research an entire industry (all domains), use only the industry:
 
 | Date | Industry | Domain | Field | Problems | Session ID |
 |------|----------|--------|-------|----------|------------|
-| 2026-01-20 | Technology & Software | Software Engineering | (general) | 11 | session-20260120-143052 |
-| 2026-01-20 | Technology & Software | Software Engineering | Web Development | 10 | session-20260120-153000 |
-| 2026-01-20 | Technology & Software | AI/ML | Machine Learning | 10 | session-20260120-155230 |
-| 2026-01-20 | Healthcare & Life Sciences | Clinical Care | Primary Care | 10 | session-20260120-161500 |
-| 2026-01-20 | Financial Services | Banking | Retail Banking | 10 | session-20260120-163045 |
-| 2026-01-20 | Technology & Software | Software Engineering | Mobile Development | 10 | session-20260120-163052 |
+| 2026-01-20 | Media & Entertainment | Content Creation | Gaming | 10 | session-20260120-203333 |
+| 2026-01-20 | Media & Entertainment | Content Creation | Film Production | 10 | session-20260120-202838 |
+| 2026-01-20 | Real Estate & Construction | Real Estate | Commercial Real Estate | 10 | session-20260120-202827 |
+| 2026-01-20 | Transportation & Logistics | Freight Logistics | Road Freight | 10 | session-20260120-202806 |
+| 2026-01-20 | Manufacturing | Discrete Manufacturing | Aerospace & Defense | 10 | session-20260120-202607 |
+| 2026-01-20 | Energy & Utilities | Renewable Energy | Solar | 11 | session-20260120-202554 |
+| 2026-01-20 | Energy & Utilities | Oil & Gas | Upstream | 10 | session-20260120-202535 |
+| 2026-01-20 | Financial Services | Capital Markets | Trading | 10 | session-20260120-202500 |
+| 2026-01-20 | Manufacturing | Industrial Operations | Quality Management | 10 | session-20260120-202434 |
+| 2026-01-20 | Manufacturing & Industrial | Industrial Operations | Production Planning | 10 | session-20260120-202419 |
 
 ---
 
@@ -801,4 +806,4 @@ To research an entire industry (all domains), use only the industry:
 
 ---
 
-*Last checklist update: 2026-01-20 (statistics corrected)*
+*Last checklist update: 2026-01-20 (aggregated stats: 352 problems across 53 fields in 10 industries)*

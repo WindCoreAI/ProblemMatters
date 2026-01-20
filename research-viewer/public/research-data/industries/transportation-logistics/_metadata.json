@@ -1,0 +1,20 @@
+{
+  "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+  "name": "Transportation & Logistics",
+  "slug": "transportation-logistics",
+  "statistics": {
+    "totalProblems": 11,
+    "avgSeverity": 7.41,
+    "avgTractability": 4.95
+  },
+  "domains": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "name": "Freight & Logistics",
+      "slug": "freight-logistics",
+      "fieldCount": 1,
+      "problemCount": 11
+    }
+  ],
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

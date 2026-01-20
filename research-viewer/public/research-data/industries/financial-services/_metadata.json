@@ -2,64 +2,40 @@
   "id": "c3d4e5f6-a7b8-9012-cdef-123456780001",
   "name": "Financial Services",
   "slug": "financial-services",
-  "description": "The financial services industry encompasses banking, insurance, asset management, capital markets, and fintech. This sector provides essential services including deposit-taking, lending, payments, investment management, risk transfer, and financial advisory services to individuals, businesses, and governments worldwide.",
-  "icon": "landmark",
-  "color": "#1e40af",
-  "keywords": [
-    "banking",
-    "insurance",
-    "investment",
-    "payments",
-    "fintech",
-    "lending",
-    "capital markets",
-    "wealth management"
-  ],
-  "naicsCode": "52",
-  "sicCode": "60-67",
+  "statistics": {
+    "totalProblems": 62,
+    "avgSeverity": 7.41,
+    "avgTractability": 5.44
+  },
   "domains": [
     {
       "id": "b2c3d4e5-f6a7-8901-bcde-f12345670001",
       "name": "Banking",
       "slug": "banking",
-      "description": "Banking services including retail banking, commercial banking, investment banking, and private banking",
       "fieldCount": 2,
+      "problemCount": 10
+    },
+    {
+      "id": "968e83f8-18e9-462a-a00d-5781046a9b45",
+      "name": "Capital Markets",
+      "slug": "capital-markets",
+      "fieldCount": 3,
+      "problemCount": 32
+    },
+    {
+      "id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+      "name": "FinTech",
+      "slug": "fintech",
+      "fieldCount": 1,
+      "problemCount": 10
+    },
+    {
+      "id": "6155ce27-d7d6-4caa-ab47-10d8105fa180",
+      "name": "Insurance",
+      "slug": "insurance",
+      "fieldCount": 1,
       "problemCount": 10
     }
   ],
-  "statistics": {
-    "totalProblems": 10,
-    "totalDomains": 1,
-    "totalFields": 5,
-    "avgSeverity": 7.8,
-    "avgTractability": 5.25,
-    "topProblemTypes": [
-      {
-        "type": "technical",
-        "count": 4
-      },
-      {
-        "type": "market",
-        "count": 2
-      },
-      {
-        "type": "regulatory",
-        "count": 1
-      },
-      {
-        "type": "social",
-        "count": 1
-      },
-      {
-        "type": "process",
-        "count": 1
-      },
-      {
-        "type": "resource",
-        "count": 1
-      }
-    ]
-  },
-  "createdAt": "2026-01-20T16:30:45Z",
-  "updatedAt": "2026-01-20T11:08:03.574Z"
+  "lastUpdated": "2026-01-20T22:26:21Z"
 }

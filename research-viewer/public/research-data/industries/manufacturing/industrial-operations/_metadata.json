@@ -1,0 +1,20 @@
+{
+  "id": "d7e6f5a4-3b2c-1d0e-9f8a-7b6c5d4e3f2a",
+  "name": "Industrial Operations",
+  "slug": "industrial-operations",
+  "industry": {
+    "id": "i4a3b2c1-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+    "name": "Manufacturing & Industrial",
+    "slug": "manufacturing"
+  },
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 1,
+    "avgSeverity": 7.35,
+    "avgTractability": 5.8,
+    "fieldProblems": {
+      "quality-management": 10
+    }
+  },
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

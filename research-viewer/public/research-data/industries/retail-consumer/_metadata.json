@@ -1,0 +1,34 @@
+{
+  "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+  "name": "Retail & Consumer",
+  "slug": "retail-consumer",
+  "statistics": {
+    "totalProblems": 14,
+    "avgSeverity": 7.46,
+    "avgTractability": 5.48
+  },
+  "domains": [
+    {
+      "id": "0ccbe024-e062-46d5-808e-62a75fa94b5c",
+      "name": "Customer Experience",
+      "slug": "customer-experience",
+      "fieldCount": 2,
+      "problemCount": 2
+    },
+    {
+      "id": "42e1e6cd-c8a7-4b74-8a07-12b1a7f1e2d1",
+      "name": "Retail Operations",
+      "slug": "retail-operations",
+      "fieldCount": 5,
+      "problemCount": 11
+    },
+    {
+      "id": "5f43e968-e7ae-4245-bf73-ea2778066632",
+      "name": "Retail Technology",
+      "slug": "retail-technology",
+      "fieldCount": 1,
+      "problemCount": 1
+    }
+  ],
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}

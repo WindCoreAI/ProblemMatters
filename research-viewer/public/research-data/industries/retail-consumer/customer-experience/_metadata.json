@@ -1,0 +1,21 @@
+{
+  "id": "0ccbe024-e062-46d5-808e-62a75fa94b5c",
+  "name": "Customer Experience",
+  "slug": "customer-experience",
+  "industry": {
+    "id": "575f0019-4379-426a-aa7e-ec82515ff132",
+    "name": "Retail & Consumer",
+    "slug": "retail-consumer"
+  },
+  "statistics": {
+    "totalProblems": 2,
+    "totalFields": 2,
+    "avgSeverity": 7.25,
+    "avgTractability": 5.75,
+    "fieldProblems": {
+      "digital-experience": 1,
+      "customer-engagement": 1
+    }
+  },
+  "lastUpdated": "2026-01-20T22:26:21Z"
+}
