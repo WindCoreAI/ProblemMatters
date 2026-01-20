@@ -1,0 +1,107 @@
+{
+  "id": "session-20260120-202607",
+  "startedAt": "2026-01-20T20:26:07Z",
+  "completedAt": "2026-01-20T20:35:00Z",
+  "target": {
+    "industry": "manufacturing",
+    "domain": "discrete-manufacturing",
+    "field": "aerospace-defense"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 12,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 2,
+    "problemIds": [
+      "a1b2c3d4-e5f6-7890-abcd-ef1234567001",
+      "a1b2c3d4-e5f6-7890-abcd-ef1234567002",
+      "a1b2c3d4-e5f6-7890-abcd-ef1234567003",
+      "a1b2c3d4-e5f6-7890-abcd-ef1234567004",
+      "a1b2c3d4-e5f6-7890-abcd-ef1234567005",
+      "a1b2c3d4-e5f6-7890-abcd-ef1234567006",
+      "a1b2c3d4-e5f6-7890-abcd-ef1234567007",
+      "a1b2c3d4-e5f6-7890-abcd-ef1234567008",
+      "a1b2c3d4-e5f6-7890-abcd-ef1234567009",
+      "a1b2c3d4-e5f6-7890-abcd-ef1234567010"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "initialize_session",
+      "timestamp": "2026-01-20T20:26:07Z",
+      "durationMs": 500,
+      "status": "completed",
+      "output": {
+        "sessionId": "session-20260120-202607",
+        "target": "manufacturing/discrete-manufacturing/aerospace-defense"
+      }
+    },
+    {
+      "step": 2,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T20:26:08Z",
+      "durationMs": 45000,
+      "status": "completed",
+      "input": {
+        "searchQueries": [
+          "aerospace MRO maintenance repair challenges 2025 2026",
+          "defense manufacturing cybersecurity supply chain security challenges",
+          "aerospace manufacturing quality control inspection challenges certification"
+        ]
+      },
+      "output": {
+        "candidatesFound": 12,
+        "sourcesIdentified": 25
+      }
+    },
+    {
+      "step": 3,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T20:27:00Z",
+      "durationMs": 180000,
+      "status": "completed",
+      "output": {
+        "problemsResearched": 12,
+        "sourcesConsulted": 25
+      }
+    },
+    {
+      "step": 4,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T20:30:00Z",
+      "durationMs": 60000,
+      "status": "completed",
+      "output": {
+        "problemsValidated": 10,
+        "problemsRejected": 2,
+        "averageConfidence": 0.87
+      }
+    },
+    {
+      "step": 5,
+      "action": "storage_phase",
+      "timestamp": "2026-01-20T20:31:00Z",
+      "durationMs": 5000,
+      "status": "completed",
+      "output": {
+        "filesCreated": 1,
+        "problemsStored": 10
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 535000,
+    "apiCalls": 4,
+    "sourcesConsulted": 25
+  }
+}

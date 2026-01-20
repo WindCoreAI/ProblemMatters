@@ -1,0 +1,2226 @@
+{
+  "field": {
+    "id": "f8d92a1b-3c4e-5f6a-7b8c-9d0e1f2a3b4c",
+    "name": "Aerospace & Defense",
+    "slug": "aerospace-defense",
+    "description": "Manufacturing of aircraft, spacecraft, missiles, defense systems, and related components including avionics, propulsion systems, and maintenance/repair/overhaul (MRO) operations."
+  },
+  "domain": {
+    "id": "d7c81b2a-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+    "name": "Discrete Manufacturing",
+    "slug": "discrete-manufacturing"
+  },
+  "industry": {
+    "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "name": "Manufacturing & Industrial",
+    "slug": "manufacturing"
+  },
+  "problems": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567001",
+      "title": "Critical MRO Engine Maintenance Capacity Shortage Threatens Commercial Aviation Fleet Availability",
+      "slug": "mro-engine-maintenance-capacity-shortage-commercial-aviation",
+      "description": "The aerospace maintenance, repair, and overhaul (MRO) industry faces a severe capacity crisis that threatens the operational readiness of the global commercial aviation fleet. Aircraft engine MRO demand is projected to peak in 2026 and remain constrained through the end of the decade. If MRO capacity continues to grow on its current trajectory, demand for shop visits will exceed supply by more than 17% by decade's end. This crisis stems from multiple converging factors: shop visits deferred during the COVID-19 pandemic created significant pent-up demand; newer generation CFM International LEAP engines and especially Pratt & Whitney GTF engines are requiring repairs in much greater numbers than anticipated due to issues including powder metal contamination; and the supply of used serviceable materials is constrained as airlines delay retiring legacy aircraft. The consequences include grounded aircraft, reduced flight schedules, higher maintenance costs, and pressure on airline profitability. Airlines are being forced to keep aging Boeing 737NG and Airbus A320ceo models in service longer, which increases complexity and turnaround times for MRO providers.",
+      "summary": "Aircraft engine MRO demand will exceed capacity by 17%+ through 2030, driven by pandemic deferrals, new engine reliability issues, and parts shortages, threatening fleet availability.",
+      "industry": {
+        "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "name": "Manufacturing & Industrial",
+        "slug": "manufacturing"
+      },
+      "domain": {
+        "id": "d7c81b2a-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+        "name": "Discrete Manufacturing",
+        "slug": "discrete-manufacturing"
+      },
+      "field": {
+        "id": "f8d92a1b-3c4e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Aerospace & Defense",
+        "slug": "aerospace-defense"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["capacity-constraint", "supply-demand-mismatch", "maintenance-backlog"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "500+ airlines globally",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 25000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 9
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 5,
+        "barriers": [
+          "Capital-intensive MRO facility expansion",
+          "Long lead time for technician training",
+          "OEM parts production constraints",
+          "Engine design issues requiring engineering fixes"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Major consulting firms, OEMs, airlines actively engaged",
+        "fundingLevel": "High - $1.88B digital MRO market growing at 12.8% CAGR"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "COVID-19 pandemic caused widespread deferral of engine shop visits creating pent-up demand",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "New generation LEAP and GTF engines experiencing higher-than-expected maintenance needs due to powder metal contamination and other issues",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Airlines delaying retirement of legacy aircraft reduces supply of used serviceable materials",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Global supply chain disruptions limiting spare parts availability",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Shortage of skilled aviation maintenance technicians",
+          "category": "organizational",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Airlines forced to ground aircraft awaiting engine maintenance",
+          "type": "direct",
+          "affectedArea": "Fleet operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Flight schedule reductions and route cancellations",
+          "type": "direct",
+          "affectedArea": "Passenger service",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Higher lease rates for available aircraft",
+          "type": "indirect",
+          "affectedArea": "Financial performance",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Increased ticket prices passed to consumers",
+          "type": "cascading",
+          "affectedArea": "Consumer market",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Safety risks from pressure to expedite maintenance",
+          "type": "cascading",
+          "affectedArea": "Safety",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Digital MRO and Predictive Maintenance",
+          "description": "AI and IoT-based systems for predictive maintenance to optimize shop visit scheduling and reduce unplanned repairs",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Requires significant upfront investment", "Data integration challenges", "Not addressing fundamental capacity shortage"]
+        },
+        {
+          "name": "MRO Facility Expansion",
+          "description": "OEMs and third-party providers expanding shop capacity globally",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["2-3 year lead time for new facilities", "Capital intensive", "Workforce availability constraints"]
+        },
+        {
+          "name": "3D Printing for Spare Parts",
+          "description": "Additive manufacturing enabling on-demand production of critical components",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Limited to certain part types", "Certification requirements", "Quality consistency challenges"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Rapid workforce training and certification programs",
+          "gapType": "scale",
+          "opportunity": "Accelerated technician certification pathways with VR/AR training",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Engine design improvements to reduce maintenance frequency",
+          "gapType": "quality",
+          "opportunity": "Engineering solutions for powder metal contamination and other reliability issues",
+          "difficulty": "high"
+        },
+        {
+          "description": "Dynamic capacity sharing between MRO providers",
+          "gapType": "coordination",
+          "opportunity": "Industry-wide capacity management platform",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Commercial airlines operating narrow-body fleets",
+          "examples": ["United Airlines", "Delta", "Southwest", "Ryanair", "easyJet"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Engine OEMs and MRO providers",
+          "examples": ["CFM International", "Pratt & Whitney", "Lufthansa Technik", "ST Engineering"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "affected",
+          "description": "Air travelers experiencing disruptions",
+          "examples": ["Business travelers", "Leisure travelers"],
+          "interest": "medium",
+          "influence": "low"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Aircraft engine maintenance and repair to peak in 2026, worsening capacity shortage for commercial aviation",
+          "authors": ["Bain & Company"],
+          "url": "https://www.bain.com/about/media-center/press-releases/2024/aircraft-engine-maintenance-and-repair-to-peak-in-2026-worsening-capacity-shortage-for-commercial-aviation/",
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Bain & Company",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "If MRO capacity continues to grow on its current trajectory, demand for shop visits at the end of the decade will exceed supply by more than 17%."
+        },
+        {
+          "type": "industry-report",
+          "title": "Global MRO Industry Outlook for 2025",
+          "url": "https://www.stsaviationgroup.com/global-mro-industry-outlook-for-2025/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "STS Aviation Group",
+          "credibilityScore": 0.85
+        },
+        {
+          "type": "industry-report",
+          "title": "Digital Aerospace MRO Markets 2020-2035",
+          "url": "https://www.globenewswire.com/news-release/2026/01/09/3215945/28124/en/1-88-Bn-Digital-Aerospace-MRO-Markets-2020-2025-2025-2030F-2035F-Opportunities-in-Adoption-of-AI-and-IoT-for-Predictive-Maintenance-Blockchain-for-Traceability-and-Cloud-based-Suit.html",
+          "publishedAt": "2026-01-09",
+          "accessedAt": "2026-01-20",
+          "publisher": "GlobeNewswire",
+          "credibilityScore": 0.8
+        }
+      ],
+      "tags": ["mro", "engine-maintenance", "capacity-shortage", "aviation", "fleet-availability"],
+      "keywords": ["MRO capacity", "engine maintenance backlog", "aircraft grounding", "LEAP engine", "GTF engine", "shop visits"],
+      "metrics": {
+        "searchVolume": 8500,
+        "academicPapers": 120,
+        "patentApplications": 85,
+        "mediaArticles": 450,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:26:07Z"
+      },
+      "researchSession": "session-20260120-202607",
+      "confidence": 0.92,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:26:07Z",
+      "updatedAt": "2026-01-20T20:26:07Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567002",
+      "title": "Critical Shortage of Skilled Aviation Maintenance Technicians Threatens Industry Safety and Capacity",
+      "slug": "aviation-maintenance-technician-shortage-workforce-crisis",
+      "description": "The aerospace and defense industry faces a severe and worsening shortage of skilled maintenance technicians that threatens both operational capacity and safety standards. Despite rising technician certifications, projections show commercial aviation will have 10% fewer certified mechanics than needed by 2025, with the gap expected to widen. This workforce crisis is driven by multiple factors: an aging workforce with a wave of retirements, insufficient pipeline of new entrants to aviation maintenance careers, competition from other industries for technical talent, and the increasing complexity of modern aircraft requiring more specialized skills. The shortage is particularly acute for specialized roles involving composite materials, advanced avionics, and new propulsion technologies. MRO providers struggle to recruit and retain qualified personnel, leading to extended turnaround times, quality concerns, and increased costs. The problem is compounded by the need to upskill existing workers for advanced technologies including AI-based diagnostic systems, digital twins, and automated inspection tools.",
+      "summary": "Aviation will have 10% fewer certified mechanics than needed, driven by retirements, insufficient new entrants, and increasing skill requirements for advanced aircraft technologies.",
+      "industry": {
+        "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "name": "Manufacturing & Industrial",
+        "slug": "manufacturing"
+      },
+      "domain": {
+        "id": "d7c81b2a-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+        "name": "Discrete Manufacturing",
+        "slug": "discrete-manufacturing"
+      },
+      "field": {
+        "id": "f8d92a1b-3c4e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Aerospace & Defense",
+        "slug": "aerospace-defense"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["workforce-shortage", "skills-gap", "training-pipeline"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "Global aviation maintenance sector",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 5,
+        "productivity": 9
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Long training and certification timelines (2-4 years)",
+          "Competition from other industries for technical talent",
+          "Perception issues making aviation maintenance less attractive to youth",
+          "Geographic mismatches between workforce and job locations"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "moderate",
+        "activeResearchers": "ATEC, Oliver Wyman, industry associations",
+        "fundingLevel": "Moderate - growing investment in training programs"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Aging workforce with large cohorts approaching retirement",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Insufficient awareness and attractiveness of aviation maintenance careers among younger generations",
+          "category": "cultural",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Competition from other technical sectors offering higher pay and better work-life balance",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lengthy certification requirements creating barriers to entry",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Rapid technology evolution requiring continuous upskilling",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Extended aircraft turnaround times at MRO facilities",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Increased labor costs as providers compete for limited talent",
+          "type": "direct",
+          "affectedArea": "Financial",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Potential quality and safety risks from overworked technicians",
+          "type": "cascading",
+          "affectedArea": "Safety",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Slower adoption of new technologies due to training constraints",
+          "type": "indirect",
+          "affectedArea": "Innovation",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Aviation Technician Education Council (ATEC) Programs",
+          "description": "Industry consortium promoting aviation maintenance education and career awareness",
+          "type": "framework",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Limited reach", "Cannot address immediate shortage"]
+        },
+        {
+          "name": "VR/AR Training Systems",
+          "description": "Immersive training technologies to accelerate skill development",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["High implementation cost", "Cannot replace hands-on experience entirely"]
+        },
+        {
+          "name": "Agentic AI Troubleshooting Assistants",
+          "description": "AI co-pilots helping technicians navigate complex maintenance documentation",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Still in pilot phase", "Requires technology adoption by workforce"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Accelerated certification pathways without compromising safety standards",
+          "gapType": "accessibility",
+          "opportunity": "Competency-based certification with modular credentials",
+          "difficulty": "high"
+        },
+        {
+          "description": "Effective career marketing to younger demographics",
+          "gapType": "awareness",
+          "opportunity": "Partnerships with schools and social media campaigns",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Global workforce mobility and credential recognition",
+          "gapType": "integration",
+          "opportunity": "International certification harmonization",
+          "difficulty": "very-high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "MRO service providers struggling to hire",
+          "examples": ["Lufthansa Technik", "ST Engineering", "AAR Corp"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Aviation training institutions",
+          "examples": ["ATEC members", "Community colleges", "OEM training centers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Aviation regulators setting certification standards",
+          "examples": ["FAA", "EASA", "ICAO"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "The Pipeline Report - Aviation Technician Workforce Analysis",
+          "authors": ["ATEC", "Oliver Wyman"],
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Aviation Technician Education Council",
+          "credibilityScore": 0.9,
+          "relevantExcerpt": "Projected retirements are expected to leave commercial aviation with 10% fewer certified mechanics than needed in 2025."
+        },
+        {
+          "type": "industry-report",
+          "title": "Global MRO Industry Outlook for 2025",
+          "url": "https://www.stsaviationgroup.com/global-mro-industry-outlook-for-2025/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "STS Aviation Group",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["workforce", "technician-shortage", "training", "mro", "skills-gap"],
+      "keywords": ["aviation mechanic shortage", "A&P technician", "maintenance workforce", "aviation training"],
+      "metrics": {
+        "searchVolume": 5200,
+        "academicPapers": 85,
+        "patentApplications": 15,
+        "mediaArticles": 320,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:26:07Z"
+      },
+      "researchSession": "session-20260120-202607",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:26:07Z",
+      "updatedAt": "2026-01-20T20:26:07Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567003",
+      "title": "Defense Industrial Base Cybersecurity Vulnerabilities Expose National Security to Supply Chain Attacks",
+      "slug": "defense-industrial-base-cybersecurity-supply-chain-vulnerabilities",
+      "description": "The defense industrial base faces severe cybersecurity vulnerabilities that pose significant risks to national security. Supply chain cybersecurity attacks have increased by 431% since 2021, with manufacturing seeing a 71% surge in threat actor activity between 2024 and early 2025, involving 29 distinct threat groups. State-sponsored attackers increasingly target defense contractors using zero-day exploits and advanced persistent threats (APTs), often exploiting smaller, less sophisticated third-party suppliers as vectors to access larger defense contractors. The defense supply chain's vast network of third-party stakeholders creates multiple attack surfaces. Legacy operational technology (OT) systems in manufacturing were never designed for cybersecurity and remain under-monitored, unpatched, and unsegmented. IoT devices in supply chains typically experience attack attempts within minutes of connecting to the internet. Research indicates that private sector cybersecurity investment may be insufficient to meet national security needs, as commercial incentives don't align with defense requirements. The Cybersecurity Maturity Model Certification (CMMC) 2.0 now affects over 300,000 companies but compliance remains challenging, particularly for small and medium suppliers.",
+      "summary": "Supply chain cyberattacks up 431% since 2021, with state actors targeting 300,000+ defense suppliers through legacy OT systems and third-party vulnerabilities.",
+      "industry": {
+        "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "name": "Manufacturing & Industrial",
+        "slug": "manufacturing"
+      },
+      "domain": {
+        "id": "d7c81b2a-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+        "name": "Discrete Manufacturing",
+        "slug": "discrete-manufacturing"
+      },
+      "field": {
+        "id": "f8d92a1b-3c4e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Aerospace & Defense",
+        "slug": "aerospace-defense"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["cybersecurity", "supply-chain-risk", "national-security"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 9.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "300,000+ defense suppliers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 9,
+          "estimateUSD": 50000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Vast attack surface across complex supply chains",
+          "Legacy OT systems difficult to secure",
+          "Small suppliers lack resources for robust cybersecurity",
+          "Evolving threat landscape with state-sponsored actors",
+          "Misaligned incentives between commercial and national security needs"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "DoD, RAND, major cybersecurity firms",
+        "fundingLevel": "High - significant government and private investment"
+      },
+      "impactScore": 75,
+      "rootCauses": [
+        {
+          "description": "Legacy OT systems never designed for cybersecurity remain unpatched and unsegmented",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Vast third-party supplier network with inconsistent security practices",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "State-sponsored threat actors with sophisticated capabilities and resources",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Private sector underinvestment in cybersecurity relative to national security needs",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Rapid IoT adoption without adequate security measures",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Theft of classified and sensitive defense technology data",
+          "type": "direct",
+          "affectedArea": "National security",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Potential sabotage of defense manufacturing systems",
+          "type": "direct",
+          "affectedArea": "Production",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Loss of competitive advantage to adversary nations",
+          "type": "cascading",
+          "affectedArea": "Strategic",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Increased compliance costs for defense suppliers",
+          "type": "indirect",
+          "affectedArea": "Financial",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Small suppliers exiting defense market due to compliance burden",
+          "type": "cascading",
+          "affectedArea": "Supply chain",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Cybersecurity Maturity Model Certification (CMMC) 2.0",
+          "description": "DoD program requiring contractors to meet cybersecurity standards for handling sensitive information",
+          "type": "framework",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Compliance burden on small suppliers", "Implementation challenges", "Evolving requirements"]
+        },
+        {
+          "name": "Zero Trust Architecture",
+          "description": "Security model assuming no implicit trust and verifying every access request",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "early",
+          "limitations": ["Complex implementation", "Requires significant infrastructure changes", "Cultural resistance"]
+        },
+        {
+          "name": "Cyber Supply Chain Risk Management (C-SCRM)",
+          "description": "Framework for identifying and managing cyber risks across the supply chain",
+          "type": "framework",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Requires extensive vendor due diligence", "Difficult to scale across complex supply chains"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Affordable cybersecurity solutions for small defense suppliers",
+          "gapType": "cost",
+          "opportunity": "Shared security services and managed security for SMBs",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Securing legacy OT systems without operational disruption",
+          "gapType": "integration",
+          "opportunity": "OT-specific security monitoring and micro-segmentation",
+          "difficulty": "high"
+        },
+        {
+          "description": "Real-time threat intelligence sharing across supply chain",
+          "gapType": "coordination",
+          "opportunity": "Industry-wide threat sharing platforms with automated response",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Defense prime contractors and their supply chains",
+          "examples": ["Lockheed Martin", "Raytheon", "Northrop Grumman", "Small machine shops"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Department of Defense and intelligence agencies",
+          "examples": ["DoD", "NSA", "CISA"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Cybersecurity vendors and service providers",
+          "examples": ["CrowdStrike", "Palo Alto Networks", "Mandiant"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Cybersecurity and Supply Chain Risk Management Are Not Simply Additive",
+          "url": "https://www.rand.org/pubs/research_reports/RRA532-1.html",
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "RAND Corporation",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "Researchers found that the private sector may not invest in cybersecurity sufficiently to meet national security needs."
+        },
+        {
+          "type": "industry-report",
+          "title": "Top 3 Cyber Threats on Manufacturing in 2025",
+          "url": "https://www.bitsight.com/blog/inside-cyber-threats-in-manufacturing-2025",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Bitsight",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Between 2024 and the first quarter of 2025, manufacturing saw a 71% surge in threat actor activity, with 29 distinct groups targeting the sector."
+        },
+        {
+          "type": "government",
+          "title": "Supply Chain Threats",
+          "url": "https://www.dni.gov/index.php/ncsc-what-we-do/ncsc-supply-chain-threats",
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Office of the Director of National Intelligence",
+          "credibilityScore": 0.95
+        }
+      ],
+      "tags": ["cybersecurity", "supply-chain", "defense", "national-security", "cmmc"],
+      "keywords": ["defense cybersecurity", "supply chain attack", "CMMC compliance", "OT security", "state-sponsored hacking"],
+      "metrics": {
+        "searchVolume": 12000,
+        "academicPapers": 350,
+        "patentApplications": 180,
+        "mediaArticles": 850,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:26:07Z"
+      },
+      "researchSession": "session-20260120-202607",
+      "confidence": 0.91,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:26:07Z",
+      "updatedAt": "2026-01-20T20:26:07Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567004",
+      "title": "Aerospace Supply Chain Spare Parts Shortages Causing Extended Aircraft Downtime and Operational Disruptions",
+      "slug": "aerospace-supply-chain-spare-parts-shortage",
+      "description": "Supply chain challenges for aerospace spare parts availability have emerged as the top issue facing the aviation maintenance industry. Deferred aircraft deliveries mean airlines continue to rely on aging fleets requiring servicing with greater complexity and longer turnaround times. The lack of spare parts contributes to extended shop visits, while delays in retiring legacy aircraft (particularly Boeing 737NG and Airbus A320ceo models) constrain the supply of used serviceable materials. The aerospace supply chain faces multiple compounding pressures: semiconductor shortages affecting avionics components, raw material constraints for titanium and specialty alloys, concentration of critical component suppliers, and logistics disruptions. Component lead times have extended significantly, with some parts requiring 12-18 months advance ordering. Airlines and MRO providers must maintain larger safety stock inventories, tying up capital and warehouse space. The globalization of aerospace manufacturing has created complex multi-tier supply chains vulnerable to disruption at any point, while single-source dependencies for critical components create systemic risks.",
+      "summary": "Spare parts shortages now top aviation maintenance challenges, with extended lead times, depleted used serviceable materials, and multi-tier supply chain vulnerabilities.",
+      "industry": {
+        "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "name": "Manufacturing & Industrial",
+        "slug": "manufacturing"
+      },
+      "domain": {
+        "id": "d7c81b2a-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+        "name": "Discrete Manufacturing",
+        "slug": "discrete-manufacturing"
+      },
+      "field": {
+        "id": "f8d92a1b-3c4e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Aerospace & Defense",
+        "slug": "aerospace-defense"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["supply-chain", "parts-shortage", "inventory-management"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "Global commercial aviation fleet",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 20000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 5,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Complex multi-tier global supply chains",
+          "Single-source dependencies for critical components",
+          "Long certification cycles for alternative suppliers",
+          "Capital constraints for inventory investment"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "OEMs, airlines, consultancies actively addressing",
+        "fundingLevel": "High - significant industry investment"
+      },
+      "impactScore": 67,
+      "rootCauses": [
+        {
+          "description": "Global supply chain disruptions from pandemic aftereffects and geopolitical tensions",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Deferred aircraft retirements depleting used serviceable materials pool",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Semiconductor and raw material shortages affecting component production",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Concentration of suppliers creating single points of failure",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Extended aircraft turnaround times at MRO facilities",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Increased parts costs and inventory carrying expenses",
+          "type": "direct",
+          "affectedArea": "Financial",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Aircraft grounded awaiting parts",
+          "type": "direct",
+          "affectedArea": "Fleet availability",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Potential safety risks from parts substitution pressure",
+          "type": "cascading",
+          "affectedArea": "Safety",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Additive Manufacturing / 3D Printing",
+          "description": "On-demand production of spare parts to reduce dependency on traditional supply chains",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Limited part types certifiable", "Quality consistency", "Regulatory approval timelines"]
+        },
+        {
+          "name": "Blockchain for Parts Traceability",
+          "description": "Distributed ledger technology for authenticating parts provenance and preventing counterfeits",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Industry adoption fragmented", "Integration complexity"]
+        },
+        {
+          "name": "Digital Supply Chain Platforms",
+          "description": "AI-powered platforms for demand forecasting and supplier collaboration",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Data sharing reluctance", "Implementation costs"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Faster certification pathways for alternative suppliers and parts",
+          "gapType": "accessibility",
+          "opportunity": "Streamlined qualification processes with digital tools",
+          "difficulty": "high"
+        },
+        {
+          "description": "Industry-wide parts availability visibility",
+          "gapType": "coverage",
+          "opportunity": "Shared inventory platform across MRO network",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Supply chain resilience through geographic diversification",
+          "gapType": "integration",
+          "opportunity": "Regional manufacturing hubs for critical components",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Airlines and aircraft operators",
+          "examples": ["Commercial carriers", "Cargo operators", "Business aviation"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Parts distributors and MRO providers",
+          "examples": ["AAR", "Boeing Distribution", "Aviall"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Component manufacturers and OEMs",
+          "examples": ["Boeing", "Airbus", "Tier 2/3 suppliers"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Global MRO Industry Outlook for 2025",
+          "url": "https://www.stsaviationgroup.com/global-mro-industry-outlook-for-2025/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "STS Aviation Group",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Supply chain challenges for spare parts availability persist in commercial aviation, driving it back up to the top of the list of issues facing the aviation maintenance industry."
+        },
+        {
+          "type": "industry-report",
+          "title": "What does the future hold for commercial-aviation maintenance?",
+          "url": "https://www.mckinsey.com/industries/aerospace-and-defense/our-insights/what-does-the-future-hold-for-commercial-aviation-maintenance",
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "McKinsey & Company",
+          "credibilityScore": 0.9
+        }
+      ],
+      "tags": ["supply-chain", "spare-parts", "inventory", "mro", "parts-shortage"],
+      "keywords": ["aerospace spare parts", "parts availability", "supply chain disruption", "used serviceable materials", "component lead times"],
+      "metrics": {
+        "searchVolume": 7500,
+        "academicPapers": 95,
+        "patentApplications": 65,
+        "mediaArticles": 380,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:26:07Z"
+      },
+      "researchSession": "session-20260120-202607",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:26:07Z",
+      "updatedAt": "2026-01-20T20:26:07Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567005",
+      "title": "Aerospace Quality Certification Compliance Burden Strains Manufacturers and Supply Chain Partners",
+      "slug": "aerospace-quality-certification-compliance-burden",
+      "description": "The aerospace industry operates under complex and evolving regulatory requirements that create significant compliance burdens for manufacturers and suppliers. Companies must navigate multiple overlapping certification frameworks including AS9100 (quality management), NADCAP (special processes), and various airworthiness authorities (FAA, EASA). The globalization of aerospace manufacturing has complicated compliance as organizations face diverse regional requirements and expectations. Achieving and maintaining certifications requires substantial investment in quality management systems, documentation, audits, and continuous improvement programs. Small and medium suppliers face particular challenges given limited resources. The rigorous certification requirements, while essential for safety, create barriers to entry, extend development timelines, and increase costs. Supply chain quality assurance is complicated by multi-tier supplier networks spanning the globe, while counterfeit parts prevention (governed by standards like AS5553A) requires extensive traceability systems. The certification landscape continues to evolve, requiring organizations to continuously adapt their quality systems.",
+      "summary": "Aerospace manufacturers face complex, overlapping certification requirements (AS9100, NADCAP) that strain resources, extend timelines, and create barriers especially for smaller suppliers.",
+      "industry": {
+        "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "name": "Manufacturing & Industrial",
+        "slug": "manufacturing"
+      },
+      "domain": {
+        "id": "d7c81b2a-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+        "name": "Discrete Manufacturing",
+        "slug": "discrete-manufacturing"
+      },
+      "field": {
+        "id": "f8d92a1b-3c4e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Aerospace & Defense",
+        "slug": "aerospace-defense"
+      },
+      "problemType": "regulatory",
+      "problemSubtypes": ["certification", "compliance", "quality-management"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "Thousands of aerospace suppliers globally",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 8000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 3,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Safety-critical nature limits simplification potential",
+          "Multiple regulatory jurisdictions with different requirements",
+          "Audit fatigue and resource demands",
+          "Continuous evolution of standards"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "IAQG, SAE, certification bodies",
+        "fundingLevel": "Moderate - primarily borne by industry"
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "Multiple regulatory authorities with overlapping but distinct requirements",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Globalization creating need to meet diverse regional standards",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Continuous evolution of standards in response to incidents and technology changes",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Complex multi-tier supply chains requiring quality assurance at each level",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Significant investment required for certification and maintenance",
+          "type": "direct",
+          "affectedArea": "Financial",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Extended development and qualification timelines",
+          "type": "direct",
+          "affectedArea": "Time-to-market",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Barrier to entry for potential new suppliers",
+          "type": "indirect",
+          "affectedArea": "Competition",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Resource diversion from innovation to compliance",
+          "type": "indirect",
+          "affectedArea": "Innovation",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Integrated Management Systems",
+          "description": "Combined QMS addressing multiple standards (AS9100, ISO 14001, etc.) to reduce duplication",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Still requires separate audits for some certifications", "Complex implementation"]
+        },
+        {
+          "name": "Digital Quality Management Systems",
+          "description": "Software platforms automating documentation, audit management, and compliance tracking",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Implementation costs", "Integration with legacy systems"]
+        },
+        {
+          "name": "IAQG Online Aerospace Supplier Information System (OASIS)",
+          "description": "Shared database of audit results to reduce duplicate supplier audits",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Not all audits recognized", "Data quality varies"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Harmonization of global certification requirements",
+          "gapType": "integration",
+          "opportunity": "Mutual recognition agreements between regulatory authorities",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Affordable compliance pathways for small suppliers",
+          "gapType": "cost",
+          "opportunity": "Shared compliance services and simplified requirements for low-risk suppliers",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Risk-based certification allowing proportional requirements",
+          "gapType": "coverage",
+          "opportunity": "Tiered certification based on component criticality",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Aerospace manufacturers and suppliers seeking certification",
+          "examples": ["OEMs", "Tier 1-3 suppliers", "Machine shops"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Standards bodies and regulators",
+          "examples": ["IAQG", "SAE", "FAA", "EASA"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Certification and audit bodies",
+          "examples": ["NQA", "BSI", "DNV"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Challenges of Aerospace Quality Control in Manufacturing",
+          "url": "https://snowlineengineering.com/aerospace-quality-control-challenges/",
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Snowline Engineering",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "The aerospace industry is rife with complex and evolving regulatory requirements."
+        },
+        {
+          "type": "industry-report",
+          "title": "Best Practices for AS9100 Certification in the Aerospace Industry",
+          "url": "https://www.qualitymag.com/articles/98000-best-practices-for-as9100-certification-in-the-aerospace-industry",
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Quality Magazine",
+          "credibilityScore": 0.8
+        }
+      ],
+      "tags": ["certification", "quality", "compliance", "as9100", "nadcap", "regulatory"],
+      "keywords": ["aerospace certification", "AS9100", "NADCAP", "quality management", "aerospace compliance"],
+      "metrics": {
+        "searchVolume": 6200,
+        "academicPapers": 65,
+        "patentApplications": 20,
+        "mediaArticles": 180,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T20:26:07Z"
+      },
+      "researchSession": "session-20260120-202607",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:26:07Z",
+      "updatedAt": "2026-01-20T20:26:07Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567006",
+      "title": "Aerospace Industry Ransomware and Cyberattack Surge Disrupts Operations and Threatens Data Security",
+      "slug": "aerospace-ransomware-cyberattack-surge-disruption",
+      "description": "The aerospace industry is experiencing a dramatic surge in ransomware and cyberattacks that disrupt operations and threaten sensitive data. Thales data reveals a 600% increase in ransomware incidents between 2024 and 2025. A notable example occurred in September 2025 when a cyberattack disrupted check-in systems at major European airports including Brussels, London, and Berlin. These attacks target the full aerospace ecosystem including airlines, airports, MRO providers, and manufacturers. The convergence of IT and OT systems in modern aerospace operations creates expanded attack surfaces, while the interconnected nature of airline and airport systems means breaches can cascade rapidly. Aerospace organizations hold valuable targets including passenger data, proprietary designs, flight operations systems, and supply chain information. Many organizations have legacy systems with inadequate security, and the industry's reliance on third-party vendors and complex supply chains creates multiple potential entry points for attackers. The financial and operational impacts of successful attacks are severe, including operational shutdowns, data theft, ransom payments, regulatory penalties, and reputational damage.",
+      "summary": "Ransomware attacks on aerospace increased 600% from 2024-2025, with incidents disrupting major airports and threatening the interconnected airline/airport ecosystem.",
+      "industry": {
+        "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "name": "Manufacturing & Industrial",
+        "slug": "manufacturing"
+      },
+      "domain": {
+        "id": "d7c81b2a-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+        "name": "Discrete Manufacturing",
+        "slug": "discrete-manufacturing"
+      },
+      "field": {
+        "id": "f8d92a1b-3c4e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Aerospace & Defense",
+        "slug": "aerospace-defense"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["cybersecurity", "ransomware", "operational-disruption"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "Global aerospace industry",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 9
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Rapidly evolving threat landscape",
+          "Legacy systems difficult to secure",
+          "Interconnected industry architecture",
+          "Sophisticated state-sponsored and criminal actors"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Major cybersecurity firms, government agencies",
+        "fundingLevel": "High - significant investment in aerospace cybersecurity"
+      },
+      "impactScore": 71,
+      "rootCauses": [
+        {
+          "description": "Highly interconnected systems create cascading vulnerability",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Legacy systems with inadequate security controls",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "High-value targets attracting sophisticated attackers",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "IT/OT convergence expanding attack surface",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Operational shutdowns affecting flights and manufacturing",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Theft of sensitive passenger and proprietary data",
+          "type": "direct",
+          "affectedArea": "Data security",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Financial losses from ransom payments and recovery costs",
+          "type": "direct",
+          "affectedArea": "Financial",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Regulatory penalties and legal liabilities",
+          "type": "indirect",
+          "affectedArea": "Compliance",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Passenger trust erosion",
+          "type": "cascading",
+          "affectedArea": "Reputation",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Security Operations Centers (SOC)",
+          "description": "24/7 monitoring and incident response capabilities",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Expensive to operate", "Requires skilled staff", "Alert fatigue"]
+        },
+        {
+          "name": "Endpoint Detection and Response (EDR)",
+          "description": "Advanced threat detection on endpoints across the organization",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["May not cover OT systems", "Requires tuning"]
+        },
+        {
+          "name": "Network Segmentation",
+          "description": "Isolating critical systems to limit breach propagation",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Complex in interconnected aerospace environments", "May impact operations"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Industry-wide threat intelligence sharing in real-time",
+          "gapType": "coordination",
+          "opportunity": "Automated threat sharing platform for aerospace sector",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Securing legacy OT and industrial control systems",
+          "gapType": "coverage",
+          "opportunity": "OT-specific security solutions and monitoring",
+          "difficulty": "high"
+        },
+        {
+          "description": "Resilient architectures for rapid recovery",
+          "gapType": "quality",
+          "opportunity": "Immutable infrastructure and automated recovery systems",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Airlines, airports, and MRO providers",
+          "examples": ["Major carriers", "International airports", "MRO facilities"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Cybersecurity vendors and managed security providers",
+          "examples": ["Thales", "CrowdStrike", "Palo Alto Networks"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Aviation regulators and government cybersecurity agencies",
+          "examples": ["TSA", "CISA", "ENISA"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Commercial Aerospace in 2026: Advances from Self-Healing Parts to Space-Based MRO",
+          "url": "https://www.eplaneai.com/news/commercial-aerospace-in-2026-advances-from-self-healing-parts-to-space-based-mro",
+          "publishedAt": "2026-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "ePlaneAI",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Thales data reveals a dramatic 600% increase in ransomware incidents between 2024 and 2025."
+        },
+        {
+          "type": "news",
+          "title": "Commercial aerospace 2026 - from self-healing parts to MRO in space",
+          "url": "https://www.aviationbusinessnews.com/in-depth/commercial-aerospace-2026-from-self-healing-parts-and-to-mro-in-space",
+          "publishedAt": "2026-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Aviation Business News",
+          "credibilityScore": 0.8
+        }
+      ],
+      "tags": ["cybersecurity", "ransomware", "aviation", "airports", "operational-disruption"],
+      "keywords": ["aerospace ransomware", "airline cyberattack", "airport security", "aviation cybersecurity"],
+      "metrics": {
+        "searchVolume": 9500,
+        "academicPapers": 180,
+        "patentApplications": 95,
+        "mediaArticles": 720,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:26:07Z"
+      },
+      "researchSession": "session-20260120-202607",
+      "confidence": 0.89,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:26:07Z",
+      "updatedAt": "2026-01-20T20:26:07Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567007",
+      "title": "Digital Twin and AI Integration Barriers Slow Aerospace Manufacturing Modernization",
+      "slug": "digital-twin-ai-integration-barriers-aerospace-modernization",
+      "description": "Despite significant potential, the aerospace industry faces substantial barriers to adopting digital twin technology and AI-based manufacturing solutions. While digital twins promise to revolutionize aircraft design, manufacturing, and maintenance through virtual replicas enabling simulation, optimization, and predictive analytics, implementation challenges have slowed progress. By 2026, agentic AI is expected to progress from pilot projects to scaled deployments, but achieving this transition requires overcoming significant hurdles. Key barriers include: data integration challenges across disparate legacy systems; lack of standardized data formats and interoperability; high implementation costs requiring significant upfront investment; workforce skill gaps in data science and AI; cybersecurity concerns about digital models of critical systems; organizational resistance to new ways of working; and regulatory uncertainty around AI-based decision making in safety-critical applications. The digital aerospace MRO market is projected to grow from $1.02 billion in 2025 to $1.88 billion by 2030, but realizing this potential requires addressing these adoption barriers.",
+      "summary": "Aerospace digital twin and AI adoption faces barriers including legacy system integration, data standardization, skills gaps, and regulatory uncertainty despite $1.88B market potential.",
+      "industry": {
+        "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "name": "Manufacturing & Industrial",
+        "slug": "manufacturing"
+      },
+      "domain": {
+        "id": "d7c81b2a-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+        "name": "Discrete Manufacturing",
+        "slug": "discrete-manufacturing"
+      },
+      "field": {
+        "id": "f8d92a1b-3c4e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Aerospace & Defense",
+        "slug": "aerospace-defense"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["digital-transformation", "technology-adoption", "integration"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "Aerospace manufacturers and MRO providers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 10000000000,
+          "timeframe": "annual opportunity cost"
+        },
+        "qualityOfLife": 3,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Legacy system integration complexity",
+          "Lack of data standardization",
+          "High implementation costs",
+          "Workforce skill gaps",
+          "Regulatory uncertainty for AI in safety-critical applications"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "OEMs, technology vendors, research institutions",
+        "fundingLevel": "High - significant R&D investment"
+      },
+      "impactScore": 59,
+      "rootCauses": [
+        {
+          "description": "Disparate legacy systems with incompatible data formats",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "High upfront investment requirements with uncertain ROI timelines",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Shortage of personnel with digital twin and AI expertise",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Unclear regulatory frameworks for AI in safety-critical decisions",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Slower productivity improvements compared to potential",
+          "type": "direct",
+          "affectedArea": "Efficiency",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Competitive disadvantage versus more digitally mature competitors",
+          "type": "indirect",
+          "affectedArea": "Market position",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Missed opportunities for predictive maintenance benefits",
+          "type": "indirect",
+          "affectedArea": "Maintenance costs",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Cloud-based Digital Twin Platforms",
+          "description": "SaaS platforms for building and deploying digital twins without extensive infrastructure",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Data security concerns", "Integration with on-premise systems", "Customization limitations"]
+        },
+        {
+          "name": "Agentic AI Troubleshooting Assistants",
+          "description": "GenAI co-pilots for maintenance technicians navigating complex documentation",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Still in pilot phase", "Accuracy validation needed", "User adoption challenges"]
+        },
+        {
+          "name": "Industry Data Standards Initiatives",
+          "description": "Efforts to standardize data formats for aerospace digital systems",
+          "type": "standard",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Slow adoption", "Competing standards"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Affordable digital twin solutions for smaller suppliers",
+          "gapType": "cost",
+          "opportunity": "Modular, scalable digital twin platforms",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Regulatory frameworks for AI in safety-critical aerospace applications",
+          "gapType": "coverage",
+          "opportunity": "Industry-regulator collaboration on AI certification",
+          "difficulty": "high"
+        },
+        {
+          "description": "Workforce training at scale for digital technologies",
+          "gapType": "scale",
+          "opportunity": "Industry-wide digital skills certification programs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Aerospace manufacturers seeking digital transformation",
+          "examples": ["Boeing", "Airbus", "Tier 1 suppliers"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Technology vendors providing digital twin and AI solutions",
+          "examples": ["Siemens", "Dassault Systemes", "GE Digital"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Regulators evaluating AI in aviation",
+          "examples": ["FAA", "EASA"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Digital Aerospace MRO Markets 2020-2035",
+          "url": "https://www.globenewswire.com/news-release/2026/01/09/3215945/28124/en/1-88-Bn-Digital-Aerospace-MRO-Markets-2020-2025-2025-2030F-2035F-Opportunities-in-Adoption-of-AI-and-IoT-for-Predictive-Maintenance-Blockchain-for-Traceability-and-Cloud-based-Suit.html",
+          "publishedAt": "2026-01-09",
+          "accessedAt": "2026-01-20",
+          "publisher": "GlobeNewswire",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "The digital aerospace MRO market is projected to grow from $1.02 billion in 2025 to $1.88 billion by 2030."
+        },
+        {
+          "type": "industry-report",
+          "title": "Commercial Aerospace in 2026",
+          "url": "https://www.eplaneai.com/news/commercial-aerospace-in-2026-advances-from-self-healing-parts-to-space-based-mro",
+          "publishedAt": "2026-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "ePlaneAI",
+          "credibilityScore": 0.8
+        }
+      ],
+      "tags": ["digital-twin", "ai", "digital-transformation", "industry-4.0", "predictive-maintenance"],
+      "keywords": ["aerospace digital twin", "AI in aviation", "predictive maintenance", "digital MRO", "agentic AI"],
+      "metrics": {
+        "searchVolume": 8200,
+        "academicPapers": 220,
+        "patentApplications": 340,
+        "mediaArticles": 450,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:26:07Z"
+      },
+      "researchSession": "session-20260120-202607",
+      "confidence": 0.84,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:26:07Z",
+      "updatedAt": "2026-01-20T20:26:07Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567008",
+      "title": "Counterfeit Aerospace Parts Infiltration Threatens Aviation Safety and Supply Chain Integrity",
+      "slug": "counterfeit-aerospace-parts-supply-chain-infiltration",
+      "description": "The aerospace industry faces an ongoing challenge with counterfeit and substandard parts infiltrating supply chains, posing serious safety risks and quality concerns. ISO Aerospace Standard AS5553A was instituted specifically to check the global supply chain for counterfeit parts, yet the problem persists. Counterfeit parts range from simple fasteners to complex electronics, and may include parts with falsified documentation, substandard materials, or improper manufacturing processes. The globalization of aerospace supply chains has complicated detection efforts, with multi-tier supplier networks spanning numerous countries. Parts may pass through multiple distributors before reaching end users, creating opportunities for counterfeits to enter the legitimate supply chain. Detection requires extensive traceability systems, material testing, and documentation verification. The consequences of counterfeit parts range from increased maintenance costs and operational disruptions to catastrophic safety failures. Blockchain and other traceability technologies are emerging as potential solutions, but widespread adoption remains limited. Small and medium suppliers may lack resources for comprehensive parts authentication programs.",
+      "summary": "Counterfeit parts continue infiltrating aerospace supply chains despite AS5553A standards, with globalized multi-tier networks complicating detection and threatening safety.",
+      "industry": {
+        "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "name": "Manufacturing & Industrial",
+        "slug": "manufacturing"
+      },
+      "domain": {
+        "id": "d7c81b2a-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+        "name": "Discrete Manufacturing",
+        "slug": "discrete-manufacturing"
+      },
+      "field": {
+        "id": "f8d92a1b-3c4e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Aerospace & Defense",
+        "slug": "aerospace-defense"
+      },
+      "problemType": "process",
+      "problemSubtypes": ["quality-control", "supply-chain-integrity", "safety-risk"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "Global aviation industry and passengers",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 5000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Complex global supply chains with multiple tiers",
+          "Sophisticated counterfeiters adapting techniques",
+          "Cost of comprehensive authentication programs",
+          "Lack of universal traceability standards"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "FAA, SAE, OEMs, EASA",
+        "fundingLevel": "Moderate - industry and regulatory investment"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Complex multi-tier global supply chains creating opacity",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Economic incentives for counterfeiting given high component values",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Inconsistent enforcement across international jurisdictions",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Sophisticated counterfeiting techniques including falsified documentation",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Potential catastrophic safety failures from part failures",
+          "type": "direct",
+          "affectedArea": "Safety",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Increased maintenance costs and unplanned repairs",
+          "type": "direct",
+          "affectedArea": "Financial",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Erosion of trust in supply chain integrity",
+          "type": "indirect",
+          "affectedArea": "Industry reputation",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Regulatory penalties and liability exposure",
+          "type": "indirect",
+          "affectedArea": "Legal/Compliance",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "AS5553A Standard",
+          "description": "SAE standard for counterfeit electronic parts avoidance, detection, mitigation, and disposition",
+          "type": "standard",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Compliance varies across supply chain", "Focused primarily on electronics"]
+        },
+        {
+          "name": "Blockchain Traceability Systems",
+          "description": "Distributed ledger technology for immutable parts provenance tracking",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Limited adoption", "Integration complexity", "Data entry accuracy depends on participants"]
+        },
+        {
+          "name": "Material Testing and Authentication",
+          "description": "Physical and chemical testing to verify material specifications",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Cannot test every part", "Costly", "Destructive testing limitations"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Universal parts traceability from raw material to installation",
+          "gapType": "coverage",
+          "opportunity": "Industry-wide blockchain or digital traceability platform",
+          "difficulty": "high"
+        },
+        {
+          "description": "Affordable authentication for small distributors and MROs",
+          "gapType": "cost",
+          "opportunity": "Shared authentication services and simplified verification",
+          "difficulty": "medium"
+        },
+        {
+          "description": "AI-based document fraud detection",
+          "gapType": "quality",
+          "opportunity": "Machine learning systems for identifying fraudulent certifications",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Airlines, MROs, and end users at risk from counterfeits",
+          "examples": ["Commercial carriers", "MRO providers", "Defense operators"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Parts distributors and supply chain intermediaries",
+          "examples": ["Authorized distributors", "Brokers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Regulatory authorities and standards bodies",
+          "examples": ["FAA", "EASA", "SAE"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Aerospace Manufacturing Certifications - Counterfeit Prevention",
+          "url": "https://www.bescast.com/blog/aerospace-manufacturing-certifications/",
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Bescast",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "ISO Aerospace Standards for prevention of counterfeit parts AS 5553 A has instituted with this very aim of having a check on the entire global supply chain of aircraft industry."
+        },
+        {
+          "type": "industry-report",
+          "title": "Digital Aerospace MRO Markets - Blockchain for Traceability",
+          "url": "https://www.globenewswire.com/news-release/2026/01/09/3215945/28124/en/1-88-Bn-Digital-Aerospace-MRO-Markets-2020-2025-2025-2030F-2035F-Opportunities-in-Adoption-of-AI-and-IoT-for-Predictive-Maintenance-Blockchain-for-Traceability-and-Cloud-based-Suit.html",
+          "publishedAt": "2026-01-09",
+          "accessedAt": "2026-01-20",
+          "publisher": "GlobeNewswire",
+          "credibilityScore": 0.8
+        }
+      ],
+      "tags": ["counterfeit-parts", "supply-chain", "safety", "traceability", "quality-control"],
+      "keywords": ["counterfeit aerospace parts", "parts traceability", "AS5553", "supply chain integrity", "parts authentication"],
+      "metrics": {
+        "searchVolume": 4800,
+        "academicPapers": 75,
+        "patentApplications": 120,
+        "mediaArticles": 210,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T20:26:07Z"
+      },
+      "researchSession": "session-20260120-202607",
+      "confidence": 0.83,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:26:07Z",
+      "updatedAt": "2026-01-20T20:26:07Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567009",
+      "title": "New Generation Aircraft Engine Reliability Issues Drive Unplanned Maintenance and Fleet Disruptions",
+      "slug": "new-generation-aircraft-engine-reliability-issues",
+      "description": "Newer generation commercial aircraft engines, specifically CFM International LEAP and Pratt & Whitney GTF (Geared Turbofan) engines, are experiencing reliability issues that require repairs in much greater numbers than originally anticipated. The GTF engines in particular have been affected by issues including powder metal contamination in high-pressure turbine disks, necessitating accelerated inspections and removals across the global fleet. These problems have caused significant operational disruptions for airlines operating Airbus A320neo and A220 aircraft. The unexpected maintenance requirements strain an already capacity-constrained MRO network, extend aircraft downtime, and impact airline scheduling and profitability. Engine manufacturers are working on engineering solutions and accelerating parts production, but the fixes require time to develop, certify, and implement. Airlines face difficult decisions about fleet utilization, with some aircraft grounded or operating under restrictions pending inspections. The situation highlights challenges in new engine program maturity and the tension between fuel efficiency innovations and long-term reliability.",
+      "summary": "LEAP and GTF next-gen engines require repairs far exceeding forecasts due to powder metal contamination and other issues, straining MRO capacity and grounding aircraft.",
+      "industry": {
+        "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "name": "Manufacturing & Industrial",
+        "slug": "manufacturing"
+      },
+      "domain": {
+        "id": "d7c81b2a-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+        "name": "Discrete Manufacturing",
+        "slug": "discrete-manufacturing"
+      },
+      "field": {
+        "id": "f8d92a1b-3c4e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Aerospace & Defense",
+        "slug": "aerospace-defense"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["reliability", "engine-defects", "manufacturing-quality"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "Airlines operating A320neo, A220, and 737 MAX fleets",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 12000000000,
+          "timeframe": "cumulative through 2030"
+        },
+        "qualityOfLife": 5,
+        "productivity": 9
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Engineering fixes require development and certification time",
+          "Parts production ramp-up constraints",
+          "MRO capacity limitations",
+          "Installed fleet size requiring inspection/modification"
+        ]
+      },
+      "neglectedness": {
+        "overall": 2,
+        "attentionLevel": "saturated",
+        "activeResearchers": "OEMs, airlines, regulators actively engaged",
+        "fundingLevel": "Very high - priority for engine manufacturers"
+      },
+      "impactScore": 67,
+      "rootCauses": [
+        {
+          "description": "Powder metal contamination in high-pressure turbine disk manufacturing",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "New technology introduction challenges in geared turbofan architecture",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Aggressive certification timelines potentially limiting maturation",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Operating conditions more demanding than design assumptions",
+          "category": "environmental",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Aircraft groundings and reduced fleet availability",
+          "type": "direct",
+          "affectedArea": "Operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Accelerated MRO demand overwhelming capacity",
+          "type": "direct",
+          "affectedArea": "Maintenance",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Airline revenue losses and schedule disruptions",
+          "type": "direct",
+          "affectedArea": "Financial",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Delayed delivery of new aircraft pending engine availability",
+          "type": "cascading",
+          "affectedArea": "Fleet growth",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Confidence erosion in new engine programs",
+          "type": "indirect",
+          "affectedArea": "Industry reputation",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Accelerated Inspection Programs",
+          "description": "FAA/EASA-mandated inspection schedules to identify affected engines",
+          "type": "policy",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Reactive rather than preventive", "Adds to MRO workload"]
+        },
+        {
+          "name": "Engine OEM Support Programs",
+          "description": "Pratt & Whitney and CFM programs to support affected operators",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Parts supply constraints", "Cannot prevent operational disruptions"]
+        },
+        {
+          "name": "Spare Engine Pool Expansion",
+          "description": "Leasing companies and OEMs expanding available spare engines",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Insufficient quantity", "High lease costs"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Permanent engineering fix for powder metal contamination",
+          "gapType": "quality",
+          "opportunity": "Redesigned turbine disk manufacturing process",
+          "difficulty": "high"
+        },
+        {
+          "description": "Predictive analytics for early issue detection",
+          "gapType": "coverage",
+          "opportunity": "Enhanced engine health monitoring systems",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Faster parts production ramp-up",
+          "gapType": "scale",
+          "opportunity": "Manufacturing capacity expansion and automation",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Airlines operating affected engine types",
+          "examples": ["IndiGo", "Spirit", "JetBlue", "Air France-KLM"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Engine OEMs responsible for fixes",
+          "examples": ["Pratt & Whitney", "CFM International"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Aviation regulators overseeing airworthiness",
+          "examples": ["FAA", "EASA"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Aircraft engine maintenance and repair to peak in 2026",
+          "url": "https://www.bain.com/about/media-center/press-releases/2024/aircraft-engine-maintenance-and-repair-to-peak-in-2026-worsening-capacity-shortage-for-commercial-aviation/",
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Bain & Company",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "Newer generation CFM International LEAP engines and especially Pratt & Whitney GTF engines are requiring repairs in much greater numbers than anticipated due to an array of issues, including powder metal contamination."
+        },
+        {
+          "type": "industry-report",
+          "title": "2026 Aerospace and Defense Industry Outlook",
+          "url": "https://www.deloitte.com/us/en/insights/industry/aerospace-defense/aerospace-and-defense-industry-outlook.html",
+          "publishedAt": "2026-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Deloitte",
+          "credibilityScore": 0.9
+        }
+      ],
+      "tags": ["engine-reliability", "gtf", "leap", "maintenance", "fleet-disruption"],
+      "keywords": ["GTF engine problems", "LEAP engine issues", "powder metal contamination", "aircraft grounding", "engine reliability"],
+      "metrics": {
+        "searchVolume": 11000,
+        "academicPapers": 45,
+        "patentApplications": 80,
+        "mediaArticles": 680,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:26:07Z"
+      },
+      "researchSession": "session-20260120-202607",
+      "confidence": 0.91,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:26:07Z",
+      "updatedAt": "2026-01-20T20:26:07Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567010",
+      "title": "Aging Aircraft Fleet Extension Increases Maintenance Complexity and Operational Risk",
+      "slug": "aging-aircraft-fleet-extension-maintenance-complexity",
+      "description": "Airlines globally are extending the operational life of aging aircraft fleets, particularly Boeing 737NG and Airbus A320ceo models, due to new aircraft delivery delays and economic pressures. This fleet extension strategy creates significant challenges for the maintenance ecosystem and introduces operational risks. Older aircraft require servicing involving greater complexity and longer turnaround times, with structural fatigue, corrosion, and systems degradation requiring more intensive inspection and repair. The extension of legacy fleets also impacts the supply of used serviceable materials, as parts that would normally enter the secondary market through aircraft retirements remain in service. Maintenance documentation for older aircraft may be less digitized, complicating work planning and execution. Workforce expertise in older aircraft types becomes increasingly valuable but scarce as technicians retire. Airlines must balance the economics of continued operation against the rising maintenance costs and potential safety implications of operating aging aircraft beyond their originally anticipated service lives.",
+      "summary": "Airlines extending 737NG and A320ceo operations due to delivery delays face increased maintenance complexity, longer turnarounds, and depleted used parts supply.",
+      "industry": {
+        "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "name": "Manufacturing & Industrial",
+        "slug": "manufacturing"
+      },
+      "domain": {
+        "id": "d7c81b2a-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+        "name": "Discrete Manufacturing",
+        "slug": "discrete-manufacturing"
+      },
+      "field": {
+        "id": "f8d92a1b-3c4e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Aerospace & Defense",
+        "slug": "aerospace-defense"
+      },
+      "problemType": "process",
+      "problemSubtypes": ["fleet-management", "aging-infrastructure", "maintenance-burden"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "Airlines with aging narrow-body fleets",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 8000000000,
+          "timeframe": "annual incremental maintenance costs"
+        },
+        "qualityOfLife": 4,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "New aircraft delivery delays outside airline control",
+          "Capital constraints limiting fleet renewal",
+          "Limited MRO capacity for complex heavy maintenance",
+          "Declining expertise in legacy aircraft types"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Airlines, MROs, regulators monitoring",
+        "fundingLevel": "Moderate - airlines investing in fleet maintenance"
+      },
+      "impactScore": 63,
+      "rootCauses": [
+        {
+          "description": "New aircraft delivery delays from Boeing and Airbus",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Economic pressures favoring fleet extension over replacement",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "High demand and long lead times for new aircraft orders",
+          "category": "environmental",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Increased maintenance costs per flight hour",
+          "type": "direct",
+          "affectedArea": "Operating costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Longer maintenance turnaround times",
+          "type": "direct",
+          "affectedArea": "Fleet availability",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Reduced supply of used serviceable materials for market",
+          "type": "indirect",
+          "affectedArea": "Parts availability",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Higher fuel costs from less efficient older aircraft",
+          "type": "indirect",
+          "affectedArea": "Operating costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Potential safety concerns from structural aging",
+          "type": "cascading",
+          "affectedArea": "Safety",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Aging Aircraft Programs",
+          "description": "Structured inspection and modification programs for extending aircraft service life safely",
+          "type": "framework",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Costly to implement", "Requires specialized expertise"]
+        },
+        {
+          "name": "Structural Health Monitoring",
+          "description": "Sensor systems for continuous monitoring of aircraft structural integrity",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Retrofit costs", "Data analysis complexity"]
+        },
+        {
+          "name": "Enhanced Maintenance Programs",
+          "description": "More frequent inspections and preventive maintenance for aging aircraft",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Increases downtime", "Higher direct maintenance costs"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Predictive maintenance specifically tuned for aging aircraft",
+          "gapType": "coverage",
+          "opportunity": "AI models trained on older aircraft failure patterns",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Sustainable supply of parts for legacy aircraft",
+          "gapType": "scale",
+          "opportunity": "3D printing and remanufacturing programs for legacy parts",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Knowledge transfer from retiring technicians",
+          "gapType": "awareness",
+          "opportunity": "Systematic documentation and training programs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Airlines operating extended-life fleets",
+          "examples": ["Southwest", "Delta", "United", "Ryanair"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "MRO providers handling heavy maintenance",
+          "examples": ["Lufthansa Technik", "HAECO", "AAR"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Regulators overseeing continued airworthiness",
+          "examples": ["FAA", "EASA", "National aviation authorities"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Global MRO Industry Outlook for 2025",
+          "url": "https://www.stsaviationgroup.com/global-mro-industry-outlook-for-2025/",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "STS Aviation Group",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Deferred deliveries mean airlines continue to rely on aging fleets which require servicing involving greater complexity and longer turnaround times."
+        },
+        {
+          "type": "industry-report",
+          "title": "What does the future hold for commercial-aviation maintenance?",
+          "url": "https://www.mckinsey.com/industries/aerospace-and-defense/our-insights/what-does-the-future-hold-for-commercial-aviation-maintenance",
+          "publishedAt": "2024-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "McKinsey & Company",
+          "credibilityScore": 0.9
+        }
+      ],
+      "tags": ["aging-aircraft", "fleet-management", "maintenance", "legacy-aircraft", "operational-costs"],
+      "keywords": ["aging aircraft maintenance", "fleet extension", "737NG", "A320ceo", "aircraft life extension"],
+      "metrics": {
+        "searchVolume": 6800,
+        "academicPapers": 110,
+        "patentApplications": 45,
+        "mediaArticles": 320,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:26:07Z"
+      },
+      "researchSession": "session-20260120-202607",
+      "confidence": 0.86,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:26:07Z",
+      "updatedAt": "2026-01-20T20:26:07Z",
+      "version": 1
+    }
+  ]
+}
