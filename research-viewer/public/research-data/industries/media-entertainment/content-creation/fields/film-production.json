@@ -1,0 +1,2263 @@
+{
+  "field": {
+    "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+    "name": "Film Production",
+    "slug": "film-production",
+    "description": "The process of creating motion pictures, including pre-production planning, principal photography, and coordination of cast and crew to produce feature films, documentaries, and other cinematic content."
+  },
+  "domain": {
+    "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
+    "name": "Content Creation",
+    "slug": "content-creation"
+  },
+  "industry": {
+    "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+    "name": "Media & Entertainment",
+    "slug": "media-entertainment"
+  },
+  "problems": [
+    {
+      "id": "p1a2b3c4-d5e6-f7a8-b9c0-d1e2f3a4b5c6",
+      "title": "Film Production Workforce Crisis and Mass Industry Exodus",
+      "slug": "film-production-workforce-crisis-mass-industry-exodus",
+      "description": "The film production industry is experiencing an unprecedented workforce crisis, with 63% of crew members reporting earnings below expectations in 2024 and 41% considering leaving the industry within the next five years due to financial instability. This crisis has been exacerbated by the combined effects of the COVID-19 pandemic, the 2023 Hollywood strikes (SAG-AFTRA and WGA), and fundamental shifts in production economics. Freelance crew members face the most acute challenges, with a -23% net negativity in their outlook—the steepest decline of any group in the industry. The instability stems from irregular work patterns, lack of benefits, unpredictable scheduling, and the project-based nature of film work that provides no job security between productions. As experienced professionals leave the industry, institutional knowledge is being lost, and the remaining workforce faces increased pressure and longer hours, creating a vicious cycle that further accelerates departures.",
+      "summary": "Over 40% of film crew members are considering leaving the industry due to financial instability and poor working conditions, threatening the loss of critical expertise and institutional knowledge.",
+      "industry": {
+        "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Film Production",
+        "slug": "film-production"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["labor", "workforce", "economic"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "500,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 9,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Gig economy business model deeply entrenched",
+          "Studio profit maximization priorities",
+          "Global competition for productions",
+          "Lack of portable benefits infrastructure"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Limited academic research, primarily union advocacy",
+        "fundingLevel": "Minimal dedicated funding for workforce retention"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "Project-based employment model provides no job security between productions",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Post-pandemic and post-strike production slowdown reduced available work",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of portable healthcare and retirement benefits for freelance workers",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Unpredictable scheduling makes work-life balance impossible",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Production migration to international locations reduces domestic opportunities",
+          "category": "economic",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Loss of experienced professionals and institutional knowledge",
+          "type": "direct",
+          "affectedArea": "Industry expertise",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Increased workload and burnout for remaining crew members",
+          "type": "cascading",
+          "affectedArea": "Worker wellbeing",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Quality degradation as less experienced workers fill critical roles",
+          "type": "indirect",
+          "affectedArea": "Production quality",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Skills gap as training pipelines are disrupted",
+          "type": "cascading",
+          "affectedArea": "Workforce development",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Union Contracts (IATSE, SAG-AFTRA)",
+          "description": "Collective bargaining agreements that establish minimum wages, working conditions, and some benefits",
+          "type": "policy",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": [
+            "Only covers union members",
+            "Enforcement varies by production",
+            "Doesn't address fundamental gig economy issues"
+          ]
+        },
+        {
+          "name": "State Film Tax Incentives",
+          "description": "Tax credits and rebates to attract productions and maintain local jobs",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": [
+            "Race to the bottom competition",
+            "Doesn't guarantee local hiring",
+            "Subject to political changes"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Portable benefits system that follows workers across productions and employers",
+          "gapType": "coverage",
+          "opportunity": "Industry-wide benefits pool funded by production contributions",
+          "difficulty": "high"
+        },
+        {
+          "description": "Income smoothing mechanisms for irregular work patterns",
+          "gapType": "accessibility",
+          "opportunity": "Entertainment industry credit union or income insurance products",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Career transition support for those leaving the industry",
+          "gapType": "coverage",
+          "opportunity": "Skills translation and retraining programs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Freelance film crew members (camera, lighting, sound, grips, etc.)",
+          "examples": ["Cinematographers", "Gaffers", "Sound mixers", "Production assistants"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Major studios and streaming platforms",
+          "examples": ["Disney", "Warner Bros.", "Netflix", "Amazon Studios"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Entertainment industry unions",
+          "examples": ["IATSE", "SAG-AFTRA", "DGA", "WGA"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "ProdPro 2025 Industry Outlook Report",
+          "url": "https://www.ep.com/blog/film-incentives-north-america-entertainment-industry-2024-review-look-ahead-2025/",
+          "publishedAt": "2025-01-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Entertainment Partners",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "63% of surveyed crew members reported earning less than expected in 2024, and 41% are considering leaving the industry within the next five years due to financial instability."
+        },
+        {
+          "type": "news",
+          "title": "Eight talking points for the US film industry in 2026",
+          "url": "https://www.screendaily.com/features/eight-talking-points-for-the-us-film-industry-in-2026/5212421.article",
+          "publishedAt": "2026-01-10",
+          "accessedAt": "2026-01-20",
+          "publisher": "Screen Daily",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Rank-and-file members of the production community have endured the most hardship in the last few years as the sector has been buffeted by the pandemic and Hollywood strikes."
+        }
+      ],
+      "tags": ["workforce", "labor-crisis", "film-crew", "job-security", "entertainment-industry"],
+      "keywords": ["film crew exodus", "entertainment workforce crisis", "Hollywood labor shortage", "production crew retention"],
+      "metrics": {
+        "searchVolume": 8500,
+        "academicPapers": 45,
+        "mediaArticles": 890,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:38Z"
+      },
+      "researchSession": "session-20260120-202838",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:38Z",
+      "updatedAt": "2026-01-20T20:28:38Z",
+      "version": 1
+    },
+    {
+      "id": "p2b3c4d5-e6f7-a8b9-c0d1-e2f3a4b5c6d7",
+      "title": "Runaway Production and Domestic Industry Decline",
+      "slug": "runaway-production-domestic-industry-decline",
+      "description": "Film and television productions are increasingly fleeing traditional US production centers (California, New York, Georgia) for international locations, driven by more competitive tax incentives, favorable exchange rates, lower labor costs, and expanding global infrastructure. When surveyed about top filming location choices for 2025-2026, studio executives ranked five international locations ahead of any US cities, marking a dramatic shift in production geography. This trend has accelerated following the 2023 strikes and subsequent production slowdown. Countries like the UK, Ireland (offering 40% incentives for independent films), Canada, Australia, and Eastern European nations have invested heavily in studio facilities and crew training, creating viable alternatives to Hollywood. The consequences include job losses for US-based workers, reduced tax revenue for states that invested in film incentives, and the potential hollowing out of the domestic production ecosystem that has sustained the industry for over a century.",
+      "summary": "Film productions are migrating from the US to international locations offering better incentives, threatening domestic jobs and the long-term viability of American production infrastructure.",
+      "industry": {
+        "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Film Production",
+        "slug": "film-production"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["economic", "globalization", "policy"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "300,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 20000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 4,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 2,
+        "existingProgress": 5,
+        "barriers": [
+          "Global competition for incentives creates race to bottom",
+          "State budget constraints limit incentive expansion",
+          "Federal intervention unlikely",
+          "Cost of living differentials favor international locations"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Significant policy research and advocacy",
+        "fundingLevel": "Moderate through industry lobbying"
+      },
+      "impactScore": 65,
+      "rootCauses": [
+        {
+          "description": "International locations offer 30-40% tax incentives compared to US state incentives of 15-30%",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Favorable currency exchange rates reduce production costs abroad",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lower labor costs and less restrictive work rules in some international locations",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Massive investment in international studio infrastructure and crew training",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "High cost of living in traditional US production centers",
+          "category": "economic",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Job losses for US-based film workers",
+          "type": "direct",
+          "affectedArea": "Employment",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Reduced tax revenue for states with film incentive programs",
+          "type": "direct",
+          "affectedArea": "Government finances",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Deterioration of domestic production infrastructure and expertise",
+          "type": "cascading",
+          "affectedArea": "Industry capacity",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Local businesses (hotels, restaurants, equipment rental) lose revenue",
+          "type": "indirect",
+          "affectedArea": "Local economies",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "State Film Tax Incentive Programs",
+          "description": "Tax credits, rebates, and grants offered by US states to attract productions",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": [
+            "Cannot match international incentive levels",
+            "Subject to annual budget caps",
+            "Political uncertainty about program continuation"
+          ]
+        },
+        {
+          "name": "California Film & Television Tax Credit Program 4.0",
+          "description": "Expanded California incentive program offering up to 35% credit for qualifying productions",
+          "type": "policy",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": [
+            "Limited funding allocation",
+            "Complex application process",
+            "Still less competitive than UK/Ireland"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Federal film incentive program to level international playing field",
+          "gapType": "coverage",
+          "opportunity": "National tax credit similar to R&D credits",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Coordinated state-level strategy rather than competitive fragmentation",
+          "gapType": "integration",
+          "opportunity": "Regional production partnerships",
+          "difficulty": "high"
+        },
+        {
+          "description": "Investment in workforce training to maintain competitive advantage",
+          "gapType": "quality",
+          "opportunity": "Industry-academia partnerships for skills development",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "US-based film production workers",
+          "examples": ["Los Angeles crews", "New York production teams", "Georgia film workers"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Studio production executives",
+          "examples": ["Line producers", "Production VPs", "CFOs"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "State film commissions and legislators",
+          "examples": ["California Film Commission", "Georgia Film Office"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "2025 Film Production Trends & Success Tools",
+          "url": "https://vitrina.ai/blog/film-production-companies-trends-challenges-and-tools-for-success-in-2025/",
+          "publishedAt": "2025-01-10",
+          "accessedAt": "2026-01-20",
+          "publisher": "Vitrina AI",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "When surveyed about their top choices for productions in 2025-2026, studio executives ranked five international locations ahead of any U.S. cities."
+        },
+        {
+          "type": "news",
+          "title": "The State of Film & Television Production: 2024 in Review and Outlook for 2025",
+          "url": "https://www.ep.com/blog/film-incentives-north-america-entertainment-industry-2024-review-look-ahead-2025/",
+          "publishedAt": "2025-01-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Entertainment Partners",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "International crews are experiencing a surge in optimism, while many U.S.-based crew members face job uncertainty as productions relocate."
+        }
+      ],
+      "tags": ["runaway-production", "tax-incentives", "globalization", "film-industry", "job-loss"],
+      "keywords": ["runaway production", "film tax incentives", "international film production", "Hollywood exodus"],
+      "metrics": {
+        "searchVolume": 6200,
+        "academicPapers": 78,
+        "mediaArticles": 1250,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:38Z"
+      },
+      "researchSession": "session-20260120-202838",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:38Z",
+      "updatedAt": "2026-01-20T20:28:38Z",
+      "version": 1
+    },
+    {
+      "id": "p3c4d5e6-f7a8-b9c0-d1e2-f3a4b5c6d7e8",
+      "title": "AI Disruption and Labor Displacement in Film Production",
+      "slug": "ai-disruption-labor-displacement-film-production",
+      "description": "Artificial intelligence is rapidly transforming film production, creating existential concerns about job displacement, creative authorship, and the ethical use of performer likenesses. The 2023 strikes resulted in some AI guardrails, but the technology's capabilities are advancing faster than protective frameworks can adapt. Major studios have already faced lawsuits over AI training data (Disney and Universal sued AI company MidJourney in 2025), while workers fear replacement by AI-generated content, digital doubles, and automated production tools. The 2026 guild negotiations will revisit AI protections, but fundamental questions remain unresolved: Who owns AI-generated content? How should performers be compensated when their likenesses are synthesized? What happens to entry-level jobs when AI handles tasks that previously trained new workers? The technology promises efficiency gains but threatens to accelerate the industry's trend toward fewer, more precarious jobs.",
+      "summary": "AI technology threatens widespread job displacement in film production while raising unresolved questions about creative authorship, performer rights, and the future of human roles in filmmaking.",
+      "industry": {
+        "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Film Production",
+        "slug": "film-production"
+      },
+      "problemType": "ethical",
+      "problemSubtypes": ["technology", "labor", "legal"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "high",
+      "severity": {
+        "overall": 8,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "1,000,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 25000000000,
+          "timeframe": "5-year projection"
+        },
+        "qualityOfLife": 7,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 3.5,
+        "technicalFeasibility": 4,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Technology evolving faster than regulation",
+          "Global nature of AI development",
+          "Lack of legal frameworks for AI authorship",
+          "Economic incentives favor automation"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Significant attention from unions, legal scholars, and policymakers",
+        "fundingLevel": "Growing investment in AI ethics research"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Rapid advancement of generative AI capabilities outpacing regulatory frameworks",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Economic pressure on studios to reduce costs through automation",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Ambiguous intellectual property laws regarding AI-generated content",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of consent frameworks for training AI on creative works",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Job displacement for writers, artists, editors, and VFX workers",
+          "type": "direct",
+          "affectedArea": "Employment",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Erosion of entry-level positions that train future industry leaders",
+          "type": "cascading",
+          "affectedArea": "Workforce development",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Legal battles over AI training data and synthetic performer likenesses",
+          "type": "indirect",
+          "affectedArea": "Legal system",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Potential homogenization of creative content through AI-driven decision-making",
+          "type": "cascading",
+          "affectedArea": "Creative diversity",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "2023 WGA/SAG-AFTRA AI Contract Provisions",
+          "description": "Negotiated protections requiring consent for AI use of writer work and performer likenesses",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": [
+            "Only covers union members",
+            "Technology already exceeding anticipated capabilities",
+            "Enforcement mechanisms unclear"
+          ]
+        },
+        {
+          "name": "Copyright Office AI Guidance",
+          "description": "US Copyright Office positions on AI-generated content registration",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": [
+            "Guidance still evolving",
+            "Doesn't address all use cases",
+            "International enforcement gaps"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Comprehensive federal legislation addressing AI in creative industries",
+          "gapType": "coverage",
+          "opportunity": "Entertainment AI Act or similar comprehensive framework",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Technical standards for AI content provenance and disclosure",
+          "gapType": "integration",
+          "opportunity": "Industry-wide watermarking and disclosure standards",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Economic models for compensating creators whose work trains AI",
+          "gapType": "accessibility",
+          "opportunity": "Collective licensing or royalty frameworks",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Creative workers vulnerable to AI displacement",
+          "examples": ["Writers", "Visual effects artists", "Editors", "Performers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Studios and streaming platforms deploying AI tools",
+          "examples": ["Disney", "Netflix", "Warner Bros. Discovery"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "AI technology companies",
+          "examples": ["OpenAI", "MidJourney", "Runway", "Adobe"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Entertainment unions",
+          "examples": ["WGA", "SAG-AFTRA", "IATSE"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Eight talking points for the US film industry in 2026",
+          "url": "https://www.screendaily.com/features/eight-talking-points-for-the-us-film-industry-in-2026/5212421.article",
+          "publishedAt": "2026-01-10",
+          "accessedAt": "2026-01-20",
+          "publisher": "Screen Daily",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "The Hollywood Guilds will return to the negotiating table with the studios in 2026. AI guardrails and other matters are likely to be on the agenda. Disney and Universal sued AI company MidJourney in summer 2025."
+        },
+        {
+          "type": "industry-report",
+          "title": "Future of Filmmaking: Trends for 2025 and Beyond",
+          "url": "https://filmlocal.com/filmmaking/the-future-of-filmmaking-in-2025-and-beyond-what-you-need-to-know/",
+          "publishedAt": "2025-01-05",
+          "accessedAt": "2026-01-20",
+          "publisher": "FilmLocal",
+          "credibilityScore": 0.7,
+          "relevantExcerpt": "AI in filmmaking raises significant ethical considerations regarding job displacement, creative authorship, and the potential for deepfakes."
+        }
+      ],
+      "tags": ["artificial-intelligence", "labor-displacement", "ethics", "automation", "creative-rights"],
+      "keywords": ["AI film production", "Hollywood AI displacement", "generative AI entertainment", "AI performer rights"],
+      "metrics": {
+        "searchVolume": 15400,
+        "academicPapers": 230,
+        "mediaArticles": 3500,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:38Z"
+      },
+      "researchSession": "session-20260120-202838",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:38Z",
+      "updatedAt": "2026-01-20T20:28:38Z",
+      "version": 1
+    },
+    {
+      "id": "p4d5e6f7-a8b9-c0d1-e2f3-a4b5c6d7e8f9",
+      "title": "Virtual Production Cost Barriers and Accessibility Gap",
+      "slug": "virtual-production-cost-barriers-accessibility-gap",
+      "description": "Virtual production technology using LED volumes and real-time rendering promises to revolutionize filmmaking by combining practical and digital elements during principal photography. However, the technology remains prohibitively expensive for most productions, creating a two-tiered industry. Small LED volumes cost $4,000-$10,000 per day to operate, while medium volumes cost $25,000-$45,000 daily—before accounting for content creation and technical staffing. The technology also demands substantial pre-production investment (shifting costs that traditionally went to post-production), skilled virtual art departments, expert technicians who are scarce in the market, and specialized training that most film schools don't yet provide. This creates a capability gap where only major studio productions can afford the technology, while independent filmmakers and smaller productions are excluded from its benefits, potentially widening the competitive divide in the industry.",
+      "summary": "Virtual production using LED volumes costs $4,000-$45,000 daily and requires scarce specialized talent, creating a significant accessibility gap between major studios and independent filmmakers.",
+      "industry": {
+        "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Film Production",
+        "slug": "film-production"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["technology", "cost", "accessibility"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 6,
+          "estimate": "50,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 5000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 4,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "High hardware costs for LED panels",
+          "Shortage of trained technicians",
+          "Rapid technology evolution making investments risky",
+          "Need for specialized pre-production workflows"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Active R&D by major tech companies and studios",
+        "fundingLevel": "Significant but concentrated in major studios"
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "High cost of LED panel hardware and real-time rendering engines",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Shortage of trained virtual production technicians and supervisors",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Educational institutions slow to develop virtual production curricula",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Rapidly evolving technology creates investment uncertainty",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Independent filmmakers cannot access technology that provides creative advantages",
+          "type": "direct",
+          "affectedArea": "Creative opportunities",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Widening competitive gap between major studios and independent productions",
+          "type": "cascading",
+          "affectedArea": "Industry structure",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Slower adoption reduces overall technology advancement and cost reduction",
+          "type": "indirect",
+          "affectedArea": "Technology development",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Rental Virtual Production Stages",
+          "description": "Studios like Lux Machina and others offering LED volume rental rather than ownership",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": [
+            "Still expensive for small productions",
+            "Limited availability in most markets",
+            "Booking conflicts during peak demand"
+          ]
+        },
+        {
+          "name": "Unreal Engine for Film",
+          "description": "Epic Games' free real-time engine providing accessible virtual production software",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": [
+            "Software is free but hardware requirements are not",
+            "Steep learning curve",
+            "Asset creation still expensive"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Affordable smaller-scale virtual production solutions for independent films",
+          "gapType": "cost",
+          "opportunity": "Development of lower-cost LED alternatives or hybrid solutions",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Scalable training programs to address technician shortage",
+          "gapType": "scale",
+          "opportunity": "Industry-wide certification and training initiatives",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Shared virtual production facilities accessible to independents",
+          "gapType": "accessibility",
+          "opportunity": "Non-profit or subsidized production facilities",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Independent filmmakers and smaller production companies",
+          "examples": ["Indie directors", "Documentary producers", "Film students"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Virtual production technology providers",
+          "examples": ["Epic Games", "Lux Machina", "ARRI", "Sony"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Film schools and training institutions",
+          "examples": ["AFI", "USC", "NFTS"],
+          "interest": "medium",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Trends Affecting TV & Film Production in 2025",
+          "url": "https://www.sohonet.com/guide/trends-affecting-tv-film-production-in-2025",
+          "publishedAt": "2025-01-08",
+          "accessedAt": "2026-01-20",
+          "publisher": "Sohonet",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "A small LED volume costs between $4,000 to $10,000 per day, while medium volumes cost $25,000 to $45,000 daily. Studios need expert technicians and virtual art departments right from pre-production because skilled professionals are scarce."
+        },
+        {
+          "type": "industry-report",
+          "title": "Film Production Challenges: How CAVE Technology Cuts Costs",
+          "url": "https://arwall.co/blogs/arwall-blogs/solving-film-production-challenges",
+          "publishedAt": "2025-01-12",
+          "accessedAt": "2026-01-20",
+          "publisher": "ARWall",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "CAVE technology captures comprehensive data about virtual environments, camera movements, and lighting setups during filming, reducing time required for visual effects integration."
+        }
+      ],
+      "tags": ["virtual-production", "LED-volume", "technology-access", "production-costs", "filmmaking-technology"],
+      "keywords": ["virtual production costs", "LED volume rental", "indie film technology gap", "real-time filmmaking"],
+      "metrics": {
+        "searchVolume": 9800,
+        "academicPapers": 120,
+        "mediaArticles": 780,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:38Z"
+      },
+      "researchSession": "session-20260120-202838",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:38Z",
+      "updatedAt": "2026-01-20T20:28:38Z",
+      "version": 1
+    },
+    {
+      "id": "p5e6f7a8-b9c0-d1e2-f3a4-b5c6d7e8f9a0",
+      "title": "Digital Film Preservation Crisis and Archival Format Instability",
+      "slug": "digital-film-preservation-crisis-archival-format-instability",
+      "description": "The film industry faces a critical preservation challenge as it transitions from celluloid to digital: there is no digital archival master format or process with longevity characteristics equivalent to traditional film. According to the Academy of Motion Picture Arts and Sciences, the industry requires preservation solutions meeting a 100-year access requirement, but current digital media deteriorates far faster. Magnetic tape has a shelf life of 10-20 years, conventional CDs/DVDs last only 2-5 years, and LTO tape lasts 15-30 years—compared to properly stored film stock which can last hundreds of years. Furthermore, the volume of digital content is exploding (a single digital production can generate over 3 petabytes of data), while storage technology advances (25% per year) lag far behind data creation growth (60% per year). Complicating matters, photochemical preservation laboratories are disappearing—the industry has likely built its last wet photochemical archival preservation lab in the United States.",
+      "summary": "Digital film archives face catastrophic preservation risks as no current technology matches film's 100+ year longevity, with magnetic media lasting only 10-30 years and preservation infrastructure disappearing.",
+      "industry": {
+        "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Film Production",
+        "slug": "film-production"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["preservation", "storage", "cultural-heritage"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 8,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "Billions (cultural heritage)",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 50000000000,
+          "timeframe": "asset value at risk"
+        },
+        "qualityOfLife": 6,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 4,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "No proven 100-year digital storage medium exists",
+          "Continuous migration required for digital preservation",
+          "Photochemical preservation infrastructure declining",
+          "Data volume growth outpacing storage capacity"
+        ]
+      },
+      "neglectedness": {
+        "overall": 6,
+        "attentionLevel": "moderate",
+        "activeResearchers": "Academy of Motion Picture Arts and Sciences, major archives",
+        "fundingLevel": "Underfunded relative to scope of problem"
+      },
+      "impactScore": 70,
+      "rootCauses": [
+        {
+          "description": "Digital storage media have inherently shorter lifespans than analog film",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Data creation rate (60% annual growth) far exceeds storage advancement (25%)",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Constantly changing digital formats require expensive migration cycles",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Photochemical preservation infrastructure being abandoned",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Studios prioritize current production over long-term preservation",
+          "category": "economic",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Risk of losing significant portions of contemporary film heritage",
+          "type": "direct",
+          "affectedArea": "Cultural preservation",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Escalating costs for continuous data migration and verification",
+          "type": "direct",
+          "affectedArea": "Archive operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Loss of source materials prevents future restoration or remastering",
+          "type": "cascading",
+          "affectedArea": "Content value",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Inability to verify authenticity of digital content over time",
+          "type": "indirect",
+          "affectedArea": "Historical record",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "LTO (Linear Tape-Open) Migration Strategy",
+          "description": "Regular migration of data to new LTO generations every 7-10 years",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": [
+            "Requires perpetual migration investment",
+            "Risk of data loss during migration",
+            "Format may be discontinued"
+          ]
+        },
+        {
+          "name": "Film-Out for Long-Term Preservation",
+          "description": "Recording digital content to archival film stock for 100+ year preservation",
+          "type": "methodology",
+          "effectiveness": 8,
+          "adoption": "declining",
+          "limitations": [
+            "Expensive process",
+            "Limited lab capacity",
+            "Not practical for all content volumes"
+          ]
+        },
+        {
+          "name": "Arctic World Archive",
+          "description": "Long-term storage using silver halide film with 500+ year lifespan in arctic vault",
+          "type": "service",
+          "effectiveness": 8,
+          "adoption": "early",
+          "limitations": [
+            "Limited capacity",
+            "High cost per deposit",
+            "Not suitable for all content"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Digital storage medium with 100+ year proven longevity",
+          "gapType": "coverage",
+          "opportunity": "DNA storage, glass-based storage, or other emerging technologies",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Sustainable funding model for perpetual digital preservation",
+          "gapType": "cost",
+          "opportunity": "Industry preservation fund or public-private partnership",
+          "difficulty": "high"
+        },
+        {
+          "description": "Standardized archival format reducing migration complexity",
+          "gapType": "integration",
+          "opportunity": "Industry-wide archival format standard with guaranteed support",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Film archives and cultural heritage institutions",
+          "examples": ["Academy Film Archive", "Library of Congress", "UCLA Film Archive"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Studios responsible for preserving their content libraries",
+          "examples": ["Disney", "Warner Bros.", "Universal"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Storage technology companies",
+          "examples": ["IBM (LTO)", "Microsoft (Project Silica)", "Twist Bioscience (DNA storage)"],
+          "interest": "medium",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Long-Term Management and Storage of Digital Motion Picture Materials",
+          "url": "https://www.oscars.org/science-technology/sci-tech-projects/long-term-management-and-storage-digital-motion-picture",
+          "publishedAt": "2024-06-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Academy of Motion Picture Arts and Sciences",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "There is no digital archival master format or process with longevity characteristics equivalent to that of film. The industry requires a preservation plan meeting a 100-year access requirement."
+        },
+        {
+          "type": "news",
+          "title": "No Longer a Matter of Film Versus Digital: What Film Preservation Means Today",
+          "url": "https://www.film-foundation.org/film-preservation-indiewire",
+          "publishedAt": "2025-03-20",
+          "accessedAt": "2026-01-20",
+          "publisher": "The Film Foundation / IndieWire",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "May Hong HaDuong of UCLA Film Archive notes that properly stored film can last hundreds of years compared to LTO tape's 15-30 years. We built what will probably be the last wet photochemical archival preservation lab in the United States."
+        }
+      ],
+      "tags": ["digital-preservation", "film-archive", "cultural-heritage", "data-storage", "longevity"],
+      "keywords": ["digital film preservation", "archival storage crisis", "film heritage at risk", "LTO migration"],
+      "metrics": {
+        "searchVolume": 4200,
+        "academicPapers": 340,
+        "mediaArticles": 180,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T20:28:38Z"
+      },
+      "researchSession": "session-20260120-202838",
+      "confidence": 0.9,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:38Z",
+      "updatedAt": "2026-01-20T20:28:38Z",
+      "version": 1
+    },
+    {
+      "id": "p6f7a8b9-c0d1-e2f3-a4b5-c6d7e8f9a0b1",
+      "title": "Theatrical Exhibition Crisis and Cinema Business Model Collapse",
+      "slug": "theatrical-exhibition-crisis-cinema-business-model-collapse",
+      "description": "The theatrical exhibition sector faces an existential crisis as audience behavior has fundamentally shifted post-pandemic. Cinemagoing has dropped 15-20% compared to pre-pandemic levels, and major chains like AMC have seen stock declines of approximately 29% year-to-date in 2025, with company filings warning that stock 'may continue to fluctuate or decline significantly.' The traditional theatrical window has compressed dramatically as streaming platforms demand faster home availability, undermining the exclusive theatrical period that sustained cinema economics. Meanwhile, audiences have become more selective, turning out for major tentpole releases while ignoring mid-budget films that once provided reliable revenue. This creates a vicious cycle: fewer films succeed theatrically, studios reduce theatrical releases, cinemas lose programming, and audiences have fewer reasons to visit. The industry's hope rests on blockbuster-heavy slates in 2026, but the fundamental mismatch between theatrical infrastructure costs and changed consumer behavior remains unresolved.",
+      "summary": "Movie theater attendance has permanently declined 15-20% post-pandemic while streaming compresses theatrical windows, threatening the viability of cinema chains and the theatrical release model.",
+      "industry": {
+        "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Film Production",
+        "slug": "film-production"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["distribution", "consumer-behavior", "economic"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "200,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 30000000000,
+          "timeframe": "annual market decline"
+        },
+        "qualityOfLife": 5,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 3.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Fundamental shift in consumer entertainment preferences",
+          "Streaming platform competition for content windows",
+          "High fixed costs of theater operations",
+          "Real estate and lease obligations"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Extensive industry and financial analysis",
+        "fundingLevel": "Private equity involvement but declining investment"
+      },
+      "impactScore": 62,
+      "rootCauses": [
+        {
+          "description": "COVID-19 pandemic permanently altered consumer entertainment habits",
+          "category": "cultural",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Streaming platforms providing convenient home viewing alternatives",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Compressed theatrical windows reducing exclusive exhibition period",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Rising ticket and concession prices relative to home alternatives",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Mid-budget films struggling to attract theatrical audiences",
+          "category": "market",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Theater closures reducing cinema accessibility in many communities",
+          "type": "direct",
+          "affectedArea": "Cultural access",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Job losses for theater workers and associated businesses",
+          "type": "direct",
+          "affectedArea": "Employment",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Reduced incentive for studios to produce theatrical-quality content",
+          "type": "cascading",
+          "affectedArea": "Content production",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Loss of communal movie-watching cultural experience",
+          "type": "indirect",
+          "affectedArea": "Cultural life",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Premium Large Format (PLF) Experiences",
+          "description": "IMAX, Dolby Cinema, and other premium formats offering differentiated theatrical experience",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": [
+            "Higher ticket prices limit audience",
+            "Limited number of PLF screens",
+            "Content must be formatted for PLF"
+          ]
+        },
+        {
+          "name": "Theater Subscription Programs",
+          "description": "AMC Stubs A-List and similar unlimited viewing subscriptions",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": [
+            "Attracts heavy users, may cannibalize full-price tickets",
+            "Financial sustainability questionable",
+            "Limited adoption beyond enthusiasts"
+          ]
+        },
+        {
+          "name": "Event Cinema and Alternative Content",
+          "description": "Live broadcasts, concerts, sporting events, and classic film screenings",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": [
+            "Niche audiences",
+            "Licensing complexity",
+            "Cannot replace theatrical film revenue"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Sustainable theatrical window agreement between studios and exhibitors",
+          "gapType": "integration",
+          "opportunity": "Industry-wide window standards that protect theatrical investment",
+          "difficulty": "high"
+        },
+        {
+          "description": "Business model innovation for mid-budget theatrical releases",
+          "gapType": "coverage",
+          "opportunity": "Flexible pricing, targeted releases, or hybrid models",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Theater experience differentiation beyond screen quality",
+          "gapType": "quality",
+          "opportunity": "Social, dining, or interactive experiences",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Theater chains and independent cinemas",
+          "examples": ["AMC", "Regal", "Alamo Drafthouse", "Independent art houses"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Major studios controlling content flow",
+          "examples": ["Disney", "Universal", "Warner Bros.", "Paramount"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Streaming platforms competing for content windows",
+          "examples": ["Netflix", "Amazon Prime", "Apple TV+", "Max"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "From Blockbusters to Bust: Why the Film Industry Isn't Bouncing Back",
+          "url": "https://www.filmtake.com/distribution/from-blockbusters-to-bust-why-the-film-industry-is-fading-fast/",
+          "publishedAt": "2025-11-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "FilmTake",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "U.S. exhibitors remain under acute pressure. AMC's stock has declined roughly 29% year-to-date in 2025, and its latest quarterly filing warns its stock may continue to fluctuate or decline significantly."
+        },
+        {
+          "type": "industry-report",
+          "title": "Film Industry Business 2025: Comprehensive Analysis",
+          "url": "https://www.boardroom-business.com/the-full-board/the-film-industry-and-the-business-of-cinema-a-comprehensive-analysis",
+          "publishedAt": "2025-06-20",
+          "accessedAt": "2026-01-20",
+          "publisher": "Boardroom Business",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Reports cite a drop of 15%-20% in cinemagoers since the pandemic. The theatrical community expects much better box office in 2026 with potential blockbusters."
+        }
+      ],
+      "tags": ["theatrical-exhibition", "movie-theaters", "distribution", "streaming-competition", "box-office"],
+      "keywords": ["movie theater crisis", "theatrical exhibition decline", "cinema attendance", "theatrical window"],
+      "metrics": {
+        "searchVolume": 12500,
+        "academicPapers": 95,
+        "mediaArticles": 2100,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T20:28:38Z"
+      },
+      "researchSession": "session-20260120-202838",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:38Z",
+      "updatedAt": "2026-01-20T20:28:38Z",
+      "version": 1
+    },
+    {
+      "id": "p7a8b9c0-d1e2-f3a4-b5c6-d7e8f9a0b1c2",
+      "title": "Post-Production Workflow Inefficiencies and Collaboration Bottlenecks",
+      "slug": "post-production-workflow-inefficiencies-collaboration-bottlenecks",
+      "description": "Post-production workflows remain plagued by inefficiencies that cause delays, cost overruns, and creative frustration. Teams working on VFX-heavy projects face slow-loading files, extended rendering times, and massive storage challenges—a single digital production can generate petabytes of data. Common bottlenecks include communication breakdowns between departments, disorganized asset management, outdated software integration, poor file organization, slow file transfers using external drives, scattered feedback loops, and version confusion. The geographic distribution of modern post-production teams across multiple facilities and time zones exacerbates these issues. While cloud-based solutions like LucidLink and Frame.io offer improvements, adoption remains uneven, and legacy workflows persist. The problem is especially acute for independent productions that cannot afford enterprise-grade infrastructure, creating a capability gap that affects both efficiency and creative quality.",
+      "summary": "Film post-production suffers from workflow bottlenecks including slow file transfers, scattered feedback, version confusion, and poor collaboration tools that cause delays and budget overruns.",
+      "industry": {
+        "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Film Production",
+        "slug": "film-production"
+      },
+      "problemType": "process",
+      "problemSubtypes": ["workflow", "technology", "collaboration"],
+      "scope": "organization",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "100,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 8000000000,
+          "timeframe": "annual inefficiency costs"
+        },
+        "qualityOfLife": 6,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 7,
+        "technicalFeasibility": 8,
+        "resourceRequirements": 6,
+        "existingProgress": 7,
+        "barriers": [
+          "Legacy workflow inertia",
+          "Cost of transitioning to cloud infrastructure",
+          "Training requirements for new tools",
+          "Integration between different software ecosystems"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Active development by major software companies",
+        "fundingLevel": "Significant commercial investment in solutions"
+      },
+      "impactScore": 56,
+      "rootCauses": [
+        {
+          "description": "Massive file sizes from high-resolution digital capture overwhelming traditional infrastructure",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Fragmented software ecosystem requiring multiple incompatible tools",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Distributed teams across multiple facilities and time zones",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Resistance to changing established workflows",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Budget constraints limiting infrastructure investment",
+          "category": "economic",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Project delays as teams wait for file transfers and renders",
+          "type": "direct",
+          "affectedArea": "Schedule",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Budget overruns from extended post-production timelines",
+          "type": "direct",
+          "affectedArea": "Finances",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Creative compromises due to time constraints caused by inefficiency",
+          "type": "indirect",
+          "affectedArea": "Creative quality",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Burnout among post-production workers facing tight deadlines",
+          "type": "cascading",
+          "affectedArea": "Worker wellbeing",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Cloud-Based Collaboration Platforms",
+          "description": "Services like LucidLink, Frame.io enabling remote collaboration on high-res media",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": [
+            "Subscription costs add up",
+            "Bandwidth requirements",
+            "Security concerns for some studios"
+          ]
+        },
+        {
+          "name": "DaVinci Resolve All-in-One Workflow",
+          "description": "Integrated editing, color, VFX, and audio in single application",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": [
+            "Learning curve",
+            "May not replace specialized tools for complex work",
+            "Hardware requirements"
+          ]
+        },
+        {
+          "name": "Media Asset Management Systems",
+          "description": "Enterprise MAM systems for organizing and tracking production assets",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": [
+            "Expensive for small productions",
+            "Implementation complexity",
+            "Requires workflow changes"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Affordable cloud infrastructure for independent productions",
+          "gapType": "cost",
+          "opportunity": "Tiered pricing or subsidized access for indie filmmakers",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Seamless integration between competing software ecosystems",
+          "gapType": "integration",
+          "opportunity": "Open standards for media interchange and collaboration",
+          "difficulty": "high"
+        },
+        {
+          "description": "AI-assisted workflow optimization and automation",
+          "gapType": "quality",
+          "opportunity": "Intelligent asset organization, transcoding, and delivery",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Post-production professionals",
+          "examples": ["Editors", "Colorists", "VFX artists", "Sound designers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Post-production software developers",
+          "examples": ["Adobe", "Blackmagic Design", "Avid", "Autodesk"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Cloud infrastructure providers",
+          "examples": ["AWS", "Google Cloud", "LucidLink", "Frame.io"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "The Ultimate Guide to Optimizing Your Post-Production Workflow",
+          "url": "https://www.lucidlink.com/blog/post-production-workflow",
+          "publishedAt": "2025-02-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "LucidLink",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "Disorganized files, slow transfers, and scattered feedback loops often cause delays. A cloud-first workflow removes these bottlenecks in post-production."
+        },
+        {
+          "type": "industry-report",
+          "title": "Post-Production Workflow: Key Steps to Boost Efficiency",
+          "url": "https://vitrina.ai/blog/post-production-workflow/",
+          "publishedAt": "2025-03-10",
+          "accessedAt": "2026-01-20",
+          "publisher": "Vitrina AI",
+          "credibilityScore": 0.7,
+          "relevantExcerpt": "Teams working on films often perform repetitive tasks and face tough deadlines, and nothing can kill their productivity more than slow-loading files and video rendering times."
+        },
+        {
+          "type": "news",
+          "title": "Solving Post-Production Workflow Challenges for Media and Television",
+          "url": "https://www.kingston.com/unitedkingdom/en/blog/system-builder/media-post-production-workflow-challenges-case-study-video",
+          "publishedAt": "2025-01-20",
+          "accessedAt": "2026-01-20",
+          "publisher": "Kingston Technology",
+          "credibilityScore": 0.7,
+          "relevantExcerpt": "Raw digital footage is massively difficult to store. Not only are file sizes massive, but all the videos must be tagged and organized for editing later."
+        }
+      ],
+      "tags": ["post-production", "workflow", "collaboration", "file-management", "efficiency"],
+      "keywords": ["post-production workflow", "film editing bottlenecks", "VFX collaboration", "media asset management"],
+      "metrics": {
+        "searchVolume": 7800,
+        "academicPapers": 65,
+        "mediaArticles": 420,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T20:28:38Z"
+      },
+      "researchSession": "session-20260120-202838",
+      "confidence": 0.8,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:38Z",
+      "updatedAt": "2026-01-20T20:28:38Z",
+      "version": 1
+    },
+    {
+      "id": "p8b9c0d1-e2f3-a4b5-c6d7-e8f9a0b1c2d3",
+      "title": "Production Recovery Shortfall and Structural Industry Contraction",
+      "slug": "production-recovery-shortfall-structural-industry-contraction",
+      "description": "Despite an 18% increase in productions entering principal photography in 2024 compared to the previous year, the film industry's recovery from the combined impacts of COVID-19 and the 2023 Hollywood strikes has fallen significantly short of expectations. According to ProdPro's 2025 Industry Outlook Report, total production remains 11% below pre-strike levels, suggesting a structural contraction rather than a cyclical downturn. FilmLA quarterly reports showed continued decline through most of 2025, with only a modest 10% year-on-year improvement in feature shoot days in Q3 2025 bucking the downward trend. This contraction reflects studios' shift toward 'quality over quantity' and 'strategic investment in content,' but for the broader production ecosystem—crew members, vendors, support services—it means fewer opportunities and a smaller overall industry. The question emerging is whether the pre-2020 production volume was an unsustainable peak or whether the industry is failing to recover to its natural size.",
+      "summary": "Film production volumes remain 11% below pre-strike levels despite partial recovery, suggesting permanent industry contraction that reduces opportunities for the broader production ecosystem.",
+      "industry": {
+        "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Film Production",
+        "slug": "film-production"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["economic", "structural", "recovery"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "400,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 18000000000,
+          "timeframe": "annual shortfall vs. pre-strike"
+        },
+        "qualityOfLife": 6,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 3,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 2,
+        "existingProgress": 3,
+        "barriers": [
+          "Fundamental shift in studio content strategy",
+          "Streaming cost rationalization reducing content spend",
+          "Economic uncertainty affecting entertainment investment",
+          "Structural overcapacity from streaming boom"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Industry analysts tracking closely",
+        "fundingLevel": "No dedicated intervention programs"
+      },
+      "impactScore": 60,
+      "rootCauses": [
+        {
+          "description": "Studios adopting 'quality over quantity' strategy reducing production volume",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Streaming platforms rationalizing content spend after growth phase",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "2023 strikes created production planning disruption with lasting effects",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Economic uncertainty reducing willingness to greenlight projects",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "International production incentives shifting work away from US",
+          "category": "economic",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Fewer job opportunities across the production ecosystem",
+          "type": "direct",
+          "affectedArea": "Employment",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Production support businesses (equipment rental, catering, transport) face revenue decline",
+          "type": "direct",
+          "affectedArea": "Local economies",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Talent and crew exodus as workers seek opportunities elsewhere",
+          "type": "cascading",
+          "affectedArea": "Workforce retention",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Reduced content diversity as fewer projects get made",
+          "type": "indirect",
+          "affectedArea": "Creative output",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Independent Film Production Growth",
+          "description": "Independent productions filling some gap left by studio contraction, supported by international incentives",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": [
+            "Lower budgets and fewer jobs per production",
+            "Dependent on incentive programs",
+            "Less stable than studio production"
+          ]
+        },
+        {
+          "name": "Enhanced State/International Incentives",
+          "description": "Expanded tax credits and rebates to attract production",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": [
+            "Doesn't address underlying demand contraction",
+            "Race to bottom competition",
+            "Fiscal sustainability concerns"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "New distribution models that could support higher production volumes",
+          "gapType": "coverage",
+          "opportunity": "Direct-to-consumer platforms, international co-productions",
+          "difficulty": "high"
+        },
+        {
+          "description": "Workforce transition support for permanently displaced workers",
+          "gapType": "accessibility",
+          "opportunity": "Skills translation and retraining programs",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Industry-wide data on structural vs. cyclical factors",
+          "gapType": "awareness",
+          "opportunity": "Comprehensive industry economic research",
+          "difficulty": "low"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Film production workers and support services",
+          "examples": ["Crew members", "Equipment rental companies", "Production caterers"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Studio executives making production volume decisions",
+          "examples": ["Production heads", "Streaming content executives", "CFOs"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Industry analysts and researchers",
+          "examples": ["ProdPro", "FilmLA", "Entertainment Partners"],
+          "interest": "medium",
+          "influence": "low"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "The State of Film & Television Production: 2024 in Review and Outlook for 2025",
+          "url": "https://www.ep.com/blog/film-incentives-north-america-entertainment-industry-2024-review-look-ahead-2025/",
+          "publishedAt": "2025-01-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Entertainment Partners",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Production rebounded in 2024 with an 18% increase in projects entering principal photography compared to the previous year, but total production remained 11% below pre-strike levels."
+        },
+        {
+          "type": "news",
+          "title": "Eight talking points for the US film industry in 2026",
+          "url": "https://www.screendaily.com/features/eight-talking-points-for-the-us-film-industry-in-2026/5212421.article",
+          "publishedAt": "2026-01-10",
+          "accessedAt": "2026-01-20",
+          "publisher": "Screen Daily",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "The quarterly reports from FilmLA made for grim reading in 2025, even if the most recent report in October noted a 10% year-on-year climb in feature shoot days."
+        },
+        {
+          "type": "industry-report",
+          "title": "2026 Outlook for Entertainment and Media Leaders",
+          "url": "https://www.ghjadvisors.com/ghj-insights/outlook-for-entertainment-and-media-leaders-in-2026",
+          "publishedAt": "2026-01-05",
+          "accessedAt": "2026-01-20",
+          "publisher": "GHJ Advisors",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Studios and major media companies are expected to practice strategic and measured investment in content, focusing on smarter spending and emphasizing quality over quantity."
+        }
+      ],
+      "tags": ["production-volume", "industry-contraction", "recovery", "film-production", "economic"],
+      "keywords": ["Hollywood production decline", "film industry recovery", "content contraction", "production volume"],
+      "metrics": {
+        "searchVolume": 5400,
+        "academicPapers": 28,
+        "mediaArticles": 890,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:38Z"
+      },
+      "researchSession": "session-20260120-202838",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:38Z",
+      "updatedAt": "2026-01-20T20:28:38Z",
+      "version": 1
+    },
+    {
+      "id": "p9c0d1e2-f3a4-b5c6-d7e8-f9a0b1c2d3e4",
+      "title": "Los Angeles Production Infrastructure Vulnerability to Climate Disasters",
+      "slug": "los-angeles-production-infrastructure-vulnerability-climate-disasters",
+      "description": "The devastating wildfires that swept through Greater Los Angeles have exposed the film industry's dangerous concentration of infrastructure in a region increasingly vulnerable to climate disasters. These fires displaced film workers, damaged critical production infrastructure, disrupted planned shoots, and destroyed iconic filming locations. The economic toll extended to local businesses that support production, from equipment rental houses to caterers. This vulnerability is compounded by the industry's historical reliance on Los Angeles as its production hub, creating systemic risk when disasters strike. While the industry has some ability to relocate individual productions, the destruction of permanent infrastructure (studios, post-production facilities, equipment inventories) cannot be quickly replaced. Climate scientists project increasing frequency and severity of such events, yet the industry lacks comprehensive disaster preparedness planning or infrastructure resilience strategies.",
+      "summary": "Los Angeles wildfires demonstrated the film industry's dangerous concentration of infrastructure in a climate-vulnerable region, disrupting productions and destroying facilities with no comprehensive resilience plan.",
+      "industry": {
+        "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Film Production",
+        "slug": "film-production"
+      },
+      "problemType": "environmental",
+      "problemSubtypes": ["climate", "infrastructure", "risk"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "200,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 10000000000,
+          "timeframe": "per major disaster event"
+        },
+        "qualityOfLife": 8,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 3,
+        "existingProgress": 3,
+        "barriers": [
+          "Massive sunk costs in existing LA infrastructure",
+          "Climate change accelerating disaster frequency",
+          "Industry culture tied to LA location",
+          "Cost of distributed infrastructure"
+        ]
+      },
+      "neglectedness": {
+        "overall": 6,
+        "attentionLevel": "underserved",
+        "activeResearchers": "Limited systematic analysis of industry climate vulnerability",
+        "fundingLevel": "Minimal proactive investment in resilience"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Historical concentration of film industry infrastructure in Los Angeles",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Climate change increasing frequency and severity of wildfires",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of industry-wide disaster preparedness planning",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Insurance market challenges for climate-exposed assets",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Production shutdowns and delays when disasters strike",
+          "type": "direct",
+          "affectedArea": "Production operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Displacement of film workers from homes and workplaces",
+          "type": "direct",
+          "affectedArea": "Workforce",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Destruction of irreplaceable filming locations and sets",
+          "type": "direct",
+          "affectedArea": "Creative resources",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Rising insurance costs and potential uninsurability",
+          "type": "cascading",
+          "affectedArea": "Financial stability",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Accelerated production migration away from LA",
+          "type": "indirect",
+          "affectedArea": "Industry geography",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Production Insurance",
+          "description": "Insurance coverage for production disruptions and property damage",
+          "type": "service",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": [
+            "Premiums rising due to climate risk",
+            "Coverage gaps and exclusions",
+            "Claims process delays recovery"
+          ]
+        },
+        {
+          "name": "Geographic Diversification",
+          "description": "Spreading production across multiple locations and regions",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": [
+            "Driven by incentives not resilience planning",
+            "Core infrastructure still concentrated in LA",
+            "Coordination complexity"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Industry-wide climate risk assessment and resilience planning",
+          "gapType": "awareness",
+          "opportunity": "Systematic vulnerability mapping and mitigation strategies",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Distributed critical infrastructure reducing single-point-of-failure risk",
+          "gapType": "coverage",
+          "opportunity": "Regional production hubs with redundant capabilities",
+          "difficulty": "high"
+        },
+        {
+          "description": "Rapid-response coordination for industry-wide disasters",
+          "gapType": "integration",
+          "opportunity": "Industry disaster response consortium",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "LA-based film workers and businesses",
+          "examples": ["Studio employees", "Equipment rental companies", "Post-production facilities"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Studio real estate and operations executives",
+          "examples": ["Facilities managers", "Risk officers", "CFOs"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Insurance industry and climate risk analysts",
+          "examples": ["Entertainment insurers", "Climate modeling firms"],
+          "interest": "medium",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "news",
+          "title": "Is Hollywood Worth Saving? The Harsh Reality Facing L.A. in 2025",
+          "url": "https://www.filmtake.com/production/is-hollywood-worth-saving-the-harsh-reality-facing-l-a-in-2025/",
+          "publishedAt": "2025-02-10",
+          "accessedAt": "2026-01-20",
+          "publisher": "FilmTake",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "Devastating wildfires that swept through Greater Los Angeles have further destabilized the industry. These disasters have displaced film workers and damaged critical infrastructure, disrupted planned shoots, and destroyed iconic filming locations."
+        },
+        {
+          "type": "industry-report",
+          "title": "2025 Film Production: Trends & Success Tools",
+          "url": "https://vitrina.ai/blog/film-production-companies-trends-challenges-and-tools-for-success-in-2025/",
+          "publishedAt": "2025-01-10",
+          "accessedAt": "2026-01-20",
+          "publisher": "Vitrina AI",
+          "credibilityScore": 0.75,
+          "relevantExcerpt": "The destruction of iconic filming locations and the economic toll on local businesses have only exacerbated the industry's structural issues."
+        }
+      ],
+      "tags": ["climate-change", "wildfires", "infrastructure", "los-angeles", "disaster-risk"],
+      "keywords": ["Hollywood wildfires", "film industry climate risk", "LA production infrastructure", "disaster resilience"],
+      "metrics": {
+        "searchVolume": 8200,
+        "academicPapers": 15,
+        "mediaArticles": 1450,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:38Z"
+      },
+      "researchSession": "session-20260120-202838",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:38Z",
+      "updatedAt": "2026-01-20T20:28:38Z",
+      "version": 1
+    },
+    {
+      "id": "pa0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
+      "title": "Streaming Platform Value Shift from Content to Access",
+      "slug": "streaming-platform-value-shift-content-to-access",
+      "description": "The streaming industry has undergone a fundamental strategic shift that impacts film production economics: by 2025, major platforms concluded that 'content alone does not create value—access does.' This realization has profound implications for content creators and the broader production ecosystem. Studios and streaming platforms are now practicing 'strategic and measured investment in content, focusing on smarter spending and emphasizing quality over quantity.' While this sounds positive, it translates to fewer productions being greenlit, smaller overall content budgets, and increased pressure on individual projects to perform. The platforms that once competed through content volume (driving the peak TV era) now compete through bundling, pricing, and distribution reach. For filmmakers and production workers, this means the content spending boom that characterized 2018-2022 is unlikely to return, requiring adaptation to a permanently smaller market.",
+      "summary": "Streaming platforms have shifted strategy from content volume competition to access and bundling, resulting in reduced content investment and fewer production opportunities industry-wide.",
+      "industry": {
+        "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
+        "name": "Media & Entertainment",
+        "slug": "media-entertainment"
+      },
+      "domain": {
+        "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
+        "name": "Content Creation",
+        "slug": "content-creation"
+      },
+      "field": {
+        "id": "f8d92a1b-4c3e-5f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Film Production",
+        "slug": "film-production"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["economic", "strategic", "platform"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "300,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 12000000000,
+          "timeframe": "annual content spend reduction"
+        },
+        "qualityOfLife": 5,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 2.5,
+        "technicalFeasibility": 4,
+        "resourceRequirements": 2,
+        "existingProgress": 3,
+        "barriers": [
+          "Market forces driving platform strategy",
+          "Wall Street pressure for streaming profitability",
+          "Content creators have limited leverage",
+          "No viable alternative distribution model at scale"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "Extensive financial and industry analysis",
+        "fundingLevel": "No intervention mechanisms exist"
+      },
+      "impactScore": 52,
+      "rootCauses": [
+        {
+          "description": "Streaming platforms reaching profitability inflection point requiring cost discipline",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Content volume saturation reducing marginal value of additional programming",
+          "category": "market",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Investor pressure shifting focus from subscriber growth to profitability",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Bundling and aggregation becoming primary competitive differentiator",
+          "category": "market",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Fewer productions greenlit across all budget levels",
+          "type": "direct",
+          "affectedArea": "Production volume",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Increased risk aversion favoring proven IP over original content",
+          "type": "indirect",
+          "affectedArea": "Creative diversity",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Reduced leverage for content creators in negotiations",
+          "type": "cascading",
+          "affectedArea": "Talent economics",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Mid-budget productions squeezed out of the market",
+          "type": "cascading",
+          "affectedArea": "Content ecosystem",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "International Co-Productions",
+          "description": "Multi-territory funding structures reducing single-market dependence",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": [
+            "Complex deal structures",
+            "Creative compromises",
+            "Not suitable for all content"
+          ]
+        },
+        {
+          "name": "Independent Distribution Platforms",
+          "description": "Smaller streaming services and theatrical distributors serving niche audiences",
+          "type": "service",
+          "effectiveness": 4,
+          "adoption": "growing",
+          "limitations": [
+            "Limited scale and revenue potential",
+            "Fragmented audience reach",
+            "Discovery challenges"
+          ]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Alternative funding models less dependent on streaming platform decisions",
+          "gapType": "coverage",
+          "opportunity": "Direct creator-audience funding, co-ops, or public funding expansion",
+          "difficulty": "high"
+        },
+        {
+          "description": "Content valuation frameworks that capture long-term value",
+          "gapType": "awareness",
+          "opportunity": "Better metrics for content performance beyond initial release",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Collective bargaining power for independent producers",
+          "gapType": "integration",
+          "opportunity": "Producer associations or collective licensing bodies",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Content creators and production companies",
+          "examples": ["Showrunners", "Independent producers", "Production companies"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Streaming platform content executives",
+          "examples": ["Netflix content team", "Amazon Studios", "Disney+/Hulu leadership"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Wall Street analysts and investors",
+          "examples": ["Entertainment sector analysts", "Institutional investors"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "2026 Outlook for Entertainment and Media Leaders",
+          "url": "https://www.ghjadvisors.com/ghj-insights/outlook-for-entertainment-and-media-leaders-in-2026",
+          "publishedAt": "2026-01-05",
+          "accessedAt": "2026-01-20",
+          "publisher": "GHJ Advisors",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "By 2025, the streaming industry reached a more consequential conclusion: content alone does not create value—access does. Studios are expected to practice strategic and measured investment in content."
+        },
+        {
+          "type": "industry-report",
+          "title": "Film Industry Business 2025: Comprehensive Analysis",
+          "url": "https://www.boardroom-business.com/the-full-board/the-film-industry-and-the-business-of-cinema-a-comprehensive-analysis",
+          "publishedAt": "2025-06-20",
+          "accessedAt": "2026-01-20",
+          "publisher": "Boardroom Business",
+          "credibilityScore": 0.8,
+          "relevantExcerpt": "Studios and major media companies are focusing on smarter spending and emphasizing quality over quantity in their content strategies."
+        }
+      ],
+      "tags": ["streaming", "content-strategy", "platform-economics", "distribution", "market-shift"],
+      "keywords": ["streaming content investment", "platform economics", "content value", "streaming strategy"],
+      "metrics": {
+        "searchVolume": 11200,
+        "academicPapers": 82,
+        "mediaArticles": 1850,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T20:28:38Z"
+      },
+      "researchSession": "session-20260120-202838",
+      "confidence": 0.83,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:28:38Z",
+      "updatedAt": "2026-01-20T20:28:38Z",
+      "version": 1
+    }
+  ]
+}
