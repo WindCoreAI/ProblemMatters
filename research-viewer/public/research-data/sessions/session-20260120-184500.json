@@ -1,0 +1,131 @@
+{
+  "id": "session-20260120-184500",
+  "startedAt": "2026-01-20T18:45:00Z",
+  "completedAt": "2026-01-20T19:30:00Z",
+  "target": {
+    "industry": "healthcare-life-sciences",
+    "domain": "clinical-care",
+    "field": "mental-health"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 0,
+    "problemIds": [
+      "c3d4e5f6-a7b8-9012-cdef-345678901234",
+      "d4e5f6a7-b8c9-0123-def0-456789012345",
+      "e5f6a7b8-c9d0-1234-ef01-567890123456",
+      "f6a7b8c9-d0e1-2345-f012-678901234567",
+      "a7b8c9d0-e1f2-3456-0123-789012345678",
+      "b8c9d0e1-f2a3-4567-1234-890123456789",
+      "c9d0e1f2-a3b4-5678-2345-901234567890",
+      "d0e1f2a3-b4c5-6789-3456-012345678901",
+      "e1f2a3b4-c5d6-7890-4567-123456789012",
+      "f2a3b4c5-d6e7-8901-5678-234567890123",
+      "a3b4c5d6-e7f8-9012-6789-345678901234"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-20T18:45:00Z",
+      "durationMs": 500,
+      "input": {
+        "rawInput": "healthcare clinical-care mental-health"
+      },
+      "output": {
+        "industry": "healthcare-life-sciences",
+        "domain": "clinical-care",
+        "field": "mental-health"
+      },
+      "status": "completed"
+    },
+    {
+      "step": 2,
+      "action": "initialize_session",
+      "timestamp": "2026-01-20T18:45:30Z",
+      "durationMs": 2000,
+      "input": {},
+      "output": {
+        "sessionId": "session-20260120-184500",
+        "existingProblems": 0
+      },
+      "status": "completed"
+    },
+    {
+      "step": 3,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T18:46:00Z",
+      "durationMs": 180000,
+      "input": {
+        "searchQueries": 10
+      },
+      "output": {
+        "candidatesFound": 15,
+        "sourcesConsulted": 85
+      },
+      "status": "completed"
+    },
+    {
+      "step": 4,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T18:55:00Z",
+      "durationMs": 300000,
+      "input": {
+        "candidates": 15
+      },
+      "output": {
+        "problemsResearched": 10
+      },
+      "status": "completed"
+    },
+    {
+      "step": 5,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T19:10:00Z",
+      "durationMs": 120000,
+      "input": {
+        "problemsToValidate": 10
+      },
+      "output": {
+        "approved": 10,
+        "approvedWithEdits": 0,
+        "needsMoreResearch": 0,
+        "rejected": 0
+      },
+      "status": "completed"
+    },
+    {
+      "step": 6,
+      "action": "storage_phase",
+      "timestamp": "2026-01-20T19:20:00Z",
+      "durationMs": 60000,
+      "input": {
+        "problemsToStore": 10
+      },
+      "output": {
+        "filesCreated": [
+          "research-viewer/public/research-data/industries/healthcare-life-sciences/clinical-care/fields/mental-health.json"
+        ],
+        "problemsStored": 10
+      },
+      "status": "completed"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 2700000,
+    "apiCalls": 12,
+    "sourcesConsulted": 85
+  }
+}
