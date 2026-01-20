@@ -5,12 +5,12 @@
     "totalProblems": 20,
     "totalIndustries": 2,
     "totalDomains": 2,
-    "totalFields": 9,
+    "totalFields": 10,
     "problemsByIndustry": {
       "technology-software": 10,
-      "healthcare-life-sciences": 10
+      "financial-services": 10
     },
-    "lastResearchSession": "2026-01-20T16:15:00Z"
+    "lastResearchSession": "2026-01-20T16:30:45Z"
   },
   "industries": [
     {
@@ -30,6 +30,15 @@
       "domainCount": 1,
       "problemCount": 10,
       "lastUpdated": "2026-01-20T16:15:00Z"
+    },
+    {
+      "id": "c3d4e5f6-a7b8-9012-cdef-123456780001",
+      "name": "Financial Services",
+      "slug": "financial-services",
+      "path": "industries/financial-services",
+      "domainCount": 1,
+      "problemCount": 10,
+      "lastUpdated": "2026-01-20T16:30:45Z"
     }
   ],
   "recentSessions": [
@@ -39,6 +48,13 @@
       "targetIndustry": "healthcare-life-sciences",
       "targetDomain": "clinical-care",
       "targetField": "primary-care",
+    },
+    {
+      "id": "session-20260120-163045",
+      "timestamp": "2026-01-20T16:30:45Z",
+      "targetIndustry": "financial-services",
+      "targetDomain": "banking",
+      "targetField": "retail-banking",
       "problemsDiscovered": 10,
       "status": "completed"
     },
