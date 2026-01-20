@@ -1,0 +1,105 @@
+{
+  "id": "session-20260120-202145",
+  "startedAt": "2026-01-20T20:21:45Z",
+  "completedAt": "2026-01-20T20:35:00Z",
+  "target": {
+    "industry": "financial-services",
+    "domain": "insurance",
+    "field": "property-casualty"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 12,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 2,
+    "problemIds": [
+      "5c1e165c-7b93-4f4b-8c19-b335e8af97a2",
+      "7837eb1d-de84-4661-b327-2c52369e2655",
+      "76dd97d3-a4e2-4a29-8c32-8a8348f5cabf",
+      "10cf37b9-e134-4aeb-a8e1-0ea52bc9a5fa",
+      "be95cb85-8846-479d-9e4e-e84db2863b16",
+      "c8f85b29-5770-42d1-9acd-ab2914e187cc",
+      "fad21c58-1f47-4da3-b096-e980784195e1",
+      "08e22457-9efc-4f88-bd2f-2c0051cc9f77",
+      "0fa5ad16-5d91-4bb4-8472-ce915999d5bc",
+      "74b79ba7-5e40-43ef-a5ad-f3e0ed26ac84"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "initialize_session",
+      "timestamp": "2026-01-20T20:21:45Z",
+      "status": "completed",
+      "output": {
+        "sessionId": "session-20260120-202145",
+        "target": "financial-services > insurance > property-casualty"
+      }
+    },
+    {
+      "step": 2,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T20:22:00Z",
+      "status": "completed",
+      "output": {
+        "searchQueries": 5,
+        "candidatesFound": 12,
+        "sources": [
+          "Insurance Journal",
+          "Insurance Information Institute",
+          "Marsh McLennan Agency",
+          "AXA XL",
+          "IRMI",
+          "Sedgwick",
+          "Consumer Reports",
+          "Woodruff Sawyer"
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T20:25:00Z",
+      "status": "completed",
+      "output": {
+        "problemsAnalyzed": 12,
+        "sourcesConsulted": 18
+      }
+    },
+    {
+      "step": 4,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T20:30:00Z",
+      "status": "completed",
+      "output": {
+        "problemsValidated": 10,
+        "averageConfidence": 0.862,
+        "lowConfidenceRejected": 2
+      }
+    },
+    {
+      "step": 5,
+      "action": "synthesis_storage",
+      "timestamp": "2026-01-20T20:33:00Z",
+      "status": "completed",
+      "output": {
+        "fileWritten": "research-viewer/public/research-data/industries/financial-services/insurance/fields/property-casualty.json",
+        "problemsStored": 10
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 795000,
+    "apiCalls": 8,
+    "sourcesConsulted": 18
+  }
+}
