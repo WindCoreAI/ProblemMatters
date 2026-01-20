@@ -1,0 +1,179 @@
+{
+  "id": "session-20260120-202500",
+  "startedAt": "2026-01-20T20:25:00Z",
+  "completedAt": "2026-01-20T20:35:00Z",
+  "target": {
+    "industry": "financial-services",
+    "industryName": "Financial Services",
+    "domain": "capital-markets",
+    "domainName": "Capital Markets",
+    "field": "trading",
+    "fieldName": "Trading"
+  },
+  "configuration": {
+    "maxProblems": 10,
+    "depthLevel": "deep",
+    "minConfidence": 0.7
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 15,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 5,
+    "averageConfidence": 0.855,
+    "averageImpactScore": 62.3
+  },
+  "steps": [
+    {
+      "phase": "discovery",
+      "startedAt": "2026-01-20T20:25:00Z",
+      "completedAt": "2026-01-20T20:27:00Z",
+      "queriesExecuted": 4,
+      "candidatesFound": 15,
+      "status": "completed"
+    },
+    {
+      "phase": "research",
+      "startedAt": "2026-01-20T20:27:00Z",
+      "completedAt": "2026-01-20T20:31:00Z",
+      "problemsResearched": 12,
+      "sourcesAnalyzed": 18,
+      "status": "completed"
+    },
+    {
+      "phase": "validation",
+      "startedAt": "2026-01-20T20:31:00Z",
+      "completedAt": "2026-01-20T20:33:00Z",
+      "problemsValidated": 10,
+      "problemsRejected": 2,
+      "status": "completed"
+    },
+    {
+      "phase": "storage",
+      "startedAt": "2026-01-20T20:33:00Z",
+      "completedAt": "2026-01-20T20:35:00Z",
+      "filesCreated": 1,
+      "problemsWritten": 10,
+      "status": "completed"
+    }
+  ],
+  "problemsSummary": [
+    {
+      "id": "p1a2b3c4-d5e6-7890-trad-000000000001",
+      "title": "T+1 Settlement Processing Time Compression Creating Operational Failures",
+      "impactScore": 72,
+      "confidence": 0.92
+    },
+    {
+      "id": "p1a2b3c4-d5e6-7890-trad-000000000002",
+      "title": "Derivatives Risk Management Complexity Overwhelming Traditional Systems",
+      "impactScore": 68,
+      "confidence": 0.88
+    },
+    {
+      "id": "p1a2b3c4-d5e6-7890-trad-000000000003",
+      "title": "Cross-Border Trading Time Zone Disadvantages Creating Market Inequity",
+      "impactScore": 64,
+      "confidence": 0.85
+    },
+    {
+      "id": "p1a2b3c4-d5e6-7890-trad-000000000004",
+      "title": "Market Volatility Amplification Through Algorithmic Trading Feedback Loops",
+      "impactScore": 66,
+      "confidence": 0.86
+    },
+    {
+      "id": "p1a2b3c4-d5e6-7890-trad-000000000005",
+      "title": "ESG and Sustainability-Linked Derivatives Market Infrastructure Immaturity",
+      "impactScore": 58,
+      "confidence": 0.82
+    },
+    {
+      "id": "p1a2b3c4-d5e6-7890-trad-000000000006",
+      "title": "Legacy Batch Processing Systems Incompatible with Real-Time Trading Requirements",
+      "impactScore": 62,
+      "confidence": 0.87
+    },
+    {
+      "id": "p1a2b3c4-d5e6-7890-trad-000000000007",
+      "title": "Distributed Ledger Technology Integration Challenges in Post-Trade Infrastructure",
+      "impactScore": 55,
+      "confidence": 0.83
+    },
+    {
+      "id": "p1a2b3c4-d5e6-7890-trad-000000000008",
+      "title": "Trading Operations Staffing Crisis and Skills Gap",
+      "impactScore": 61,
+      "confidence": 0.85
+    },
+    {
+      "id": "p1a2b3c4-d5e6-7890-trad-000000000009",
+      "title": "Securities Lending Market Disruption from Compressed Settlement Cycles",
+      "impactScore": 60,
+      "confidence": 0.84
+    },
+    {
+      "id": "p1a2b3c4-d5e6-7890-trad-000000000010",
+      "title": "ETF Trading and Settlement Complexity from Multi-Asset Multi-Jurisdiction Structures",
+      "impactScore": 57,
+      "confidence": 0.83
+    }
+  ],
+  "searchQueries": [
+    "capital markets trading challenges problems 2025 2026",
+    "trading technology infrastructure problems scalability",
+    "algorithmic trading high frequency trading problems risks 2025",
+    "derivatives trading risk management emerging challenges 2026",
+    "trading settlement T+1 challenges post-trade processing problems"
+  ],
+  "sourcesUsed": [
+    {
+      "url": "https://www.swift.com/securities/preparing-t1-settlement",
+      "type": "industry-research",
+      "reliability": 0.95
+    },
+    {
+      "url": "https://www.marketgrowthreports.com/market-reports/derivatives-market-104112",
+      "type": "industry-report",
+      "reliability": 0.85
+    },
+    {
+      "url": "https://evergreen.insightglobal.com/ai-financial-risk-management-aderivatives-trading-trends-use-cases/",
+      "type": "industry-analysis",
+      "reliability": 0.85
+    },
+    {
+      "url": "https://krm22.com/tackling-challenges-in-derivative-risk-management/",
+      "type": "industry-analysis",
+      "reliability": 0.85
+    },
+    {
+      "url": "https://www.theia.org/sites/default/files/2024-11/IA%20T+1%20Settlement%20Overview.pdf",
+      "type": "industry-report",
+      "reliability": 0.9
+    },
+    {
+      "url": "https://securities.cib.bnpparibas/t1-settlement-ready/",
+      "type": "industry-analysis",
+      "reliability": 0.9
+    },
+    {
+      "url": "https://www.confluent.io/blog/transforming-trade-settlements-with-data-streaming/",
+      "type": "industry-analysis",
+      "reliability": 0.85
+    },
+    {
+      "url": "https://www.autorek.com/how-t1-settlement-will-impact-4-key-operational-processes/",
+      "type": "industry-analysis",
+      "reliability": 0.85
+    },
+    {
+      "url": "https://finadium.com/t1-settlement-for-repo-new-challenges-and-solutions-in-post-trade-processing/",
+      "type": "industry-research",
+      "reliability": 0.85
+    }
+  ],
+  "errors": [],
+  "notes": "Research focused on trading operations and settlement challenges, with significant emphasis on T+1 transition impacts across multiple problem areas. High-quality sources from industry bodies and financial infrastructure providers."
+}
