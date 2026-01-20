@@ -1,0 +1,203 @@
+{
+  "id": "session-20260120-202554",
+  "startedAt": "2026-01-20T20:25:54Z",
+  "completedAt": "2026-01-20T20:45:00Z",
+  "target": {
+    "industry": "energy-utilities",
+    "industryName": "Energy & Utilities",
+    "domain": "renewable-energy",
+    "domainName": "Renewable Energy",
+    "field": "solar",
+    "fieldName": "Solar Energy"
+  },
+  "configuration": {
+    "maxProblems": 10,
+    "depthLevel": "deep",
+    "minConfidence": 0.7
+  },
+  "status": "completed",
+  "results": {
+    "discovered": 15,
+    "researched": 10,
+    "validated": 10,
+    "stored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 0,
+    "rejected": 0
+  },
+  "problems": [
+    {
+      "id": "009de16f-2912-4523-8733-0e0b24bae23c",
+      "title": "Grid Interconnection Queue Backlog Delaying Solar Project Deployment",
+      "impactScore": 72,
+      "confidence": 0.90,
+      "verdict": "approved"
+    },
+    {
+      "id": "b3d5b7c2-0b49-4133-b17a-bf88cbef1234",
+      "title": "Solar Panel End-of-Life Recycling Infrastructure Crisis",
+      "impactScore": 71,
+      "confidence": 0.88,
+      "verdict": "approved"
+    },
+    {
+      "id": "874ce9d3-1420-4571-8485-5d02cff3d55a",
+      "title": "Critical Dependence on Chinese-Dominated Solar Supply Chain",
+      "impactScore": 66,
+      "confidence": 0.92,
+      "verdict": "approved"
+    },
+    {
+      "id": "df39e243-a047-4910-a681-906b4fdebbc1",
+      "title": "Solar Industry Policy Uncertainty and Tax Credit Expiration Risk",
+      "impactScore": 68,
+      "confidence": 0.88,
+      "verdict": "approved"
+    },
+    {
+      "id": "f32c92ef-33db-473e-8ac7-187165bdff9a",
+      "title": "Solar Module Supply Shortages from Trade Barriers and Tariffs",
+      "impactScore": 65,
+      "confidence": 0.87,
+      "verdict": "approved"
+    },
+    {
+      "id": "1475e157-b232-40dc-9d58-603e8b57dc02",
+      "title": "Skilled Workforce Shortage Constraining Solar Industry Growth",
+      "impactScore": 66,
+      "confidence": 0.82,
+      "verdict": "approved"
+    },
+    {
+      "id": "60d0f383-3e66-45bd-a4c5-9e519efa6a31",
+      "title": "Long-Duration Energy Storage Gap Limiting Solar Grid Integration",
+      "impactScore": 68,
+      "confidence": 0.85,
+      "verdict": "approved"
+    },
+    {
+      "id": "c1c92090-2ba7-4ca1-a4bf-72660c8aba8e",
+      "title": "Residential Solar Affordability and Financing Access Barriers",
+      "impactScore": 65,
+      "confidence": 0.84,
+      "verdict": "approved"
+    },
+    {
+      "id": "f57eb1da-f05c-4a4a-a61e-a83b8fc04bc5",
+      "title": "Solar Land Use Competition and Agricultural Co-Existence Challenges",
+      "impactScore": 62,
+      "confidence": 0.80,
+      "verdict": "approved"
+    },
+    {
+      "id": "1811a24a-12a6-4797-ad51-c74e37e87d07",
+      "title": "Solar Panel Efficiency and Performance Degradation Limitations",
+      "impactScore": 58,
+      "confidence": 0.83,
+      "verdict": "approved"
+    },
+    {
+      "id": "2f058d40-5fe4-4121-90a3-952d9c95782e",
+      "title": "Grid Curtailment and Negative Pricing Events from Solar Oversupply",
+      "impactScore": 64,
+      "confidence": 0.85,
+      "verdict": "approved"
+    }
+  ],
+  "sources": [
+    {
+      "type": "industry-report",
+      "title": "Solar Market Insight Report Q4 2025",
+      "url": "https://seia.org/research-resources/solar-market-insight-report-q4-2025/"
+    },
+    {
+      "type": "industry-report",
+      "title": "2026 Renewable Energy Industry Outlook",
+      "url": "https://www.deloitte.com/us/en/insights/industry/renewable-energy/renewable-energy-industry-outlook.html"
+    },
+    {
+      "type": "government",
+      "title": "End-of-Life Solar Panels: Regulations and Management",
+      "url": "https://www.epa.gov/hw/end-life-solar-panels-regulations-and-management"
+    },
+    {
+      "type": "academic",
+      "title": "How to tackle the looming challenge of solar PV panel recycling",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2417921122"
+    },
+    {
+      "type": "industry-report",
+      "title": "Solar PV Global Supply Chains - IEA",
+      "url": "https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary"
+    },
+    {
+      "type": "news",
+      "title": "Experts predict crucial 2026 for U.S. solar industry",
+      "url": "https://solarbuildermag.com/policy/experts-predict-crucial-2026-for-u-s-solar-industry-following-rollercoaster-2025/"
+    },
+    {
+      "type": "news",
+      "title": "As Millions of Solar Panels Age Out, Recyclers Hope to Cash In",
+      "url": "https://e360.yale.edu/features/solar-energy-panels-recycling"
+    },
+    {
+      "type": "news",
+      "title": "China controls over three-quarters of the solar supply chain",
+      "url": "https://cen.acs.org/energy/solar-power/US-solar-polysilicon-supply-problem/100/i33"
+    }
+  ],
+  "steps": [
+    {
+      "phase": "initialization",
+      "timestamp": "2026-01-20T20:25:54Z",
+      "status": "completed",
+      "details": "Created session and verified target taxonomy"
+    },
+    {
+      "phase": "discovery",
+      "timestamp": "2026-01-20T20:26:00Z",
+      "status": "completed",
+      "details": "Executed web searches for solar energy problems",
+      "searchQueries": [
+        "solar industry report market challenges 2025 2026",
+        "solar panel recycling end-of-life waste management problems",
+        "solar energy grid integration intermittency storage challenges",
+        "solar workforce labor shortage training",
+        "solar manufacturing supply chain China dependence domestic production"
+      ],
+      "candidatesFound": 15
+    },
+    {
+      "phase": "research",
+      "timestamp": "2026-01-20T20:30:00Z",
+      "status": "completed",
+      "details": "Analyzed 10 problem candidates in depth",
+      "problemsResearched": 10
+    },
+    {
+      "phase": "validation",
+      "timestamp": "2026-01-20T20:38:00Z",
+      "status": "completed",
+      "details": "Validated all problems, calculated scores, verified sources",
+      "problemsValidated": 10,
+      "averageConfidence": 0.854
+    },
+    {
+      "phase": "storage",
+      "timestamp": "2026-01-20T20:42:00Z",
+      "status": "completed",
+      "details": "Stored 10 problems to field-level file",
+      "filesWritten": [
+        "research-viewer/public/research-data/industries/energy-utilities/renewable-energy/fields/solar.json"
+      ]
+    }
+  ],
+  "metrics": {
+    "duration": "19 minutes",
+    "webSearches": 5,
+    "sourcesAnalyzed": 15,
+    "averageImpactScore": 66.5,
+    "highestImpactScore": 72,
+    "lowestImpactScore": 58
+  }
+}

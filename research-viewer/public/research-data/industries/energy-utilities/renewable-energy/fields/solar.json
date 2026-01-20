@@ -1,0 +1,2581 @@
+{
+  "field": {
+    "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+    "name": "Solar Energy",
+    "slug": "solar",
+    "description": "Solar energy generation technologies including photovoltaic systems, concentrated solar power, solar thermal, and related infrastructure for converting sunlight into electricity or heat."
+  },
+  "domain": {
+    "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+    "name": "Renewable Energy",
+    "slug": "renewable-energy"
+  },
+  "industry": {
+    "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+    "name": "Energy & Utilities",
+    "slug": "energy-utilities"
+  },
+  "problems": [
+    {
+      "id": "009de16f-2912-4523-8733-0e0b24bae23c",
+      "title": "Grid Interconnection Queue Backlog Delaying Solar Project Deployment",
+      "slug": "grid-interconnection-queue-backlog-delaying-solar-deployment",
+      "description": "The U.S. electricity grid faces an unprecedented backlog in interconnection queues, with over 2,600 GW of generation capacity—predominantly solar and storage projects—waiting for approval. This represents more than double the current installed U.S. generation capacity. Projects now face average wait times of 3-5 years, with some regions experiencing delays of 7+ years. The withdrawal rate has reached approximately 80%, meaning most proposed projects never reach completion due to queue-related delays and uncertainty. This bottleneck stems from understaffed grid operators, outdated study processes designed for fewer large projects rather than many distributed ones, inadequate transmission infrastructure, and complex multi-party coordination requirements. The backlog is severely constraining the pace of clean energy deployment and threatening climate goals, as projects that could be operational within 1-2 years from a construction standpoint are instead stuck in administrative limbo for half a decade or more.",
+      "summary": "Over 2,600 GW of solar and storage projects are stuck in grid interconnection queues with 3-7 year wait times, causing 80% project withdrawal rates and severely limiting clean energy deployment.",
+      "industry": {
+        "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+        "name": "Solar Energy",
+        "slug": "solar"
+      },
+      "problemType": "process",
+      "problemSubtypes": ["infrastructure", "regulatory", "coordination"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": 8,
+        "economicImpact": 9,
+        "qualityOfLifeImpact": 6,
+        "productivityImpact": 9
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barrierCount": 5
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "researchActivity": 5,
+        "fundingLevel": 4,
+        "organizationCount": 3,
+        "mediaAttention": 4
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "Grid operators are understaffed and under-resourced to process the surge in interconnection applications",
+          "category": "resource",
+          "contributionLevel": "high",
+          "evidence": "FERC and regional transmission organizations report significant staffing shortages relative to application volumes"
+        },
+        {
+          "description": "Legacy study processes designed for a few large power plants cannot efficiently handle thousands of distributed generation projects",
+          "category": "process",
+          "contributionLevel": "high",
+          "evidence": "Queue processes were designed decades ago for different generation paradigms"
+        },
+        {
+          "description": "Insufficient transmission infrastructure to accommodate new generation in high-resource areas",
+          "category": "infrastructure",
+          "contributionLevel": "high",
+          "evidence": "Many solar-rich regions lack adequate transmission capacity to export power"
+        },
+        {
+          "description": "Speculative projects clogging queues without serious intent to build",
+          "category": "market",
+          "contributionLevel": "medium",
+          "evidence": "80% withdrawal rate indicates many projects are not viable or speculative"
+        },
+        {
+          "description": "Complex coordination requirements between multiple utilities, RTOs, and regulators",
+          "category": "coordination",
+          "contributionLevel": "medium",
+          "evidence": "Multi-party studies and agreements add significant time and complexity"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Delayed clean energy deployment threatening climate targets",
+          "type": "environmental",
+          "affectedArea": "Climate mitigation",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Stranded development costs for projects that withdraw from queues",
+          "type": "economic",
+          "affectedArea": "Solar developers",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Reduced investor confidence in renewable energy projects",
+          "type": "economic",
+          "affectedArea": "Clean energy investment",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Continued reliance on fossil fuel generation",
+          "type": "environmental",
+          "affectedArea": "Air quality and emissions",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Higher electricity costs for consumers due to constrained supply",
+          "type": "economic",
+          "affectedArea": "Ratepayers",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "FERC Order 2023",
+          "description": "Federal regulation requiring faster interconnection study timelines and cluster study approaches",
+          "type": "regulatory",
+          "effectiveness": 5,
+          "adoptionLevel": "partial",
+          "limitations": "Implementation varies by region; does not address underlying infrastructure gaps"
+        },
+        {
+          "name": "First-Ready, First-Served Approaches",
+          "description": "Alternative queue management prioritizing projects with site control, financing, and permits",
+          "type": "process",
+          "effectiveness": 6,
+          "adoptionLevel": "experimental",
+          "limitations": "May disadvantage smaller developers; requires significant process changes"
+        },
+        {
+          "name": "Increased Grid Operator Staffing",
+          "description": "Hiring additional engineers and analysts to process interconnection studies",
+          "type": "resource",
+          "effectiveness": 4,
+          "adoptionLevel": "partial",
+          "limitations": "Labor market constraints; training time required; does not address process inefficiencies"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Lack of standardized, automated interconnection study tools that can rapidly assess grid impacts",
+          "gapType": "technical",
+          "opportunity": "AI/ML-powered grid modeling could dramatically accelerate studies",
+          "difficulty": "high"
+        },
+        {
+          "description": "Insufficient transmission buildout to high-resource solar regions",
+          "gapType": "infrastructure",
+          "opportunity": "Proactive transmission planning and construction for renewable energy zones",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "No effective mechanism to filter out speculative projects early in the process",
+          "gapType": "process",
+          "opportunity": "Meaningful deposits, milestones, and readiness requirements",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Limited coordination between federal, state, and utility planning processes",
+          "gapType": "coordination",
+          "opportunity": "Integrated resource and transmission planning across jurisdictions",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "Solar Developers",
+          "description": "Companies developing utility-scale and distributed solar projects",
+          "examples": ["NextEra Energy", "First Solar", "Sunrun"],
+          "interestLevel": "critical",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Grid Operators",
+          "description": "Regional transmission organizations and independent system operators",
+          "examples": ["CAISO", "PJM", "ERCOT", "MISO"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Regulators",
+          "description": "Federal and state energy regulatory bodies",
+          "examples": ["FERC", "State Public Utility Commissions"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Utilities",
+          "description": "Electric utilities that own transmission and distribution infrastructure",
+          "examples": ["Duke Energy", "Southern Company", "Xcel Energy"],
+          "interestLevel": "medium",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Clean Energy Advocates",
+          "description": "Organizations promoting renewable energy deployment",
+          "examples": ["SEIA", "American Clean Power Association"],
+          "interestLevel": "critical",
+          "influenceLevel": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Solar Market Insight Report Q4 2025",
+          "url": "https://seia.org/research-resources/solar-market-insight-report-q4-2025/",
+          "publishedDate": "2025-12-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Growth has been constrained by interconnection queue wait times, labor and EPC availability, and long lead times for electrical equipment supply."
+        },
+        {
+          "type": "news",
+          "title": "Experts predict crucial 2026 for U.S. solar industry",
+          "url": "https://solarbuildermag.com/policy/experts-predict-crucial-2026-for-u-s-solar-industry-following-rollercoaster-2025/",
+          "publishedDate": "2026-01-15",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "The U.S. solar market in 2026 faces real headwinds, including policy uncertainty, financing challenges, and grid limitations."
+        }
+      ],
+      "tags": ["grid-integration", "interconnection", "infrastructure", "queues", "transmission"],
+      "keywords": ["interconnection queue", "grid backlog", "transmission", "FERC Order 2023", "project delays"],
+      "metrics": {
+        "economicImpactEstimate": {
+          "value": 50000000000,
+          "currency": "USD",
+          "timeframe": "annual",
+          "description": "Estimated value of delayed clean energy investments and stranded development costs"
+        },
+        "affectedPopulation": {
+          "value": 2600,
+          "unit": "GW of projects",
+          "description": "Generation capacity stuck in interconnection queues"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["FERC proceedings", "DOE studies", "industry working groups"]
+      },
+      "researchSession": "session-20260120-202554",
+      "confidence": 0.90,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:54Z",
+      "updatedAt": "2026-01-20T20:25:54Z",
+      "version": 1
+    },
+    {
+      "id": "b3d5b7c2-0b49-4133-b17a-bf88cbef1234",
+      "title": "Solar Panel End-of-Life Recycling Infrastructure Crisis",
+      "slug": "solar-panel-end-of-life-recycling-infrastructure-crisis",
+      "description": "The solar industry faces an imminent waste management crisis as the first generation of mass-deployed solar panels approaches end-of-life. Currently, only about 10% of decommissioned solar panels are recycled, with 90% ending up in landfills. The U.S. is projected to have 1 million tons of solar panel waste by 2030 and up to 10 million tons by 2050, making it the second-largest source of PV waste globally. The core challenge is economic: recycling a silicon PV module costs $15-45, while landfilling costs only $1-5. Solar panels contain valuable materials (silver, copper, silicon, aluminum) worth an estimated $450 million globally by 2030, but extraction at high purity is technically challenging and expensive. Additionally, some panels contain hazardous materials like lead and cadmium that can contaminate soil and groundwater if improperly disposed. Unlike the EU, which has mandated 80% mass recovery through the WEEE Directive, the U.S. lacks comprehensive federal recycling regulations, creating a patchwork of state-level approaches and inadequate recycling infrastructure.",
+      "summary": "Only 10% of solar panels are recycled due to unfavorable economics ($15-45 recycling vs $1-5 landfill), with the U.S. facing 10 million tons of PV waste by 2050 and lacking federal recycling mandates.",
+      "industry": {
+        "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+        "name": "Solar Energy",
+        "slug": "solar"
+      },
+      "problemType": "environmental",
+      "problemSubtypes": ["waste-management", "circular-economy", "regulatory"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": 7,
+        "economicImpact": 7,
+        "qualityOfLifeImpact": 6,
+        "productivityImpact": 5
+      },
+      "tractability": {
+        "overall": 6.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 6,
+        "existingProgress": 6,
+        "barrierCount": 6
+      },
+      "neglectedness": {
+        "overall": 6.0,
+        "researchActivity": 5,
+        "fundingLevel": 6,
+        "organizationCount": 6,
+        "mediaAttention": 5
+      },
+      "impactScore": 71,
+      "rootCauses": [
+        {
+          "description": "Unfavorable economics with recycling costing 3-10x more than landfilling",
+          "category": "economic",
+          "contributionLevel": "high",
+          "evidence": "NREL data shows $15-45 recycling cost vs $1-5 landfill cost per module"
+        },
+        {
+          "description": "Complex laminated construction makes material separation difficult and expensive",
+          "category": "technical",
+          "contributionLevel": "high",
+          "evidence": "Panels consist of tightly bonded layers of glass, polymers, silicon, and metals"
+        },
+        {
+          "description": "Lack of federal recycling mandates or extended producer responsibility requirements",
+          "category": "regulatory",
+          "contributionLevel": "high",
+          "evidence": "No U.S. federal equivalent to EU WEEE Directive for solar panels"
+        },
+        {
+          "description": "Insufficient recycling infrastructure and facility capacity",
+          "category": "infrastructure",
+          "contributionLevel": "medium",
+          "evidence": "Limited number of specialized PV recycling facilities in North America"
+        },
+        {
+          "description": "Low recovered material values relative to extraction costs",
+          "category": "economic",
+          "contributionLevel": "medium",
+          "evidence": "High-purity extraction requires expensive processing that exceeds material value"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Accumulation of electronic waste in landfills with potential soil and groundwater contamination",
+          "type": "environmental",
+          "affectedArea": "Land and water resources",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Loss of valuable recoverable materials including silver, copper, and silicon",
+          "type": "economic",
+          "affectedArea": "Resource efficiency",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Reputational damage to solar industry's environmental credentials",
+          "type": "social",
+          "affectedArea": "Public perception of renewables",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Potential release of hazardous materials (lead, cadmium) from improperly disposed panels",
+          "type": "environmental",
+          "affectedArea": "Human health and ecosystems",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Missed opportunity for domestic material supply through circular economy",
+          "type": "economic",
+          "affectedArea": "Supply chain security",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "EU WEEE Directive",
+          "description": "Mandatory 80% mass recovery requirement for solar panels with producer responsibility",
+          "type": "regulatory",
+          "effectiveness": 7,
+          "adoptionLevel": "regional",
+          "limitations": "Only applies to EU; compliance costs increase panel prices"
+        },
+        {
+          "name": "Specialized PV Recycling Facilities",
+          "description": "Companies like First Solar, Veolia, and ROSI Solar operating dedicated recycling operations",
+          "type": "technical",
+          "effectiveness": 6,
+          "adoptionLevel": "limited",
+          "limitations": "Limited geographic coverage; capacity constraints; high processing costs"
+        },
+        {
+          "name": "EPA Universal Waste Proposal",
+          "description": "2023 EPA proposal to classify solar panels as universal waste to simplify handling",
+          "type": "regulatory",
+          "effectiveness": 4,
+          "adoptionLevel": "proposed",
+          "limitations": "Still in rulemaking; does not mandate recycling, only simplifies handling"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No cost-effective technology for high-purity material recovery at scale",
+          "gapType": "technical",
+          "opportunity": "Advanced separation and purification technologies that improve economics",
+          "difficulty": "high"
+        },
+        {
+          "description": "Lack of design-for-recycling standards in panel manufacturing",
+          "gapType": "technical",
+          "opportunity": "New panel designs with easier disassembly and material separation",
+          "difficulty": "medium"
+        },
+        {
+          "description": "No extended producer responsibility framework in U.S.",
+          "gapType": "regulatory",
+          "opportunity": "Federal legislation mandating manufacturer take-back and recycling",
+          "difficulty": "high"
+        },
+        {
+          "description": "Insufficient recycling infrastructure across North America",
+          "gapType": "infrastructure",
+          "opportunity": "Investment in regional PV recycling facilities and collection networks",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "Solar Manufacturers",
+          "description": "Companies producing solar panels potentially subject to take-back requirements",
+          "examples": ["First Solar", "Canadian Solar", "JinkoSolar"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Waste Management Companies",
+          "description": "Firms handling end-of-life panel collection and processing",
+          "examples": ["Veolia", "We Recycle Solar", "ROSI Solar"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Environmental Regulators",
+          "description": "Agencies responsible for waste management and hazardous materials",
+          "examples": ["EPA", "State environmental agencies"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Solar Asset Owners",
+          "description": "Utilities, businesses, and homeowners facing decommissioning decisions",
+          "examples": ["Utility-scale operators", "Commercial building owners", "Residential owners"],
+          "interestLevel": "medium",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Research Institutions",
+          "description": "Organizations developing improved recycling technologies",
+          "examples": ["NREL", "Argonne National Laboratory", "Universities"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "government",
+          "title": "End-of-Life Solar Panels: Regulations and Management",
+          "url": "https://www.epa.gov/hw/end-life-solar-panels-regulations-and-management",
+          "publishedDate": "2025-06-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "By 2050, the United States is expected to have the second largest number of end-of-life panels in the world, with as many as an estimated 10 million total tons of panels."
+        },
+        {
+          "type": "academic",
+          "title": "How to tackle the looming challenge of solar PV panel recycling",
+          "url": "https://www.pnas.org/doi/10.1073/pnas.2417921122",
+          "publishedDate": "2025-09-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "At present, only about 10% of PV panels are recycled, with the majority being dumped, burned, or buried."
+        },
+        {
+          "type": "news",
+          "title": "As Millions of Solar Panels Age Out, Recyclers Hope to Cash In",
+          "url": "https://e360.yale.edu/features/solar-energy-panels-recycling",
+          "publishedDate": "2025-03-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "NREL says that it costs about $15–$45 to recycle a silicon PV module in the US but only $1–$5 to dump it in a landfill."
+        }
+      ],
+      "tags": ["recycling", "e-waste", "circular-economy", "end-of-life", "sustainability"],
+      "keywords": ["solar panel recycling", "PV waste", "end-of-life management", "WEEE", "circular economy"],
+      "metrics": {
+        "economicImpactEstimate": {
+          "value": 450000000,
+          "currency": "USD",
+          "timeframe": "by 2030",
+          "description": "Cumulative value of recoverable raw materials from end-of-life panels globally"
+        },
+        "affectedPopulation": {
+          "value": 10000000,
+          "unit": "tons by 2050",
+          "description": "Projected U.S. solar panel waste volume"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["NREL research programs", "DOE initiatives", "EPA rulemaking"]
+      },
+      "researchSession": "session-20260120-202554",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:54Z",
+      "updatedAt": "2026-01-20T20:25:54Z",
+      "version": 1
+    },
+    {
+      "id": "874ce9d3-1420-4571-8485-5d02cff3d55a",
+      "title": "Critical Dependence on Chinese-Dominated Solar Supply Chain",
+      "slug": "critical-dependence-chinese-dominated-solar-supply-chain",
+      "description": "The global solar photovoltaic supply chain is overwhelmingly controlled by China, which commands over 80% of manufacturing capacity across all key stages: polysilicon production, ingot and wafer manufacturing, cell fabrication, and module assembly. This concentration is projected to reach 95%+ for polysilicon and wafers based on capacity under construction. China's dominance stems from decades of strategic industrial policy, massive subsidies, and resulting economies of scale that have driven costs down by over 80%. The consequence is a significant energy security vulnerability for the U.S. and other nations pursuing clean energy transitions. Even domestic U.S. manufacturing spurred by IRA incentives is threatened, as Chinese overproduction has driven global module prices to unsustainable levels. The Meyer Burger facility in Colorado closed due to inability to compete with Chinese pricing. Chinese firms entering the U.S. market focus on final assembly rather than full-scale production, still importing critical components from Asia. Trade barriers (25-30% tariffs) have created supply shortages and cost increases without successfully building independent supply chains.",
+      "summary": "China controls 80%+ of global solar manufacturing across all supply chain stages, creating energy security vulnerabilities as U.S. domestic production cannot compete with subsidized Chinese pricing despite IRA incentives.",
+      "industry": {
+        "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+        "name": "Solar Energy",
+        "slug": "solar"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["supply-chain", "geopolitical", "trade"],
+      "scope": "global",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": 8,
+        "economicImpact": 8,
+        "qualityOfLifeImpact": 5,
+        "productivityImpact": 8
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 2,
+        "existingProgress": 4,
+        "barrierCount": 4
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "researchActivity": 4,
+        "fundingLevel": 3,
+        "organizationCount": 3,
+        "mediaAttention": 4
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Decades of Chinese strategic industrial policy prioritizing solar as a key sector",
+          "category": "policy",
+          "contributionLevel": "high",
+          "evidence": "Chinese government has designated solar PV as strategic industry with substantial support"
+        },
+        {
+          "description": "Massive Chinese government subsidies enabling below-cost production and market flooding",
+          "category": "economic",
+          "contributionLevel": "high",
+          "evidence": "Chinese manufacturers sell at prices below production costs to maintain market share"
+        },
+        {
+          "description": "Economies of scale achieved through dominant market position",
+          "category": "economic",
+          "contributionLevel": "high",
+          "evidence": "China is most cost-competitive location for all PV supply chain stages"
+        },
+        {
+          "description": "Late and insufficient Western response to build domestic manufacturing capacity",
+          "category": "policy",
+          "contributionLevel": "medium",
+          "evidence": "IRA incentives came after China already achieved dominant position"
+        },
+        {
+          "description": "Global demand growth outpacing non-Chinese supply development",
+          "category": "market",
+          "contributionLevel": "medium",
+          "evidence": "World solar manufacturing capacity exceeds demand by 2-4x, mostly Chinese"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Energy security vulnerability for nations dependent on Chinese imports",
+          "type": "strategic",
+          "affectedArea": "National security",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Collapse of non-Chinese solar manufacturing unable to compete on price",
+          "type": "economic",
+          "affectedArea": "Domestic manufacturing",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Supply disruption risks from trade disputes or geopolitical tensions",
+          "type": "economic",
+          "affectedArea": "Clean energy deployment",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Loss of manufacturing jobs and technological capability in non-Chinese markets",
+          "type": "economic",
+          "affectedArea": "Employment and innovation",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Trade barriers increasing costs and causing supply shortages",
+          "type": "economic",
+          "affectedArea": "Solar project economics",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "IRA Section 45X Manufacturing Credits",
+          "description": "Tax credits for domestic production of solar components through 2032",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoptionLevel": "full",
+          "limitations": "Credits insufficient to close cost gap with China; phasing out after 2029"
+        },
+        {
+          "name": "AD/CVD Trade Remedies",
+          "description": "Anti-dumping and countervailing duties on Chinese solar imports",
+          "type": "regulatory",
+          "effectiveness": 4,
+          "adoptionLevel": "full",
+          "limitations": "Circumvention through third countries; increases costs without building supply"
+        },
+        {
+          "name": "Allied Supply Chain Diversification",
+          "description": "Investment in solar manufacturing in India, Vietnam, and other allied nations",
+          "type": "strategic",
+          "effectiveness": 5,
+          "adoptionLevel": "partial",
+          "limitations": "Takes years to build; still may depend on Chinese equipment and inputs"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No cost-competitive domestic polysilicon and wafer production at scale",
+          "gapType": "technical",
+          "opportunity": "Advanced manufacturing processes and automation to reduce costs",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Lack of integrated domestic supply chain from raw materials to modules",
+          "gapType": "infrastructure",
+          "opportunity": "Coordinated investment in all supply chain stages with long-term commitments",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Insufficient policy tools to counter Chinese subsidies and market manipulation",
+          "gapType": "regulatory",
+          "opportunity": "More aggressive trade enforcement and industrial policy",
+          "difficulty": "high"
+        },
+        {
+          "description": "Limited workforce with solar manufacturing expertise",
+          "gapType": "resource",
+          "opportunity": "Training programs and immigration policy for manufacturing talent",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "U.S. Government",
+          "description": "Federal agencies responsible for energy security and trade policy",
+          "examples": ["DOE", "USTR", "Commerce Department"],
+          "interestLevel": "critical",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Domestic Manufacturers",
+          "description": "U.S. companies attempting to build solar manufacturing capacity",
+          "examples": ["First Solar", "Hemlock Semiconductor", "REC Silicon"],
+          "interestLevel": "critical",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Solar Installers and Developers",
+          "description": "Companies that depend on affordable panel supply",
+          "examples": ["NextEra", "Sunrun", "utility-scale developers"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Chinese Manufacturers",
+          "description": "Dominant global suppliers seeking market access",
+          "examples": ["LONGi", "JinkoSolar", "Trina Solar", "JA Solar"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Solar PV Global Supply Chains - Executive Summary",
+          "url": "https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary",
+          "publishedDate": "2024-07-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "China's share in all the key manufacturing stages of solar panels exceeds 80% today, and for key elements including polysilicon and wafers, this is set to rise to more than 95%."
+        },
+        {
+          "type": "news",
+          "title": "China controls over three-quarters of the solar supply chain",
+          "url": "https://cen.acs.org/energy/solar-power/US-solar-polysilicon-supply-problem/100/i33",
+          "publishedDate": "2025-08-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Chinese companies dominate every key step of the production process: they produce the polysilicon, refine it into ingots, slice it into wafers, and finally assemble it into solar cells and modules."
+        },
+        {
+          "type": "industry-report",
+          "title": "CPA Report on U.S. Solar Supply Chain",
+          "url": "https://prosperousamerica.org/cpa-releases-landmark-report-on-u-s-solar-supply-chain-a-call-for-bold-action-to-counter-chinas-market-dominance/",
+          "publishedDate": "2025-10-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Heavily subsidized Chinese firms control over 80% of the global solar supply chain and dominate even U.S.-based production."
+        }
+      ],
+      "tags": ["supply-chain", "china", "manufacturing", "trade", "energy-security"],
+      "keywords": ["China solar dominance", "supply chain", "polysilicon", "manufacturing", "trade policy"],
+      "metrics": {
+        "economicImpactEstimate": {
+          "value": 100000000000,
+          "currency": "USD",
+          "timeframe": "annual",
+          "description": "Global solar PV market value increasingly captured by Chinese manufacturers"
+        },
+        "affectedPopulation": {
+          "value": 80,
+          "unit": "percent of global supply",
+          "description": "Chinese market share across solar supply chain stages"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["IEA reports", "Congressional hearings", "DOE studies"]
+      },
+      "researchSession": "session-20260120-202554",
+      "confidence": 0.92,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:54Z",
+      "updatedAt": "2026-01-20T20:25:54Z",
+      "version": 1
+    },
+    {
+      "id": "df39e243-a047-4910-a681-906b4fdebbc1",
+      "title": "Solar Industry Policy Uncertainty and Tax Credit Expiration Risk",
+      "slug": "solar-industry-policy-uncertainty-tax-credit-expiration-risk",
+      "description": "The U.S. solar industry faces significant policy uncertainty that is already constraining investment and development activity. The Inflation Reduction Act's Section 48E and 45Y tax credits for solar will no longer be available after 2027, and the Section 25D residential solar tax credit expires after 2025. Projects must start construction by July 4, 2026 to qualify for credits with a 4-year completion window. This cliff creates boom-bust dynamics as developers rush to safe-harbor projects before deadlines. The residential market is particularly vulnerable, with projections showing a 13% installation decline in 2026 without ITC for customer-owned systems. The inverter market is expected to decline 22% in 2026 due to IRA credit phaseouts. Compounding this is ongoing uncertainty about broader federal policy direction, potential changes to existing incentives, and FEOC (Foreign Entity of Concern) rules affecting supply chain compliance. The base case industry forecast predicts 5% average annual contraction in solar installations between 2025-2030, primarily driven by policy and tariff uncertainty.",
+      "summary": "Solar tax credits expire 2025-2027, creating 13% residential installation drops and 22% inverter market declines, with industry forecasting 5% annual contraction through 2030 due to policy uncertainty.",
+      "industry": {
+        "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+        "name": "Solar Energy",
+        "slug": "solar"
+      },
+      "problemType": "regulatory",
+      "problemSubtypes": ["policy", "incentives", "market-uncertainty"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": 8,
+        "economicImpact": 8,
+        "qualityOfLifeImpact": 5,
+        "productivityImpact": 7
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 8,
+        "resourceRequirements": 4,
+        "existingProgress": 4,
+        "barrierCount": 4
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "researchActivity": 4,
+        "fundingLevel": 5,
+        "organizationCount": 3,
+        "mediaAttention": 4
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Time-limited nature of IRA tax credits creating artificial deadlines",
+          "category": "policy",
+          "contributionLevel": "high",
+          "evidence": "Section 48E/45Y expire after 2027; 25D expires after 2025"
+        },
+        {
+          "description": "Political uncertainty about continuation or modification of clean energy incentives",
+          "category": "political",
+          "contributionLevel": "high",
+          "evidence": "Changes in administration creating uncertainty about existing policy commitments"
+        },
+        {
+          "description": "Complex and evolving FEOC compliance requirements affecting supply chain decisions",
+          "category": "regulatory",
+          "contributionLevel": "medium",
+          "evidence": "Developers struggling to understand and comply with foreign entity rules"
+        },
+        {
+          "description": "Lack of long-term, stable policy framework for clean energy transition",
+          "category": "policy",
+          "contributionLevel": "high",
+          "evidence": "Stop-start incentive cycles have characterized solar policy for decades"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Rush to safe-harbor projects creating supply chain stress and labor shortages",
+          "type": "economic",
+          "affectedArea": "Project development",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Reduced investor confidence and higher financing costs due to uncertainty",
+          "type": "economic",
+          "affectedArea": "Capital markets",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Projected 5% annual installation contraction through 2030",
+          "type": "economic",
+          "affectedArea": "Industry growth",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Residential solar market decline as customer-owned ITC expires",
+          "type": "economic",
+          "affectedArea": "Rooftop solar adoption",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Slowed progress toward climate and clean energy goals",
+          "type": "environmental",
+          "affectedArea": "Emissions reduction",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Safe Harbor Provisions",
+          "description": "Rules allowing projects to lock in credits by starting construction before deadlines",
+          "type": "regulatory",
+          "effectiveness": 6,
+          "adoptionLevel": "full",
+          "limitations": "Creates rush dynamics; requires upfront capital commitment; 4-year completion window"
+        },
+        {
+          "name": "Industry Advocacy",
+          "description": "SEIA and other groups lobbying for policy extension and stability",
+          "type": "advocacy",
+          "effectiveness": 4,
+          "adoptionLevel": "full",
+          "limitations": "Uncertain political environment; competing priorities"
+        },
+        {
+          "name": "State-Level Incentives",
+          "description": "State renewable portfolio standards and incentive programs",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoptionLevel": "partial",
+          "limitations": "Varies widely by state; cannot fully replace federal credits"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No long-term, bipartisan clean energy policy framework",
+          "gapType": "regulatory",
+          "opportunity": "Technology-neutral, durable clean energy incentives",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Lack of automatic ITC extension or adjustment mechanisms",
+          "gapType": "regulatory",
+          "opportunity": "Phase-down tied to market maturity rather than arbitrary dates",
+          "difficulty": "high"
+        },
+        {
+          "description": "Insufficient private financing solutions independent of tax equity",
+          "gapType": "market",
+          "opportunity": "Alternative financing structures less dependent on tax credits",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "Congress",
+          "description": "Legislative body with authority to extend or modify tax credits",
+          "examples": ["Senate Finance Committee", "House Ways and Means"],
+          "interestLevel": "medium",
+          "influenceLevel": "critical"
+        },
+        {
+          "type": "Solar Developers",
+          "description": "Companies dependent on tax credits for project economics",
+          "examples": ["Utility-scale developers", "residential installers"],
+          "interestLevel": "critical",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Tax Equity Investors",
+          "description": "Financial institutions monetizing tax credits through investment",
+          "examples": ["Banks", "insurance companies", "corporations"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Industry Associations",
+          "description": "Groups advocating for stable solar policy",
+          "examples": ["SEIA", "American Clean Power"],
+          "interestLevel": "critical",
+          "influenceLevel": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Solar Market Insight Report Q4 2025",
+          "url": "https://seia.org/research-resources/solar-market-insight-report-q4-2025/",
+          "publishedDate": "2025-12-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "The solar industry will no longer have access to the Section 48E and 45Y tax credits after 2027 or the Section 25D tax credits after 2025."
+        },
+        {
+          "type": "industry-report",
+          "title": "2026 Renewable Energy Industry Outlook",
+          "url": "https://www.deloitte.com/us/en/insights/industry/renewable-energy/renewable-energy-industry-outlook.html",
+          "publishedDate": "2025-11-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Installed capacity will start to decline and plateau starting in 2026 from a contraction in the overall pipeline."
+        },
+        {
+          "type": "news",
+          "title": "Solar inverter market to shrink in 2025-26",
+          "url": "https://www.pv-tech.org/global-solar-inverter-market-to-shrink-in-2025-26-amid-uncertainty-china-us-eu/",
+          "publishedDate": "2025-12-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "The phaseout of Inflation Reduction Act (IRA) tax credits for solar deployments will impact the US inverter market, seeing the market decline by a significant 22% in 2026."
+        }
+      ],
+      "tags": ["policy", "tax-credits", "IRA", "incentives", "market-uncertainty"],
+      "keywords": ["ITC expiration", "tax credit", "policy uncertainty", "IRA", "solar incentives"],
+      "metrics": {
+        "economicImpactEstimate": {
+          "value": 30000000000,
+          "currency": "USD",
+          "timeframe": "2025-2030",
+          "description": "Estimated lost investment from industry contraction due to policy uncertainty"
+        },
+        "affectedPopulation": {
+          "value": 22,
+          "unit": "percent market decline",
+          "description": "Projected inverter market decline in 2026"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["SEIA reports", "industry forecasts", "policy analysis"]
+      },
+      "researchSession": "session-20260120-202554",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:54Z",
+      "updatedAt": "2026-01-20T20:25:54Z",
+      "version": 1
+    },
+    {
+      "id": "f32c92ef-33db-473e-8ac7-187165bdff9a",
+      "title": "Solar Module Supply Shortages from Trade Barriers and Tariffs",
+      "slug": "solar-module-supply-shortages-trade-barriers-tariffs",
+      "description": "The U.S. solar industry is experiencing acute module supply shortages driven by a complex web of trade barriers, tariffs, and anti-circumvention enforcement. Module imports from Southeast Asian countries (Cambodia, Malaysia, Thailand, Vietnam - collectively CMTV) have plummeted from an average of 3.8 GW per month in 2024 to just 1.1 GW per month in Q1 2025 - a 71% decline. Imports from Cambodia have dropped to zero due to high AD/CVD (anti-dumping/countervailing duty) rates. Current tariff rates include 25% on Canada and Mexico, 30% on China, and 10% on all other countries. Many installers report manufacturers and distributors are sold out of both domestic and imported modules through year-end 2026. The supply crunch has forced the near-term residential solar outlook to be downgraded by 2% in 2025 and 8% in 2026. While tariffs aim to protect domestic manufacturing, the U.S. lacks sufficient domestic capacity to meet demand, creating a gap that cannot be quickly filled. The rapid proliferation of trade actions poses challenges in maintaining steady supply and managing costs, affecting project economics and development timelines.",
+      "summary": "Solar module imports dropped 71% due to tariffs and AD/CVD enforcement, with suppliers sold out through 2026 while domestic manufacturing cannot fill the supply gap.",
+      "industry": {
+        "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+        "name": "Solar Energy",
+        "slug": "solar"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["trade", "supply-chain", "regulatory"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": 7,
+        "economicImpact": 8,
+        "qualityOfLifeImpact": 4,
+        "productivityImpact": 8
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barrierCount": 5
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "researchActivity": 5,
+        "fundingLevel": 4,
+        "organizationCount": 3,
+        "mediaAttention": 4
+      },
+      "impactScore": 65,
+      "rootCauses": [
+        {
+          "description": "High AD/CVD tariff rates on major import sources making many suppliers uneconomic",
+          "category": "regulatory",
+          "contributionLevel": "high",
+          "evidence": "Cambodia imports dropped to zero; CMTV imports down 71%"
+        },
+        {
+          "description": "Insufficient domestic manufacturing capacity to replace imports",
+          "category": "infrastructure",
+          "contributionLevel": "high",
+          "evidence": "U.S. module capacity insufficient to meet demand despite IRA incentives"
+        },
+        {
+          "description": "Complex and evolving trade enforcement creating supply chain uncertainty",
+          "category": "regulatory",
+          "contributionLevel": "medium",
+          "evidence": "Rapid proliferation of trade actions affecting planning"
+        },
+        {
+          "description": "Long lead times to build new domestic manufacturing capacity",
+          "category": "infrastructure",
+          "contributionLevel": "medium",
+          "evidence": "Manufacturing facilities take 2-4 years to build and ramp"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Module shortages forcing project delays and cancellations",
+          "type": "economic",
+          "affectedArea": "Project development",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Higher module costs increasing project expenses and reducing returns",
+          "type": "economic",
+          "affectedArea": "Project economics",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Residential solar market downgrades of 2-8%",
+          "type": "economic",
+          "affectedArea": "Rooftop solar adoption",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Supply chain instability undermining long-term planning",
+          "type": "operational",
+          "affectedArea": "Business planning",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Slowed clean energy deployment affecting climate goals",
+          "type": "environmental",
+          "affectedArea": "Emissions reduction",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Supplier Diversification",
+          "description": "Developers working with multiple suppliers across regions",
+          "type": "operational",
+          "effectiveness": 5,
+          "adoptionLevel": "full",
+          "limitations": "Limited options due to tariffs; higher complexity; uncertain pricing"
+        },
+        {
+          "name": "Domestic Manufacturing Investment",
+          "description": "Building U.S. module assembly and manufacturing capacity",
+          "type": "infrastructure",
+          "effectiveness": 5,
+          "adoptionLevel": "partial",
+          "limitations": "Takes years to scale; still depends on imported components; higher costs"
+        },
+        {
+          "name": "Tariff Exclusion Requests",
+          "description": "Petitioning for product-specific tariff relief",
+          "type": "regulatory",
+          "effectiveness": 3,
+          "adoptionLevel": "partial",
+          "limitations": "Lengthy process; uncertain outcomes; limited scope"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No mechanism to balance trade protection with supply adequacy",
+          "gapType": "regulatory",
+          "opportunity": "Tariff rate quotas or supply-triggered adjustments",
+          "difficulty": "high"
+        },
+        {
+          "description": "Lack of integrated supply chain from raw materials to modules in non-Chinese markets",
+          "gapType": "infrastructure",
+          "opportunity": "Allied manufacturing network across multiple friendly nations",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Limited visibility into supply-demand dynamics for planning",
+          "gapType": "information",
+          "opportunity": "Industry supply chain tracking and forecasting systems",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "Commerce Department",
+          "description": "Federal agency administering AD/CVD trade remedies",
+          "examples": ["International Trade Administration"],
+          "interestLevel": "high",
+          "influenceLevel": "critical"
+        },
+        {
+          "type": "USTR",
+          "description": "Office managing overall trade policy and tariffs",
+          "examples": ["U.S. Trade Representative"],
+          "interestLevel": "high",
+          "influenceLevel": "critical"
+        },
+        {
+          "type": "Solar Installers",
+          "description": "Companies directly affected by module availability and pricing",
+          "examples": ["Residential installers", "commercial contractors"],
+          "interestLevel": "critical",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Module Manufacturers",
+          "description": "Both domestic producers benefiting and foreign suppliers affected",
+          "examples": ["First Solar", "Qcells", "foreign suppliers"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "US Solar Market Insight Q2 2025 Executive Summary",
+          "url": "https://seia.org/wp-content/uploads/2025/06/USSMI-Q2-2025-ES-Embargoed-with-Watermark.pdf",
+          "publishedDate": "2025-06-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Module imports from CMTV have plummeted from an average of 3.8 GW per month in 2024 to an average of 1.1 GW per month in Q1 2025."
+        },
+        {
+          "type": "industry-report",
+          "title": "Solar Market Insight Report Q4 2025",
+          "url": "https://seia.org/research-resources/solar-market-insight-report-q4-2025/",
+          "publishedDate": "2025-12-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Many installers report that manufacturers and distributors are sold out of both domestic and imported modules through year-end 2026."
+        }
+      ],
+      "tags": ["tariffs", "trade", "supply-chain", "modules", "imports"],
+      "keywords": ["solar tariffs", "AD/CVD", "module shortage", "trade barriers", "import restrictions"],
+      "metrics": {
+        "economicImpactEstimate": {
+          "value": 15000000000,
+          "currency": "USD",
+          "timeframe": "annual",
+          "description": "Estimated additional costs and lost installations from supply constraints"
+        },
+        "affectedPopulation": {
+          "value": 71,
+          "unit": "percent import decline",
+          "description": "Drop in CMTV module imports from 2024 to 2025"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["SEIA tracking", "Commerce proceedings", "industry surveys"]
+      },
+      "researchSession": "session-20260120-202554",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:54Z",
+      "updatedAt": "2026-01-20T20:25:54Z",
+      "version": 1
+    },
+    {
+      "id": "1475e157-b232-40dc-9d58-603e8b57dc02",
+      "title": "Skilled Workforce Shortage Constraining Solar Industry Growth",
+      "slug": "skilled-workforce-shortage-constraining-solar-industry-growth",
+      "description": "The solar industry faces a critical skilled labor shortage that is actively constraining project deployment and growth. Industry surveys indicate that 37% of solar companies cite lack of skilled workers as a primary business challenge. The sector needs to add over 1 million workers by 2030 to meet projected demand, but struggles with high turnover rates, insufficient training infrastructure, and competition from other construction and energy sectors. Key gaps exist in electrical work, project management, engineering, and specialized installation skills for emerging technologies like battery storage integration. The shortage is particularly acute in certain regions and for utility-scale projects requiring large, coordinated workforces. Rising wages have helped attract workers but also increase project costs, affecting economics. The boom-bust nature of solar policy creates workforce instability, as workers leave the industry during downturns and are difficult to recruit back. Training programs exist but cannot scale fast enough to meet demand, and there is limited coordination between employers, educational institutions, and workforce development agencies.",
+      "summary": "37% of solar companies cite skilled labor shortage as a primary challenge, with the industry needing 1M+ workers by 2030 while facing high turnover and insufficient training infrastructure.",
+      "industry": {
+        "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+        "name": "Solar Energy",
+        "slug": "solar"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["workforce", "training", "labor-market"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": 7,
+        "economicImpact": 7,
+        "qualityOfLifeImpact": 5,
+        "productivityImpact": 8
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barrierCount": 6
+      },
+      "neglectedness": {
+        "overall": 5.5,
+        "researchActivity": 5,
+        "fundingLevel": 5,
+        "organizationCount": 5,
+        "mediaAttention": 6
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Rapid industry growth outpacing workforce development capacity",
+          "category": "market",
+          "contributionLevel": "high",
+          "evidence": "Installation growth exceeding training pipeline output"
+        },
+        {
+          "description": "Competition for skilled trades from other construction and energy sectors",
+          "category": "market",
+          "contributionLevel": "high",
+          "evidence": "Electricians and construction workers have multiple employment options"
+        },
+        {
+          "description": "Policy-driven boom-bust cycles creating workforce instability",
+          "category": "policy",
+          "contributionLevel": "medium",
+          "evidence": "Workers leave during downturns and are difficult to recruit back"
+        },
+        {
+          "description": "Insufficient coordination between industry and educational institutions",
+          "category": "coordination",
+          "contributionLevel": "medium",
+          "evidence": "Training programs not aligned with employer needs and scale"
+        },
+        {
+          "description": "Physical demands and outdoor work conditions limiting labor pool",
+          "category": "structural",
+          "contributionLevel": "medium",
+          "evidence": "Installation work requires physical capability and weather exposure tolerance"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Project delays due to insufficient installation crews",
+          "type": "operational",
+          "affectedArea": "Project timelines",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Higher labor costs increasing project expenses",
+          "type": "economic",
+          "affectedArea": "Project economics",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Quality issues from inexperienced or rushed installations",
+          "type": "operational",
+          "affectedArea": "System performance and safety",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Constrained industry growth despite strong demand",
+          "type": "economic",
+          "affectedArea": "Market potential",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Missed opportunities for job creation in clean energy transition",
+          "type": "social",
+          "affectedArea": "Employment",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "NABCEP Certification",
+          "description": "Industry-recognized certification programs for solar professionals",
+          "type": "training",
+          "effectiveness": 6,
+          "adoptionLevel": "partial",
+          "limitations": "Limited capacity; cost barriers for candidates; not required in all markets"
+        },
+        {
+          "name": "Apprenticeship Programs",
+          "description": "Employer-sponsored earn-while-you-learn training",
+          "type": "training",
+          "effectiveness": 7,
+          "adoptionLevel": "limited",
+          "limitations": "Requires employer investment; limited slots available"
+        },
+        {
+          "name": "Community College Programs",
+          "description": "Technical training programs at 2-year institutions",
+          "type": "education",
+          "effectiveness": 5,
+          "adoptionLevel": "partial",
+          "limitations": "Variable quality; may not align with employer needs; geographic limitations"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No national workforce development strategy for clean energy transition",
+          "gapType": "coordination",
+          "opportunity": "Coordinated federal-state-industry workforce initiative",
+          "difficulty": "high"
+        },
+        {
+          "description": "Limited pathways for career advancement and retention in installation roles",
+          "gapType": "structural",
+          "opportunity": "Career ladders from installation to supervision to management",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Insufficient training capacity for battery storage integration skills",
+          "gapType": "training",
+          "opportunity": "Solar-plus-storage certification and training programs",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Lack of diversity and inclusion limiting labor pool",
+          "gapType": "social",
+          "opportunity": "Targeted recruitment and support for underrepresented groups",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "Solar Employers",
+          "description": "Companies hiring installation and project development staff",
+          "examples": ["Sunrun", "SunPower", "regional installers"],
+          "interestLevel": "critical",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Workforce Development Agencies",
+          "description": "Federal and state agencies supporting job training",
+          "examples": ["DOL", "State workforce boards"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Educational Institutions",
+          "description": "Community colleges and technical schools offering solar training",
+          "examples": ["Community colleges", "technical institutes"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Labor Unions",
+          "description": "Building trades unions representing electrical and construction workers",
+          "examples": ["IBEW", "Laborers Union"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Solar Market Insight Report Q4 2025",
+          "url": "https://seia.org/research-resources/solar-market-insight-report-q4-2025/",
+          "publishedDate": "2025-12-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Growth has been constrained by interconnection queue wait times, labor and EPC availability, and long lead times for electrical equipment supply."
+        },
+        {
+          "type": "news",
+          "title": "Experts predict crucial 2026 for U.S. solar industry",
+          "url": "https://solarbuildermag.com/policy/experts-predict-crucial-2026-for-u-s-solar-industry-following-rollercoaster-2025/",
+          "publishedDate": "2026-01-15",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Supply chain and workforce challenges persist, underscoring the new playbook: build fast, stay flexible, and invest in resilience."
+        }
+      ],
+      "tags": ["workforce", "labor", "training", "skills-gap", "employment"],
+      "keywords": ["solar workforce", "skilled labor shortage", "training", "installation jobs", "NABCEP"],
+      "metrics": {
+        "economicImpactEstimate": {
+          "value": 10000000000,
+          "currency": "USD",
+          "timeframe": "annual",
+          "description": "Estimated lost productivity and delayed projects from workforce constraints"
+        },
+        "affectedPopulation": {
+          "value": 1000000,
+          "unit": "workers needed by 2030",
+          "description": "Projected workforce requirements for solar industry growth"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["IREC census", "SEIA workforce reports", "DOE studies"]
+      },
+      "researchSession": "session-20260120-202554",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:54Z",
+      "updatedAt": "2026-01-20T20:25:54Z",
+      "version": 1
+    },
+    {
+      "id": "60d0f383-3e66-45bd-a4c5-9e519efa6a31",
+      "title": "Long-Duration Energy Storage Gap Limiting Solar Grid Integration",
+      "slug": "long-duration-energy-storage-gap-limiting-solar-grid-integration",
+      "description": "While lithium-ion batteries have become cost-effective for short-duration storage (2-4 hours), the solar industry lacks economically viable long-duration energy storage (LDES) solutions needed for reliable grid integration at high renewable penetration levels. As solar provides an increasing share of electricity (58% of new U.S. capacity in 2025), the grid faces growing challenges with daily and seasonal variability. Current lithium-ion technology cannot economically address multi-day storage needs during extended cloudy periods or seasonal variations in solar output. Alternative LDES technologies (flow batteries, compressed air, hydrogen, thermal storage) remain expensive, with limited commercial deployment and uncertain cost trajectories. This storage gap creates grid integration challenges including curtailment during peak solar hours, reliance on natural gas peakers for evening ramps, and difficulty achieving very high renewable penetration without dispatchable backup. The Department of Energy's Long Duration Storage Shot targets 90% cost reduction, but achieving this requires significant R&D breakthroughs and manufacturing scale-up over many years.",
+      "summary": "Solar grid integration is limited by lack of economically viable long-duration storage beyond 4 hours, requiring 90% cost reductions in LDES technologies to enable high renewable penetration.",
+      "industry": {
+        "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+        "name": "Solar Energy",
+        "slug": "solar"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["storage", "grid-integration", "technology"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": 8,
+        "economicImpact": 8,
+        "qualityOfLifeImpact": 6,
+        "productivityImpact": 7
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barrierCount": 5
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "researchActivity": 4,
+        "fundingLevel": 5,
+        "organizationCount": 5,
+        "mediaAttention": 6
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Fundamental cost-duration tradeoff in battery technologies favoring short duration",
+          "category": "technical",
+          "contributionLevel": "high",
+          "evidence": "Lithium-ion costs scale linearly with duration, making long duration uneconomic"
+        },
+        {
+          "description": "Early-stage maturity of alternative LDES technologies",
+          "category": "technical",
+          "contributionLevel": "high",
+          "evidence": "Flow batteries, hydrogen, thermal storage still in demonstration phase"
+        },
+        {
+          "description": "Lack of market structures properly valuing long-duration reliability services",
+          "category": "market",
+          "contributionLevel": "medium",
+          "evidence": "Current capacity markets and ancillary services designed for conventional generation"
+        },
+        {
+          "description": "Investment uncertainty slowing LDES manufacturing scale-up",
+          "category": "economic",
+          "contributionLevel": "medium",
+          "evidence": "Limited commercial deployments create chicken-and-egg problem for cost reduction"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Solar curtailment during peak generation hours wasting clean energy",
+          "type": "environmental",
+          "affectedArea": "Resource efficiency",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Continued reliance on natural gas peakers for evening demand ramps",
+          "type": "environmental",
+          "affectedArea": "Emissions",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Ceiling on achievable renewable penetration without dispatchable backup",
+          "type": "technical",
+          "affectedArea": "Grid decarbonization",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Higher system costs from maintaining fossil backup capacity",
+          "type": "economic",
+          "affectedArea": "Electricity costs",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Grid reliability risks during extended low-solar periods",
+          "type": "operational",
+          "affectedArea": "Power system reliability",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Lithium-Ion Battery Storage",
+          "description": "Cost-effective for 2-4 hour duration applications",
+          "type": "technical",
+          "effectiveness": 7,
+          "adoptionLevel": "growing",
+          "limitations": "Economics deteriorate rapidly beyond 4 hours; supply chain constraints"
+        },
+        {
+          "name": "Pumped Hydro Storage",
+          "description": "Mature technology providing multi-day storage capability",
+          "type": "technical",
+          "effectiveness": 7,
+          "adoptionLevel": "limited",
+          "limitations": "Geographically constrained; long permitting and construction times"
+        },
+        {
+          "name": "DOE Long Duration Storage Shot",
+          "description": "R&D initiative targeting 90% LDES cost reduction by 2030",
+          "type": "research",
+          "effectiveness": 4,
+          "adoptionLevel": "early",
+          "limitations": "Aggressive targets; uncertain technology pathways; years from commercial scale"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No commercially proven technology for 10+ hour storage at competitive costs",
+          "gapType": "technical",
+          "opportunity": "Breakthrough LDES technologies (iron-air, hydrogen, thermal)",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Market designs not properly compensating long-duration flexibility",
+          "gapType": "market",
+          "opportunity": "Capacity mechanisms valuing duration and reliability services",
+          "difficulty": "high"
+        },
+        {
+          "description": "Limited manufacturing scale for non-lithium storage technologies",
+          "gapType": "infrastructure",
+          "opportunity": "LDES manufacturing investment and supply chain development",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "Storage Technology Developers",
+          "description": "Companies developing advanced storage solutions",
+          "examples": ["Form Energy", "ESS Inc.", "Ambri", "Hydrostor"],
+          "interestLevel": "critical",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Grid Operators",
+          "description": "ISOs and RTOs managing grid reliability",
+          "examples": ["CAISO", "ERCOT", "PJM"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "DOE and National Labs",
+          "description": "Federal R&D agencies funding storage research",
+          "examples": ["ARPA-E", "NREL", "Sandia"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Utilities",
+          "description": "Electric utilities procuring storage and managing reliability",
+          "examples": ["Major IOUs and public utilities"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Solar Market Insight Report Q4 2025",
+          "url": "https://seia.org/research-resources/solar-market-insight-report-q4-2025/",
+          "publishedDate": "2025-12-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Solar accounted for 58% of all new electricity-generating capacity added to the US grid through the third quarter of 2025."
+        },
+        {
+          "type": "industry-report",
+          "title": "2026 Renewable Energy Industry Outlook",
+          "url": "https://www.deloitte.com/us/en/insights/industry/renewable-energy/renewable-energy-industry-outlook.html",
+          "publishedDate": "2025-11-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "The U.S. solar market in 2026 faces real headwinds, including policy uncertainty, financing challenges, and grid limitations."
+        }
+      ],
+      "tags": ["energy-storage", "LDES", "grid-integration", "batteries", "reliability"],
+      "keywords": ["long-duration storage", "LDES", "grid integration", "battery storage", "solar intermittency"],
+      "metrics": {
+        "economicImpactEstimate": {
+          "value": 25000000000,
+          "currency": "USD",
+          "timeframe": "annual",
+          "description": "Estimated value of enabling higher renewable penetration with adequate storage"
+        },
+        "affectedPopulation": {
+          "value": 90,
+          "unit": "percent cost reduction needed",
+          "description": "DOE Long Duration Storage Shot target"
+        },
+        "trendDirection": "stable",
+        "researchActivityIndicators": ["DOE programs", "ARPA-E projects", "utility pilots"]
+      },
+      "researchSession": "session-20260120-202554",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:54Z",
+      "updatedAt": "2026-01-20T20:25:54Z",
+      "version": 1
+    },
+    {
+      "id": "c1c92090-2ba7-4ca1-a4bf-72660c8aba8e",
+      "title": "Residential Solar Affordability and Financing Access Barriers",
+      "slug": "residential-solar-affordability-financing-access-barriers",
+      "description": "The residential solar market faces significant affordability and financing barriers that limit adoption, particularly among low-and-moderate income households. While rooftop solar can provide long-term savings, the high upfront costs ($15,000-$30,000 for a typical system) create substantial barriers. The residential market has experienced a 31% installation decline, driven by higher interest rates affecting solar loans and leases, as well as reduced net metering compensation in key markets. The expiration of the Section 25D residential tax credit after 2025 will remove a 30% federal incentive for customer-owned systems, projected to cause a 13% installation decline in 2026. Many potential adopters lack the tax liability to fully utilize tax credits, the credit score to qualify for favorable financing, or homeownership status enabling rooftop installation. Third-party ownership models (leases and PPAs) help address some barriers but reduce customer savings and have faced regulatory challenges in some states. The result is a solar adoption pattern concentrated among higher-income homeowners, missing the potential for broader economic and environmental benefits.",
+      "summary": "Residential solar faces 31% installation declines from high interest rates and expiring tax credits, with affordability barriers excluding low-income households from $15,000-$30,000 system costs.",
+      "industry": {
+        "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+        "name": "Solar Energy",
+        "slug": "solar"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["financing", "affordability", "equity"],
+      "scope": "organization",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": 8,
+        "economicImpact": 6,
+        "qualityOfLifeImpact": 6,
+        "productivityImpact": 5
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barrierCount": 6
+      },
+      "neglectedness": {
+        "overall": 5.5,
+        "researchActivity": 5,
+        "fundingLevel": 5,
+        "organizationCount": 5,
+        "mediaAttention": 6
+      },
+      "impactScore": 65,
+      "rootCauses": [
+        {
+          "description": "High upfront system costs creating significant financial barrier",
+          "category": "economic",
+          "contributionLevel": "high",
+          "evidence": "Typical residential system costs $15,000-$30,000 before incentives"
+        },
+        {
+          "description": "Rising interest rates increasing cost of solar loans and leases",
+          "category": "economic",
+          "contributionLevel": "high",
+          "evidence": "31% residential installation decline attributed to financing costs"
+        },
+        {
+          "description": "Expiring federal tax credits reducing economic attractiveness",
+          "category": "policy",
+          "contributionLevel": "high",
+          "evidence": "25D credit expires after 2025; 13% projected decline"
+        },
+        {
+          "description": "Tax credit structure disadvantaging those with low tax liability",
+          "category": "policy",
+          "contributionLevel": "medium",
+          "evidence": "Credit requires sufficient tax liability to claim full benefit"
+        },
+        {
+          "description": "Reduced net metering compensation in key markets",
+          "category": "regulatory",
+          "contributionLevel": "medium",
+          "evidence": "California NEM 3.0 and other states reducing solar export compensation"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Declining residential installation rates",
+          "type": "economic",
+          "affectedArea": "Market growth",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Solar adoption concentrated among higher-income households",
+          "type": "social",
+          "affectedArea": "Energy equity",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Low-income households missing energy savings opportunities",
+          "type": "economic",
+          "affectedArea": "Household finances",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Reduced distributed generation limiting grid benefits",
+          "type": "technical",
+          "affectedArea": "Grid resilience",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Slower progress on residential emissions reduction",
+          "type": "environmental",
+          "affectedArea": "Climate goals",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Third-Party Ownership (Leases/PPAs)",
+          "description": "Solar companies own systems and sell power to homeowners",
+          "type": "market",
+          "effectiveness": 6,
+          "adoptionLevel": "widespread",
+          "limitations": "Lower customer savings; regulatory challenges in some states"
+        },
+        {
+          "name": "Low-Income Solar Programs",
+          "description": "State and federal programs specifically targeting LMI households",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoptionLevel": "limited",
+          "limitations": "Limited funding; complex eligibility; geographic constraints"
+        },
+        {
+          "name": "Community Solar",
+          "description": "Shared solar allowing non-homeowners to access solar benefits",
+          "type": "market",
+          "effectiveness": 5,
+          "adoptionLevel": "growing",
+          "limitations": "Not available in all states; requires enabling legislation"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No scalable financing solution for those without tax liability",
+          "gapType": "market",
+          "opportunity": "Direct pay or refundable credit options for individuals",
+          "difficulty": "high"
+        },
+        {
+          "description": "Limited access to solar for renters (44% of households)",
+          "gapType": "structural",
+          "opportunity": "Expanded community solar and renter-inclusive programs",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Insufficient soft cost reduction in customer acquisition and installation",
+          "gapType": "operational",
+          "opportunity": "Streamlined permitting, standardized installations, reduced marketing costs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "Residential Solar Companies",
+          "description": "Installers and financiers serving homeowners",
+          "examples": ["Sunrun", "SunPower", "regional installers"],
+          "interestLevel": "critical",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Homeowners",
+          "description": "Potential and current solar adopters",
+          "examples": ["Single-family homeowners", "HOA members"],
+          "interestLevel": "high",
+          "influenceLevel": "low"
+        },
+        {
+          "type": "Low-Income Advocates",
+          "description": "Organizations promoting energy equity",
+          "examples": ["Vote Solar", "GRID Alternatives"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Utilities",
+          "description": "Companies affected by distributed generation growth",
+          "examples": ["IOUs", "municipal utilities"],
+          "interestLevel": "medium",
+          "influenceLevel": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Solar Market Insight Report Q4 2025",
+          "url": "https://seia.org/research-resources/solar-market-insight-report-q4-2025/",
+          "publishedDate": "2025-12-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Installations will drop by 13% in 2026 without the ITC for the customer-owned segment."
+        },
+        {
+          "type": "news",
+          "title": "The U.S. Solar Market in 2026: Challenges & Outlook",
+          "url": "https://solarbycentauri.com/the-u-s-solar-market-in-2026-challenges-opportunities-future-outlook",
+          "publishedDate": "2025-12-15",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "The U.S. solar market in 2026 faces real headwinds, including policy uncertainty, financing challenges, and grid limitations."
+        }
+      ],
+      "tags": ["residential", "financing", "affordability", "equity", "tax-credits"],
+      "keywords": ["residential solar", "financing", "affordability", "ITC", "low-income solar"],
+      "metrics": {
+        "economicImpactEstimate": {
+          "value": 8000000000,
+          "currency": "USD",
+          "timeframe": "annual",
+          "description": "Lost residential solar market value from affordability barriers"
+        },
+        "affectedPopulation": {
+          "value": 31,
+          "unit": "percent installation decline",
+          "description": "Residential solar market contraction"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["SEIA reports", "LBNL studies", "equity research"]
+      },
+      "researchSession": "session-20260120-202554",
+      "confidence": 0.84,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:54Z",
+      "updatedAt": "2026-01-20T20:25:54Z",
+      "version": 1
+    },
+    {
+      "id": "f57eb1da-f05c-4a4a-a61e-a83b8fc04bc5",
+      "title": "Solar Land Use Competition and Agricultural Co-Existence Challenges",
+      "slug": "solar-land-use-competition-agricultural-coexistence-challenges",
+      "description": "Utility-scale solar development increasingly faces land use conflicts, particularly competition with agricultural uses and community opposition to large-scale installations. While solar currently uses only about 0.23% of county land on average nationwide, individual projects can be large (hundreds to thousands of acres), creating localized impacts and opposition. Concerns include loss of prime farmland, visual impacts, property value effects, and ecosystem disruption. Agrivoltaics—the co-location of solar with agricultural activities—offers a promising solution but faces practical challenges including higher installation and maintenance costs, crop selection limitations, and operational complexity. Many localities have implemented restrictive zoning or moratoriums on solar development in response to community concerns. The challenge is balancing clean energy deployment needs with legitimate agricultural, environmental, and community interests. Poor siting decisions and inadequate community engagement have generated backlash that affects the entire industry, while well-designed projects can provide benefits including pollinator habitat, sheep grazing, and compatible crop cultivation beneath elevated panels.",
+      "summary": "Utility-scale solar faces growing land use conflicts with agriculture and community opposition, while agrivoltaics solutions remain costly and complex to implement at scale.",
+      "industry": {
+        "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+        "name": "Solar Energy",
+        "slug": "solar"
+      },
+      "problemType": "social",
+      "problemSubtypes": ["land-use", "community-relations", "agriculture"],
+      "scope": "organization",
+      "maturity": "growing",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": 6,
+        "economicImpact": 6,
+        "qualityOfLifeImpact": 6,
+        "productivityImpact": 6
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barrierCount": 6
+      },
+      "neglectedness": {
+        "overall": 6.0,
+        "researchActivity": 5,
+        "fundingLevel": 6,
+        "organizationCount": 6,
+        "mediaAttention": 5
+      },
+      "impactScore": 62,
+      "rootCauses": [
+        {
+          "description": "Large land footprint of utility-scale solar creating visible local impacts",
+          "category": "structural",
+          "contributionLevel": "high",
+          "evidence": "Individual projects can span hundreds to thousands of acres"
+        },
+        {
+          "description": "Competition for productive agricultural land in solar-rich regions",
+          "category": "economic",
+          "contributionLevel": "high",
+          "evidence": "Solar development often targets flat, cleared agricultural land"
+        },
+        {
+          "description": "Inadequate community engagement and benefit-sharing in some projects",
+          "category": "social",
+          "contributionLevel": "medium",
+          "evidence": "Community backlash often stems from feeling excluded from decisions"
+        },
+        {
+          "description": "Higher costs and complexity of agrivoltaic dual-use designs",
+          "category": "economic",
+          "contributionLevel": "medium",
+          "evidence": "Elevated panels and wider spacing increase costs 10-30%"
+        },
+        {
+          "description": "Fragmented local zoning authority creating inconsistent development standards",
+          "category": "regulatory",
+          "contributionLevel": "medium",
+          "evidence": "County-by-county regulations vary widely in requirements and restrictions"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Local moratoriums and restrictive zoning limiting development options",
+          "type": "regulatory",
+          "affectedArea": "Project siting",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Project delays and cancellations from community opposition",
+          "type": "operational",
+          "affectedArea": "Development timeline",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Loss of agricultural land and food production capacity",
+          "type": "economic",
+          "affectedArea": "Agriculture",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Reputational damage to solar industry from contentious projects",
+          "type": "social",
+          "affectedArea": "Public perception",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Increased development costs from longer permitting and engagement processes",
+          "type": "economic",
+          "affectedArea": "Project economics",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Agrivoltaics",
+          "description": "Co-locating solar with crops, grazing, or pollinator habitat",
+          "type": "technical",
+          "effectiveness": 6,
+          "adoptionLevel": "limited",
+          "limitations": "Higher costs; limited compatible crops; operational complexity"
+        },
+        {
+          "name": "Community Benefit Agreements",
+          "description": "Negotiated agreements providing local benefits from solar projects",
+          "type": "social",
+          "effectiveness": 6,
+          "adoptionLevel": "partial",
+          "limitations": "Negotiations can be lengthy; benefits may not address all concerns"
+        },
+        {
+          "name": "Brownfield and Disturbed Land Siting",
+          "description": "Prioritizing development on contaminated or already-disturbed sites",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoptionLevel": "partial",
+          "limitations": "Limited suitable sites; may have higher development costs"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No standardized framework for balancing solar and agricultural land use",
+          "gapType": "regulatory",
+          "opportunity": "State-level guidelines for responsible solar siting",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Limited research on optimizing agrivoltaic crop-solar combinations",
+          "gapType": "knowledge",
+          "opportunity": "Expanded agricultural research on dual-use systems",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Insufficient tools for quantifying community benefits and impacts",
+          "gapType": "information",
+          "opportunity": "Standardized impact assessment and benefit-sharing frameworks",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "Solar Developers",
+          "description": "Companies developing utility-scale projects",
+          "examples": ["NextEra", "Invenergy", "regional developers"],
+          "interestLevel": "critical",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Agricultural Community",
+          "description": "Farmers and agricultural organizations",
+          "examples": ["Farm Bureau", "individual farmers", "agricultural co-ops"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Local Governments",
+          "description": "County and municipal authorities with zoning control",
+          "examples": ["County commissioners", "planning boards"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Rural Communities",
+          "description": "Residents in areas targeted for solar development",
+          "examples": ["Rural homeowners", "community groups"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "2026 Renewable Energy Industry Outlook",
+          "url": "https://www.deloitte.com/us/en/insights/industry/renewable-energy/renewable-energy-industry-outlook.html",
+          "publishedDate": "2025-11-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "The U.S. solar market in 2026 faces real headwinds, including policy uncertainty, financing challenges, and grid limitations."
+        },
+        {
+          "type": "news",
+          "title": "Experts predict crucial 2026 for U.S. solar industry",
+          "url": "https://solarbuildermag.com/policy/experts-predict-crucial-2026-for-u-s-solar-industry-following-rollercoaster-2025/",
+          "publishedDate": "2026-01-15",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Developers are working toward front-loading construction to secure safe-harbor eligibility, diversifying suppliers and investing domestically."
+        }
+      ],
+      "tags": ["land-use", "agriculture", "agrivoltaics", "community", "siting"],
+      "keywords": ["solar land use", "agrivoltaics", "farmland", "community opposition", "zoning"],
+      "metrics": {
+        "economicImpactEstimate": {
+          "value": 5000000000,
+          "currency": "USD",
+          "timeframe": "annual",
+          "description": "Estimated value of delayed or cancelled projects from land use conflicts"
+        },
+        "affectedPopulation": {
+          "value": 0.23,
+          "unit": "percent average county land use",
+          "description": "Current solar land footprint nationally"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["NREL agrivoltaics research", "land use studies", "community engagement research"]
+      },
+      "researchSession": "session-20260120-202554",
+      "confidence": 0.80,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:54Z",
+      "updatedAt": "2026-01-20T20:25:54Z",
+      "version": 1
+    },
+    {
+      "id": "1811a24a-12a6-4797-ad51-c74e37e87d07",
+      "title": "Solar Panel Efficiency and Performance Degradation Limitations",
+      "slug": "solar-panel-efficiency-performance-degradation-limitations",
+      "description": "Despite significant improvements, commercial solar panel efficiency remains limited, with most crystalline silicon panels achieving 18-22% conversion efficiency. The theoretical maximum (Shockley-Queisser limit) is around 33% for single-junction cells. This efficiency gap means more land, materials, and installation labor are required to generate a given amount of power. Additionally, panels experience degradation over their 25-30 year lifespan, typically losing 0.5-1% of output annually, with faster degradation in hot climates or from manufacturing defects. Performance can also be affected by soiling (dust, bird droppings), shading, temperature effects (panels lose efficiency in heat), and inverter issues. While premium panels with higher efficiency exist, they carry significant cost premiums that affect project economics. For rooftop applications, limited roof space makes efficiency particularly important, as maximum generation must be achieved from available area. Emerging technologies like perovskites, tandem cells, and bifacial panels offer efficiency improvements but face durability, stability, or cost challenges limiting widespread adoption.",
+      "summary": "Commercial solar panels achieve only 18-22% efficiency vs 33% theoretical maximum, while degrading 0.5-1% annually over 25-30 year lifespans, with emerging high-efficiency technologies facing durability challenges.",
+      "industry": {
+        "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+        "name": "Solar Energy",
+        "slug": "solar"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["efficiency", "performance", "materials"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.0,
+        "affectedPopulation": 7,
+        "economicImpact": 6,
+        "qualityOfLifeImpact": 4,
+        "productivityImpact": 6
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barrierCount": 6
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "researchActivity": 3,
+        "fundingLevel": 4,
+        "organizationCount": 4,
+        "mediaAttention": 6
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "Fundamental thermodynamic limits on single-junction solar cell efficiency",
+          "category": "technical",
+          "contributionLevel": "high",
+          "evidence": "Shockley-Queisser limit of ~33% for single-junction cells"
+        },
+        {
+          "description": "Cost-efficiency tradeoffs limiting commercial adoption of advanced cell designs",
+          "category": "economic",
+          "contributionLevel": "high",
+          "evidence": "High-efficiency panels carry significant cost premiums"
+        },
+        {
+          "description": "Material degradation mechanisms over panel lifetime",
+          "category": "technical",
+          "contributionLevel": "medium",
+          "evidence": "UV exposure, thermal cycling, and moisture cause gradual performance loss"
+        },
+        {
+          "description": "Stability challenges with emerging high-efficiency technologies",
+          "category": "technical",
+          "contributionLevel": "medium",
+          "evidence": "Perovskites degrade rapidly; tandem cells are expensive"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Greater land and material requirements for given power output",
+          "type": "environmental",
+          "affectedArea": "Resource efficiency",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Higher installation costs per watt due to more panels needed",
+          "type": "economic",
+          "affectedArea": "Project economics",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Limited rooftop generation potential in space-constrained applications",
+          "type": "technical",
+          "affectedArea": "Residential and commercial solar",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Declining output over system lifetime reducing returns",
+          "type": "economic",
+          "affectedArea": "Long-term economics",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "PERC and TOPCon Cell Technology",
+          "description": "Advanced cell architectures improving efficiency over standard cells",
+          "type": "technical",
+          "effectiveness": 7,
+          "adoptionLevel": "widespread",
+          "limitations": "Approaching practical limits; incremental improvements"
+        },
+        {
+          "name": "Bifacial Panels",
+          "description": "Panels capturing light from both sides for increased energy yield",
+          "type": "technical",
+          "effectiveness": 6,
+          "adoptionLevel": "growing",
+          "limitations": "Requires appropriate installation conditions; higher cost"
+        },
+        {
+          "name": "Anti-Soiling Coatings",
+          "description": "Surface treatments reducing dust accumulation and cleaning needs",
+          "type": "technical",
+          "effectiveness": 5,
+          "adoptionLevel": "partial",
+          "limitations": "Adds cost; effectiveness varies by environment"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No commercially viable technology to significantly exceed current efficiency limits",
+          "gapType": "technical",
+          "opportunity": "Tandem and multi-junction cells at competitive costs",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Perovskite stability remains unsolved for commercial deployment",
+          "gapType": "technical",
+          "opportunity": "Encapsulation and material engineering for 25+ year stability",
+          "difficulty": "high"
+        },
+        {
+          "description": "Limited ability to predict and prevent degradation failures",
+          "gapType": "knowledge",
+          "opportunity": "Advanced monitoring and predictive maintenance systems",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "Solar Cell Manufacturers",
+          "description": "Companies developing and producing photovoltaic cells",
+          "examples": ["LONGi", "JA Solar", "First Solar"],
+          "interestLevel": "critical",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Research Institutions",
+          "description": "Universities and labs advancing solar technology",
+          "examples": ["NREL", "Fraunhofer ISE", "MIT"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "DOE and Funding Agencies",
+          "description": "Government agencies supporting solar R&D",
+          "examples": ["DOE Solar Energy Technologies Office", "ARPA-E"],
+          "interestLevel": "high",
+          "influenceLevel": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Solar Market Insight Report Q4 2025",
+          "url": "https://seia.org/research-resources/solar-market-insight-report-q4-2025/",
+          "publishedDate": "2025-12-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "US solar industry installed 11.7 GWdc of capacity in Q3 2025, a 20% increase from Q3 2024."
+        },
+        {
+          "type": "industry-report",
+          "title": "Solar PV Global Supply Chains",
+          "url": "https://www.iea.org/reports/solar-pv-global-supply-chains/executive-summary",
+          "publishedDate": "2024-07-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Chinese industrial policies focusing on solar PV as a strategic sector have contributed to a cost decline more than 80%."
+        }
+      ],
+      "tags": ["efficiency", "technology", "performance", "degradation", "innovation"],
+      "keywords": ["solar efficiency", "panel degradation", "perovskite", "tandem cells", "PERC"],
+      "metrics": {
+        "economicImpactEstimate": {
+          "value": 20000000000,
+          "currency": "USD",
+          "timeframe": "annual",
+          "description": "Potential value from achieving higher commercial efficiency levels"
+        },
+        "affectedPopulation": {
+          "value": 33,
+          "unit": "percent theoretical maximum efficiency",
+          "description": "Shockley-Queisser limit vs 18-22% commercial reality"
+        },
+        "trendDirection": "improving",
+        "researchActivityIndicators": ["NREL efficiency charts", "academic publications", "patent filings"]
+      },
+      "researchSession": "session-20260120-202554",
+      "confidence": 0.83,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:54Z",
+      "updatedAt": "2026-01-20T20:25:54Z",
+      "version": 1
+    },
+    {
+      "id": "2f058d40-5fe4-4121-90a3-952d9c95782e",
+      "title": "Grid Curtailment and Negative Pricing Events from Solar Oversupply",
+      "slug": "grid-curtailment-negative-pricing-solar-oversupply",
+      "description": "As solar penetration increases, grids are experiencing growing periods of oversupply during peak solar hours, leading to curtailment (forced reduction of solar output) and negative wholesale electricity prices. In California, the 'duck curve' phenomenon has intensified, with midday oversupply followed by steep evening ramps requiring fast-ramping generation. CAISO has experienced numerous hours of negative prices, effectively meaning solar generators must pay to deliver power. This represents wasted clean energy and undermines project economics that depend on selling generated power. The problem stems from solar's coincident generation profile (all panels produce at the same time), limited storage and demand flexibility, and grid operating constraints. Curtailment rates have reached 5-10% of potential solar generation in high-penetration markets. Without adequate solutions, increasing solar deployment will face diminishing returns, as each additional project generates during already-oversupplied hours. The challenge requires coordinated solutions across storage, demand response, transmission, and market design.",
+      "summary": "Solar oversupply causes increasing curtailment (5-10% of generation) and negative pricing events in high-penetration markets, wasting clean energy and undermining project economics.",
+      "industry": {
+        "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
+        "name": "Energy & Utilities",
+        "slug": "energy-utilities"
+      },
+      "domain": {
+        "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+        "name": "Renewable Energy",
+        "slug": "renewable-energy"
+      },
+      "field": {
+        "id": "5d18da15-69f9-4ef9-8f91-8021a5461a51",
+        "name": "Solar Energy",
+        "slug": "solar"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["grid-integration", "market", "operations"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": 7,
+        "economicImpact": 7,
+        "qualityOfLifeImpact": 4,
+        "productivityImpact": 7
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barrierCount": 6
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "researchActivity": 4,
+        "fundingLevel": 5,
+        "organizationCount": 4,
+        "mediaAttention": 5
+      },
+      "impactScore": 64,
+      "rootCauses": [
+        {
+          "description": "Coincident generation profile with all solar producing during same hours",
+          "category": "technical",
+          "contributionLevel": "high",
+          "evidence": "Solar generation peaks midday when demand may not be at maximum"
+        },
+        {
+          "description": "Insufficient storage capacity to shift solar production to high-demand periods",
+          "category": "infrastructure",
+          "contributionLevel": "high",
+          "evidence": "Storage deployment lags solar deployment"
+        },
+        {
+          "description": "Limited demand flexibility to absorb midday generation",
+          "category": "market",
+          "contributionLevel": "medium",
+          "evidence": "Industrial and commercial loads not yet responsive to real-time pricing"
+        },
+        {
+          "description": "Transmission constraints preventing export to regions with demand",
+          "category": "infrastructure",
+          "contributionLevel": "medium",
+          "evidence": "Limited inter-regional transmission capacity"
+        },
+        {
+          "description": "Market structures designed for dispatchable generation",
+          "category": "market",
+          "contributionLevel": "medium",
+          "evidence": "Day-ahead markets don't optimally integrate variable generation"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Wasted clean energy from curtailed solar generation",
+          "type": "environmental",
+          "affectedArea": "Resource efficiency",
+          "timeframe": "ongoing"
+        },
+        {
+          "description": "Reduced project revenues from curtailment and negative prices",
+          "type": "economic",
+          "affectedArea": "Solar developer economics",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Diminishing returns from additional solar deployment",
+          "type": "economic",
+          "affectedArea": "Investment decisions",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Grid operational challenges from steep ramping requirements",
+          "type": "operational",
+          "affectedArea": "Grid reliability",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Need for fast-ramping gas plants for evening demand",
+          "type": "environmental",
+          "affectedArea": "Emissions",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Battery Storage Co-Location",
+          "description": "Pairing solar with batteries to shift generation to higher-value hours",
+          "type": "technical",
+          "effectiveness": 7,
+          "adoptionLevel": "growing",
+          "limitations": "Adds capital cost; limited to 4-hour shift typically"
+        },
+        {
+          "name": "Time-of-Use Rates",
+          "description": "Pricing structures incentivizing demand shift away from solar peak",
+          "type": "market",
+          "effectiveness": 5,
+          "adoptionLevel": "partial",
+          "limitations": "Limited customer response; doesn't address wholesale market"
+        },
+        {
+          "name": "Western Energy Imbalance Market",
+          "description": "Real-time market enabling power sharing across Western utilities",
+          "type": "market",
+          "effectiveness": 6,
+          "adoptionLevel": "regional",
+          "limitations": "Limited to balancing; not full integration"
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Insufficient long-duration storage to shift solar across days",
+          "gapType": "technical",
+          "opportunity": "Cost-effective multi-day storage technologies",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Limited industrial demand response capability",
+          "gapType": "market",
+          "opportunity": "Automated, price-responsive industrial loads",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Inadequate transmission to export excess solar",
+          "gapType": "infrastructure",
+          "opportunity": "Inter-regional HVDC transmission buildout",
+          "difficulty": "high"
+        },
+        {
+          "description": "Market designs not optimized for variable generation",
+          "gapType": "market",
+          "opportunity": "Improved forecasting, faster markets, flexible products",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "Grid Operators",
+          "description": "ISOs and RTOs managing real-time grid operations",
+          "examples": ["CAISO", "SPP", "ERCOT"],
+          "interestLevel": "critical",
+          "influenceLevel": "high"
+        },
+        {
+          "type": "Solar Asset Owners",
+          "description": "Operators of utility-scale solar facilities",
+          "examples": ["NextEra", "AES", "independent power producers"],
+          "interestLevel": "critical",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Storage Developers",
+          "description": "Companies deploying grid-scale battery storage",
+          "examples": ["Tesla", "Fluence", "storage developers"],
+          "interestLevel": "high",
+          "influenceLevel": "medium"
+        },
+        {
+          "type": "Large Electricity Consumers",
+          "description": "Industrial and commercial users with demand flexibility potential",
+          "examples": ["Data centers", "manufacturers", "EV charging networks"],
+          "interestLevel": "medium",
+          "influenceLevel": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Solar Market Insight Report Q4 2025",
+          "url": "https://seia.org/research-resources/solar-market-insight-report-q4-2025/",
+          "publishedDate": "2025-12-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "Solar accounted for 58% of all new electricity-generating capacity added to the US grid through the third quarter of 2025."
+        },
+        {
+          "type": "industry-report",
+          "title": "2026 Renewable Energy Industry Outlook",
+          "url": "https://www.deloitte.com/us/en/insights/industry/renewable-energy/renewable-energy-industry-outlook.html",
+          "publishedDate": "2025-11-01",
+          "accessedDate": "2026-01-20",
+          "relevantExcerpt": "The U.S. solar market in 2026 faces real headwinds, including policy uncertainty, financing challenges, and grid limitations."
+        }
+      ],
+      "tags": ["curtailment", "grid-integration", "duck-curve", "negative-pricing", "oversupply"],
+      "keywords": ["solar curtailment", "negative pricing", "duck curve", "grid integration", "oversupply"],
+      "metrics": {
+        "economicImpactEstimate": {
+          "value": 3000000000,
+          "currency": "USD",
+          "timeframe": "annual",
+          "description": "Estimated value of curtailed solar generation and revenue impacts"
+        },
+        "affectedPopulation": {
+          "value": 10,
+          "unit": "percent curtailment in high-penetration markets",
+          "description": "Percentage of potential solar generation curtailed"
+        },
+        "trendDirection": "worsening",
+        "researchActivityIndicators": ["CAISO reports", "grid integration studies", "market analysis"]
+      },
+      "researchSession": "session-20260120-202554",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T20:25:54Z",
+      "updatedAt": "2026-01-20T20:25:54Z",
+      "version": 1
+    }
+  ]
+}
