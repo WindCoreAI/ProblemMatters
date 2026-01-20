@@ -1,0 +1,97 @@
+{
+  "id": "session-20260120-200500",
+  "startedAt": "2026-01-20T20:05:00Z",
+  "completedAt": "2026-01-20T20:25:00Z",
+  "target": {
+    "industry": "energy-utilities",
+    "domain": "renewable-energy",
+    "field": "wind"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 12,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 2,
+    "problemIds": [
+      "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+      "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
+      "c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+      "d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+      "e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b",
+      "f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c",
+      "a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d",
+      "b8c9d0e1-f2a3-4b4c-5d6e-7f8a9b0c1d2e",
+      "c9d0e1f2-a3b4-4c5d-6e7f-8a9b0c1d2e3f",
+      "d0e1f2a3-b4c5-4d6e-7f8a-9b0c1d2e3f4a"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "initialize_session",
+      "timestamp": "2026-01-20T20:05:00Z",
+      "status": "completed",
+      "output": {
+        "sessionId": "session-20260120-200500",
+        "target": "energy-utilities > renewable-energy > wind"
+      }
+    },
+    {
+      "step": 2,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-20T20:06:00Z",
+      "status": "completed",
+      "output": {
+        "queriesExecuted": 4,
+        "candidatesFound": 12,
+        "sourcesIdentified": 30
+      }
+    },
+    {
+      "step": 3,
+      "action": "research_phase",
+      "timestamp": "2026-01-20T20:12:00Z",
+      "status": "completed",
+      "output": {
+        "problemsResearched": 12,
+        "sourcesAnalyzed": 25
+      }
+    },
+    {
+      "step": 4,
+      "action": "validation_phase",
+      "timestamp": "2026-01-20T20:18:00Z",
+      "status": "completed",
+      "output": {
+        "problemsValidated": 10,
+        "problemsRejected": 2,
+        "averageConfidence": 0.85
+      }
+    },
+    {
+      "step": 5,
+      "action": "synthesis_storage",
+      "timestamp": "2026-01-20T20:22:00Z",
+      "status": "completed",
+      "output": {
+        "problemsStored": 10,
+        "fileCreated": "research-viewer/public/research-data/industries/energy-utilities/renewable-energy/fields/wind.json"
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 1200000,
+    "sourcesConsulted": 30,
+    "webSearches": 4,
+    "webFetches": 1
+  }
+}
