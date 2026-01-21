@@ -1,0 +1,27 @@
+{
+  "id": "session-20260121-143000",
+  "completedAt": "2026-01-21T14:45:00Z",
+  "target": {
+    "industry": "financial-services",
+    "domain": "asset-investment-management",
+    "field": "portfolio-management"
+  },
+  "results": {
+    "candidatesFound": 10,
+    "problemsResearched": 10,
+    "problemsStored": 10,
+    "failures": 0
+  },
+  "problems": [
+    {"title": "Strategic Alignment Failures in Portfolio Construction", "impactScore": 6.4, "confidence": 0.75},
+    {"title": "Portfolio-Level Risk Management Under-Utilization", "impactScore": 6.25, "confidence": 0.8},
+    {"title": "Governance and Oversight Deficiencies in Portfolio Management", "impactScore": 6.25, "confidence": 0.8},
+    {"title": "Resource Allocation Bottlenecks Across Portfolios", "impactScore": 6.0, "confidence": 0.75},
+    {"title": "Ineffective Investment Prioritization and Go/Kill Decisions", "impactScore": 6.0, "confidence": 0.8},
+    {"title": "Market Volatility and Geopolitical Uncertainty Impact on Portfolios", "impactScore": 5.95, "confidence": 0.85},
+    {"title": "Data Quality and Visibility Gaps in Portfolio Management", "impactScore": 5.85, "confidence": 0.8},
+    {"title": "Index Concentration and Distribution Complexity", "impactScore": 5.8, "confidence": 0.82},
+    {"title": "AI and Technology Integration Challenges in Asset Management", "impactScore": 5.75, "confidence": 0.75},
+    {"title": "ESG Metrics Standardization and Comparability Gaps", "impactScore": 5.75, "confidence": 0.8}
+  ]
+}
