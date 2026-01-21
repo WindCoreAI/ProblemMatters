@@ -11,10 +11,10 @@
     "totalProblems": 1,
     "totalFields": 1,
     "avgSeverity": 7.5,
-    "avgTractability": 5.0,
+    "avgTractability": 5,
     "fieldProblems": {
       "retail-automation": 1
     }
   },
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

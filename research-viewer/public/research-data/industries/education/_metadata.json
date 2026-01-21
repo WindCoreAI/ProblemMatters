@@ -1,0 +1,27 @@
+{
+  "id": "ind-education",
+  "name": "Education",
+  "slug": "education",
+  "statistics": {
+    "totalProblems": 20,
+    "avgSeverity": 7.4,
+    "avgTractability": 5.8
+  },
+  "domains": [
+    {
+      "id": "dom-edtech",
+      "name": "EdTech",
+      "slug": "edtech",
+      "fieldCount": 1,
+      "problemCount": 10
+    },
+    {
+      "id": "12.2",
+      "name": "Higher Education",
+      "slug": "higher-education",
+      "fieldCount": 1,
+      "problemCount": 10
+    }
+  ],
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
+}

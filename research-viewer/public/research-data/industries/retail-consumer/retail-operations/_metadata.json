@@ -10,15 +10,15 @@
   "statistics": {
     "totalProblems": 11,
     "totalFields": 5,
-    "avgSeverity": 7.62,
-    "avgTractability": 5.68,
+    "avgSeverity": 7.73,
+    "avgTractability": 5.59,
     "fieldProblems": {
-      "store-operations": 4,
-      "supply-chain": 3,
       "e-commerce": 2,
       "merchandising": 1,
-      "omnichannel": 1
+      "omnichannel": 1,
+      "store-operations": 4,
+      "supply-chain": 3
     }
   },
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

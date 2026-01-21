@@ -10,12 +10,12 @@
   "statistics": {
     "totalProblems": 10,
     "totalFields": 2,
-    "avgSeverity": 7.45,
-    "avgTractability": 5.36,
+    "avgSeverity": 7.8,
+    "avgTractability": 5.25,
     "fieldProblems": {
-      "retail-banking": 9,
-      "payments": 1
+      "payments": 1,
+      "retail-banking": 9
     }
   },
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

@@ -8,18 +8,19 @@
     "slug": "technology-software"
   },
   "statistics": {
-    "totalProblems": 30,
-    "totalFields": 6,
-    "avgSeverity": 7.79,
-    "avgTractability": 5.17,
+    "totalProblems": 40,
+    "totalFields": 7,
+    "avgSeverity": 7.53,
+    "avgTractability": 5.13,
     "fieldProblems": {
       "ai-ethics-safety": 1,
-      "mlops": 2,
+      "computer-vision": 10,
+      "deep-learning": 11,
       "generative-ai": 1,
       "machine-learning": 5,
-      "deep-learning": 11,
+      "mlops": 2,
       "natural-language-processing": 10
     }
   },
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

@@ -1,0 +1,20 @@
+{
+  "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+  "name": "Medical Technology",
+  "slug": "medical-technology",
+  "industry": {
+    "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+    "name": "Healthcare & Life Sciences",
+    "slug": "healthcare-life-sciences"
+  },
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 1,
+    "avgSeverity": 7.3,
+    "avgTractability": 5.25,
+    "fieldProblems": {
+      "diagnostic-imaging": 10
+    }
+  },
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
+}

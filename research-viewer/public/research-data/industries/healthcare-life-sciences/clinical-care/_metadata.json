@@ -10,13 +10,13 @@
   "statistics": {
     "totalProblems": 31,
     "totalFields": 3,
-    "avgSeverity": 7.78,
+    "avgSeverity": 7.79,
     "avgTractability": 5.32,
     "fieldProblems": {
       "mental-health": 11,
-      "rehabilitation": 10,
-      "primary-care": 10
+      "primary-care": 10,
+      "rehabilitation": 10
     }
   },
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

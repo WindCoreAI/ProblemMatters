@@ -3,7 +3,7 @@
   "name": "Content Creation",
   "slug": "content-creation",
   "industry": {
-    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
     "name": "Media & Entertainment",
     "slug": "media-entertainment"
   },
@@ -13,11 +13,11 @@
     "avgSeverity": 7.4,
     "avgTractability": 4.66,
     "fieldProblems": {
-      "music": 10,
       "film-production": 10,
-      "television": 10,
-      "gaming": 10
+      "gaming": 10,
+      "music": 10,
+      "television": 10
     }
   },
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }
