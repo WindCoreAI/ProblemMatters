@@ -12,356 +12,335 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 ## Overview
 
-This skill implements the **Agentic Problem Discovery Flow** using **subagent delegation** to avoid context exhaustion. You act as the **Orchestrator Agent**, coordinating specialized subagents for each phase.
+This skill implements the **Agentic Problem Discovery Flow** using **subagent delegation** to avoid context exhaustion.
 
-> **CRITICAL: Subagent Architecture**
+> **CRITICAL ARCHITECTURE RULES**
 >
-> This workflow delegates heavy processing to subagents to prevent context window exhaustion.
-> Each phase runs in a separate subagent with its own clean context.
-> Problems are processed and stored **incrementally** - one at a time.
+> 1. **Orchestrator stays lightweight** - NEVER do web searches, NEVER read large files
+> 2. **Each subagent writes to its OWN file** - NO shared file writes during research
+> 3. **Final merge is a separate subagent** - Orchestrator doesn't read problem content
+> 4. **Subagents return minimal status only** - Just success/fail + title + score
 
 ## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                     ORCHESTRATOR (You - Lightweight)                     │
-│         - Parse input, coordinate phases, track progress                 │
-│         - DO NOT perform web searches or heavy processing directly       │
+│                     ORCHESTRATOR (You - MINIMAL CONTEXT)                 │
+│                                                                          │
+│  ONLY does:                                                              │
+│  - Parse input arguments                                                 │
+│  - Launch subagents with Task tool                                       │
+│  - Track success/failure counts                                          │
+│  - Display progress to user                                              │
+│                                                                          │
+│  NEVER does:                                                             │
+│  - Web searches                                                          │
+│  - Read problem JSON files                                               │
+│  - Accumulate problem data in context                                    │
 └─────────────────────────┬───────────────────────────────────────────────┘
                           │
-                          ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    PHASE 1: DISCOVERY SUBAGENT                           │
-│                    (Task tool, runs in background)                       │
-│                                                                          │
-│  - Performs all web searches                                             │
-│  - Extracts problem candidates                                           │
-│  - Writes candidates to scratchpad file                                  │
-│  - Returns: list of problem titles + brief descriptions                  │
-└─────────────────────────┬───────────────────────────────────────────────┘
-                          │
-                          ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│              PHASE 2: RESEARCH SUBAGENTS (One per problem)               │
-│              (Task tool, can run in parallel batches)                    │
-│                                                                          │
-│  For each problem candidate:                                             │
-│  - Deep research with WebFetch                                           │
-│  - Generate full problem JSON                                            │
-│  - Validate and score                                                    │
-│  - Write directly to field file (append)                                 │
-│  - Returns: success/failure + problem summary                            │
-└─────────────────────────┬───────────────────────────────────────────────┘
-                          │
-                          ▼
-┌─────────────────────────────────────────────────────────────────────────┐
-│                    PHASE 3: FINALIZATION (Orchestrator)                  │
-│                                                                          │
-│  - Collect results from all research subagents                           │
-│  - Write session log                                                     │
-│  - Report summary to user                                                │
-└─────────────────────────────────────────────────────────────────────────┘
+          ┌───────────────┼───────────────┐
+          ▼               ▼               ▼
+┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
+│ DISCOVERY       │ │ RESEARCH        │ │ MERGE           │
+│ SUBAGENT        │ │ SUBAGENTS (x10) │ │ SUBAGENT        │
+│                 │ │                 │ │                 │
+│ Writes:         │ │ Each writes:    │ │ Reads all       │
+│ candidates.json │ │ problem-N.json  │ │ problem-N.json  │
+│                 │ │ (individual)    │ │ Writes final    │
+│ Returns:        │ │                 │ │ field file      │
+│ count only      │ │ Returns:        │ │                 │
+│                 │ │ title + score   │ │ Returns:        │
+│                 │ │ only            │ │ count + summary │
+└─────────────────┘ └─────────────────┘ └─────────────────┘
 ```
 
 ## Workflow Steps
 
 ### Step 0: Parse Research Request
 
-Parse the user's input to determine the research target:
-
-- **Industry** (required): One of the 16 industries from the taxonomy
-- **Domain** (optional): Specific domain within the industry
-- **Field** (optional): Specific field within the domain
+Parse the user's input to determine:
+- **Industry** (required)
+- **Domain** (optional)
+- **Field** (optional)
 
 **Configuration defaults:**
-- `maxProblems`: 10 (can be overridden with `--max N`)
-- `depthLevel`: deep (options: shallow, standard, deep)
-- `minConfidence`: 0.7
+- `maxProblems`: 10 (override with `--max N`)
+- `depthLevel`: deep
 
-If the input is empty or unclear, prompt the user with available industries.
+If input is empty, prompt user for target.
 
-**Read the taxonomy file** to validate the target:
+**Quick validation** - just check the taxonomy file exists:
 ```
 docs/research/industry-taxonomy-hierarchy.md
 ```
 
-### Step 1: Initialize Session
+### Step 1: Initialize Session (LIGHTWEIGHT)
 
 1. Generate session ID: `session-YYYYMMDD-HHMMSS`
-2. Determine the output file path:
+2. Create scratchpad directory using Bash:
+   ```bash
+   mkdir -p {scratchpad}/discover-{session-id}/problems
    ```
-   research-viewer/public/research-data/industries/{industry-slug}/{domain-slug}/fields/{field-slug}.json
+3. Display to user:
    ```
-3. Check if the field file exists and count existing problems
-4. Create the scratchpad directory for this session:
-   ```
-   {scratchpad}/discover-{session-id}/
+   ## Starting Problem Discovery
+
+   Session: {session-id}
+   Target: {industry} > {domain} > {field}
+   Max Problems: {N}
+
+   Launching discovery...
    ```
 
-**Display to user:**
-```markdown
-## Initializing Research Session
-
-**Session ID:** {session-id}
-**Target:** {industry} > {domain} > {field}
-**Output:** {output-file-path}
-**Max Problems:** {maxProblems}
-
-Starting Discovery Phase...
-```
+**DO NOT:**
+- Read the output field file
+- Count existing problems
+- Read taxonomy details
 
 ### Step 2: Discovery Phase (SUBAGENT)
 
-**Launch a subagent using the Task tool** to perform discovery:
+Launch ONE subagent for discovery:
 
 ```
-Use the Task tool with:
+Task tool:
 - subagent_type: "general-purpose"
 - description: "Discover {field} problems"
-- prompt: [See DISCOVERY_SUBAGENT_PROMPT below]
+- prompt: <see below>
 ```
 
-**DISCOVERY_SUBAGENT_PROMPT:**
-
+**DISCOVERY PROMPT:**
 ```
-You are the Discovery Agent for Problem Matters. Your task is to find problem candidates in:
+You are the Discovery Agent. Find problem candidates for:
+- Industry: {industry}
+- Domain: {domain}
+- Field: {field}
 
-Industry: {industry_name} ({industry_slug})
-Domain: {domain_name} ({domain_slug})
-Field: {field_name} ({field_slug})
+## Instructions
 
-## Your Task
+1. Run 5 web searches using WebSearch tool:
+   - "{field} {domain} challenges problems 2025 2026"
+   - "{field} pain points issues"
+   - "{field} unsolved problems gaps"
+   - "{field} limitations bottlenecks"
+   - "{field} emerging challenges risks"
 
-1. Execute these web searches (use WebSearch tool):
-   - "{field_name} {domain_name} challenges problems 2025 2026"
-   - "{field_name} industry pain points issues"
-   - "{field_name} unsolved problems research gaps"
-   - "{field_name} technical limitations bottlenecks"
-   - "{field_name} emerging challenges future risks"
+2. Identify up to {maxProblems} distinct problem candidates
 
-2. From the search results, identify {target_count} distinct problem candidates.
-
-3. For each candidate, extract:
-   - title: Concise problem title (10-15 words)
-   - description: Brief description (2-3 sentences)
-   - sources: List of 2-3 relevant URLs from search results
-   - significance: Why this problem matters
-
-4. Write the candidates to this file using the Write tool:
-   {scratchpad_path}/candidates.json
-
-   Format:
+3. Write to file: {scratchpad}/discover-{session-id}/candidates.json
    ```json
    {
+     "count": N,
      "candidates": [
        {
-         "id": "candidate-1",
-         "title": "...",
-         "description": "...",
-         "sources": ["url1", "url2"],
-         "significance": "..."
+         "id": "1",
+         "title": "Problem title here",
+         "brief": "2-3 sentence description",
+         "sources": ["url1", "url2"]
        }
-     ],
-     "searchesPerformed": 5,
-     "totalResultsAnalyzed": N
+     ]
    }
    ```
 
-5. Return a summary of candidates found.
+4. Return ONLY this text (nothing else):
+   "Found {N} candidates. File written."
 
-## Quality Guidelines
-- Focus on REAL, SIGNIFICANT problems (not minor inconveniences)
-- Problems should be specific to {field_name}, not generic
-- Avoid duplicating problems that may already exist
-- Each candidate should have at least one credible source
+## Important
+- Keep candidate descriptions SHORT (2-3 sentences max)
+- Return minimal text - just the count confirmation
 ```
 
-**Wait for the subagent to complete**, then read the candidates file.
+**After subagent completes:**
+- Read ONLY `candidates.json` (small file)
+- Extract candidate count and titles
+- DO NOT include full descriptions in your context
 
-### Step 3: Research Phase (SUBAGENTS - One Per Problem)
+### Step 3: Research Phase (INDIVIDUAL SUBAGENTS)
 
-For each problem candidate, **launch a separate subagent**:
+For each candidate, launch a subagent that writes to its **OWN file**.
 
-> **IMPORTANT: Process problems incrementally**
-> - Launch 2-3 research subagents in parallel (not all at once)
-> - Each subagent writes directly to the output file
-> - This prevents context exhaustion and provides incremental progress
+> **CRITICAL: NO SHARED FILE WRITES**
+> Each research subagent writes to: `{scratchpad}/discover-{session-id}/problems/problem-{N}.json`
+> This prevents file conflicts and context accumulation.
+
+Launch **2-3 subagents in parallel** per batch.
 
 ```
-Use the Task tool with:
+Task tool:
 - subagent_type: "general-purpose"
-- description: "Research: {problem_title_short}"
-- prompt: [See RESEARCH_SUBAGENT_PROMPT below]
+- description: "Research problem {N}"
+- prompt: <see below>
 ```
 
-**RESEARCH_SUBAGENT_PROMPT:**
-
+**RESEARCH PROMPT:**
 ```
-You are the Research Agent for Problem Matters. Research and store ONE problem.
+You are Research Agent #{N}. Research ONE problem and save it.
 
-## Problem Candidate
+## Problem to Research
 Title: {candidate_title}
-Description: {candidate_description}
-Sources: {candidate_sources}
+Brief: {candidate_brief}
+Sources: {sources}
 
-## Target Taxonomy
-Industry: {industry_name} (slug: {industry_slug}, id: {industry_id})
-Domain: {domain_name} (slug: {domain_slug}, id: {domain_id})
-Field: {field_name} (slug: {field_slug}, id: {field_id})
+## Taxonomy (use these exact values)
+- Industry: {industry_name} | slug: {industry_slug} | id: {industry_id}
+- Domain: {domain_name} | slug: {domain_slug} | id: {domain_id}
+- Field: {field_name} | slug: {field_slug} | id: {field_id}
 
-## Your Task
+## Instructions
 
-### 1. Deep Research
-Use WebFetch to read 2-3 of the source URLs. Extract:
-- Detailed problem description (200-400 words)
-- Root causes (3-5)
-- Consequences (3-5)
-- Existing solutions and their limitations (2-4)
-- Solution gaps and opportunities (2-4)
-- Affected stakeholders (3-5)
-- Metrics (economic impact, affected population)
+### 1. Research (use WebSearch, limit WebFetch attempts)
+If WebFetch returns 403, skip that URL and use WebSearch results instead.
+Extract:
+- Full description (200-400 words)
+- 3-5 root causes
+- 3-5 consequences
+- 2-4 existing solutions
+- 2-4 solution gaps
+- 3-5 stakeholders
 
-### 2. Validate & Score
-Calculate scores (0-10 scale):
+### 2. Score (0-10 scale)
+- Severity: affected population, economic impact, quality of life, productivity
+- Tractability: technical feasibility, resources needed, existing progress, barriers
+- Neglectedness: research activity, funding, organizations working on it
+- Impact Score = (Severity×0.35) + (Tractability×0.25) + (Neglectedness×0.25) + (Urgency×0.15)
+- Confidence: 0-1 based on evidence quality
 
-**SEVERITY** (weight: 0.35):
-- affectedPopulation: How many people/orgs affected?
-- economicImpact: Financial cost of the problem?
-- qualityOfLife: Impact on wellbeing?
-- productivityImpact: Impact on efficiency?
-- overall: Average of above
+### 3. Write to file
+Save complete problem JSON to:
+{scratchpad}/discover-{session-id}/problems/problem-{N}.json
 
-**TRACTABILITY** (weight: 0.25):
-- technicalFeasibility: Can it be solved with current tech?
-- resourceRequirements: How much effort needed? (inverse: high effort = low score)
-- existingProgress: How much progress already made?
-- barriers: How many barriers exist? (inverse)
-- overall: Average of above
-
-**NEGLECTEDNESS** (weight: 0.25):
-- researchActivity: How much research exists? (inverse)
-- fundingLevel: How much funding? (inverse)
-- organizationCount: How many orgs working on it? (inverse)
-- mediaAttention: How much coverage? (inverse)
-- overall: Average of above
-
-**URGENCY**: critical=10, high=7.5, medium=5, low=2.5
-
-**IMPACT SCORE** = (Severity * 0.35) + (Tractability * 0.25) + (Neglectedness * 0.25) + (Urgency * 0.15)
-
-**CONFIDENCE**: 0-1 based on source quality and evidence strength
-
-### 3. Generate Problem JSON
-
-Create the full problem object:
-
-```json
+Use this exact structure:
 {
-  "id": "{generate_uuid}",
-  "title": "{refined_title}",
-  "slug": "{slug_from_title}",
-  "description": "{full_description}",
-  "summary": "{50-100_word_summary}",
+  "id": "prob-{field_slug}-{N}",
+  "title": "...",
+  "slug": "...",
+  "description": "...",
+  "summary": "...",
   "industry": {"id": "{industry_id}", "name": "{industry_name}", "slug": "{industry_slug}"},
   "domain": {"id": "{domain_id}", "name": "{domain_name}", "slug": "{domain_slug}"},
   "field": {"id": "{field_id}", "name": "{field_name}", "slug": "{field_slug}"},
-  "problemType": "{technical|process|resource|knowledge|coordination|regulatory|market|environmental|social|ethical}",
-  "problemSubtypes": ["{tag1}", "{tag2}"],
-  "scope": "{individual|team|organization|industry|global}",
-  "maturity": "{emerging|growing|mature|declining}",
-  "urgency": "{critical|high|medium|low}",
+  "problemType": "technical|process|resource|knowledge|coordination|regulatory|market|environmental|social|ethical",
+  "problemSubtypes": [],
+  "scope": "individual|team|organization|industry|global",
+  "maturity": "emerging|growing|mature|declining",
+  "urgency": "critical|high|medium|low",
   "severity": {"overall": N, "affectedPopulation": N, "economicImpact": N, "qualityOfLife": N, "productivityImpact": N},
   "tractability": {"overall": N, "technicalFeasibility": N, "resourceRequirements": N, "existingProgress": N, "barriers": N},
   "neglectedness": {"overall": N, "researchActivity": N, "fundingLevel": N, "organizationCount": N, "mediaAttention": N},
   "impactScore": N,
-  "rootCauses": [{"description": "...", "category": "...", "contributionLevel": "high|medium|low", "evidence": "..."}],
-  "consequences": [{"description": "...", "type": "...", "affectedArea": "...", "timeframe": "immediate|short-term|medium-term|long-term"}],
-  "existingSolutions": [{"name": "...", "description": "...", "type": "...", "effectiveness": N, "adoption": "...", "limitations": ["..."]}],
-  "solutionGaps": [{"description": "...", "gapType": "...", "opportunity": "...", "difficulty": "low|medium|high|very-high"}],
-  "stakeholders": [{"type": "...", "description": "...", "examples": ["..."], "interest": "low|medium|high", "influence": "low|medium|high"}],
-  "sources": [{"type": "...", "title": "...", "url": "...", "publishedAt": "...", "relevantExcerpt": "..."}],
-  "tags": ["..."],
-  "keywords": ["..."],
-  "metrics": {"economicImpactUSD": N, "affectedPopulation": "...", "trendDirection": "increasing|stable|decreasing"},
+  "rootCauses": [...],
+  "consequences": [...],
+  "existingSolutions": [...],
+  "solutionGaps": [...],
+  "stakeholders": [...],
+  "sources": [...],
+  "tags": [],
+  "keywords": [],
+  "metrics": {},
   "researchSession": "{session_id}",
   "confidence": N,
   "verificationStatus": "ai-verified",
-  "createdAt": "{iso_timestamp}",
-  "updatedAt": "{iso_timestamp}",
+  "createdAt": "{timestamp}",
+  "updatedAt": "{timestamp}",
   "version": 1
 }
+
+### 4. Return ONLY this (nothing else):
+"OK|{title}|{impactScore}|{confidence}"
+
+Or if failed:
+"FAIL|{title}|{reason}"
+
+## Important
+- If WebFetch gives 403, use WebSearch results instead
+- DO NOT return the full problem JSON
+- ONLY return the status line
 ```
 
-### 4. Store the Problem
+**Orchestrator handling:**
+- Parse the simple status line: `OK|Title|Score|Confidence` or `FAIL|Title|Reason`
+- Track counts only
+- Display: `✓ Problem {N}: "{title}" (Impact: {score})`
+- DO NOT ask subagent to return problem content
 
-Read the existing field file (if it exists):
+### Step 4: Merge Phase (SUBAGENT)
+
+After all research subagents complete, launch ONE merge subagent:
+
 ```
-{output_file_path}
-```
-
-If it exists:
-- Parse the JSON
-- Append your problem to the `problems` array
-- Write back the updated file
-
-If it doesn't exist, create it with this structure:
-```json
-{
-  "field": {"id": "{field_id}", "name": "{field_name}", "slug": "{field_slug}", "description": "..."},
-  "domain": {"id": "{domain_id}", "name": "{domain_name}", "slug": "{domain_slug}"},
-  "industry": {"id": "{industry_id}", "name": "{industry_name}", "slug": "{industry_slug}"},
-  "problems": [YOUR_PROBLEM]
-}
+Task tool:
+- subagent_type: "general-purpose"
+- description: "Merge {field} problems"
+- prompt: <see below>
 ```
 
-### 5. Return Result
-
-Return a brief summary:
-- Problem title
-- Impact score
-- Confidence score
-- Success or any issues encountered
-
-If confidence < 0.7, still store but note it as low confidence.
+**MERGE PROMPT:**
 ```
+You are the Merge Agent. Combine individual problem files into the final output.
 
-### Step 4: Track Progress & Handle Results
+## Input Location
+Problem files: {scratchpad}/discover-{session-id}/problems/problem-*.json
 
-As each research subagent completes:
+## Output Location
+Final file: research-viewer/public/research-data/industries/{industry_slug}/{domain_slug}/fields/{field_slug}.json
 
-1. **Update the user on progress:**
-   ```markdown
-   ✓ Problem {N}/{total}: "{title}" (Impact: {score}, Confidence: {conf})
+## Taxonomy
+- Industry: {industry_name} | slug: {industry_slug} | id: {industry_id}
+- Domain: {domain_name} | slug: {domain_slug} | id: {domain_id}
+- Field: {field_name} | slug: {field_slug} | id: {field_id}
+- Field description: {field_description}
+
+## Instructions
+
+1. Create output directory if needed:
+   ```bash
+   mkdir -p research-viewer/public/research-data/industries/{industry_slug}/{domain_slug}/fields
    ```
 
-2. **Track results:**
-   - Count successful stores
-   - Count failures/skips
-   - Collect problem summaries for final report
+2. Read each problem-N.json file from the problems directory
 
-3. **Launch next batch** if more candidates remain (2-3 at a time)
+3. Check if output file exists:
+   - If YES: Read it, append new problems to the "problems" array
+   - If NO: Create new file with field/domain/industry metadata
 
-### Step 5: Finalize Session
+4. Write the merged file with this structure:
+   ```json
+   {
+     "field": {"id": "{field_id}", "name": "{field_name}", "slug": "{field_slug}", "description": "..."},
+     "domain": {"id": "{domain_id}", "name": "{domain_name}", "slug": "{domain_slug}"},
+     "industry": {"id": "{industry_id}", "name": "{industry_name}", "slug": "{industry_slug}"},
+     "problems": [... all problems ...]
+   }
+   ```
 
-After all research subagents complete:
+5. Validate JSON is valid using:
+   ```bash
+   python3 -c "import json; d=json.load(open('...')); print(f'Valid: {len(d[\"problems\"])} problems')"
+   ```
 
-1. **Write session log** to `research-viewer/public/research-data/sessions/{session-id}.json`:
+6. Return ONLY:
+   "MERGED|{count}|{output_file_path}"
+```
+
+### Step 5: Finalize (ORCHESTRATOR)
+
+After merge subagent completes:
+
+1. **Write session log** (small file, OK to do directly):
    ```json
    {
      "id": "{session-id}",
-     "startedAt": "{start_timestamp}",
-     "completedAt": "{end_timestamp}",
+     "completedAt": "{timestamp}",
      "target": {"industry": "...", "domain": "...", "field": "..."},
-     "configuration": {"maxProblems": N, "depthLevel": "...", "minConfidence": 0.7},
-     "status": "completed",
      "results": {
-       "candidatesDiscovered": N,
+       "candidatesFound": N,
+       "problemsResearched": N,
        "problemsStored": N,
-       "problemsSkipped": N,
-       "problemIds": ["..."]
+       "failures": N
      }
    }
    ```
+   Location: `research-viewer/public/research-data/sessions/{session-id}.json`
 
 2. **Report to user:**
    ```markdown
@@ -371,60 +350,66 @@ After all research subagents complete:
    **Target:** {industry} > {domain} > {field}
 
    ### Results
-
    | Metric | Count |
    |--------|-------|
-   | Candidates Discovered | {N} |
+   | Candidates Found | {N} |
    | Problems Stored | {N} |
-   | Skipped (low confidence) | {N} |
+   | Failed | {N} |
 
    ### Problems Added
+   1. {title} (Impact: {score})
+   2. {title} (Impact: {score})
+   ...
 
-   1. **{title}** (Impact: {score})
-      {summary}
-
-   2. ...
-
-   ### Output File
+   ### Output
    `{output_file_path}`
 
    ### Next Steps
-   - Run `/aggregate-stats` to update index files
-   - Run `/discover-problems {other-field}` for more research
+   - Run `/aggregate-stats` to update indexes
    ```
+
+3. **Cleanup** (optional):
+   ```bash
+   rm -rf {scratchpad}/discover-{session-id}
+   ```
+
+## Critical Rules for Orchestrator
+
+| DO | DON'T |
+|----|-------|
+| Launch subagents | Do web searches |
+| Track success/fail counts | Read problem JSON content |
+| Display progress messages | Accumulate problem data |
+| Parse simple status lines | Ask subagents for detailed returns |
+| Write small session log | Read/write large field files |
+
+## Subagent Return Format
+
+All subagents return **minimal status lines** only:
+
+| Subagent | Return Format |
+|----------|---------------|
+| Discovery | `Found {N} candidates. File written.` |
+| Research | `OK\|{title}\|{score}\|{confidence}` or `FAIL\|{title}\|{reason}` |
+| Merge | `MERGED\|{count}\|{filepath}` |
+
+## File Structure
+
+```
+{scratchpad}/discover-{session-id}/
+├── candidates.json          # Discovery output (small)
+└── problems/
+    ├── problem-1.json       # Individual problem files
+    ├── problem-2.json
+    └── ...
+
+research-viewer/public/research-data/
+├── industries/{ind}/{dom}/fields/{field}.json  # Final merged output
+└── sessions/{session-id}.json                   # Session log
+```
 
 ## Error Handling
 
-- **Discovery subagent fails:** Report error, allow retry
-- **Research subagent fails:** Log error, continue with other problems
-- **File write conflict:** Read-modify-write with retry
-- **Low confidence:** Store anyway but flag in results
-
-## Important Notes
-
-1. **DO NOT perform web searches directly** - always delegate to subagents
-2. **Process problems incrementally** - 2-3 parallel subagents max
-3. **Each subagent writes its own output** - no accumulation in orchestrator context
-4. **Keep orchestrator lightweight** - only coordinate and report
-5. **Use scratchpad for intermediate files** - candidates.json, etc.
-
-## Directory Structure
-
-```
-research-viewer/public/research-data/
-├── industries/
-│   └── {industry-slug}/
-│       └── {domain-slug}/
-│           └── fields/
-│               └── {field-slug}.json  ← Problems written here
-└── sessions/
-    └── {session-id}.json              ← Session log written here
-```
-
-## Subagent Delegation Summary
-
-| Phase | Subagent Type | Parallelism | Output |
-|-------|--------------|-------------|--------|
-| Discovery | general-purpose | 1 (sequential) | candidates.json in scratchpad |
-| Research | general-purpose | 2-3 parallel | Appends to field file directly |
-| Finalize | Orchestrator | N/A | Session log + user report |
+- **WebFetch 403**: Subagent uses WebSearch results instead
+- **Research subagent fails**: Continue with others, track failure count
+- **Merge fails**: Report error, individual files preserved for retry
