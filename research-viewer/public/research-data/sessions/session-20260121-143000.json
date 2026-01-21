@@ -1,0 +1,11 @@
+{
+  "id": "session-20260121-143000",
+  "completedAt": "2026-01-21T14:35:00Z",
+  "target": {"industry": "education", "domain": "edtech", "field": "learning-management"},
+  "results": {
+    "candidatesFound": 10,
+    "problemsResearched": 10,
+    "problemsStored": 10,
+    "failures": 0
+  }
+}
