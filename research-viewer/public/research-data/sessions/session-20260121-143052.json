@@ -1,0 +1,95 @@
+{
+  "id": "session-20260121-143052",
+  "startedAt": "2026-01-21T14:30:52Z",
+  "completedAt": "2026-01-21T14:45:00Z",
+  "target": {
+    "industry": "healthcare-life-sciences",
+    "domain": "medical-technology",
+    "field": "diagnostic-imaging"
+  },
+  "configuration": {
+    "model": "claude-opus-4-5-20251101",
+    "maxProblems": 10,
+    "minConfidence": 0.7,
+    "sourcesRequired": true,
+    "depthLevel": "deep"
+  },
+  "status": "completed",
+  "results": {
+    "problemsDiscovered": 10,
+    "problemsStored": 10,
+    "duplicatesSkipped": 0,
+    "lowConfidenceSkipped": 0,
+    "problemIds": [
+      "a1b2c3d4-1111-4a5b-8c9d-e1f2a3b4c5d6",
+      "a1b2c3d4-2222-4a5b-8c9d-e1f2a3b4c5d6",
+      "a1b2c3d4-3333-4a5b-8c9d-e1f2a3b4c5d6",
+      "a1b2c3d4-4444-4a5b-8c9d-e1f2a3b4c5d6",
+      "a1b2c3d4-5555-4a5b-8c9d-e1f2a3b4c5d6",
+      "a1b2c3d4-6666-4a5b-8c9d-e1f2a3b4c5d6",
+      "a1b2c3d4-7777-4a5b-8c9d-e1f2a3b4c5d6",
+      "a1b2c3d4-8888-4a5b-8c9d-e1f2a3b4c5d6",
+      "a1b2c3d4-9999-4a5b-8c9d-e1f2a3b4c5d6",
+      "a1b2c3d4-aaaa-4a5b-8c9d-e1f2a3b4c5d6"
+    ]
+  },
+  "steps": [
+    {
+      "step": 1,
+      "action": "parse_request",
+      "timestamp": "2026-01-21T14:30:52Z",
+      "status": "completed",
+      "output": {
+        "industry": "healthcare-life-sciences",
+        "domain": "medical-technology",
+        "field": "diagnostic-imaging"
+      }
+    },
+    {
+      "step": 2,
+      "action": "discovery_phase",
+      "timestamp": "2026-01-21T14:31:00Z",
+      "status": "completed",
+      "output": {
+        "searchQueries": 4,
+        "candidatesFound": 15
+      }
+    },
+    {
+      "step": 3,
+      "action": "research_phase",
+      "timestamp": "2026-01-21T14:35:00Z",
+      "status": "completed",
+      "output": {
+        "problemsResearched": 10,
+        "sourcesConsulted": 18
+      }
+    },
+    {
+      "step": 4,
+      "action": "validation_phase",
+      "timestamp": "2026-01-21T14:40:00Z",
+      "status": "completed",
+      "output": {
+        "problemsValidated": 10,
+        "avgConfidence": 0.86
+      }
+    },
+    {
+      "step": 5,
+      "action": "storage_phase",
+      "timestamp": "2026-01-21T14:44:00Z",
+      "status": "completed",
+      "output": {
+        "fileWritten": "research-viewer/public/research-data/industries/healthcare-life-sciences/medical-technology/fields/diagnostic-imaging.json",
+        "problemsStored": 10
+      }
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "durationMs": 848000,
+    "apiCalls": 5,
+    "sourcesConsulted": 18
+  }
+}
