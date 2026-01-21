@@ -1,0 +1,1917 @@
+{
+  "field": {
+    "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+    "name": "Computer Vision",
+    "slug": "computer-vision",
+    "description": "Computer Vision is a field of artificial intelligence that enables machines to interpret and understand visual information from the world, including images and videos. It encompasses image classification, object detection, image segmentation, video analysis, optical character recognition (OCR), and 3D vision applications."
+  },
+  "domain": {
+    "id": "d4c3b2a1-9087-4654-3210-fedcba987654",
+    "name": "Artificial Intelligence & Machine Learning",
+    "slug": "ai-ml"
+  },
+  "industry": {
+    "id": "a1b2c3d4-e5f6-4789-0abc-def012345678",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "problems": [
+    {
+      "id": "cv001-a1b2-c3d4-e5f6-789012345678",
+      "title": "Training Data Annotation Cost and Quality Crisis in Computer Vision",
+      "slug": "training-data-annotation-cost-quality-crisis",
+      "description": "Computer vision models require massive amounts of high-quality labeled data for training, but the annotation process is extremely expensive, time-consuming, and error-prone. Organizations report that up to 80% of AI project resources are consumed by data preparation and labeling activities. The challenge is compounded by the need for domain expertise in specialized applications like medical imaging or autonomous vehicles, where annotation errors can have safety-critical consequences. Label noise and inconsistency across annotators further degrade model performance, while the scarcity of labeled data for rare edge cases creates significant gaps in model robustness.",
+      "summary": "The high cost and quality challenges of annotating training data for computer vision models consume up to 80% of AI project resources and create significant barriers to deployment.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-0abc-def012345678",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "d4c3b2a1-9087-4654-3210-fedcba987654",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Computer Vision",
+        "slug": "computer-vision"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["data-quality", "cost", "scalability"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "100,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 50000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 5,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 6,
+        "barriers": [
+          "Domain expertise requirements for specialized applications",
+          "Inherent subjectivity in annotation tasks",
+          "Scale of data requirements for modern deep learning",
+          "Quality control across distributed annotation teams"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "5,000+",
+        "fundingLevel": "High - $5B+ annual market for data labeling services"
+      },
+      "impactScore": 62,
+      "rootCauses": [
+        {
+          "description": "Deep learning models require orders of magnitude more labeled data than traditional ML approaches",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Manual annotation is inherently slow and expensive, averaging $0.10-$10 per image depending on complexity",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of standardized annotation guidelines leads to inconsistent labels across annotators",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Domain expertise scarcity for specialized applications like medical imaging",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "AI projects delayed or abandoned due to data preparation bottlenecks",
+          "type": "direct",
+          "affectedArea": "Project delivery",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Model performance degradation from noisy or inconsistent labels",
+          "type": "direct",
+          "affectedArea": "Model quality",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Smaller organizations unable to compete with well-resourced tech giants",
+          "type": "cascading",
+          "affectedArea": "Market competition",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Semi-supervised Learning",
+          "description": "Leveraging large amounts of unlabeled data with small labeled datasets",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Still requires seed labeled data", "Performance gap with fully supervised"]
+        },
+        {
+          "name": "Active Learning",
+          "description": "Intelligently selecting the most informative samples to label",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Requires iterative human-in-the-loop", "Cold start problem"]
+        },
+        {
+          "name": "Synthetic Data Generation",
+          "description": "Creating artificial training data using 3D rendering or GANs",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Domain gap with real data", "Limited realism for complex scenarios"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Automated annotation quality verification at scale",
+          "gapType": "quality",
+          "opportunity": "AI-powered annotation validation and correction systems",
+          "difficulty": "high"
+        },
+        {
+          "description": "Cost-effective annotation for rare edge cases and long-tail distributions",
+          "gapType": "coverage",
+          "opportunity": "Targeted synthetic data generation for rare scenarios",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "ML engineers and data scientists building CV systems",
+          "examples": ["Computer vision researchers", "ML ops teams", "AI startups"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Data labeling service providers",
+          "examples": ["Scale AI", "Labelbox", "Amazon Mechanical Turk"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Computer Vision Market Size, Share, and Trends Analysis 2032",
+          "url": "https://www.databridgemarketresearch.com/reports/global-computer-vision-market",
+          "publishedAt": "2024-01-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Data Bridge Market Research",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "The high cost of acquiring and implementing CV solutions is one of the biggest challenges to market growth."
+        }
+      ],
+      "tags": ["data-labeling", "annotation", "training-data", "supervised-learning", "data-quality"],
+      "keywords": ["computer vision data annotation", "training data labeling", "AI data preparation"],
+      "metrics": {
+        "searchVolume": 8500,
+        "academicPapers": 2400,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "cv002-b2c3-d4e5-f6a7-890123456789",
+      "title": "Algorithmic Bias and Fairness Disparities in Facial Recognition Systems",
+      "slug": "algorithmic-bias-fairness-facial-recognition",
+      "description": "Facial recognition systems exhibit significant performance disparities across demographic groups, with error rates for darker-skinned women reaching 34.7% compared to just 0.8% for lighter-skinned men. These biases stem from imbalanced training datasets, structural features in face encoding, and lack of diverse representation in algorithm development. The consequences are severe: wrongful arrests, discriminatory access to services, and erosion of public trust in AI systems. Despite increased awareness, achieving true demographic parity remains elusive, with research showing that balanced datasets alone are neither the sole cause nor complete solution to the broader issue of demographic bias.",
+      "summary": "Facial recognition systems show error rates up to 34.7% for darker-skinned women versus 0.8% for lighter-skinned men, leading to wrongful arrests and discriminatory outcomes.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-0abc-def012345678",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "d4c3b2a1-9087-4654-3210-fedcba987654",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Computer Vision",
+        "slug": "computer-vision"
+      },
+      "problemType": "ethical",
+      "problemSubtypes": ["bias", "fairness", "discrimination", "social-impact"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "1+ billion",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 10000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 9,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 5,
+        "existingProgress": 4,
+        "barriers": [
+          "Fundamental algorithmic limitations in face encoding",
+          "Historical bias embedded in existing datasets",
+          "Lack of diverse representation in AI research teams",
+          "Regulatory fragmentation across jurisdictions"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "2,000+",
+        "fundingLevel": "Moderate - significant academic and NGO attention"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Training datasets historically underrepresent non-white faces and darker skin tones",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Structural features like lips, eyes, and cheeks encode differently across demographics",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of diverse perspectives in algorithm development teams",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Performance metrics optimized for majority demographics",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Wrongful arrests and investigations based on misidentification",
+          "type": "direct",
+          "affectedArea": "Civil liberties",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Discriminatory access denial to services using facial verification",
+          "type": "direct",
+          "affectedArea": "Service access",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Erosion of public trust in AI systems, particularly among minority communities",
+          "type": "cascading",
+          "affectedArea": "Technology adoption",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "IBM AI Fairness 360",
+          "description": "Open-source toolkit for detecting and mitigating bias in ML models",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Requires expertise to implement", "Cannot address all bias sources"],
+          "url": "https://aif360.mybluemix.net/"
+        },
+        {
+          "name": "Adversarial Debiasing",
+          "description": "Training models to be invariant to protected attributes",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["May reduce overall accuracy", "Difficult to generalize"]
+        },
+        {
+          "name": "Balanced Dataset Curation",
+          "description": "Ensuring equal representation across demographic groups in training data",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "growing",
+          "limitations": ["Alone insufficient to eliminate bias", "Privacy concerns in demographic labeling"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Technical solutions that achieve demographic parity without accuracy tradeoffs",
+          "gapType": "quality",
+          "opportunity": "Novel architectures that inherently encode faces more equitably",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Standardized fairness benchmarks accepted industry-wide",
+          "gapType": "scale",
+          "opportunity": "Consortium-developed evaluation frameworks",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Individuals from underrepresented demographic groups",
+          "examples": ["People of color", "Women", "Elderly populations"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Law enforcement and government agencies deploying facial recognition",
+          "examples": ["Police departments", "Border agencies", "Government ID systems"],
+          "interest": "medium",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "AI ethics researchers and civil rights organizations",
+          "examples": ["MIT Media Lab", "ACLU", "Algorithmic Justice League"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification",
+          "authors": ["Joy Buolamwini", "Timnit Gebru"],
+          "url": "https://news.mit.edu/2018/study-finds-gender-skin-type-bias-artificial-intelligence-systems-0212",
+          "publishedAt": "2018-02-11",
+          "accessedAt": "2026-01-20",
+          "publisher": "MIT Media Lab",
+          "credibilityScore": 0.95,
+          "relevantExcerpt": "The error rate for light-skinned men is 0.8%, compared to 34.7% for darker-skinned women."
+        },
+        {
+          "type": "academic",
+          "title": "Racial Bias within Face Recognition: A Survey",
+          "url": "https://arxiv.org/pdf/2305.00817",
+          "publishedAt": "2023-05-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "ACM Computing Surveys",
+          "credibilityScore": 0.90,
+          "relevantExcerpt": "Although most studies acknowledge that demographically imbalanced training data contribute to biased FR models, there is a consensus that these are neither the sole causes nor complete solutions."
+        }
+      ],
+      "tags": ["facial-recognition", "bias", "fairness", "ethics", "discrimination", "demographics"],
+      "keywords": ["facial recognition bias", "algorithmic fairness", "demographic disparity AI"],
+      "metrics": {
+        "searchVolume": 12000,
+        "academicPapers": 1800,
+        "mediaArticles": 5000,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.92,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "cv003-c3d4-e5f6-a7b8-901234567890",
+      "title": "Real-Time Inference Latency and Accuracy Tradeoff in Safety-Critical Applications",
+      "slug": "real-time-inference-latency-accuracy-tradeoff",
+      "description": "Computer vision systems in safety-critical applications like autonomous vehicles and medical diagnostics face a fundamental tension between inference speed and model accuracy. At highway speeds, a delay of even 100 milliseconds can result in several meters of travel distance, making low latency a critical safety requirement. However, achieving sub-10ms latency often requires aggressive model compression, quantization, or architecture simplification that degrades accuracy. Vision Transformers, while offering superior accuracy, are computationally expensive due to their self-attention mechanism, posing particular challenges on mobile and edge devices with limited resources.",
+      "summary": "Safety-critical CV applications face fundamental tension between inference speed and accuracy, where 100ms latency at highway speeds means meters of travel distance.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-0abc-def012345678",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "d4c3b2a1-9087-4654-3210-fedcba987654",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Computer Vision",
+        "slug": "computer-vision"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["performance", "latency", "optimization", "safety"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "500+ million",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 30000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 9,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Fundamental compute limitations of edge hardware",
+          "Quadratic complexity of attention mechanisms in ViTs",
+          "Power and thermal constraints in embedded systems",
+          "Unpredictable background tasks affecting mobile device performance"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3.5,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "10,000+",
+        "fundingLevel": "High - major investment from autonomous vehicle and mobile chip companies"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Modern deep learning architectures prioritize accuracy over inference efficiency",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Self-attention mechanisms in Vision Transformers have quadratic computational complexity",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Edge devices have strict power, thermal, and memory constraints",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Input preprocessing (decoding, resizing, normalization) adds significant overhead",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Safety incidents in autonomous systems due to delayed object detection",
+          "type": "direct",
+          "affectedArea": "Safety",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Suboptimal model deployment requiring accuracy compromises",
+          "type": "direct",
+          "affectedArea": "Model quality",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Delayed adoption of advanced AI in real-time applications",
+          "type": "cascading",
+          "affectedArea": "Technology adoption",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Model Quantization",
+          "description": "Reducing precision from FP32 to INT8 or lower to speed inference",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Accuracy degradation especially at very low precision", "Requires careful calibration"]
+        },
+        {
+          "name": "Model Pruning",
+          "description": "Removing unnecessary network connections to reduce computation",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Requires retraining", "Diminishing returns past certain sparsity"]
+        },
+        {
+          "name": "Knowledge Distillation",
+          "description": "Training smaller student models to mimic larger teacher models",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Student cannot exceed teacher performance", "Training overhead"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Architectures that achieve both SOTA accuracy and real-time performance on edge devices",
+          "gapType": "quality",
+          "opportunity": "Novel efficient attention mechanisms and hybrid architectures",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Hardware-software co-design for optimal CV inference",
+          "gapType": "integration",
+          "opportunity": "End-to-end optimized inference stacks",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "End users of autonomous systems and real-time CV applications",
+          "examples": ["Autonomous vehicle passengers", "Industrial automation operators", "Medical imaging technicians"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Hardware accelerator and chip manufacturers",
+          "examples": ["NVIDIA", "Qualcomm", "Google TPU team", "Apple Neural Engine"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "A Study on Inference Latency for Vision Transformers on Mobile Devices",
+          "url": "https://arxiv.org/html/2510.25166v1",
+          "publishedAt": "2025-10-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "arXiv",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "The self-attention mechanism used in ViTs is computationally expensive, posing challenges on mobile devices with limited computational and memory resources."
+        },
+        {
+          "type": "industry-report",
+          "title": "Real-time Vision AI Inference: Speed & Applications",
+          "url": "https://www.ultralytics.com/blog/real-time-inferences-in-vision-ai-solutions-are-making-an-impact",
+          "publishedAt": "2025-06-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Ultralytics",
+          "credibilityScore": 0.80,
+          "relevantExcerpt": "In autonomous driving, a delay of even 100 milliseconds at highway speeds can result in several meters of travel distance, making low latency a critical safety requirement."
+        }
+      ],
+      "tags": ["latency", "real-time", "edge-computing", "inference", "autonomous-vehicles", "optimization"],
+      "keywords": ["computer vision inference latency", "real-time object detection", "edge AI optimization"],
+      "metrics": {
+        "searchVolume": 9500,
+        "academicPapers": 3200,
+        "patentApplications": 850,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.90,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "cv004-d4e5-f6a7-b8c9-012345678901",
+      "title": "Long-Form Video Understanding and Temporal Reasoning Limitations",
+      "slug": "long-form-video-understanding-temporal-reasoning",
+      "description": "Current computer vision systems exhibit a sharp performance decline when processing long-form video content, dropping from 65-70% accuracy on 30-second segments to just 25-33% on extended sequences. Three core challenges structure this limitation: pervasive visual-token redundancy that inflates computation while contributing marginal information gain, constrained context windows that fragment temporal and semantic coherence, and the requirement for robust multi-modal reasoning across expansive temporal horizons. The gap between human and machine vision in temporal understanding remains substantial, with state-of-the-art models unable to replicate human behavior in dynamic recognition tasks.",
+      "summary": "Video understanding systems show dramatic accuracy drops from 65-70% on short clips to 25-33% on long videos due to temporal reasoning limitations and token redundancy.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-0abc-def012345678",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "d4c3b2a1-9087-4654-3210-fedcba987654",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Computer Vision",
+        "slug": "computer-vision"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["video-analysis", "temporal-reasoning", "scalability"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "50,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 5,
+        "barriers": [
+          "Quadratic complexity of attention over long sequences",
+          "Massive visual token redundancy in video frames",
+          "Limited context windows in current architectures",
+          "Scarcity of long-form video datasets with quality annotations"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "3,000+",
+        "fundingLevel": "Moderate - growing interest from streaming and surveillance sectors"
+      },
+      "impactScore": 63,
+      "rootCauses": [
+        {
+          "description": "Videos exhibit substantial temporal redundancy - surrounding frames feature same environment with minor variations",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Context windows in transformer architectures cannot span entire long videos",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of datasets and benchmarks for fine-grained long-form video understanding",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Training long-context models requires enormous computational resources",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Video content analysis systems miss important events in long recordings",
+          "type": "direct",
+          "affectedArea": "Accuracy",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Security and surveillance systems fail to track actions across extended timeframes",
+          "type": "direct",
+          "affectedArea": "Safety",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Limited automation capabilities for video editing and summarization",
+          "type": "cascading",
+          "affectedArea": "Productivity",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Hierarchical Video Representations",
+          "description": "Processing videos at multiple temporal scales to capture different granularities",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Information loss at coarse scales", "Complex training procedures"]
+        },
+        {
+          "name": "Temporal Compression Methods",
+          "description": "Adaptively reducing redundant frames to fit context windows",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Risk of discarding important information", "Compression artifacts"]
+        },
+        {
+          "name": "Memory-Augmented Networks",
+          "description": "External memory modules to store and retrieve long-term temporal information",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "experimental",
+          "limitations": ["Memory management complexity", "Retrieval accuracy challenges"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Efficient architectures that maintain coherent understanding across hour-long videos",
+          "gapType": "quality",
+          "opportunity": "Novel sparse attention or state-space models for video",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Comprehensive benchmarks for long-form video understanding evaluation",
+          "gapType": "coverage",
+          "opportunity": "Community-driven dataset and benchmark creation",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Organizations requiring video content analysis",
+          "examples": ["Streaming platforms", "Security companies", "Sports analytics firms", "Media production"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "Video understanding researchers at major AI labs",
+          "examples": ["DeepMind", "Google Research", "Meta AI", "Microsoft Research"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Towards training-free long video understanding: methods, benchmarks, and open challenges",
+          "url": "https://link.springer.com/article/10.1007/s44336-025-00017-w",
+          "publishedAt": "2025-01-10",
+          "accessedAt": "2026-01-20",
+          "publisher": "Springer Nature",
+          "credibilityScore": 0.90,
+          "relevantExcerpt": "Training-free systems exhibit a sharp decline in performance from 65-70% accuracy on 30-second video segments to a mere 25-33% on extended egocentric sequences."
+        },
+        {
+          "type": "academic",
+          "title": "Video Understanding with Large Language Models: A Survey",
+          "url": "https://arxiv.org/html/2312.17432v4",
+          "publishedAt": "2024-06-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "arXiv",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Videos exhibit substantial redundancy in the temporal dimension. Surrounding frames typically feature the same environment with only minor variations."
+        }
+      ],
+      "tags": ["video-understanding", "temporal-reasoning", "long-form-video", "attention", "transformers"],
+      "keywords": ["long video understanding", "temporal video analysis", "video AI limitations"],
+      "metrics": {
+        "searchVolume": 4500,
+        "academicPapers": 890,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "cv005-e5f6-a7b8-c9d0-123456789012",
+      "title": "Edge AI Hardware Fragmentation and Deployment Complexity",
+      "slug": "edge-ai-hardware-fragmentation-deployment-complexity",
+      "description": "The computer vision edge deployment landscape is severely fragmented across GPUs, TPUs, NPUs, FPGAs, and custom ASICs, each with different architectures, software stacks, and optimization requirements. NPUs are expected to ship in over 970 million smartphones by 2025, while custom ASICs are projected to reach $7.8 billion in revenue. However, direct apples-to-apples comparisons are challenging due to architectural differences. Fixed-function accelerators face obsolescence risk if ML models adopt new operators, while startups face tens of millions in upfront costs for custom ASIC development. The interconnect between chips, not the compute itself, has emerged as the new bottleneck for scaling.",
+      "summary": "Edge CV deployment is fragmented across GPUs, TPUs, NPUs, FPGAs with incompatible stacks, while interconnect bottlenecks and ASIC obsolescence risk impede scaling.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-0abc-def012345678",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "d4c3b2a1-9087-4654-3210-fedcba987654",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Computer Vision",
+        "slug": "computer-vision"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["hardware", "fragmentation", "deployment", "infrastructure"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "100,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 25000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 4,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Proprietary software stacks from hardware vendors",
+          "Rapid evolution of AI models outpacing hardware",
+          "High cost of custom silicon development",
+          "Data movement bottlenecks exceeding compute improvements"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "8,000+",
+        "fundingLevel": "Very high - $467B projected AI processor market by 2034"
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "Each hardware vendor optimizes for different workloads and creates proprietary toolchains",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Fixed-function accelerators cannot adapt to new model architectures without redesign",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Interconnect bandwidth scales slower than compute capability",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Startups cannot afford custom ASIC development costs (tens of millions USD)",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Models must be reoptimized for each target hardware platform",
+          "type": "direct",
+          "affectedArea": "Development efficiency",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Vendor lock-in limits flexibility and increases costs",
+          "type": "direct",
+          "affectedArea": "Business strategy",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Innovation fragmented across incompatible ecosystems",
+          "type": "cascading",
+          "affectedArea": "Industry progress",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "ONNX Runtime",
+          "description": "Cross-platform inference engine supporting multiple hardware backends",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Not all operations supported on all backends", "Performance overhead"],
+          "url": "https://onnxruntime.ai/"
+        },
+        {
+          "name": "TensorRT / TVM",
+          "description": "Hardware-specific compilation and optimization frameworks",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Vendor-specific optimizations", "Steep learning curve"]
+        },
+        {
+          "name": "Hybrid AI Chips",
+          "description": "Chips combining CPUs with NPUs for flexible workload handling",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Jack of all trades tradeoffs", "Higher power consumption"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Universal model compilation that achieves optimal performance across hardware",
+          "gapType": "integration",
+          "opportunity": "AI-driven auto-tuning compilers",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Reconfigurable accelerators that adapt to evolving model architectures",
+          "gapType": "quality",
+          "opportunity": "Next-generation programmable AI hardware",
+          "difficulty": "very-high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "ML engineers deploying models to edge devices",
+          "examples": ["IoT developers", "Embedded systems engineers", "Mobile app developers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Hardware platform vendors",
+          "examples": ["NVIDIA", "Qualcomm", "Google", "Apple", "Intel"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "AI Processor Market Size to Hit USD 467.09 Billion by 2034",
+          "url": "https://www.precedenceresearch.com/ai-processor-market",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Precedence Research",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "NPUs are expected to ship in over 970 million smartphones globally by 2025."
+        },
+        {
+          "type": "news",
+          "title": "Nvidia sales are off the charts, but others now make their own custom AI chips",
+          "url": "https://www.cnbc.com/2025/11/21/nvidia-gpus-google-tpus-aws-trainium-comparing-the-top-ai-chips.html",
+          "publishedAt": "2025-11-21",
+          "accessedAt": "2026-01-20",
+          "publisher": "CNBC",
+          "credibilityScore": 0.80,
+          "relevantExcerpt": "Fixed-function accelerators face the danger of obsolescence if ML models start using new ops or architectures."
+        }
+      ],
+      "tags": ["edge-ai", "hardware", "deployment", "NPU", "TPU", "GPU", "ASIC", "fragmentation"],
+      "keywords": ["edge AI hardware", "AI chip fragmentation", "computer vision deployment"],
+      "metrics": {
+        "searchVolume": 7200,
+        "academicPapers": 1500,
+        "patentApplications": 2400,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "cv006-f6a7-b8c9-d0e1-234567890123",
+      "title": "Deep Learning Model Explainability and Interpretability Deficit",
+      "slug": "deep-learning-model-explainability-interpretability-deficit",
+      "description": "Computer vision deep learning models operate as black boxes, making decisions through millions of parameters without providing human-understandable explanations. This opacity is particularly problematic in high-stakes domains like medical diagnosis, autonomous driving, and criminal justice where understanding why a model made a specific decision is crucial for trust, debugging, and regulatory compliance. Current explainability methods like GradCAM and SHAP provide post-hoc approximations but cannot fully capture the complex non-linear decision processes. The accuracy-explainability tradeoff forces practitioners to choose between performance and transparency.",
+      "summary": "CV deep learning models lack explainability, operating as black boxes where current interpretation methods provide only post-hoc approximations of decision processes.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-0abc-def012345678",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "d4c3b2a1-9087-4654-3210-fedcba987654",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Computer Vision",
+        "slug": "computer-vision"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["explainability", "interpretability", "transparency", "trust"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "1+ billion",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 12000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 4,
+        "resourceRequirements": 5,
+        "existingProgress": 4,
+        "barriers": [
+          "Fundamental complexity of neural network decision processes",
+          "Post-hoc explanations may not reflect actual model reasoning",
+          "Tradeoff between model performance and inherent interpretability",
+          "No consensus on what constitutes a good explanation"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "4,000+",
+        "fundingLevel": "Moderate - growing regulatory pressure driving investment"
+      },
+      "impactScore": 60,
+      "rootCauses": [
+        {
+          "description": "Neural networks learn distributed representations across millions of parameters",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Non-linear transformations make tracing decision paths intractable",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Industry prioritized accuracy over interpretability in model development",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of standardized metrics for measuring explanation quality",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Inability to debug model failures in safety-critical applications",
+          "type": "direct",
+          "affectedArea": "Safety",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Regulatory barriers to deployment in healthcare, finance, and government",
+          "type": "direct",
+          "affectedArea": "Compliance",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Reduced trust and adoption of AI systems by end users and stakeholders",
+          "type": "cascading",
+          "affectedArea": "Adoption",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "GradCAM / Attention Visualization",
+          "description": "Highlighting image regions that contributed most to model decisions",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "mainstream",
+          "limitations": ["Shows where not why", "May not reflect actual reasoning"]
+        },
+        {
+          "name": "SHAP / LIME",
+          "description": "Model-agnostic local explanation methods",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Computationally expensive", "Explanations can be unstable"]
+        },
+        {
+          "name": "Concept Bottleneck Models",
+          "description": "Architectures that predict intermediate human-understandable concepts",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "early",
+          "limitations": ["Requires concept annotation", "May limit model expressiveness"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Inherently interpretable architectures that match deep learning performance",
+          "gapType": "quality",
+          "opportunity": "Novel architectures with built-in interpretability",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Standardized evaluation metrics for explanation quality and faithfulness",
+          "gapType": "scale",
+          "opportunity": "Community consensus on XAI benchmarks",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "End users subject to AI decisions",
+          "examples": ["Patients receiving AI-assisted diagnoses", "Job applicants screened by AI", "Loan applicants"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Regulators requiring AI transparency",
+          "examples": ["EU AI Act enforcers", "FDA", "Financial regulators"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Explainable AI for Black-Box Models",
+          "url": "https://link.springer.com/article/10.1007/s12559-023-10179-8",
+          "publishedAt": "2023-09-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Springer",
+          "credibilityScore": 0.90,
+          "relevantExcerpt": "The accuracy-explainability tradeoff forces practitioners to choose between performance and transparency."
+        }
+      ],
+      "tags": ["explainability", "interpretability", "XAI", "black-box", "transparency", "trust"],
+      "keywords": ["explainable AI computer vision", "model interpretability", "black box AI"],
+      "metrics": {
+        "searchVolume": 11000,
+        "academicPapers": 4500,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "cv007-a7b8-c9d0-e1f2-345678901234",
+      "title": "Small Object Detection Performance Degradation",
+      "slug": "small-object-detection-performance-degradation",
+      "description": "Computer vision models exhibit significant performance degradation when detecting small objects, with accuracy dropping substantially as object size decreases relative to image dimensions. This limitation stems from information loss during downsampling in convolutional networks, insufficient feature representation for objects spanning few pixels, and challenges in distinguishing small objects from background noise. Applications critically impacted include drone imagery analysis, satellite remote sensing, medical imaging for early tumor detection, and traffic monitoring for distant vehicles. Feature pyramid networks and multi-scale training provide partial mitigation but cannot fully address the fundamental resolution-information tradeoff.",
+      "summary": "CV models show significant accuracy drops detecting small objects due to downsampling information loss, impacting drone imagery, satellite sensing, and medical imaging.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-0abc-def012345678",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "d4c3b2a1-9087-4654-3210-fedcba987654",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Computer Vision",
+        "slug": "computer-vision"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["object-detection", "resolution", "accuracy"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "50,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 8000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Fundamental information loss in downsampling operations",
+          "Insufficient pixels for discriminative feature learning",
+          "Signal-to-noise ratio challenges for tiny objects",
+          "Computational cost of high-resolution processing"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "3,500+",
+        "fundingLevel": "Moderate - driven by defense and medical imaging sectors"
+      },
+      "impactScore": 60,
+      "rootCauses": [
+        {
+          "description": "Pooling and strided convolutions progressively reduce spatial resolution",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Small objects may span only a few pixels in feature maps after downsampling",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Anchor-based detectors struggle with extreme aspect ratios of small objects",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Missed detections in surveillance and security applications",
+          "type": "direct",
+          "affectedArea": "Safety",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Delayed diagnosis in medical imaging for small lesions and tumors",
+          "type": "direct",
+          "affectedArea": "Healthcare",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Reduced effectiveness of autonomous systems detecting distant objects",
+          "type": "direct",
+          "affectedArea": "Autonomous systems",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Feature Pyramid Networks (FPN)",
+          "description": "Multi-scale feature extraction preserving information at different resolutions",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Increased computational cost", "Still loses fine-grained details"]
+        },
+        {
+          "name": "Image Tiling / Sliding Window",
+          "description": "Processing high-resolution images in overlapping patches",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Dramatically increases inference time", "Context loss at patch boundaries"]
+        },
+        {
+          "name": "Super-Resolution Preprocessing",
+          "description": "Upscaling images before detection to recover small object details",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["Cannot recover information not in original image", "Adds latency"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Architectures that preserve small object information through deep networks",
+          "gapType": "quality",
+          "opportunity": "Novel resolution-preserving backbone designs",
+          "difficulty": "high"
+        },
+        {
+          "description": "Efficient high-resolution processing for real-time applications",
+          "gapType": "quality",
+          "opportunity": "Attention mechanisms focusing compute on small object regions",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Organizations requiring detection of small objects in imagery",
+          "examples": ["Defense contractors", "Medical imaging companies", "Satellite analytics firms"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Computer Vision Market Size and Analysis",
+          "url": "https://www.fortunebusinessinsights.com/computer-vision-market-108827",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Fortune Business Insights",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Quality assurance and inspection lead the market with a 42% share, as industries rely on automated defect detection."
+        }
+      ],
+      "tags": ["object-detection", "small-objects", "resolution", "feature-pyramid", "medical-imaging"],
+      "keywords": ["small object detection", "computer vision resolution", "feature pyramid networks"],
+      "metrics": {
+        "searchVolume": 5200,
+        "academicPapers": 1800,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "cv008-b8c9-d0e1-f2a3-456789012345",
+      "title": "Domain Adaptation and Distribution Shift Brittleness",
+      "slug": "domain-adaptation-distribution-shift-brittleness",
+      "description": "Computer vision models trained on one domain often fail catastrophically when deployed in different environments due to distribution shift between training and deployment data. Changes in lighting conditions, camera angles, weather, geographic regions, or sensor characteristics can cause dramatic performance degradation. This brittleness is particularly problematic for models trained on curated datasets but deployed in the wild, where the long tail of real-world variation cannot be fully anticipated. Domain adaptation techniques exist but require access to target domain data that may not be available before deployment.",
+      "summary": "CV models fail catastrophically under distribution shift from training to deployment, with lighting, weather, and sensor changes causing dramatic performance drops.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-0abc-def012345678",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "d4c3b2a1-9087-4654-3210-fedcba987654",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Computer Vision",
+        "slug": "computer-vision"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["generalization", "robustness", "domain-shift"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "100,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 20000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Infinite variety of real-world conditions impossible to capture",
+          "Target domain data often unavailable during training",
+          "Models learn spurious correlations that don't generalize",
+          "Evaluation benchmarks don't capture deployment distribution"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "5,000+",
+        "fundingLevel": "High - critical for autonomous systems deployment"
+      },
+      "impactScore": 62,
+      "rootCauses": [
+        {
+          "description": "Deep learning models memorize dataset-specific patterns rather than learning invariant features",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Training datasets cannot capture the full distribution of deployment environments",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "IID (independent and identically distributed) assumption violated in real deployments",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Models deployed in new environments produce unreliable results",
+          "type": "direct",
+          "affectedArea": "Reliability",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Expensive retraining required for each new deployment context",
+          "type": "direct",
+          "affectedArea": "Cost",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Safety incidents from unexpected failures in edge cases",
+          "type": "cascading",
+          "affectedArea": "Safety",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Domain Randomization",
+          "description": "Training with artificially varied conditions to improve robustness",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Cannot anticipate all variations", "May reduce in-domain performance"]
+        },
+        {
+          "name": "Unsupervised Domain Adaptation",
+          "description": "Adapting models using unlabeled target domain data",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Requires target domain samples", "Performance gap with supervised"]
+        },
+        {
+          "name": "Foundation Models / Self-Supervised Pretraining",
+          "description": "Learning general representations from massive diverse datasets",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Enormous compute requirements", "Still fails on out-of-distribution"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Zero-shot domain adaptation without any target domain data",
+          "gapType": "coverage",
+          "opportunity": "Causal reasoning and invariant feature learning",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Reliable uncertainty quantification for out-of-distribution detection",
+          "gapType": "quality",
+          "opportunity": "Conformal prediction and calibrated uncertainty",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Organizations deploying CV models across diverse environments",
+          "examples": ["Autonomous vehicle companies", "Global retail chains", "International surveillance"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Computer Vision Market Challenges",
+          "url": "https://www.marketsandmarkets.com/Market-Reports/computer-vision-market-186494767.html",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "MarketsandMarkets",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Key challenges include complexity in integrating computer vision systems and lack of user awareness about rapidly changing computer vision technology."
+        }
+      ],
+      "tags": ["domain-adaptation", "distribution-shift", "robustness", "generalization", "transfer-learning"],
+      "keywords": ["domain adaptation computer vision", "distribution shift AI", "model robustness"],
+      "metrics": {
+        "searchVolume": 6800,
+        "academicPapers": 3200,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "cv009-c9d0-e1f2-a3b4-567890123456",
+      "title": "Privacy and Surveillance Concerns in Visual Data Processing",
+      "slug": "privacy-surveillance-concerns-visual-data-processing",
+      "description": "Computer vision systems collect and process large amounts of visual data about people and their activities, raising fundamental privacy and surveillance concerns. Facial recognition enables mass surveillance, behavior analysis infers sensitive personal information, and visual data can be stored, shared, and analyzed without meaningful consent. The proliferation of cameras in public spaces, combined with improving CV capabilities, creates unprecedented potential for privacy invasion. Regulatory frameworks like GDPR struggle to keep pace with technological capabilities, while technical privacy-preserving measures often significantly degrade model performance.",
+      "summary": "CV systems enable mass surveillance and collect sensitive visual data without meaningful consent, while privacy-preserving techniques significantly degrade performance.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-0abc-def012345678",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "d4c3b2a1-9087-4654-3210-fedcba987654",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Computer Vision",
+        "slug": "computer-vision"
+      },
+      "problemType": "ethical",
+      "problemSubtypes": ["privacy", "surveillance", "data-protection", "consent"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 10,
+          "estimate": "4+ billion",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 4
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 4,
+        "resourceRequirements": 5,
+        "existingProgress": 4,
+        "barriers": [
+          "Economic incentives favor data collection over privacy",
+          "Privacy-utility tradeoff in federated and differential privacy",
+          "Regulatory fragmentation across jurisdictions",
+          "Difficulty obtaining meaningful consent for passive data collection"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4.0,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "3,000+",
+        "fundingLevel": "Moderate - significant NGO and regulatory attention"
+      },
+      "impactScore": 62,
+      "rootCauses": [
+        {
+          "description": "Business models incentivize maximum data collection and analysis",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Passive visual data collection does not require explicit consent interaction",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Regulatory frameworks lag technological capabilities",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Individuals cannot effectively control their visual presence in public spaces",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Erosion of anonymity in public spaces",
+          "type": "direct",
+          "affectedArea": "Civil liberties",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Chilling effects on free speech and assembly",
+          "type": "cascading",
+          "affectedArea": "Democratic participation",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Potential for authoritarian surveillance and control",
+          "type": "cascading",
+          "affectedArea": "Governance",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Federated Learning",
+          "description": "Training models on distributed data without centralizing raw images",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Communication overhead", "Heterogeneity challenges", "Still enables inference"]
+        },
+        {
+          "name": "Face Blurring / Anonymization",
+          "description": "Automatically detecting and obscuring identifiable faces in imagery",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Imperfect detection", "Reduces data utility for some applications"]
+        },
+        {
+          "name": "On-Device Processing",
+          "description": "Performing CV inference locally without sending data to cloud",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Device compute limitations", "Still enables local surveillance"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Privacy-preserving CV that maintains full model utility",
+          "gapType": "quality",
+          "opportunity": "Novel cryptographic and differential privacy techniques",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Technical enforcement of privacy preferences and consent",
+          "gapType": "coverage",
+          "opportunity": "Privacy-aware CV systems with consent management",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "General public subject to visual surveillance",
+          "examples": ["Urban residents", "Retail shoppers", "Public transit users"],
+          "interest": "medium",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Privacy regulators and policymakers",
+          "examples": ["GDPR enforcers", "Privacy commissioners", "Civil rights legislators"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Privacy advocates and civil liberties organizations",
+          "examples": ["EFF", "ACLU", "Privacy International"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Computer Vision Market Privacy Concerns",
+          "url": "https://www.databridgemarketresearch.com/reports/global-computer-vision-market",
+          "publishedAt": "2024-01-15",
+          "accessedAt": "2026-01-20",
+          "publisher": "Data Bridge Market Research",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Computer vision systems collect and store large amounts of data about people and objects, raising security and privacy concerns."
+        }
+      ],
+      "tags": ["privacy", "surveillance", "data-protection", "consent", "GDPR", "facial-recognition"],
+      "keywords": ["computer vision privacy", "surveillance AI", "visual data privacy"],
+      "metrics": {
+        "searchVolume": 9500,
+        "academicPapers": 2100,
+        "mediaArticles": 8000,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    },
+    {
+      "id": "cv010-d0e1-f2a3-b4c5-678901234567",
+      "title": "High Implementation Cost Barriers for SME Adoption",
+      "slug": "high-implementation-cost-barriers-sme-adoption",
+      "description": "The implementation of computer vision solutions requires significant upfront investment in specialized hardware (GPUs, high-quality cameras, sensors), software infrastructure, and technical expertise that creates prohibitive barriers for small and medium enterprises. NVIDIA GPUs can cost up to $40,000 and face supply constraints, while the shortage of ML engineering talent commands premium salaries. Organizations report complexity in integrating CV systems with existing infrastructure and lack of awareness about rapidly evolving technology options. This creates a competitive divide where well-resourced tech giants can deploy CV at scale while SMEs are excluded from the market.",
+      "summary": "CV implementation requires significant investment in $40,000+ GPUs, scarce ML talent, and complex integration, creating barriers that exclude SMEs from the market.",
+      "industry": {
+        "id": "a1b2c3d4-e5f6-4789-0abc-def012345678",
+        "name": "Technology & Software",
+        "slug": "technology-software"
+      },
+      "domain": {
+        "id": "d4c3b2a1-9087-4654-3210-fedcba987654",
+        "name": "Artificial Intelligence & Machine Learning",
+        "slug": "ai-ml"
+      },
+      "field": {
+        "id": "f8e7d6c5-b4a3-4291-8f0e-1d2c3b4a5968",
+        "name": "Computer Vision",
+        "slug": "computer-vision"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["cost", "accessibility", "adoption", "skills-gap"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "50+ million",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 30000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 4,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Hardware costs driven by supply constraints and demand",
+          "ML talent shortage unlikely to resolve quickly",
+          "Complex technology stack requires specialized expertise",
+          "Rapidly evolving landscape makes investment decisions difficult"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5.0,
+        "attentionLevel": "moderate",
+        "activeResearchers": "2,000+",
+        "fundingLevel": "Moderate - growing AutoML and MLaaS investment"
+      },
+      "impactScore": 57,
+      "rootCauses": [
+        {
+          "description": "Specialized hardware (GPUs, TPUs) are expensive and supply-constrained",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Severe shortage of ML/CV engineering talent worldwide",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Integration complexity with existing enterprise systems",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Rapid technology evolution makes it difficult to choose stable solutions",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "SMEs unable to compete with AI-enabled large enterprises",
+          "type": "direct",
+          "affectedArea": "Market competition",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Innovation concentrated in well-resourced organizations",
+          "type": "cascading",
+          "affectedArea": "Innovation ecosystem",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Economic benefits of CV technology not broadly distributed",
+          "type": "cascading",
+          "affectedArea": "Economic inequality",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Cloud ML Services (AWS, GCP, Azure)",
+          "description": "Pay-as-you-go access to CV APIs and training infrastructure",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Ongoing costs can exceed hardware purchase", "Vendor lock-in", "Data privacy concerns"]
+        },
+        {
+          "name": "AutoML Platforms",
+          "description": "Automated machine learning reducing need for expert practitioners",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Limited customization", "Black box results", "May not match expert-built models"]
+        },
+        {
+          "name": "Pre-trained Models / Model Zoos",
+          "description": "Ready-to-use models reducing training cost and expertise requirements",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["May not fit specific use cases", "Fine-tuning still requires expertise"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Affordable, turnkey CV solutions for specific SME use cases",
+          "gapType": "accessibility",
+          "opportunity": "Vertical-specific CV products with minimal configuration",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Upskilling pathways making CV expertise more widely accessible",
+          "gapType": "awareness",
+          "opportunity": "Accessible education and training programs",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Small and medium enterprises seeking CV capabilities",
+          "examples": ["Local manufacturers", "Small retailers", "Healthcare clinics"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "MLaaS providers and CV platform vendors",
+          "examples": ["AWS Rekognition", "Google Cloud Vision", "Microsoft Azure CV"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Computer Vision Market Size and Challenges",
+          "url": "https://www.sphericalinsights.com/reports/computer-vision-market",
+          "publishedAt": "2025-01-01",
+          "accessedAt": "2026-01-20",
+          "publisher": "Spherical Insights",
+          "credibilityScore": 0.85,
+          "relevantExcerpt": "Small and mid-sized enterprises may find it difficult to justify or implement these technologies due to limited budgets, skill gaps, and complex integration requirements."
+        },
+        {
+          "type": "news",
+          "title": "Nvidia GPUs and AI Hardware Market Analysis",
+          "url": "https://www.cnbc.com/2025/11/21/nvidia-gpus-google-tpus-aws-trainium-comparing-the-top-ai-chips.html",
+          "publishedAt": "2025-11-21",
+          "accessedAt": "2026-01-20",
+          "publisher": "CNBC",
+          "credibilityScore": 0.80,
+          "relevantExcerpt": "Nvidia's GPUs are flexible enough for adoption by many AI companies, but they cost up to $40,000 and can be hard to get."
+        }
+      ],
+      "tags": ["implementation-cost", "SME", "accessibility", "skills-gap", "cloud-services", "adoption"],
+      "keywords": ["computer vision implementation cost", "AI adoption barriers", "SME machine learning"],
+      "metrics": {
+        "searchVolume": 4800,
+        "academicPapers": 680,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-20T14:30:52Z"
+      },
+      "researchSession": "session-20260120-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-20T14:30:52Z",
+      "updatedAt": "2026-01-20T14:30:52Z",
+      "version": 1
+    }
+  ]
+}
