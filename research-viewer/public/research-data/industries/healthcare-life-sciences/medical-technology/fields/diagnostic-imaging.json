@@ -1,0 +1,2106 @@
+{
+  "field": {
+    "id": "f8a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+    "name": "Diagnostic Imaging",
+    "slug": "diagnostic-imaging",
+    "description": "Medical imaging technologies and systems used for diagnosis, including radiology, MRI, CT scanning, ultrasound, nuclear medicine, and PACS systems."
+  },
+  "domain": {
+    "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+    "name": "Medical Technology",
+    "slug": "medical-technology"
+  },
+  "industry": {
+    "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+    "name": "Healthcare & Life Sciences",
+    "slug": "healthcare-life-sciences"
+  },
+  "problems": [
+    {
+      "id": "a1b2c3d4-1111-4a5b-8c9d-e1f2a3b4c5d6",
+      "title": "Critical Radiology Workforce Shortage Threatening Diagnostic Imaging Capacity",
+      "slug": "radiology-workforce-shortage-crisis",
+      "description": "The healthcare industry faces an unprecedented shortage of radiologists and radiology technologists that threatens the capacity to deliver timely diagnostic imaging services. By 2033, the United States is projected to face a shortage of 17,000 to 42,000 radiologists, pathologists, and psychiatrists according to the Association of American Medical Colleges. Imaging study volumes continue to grow by 3-5% annually due to aging populations, chronic disease prevalence, and expanded access to preventive care, while the number of radiology residency positions increases by only 1-2% annually. The Balanced Budget Act of 1997 capped federal funding for physician residency training programs, representing only a 1% increase in training capacity over 27 years while the U.S. population grew by 23%. Survey data shows 81% of medical facilities experience staffing shortages, with radiography, CT, and MRI being the most affected modalities. Nearly 23% of organizations have reduced imaging services due to staffing shortages, with over 50% relying on overtime to manage workloads. Patients in affected regions face weeks-long waits for test results, creating patient safety concerns as delayed reports mean delayed diagnoses and treatments.",
+      "summary": "Severe shortage of radiologists and radiology technologists causing diagnostic delays, with projections of 17,000-42,000 physician shortfall by 2033 while imaging demand grows 3-5% annually.",
+      "industry": {
+        "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Medical Technology",
+        "slug": "medical-technology"
+      },
+      "field": {
+        "id": "f8a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+        "name": "Diagnostic Imaging",
+        "slug": "diagnostic-imaging"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["workforce", "training", "capacity"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "critical",
+      "severity": {
+        "overall": 8.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "330,000,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 50000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 9
+      },
+      "tractability": {
+        "overall": 4.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Federal residency funding caps from 1997 Balanced Budget Act",
+          "Limited radiology training program capacity",
+          "Long training pipeline (4+ years)",
+          "Competition from other medical specialties",
+          "Rural area recruitment challenges"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "moderate",
+        "activeResearchers": "5,000+",
+        "fundingLevel": "Moderate - significant policy attention but limited funding action"
+      },
+      "impactScore": 72,
+      "rootCauses": [
+        {
+          "description": "Balanced Budget Act of 1997 capped federal funding for physician residency training programs",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Aging population driving exponential increase in imaging demand",
+          "category": "environmental",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Limited number of MRI and CT technologist training programs",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Burnout and early retirement among existing radiologists",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Increasing complexity and volume of imaging studies per patient",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Weeks-long delays for imaging test results and diagnoses",
+          "type": "direct",
+          "affectedArea": "Patient care",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Reduced imaging services at 23% of healthcare facilities",
+          "type": "direct",
+          "affectedArea": "Healthcare access",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Increased radiologist burnout from unsustainable workloads",
+          "type": "cascading",
+          "affectedArea": "Workforce retention",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Delayed cancer and disease detection leading to worse patient outcomes",
+          "type": "cascading",
+          "affectedArea": "Patient outcomes",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Teleradiology Services",
+          "description": "Remote interpretation of radiological images allowing radiologists to serve multiple facilities",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Does not address technologist shortage", "Licensing barriers across state lines", "Communication challenges with referring physicians"]
+        },
+        {
+          "name": "AI-Assisted Radiology Tools",
+          "description": "AI systems that assist with image analysis, lesion detection, and workflow optimization",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["May increase workload by flagging additional findings", "Regulatory approval challenges", "Integration complexity with existing systems"]
+        },
+        {
+          "name": "Overtime and Locum Coverage",
+          "description": "Using overtime shifts and temporary radiologists to cover staffing gaps",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "mainstream",
+          "limitations": ["Unsustainable long-term", "Contributes to burnout", "High cost"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No pathway to rapidly expand residency training capacity due to federal funding caps",
+          "gapType": "coverage",
+          "opportunity": "Legislative reform to lift or modify residency funding caps",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Insufficient radiologic technologist training programs",
+          "gapType": "coverage",
+          "opportunity": "Accelerated training programs and community college partnerships",
+          "difficulty": "medium"
+        },
+        {
+          "description": "AI tools that genuinely reduce radiologist workload rather than adding to it",
+          "gapType": "quality",
+          "opportunity": "AI systems focused on workflow automation and report generation",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients requiring diagnostic imaging services",
+          "examples": ["Cancer patients", "Emergency patients", "Chronic disease patients"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "affected",
+          "description": "Radiologists and radiology technologists facing unsustainable workloads",
+          "examples": ["Hospital radiologists", "Private practice radiologists", "CT/MRI technologists"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Healthcare administrators and hospital executives",
+          "examples": ["Hospital CEOs", "Radiology department chairs", "CMOs"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Policy makers controlling residency funding",
+          "examples": ["CMS", "Congress", "State medical boards"],
+          "interest": "medium",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Radiology Workforce Shortage and Growing Demand",
+          "url": "https://www.acr.org/Clinical-Resources/Publications-and-Research/ACR-Bulletin/Radiology-Workforce-Shortage-and-Growing-Demand-Something-Has-to-Give",
+          "publisher": "American College of Radiology",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.95
+        },
+        {
+          "type": "industry-report",
+          "title": "Current Perspectives on Radiology Workforce Issues and Potential Solutions",
+          "url": "https://www.diagnosticimaging.com/view/current-perspectives-radiology-workforce-issues-potential-solutions",
+          "publisher": "Diagnostic Imaging",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.85
+        },
+        {
+          "type": "academic",
+          "title": "AI solutions to the radiology workforce shortage",
+          "url": "https://www.nature.com/articles/s44401-025-00023-6",
+          "publisher": "npj Health Systems",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.9
+        },
+        {
+          "type": "industry-report",
+          "title": "Workforce Crisis in Radiology in the UK and Strategies to Deal With It",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10441819/",
+          "publisher": "PMC/Cureus",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["workforce-shortage", "radiology", "radiologist", "technologist", "training", "residency", "teleradiology"],
+      "keywords": ["radiology workforce shortage", "radiologist shortage", "imaging capacity", "residency training caps"],
+      "metrics": {
+        "searchVolume": 8500,
+        "academicPapers": 450,
+        "mediaArticles": 890,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-21T14:30:00Z"
+      },
+      "researchSession": "session-20260121-143052",
+      "confidence": 0.92,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-21T14:35:00Z",
+      "updatedAt": "2026-01-21T14:35:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-2222-4a5b-8c9d-e1f2a3b4c5d6",
+      "title": "Radiopharmaceutical Supply Chain Fragility Threatening Nuclear Medicine Access",
+      "slug": "radiopharmaceutical-supply-chain-fragility",
+      "description": "The nuclear medicine field faces critical supply chain vulnerabilities that threaten patient access to essential diagnostic and therapeutic procedures. Technetium-99m (Tc-99m) alone supports approximately 80% of all nuclear medicine procedures, yet there are only five nuclear reactors in the world capable of producing the parent isotope Molybdenum-99. When the High Flux Reactor in Petten went offline, widespread shortages quickly followed, forcing facilities to delay or cancel patient procedures. The current cyclotron network faces structural limitations for PET imaging isotopes like Fluorine-18, creating growing constraints on reliable FDG supply. Short half-lives of key isotopes (Tc-99m has a 6-hour half-life) mean stockpiling is impossible and supply disruptions have immediate patient impact. Demand is outpacing manufacturing capacity as radiotheranostic pipelines grow, with novel isotopes like Actinium-225 in chronic shortage as multiple pharmaceutical companies compete for limited supply. Additional constraints include limited hot cell capacity, shortage of trained radiochemistry personnel, and complex dual regulatory frameworks requiring compliance with both pharmaceutical (FDA/EMA) and nuclear regulators (NRC). Global access disparities are severe, with 100 times more nuclear medicine physicians in high-income countries than middle-income countries.",
+      "summary": "Critical vulnerabilities in radiopharmaceutical supply chains with only 5 global reactors producing key isotopes, short half-lives preventing stockpiling, and demand outpacing manufacturing capacity.",
+      "industry": {
+        "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Medical Technology",
+        "slug": "medical-technology"
+      },
+      "field": {
+        "id": "f8a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+        "name": "Diagnostic Imaging",
+        "slug": "diagnostic-imaging"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["supply-chain", "infrastructure", "manufacturing"],
+      "scope": "global",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 8.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "50,000,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 4.0,
+        "technicalFeasibility": 5,
+        "resourceRequirements": 3,
+        "existingProgress": 4,
+        "barriers": [
+          "Massive capital investment required for new reactor/cyclotron facilities",
+          "Long construction timelines for nuclear infrastructure",
+          "Complex dual regulatory requirements",
+          "Physics constraints of isotope half-lives",
+          "Shortage of trained radiochemistry personnel"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "2,000+",
+        "fundingLevel": "Moderate - significant industry investment but infrastructure gaps persist"
+      },
+      "impactScore": 68,
+      "rootCauses": [
+        {
+          "description": "Extreme concentration of Mo-99 production in only 5 aging nuclear reactors globally",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Short half-lives of key isotopes making stockpiling impossible",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Rapid growth in theranostics creating demand that outpaces manufacturing capacity",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Complex dual regulatory frameworks slowing capacity expansion",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Limited hot cell capacity and specialized manufacturing equipment",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Procedure cancellations and delays when reactors go offline for maintenance",
+          "type": "direct",
+          "affectedArea": "Patient care",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Delayed cancer diagnoses when PET scans unavailable",
+          "type": "direct",
+          "affectedArea": "Patient outcomes",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Limited access to novel radiotheranostic treatments in clinical development",
+          "type": "cascading",
+          "affectedArea": "Medical innovation",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Severe global health inequities with 100x disparity between high and middle-income countries",
+          "type": "cascading",
+          "affectedArea": "Global health equity",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Supplier Diversification Programs",
+          "description": "Healthcare organizations establishing relationships with multiple isotope suppliers",
+          "type": "methodology",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Limited supplier options available", "Higher costs", "Coordination complexity"]
+        },
+        {
+          "name": "Cyclotron Network Expansion",
+          "description": "Building new cyclotron facilities to increase regional isotope production capacity",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["High capital costs", "Long construction timelines", "Regulatory approval delays"]
+        },
+        {
+          "name": "Alternative Isotope Development",
+          "description": "Research into alternative isotopes that can substitute for scarce ones",
+          "type": "methodology",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["Requires clinical validation", "May not match imaging properties", "Regulatory pathway unclear"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No redundancy in global Mo-99 production infrastructure",
+          "gapType": "coverage",
+          "opportunity": "Investment in new reactor facilities or accelerator-based production",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "Insufficient trained radiochemistry and nuclear medicine personnel globally",
+          "gapType": "coverage",
+          "opportunity": "Expanded training programs and international partnerships",
+          "difficulty": "high"
+        },
+        {
+          "description": "Limited manufacturing capacity for novel theranostic isotopes like Ac-225",
+          "gapType": "scale",
+          "opportunity": "Purpose-built production facilities for emerging isotopes",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients requiring nuclear medicine procedures",
+          "examples": ["Cancer patients needing PET scans", "Cardiac patients", "Thyroid disease patients"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Radiopharmaceutical manufacturers and distributors",
+          "examples": ["Cardinal Health", "Lantheus", "Curium"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Nuclear reactor operators and regulators",
+          "examples": ["NRG (Netherlands)", "ANSTO (Australia)", "NRC", "IAEA"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Supply Chain Under Radioactive Pressure: The Current State of Radiopharmaceuticals",
+          "url": "https://www.thebrackengroup.com/blog/supply-chain-under-radioactive-pressure-the-current-state-of-radiopharmaceuticals",
+          "publisher": "The Bracken Group",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.85
+        },
+        {
+          "type": "industry-report",
+          "title": "Navigating the Evolving Global Nuclear Medicine Supply Chain in 2025 and Beyond",
+          "url": "https://alirahealth.com/education-hub/navigating-the-evolving-global-nuclear-medicine-supply-chain-in-2025-and-beyond/",
+          "publisher": "Alira Health",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.85
+        },
+        {
+          "type": "academic",
+          "title": "Global Issues of Radiopharmaceutical Access and Availability",
+          "url": "https://jnm.snmjournals.org/content/62/3/422",
+          "publisher": "Journal of Nuclear Medicine",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.95
+        }
+      ],
+      "tags": ["nuclear-medicine", "radiopharmaceuticals", "supply-chain", "isotopes", "PET", "Tc-99m", "theranostics"],
+      "keywords": ["radiopharmaceutical shortage", "nuclear medicine supply chain", "isotope production", "Mo-99 shortage"],
+      "metrics": {
+        "searchVolume": 3200,
+        "academicPapers": 280,
+        "mediaArticles": 320,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-21T14:30:00Z"
+      },
+      "researchSession": "session-20260121-143052",
+      "confidence": 0.88,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-21T14:35:00Z",
+      "updatedAt": "2026-01-21T14:35:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-3333-4a5b-8c9d-e1f2a3b4c5d6",
+      "title": "Incidental Findings and Overdiagnosis Cascade in Medical Imaging",
+      "slug": "incidental-findings-overdiagnosis-cascade",
+      "description": "The increasing resolution and volume of medical imaging has created a paradox where improved detection capability leads to widespread overdiagnosis and harmful cascades of unnecessary follow-up care. Approximately 15-30% of all diagnostic imaging and 20-40% of CT examinations contain at least one incidental finding, with rates reported as high as 94% in some studies. Pulmonary nodules are particularly common, with most being benign but requiring follow-up imaging or procedures. This creates the 'cascade effect' where initial findings trigger additional tests, biopsies, and treatments for conditions that would never have caused symptoms or death. Overdiagnosis is an unintended side effect of the desire to detect disease early - clinicians cannot determine at the time of diagnosis which patients have aggressive disease versus indolent disease that would never progress. The impact ranges from patient anxiety and inconvenience to real harm from invasive diagnostic procedures. Studies show that more imaging leads to more detection, more surgery, and more complications, while mortality rates for conditions like renal cancer remain flat despite increased intervention. False-positive results are particularly common when sensitive tests like CT or MRI are used in low-risk populations.",
+      "summary": "15-40% of imaging studies contain incidental findings triggering unnecessary follow-up cascades, with overdiagnosis causing patient harm through anxiety, invasive procedures, and overtreatment of indolent disease.",
+      "industry": {
+        "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Medical Technology",
+        "slug": "medical-technology"
+      },
+      "field": {
+        "id": "f8a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+        "name": "Diagnostic Imaging",
+        "slug": "diagnostic-imaging"
+      },
+      "problemType": "knowledge",
+      "problemSubtypes": ["overdiagnosis", "clinical-decision-making", "patient-safety"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 9,
+          "estimate": "100,000,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 40000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Inability to distinguish aggressive from indolent disease at diagnosis",
+          "Medicolegal pressure to investigate all findings",
+          "Patient expectations and anxiety driving follow-up demand",
+          "Fee-for-service incentives rewarding more procedures",
+          "Lack of validated criteria for when to stop investigating"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "3,000+",
+        "fundingLevel": "Moderate - significant academic attention but limited implementation"
+      },
+      "impactScore": 66,
+      "rootCauses": [
+        {
+          "description": "Imaging technology resolution has outpaced understanding of clinical significance of findings",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Medicolegal environment incentivizes investigating all abnormalities",
+          "category": "regulatory",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Fee-for-service payment models reward additional procedures",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of validated biomarkers to distinguish aggressive from indolent disease",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Patient and physician preference for action over watchful waiting",
+          "category": "cultural",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Patient anxiety from unexpected findings requiring follow-up",
+          "type": "direct",
+          "affectedArea": "Patient wellbeing",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Complications from unnecessary biopsies and invasive procedures",
+          "type": "direct",
+          "affectedArea": "Patient safety",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Billions in healthcare spending on low-value follow-up care",
+          "type": "direct",
+          "affectedArea": "Healthcare costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Treatment side effects for cancers that would never have progressed",
+          "type": "cascading",
+          "affectedArea": "Patient outcomes",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Incidental Finding Management Guidelines",
+          "description": "Society guidelines (ACR, Fleischner) providing criteria for when to pursue or ignore findings",
+          "type": "standard",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Inconsistent adherence", "May not cover all finding types", "Difficult to implement in EHR workflows"]
+        },
+        {
+          "name": "Appropriate Use Criteria",
+          "description": "Evidence-based criteria to reduce unnecessary imaging in the first place",
+          "type": "standard",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Voluntary compliance", "Burden on ordering physicians", "Limited enforcement"]
+        },
+        {
+          "name": "Shared Decision-Making Tools",
+          "description": "Patient education materials helping patients understand risks and benefits of follow-up",
+          "type": "tool",
+          "effectiveness": 4,
+          "adoption": "early",
+          "limitations": ["Time-consuming", "Variable patient health literacy", "Physician training needed"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "No reliable biomarkers to distinguish aggressive from indolent disease at diagnosis",
+          "gapType": "quality",
+          "opportunity": "AI/ML models combining imaging with genomic and clinical data",
+          "difficulty": "very-high"
+        },
+        {
+          "description": "EHR integration of incidental finding tracking and guideline-based recommendations",
+          "gapType": "integration",
+          "opportunity": "Automated decision support systems for incidental finding management",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Payment models that reward appropriate restraint rather than more procedures",
+          "gapType": "coverage",
+          "opportunity": "Value-based care models with quality metrics for low-value care reduction",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients experiencing anxiety and potential harm from overdiagnosis",
+          "examples": ["Patients with incidental lung nodules", "Screening participants", "Patients with incidentalomas"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Radiologists interpreting and reporting incidental findings",
+          "examples": ["Diagnostic radiologists", "Interventional radiologists"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Professional societies developing management guidelines",
+          "examples": ["ACR", "Fleischner Society", "ACS"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Incidental Findings and Low-Value Care",
+          "url": "https://www.ajronline.org/doi/10.2214/AJR.22.28926",
+          "publisher": "American Journal of Roentgenology",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.95
+        },
+        {
+          "type": "academic",
+          "title": "Incidental findings in medical imaging",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9975528/",
+          "publisher": "PMC",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.9
+        },
+        {
+          "type": "academic",
+          "title": "Imaging-Based Screening: Understanding the Controversies",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4220242/",
+          "publisher": "PMC",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.9
+        }
+      ],
+      "tags": ["incidental-findings", "overdiagnosis", "cascade-effect", "low-value-care", "patient-safety", "screening"],
+      "keywords": ["incidental findings radiology", "overdiagnosis medical imaging", "cascade effect healthcare", "pulmonary nodules"],
+      "metrics": {
+        "searchVolume": 5400,
+        "academicPapers": 620,
+        "mediaArticles": 280,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-21T14:30:00Z"
+      },
+      "researchSession": "session-20260121-143052",
+      "confidence": 0.90,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-21T14:35:00Z",
+      "updatedAt": "2026-01-21T14:35:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-4444-4a5b-8c9d-e1f2a3b4c5d6",
+      "title": "Medical Imaging Equipment Scarcity and Geographic Access Disparities",
+      "slug": "imaging-equipment-scarcity-geographic-disparities",
+      "description": "Significant disparities exist in access to diagnostic imaging equipment and services, both globally and within countries. The UK has one of the lowest numbers of CT scanners among developed nations, ranking second lowest among 31 countries in scanners per million population. Reports recommend CT scanning capacity should increase by 100% over five years to meet demand, which would dramatically increase imaging workload. Rural and underserved areas face particular challenges, with patients often traveling long distances for imaging services that urban residents access easily. These geographic disparities lead to delayed diagnoses, particularly for time-sensitive conditions like stroke and cancer. The high capital cost of MRI and CT equipment (often $1-3 million per unit) creates barriers for smaller healthcare facilities. Maintenance costs, facility requirements (shielding, power), and staffing needs further concentrate advanced imaging in larger urban centers. Even within countries with adequate national equipment counts, distribution inequities mean some regions have severe shortages while others have overcapacity.",
+      "summary": "Severe geographic disparities in imaging equipment access, with some countries having among the lowest CT/MRI scanners per capita and rural areas facing significant barriers to advanced diagnostic services.",
+      "industry": {
+        "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Medical Technology",
+        "slug": "medical-technology"
+      },
+      "field": {
+        "id": "f8a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+        "name": "Diagnostic Imaging",
+        "slug": "diagnostic-imaging"
+      },
+      "problemType": "resource",
+      "problemSubtypes": ["infrastructure", "access", "equity"],
+      "scope": "global",
+      "maturity": "mature",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "2,000,000,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 30000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 8,
+        "productivity": 6
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "High capital costs of advanced imaging equipment",
+          "Facility infrastructure requirements",
+          "Ongoing staffing and maintenance costs",
+          "Healthcare funding constraints",
+          "Urban-centric healthcare planning"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "2,500+",
+        "fundingLevel": "Moderate - varies significantly by country"
+      },
+      "impactScore": 65,
+      "rootCauses": [
+        {
+          "description": "High capital and operational costs of advanced imaging equipment",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Healthcare funding and planning concentrated in urban areas",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Workforce shortages in rural areas making equipment utilization difficult",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Infrastructure requirements (power, shielding) challenging in remote locations",
+          "category": "technical",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Delayed diagnoses for patients in underserved areas",
+          "type": "direct",
+          "affectedArea": "Patient outcomes",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Patients traveling long distances for imaging, creating burden and delays",
+          "type": "direct",
+          "affectedArea": "Healthcare access",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Health outcome disparities between urban and rural populations",
+          "type": "cascading",
+          "affectedArea": "Health equity",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Emergency conditions like stroke undertreated due to lack of imaging",
+          "type": "direct",
+          "affectedArea": "Emergency care",
+          "timeframe": "immediate"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Mobile Imaging Units",
+          "description": "Truck-mounted CT and MRI scanners that travel to underserved areas",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Limited availability", "Scheduling complexity", "Not suitable for emergencies"]
+        },
+        {
+          "name": "Teleradiology Networks",
+          "description": "Remote interpretation allowing imaging at facilities without on-site radiologists",
+          "type": "service",
+          "effectiveness": 7,
+          "adoption": "mainstream",
+          "limitations": ["Still requires equipment and technologists on-site", "Communication challenges"]
+        },
+        {
+          "name": "Government Equipment Grants",
+          "description": "Public funding programs to equip underserved healthcare facilities",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "growing",
+          "limitations": ["Limited funding availability", "Ongoing operational costs not covered", "Political variability"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Affordable, portable advanced imaging suitable for resource-limited settings",
+          "gapType": "cost",
+          "opportunity": "Lower-cost CT and MRI technology development",
+          "difficulty": "high"
+        },
+        {
+          "description": "Sustainable operational models for imaging in low-volume rural settings",
+          "gapType": "coverage",
+          "opportunity": "Shared services models and hub-and-spoke networks",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients in rural and underserved areas",
+          "examples": ["Rural residents", "Low-income communities", "Indigenous populations"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Healthcare planners and government health agencies",
+          "examples": ["NHS England", "CMS", "State health departments"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "contributor",
+          "description": "Medical imaging equipment manufacturers",
+          "examples": ["Siemens Healthineers", "GE Healthcare", "Philips"],
+          "interest": "medium",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Workforce Challenges in Radiology",
+          "url": "https://www.siemens-healthineers.com/en-us/radiologys-workforce-crisis",
+          "publisher": "Siemens Healthineers",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.85
+        },
+        {
+          "type": "academic",
+          "title": "Workforce Crisis in Radiology in the UK",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10441819/",
+          "publisher": "PMC/Cureus",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["equipment-access", "geographic-disparities", "rural-healthcare", "CT-scanners", "MRI", "health-equity"],
+      "keywords": ["medical imaging access", "CT scanner shortage", "rural radiology", "imaging equipment disparities"],
+      "metrics": {
+        "searchVolume": 2800,
+        "academicPapers": 340,
+        "mediaArticles": 220,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-21T14:30:00Z"
+      },
+      "researchSession": "session-20260121-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-21T14:35:00Z",
+      "updatedAt": "2026-01-21T14:35:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-5555-4a5b-8c9d-e1f2a3b4c5d6",
+      "title": "AI Integration Challenges and Workflow Disruption in Radiology",
+      "slug": "ai-integration-challenges-radiology-workflow",
+      "description": "While artificial intelligence offers promising solutions to radiology challenges, its integration into clinical workflows faces significant barriers that limit adoption and effectiveness. AI tools designed to reduce radiologist workload may paradoxically increase it by identifying additional findings that require review and documentation. Integration with existing PACS, RIS, and EHR systems is complex, with many AI products operating as standalone solutions that disrupt rather than enhance workflow. Regulatory approval pathways remain challenging, with the FDA requiring extensive validation that may not translate to real-world performance across diverse patient populations and equipment. Data quality issues including inconsistent labeling, selection bias in training datasets, and lack of diversity in training populations limit AI model generalizability. Radiologists express concerns about liability when AI recommendations conflict with their clinical judgment, and reimbursement pathways for AI-assisted interpretation remain unclear. Trust and explainability remain barriers, as many AI systems operate as 'black boxes' that cannot explain their reasoning. Studies show AI performance often degrades when deployed outside the environments where it was trained, raising concerns about reliability.",
+      "summary": "AI integration in radiology faces barriers including workflow disruption, system integration complexity, regulatory challenges, data quality issues, and the paradox that AI may increase rather than reduce workload.",
+      "industry": {
+        "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Medical Technology",
+        "slug": "medical-technology"
+      },
+      "field": {
+        "id": "f8a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+        "name": "Diagnostic Imaging",
+        "slug": "diagnostic-imaging"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["ai-integration", "workflow", "interoperability"],
+      "scope": "industry",
+      "maturity": "emerging",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 7,
+          "estimate": "50,000+",
+          "unit": "organizations"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 10000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 5,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 6.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 6,
+        "barriers": [
+          "Complex integration requirements with legacy systems",
+          "Regulatory approval timeline and requirements",
+          "Unclear reimbursement pathways",
+          "Lack of diverse training datasets",
+          "Trust and explainability concerns"
+        ]
+      },
+      "neglectedness": {
+        "overall": 3,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "15,000+",
+        "fundingLevel": "High - significant venture and corporate investment"
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "AI development occurring separately from clinical workflow design",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Legacy healthcare IT infrastructure not designed for AI integration",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Training data quality and diversity limitations",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Regulatory frameworks still adapting to AI-based medical devices",
+          "category": "regulatory",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Low adoption rates for AI tools despite significant investment",
+          "type": "direct",
+          "affectedArea": "Technology adoption",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Workflow disruption when AI tools don't integrate smoothly",
+          "type": "direct",
+          "affectedArea": "Clinical operations",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Delayed realization of AI benefits for radiology efficiency",
+          "type": "cascading",
+          "affectedArea": "Healthcare delivery",
+          "timeframe": "medium-term"
+        },
+        {
+          "description": "Wasted investment in AI tools that fail to deliver value",
+          "type": "direct",
+          "affectedArea": "Healthcare spending",
+          "timeframe": "short-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Vendor-Neutral AI Platforms",
+          "description": "Platforms that aggregate multiple AI tools and integrate with existing PACS",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Additional cost layer", "Still requires per-tool validation", "Performance overhead"]
+        },
+        {
+          "name": "FDA Pre-Cert Program",
+          "description": "Streamlined regulatory pathway for trusted AI developers",
+          "type": "policy",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Limited to approved companies", "Still requires clinical validation", "Evolving requirements"]
+        },
+        {
+          "name": "DICOM and HL7 FHIR Standards",
+          "description": "Healthcare interoperability standards enabling AI integration",
+          "type": "standard",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Inconsistent implementation", "AI-specific extensions still developing"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Standardized interfaces for AI tool integration into radiology workflows",
+          "gapType": "integration",
+          "opportunity": "Industry-wide AI integration standards development",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Diverse, high-quality training datasets representative of real-world populations",
+          "gapType": "quality",
+          "opportunity": "Federated learning and multi-institutional data sharing",
+          "difficulty": "high"
+        },
+        {
+          "description": "Clear liability frameworks for AI-assisted diagnosis",
+          "gapType": "coverage",
+          "opportunity": "Regulatory guidance and legal precedent development",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Radiologists navigating AI tool integration",
+          "examples": ["Academic radiologists", "Private practice radiologists"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "contributor",
+          "description": "AI and medical imaging technology companies",
+          "examples": ["Aidoc", "Viz.ai", "Zebra Medical", "Google Health"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Regulatory agencies overseeing AI medical devices",
+          "examples": ["FDA", "EMA", "NMPA"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "AI solutions to the radiology workforce shortage",
+          "url": "https://www.nature.com/articles/s44401-025-00023-6",
+          "publisher": "npj Health Systems",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.9
+        },
+        {
+          "type": "industry-report",
+          "title": "Current Perspectives on Radiology Workforce Issues and Potential Solutions",
+          "url": "https://www.diagnosticimaging.com/view/current-perspectives-radiology-workforce-issues-potential-solutions",
+          "publisher": "Diagnostic Imaging",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["artificial-intelligence", "machine-learning", "workflow-integration", "FDA-regulation", "interoperability"],
+      "keywords": ["AI radiology integration", "medical imaging AI challenges", "radiology workflow automation"],
+      "metrics": {
+        "searchVolume": 12500,
+        "academicPapers": 1850,
+        "mediaArticles": 980,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-21T14:30:00Z"
+      },
+      "researchSession": "session-20260121-143052",
+      "confidence": 0.87,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-21T14:35:00Z",
+      "updatedAt": "2026-01-21T14:35:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-6666-4a5b-8c9d-e1f2a3b4c5d6",
+      "title": "PACS Interoperability Failures and Medical Imaging Data Silos",
+      "slug": "pacs-interoperability-data-silos",
+      "description": "Picture Archiving and Communication Systems (PACS) across healthcare organizations remain largely siloed, preventing seamless sharing of medical images between institutions and creating significant barriers to coordinated patient care. Despite DICOM standards, proprietary implementations and vendor lock-in mean images often cannot be easily transferred between different PACS vendors. Patients who receive imaging at multiple facilities may have their studies scattered across incompatible systems, leading to duplicate imaging, delayed diagnoses, and fragmented medical records. Emergency departments frequently cannot access prior imaging from other institutions, leading to repeat scans that increase costs, radiation exposure, and delays in care. Cloud-based image sharing solutions are emerging but face challenges including bandwidth limitations, security concerns, and inconsistent adoption. The lack of interoperability also impedes research by making it difficult to aggregate imaging data across institutions for large-scale studies and AI model training. Integration between PACS and electronic health records remains inconsistent, with images often accessible only through separate viewers rather than unified patient records.",
+      "summary": "Medical imaging systems remain siloed across healthcare organizations due to vendor lock-in and interoperability failures, causing duplicate imaging, fragmented records, and barriers to coordinated care.",
+      "industry": {
+        "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Medical Technology",
+        "slug": "medical-technology"
+      },
+      "field": {
+        "id": "f8a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+        "name": "Diagnostic Imaging",
+        "slug": "diagnostic-imaging"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["interoperability", "data-silos", "vendor-lock-in"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "200,000,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 25000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 7
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Vendor business models relying on lock-in",
+          "Legacy system replacement costs",
+          "Lack of regulatory mandate for interoperability",
+          "Security and privacy concerns with data sharing",
+          "Inconsistent DICOM implementation"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "moderate",
+        "activeResearchers": "3,500+",
+        "fundingLevel": "Moderate - ONC initiatives but slow industry adoption"
+      },
+      "impactScore": 61,
+      "rootCauses": [
+        {
+          "description": "Vendor business models incentivize proprietary lock-in over interoperability",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "DICOM standard allows vendor-specific extensions that break compatibility",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Healthcare organizations prioritize internal needs over cross-institution sharing",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Privacy regulations create uncertainty about image sharing permissions",
+          "category": "regulatory",
+          "contributionLevel": "contributing"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Duplicate imaging studies when prior exams unavailable",
+          "type": "direct",
+          "affectedArea": "Healthcare costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Unnecessary radiation exposure from repeat CT and X-ray studies",
+          "type": "direct",
+          "affectedArea": "Patient safety",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Delayed diagnoses when comparison to prior imaging not possible",
+          "type": "direct",
+          "affectedArea": "Patient outcomes",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Fragmented imaging data limiting research and AI development",
+          "type": "cascading",
+          "affectedArea": "Medical innovation",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Image Exchange Networks",
+          "description": "Cloud-based platforms enabling image sharing between participating institutions",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Requires participation from both parties", "Not universal coverage", "Subscription costs"]
+        },
+        {
+          "name": "CD/DVD Image Transfer",
+          "description": "Physical media transfer of imaging studies between institutions",
+          "type": "methodology",
+          "effectiveness": 3,
+          "adoption": "declining",
+          "limitations": ["Slow and manual", "Compatibility issues", "Patient burden to transport"]
+        },
+        {
+          "name": "DICOM Web and DICOMweb",
+          "description": "Modern web-based standards for DICOM image access and transfer",
+          "type": "standard",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Requires vendor implementation", "Legacy system incompatibility"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Universal medical image exchange network with mandatory participation",
+          "gapType": "coverage",
+          "opportunity": "National or regional health information exchanges for imaging",
+          "difficulty": "high"
+        },
+        {
+          "description": "Regulatory mandate for true PACS interoperability",
+          "gapType": "coverage",
+          "opportunity": "ONC interoperability rules extended to imaging",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients receiving care across multiple healthcare systems",
+          "examples": ["Cancer patients", "Trauma patients", "Patients who relocate"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "PACS vendors controlling interoperability features",
+          "examples": ["Fujifilm", "Agfa", "Sectra", "Change Healthcare"],
+          "interest": "low",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Healthcare IT leaders making PACS purchasing decisions",
+          "examples": ["CIOs", "CMIO", "Imaging informatics directors"],
+          "interest": "high",
+          "influence": "medium"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Workforce Challenges in Radiology",
+          "url": "https://www.siemens-healthineers.com/en-us/radiologys-workforce-crisis",
+          "publisher": "Siemens Healthineers",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["PACS", "interoperability", "data-silos", "DICOM", "image-exchange", "health-information-exchange"],
+      "keywords": ["PACS interoperability", "medical image sharing", "radiology data silos", "DICOM compatibility"],
+      "metrics": {
+        "searchVolume": 4200,
+        "academicPapers": 380,
+        "mediaArticles": 190,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-21T14:30:00Z"
+      },
+      "researchSession": "session-20260121-143052",
+      "confidence": 0.84,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-21T14:35:00Z",
+      "updatedAt": "2026-01-21T14:35:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-7777-4a5b-8c9d-e1f2a3b4c5d6",
+      "title": "Radiation Dose Management and Patient Safety in CT Imaging",
+      "slug": "radiation-dose-management-ct-safety",
+      "description": "The dramatic increase in CT imaging utilization has raised significant concerns about cumulative radiation exposure and associated cancer risks, particularly for pediatric patients and those requiring repeated imaging. CT scans now account for approximately 70% of medical radiation exposure while representing only 15% of imaging procedures. Studies suggest that 1.5-2% of all cancers in the United States may be attributable to CT radiation exposure. Significant variability exists in radiation doses delivered for the same examination type, with some facilities delivering doses 10-20 times higher than others for equivalent diagnostic quality. Pediatric patients are particularly vulnerable due to higher radiosensitivity and longer life expectancy for cancer development. Many healthcare facilities lack systematic dose tracking and optimization programs, and referring physicians often have limited awareness of radiation risks when ordering imaging studies. While dose reduction technologies exist, they are not universally implemented, and pressure to reduce scan times for throughput can lead to suboptimal low-dose protocols. The cumulative lifetime dose for patients with chronic conditions requiring serial imaging is often not tracked across institutions.",
+      "summary": "CT imaging accounts for 70% of medical radiation exposure with significant dose variability between facilities, contributing to an estimated 1.5-2% of US cancers with inadequate tracking and optimization.",
+      "industry": {
+        "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Medical Technology",
+        "slug": "medical-technology"
+      },
+      "field": {
+        "id": "f8a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+        "name": "Diagnostic Imaging",
+        "slug": "diagnostic-imaging"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["patient-safety", "radiation", "quality-control"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "80,000,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 6,
+          "estimateUSD": 15000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 7,
+        "productivity": 4
+      },
+      "tractability": {
+        "overall": 6.5,
+        "technicalFeasibility": 8,
+        "resourceRequirements": 6,
+        "existingProgress": 6,
+        "barriers": [
+          "Lack of universal dose tracking systems",
+          "Variability in technologist training and protocol adherence",
+          "Pressure for fast scan times reducing dose optimization",
+          "Limited referring physician awareness of radiation risks",
+          "Cost of implementing dose reduction technology"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "well-covered",
+        "activeResearchers": "5,000+",
+        "fundingLevel": "Moderate - significant professional society attention"
+      },
+      "impactScore": 62,
+      "rootCauses": [
+        {
+          "description": "Dramatic increase in CT utilization without proportional dose optimization focus",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Lack of standardized protocols and dose reference levels",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Limited dose tracking across healthcare systems for cumulative exposure",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Referring physicians lacking radiation risk education",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Estimated 1.5-2% of US cancers attributable to CT radiation",
+          "type": "cascading",
+          "affectedArea": "Patient health",
+          "timeframe": "long-term"
+        },
+        {
+          "description": "Pediatric patients receiving unnecessarily high radiation doses",
+          "type": "direct",
+          "affectedArea": "Pediatric care",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Patients with chronic conditions accumulating high lifetime doses",
+          "type": "cascading",
+          "affectedArea": "Patient safety",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Image Gently and Image Wisely Campaigns",
+          "description": "Professional society campaigns promoting radiation dose awareness and optimization",
+          "type": "methodology",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Voluntary participation", "Variable implementation", "Limited enforcement"]
+        },
+        {
+          "name": "Dose Tracking Software",
+          "description": "Systems that track and report individual patient radiation exposure",
+          "type": "tool",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Not interoperable across institutions", "Cost of implementation", "Requires workflow changes"]
+        },
+        {
+          "name": "Iterative Reconstruction Algorithms",
+          "description": "Advanced CT reconstruction techniques that maintain image quality at lower doses",
+          "type": "tool",
+          "effectiveness": 8,
+          "adoption": "mainstream",
+          "limitations": ["Requires newer CT equipment", "May increase reconstruction time"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Universal lifetime radiation dose tracking across all healthcare providers",
+          "gapType": "integration",
+          "opportunity": "National radiation dose registry with cross-institutional sharing",
+          "difficulty": "high"
+        },
+        {
+          "description": "Standardized dose optimization protocols with compliance monitoring",
+          "gapType": "quality",
+          "opportunity": "Regulatory requirements for dose benchmarking and reporting",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients receiving CT imaging, especially pediatric and chronic disease patients",
+          "examples": ["Pediatric patients", "Cancer patients", "Trauma patients"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Medical physicists and CT technologists managing radiation protocols",
+          "examples": ["Medical physicists", "Lead CT technologists", "Radiology quality officers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Professional societies and regulatory bodies",
+          "examples": ["ACR", "AAPM", "FDA", "Joint Commission"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "academic",
+          "title": "Imaging-Based Screening: Understanding the Controversies",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4220242/",
+          "publisher": "PMC",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.9
+        }
+      ],
+      "tags": ["radiation-dose", "CT-safety", "patient-safety", "dose-optimization", "pediatric-imaging", "ALARA"],
+      "keywords": ["CT radiation dose", "medical imaging radiation safety", "dose optimization", "Image Gently"],
+      "metrics": {
+        "searchVolume": 6800,
+        "academicPapers": 920,
+        "mediaArticles": 340,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-21T14:30:00Z"
+      },
+      "researchSession": "session-20260121-143052",
+      "confidence": 0.86,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-21T14:35:00Z",
+      "updatedAt": "2026-01-21T14:35:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-8888-4a5b-8c9d-e1f2a3b4c5d6",
+      "title": "Ultrasound Operator Dependence and Quality Variability",
+      "slug": "ultrasound-operator-dependence-quality-variability",
+      "description": "Unlike CT and MRI which produce relatively standardized images regardless of operator, ultrasound imaging quality is highly dependent on operator skill, creating significant variability in diagnostic accuracy. The same anatomical structures can appear dramatically different based on probe positioning, pressure, angle, and technique. This operator dependence means that critical findings may be missed by less experienced sonographers, while expert operators can extract significantly more diagnostic information from the same equipment. Training standards vary considerably between institutions and countries, and competency assessment is often inadequate. The real-time nature of ultrasound means that if critical images are not captured during the examination, they cannot be reconstructed later as with CT or MRI. Point-of-care ultrasound performed by non-radiology clinicians adds another layer of variability, with widely varying training requirements and quality oversight. The subjective nature of ultrasound interpretation also creates challenges for AI development, as ground truth labeling is inherently variable. Quality assurance programs for ultrasound are less mature than for other imaging modalities.",
+      "summary": "Ultrasound diagnostic quality varies dramatically based on operator skill, with inadequate standardization of training, competency assessment, and quality assurance programs across institutions.",
+      "industry": {
+        "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Medical Technology",
+        "slug": "medical-technology"
+      },
+      "field": {
+        "id": "f8a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+        "name": "Diagnostic Imaging",
+        "slug": "diagnostic-imaging"
+      },
+      "problemType": "knowledge",
+      "problemSubtypes": ["training", "quality-control", "standardization"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 6.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "150,000,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 5,
+          "estimateUSD": 8000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 5.5,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 5,
+        "existingProgress": 5,
+        "barriers": [
+          "Inherent operator-dependent nature of ultrasound physics",
+          "Wide variation in training program quality",
+          "Rapid expansion of point-of-care ultrasound",
+          "Limited quality metrics and benchmarking",
+          "Cost and time for comprehensive training"
+        ]
+      },
+      "neglectedness": {
+        "overall": 5,
+        "attentionLevel": "moderate",
+        "activeResearchers": "2,000+",
+        "fundingLevel": "Low to moderate - less attention than other imaging quality issues"
+      },
+      "impactScore": 58,
+      "rootCauses": [
+        {
+          "description": "Fundamental physics of ultrasound requiring real-time operator skill",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Inconsistent training standards across institutions and specialties",
+          "category": "organizational",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Rapid proliferation of point-of-care ultrasound without standardized training",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Lack of objective quality metrics for ultrasound examinations",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Missed diagnoses due to suboptimal image acquisition",
+          "type": "direct",
+          "affectedArea": "Patient outcomes",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Unnecessary follow-up imaging when ultrasound is non-diagnostic",
+          "type": "direct",
+          "affectedArea": "Healthcare costs",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Inconsistent care quality based on where patients receive imaging",
+          "type": "cascading",
+          "affectedArea": "Health equity",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "ARDMS Certification",
+          "description": "Standardized credentialing for diagnostic medical sonographers",
+          "type": "standard",
+          "effectiveness": 6,
+          "adoption": "mainstream",
+          "limitations": ["Not required everywhere", "Initial competency only", "No ongoing quality monitoring"]
+        },
+        {
+          "name": "AI-Assisted Ultrasound Guidance",
+          "description": "Real-time AI systems that guide probe positioning and image quality",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Limited availability", "Requires compatible equipment", "Still operator-dependent"]
+        },
+        {
+          "name": "Simulation-Based Training",
+          "description": "Ultrasound simulators for operator skill development",
+          "type": "tool",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Cost of simulators", "May not fully replicate clinical scenarios"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Objective, automated ultrasound image quality assessment",
+          "gapType": "quality",
+          "opportunity": "AI systems that assess completeness and quality of ultrasound exams",
+          "difficulty": "high"
+        },
+        {
+          "description": "Standardized competency requirements for point-of-care ultrasound",
+          "gapType": "coverage",
+          "opportunity": "Cross-specialty credentialing standards for POCUS",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients receiving ultrasound examinations",
+          "examples": ["Obstetric patients", "Cardiac patients", "Emergency patients"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Sonographers and ultrasound-performing clinicians",
+          "examples": ["Diagnostic sonographers", "Emergency physicians", "Cardiologists"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Professional societies and credentialing organizations",
+          "examples": ["AIUM", "ARDMS", "ACEP", "ASE"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Workforce Challenges in Radiology",
+          "url": "https://www.siemens-healthineers.com/en-us/radiologys-workforce-crisis",
+          "publisher": "Siemens Healthineers",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["ultrasound", "operator-dependence", "sonographer-training", "quality-variability", "point-of-care"],
+      "keywords": ["ultrasound quality variability", "sonographer training", "operator dependent imaging", "POCUS quality"],
+      "metrics": {
+        "searchVolume": 3100,
+        "academicPapers": 420,
+        "mediaArticles": 150,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-21T14:30:00Z"
+      },
+      "researchSession": "session-20260121-143052",
+      "confidence": 0.82,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-21T14:35:00Z",
+      "updatedAt": "2026-01-21T14:35:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-9999-4a5b-8c9d-e1f2a3b4c5d6",
+      "title": "Medical Imaging Cybersecurity Vulnerabilities and Ransomware Threats",
+      "slug": "medical-imaging-cybersecurity-vulnerabilities",
+      "description": "Medical imaging infrastructure faces escalating cybersecurity threats that can disrupt patient care, compromise sensitive health data, and expose healthcare organizations to significant liability. PACS systems, imaging modalities, and the networks connecting them were often designed before cybersecurity was a primary concern, leaving them vulnerable to modern attack vectors. Ransomware attacks have disabled imaging systems at multiple hospitals, forcing diversions of emergency patients and delays in cancer treatment. Legacy imaging equipment often cannot be patched or updated, creating persistent vulnerabilities. DICOM protocol itself has security weaknesses, with many implementations transmitting unencrypted patient data. The increasing connectivity required for teleradiology, cloud PACS, and AI integration expands the attack surface. Medical images contain highly sensitive health information, and theft can enable identity fraud or targeted attacks. Healthcare organizations often lack dedicated imaging informatics security expertise, and vendor responsibility for security patches is often unclear. The operational technology nature of imaging equipment means traditional IT security approaches may not apply.",
+      "summary": "Medical imaging systems face escalating cybersecurity threats including ransomware that disrupts patient care, with legacy equipment vulnerabilities, DICOM protocol weaknesses, and expanding attack surfaces.",
+      "industry": {
+        "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Medical Technology",
+        "slug": "medical-technology"
+      },
+      "field": {
+        "id": "f8a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+        "name": "Diagnostic Imaging",
+        "slug": "diagnostic-imaging"
+      },
+      "problemType": "technical",
+      "problemSubtypes": ["cybersecurity", "data-privacy", "infrastructure"],
+      "scope": "industry",
+      "maturity": "growing",
+      "urgency": "high",
+      "severity": {
+        "overall": 7.5,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "100,000,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 8,
+          "estimateUSD": 20000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 8
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 6,
+        "resourceRequirements": 4,
+        "existingProgress": 5,
+        "barriers": [
+          "Legacy equipment that cannot be updated",
+          "DICOM protocol security limitations",
+          "Shortage of healthcare-specific cybersecurity expertise",
+          "Unclear vendor security responsibilities",
+          "Operational continuity requirements limiting security measures"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "moderate",
+        "activeResearchers": "3,000+",
+        "fundingLevel": "Growing - increased attention after high-profile attacks"
+      },
+      "impactScore": 64,
+      "rootCauses": [
+        {
+          "description": "Legacy imaging equipment designed before modern cybersecurity threats",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "DICOM protocol security weaknesses in original design",
+          "category": "technical",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Expanding connectivity for teleradiology and AI increasing attack surface",
+          "category": "technical",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Healthcare organizations under-investing in imaging security expertise",
+          "category": "organizational",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Ransomware attacks disabling imaging departments and delaying patient care",
+          "type": "direct",
+          "affectedArea": "Patient care",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Patient data breaches exposing sensitive health information",
+          "type": "direct",
+          "affectedArea": "Patient privacy",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Financial losses from ransoms, remediation, and regulatory penalties",
+          "type": "direct",
+          "affectedArea": "Healthcare finances",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Loss of trust in digital health infrastructure",
+          "type": "cascading",
+          "affectedArea": "Healthcare system",
+          "timeframe": "long-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Network Segmentation",
+          "description": "Isolating imaging networks from general hospital networks",
+          "type": "methodology",
+          "effectiveness": 7,
+          "adoption": "growing",
+          "limitations": ["Complex to implement", "May impair workflow", "Requires ongoing maintenance"]
+        },
+        {
+          "name": "DICOM TLS Encryption",
+          "description": "Encrypted DICOM transmission to protect data in transit",
+          "type": "standard",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Not universally supported", "Performance overhead", "Legacy equipment incompatible"]
+        },
+        {
+          "name": "Medical Device Security Platforms",
+          "description": "Specialized security tools for monitoring medical device networks",
+          "type": "product",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Additional cost", "May not cover all imaging devices", "Integration complexity"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Security updates for legacy imaging equipment",
+          "gapType": "coverage",
+          "opportunity": "Vendor-agnostic security wrapping for legacy devices",
+          "difficulty": "high"
+        },
+        {
+          "description": "Healthcare imaging-specific security expertise and training",
+          "gapType": "coverage",
+          "opportunity": "Specialized training programs and certification for imaging security",
+          "difficulty": "medium"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients whose care may be disrupted by cyberattacks",
+          "examples": ["Emergency patients", "Cancer patients", "Surgical patients"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Healthcare IT security teams and imaging informatics",
+          "examples": ["CISOs", "Imaging informatics directors", "Clinical engineers"],
+          "interest": "high",
+          "influence": "medium"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Regulatory bodies and equipment manufacturers",
+          "examples": ["FDA", "HHS OCR", "Siemens Healthineers", "GE Healthcare"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Workforce Challenges in Radiology",
+          "url": "https://www.siemens-healthineers.com/en-us/radiologys-workforce-crisis",
+          "publisher": "Siemens Healthineers",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["cybersecurity", "ransomware", "DICOM-security", "medical-device-security", "data-privacy", "healthcare-IT"],
+      "keywords": ["medical imaging cybersecurity", "PACS ransomware", "DICOM security", "healthcare imaging attacks"],
+      "metrics": {
+        "searchVolume": 5200,
+        "academicPapers": 380,
+        "mediaArticles": 520,
+        "trendDirection": "increasing",
+        "dataCollectedAt": "2026-01-21T14:30:00Z"
+      },
+      "researchSession": "session-20260121-143052",
+      "confidence": 0.85,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-21T14:35:00Z",
+      "updatedAt": "2026-01-21T14:35:00Z",
+      "version": 1
+    },
+    {
+      "id": "a1b2c3d4-aaaa-4a5b-8c9d-e1f2a3b4c5d6",
+      "title": "High Cost and Price Opacity of Diagnostic Imaging Services",
+      "slug": "imaging-cost-price-opacity",
+      "description": "Diagnostic imaging services in the United States exhibit extreme price variability and opacity, with the same MRI or CT scan costing anywhere from $200 to $3,000+ depending on location and facility type. Patients often cannot obtain price information before receiving services, leading to unexpected bills and financial hardship. Hospital-based imaging typically costs 2-5 times more than the same service at independent imaging centers, yet referral patterns often default to hospital facilities. Insurance coverage complexity, high deductibles, and prior authorization requirements create additional barriers. The consolidation of imaging providers has reduced price competition in many markets. Price transparency regulations have had limited impact due to inconsistent compliance and information formats that are difficult for patients to use. The high cost of advanced imaging contributes to healthcare unaffordability and may lead patients to delay or forgo necessary diagnostic studies. International comparisons show US imaging prices far exceed those in other developed countries for equivalent services.",
+      "summary": "Diagnostic imaging exhibits extreme price variability with the same scan costing $200 to $3,000+ and limited transparency, creating patient financial burden and potential care delays.",
+      "industry": {
+        "id": "c6a0b1c2-d3e4-4f5a-6b7c-8d9e0f1a2b3c",
+        "name": "Healthcare & Life Sciences",
+        "slug": "healthcare-life-sciences"
+      },
+      "domain": {
+        "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+        "name": "Medical Technology",
+        "slug": "medical-technology"
+      },
+      "field": {
+        "id": "f8a2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+        "name": "Diagnostic Imaging",
+        "slug": "diagnostic-imaging"
+      },
+      "problemType": "market",
+      "problemSubtypes": ["pricing", "transparency", "affordability"],
+      "scope": "industry",
+      "maturity": "mature",
+      "urgency": "medium",
+      "severity": {
+        "overall": 7.0,
+        "affectedPopulation": {
+          "score": 8,
+          "estimate": "100,000,000+",
+          "unit": "individuals"
+        },
+        "economicImpact": {
+          "score": 7,
+          "estimateUSD": 35000000000,
+          "timeframe": "annual"
+        },
+        "qualityOfLife": 6,
+        "productivity": 5
+      },
+      "tractability": {
+        "overall": 5.0,
+        "technicalFeasibility": 7,
+        "resourceRequirements": 5,
+        "existingProgress": 4,
+        "barriers": [
+          "Complex insurance contracting and reimbursement",
+          "Hospital pricing power in consolidated markets",
+          "Resistance from high-cost providers",
+          "Patient difficulty comparing prices across facilities",
+          "Prior authorization complexity"
+        ]
+      },
+      "neglectedness": {
+        "overall": 4,
+        "attentionLevel": "moderate",
+        "activeResearchers": "1,500+",
+        "fundingLevel": "Moderate - significant policy attention but limited effective action"
+      },
+      "impactScore": 59,
+      "rootCauses": [
+        {
+          "description": "Market consolidation reducing price competition",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Complex insurance contracting obscuring actual prices",
+          "category": "economic",
+          "contributionLevel": "primary"
+        },
+        {
+          "description": "Hospital facility fees dramatically increasing imaging costs",
+          "category": "economic",
+          "contributionLevel": "secondary"
+        },
+        {
+          "description": "Limited patient shopping behavior in healthcare",
+          "category": "cultural",
+          "contributionLevel": "secondary"
+        }
+      ],
+      "consequences": [
+        {
+          "description": "Patients receiving unexpected bills causing financial hardship",
+          "type": "direct",
+          "affectedArea": "Patient finances",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Patients delaying necessary imaging due to cost concerns",
+          "type": "direct",
+          "affectedArea": "Patient care",
+          "timeframe": "short-term"
+        },
+        {
+          "description": "Significant variation in imaging spending across markets",
+          "type": "direct",
+          "affectedArea": "Healthcare costs",
+          "timeframe": "immediate"
+        },
+        {
+          "description": "Medical debt and bankruptcy from imaging-related bills",
+          "type": "cascading",
+          "affectedArea": "Patient wellbeing",
+          "timeframe": "medium-term"
+        }
+      ],
+      "existingSolutions": [
+        {
+          "name": "Hospital Price Transparency Rule",
+          "description": "CMS requirement for hospitals to publish prices including imaging",
+          "type": "policy",
+          "effectiveness": 4,
+          "adoption": "mandatory",
+          "limitations": ["Inconsistent compliance", "Information hard to use", "Limited enforcement"]
+        },
+        {
+          "name": "Price Comparison Tools",
+          "description": "Websites and apps allowing patients to compare imaging prices",
+          "type": "tool",
+          "effectiveness": 5,
+          "adoption": "early",
+          "limitations": ["Limited coverage", "May not include all costs", "Low patient awareness"]
+        },
+        {
+          "name": "Direct-Pay Imaging Centers",
+          "description": "Facilities offering transparent, all-inclusive cash pricing",
+          "type": "service",
+          "effectiveness": 6,
+          "adoption": "growing",
+          "limitations": ["Geographic availability", "May not count toward deductible", "Limited to certain modalities"]
+        }
+      ],
+      "solutionGaps": [
+        {
+          "description": "Easy-to-use, comprehensive imaging price comparison for patients",
+          "gapType": "accessibility",
+          "opportunity": "Real-time price comparison integrated into referral workflows",
+          "difficulty": "medium"
+        },
+        {
+          "description": "Standardized imaging pricing that reduces variability",
+          "gapType": "coverage",
+          "opportunity": "Reference pricing or bundled payment models for imaging",
+          "difficulty": "high"
+        }
+      ],
+      "stakeholders": [
+        {
+          "type": "affected",
+          "description": "Patients bearing imaging costs directly",
+          "examples": ["Uninsured patients", "High-deductible plan enrollees", "Medicare beneficiaries"],
+          "interest": "high",
+          "influence": "low"
+        },
+        {
+          "type": "contributor",
+          "description": "Insurance companies negotiating imaging rates",
+          "examples": ["Commercial insurers", "Medicare Advantage plans", "Employers"],
+          "interest": "high",
+          "influence": "high"
+        },
+        {
+          "type": "decision-maker",
+          "description": "Regulators overseeing price transparency",
+          "examples": ["CMS", "State insurance commissioners", "FTC"],
+          "interest": "high",
+          "influence": "high"
+        }
+      ],
+      "sources": [
+        {
+          "type": "industry-report",
+          "title": "Current Perspectives on Radiology Workforce Issues",
+          "url": "https://www.diagnosticimaging.com/view/current-perspectives-radiology-workforce-issues-potential-solutions",
+          "publisher": "Diagnostic Imaging",
+          "accessedAt": "2026-01-21",
+          "credibilityScore": 0.85
+        }
+      ],
+      "tags": ["pricing", "cost-transparency", "healthcare-costs", "affordability", "medical-debt", "price-variability"],
+      "keywords": ["medical imaging cost", "MRI price variation", "CT scan pricing", "imaging cost transparency"],
+      "metrics": {
+        "searchVolume": 8900,
+        "academicPapers": 280,
+        "mediaArticles": 620,
+        "trendDirection": "stable",
+        "dataCollectedAt": "2026-01-21T14:30:00Z"
+      },
+      "researchSession": "session-20260121-143052",
+      "confidence": 0.83,
+      "verificationStatus": "ai-verified",
+      "createdAt": "2026-01-21T14:35:00Z",
+      "updatedAt": "2026-01-21T14:35:00Z",
+      "version": 1
+    }
+  ]
+}
