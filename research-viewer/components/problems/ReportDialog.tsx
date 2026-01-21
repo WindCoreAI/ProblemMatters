@@ -65,11 +65,11 @@ export function ReportDialog({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-4xl max-h-[90vh] flex flex-col">
+      <DialogContent className="max-w-4xl max-h-[90vh] !grid grid-rows-[auto_1fr] overflow-hidden">
         <DialogHeader>
           <DialogTitle className="pr-8">Research Report: {problemTitle}</DialogTitle>
         </DialogHeader>
-        <ScrollArea className="flex-1 min-h-0">
+        <ScrollArea className="h-full overflow-hidden">
           <div className="pr-4">
             {loading && (
               <div className="flex items-center justify-center py-12">
