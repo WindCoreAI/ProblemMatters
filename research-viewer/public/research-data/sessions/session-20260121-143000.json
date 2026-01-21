@@ -2,15 +2,14 @@
   "id": "session-20260121-143000",
   "completedAt": "2026-01-21T14:45:00Z",
   "target": {
-    "industry": "technology-software",
-    "domain": "ai-ml",
-    "field": "robotics-ai"
+    "industry": "Technology & Software",
+    "domain": "Artificial Intelligence & Machine Learning",
+    "field": "AI Ethics & Safety"
   },
   "results": {
     "candidatesFound": 10,
     "problemsResearched": 10,
     "problemsStored": 10,
-    "reportsGenerated": 10,
     "failures": 0
   }
 }
