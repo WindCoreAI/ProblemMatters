@@ -1,0 +1,29 @@
+{
+  "id": "dom-consumer-goods",
+  "name": "Consumer Goods",
+  "slug": "consumer-goods",
+  "industry": {
+    "id": "ind-retail-consumer",
+    "name": "Retail & Consumer",
+    "slug": "retail-consumer"
+  },
+  "fields": [
+    {
+      "id": "fld-home-living",
+      "name": "Home & Living",
+      "slug": "home-living",
+      "problemCount": 10
+    }
+  ],
+  "statistics": {
+    "totalProblems": 10,
+    "avgImpactScore": 6.06,
+    "topProblemTypes": [
+      {"type": "market", "count": 4},
+      {"type": "environmental", "count": 3},
+      {"type": "process", "count": 2},
+      {"type": "resource", "count": 1}
+    ]
+  },
+  "lastUpdated": "2026-01-21T17:55:00Z"
+}
