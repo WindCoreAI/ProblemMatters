@@ -12,9 +12,10 @@
     "totalFields": 1,
     "avgSeverity": 7.27,
     "avgTractability": 5.36,
+    "avgNeglectedness": 4.5,
     "fieldProblems": {
       "production-planning": 11
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

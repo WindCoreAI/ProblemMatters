@@ -5,11 +5,12 @@
   "statistics": {
     "totalProblems": 31,
     "avgSeverity": 7.53,
-    "avgTractability": 5.1
+    "avgTractability": 5.1,
+    "avgNeglectedness": 4.42
   },
   "domains": [
     {
-      "id": "d4e5f6a7-b8c9-4d1e-2f3a-5b6c7d8e9f0a",
+      "id": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
       "name": "Discrete Manufacturing",
       "slug": "discrete-manufacturing",
       "fieldCount": 2,
@@ -23,5 +24,5 @@
       "problemCount": 11
     }
   ],
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

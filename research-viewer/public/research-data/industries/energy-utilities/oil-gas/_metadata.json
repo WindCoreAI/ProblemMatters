@@ -12,9 +12,10 @@
     "totalFields": 1,
     "avgSeverity": 7.96,
     "avgTractability": 5.6,
+    "avgNeglectedness": 4.05,
     "fieldProblems": {
       "upstream": 10
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

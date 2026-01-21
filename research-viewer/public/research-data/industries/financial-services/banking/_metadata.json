@@ -12,10 +12,11 @@
     "totalFields": 2,
     "avgSeverity": 7.8,
     "avgTractability": 5.25,
+    "avgNeglectedness": 3.5,
     "fieldProblems": {
-      "payments": 1,
-      "retail-banking": 9
+      "retail-banking": 9,
+      "payments": 1
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

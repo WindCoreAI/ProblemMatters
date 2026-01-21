@@ -12,10 +12,11 @@
     "totalFields": 2,
     "avgSeverity": 7.25,
     "avgTractability": 5.75,
+    "avgNeglectedness": 4.25,
     "fieldProblems": {
-      "customer-engagement": 1,
-      "digital-experience": 1
+      "digital-experience": 1,
+      "customer-engagement": 1
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

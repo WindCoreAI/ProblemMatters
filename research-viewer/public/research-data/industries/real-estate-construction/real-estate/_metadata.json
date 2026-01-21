@@ -12,9 +12,10 @@
     "totalFields": 1,
     "avgSeverity": 6.9,
     "avgTractability": 4.6,
+    "avgNeglectedness": 3.85,
     "fieldProblems": {
       "commercial-real-estate": 10
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

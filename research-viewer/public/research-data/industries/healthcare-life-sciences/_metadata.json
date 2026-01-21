@@ -4,17 +4,11 @@
   "slug": "healthcare-life-sciences",
   "statistics": {
     "totalProblems": 51,
-    "avgSeverity": 7.77,
-    "avgTractability": 5.32
+    "avgSeverity": 7.78,
+    "avgTractability": 5.32,
+    "avgNeglectedness": 4.93
   },
   "domains": [
-    {
-      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567891",
-      "name": "Clinical Care",
-      "slug": "clinical-care",
-      "fieldCount": 3,
-      "problemCount": 31
-    },
     {
       "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
       "name": "Medical Technology",
@@ -28,7 +22,14 @@
       "slug": "public-health",
       "fieldCount": 4,
       "problemCount": 10
+    },
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567891",
+      "name": "Clinical Care",
+      "slug": "clinical-care",
+      "fieldCount": 3,
+      "problemCount": 31
     }
   ],
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

@@ -12,9 +12,10 @@
     "totalFields": 1,
     "avgSeverity": 8.2,
     "avgTractability": 5.15,
+    "avgNeglectedness": 3.9,
     "fieldProblems": {
       "endpoint-security": 10
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

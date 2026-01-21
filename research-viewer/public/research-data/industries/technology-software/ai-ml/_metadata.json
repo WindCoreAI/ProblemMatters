@@ -12,15 +12,16 @@
     "totalFields": 7,
     "avgSeverity": 7.53,
     "avgTractability": 5.13,
+    "avgNeglectedness": 3.86,
     "fieldProblems": {
       "ai-ethics-safety": 1,
-      "computer-vision": 10,
-      "deep-learning": 11,
-      "generative-ai": 1,
-      "machine-learning": 5,
       "mlops": 2,
+      "generative-ai": 1,
+      "computer-vision": 10,
+      "machine-learning": 5,
+      "deep-learning": 11,
       "natural-language-processing": 10
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

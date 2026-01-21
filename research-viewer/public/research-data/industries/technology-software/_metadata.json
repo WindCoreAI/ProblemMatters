@@ -3,18 +3,12 @@
   "name": "Technology & Software",
   "slug": "technology-software",
   "statistics": {
-    "totalProblems": 102,
-    "avgSeverity": 7.55,
-    "avgTractability": 5.35
+    "totalProblems": 112,
+    "avgSeverity": 7.51,
+    "avgTractability": 5.32,
+    "avgNeglectedness": 4.04
   },
   "domains": [
-    {
-      "id": "7ba8b820-9dad-11d1-80b4-00c04fd430c9",
-      "name": "Artificial Intelligence & Machine Learning",
-      "slug": "ai-ml",
-      "fieldCount": 7,
-      "problemCount": 40
-    },
     {
       "id": "6ca7b811-9dad-11d1-80b4-00c04fd430c9",
       "name": "Cybersecurity",
@@ -30,6 +24,20 @@
       "problemCount": 10
     },
     {
+      "id": "7ba8b820-9dad-11d1-80b4-00c04fd430c9",
+      "name": "Artificial Intelligence & Machine Learning",
+      "slug": "ai-ml",
+      "fieldCount": 7,
+      "problemCount": 40
+    },
+    {
+      "id": "dom-data-science-analytics",
+      "name": "Data Science & Analytics",
+      "slug": "data-science-analytics",
+      "fieldCount": 1,
+      "problemCount": 10
+    },
+    {
       "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
       "name": "Software Engineering",
       "slug": "software-engineering",
@@ -37,5 +45,5 @@
       "problemCount": 42
     }
   ],
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

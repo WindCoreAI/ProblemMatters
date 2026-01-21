@@ -11,11 +11,12 @@
     "totalProblems": 21,
     "totalFields": 2,
     "avgSeverity": 7.43,
-    "avgTractability": 5.48,
+    "avgTractability": 5.47,
+    "avgNeglectedness": 4.52,
     "fieldProblems": {
       "solar": 11,
       "wind": 10
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

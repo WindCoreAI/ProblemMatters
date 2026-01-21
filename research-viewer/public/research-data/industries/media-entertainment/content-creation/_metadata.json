@@ -12,12 +12,13 @@
     "totalFields": 4,
     "avgSeverity": 7.4,
     "avgTractability": 4.66,
+    "avgNeglectedness": 4.15,
     "fieldProblems": {
-      "film-production": 10,
-      "gaming": 10,
       "music": 10,
-      "television": 10
+      "film-production": 10,
+      "television": 10,
+      "gaming": 10
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

@@ -12,9 +12,10 @@
     "totalFields": 1,
     "avgSeverity": 7.35,
     "avgTractability": 6.2,
+    "avgNeglectedness": 4.4,
     "fieldProblems": {
       "lending-technology": 10
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

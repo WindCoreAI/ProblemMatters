@@ -12,12 +12,13 @@
     "totalFields": 4,
     "avgSeverity": 8.2,
     "avgTractability": 5.4,
+    "avgNeglectedness": 5.05,
     "fieldProblems": {
+      "population-health": 1,
       "environmental-health": 5,
       "epidemiology": 2,
-      "health-policy": 2,
-      "population-health": 1
+      "health-policy": 2
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

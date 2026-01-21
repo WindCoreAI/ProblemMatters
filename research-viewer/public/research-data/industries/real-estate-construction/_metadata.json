@@ -5,7 +5,8 @@
   "statistics": {
     "totalProblems": 10,
     "avgSeverity": 6.9,
-    "avgTractability": 4.6
+    "avgTractability": 4.6,
+    "avgNeglectedness": 3.85
   },
   "domains": [
     {
@@ -16,5 +17,5 @@
       "problemCount": 10
     }
   ],
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }

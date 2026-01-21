@@ -12,9 +12,10 @@
     "totalFields": 1,
     "avgSeverity": 7.1,
     "avgTractability": 6.2,
+    "avgNeglectedness": 4.3,
     "fieldProblems": {
       "learning-management": 10
     }
   },
-  "lastUpdated": "2026-01-21T07:18:08.521Z"
+  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
 }
