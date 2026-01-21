@@ -1,0 +1,16 @@
+{
+  "id": "session-20260121-174910",
+  "completedAt": "2026-01-21T17:55:00Z",
+  "target": {
+    "industry": "Retail & Consumer",
+    "domain": "Consumer Goods",
+    "field": "Home & Living"
+  },
+  "results": {
+    "candidatesFound": 10,
+    "problemsResearched": 10,
+    "problemsStored": 10,
+    "reportsGenerated": 10,
+    "failures": 0
+  }
+}
