@@ -1,16 +1,37 @@
 {
-  "id": "d334a8be-d359-4ec2-92e3-f889603eb120",
+  "id": "i1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c",
   "name": "Manufacturing & Industrial",
   "slug": "manufacturing-industrial",
   "statistics": {
     "totalProblems": 31,
     "avgSeverity": 7.53,
     "avgTractability": 5.1,
-    "avgNeglectedness": 4.42
+    "topProblemTypes": [
+      {
+        "type": "resource",
+        "count": 8
+      },
+      {
+        "type": "technical",
+        "count": 8
+      },
+      {
+        "type": "process",
+        "count": 4
+      },
+      {
+        "type": "coordination",
+        "count": 3
+      },
+      {
+        "type": "regulatory",
+        "count": 2
+      }
+    ]
   },
   "domains": [
     {
-      "id": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
+      "id": "d4e5f6a7-b8c9-4d1e-2f3a-5b6c7d8e9f0a",
       "name": "Discrete Manufacturing",
       "slug": "discrete-manufacturing",
       "fieldCount": 2,
@@ -24,5 +45,5 @@
       "problemCount": 11
     }
   ],
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

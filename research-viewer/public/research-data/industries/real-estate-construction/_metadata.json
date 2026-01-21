@@ -6,7 +6,28 @@
     "totalProblems": 10,
     "avgSeverity": 6.9,
     "avgTractability": 4.6,
-    "avgNeglectedness": 3.85
+    "topProblemTypes": [
+      {
+        "type": "market",
+        "count": 5
+      },
+      {
+        "type": "technical",
+        "count": 2
+      },
+      {
+        "type": "environmental",
+        "count": 1
+      },
+      {
+        "type": "regulatory",
+        "count": 1
+      },
+      {
+        "type": "social",
+        "count": 1
+      }
+    ]
   },
   "domains": [
     {
@@ -17,5 +38,5 @@
       "problemCount": 10
     }
   ],
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

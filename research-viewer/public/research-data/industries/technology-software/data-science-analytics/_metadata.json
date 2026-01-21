@@ -1,0 +1,16 @@
+{
+  "id": "dom-data-science-analytics",
+  "name": "Data Science & Analytics",
+  "slug": "data-science-analytics",
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 1,
+    "avgSeverity": 7.1,
+    "avgTractability": 5.03,
+    "avgNeglectedness": 4.25,
+    "fieldProblems": {
+      "predictive-analytics": 10
+    }
+  },
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
+}

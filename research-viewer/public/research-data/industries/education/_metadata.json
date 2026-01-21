@@ -6,7 +6,28 @@
     "totalProblems": 20,
     "avgSeverity": 7.4,
     "avgTractability": 5.8,
-    "avgNeglectedness": 4.4
+    "topProblemTypes": [
+      {
+        "type": "technical",
+        "count": 7
+      },
+      {
+        "type": "coordination",
+        "count": 3
+      },
+      {
+        "type": "resource",
+        "count": 3
+      },
+      {
+        "type": "process",
+        "count": 2
+      },
+      {
+        "type": "social",
+        "count": 2
+      }
+    ]
   },
   "domains": [
     {
@@ -24,5 +45,5 @@
       "problemCount": 10
     }
   ],
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

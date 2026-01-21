@@ -6,9 +6,37 @@
     "totalProblems": 14,
     "avgSeverity": 7.64,
     "avgTractability": 5.57,
-    "avgNeglectedness": 3.82
+    "topProblemTypes": [
+      {
+        "type": "process",
+        "count": 4
+      },
+      {
+        "type": "technical",
+        "count": 3
+      },
+      {
+        "type": "coordination",
+        "count": 2
+      },
+      {
+        "type": "ethical",
+        "count": 1
+      },
+      {
+        "type": "market",
+        "count": 1
+      }
+    ]
   },
   "domains": [
+    {
+      "id": "0ccbe024-e062-46d5-808e-62a75fa94b5c",
+      "name": "Customer Experience",
+      "slug": "customer-experience",
+      "fieldCount": 2,
+      "problemCount": 2
+    },
     {
       "id": "42e1e6cd-c8a7-4b74-8a07-12b1a7f1e2d1",
       "name": "Retail Operations",
@@ -22,14 +50,7 @@
       "slug": "retail-technology",
       "fieldCount": 1,
       "problemCount": 1
-    },
-    {
-      "id": "0ccbe024-e062-46d5-808e-62a75fa94b5c",
-      "name": "Customer Experience",
-      "slug": "customer-experience",
-      "fieldCount": 2,
-      "problemCount": 2
     }
   ],
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

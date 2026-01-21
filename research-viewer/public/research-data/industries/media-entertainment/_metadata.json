@@ -1,21 +1,42 @@
 {
-  "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
   "name": "Media & Entertainment",
   "slug": "media-entertainment",
   "statistics": {
     "totalProblems": 40,
     "avgSeverity": 7.4,
     "avgTractability": 4.66,
-    "avgNeglectedness": 4.15
+    "topProblemTypes": [
+      {
+        "type": "market",
+        "count": 15
+      },
+      {
+        "type": "technical",
+        "count": 9
+      },
+      {
+        "type": "resource",
+        "count": 5
+      },
+      {
+        "type": "social",
+        "count": 4
+      },
+      {
+        "type": "process",
+        "count": 3
+      }
+    ]
   },
   "domains": [
     {
-      "id": "d4c3b2a1-9087-6543-21fe-dcba98765432",
+      "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
       "name": "Content Creation",
       "slug": "content-creation",
       "fieldCount": 4,
       "problemCount": 40
     }
   ],
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

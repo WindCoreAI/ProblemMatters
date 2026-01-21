@@ -14,9 +14,9 @@
     "avgTractability": 5.25,
     "avgNeglectedness": 3.5,
     "fieldProblems": {
-      "retail-banking": 9,
-      "payments": 1
+      "payments": 1,
+      "retail-banking": 9
     }
   },
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

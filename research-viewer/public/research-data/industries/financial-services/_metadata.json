@@ -1,18 +1,39 @@
 {
-  "id": "c3d4e5f6-a7b8-9012-cdef-123456780001",
+  "id": "ind-financial-services",
   "name": "Financial Services",
   "slug": "financial-services",
   "statistics": {
     "totalProblems": 72,
     "avgSeverity": 7.43,
     "avgTractability": 5.37,
-    "avgNeglectedness": 4.19
+    "topProblemTypes": [
+      {
+        "type": "technical",
+        "count": 25
+      },
+      {
+        "type": "market",
+        "count": 12
+      },
+      {
+        "type": "process",
+        "count": 10
+      },
+      {
+        "type": "coordination",
+        "count": 6
+      },
+      {
+        "type": "regulatory",
+        "count": 6
+      }
+    ]
   },
   "domains": [
     {
-      "id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
-      "name": "FinTech",
-      "slug": "fintech",
+      "id": "dom-asset-investment-management",
+      "name": "Asset & Investment Management",
+      "slug": "asset-investment-management",
       "fieldCount": 1,
       "problemCount": 10
     },
@@ -24,18 +45,18 @@
       "problemCount": 10
     },
     {
-      "id": "dom-asset-investment-management",
-      "name": "Asset & Investment Management",
-      "slug": "asset-investment-management",
-      "fieldCount": 1,
-      "problemCount": 10
-    },
-    {
       "id": "968e83f8-18e9-462a-a00d-5781046a9b45",
       "name": "Capital Markets",
       "slug": "capital-markets",
       "fieldCount": 3,
       "problemCount": 32
+    },
+    {
+      "id": "d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+      "name": "FinTech",
+      "slug": "fintech",
+      "fieldCount": 1,
+      "problemCount": 10
     },
     {
       "id": "6155ce27-d7d6-4caa-ab47-10d8105fa180",
@@ -45,5 +66,5 @@
       "problemCount": 10
     }
   ],
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

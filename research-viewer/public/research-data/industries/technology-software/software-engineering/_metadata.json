@@ -14,16 +14,16 @@
     "avgTractability": 5.71,
     "avgNeglectedness": 4.3,
     "fieldProblems": {
-      "general": 4,
       "cloud-computing": 1,
-      "software-security": 2,
-      "mobile-development": 10,
-      "enterprise-architecture": 2,
       "data-engineering": 11,
-      "quality-assurance": 1,
       "devops-infrastructure": 1,
+      "enterprise-architecture": 2,
+      "general": 4,
+      "mobile-development": 10,
+      "quality-assurance": 1,
+      "software-security": 2,
       "web-development": 10
     }
   },
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

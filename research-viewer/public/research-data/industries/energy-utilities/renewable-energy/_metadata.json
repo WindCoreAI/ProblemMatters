@@ -1,5 +1,5 @@
 {
-  "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+  "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
   "name": "Renewable Energy",
   "slug": "renewable-energy",
   "industry": {
@@ -11,12 +11,12 @@
     "totalProblems": 21,
     "totalFields": 2,
     "avgSeverity": 7.43,
-    "avgTractability": 5.47,
+    "avgTractability": 5.48,
     "avgNeglectedness": 4.52,
     "fieldProblems": {
       "solar": 11,
       "wind": 10
     }
   },
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

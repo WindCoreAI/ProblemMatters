@@ -1,0 +1,16 @@
+{
+  "id": "dom-asset-investment-management",
+  "name": "Asset & Investment Management",
+  "slug": "asset-investment-management",
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 1,
+    "avgSeverity": 7.05,
+    "avgTractability": 5.97,
+    "avgNeglectedness": 3.88,
+    "fieldProblems": {
+      "portfolio-management": 10
+    }
+  },
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
+}

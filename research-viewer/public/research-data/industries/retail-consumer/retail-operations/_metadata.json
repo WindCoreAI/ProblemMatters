@@ -14,12 +14,12 @@
     "avgTractability": 5.59,
     "avgNeglectedness": 3.77,
     "fieldProblems": {
-      "store-operations": 4,
-      "supply-chain": 3,
       "e-commerce": 2,
       "merchandising": 1,
-      "omnichannel": 1
+      "omnichannel": 1,
+      "store-operations": 4,
+      "supply-chain": 3
     }
   },
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

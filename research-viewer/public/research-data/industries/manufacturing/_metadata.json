@@ -1,12 +1,33 @@
 {
-  "id": "i4a3b2c1-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+  "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
   "name": "Manufacturing & Industrial",
   "slug": "manufacturing",
   "statistics": {
     "totalProblems": 20,
     "avgSeverity": 7.6,
     "avgTractability": 5.4,
-    "avgNeglectedness": 4.12
+    "topProblemTypes": [
+      {
+        "type": "process",
+        "count": 7
+      },
+      {
+        "type": "technical",
+        "count": 6
+      },
+      {
+        "type": "resource",
+        "count": 4
+      },
+      {
+        "type": "coordination",
+        "count": 2
+      },
+      {
+        "type": "regulatory",
+        "count": 1
+      }
+    ]
   },
   "domains": [
     {
@@ -24,5 +45,5 @@
       "problemCount": 10
     }
   ],
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

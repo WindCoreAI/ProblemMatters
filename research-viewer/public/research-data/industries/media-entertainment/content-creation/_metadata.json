@@ -1,5 +1,5 @@
 {
-  "id": "d4c3b2a1-9087-6543-21fe-dcba98765432",
+  "id": "d7c81b2a-3d4e-5f6g-8h9i-0j1k2l3m4n5o",
   "name": "Content Creation",
   "slug": "content-creation",
   "industry": {
@@ -14,11 +14,11 @@
     "avgTractability": 4.66,
     "avgNeglectedness": 4.15,
     "fieldProblems": {
-      "music": 10,
       "film-production": 10,
-      "television": 10,
-      "gaming": 10
+      "gaming": 10,
+      "music": 10,
+      "television": 10
     }
   },
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

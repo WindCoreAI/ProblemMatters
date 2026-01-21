@@ -121,7 +121,29 @@ Find all session files in `sessions/` directory:
 - Keep the 10 most recent for the index
 - Extract summary info for each
 
-### Step 6: Report Summary
+### Step 6: Update Research Checklist
+
+Update the research checklist at `docs/research/research-checklist.md`:
+
+1. **Update Quick Stats table** with new aggregated values:
+   - Total problems per industry
+   - Average severity and tractability
+   - Field counts and completion status
+
+2. **Mark completed fields** - For any field that now has problems in the research data:
+   - Change status from `⬜` to `✅`
+   - Add the current date in "Last Updated" column
+   - Add the problem count in "Problems Found" column
+
+3. **Update the Total row** with:
+   - Total problems: `{totalProblems}`
+   - Total fields completed: `{totalFields}`
+   - Average severity: `{avgSeverity}`
+   - Average tractability: `{avgTractability}`
+
+4. **Update the footer** with the new aggregation timestamp
+
+### Step 7: Report Summary
 
 ```markdown
 ## Statistics Aggregation Complete
@@ -149,6 +171,7 @@ Find all session files in `sessions/` directory:
 - `research-viewer/public/research-data/index.json`
 - `research-viewer/public/research-data/industries/{industry}/_metadata.json` (for each industry)
 - `research-viewer/public/research-data/industries/{industry}/{domain}/_metadata.json` (for each domain)
+- `docs/research/research-checklist.md`
 ```
 
 ## Implementation Notes

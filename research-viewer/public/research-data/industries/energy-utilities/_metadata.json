@@ -5,24 +5,45 @@
   "statistics": {
     "totalProblems": 31,
     "avgSeverity": 7.6,
-    "avgTractability": 5.51,
-    "avgNeglectedness": 4.37
+    "avgTractability": 5.52,
+    "topProblemTypes": [
+      {
+        "type": "technical",
+        "count": 10
+      },
+      {
+        "type": "market",
+        "count": 5
+      },
+      {
+        "type": "resource",
+        "count": 4
+      },
+      {
+        "type": "environmental",
+        "count": 3
+      },
+      {
+        "type": "knowledge",
+        "count": 2
+      }
+    ]
   },
   "domains": [
-    {
-      "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
-      "name": "Renewable Energy",
-      "slug": "renewable-energy",
-      "fieldCount": 2,
-      "problemCount": 21
-    },
     {
       "id": "e7613bf8-a864-4f22-8272-836a724a687f",
       "name": "Oil & Gas",
       "slug": "oil-gas",
       "fieldCount": 1,
       "problemCount": 10
+    },
+    {
+      "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
+      "name": "Renewable Energy",
+      "slug": "renewable-energy",
+      "fieldCount": 2,
+      "problemCount": 21
     }
   ],
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+  "lastUpdated": "2026-01-21T09:10:40.077Z"
 }

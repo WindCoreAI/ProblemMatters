@@ -1,28 +1,28 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2026-01-21T07:59:53.259051+00:00",
+  "lastUpdated": "2026-01-21T09:10:40.077Z",
   "statistics": {
-    "totalProblems": 412,
+    "totalProblems": 422,
     "totalIndustries": 11,
     "totalDomains": 27,
-    "totalFields": 59,
+    "totalFields": 60,
     "problemsByIndustry": {
-      "retail-consumer": 14,
-      "technology-software": 112,
-      "real-estate-construction": 10,
       "education": 20,
-      "media-entertainment": 40,
-      "manufacturing": 20,
       "energy-utilities": 31,
-      "healthcare-life-sciences": 51,
-      "transportation-logistics": 11,
       "financial-services": 72,
-      "manufacturing-industrial": 31
+      "healthcare-life-sciences": 51,
+      "manufacturing": 20,
+      "manufacturing-industrial": 31,
+      "media-entertainment": 40,
+      "real-estate-construction": 10,
+      "retail-consumer": 14,
+      "technology-software": 122,
+      "transportation-logistics": 11
     },
     "lastResearchSession": "2026-01-21T14:30:52Z",
-    "avgSeverity": 7.51,
+    "avgSeverity": 7.5,
     "avgTractability": 5.27,
-    "avgNeglectedness": 4.26
+    "avgNeglectedness": 4.25
   },
   "industries": [
     {
@@ -32,7 +32,7 @@
       "path": "industries/education",
       "domainCount": 2,
       "problemCount": 20,
-      "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+      "lastUpdated": "2026-01-21T09:10:40.077Z"
     },
     {
       "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
@@ -41,16 +41,16 @@
       "path": "industries/energy-utilities",
       "domainCount": 2,
       "problemCount": 31,
-      "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+      "lastUpdated": "2026-01-21T09:10:40.077Z"
     },
     {
-      "id": "c3d4e5f6-a7b8-9012-cdef-123456780001",
+      "id": "ind-financial-services",
       "name": "Financial Services",
       "slug": "financial-services",
       "path": "industries/financial-services",
       "domainCount": 5,
       "problemCount": 72,
-      "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+      "lastUpdated": "2026-01-21T09:10:40.077Z"
     },
     {
       "id": "f47ac10b-58cc-4372-a567-0e02b2c3d481",
@@ -59,34 +59,34 @@
       "path": "industries/healthcare-life-sciences",
       "domainCount": 3,
       "problemCount": 51,
-      "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+      "lastUpdated": "2026-01-21T09:10:40.077Z"
     },
     {
-      "id": "i4a3b2c1-5d6e-7f8a-9b0c-1d2e3f4a5b6c",
+      "id": "i6b70a19-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
       "name": "Manufacturing & Industrial",
       "slug": "manufacturing",
       "path": "industries/manufacturing",
       "domainCount": 2,
       "problemCount": 20,
-      "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+      "lastUpdated": "2026-01-21T09:10:40.077Z"
     },
     {
-      "id": "d334a8be-d359-4ec2-92e3-f889603eb120",
+      "id": "i1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c",
       "name": "Manufacturing & Industrial",
       "slug": "manufacturing-industrial",
       "path": "industries/manufacturing-industrial",
       "domainCount": 2,
       "problemCount": 31,
-      "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+      "lastUpdated": "2026-01-21T09:10:40.077Z"
     },
     {
-      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "id": "i6b70a19-2c3d-4e5f-6g7h-8i9j0k1l2m3n",
       "name": "Media & Entertainment",
       "slug": "media-entertainment",
       "path": "industries/media-entertainment",
       "domainCount": 1,
       "problemCount": 40,
-      "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+      "lastUpdated": "2026-01-21T09:10:40.077Z"
     },
     {
       "id": "ab64fa2e-20e4-423c-8d5e-150c3dbdf4fb",
@@ -95,7 +95,7 @@
       "path": "industries/real-estate-construction",
       "domainCount": 1,
       "problemCount": 10,
-      "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+      "lastUpdated": "2026-01-21T09:10:40.077Z"
     },
     {
       "id": "575f0019-4379-426a-aa7e-ec82515ff132",
@@ -104,7 +104,7 @@
       "path": "industries/retail-consumer",
       "domainCount": 3,
       "problemCount": 14,
-      "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+      "lastUpdated": "2026-01-21T09:10:40.077Z"
     },
     {
       "id": "550e8400-e29b-41d4-a716-446655440000",
@@ -112,8 +112,8 @@
       "slug": "technology-software",
       "path": "industries/technology-software",
       "domainCount": 5,
-      "problemCount": 112,
-      "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+      "problemCount": 122,
+      "lastUpdated": "2026-01-21T09:10:40.077Z"
     },
     {
       "id": "7c8d9e0f-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
@@ -122,97 +122,97 @@
       "path": "industries/transportation-logistics",
       "domainCount": 1,
       "problemCount": 11,
-      "lastUpdated": "2026-01-21T07:59:53.259051+00:00"
+      "lastUpdated": "2026-01-21T09:10:40.077Z"
     }
   ],
   "recentSessions": [
     {
-      "id": "session-20260121-143052",
-      "timestamp": "2026-01-21T14:30:52Z",
-      "targetIndustry": "healthcare-life-sciences",
-      "targetDomain": "medical-technology",
-      "targetField": "diagnostic-imaging",
+      "id": "session-20260120-101500",
+      "timestamp": "",
+      "targetIndustry": "",
+      "targetDomain": "",
+      "targetField": "",
       "problemsDiscovered": 0,
       "status": "completed"
     },
     {
-      "id": "session-20260121-143000",
+      "id": "session-20260120-143022",
       "timestamp": "",
-      "targetIndustry": "financial-services",
-      "targetDomain": "asset-investment-management",
-      "targetField": "portfolio-management",
+      "targetIndustry": "",
+      "targetDomain": "",
+      "targetField": "",
+      "problemsDiscovered": 0,
+      "status": "completed"
+    },
+    {
+      "id": "session-20260120-143052",
+      "timestamp": "",
+      "targetIndustry": "",
+      "targetDomain": "",
+      "targetField": "",
+      "problemsDiscovered": 0,
+      "status": "completed"
+    },
+    {
+      "id": "session-20260120-153000",
+      "timestamp": "",
+      "targetIndustry": "",
+      "targetDomain": "",
+      "targetField": "",
       "problemsDiscovered": 10,
       "status": "completed"
     },
     {
-      "id": "session-20260121-120000",
-      "timestamp": "2026-01-21T12:00:00Z",
-      "targetIndustry": "Technology & Software",
-      "targetDomain": "Data Science & Analytics",
-      "targetField": "Predictive Analytics",
+      "id": "session-20260120-155230",
+      "timestamp": "",
+      "targetIndustry": "",
+      "targetDomain": "",
+      "targetField": "",
       "problemsDiscovered": 0,
       "status": "completed"
     },
     {
-      "id": "session-20260120-music-discovery",
-      "timestamp": "2026-01-20T00:00:00Z",
-      "targetIndustry": "media-entertainment",
-      "targetDomain": "content-creation",
-      "targetField": "music",
+      "id": "session-20260120-161500",
+      "timestamp": "",
+      "targetIndustry": "",
+      "targetDomain": "",
+      "targetField": "",
       "problemsDiscovered": 0,
       "status": "completed"
     },
     {
-      "id": "session-20260120-220130",
-      "timestamp": "2026-01-20T22:01:30Z",
-      "targetIndustry": "technology-software",
-      "targetDomain": "ai-ml",
-      "targetField": "computer-vision",
+      "id": "session-20260120-162845",
+      "timestamp": "",
+      "targetIndustry": "",
+      "targetDomain": "",
+      "targetField": "",
       "problemsDiscovered": 0,
       "status": "completed"
     },
     {
-      "id": "session-20260120-203333",
-      "timestamp": "2026-01-20T20:33:33Z",
-      "targetIndustry": "media-entertainment",
-      "targetDomain": "content-creation",
-      "targetField": "gaming",
+      "id": "session-20260120-163045",
+      "timestamp": "",
+      "targetIndustry": "",
+      "targetDomain": "",
+      "targetField": "",
       "problemsDiscovered": 0,
       "status": "completed"
     },
     {
-      "id": "session-20260120-202838",
-      "timestamp": "2026-01-20T20:28:38Z",
-      "targetIndustry": "media-entertainment",
-      "targetDomain": "content-creation",
-      "targetField": "film-production",
+      "id": "session-20260120-163052",
+      "timestamp": "",
+      "targetIndustry": "",
+      "targetDomain": "",
+      "targetField": "",
       "problemsDiscovered": 0,
       "status": "completed"
     },
     {
-      "id": "1c521b3d-82b0-4c6d-a2ab-f148955f7dcd",
-      "timestamp": "2026-01-20T20:28:27Z",
-      "targetIndustry": "real-estate-construction",
-      "targetDomain": "real-estate",
-      "targetField": "commercial-real-estate",
-      "problemsDiscovered": 0,
-      "status": "completed"
-    },
-    {
-      "id": "session-20260120-202806",
-      "timestamp": "2026-01-20T20:28:06Z",
-      "targetIndustry": "transportation-logistics",
-      "targetDomain": "freight-logistics",
-      "targetField": "road-freight",
-      "problemsDiscovered": 0,
-      "status": "completed"
-    },
-    {
-      "id": "session-20260120-202607",
-      "timestamp": "2026-01-20T20:26:07Z",
-      "targetIndustry": "manufacturing",
-      "targetDomain": "discrete-manufacturing",
-      "targetField": "aerospace-defense",
+      "id": "session-20260120-174151",
+      "timestamp": "",
+      "targetIndustry": "",
+      "targetDomain": "",
+      "targetField": "",
       "problemsDiscovered": 0,
       "status": "completed"
     }
