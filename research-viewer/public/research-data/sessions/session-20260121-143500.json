@@ -1,0 +1,11 @@
+{
+  "id": "session-20260121-143500",
+  "completedAt": "2026-01-21T14:45:00Z",
+  "target": {"industry": "technology-software", "domain": "emerging-technologies", "field": "quantum-computing"},
+  "results": {
+    "candidatesFound": 10,
+    "problemsResearched": 10,
+    "problemsStored": 10,
+    "failures": 0
+  }
+}
