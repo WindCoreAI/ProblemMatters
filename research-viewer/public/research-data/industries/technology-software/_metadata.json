@@ -3,17 +3,17 @@
   "name": "Technology & Software",
   "slug": "technology-software",
   "statistics": {
-    "totalProblems": 92,
-    "avgSeverity": 7.77,
-    "avgTractability": 5.28
+    "totalProblems": 102,
+    "avgSeverity": 7.55,
+    "avgTractability": 5.35
   },
   "domains": [
     {
       "id": "7ba8b820-9dad-11d1-80b4-00c04fd430c9",
       "name": "Artificial Intelligence & Machine Learning",
       "slug": "ai-ml",
-      "fieldCount": 6,
-      "problemCount": 30
+      "fieldCount": 7,
+      "problemCount": 40
     },
     {
       "id": "6ca7b811-9dad-11d1-80b4-00c04fd430c9",
@@ -37,5 +37,5 @@
       "problemCount": 42
     }
   ],
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

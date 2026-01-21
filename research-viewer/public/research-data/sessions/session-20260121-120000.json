@@ -1,0 +1,117 @@
+{
+  "id": "session-20260121-120000",
+  "startedAt": "2026-01-21T12:00:00Z",
+  "completedAt": "2026-01-21T12:45:00Z",
+  "target": {
+    "industry": "Technology & Software",
+    "industrySlug": "technology-software",
+    "domain": "Data Science & Analytics",
+    "domainSlug": "data-science-analytics",
+    "field": "Predictive Analytics",
+    "fieldSlug": "predictive-analytics"
+  },
+  "configuration": {
+    "maxProblems": 10,
+    "depthLevel": "deep",
+    "minConfidence": 0.7
+  },
+  "status": "completed",
+  "results": {
+    "candidatesDiscovered": 10,
+    "problemsStored": 8,
+    "problemsSkipped": 2,
+    "skippedReason": "Already existed in database",
+    "problemIds": [
+      "prob-predictive-analytics-001",
+      "prob-predictive-analytics-002",
+      "prob-predictive-analytics-003",
+      "prob-predictive-analytics-004",
+      "prob-predictive-analytics-005",
+      "prob-predictive-analytics-006",
+      "prob-predictive-analytics-007",
+      "prob-predictive-analytics-008",
+      "prob-predictive-analytics-009",
+      "prob-predictive-analytics-010"
+    ],
+    "problemSummaries": [
+      {
+        "id": "prob-predictive-analytics-001",
+        "title": "Model Drift and Staleness Requiring Continuous Retraining",
+        "impactScore": 6.1,
+        "confidence": 0.80,
+        "status": "previously_existed"
+      },
+      {
+        "id": "prob-predictive-analytics-002",
+        "title": "Black Box Problem: Lack of Explainability in Complex AI Models",
+        "impactScore": 5.95,
+        "confidence": 0.78,
+        "status": "stored"
+      },
+      {
+        "id": "prob-predictive-analytics-003",
+        "title": "The Prediction Gap: Population Statistics to Individual Decisions",
+        "impactScore": 5.83,
+        "confidence": 0.75,
+        "status": "stored"
+      },
+      {
+        "id": "prob-predictive-analytics-004",
+        "title": "Systemic Bias in Training Data Leading to Discriminatory Outcomes",
+        "impactScore": 5.73,
+        "confidence": 0.82,
+        "status": "stored"
+      },
+      {
+        "id": "prob-predictive-analytics-005",
+        "title": "Critically Low Adoption Rates Among Decision-Makers",
+        "impactScore": 6.21,
+        "confidence": 0.79,
+        "status": "previously_existed"
+      },
+      {
+        "id": "prob-predictive-analytics-006",
+        "title": "Correlation vs Causation: Inability to Establish Causal Relationships",
+        "impactScore": 5.98,
+        "confidence": 0.82,
+        "status": "stored"
+      },
+      {
+        "id": "prob-predictive-analytics-007",
+        "title": "Severe Talent Shortage: Data Scientists with Domain Expertise",
+        "impactScore": 5.59,
+        "confidence": 0.80,
+        "status": "stored"
+      },
+      {
+        "id": "prob-predictive-analytics-008",
+        "title": "Fragmented Data Infrastructure Creating Integration Bottlenecks",
+        "impactScore": 5.81,
+        "confidence": 0.82,
+        "status": "stored"
+      },
+      {
+        "id": "prob-predictive-analytics-009",
+        "title": "Regulatory Compliance Burden: AI Act, GDPR Requirements",
+        "impactScore": 5.50,
+        "confidence": 0.78,
+        "status": "stored"
+      },
+      {
+        "id": "prob-predictive-analytics-010",
+        "title": "SME Adoption Gap: Predictive Analytics Inaccessible to SMEs",
+        "impactScore": 6.30,
+        "confidence": 0.78,
+        "status": "stored"
+      }
+    ]
+  },
+  "searchQueries": [
+    "Predictive Analytics data science challenges problems 2025 2026",
+    "Predictive Analytics industry pain points issues",
+    "Predictive Analytics unsolved problems research gaps",
+    "Predictive Analytics technical limitations bottlenecks",
+    "Predictive Analytics emerging challenges future risks"
+  ],
+  "outputFile": "research-viewer/public/research-data/industries/technology-software/data-science-analytics/fields/predictive-analytics.json"
+}

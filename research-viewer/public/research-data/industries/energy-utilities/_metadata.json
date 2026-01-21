@@ -4,8 +4,8 @@
   "slug": "energy-utilities",
   "statistics": {
     "totalProblems": 31,
-    "avgSeverity": 7.7,
-    "avgTractability": 5.54
+    "avgSeverity": 7.6,
+    "avgTractability": 5.52
   },
   "domains": [
     {
@@ -16,12 +16,12 @@
       "problemCount": 10
     },
     {
-      "id": "d7c6b5a4-9382-4170-8e9d-0c1b2a394857",
+      "id": "532f6536-fb89-49fe-85d7-fce2d1cf14d5",
       "name": "Renewable Energy",
       "slug": "renewable-energy",
       "fieldCount": 2,
       "problemCount": 21
     }
   ],
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

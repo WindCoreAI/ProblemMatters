@@ -3,19 +3,19 @@
   "name": "Discrete Manufacturing",
   "slug": "discrete-manufacturing",
   "industry": {
-    "id": "d334a8be-d359-4ec2-92e3-f889603eb120",
+    "id": "i1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c",
     "name": "Manufacturing & Industrial",
     "slug": "manufacturing-industrial"
   },
   "statistics": {
     "totalProblems": 20,
     "totalFields": 2,
-    "avgSeverity": 7.68,
+    "avgSeverity": 7.67,
     "avgTractability": 4.95,
     "fieldProblems": {
       "automotive": 10,
       "electronics": 10
     }
   },
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

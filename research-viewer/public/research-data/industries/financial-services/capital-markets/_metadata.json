@@ -3,20 +3,20 @@
   "name": "Capital Markets",
   "slug": "capital-markets",
   "industry": {
-    "id": "c3d4e5f6-a7b8-9012-cdef-123456780001",
+    "id": "5772e9ec-26da-47df-9363-05b1ad98b82c",
     "name": "Financial Services",
     "slug": "financial-services"
   },
   "statistics": {
     "totalProblems": 32,
     "totalFields": 3,
-    "avgSeverity": 7.45,
-    "avgTractability": 5.04,
+    "avgSeverity": 7.46,
+    "avgTractability": 5.03,
     "fieldProblems": {
-      "trading": 10,
+      "market-infrastructure": 11,
       "risk-management": 11,
-      "market-infrastructure": 11
+      "trading": 10
     }
   },
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

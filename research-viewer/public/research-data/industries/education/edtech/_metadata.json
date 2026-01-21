@@ -1,0 +1,20 @@
+{
+  "id": "dom-edtech",
+  "name": "EdTech",
+  "slug": "edtech",
+  "industry": {
+    "id": "ind-education",
+    "name": "Education",
+    "slug": "education"
+  },
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 1,
+    "avgSeverity": 7.1,
+    "avgTractability": 6.2,
+    "fieldProblems": {
+      "learning-management": 10
+    }
+  },
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
+}

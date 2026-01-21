@@ -4,8 +4,8 @@
   "slug": "financial-services",
   "statistics": {
     "totalProblems": 62,
-    "avgSeverity": 7.41,
-    "avgTractability": 5.44
+    "avgSeverity": 7.49,
+    "avgTractability": 5.27
   },
   "domains": [
     {
@@ -37,5 +37,5 @@
       "problemCount": 10
     }
   ],
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

@@ -1,0 +1,20 @@
+{
+  "id": "12.2",
+  "name": "Higher Education",
+  "slug": "higher-education",
+  "industry": {
+    "id": "12",
+    "name": "Education",
+    "slug": "education"
+  },
+  "statistics": {
+    "totalProblems": 10,
+    "totalFields": 1,
+    "avgSeverity": 7.7,
+    "avgTractability": 5.4,
+    "fieldProblems": {
+      "academic-programs": 10
+    }
+  },
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
+}

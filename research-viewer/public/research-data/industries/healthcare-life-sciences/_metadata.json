@@ -3,9 +3,9 @@
   "name": "Healthcare & Life Sciences",
   "slug": "healthcare-life-sciences",
   "statistics": {
-    "totalProblems": 41,
-    "avgSeverity": 7.92,
-    "avgTractability": 5.45
+    "totalProblems": 51,
+    "avgSeverity": 7.77,
+    "avgTractability": 5.32
   },
   "domains": [
     {
@@ -16,6 +16,13 @@
       "problemCount": 31
     },
     {
+      "id": "d7b1a2c3-d4e5-4f6a-7b8c-9d0e1f2a3b4c",
+      "name": "Medical Technology",
+      "slug": "medical-technology",
+      "fieldCount": 1,
+      "problemCount": 10
+    },
+    {
       "id": "d5e4f3a2-b1c0-49d8-e7f6-a5b4c3d2e1f0",
       "name": "Public Health",
       "slug": "public-health",
@@ -23,5 +30,5 @@
       "problemCount": 10
     }
   ],
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

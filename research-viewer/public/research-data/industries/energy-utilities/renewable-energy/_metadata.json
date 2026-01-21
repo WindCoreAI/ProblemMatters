@@ -3,19 +3,19 @@
   "name": "Renewable Energy",
   "slug": "renewable-energy",
   "industry": {
-    "id": "a00d6be9-ade7-4964-8b2d-835b344d5b3e",
+    "id": "afb76ead-8099-4e2a-a253-625c984a0f8f",
     "name": "Energy & Utilities",
     "slug": "energy-utilities"
   },
   "statistics": {
     "totalProblems": 21,
     "totalFields": 2,
-    "avgSeverity": 7.44,
-    "avgTractability": 5.47,
+    "avgSeverity": 7.43,
+    "avgTractability": 5.48,
     "fieldProblems": {
       "solar": 11,
       "wind": 10
     }
   },
-  "lastUpdated": "2026-01-20T22:26:21Z"
+  "lastUpdated": "2026-01-21T07:18:08.521Z"
 }

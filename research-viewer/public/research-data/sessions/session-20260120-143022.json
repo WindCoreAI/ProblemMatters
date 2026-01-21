@@ -1,0 +1,15 @@
+{
+  "id": "session-20260120-143022",
+  "completedAt": "2026-01-20T14:45:00Z",
+  "target": {
+    "industry": "Education",
+    "domain": "Higher Education",
+    "field": "Academic Programs"
+  },
+  "results": {
+    "candidatesFound": 10,
+    "problemsResearched": 10,
+    "problemsStored": 10,
+    "failures": 0
+  }
+}
