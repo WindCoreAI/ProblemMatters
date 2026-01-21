@@ -1,0 +1,65 @@
+{
+  "count": 10,
+  "candidates": [
+    {
+      "id": "1",
+      "title": "Qubit Decoherence and Environmental Sensitivity",
+      "brief": "Qubits are extremely sensitive to environmental disturbances and lose their quantum properties within microseconds to milliseconds. This decoherence severely limits the complexity and duration of quantum algorithms that can be executed.",
+      "sources": ["https://thequantuminsider.com/2023/03/24/quantum-computing-challenges/", "https://milvus.io/ai-quick-reference/what-are-the-limitations-of-current-quantum-computing-hardware"]
+    },
+    {
+      "id": "2",
+      "title": "Error Correction Resource Overhead",
+      "brief": "Current quantum error correction requires up to 1,000 physical qubits for each logical qubit, creating massive resource overhead. Research shows that excessive error correction can paradoxically introduce more errors than it removes.",
+      "sources": ["https://link.aps.org/doi/10.1103/PRXQuantum.2.040335", "https://www.techtarget.com/searchcio/feature/Quantum-computing-challenges-and-opportunities"]
+    },
+    {
+      "id": "3",
+      "title": "Scalability and Wiring Bottlenecks",
+      "brief": "Current systems depend on thousands of coaxial lines and room-temperature hardware that is not viable beyond a few hundred qubits. Adding more qubits increases noise and crosstalk, degrading overall system performance.",
+      "sources": ["https://www.nelsx.com/p/the-5-biggest-unsolved-problems-in", "https://www.bain.com/insights/quantum-computing-moves-from-theoretical-to-inevitable-technology-report-2025/"]
+    },
+    {
+      "id": "4",
+      "title": "Extreme Cryogenic Operating Requirements",
+      "brief": "Superconducting qubits require cooling to near absolute zero (-273C) using dilution refrigerators that consume significant power and space. These requirements dramatically increase operational costs and limit deployment options.",
+      "sources": ["https://milvus.io/ai-quick-reference/what-are-the-limitations-of-current-quantum-computing-hardware", "https://www.techtarget.com/searchcio/feature/Quantum-computing-challenges-and-opportunities"]
+    },
+    {
+      "id": "5",
+      "title": "Immature Quantum Software Development Tools",
+      "brief": "Quantum programming languages, compilers, and optimization tools are still in their infancy. Optimizing code for specific hardware architectures remains complex, and quantum computers can only run one program at a time.",
+      "sources": ["https://thequantuminsider.com/2023/03/24/quantum-computing-challenges/", "https://www.engineering.columbia.edu/about/news/turning-quantum-bottlenecks-breakthroughs"]
+    },
+    {
+      "id": "6",
+      "title": "Harvest Now Decrypt Later Cryptographic Threat",
+      "brief": "Adversaries are collecting encrypted data now with plans to decrypt it when quantum computers become powerful enough. Traditional RSA and ECC encryption methods are vulnerable to Shor's algorithm, creating urgent migration needs.",
+      "sources": ["https://www.paloaltonetworks.com/cyberpedia/what-is-quantum-computings-threat-to-cybersecurity", "https://kpmg.com/xx/en/our-insights/ai-and-technology/quantum-and-cybersecurity.html"]
+    },
+    {
+      "id": "7",
+      "title": "Quantum Workforce and Skills Shortage",
+      "brief": "Finding employees with quantum computing skills remains extremely difficult. Skills developed in academic research labs have limited transferability to commercial settings, creating a significant talent gap.",
+      "sources": ["https://www.techtarget.com/searchcio/feature/Quantum-computing-challenges-and-opportunities", "https://www.bain.com/insights/quantum-computing-moves-from-theoretical-to-inevitable-technology-report-2025/"]
+    },
+    {
+      "id": "8",
+      "title": "Quantum-Classical Hybrid Integration Challenges",
+      "brief": "Existing HPC resource managers are inadequate for hybrid quantum-classical workflows. Integrating quantum computing into existing IT infrastructure and demonstrating clear ROI remain major adoption barriers.",
+      "sources": ["https://www.quera.com/blog-posts/the-practical-friction-points-in-bringing-quantum-computing-into-hpc-centers", "https://blogs.nvidia.com/blog/how-quantum-computings-biggest-challenges-solved-accelerated-computing/"]
+    },
+    {
+      "id": "9",
+      "title": "Absence of Verified Practical Quantum Advantage",
+      "brief": "No widely accepted, independently verified quantum advantage exists for real scientific or industrial workloads. Quantum supremacy experiments on random circuit sampling do not translate to practical chemistry, optimization, or cryptography applications.",
+      "sources": ["https://www.nelsx.com/p/the-5-biggest-unsolved-problems-in", "https://spectrum.ieee.org/quantum-computing-skeptics"]
+    },
+    {
+      "id": "10",
+      "title": "Quantum Memory and Data Loading Limitations",
+      "brief": "Storing quantum information reliably over time remains a fundamental challenge. Converting classical data to quantum information efficiently creates significant bottlenecks that limit practical algorithm execution.",
+      "sources": ["https://www.bain.com/insights/quantum-computing-moves-from-theoretical-to-inevitable-technology-report-2025/", "https://www.spinquanta.com/news-detail/quantum-computer-development-progress-challenges-and-future-prospects"]
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "id": "prob-quantum-computing-3",
+  "title": "Scalability and Wiring Bottlenecks in Quantum Computing",
+  "slug": "scalability-wiring-bottlenecks-quantum-computing",
+  "description": "Current quantum computing systems face critical scalability limitations due to the physical wiring infrastructure required to control and read out qubits. Superconducting quantum processors typically require two coaxial cables per qubit to deliver and read out control signals, meaning a million-qubit processor would demand approximately two million individual wires. At current scales, a cryostat for a 150-qubit processor with coaxial wiring costs approximately $5 million, with as much as 80% of that cost allocated to wiring alone. Beyond roughly 100 qubits, systems encounter thermal and spatial limits as the mass of metallic connecting cables creates unacceptable heat loads on cryogenic cooling systems operating at millikelvin temperatures. The wiring bottleneck introduces multiple challenges: thermal load from temperature gradients between room temperature and cryogenic stages, power loss and heating from Joule effects, noise coupling from room temperature to cryogenic components, and crosstalk between adjacent signal lines. Each additional qubit increases noise and crosstalk, degrading overall system performance. Building to one million qubits with current approaches would demand massive facilities and investment potentially reaching tens of billions of dollars. This fundamental engineering challenge represents one of the primary barriers preventing quantum computing from achieving fault-tolerant operation at commercially useful scales, with major implications for achieving quantum advantage in drug discovery, cryptography, optimization, and other high-value applications.",
+  "summary": "Quantum computers require thousands of coaxial cables to control qubits, but scaling beyond a few hundred qubits creates thermal overload, crosstalk, and prohibitive costs, blocking the path to fault-tolerant quantum computing.",
+  "industry": {
+    "id": "ind-tech-software",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "domain": {
+    "id": "dom-emerging-tech",
+    "name": "Emerging Technologies",
+    "slug": "emerging-technologies"
+  },
+  "field": {
+    "id": "fld-quantum-computing",
+    "name": "Quantum Computing",
+    "slug": "quantum-computing"
+  },
+  "problemType": "technical",
+  "problemSubtypes": ["infrastructure", "thermal-management", "signal-integrity", "cost-barriers"],
+  "scope": "industry",
+  "maturity": "emerging",
+  "urgency": "high",
+  "severity": {
+    "overall": 7,
+    "affectedPopulation": 7,
+    "economicImpact": 8,
+    "qualityOfLife": 4,
+    "productivityImpact": 7
+  },
+  "tractability": {
+    "overall": 6,
+    "technicalFeasibility": 6,
+    "resourceRequirements": 5,
+    "existingProgress": 6,
+    "barriers": 5
+  },
+  "neglectedness": {
+    "overall": 4,
+    "researchActivity": 4,
+    "fundingLevel": 4,
+    "organizationCount": 4,
+    "mediaAttention": 5
+  },
+  "impactScore": 5.8,
+  "rootCauses": [
+    {
+      "id": "rc-1",
+      "cause": "Physical limitations of coaxial cable infrastructure",
+      "description": "Each superconducting qubit requires one or more control and readout lines via coaxial cables, creating a linear scaling problem where millions of qubits would require millions of physical cables running from room temperature electronics to millikelvin stages."
+    },
+    {
+      "id": "rc-2",
+      "cause": "Thermal load constraints in cryogenic systems",
+      "description": "Dilution refrigerators have limited cooling power at millikelvin temperatures. Each wire conducts heat from warmer stages, and the cumulative thermal load from thousands of wires quickly exceeds available cooling capacity, raising the temperature and destroying quantum coherence."
+    },
+    {
+      "id": "rc-3",
+      "cause": "Signal crosstalk and electromagnetic interference",
+      "description": "As qubit count increases and wiring density grows, electromagnetic coupling between adjacent signal lines increases, causing crosstalk that introduces noise and errors in qubit control and readout operations."
+    },
+    {
+      "id": "rc-4",
+      "cause": "Room-temperature control electronics limitations",
+      "description": "Current architectures require room-temperature electronics to generate and process control signals, creating bandwidth limitations, latency issues, and signal degradation over long cable runs between room temperature and cryogenic stages."
+    },
+    {
+      "id": "rc-5",
+      "cause": "Incompatibility between conventional CMOS and cryogenic operation",
+      "description": "Standard semiconductor electronics cannot operate reliably at millikelvin temperatures, preventing co-location of control electronics with qubits and necessitating the problematic wiring infrastructure."
+    }
+  ],
+  "consequences": [
+    {
+      "id": "con-1",
+      "consequence": "Prohibitive costs for scaling quantum systems",
+      "description": "Wiring accounts for up to 80% of cryostat costs, with a 150-qubit system costing approximately $5 million. Scaling to millions of qubits using current approaches could require tens of billions of dollars in infrastructure costs alone."
+    },
+    {
+      "id": "con-2",
+      "consequence": "Delayed achievement of fault-tolerant quantum computing",
+      "description": "Industry roadmaps targeting fault-tolerant quantum computers by 2029-2035 are at risk as the wiring bottleneck remains one of the primary engineering barriers to scaling beyond current qubit counts."
+    },
+    {
+      "id": "con-3",
+      "consequence": "Degraded qubit performance at scale",
+      "description": "Each additional qubit and its associated wiring increases system noise, crosstalk, and thermal load, causing gate fidelities and coherence times to degrade as systems scale, undermining the very purpose of adding more qubits."
+    },
+    {
+      "id": "con-4",
+      "consequence": "Massive facility and power requirements",
+      "description": "Building million-qubit quantum computers with current wiring approaches would require massive facilities with unprecedented cryogenic infrastructure, creating significant environmental and logistical challenges."
+    },
+    {
+      "id": "con-5",
+      "consequence": "Delayed commercial quantum advantage",
+      "description": "The inability to scale quantum systems delays practical applications in drug discovery, financial optimization, cryptography, and materials science that require thousands to millions of high-quality qubits."
+    }
+  ],
+  "existingSolutions": [
+    {
+      "id": "sol-1",
+      "solution": "High-density flexible cryogenic cables",
+      "description": "Companies like Delft Circuits have developed Cri/oFlex cables delivering up to 8x higher channel density than coaxial systems, with roadmaps to reach 32x density and 4,096 channels per loader by 2029.",
+      "effectiveness": "moderate",
+      "adoption": "growing"
+    },
+    {
+      "id": "sol-2",
+      "solution": "On-chip cryogenic control electronics",
+      "description": "D-Wave has demonstrated scalable on-chip cryogenic control for gate-model qubits, adapted from their annealing systems where multiplexed DACs manage tens of thousands of qubits using only about 200 wires.",
+      "effectiveness": "promising",
+      "adoption": "early-stage"
+    },
+    {
+      "id": "sol-3",
+      "solution": "Photonic interconnects and RF-over-fiber",
+      "description": "Research teams have demonstrated all-optical qubit readout at millikelvin temperatures, using devices that perform microwave-to-optical frequency conversion without requiring active cryogenic microwave equipment.",
+      "effectiveness": "experimental",
+      "adoption": "research"
+    },
+    {
+      "id": "sol-4",
+      "solution": "Global control architectures",
+      "description": "Planckian has developed superconducting quantum architectures using global control mechanisms that allow multiple qubits to be manipulated via shared control lines, decoupling control complexity from qubit count.",
+      "effectiveness": "promising",
+      "adoption": "early-stage"
+    }
+  ],
+  "solutionGaps": [
+    {
+      "id": "gap-1",
+      "gap": "Integration of cryogenic CMOS at millikelvin temperatures",
+      "description": "While cryo-CMOS technology shows promise, reliable operation of control electronics at the millikelvin temperatures required for superconducting qubits remains an unsolved challenge, with heat dissipation and noise characteristics not fully characterized."
+    },
+    {
+      "id": "gap-2",
+      "gap": "Scalable manufacturing of cryogenic photonic components",
+      "description": "Photonic interconnect solutions exist at laboratory scale but lack the manufacturing processes and supply chains needed for deployment in commercial quantum systems at the thousands-of-qubits scale."
+    },
+    {
+      "id": "gap-3",
+      "gap": "Standardization of quantum interconnect technologies",
+      "description": "Multiple competing approaches (flex cables, photonic links, wireless THz, cryo-CMOS) are being developed without industry standardization, fragmenting R&D efforts and potentially leading to incompatible solutions."
+    },
+    {
+      "id": "gap-4",
+      "gap": "Thermal management for densely packed control electronics",
+      "description": "Even as wiring density increases, the fundamental challenge of managing heat generation from control electronics co-located with qubits remains unsolved at the scale needed for fault-tolerant systems."
+    }
+  ],
+  "stakeholders": [
+    {
+      "id": "sh-1",
+      "stakeholder": "Quantum hardware companies",
+      "role": "Primary developers facing the bottleneck",
+      "impact": "high",
+      "examples": ["IBM", "Google", "Microsoft", "IonQ", "Rigetti", "D-Wave", "Quantinuum"]
+    },
+    {
+      "id": "sh-2",
+      "stakeholder": "Quantum interconnect startups",
+      "role": "Developing specialized solutions",
+      "impact": "high",
+      "examples": ["Delft Circuits", "Isentroniq", "Planckian"]
+    },
+    {
+      "id": "sh-3",
+      "stakeholder": "Cryogenic equipment manufacturers",
+      "role": "Providing dilution refrigerators and infrastructure",
+      "impact": "medium",
+      "examples": ["Bluefors", "Oxford Instruments"]
+    },
+    {
+      "id": "sh-4",
+      "stakeholder": "Government research agencies",
+      "role": "Funding quantum computing research and initiatives",
+      "impact": "high",
+      "examples": ["DARPA", "EU Quantum Flagship", "Germany's quantum initiative", "National Quantum Initiative (US)"]
+    },
+    {
+      "id": "sh-5",
+      "stakeholder": "Enterprise customers awaiting quantum advantage",
+      "role": "End users dependent on scalable quantum systems",
+      "impact": "medium",
+      "examples": ["Pharmaceutical companies", "Financial institutions", "Automotive manufacturers", "Energy companies"]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.laserfocusworld.com/quantum/article/55284511/break-the-wiring-bottleneck-in-superconducting-quantum-chips",
+      "title": "Break the wiring bottleneck in superconducting quantum chips",
+      "type": "industry-publication"
+    },
+    {
+      "url": "https://thequantuminsider.com/2025/09/19/delft-circuits-presents-its-i-o-roadmap-for-scaling-quantum-computers-towards-thousands-of-qubits/",
+      "title": "Delft Circuits Presents I/O Roadmap for Scaling Quantum Computers",
+      "type": "industry-news"
+    },
+    {
+      "url": "https://tech.eu/2025/10/14/isentroniq-raises-eur75m-to-tackle-the-wiring-bottleneck-and-scale-quantum-computing/",
+      "title": "Isentroniq raises EUR7.5M to tackle the wiring bottleneck",
+      "type": "industry-news"
+    },
+    {
+      "url": "https://www.dwavequantum.com/company/newsroom/press-release/d-wave-demonstrates-first-scalable-on-chip-cryogenic-control-of-gate-model-qubits/",
+      "title": "D-Wave Demonstrates First Scalable On-Chip Cryogenic Control",
+      "type": "company-press-release"
+    },
+    {
+      "url": "https://pubs.aip.org/aip/apq/article/2/4/041501/3373674/Classical-interfaces-for-controlling-cryogenic",
+      "title": "Classical interfaces for controlling cryogenic quantum computing technologies",
+      "type": "academic-paper"
+    },
+    {
+      "url": "https://arxiv.org/html/2511.13965",
+      "title": "Power Delivery for Cryogenic Scalable Quantum Applications",
+      "type": "academic-paper"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41928-025-01356-8",
+      "title": "Terahertz wireless interconnects for cryogenic electronics",
+      "type": "academic-journal"
+    },
+    {
+      "url": "https://www.marketsandmarkets.com/Market-Reports/quantum-computing-market-144888301.html",
+      "title": "Quantum Computing Market Size Report 2030",
+      "type": "market-research"
+    },
+    {
+      "url": "https://www.nelsx.com/p/the-5-biggest-unsolved-problems-in",
+      "title": "The 5 biggest unsolved problems in quantum computing",
+      "type": "industry-analysis"
+    },
+    {
+      "url": "https://www.bain.com/insights/quantum-computing-moves-from-theoretical-to-inevitable-technology-report-2025/",
+      "title": "Quantum Computing Moves from Theoretical to Inevitable - Bain Technology Report 2025",
+      "type": "consulting-report"
+    }
+  ],
+  "tags": ["quantum-computing", "scalability", "cryogenics", "wiring-bottleneck", "superconducting-qubits", "hardware-infrastructure"],
+  "keywords": ["quantum computing scalability", "wiring bottleneck", "coaxial cables", "cryogenic wiring", "qubit control", "dilution refrigerator", "thermal management", "crosstalk", "cryo-CMOS", "photonic interconnects"],
+  "metrics": {
+    "currentMaxQubits": "500-1000",
+    "targetQubits": "1000000+",
+    "wiringCostPercentage": "80%",
+    "cryostatCost150Qubits": "$5M",
+    "marketSize2025": "$3.5B",
+    "projectedMarket2030": "$20B"
+  },
+  "researchSession": "session-20260121-143500",
+  "confidence": 0.78,
+  "verificationStatus": "ai-verified",
+  "createdAt": "2026-01-21T14:35:00Z",
+  "updatedAt": "2026-01-21T14:35:00Z",
+  "version": 1
+}
