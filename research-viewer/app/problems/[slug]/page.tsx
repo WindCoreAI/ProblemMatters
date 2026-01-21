@@ -21,7 +21,16 @@ import {
   Lightbulb,
   ExternalLink,
   ChevronLeft,
+  FileText,
 } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
+import { ReportDialog } from '@/components/problems/ReportDialog';
 import type { Problem } from '@/lib/types/research';
 
 export default function ProblemDetailPage() {
@@ -30,6 +39,8 @@ export default function ProblemDetailPage() {
   const { problems, isInitialized } = useDataStore();
   const [problem, setProblem] = useState<Problem | null>(null);
   const [loading, setLoading] = useState(true);
+  const [reportDialogOpen, setReportDialogOpen] = useState(false);
+  const [hasReport, setHasReport] = useState(false);
 
   useEffect(() => {
     if (isInitialized) {
@@ -38,6 +49,23 @@ export default function ProblemDetailPage() {
       setLoading(false);
     }
   }, [slug, problems, isInitialized]);
+
+  // Check if report exists for this problem
+  useEffect(() => {
+    if (problem) {
+      const reportPath = problem.field
+        ? `/research-data/industries/${problem.industry.slug}/${problem.domain.slug}/fields/reports/${problem.slug}.md`
+        : `/research-data/industries/${problem.industry.slug}/${problem.domain.slug}/reports/${problem.slug}.md`;
+
+      fetch(reportPath, { method: 'HEAD' })
+        .then((response) => {
+          setHasReport(response.ok);
+        })
+        .catch(() => {
+          setHasReport(false);
+        });
+    }
+  }, [problem]);
 
   if (loading || !isInitialized) {
     return (
@@ -125,6 +153,29 @@ export default function ProblemDetailPage() {
               {problem.urgency} urgency
             </Badge>
             <Badge variant="outline">{problem.scope}</Badge>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <span>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => setReportDialogOpen(true)}
+                      disabled={!hasReport}
+                      className="gap-2"
+                    >
+                      <FileText className="h-4 w-4" />
+                      View Report
+                    </Button>
+                  </span>
+                </TooltipTrigger>
+                {!hasReport && (
+                  <TooltipContent>
+                    <p>No research report available for this problem</p>
+                  </TooltipContent>
+                )}
+              </Tooltip>
+            </TooltipProvider>
           </div>
         </div>
 
@@ -419,6 +470,17 @@ export default function ProblemDetailPage() {
           )}
         </aside>
       </div>
+
+      {/* Research Report Dialog */}
+      <ReportDialog
+        isOpen={reportDialogOpen}
+        onClose={() => setReportDialogOpen(false)}
+        problemSlug={problem.slug}
+        problemTitle={problem.title}
+        industrySlug={problem.industry.slug}
+        domainSlug={problem.domain.slug}
+        fieldSlug={problem.field?.slug}
+      />
     </div>
   );
 }
