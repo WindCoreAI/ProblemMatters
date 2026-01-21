@@ -1,0 +1,266 @@
+{
+  "id": "prob-quantum-computing-6",
+  "title": "Harvest Now Decrypt Later Cryptographic Threat",
+  "slug": "harvest-now-decrypt-later-cryptographic-threat",
+  "description": "The Harvest Now, Decrypt Later (HNDL) threat represents a strategic cybersecurity vulnerability where adversarial actors are actively collecting and storing encrypted data today with the intention of decrypting it once quantum computers become powerful enough to break current encryption standards. This approach, also known as 'retrospective decryption' or 'store now, decrypt later,' exploits the fundamental vulnerability of widely-used public-key cryptographic algorithms including RSA, ECC (Elliptic Curve Cryptography), DSA, ECDSA, and Diffie-Hellman key exchange to Shor's algorithm.\n\nMajor cybersecurity agencies worldwide including the US Department of Homeland Security, the UK's National Cyber Security Centre, the European Union Agency for Cybersecurity, and the Australian Cyber Security Centre have confirmed that adversaries are currently exfiltrating and storing sensitive, long-lived data in anticipation of future quantum decryption capabilities. Current estimates suggest that cryptographically relevant quantum computers (CRQCs) could emerge between 2028 and 2035, with some aggressive projections placing this capability as early as 2028-2030.\n\nThe threat is particularly severe for data with long-term value including classified government communications, financial records, healthcare data, intellectual property, and personally identifiable information. Once a sufficient quantum computer exists, Shor's algorithm could break DH-2048 or DSA-2048 encryption in hours or days using approximately 4,000 logical qubits. The global response has accelerated with NIST releasing finalized post-quantum cryptography standards in August 2024, followed by HQC as a fifth algorithm in March 2025. However, migration presents enormous challenges: the US government estimates $7.1 billion in transition costs for non-National Security Systems alone, with enterprise migration timelines ranging from 5-7 years for small organizations to 12-15+ years for large enterprises.",
+  "summary": "Adversaries are collecting encrypted data now with plans to decrypt it when quantum computers become powerful enough. Traditional RSA and ECC encryption methods are vulnerable to Shor's algorithm, creating urgent migration needs to post-quantum cryptography before sensitive historical data is compromised.",
+  "industry": {
+    "id": "ind-tech-software",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "domain": {
+    "id": "dom-emerging-tech",
+    "name": "Emerging Technologies",
+    "slug": "emerging-technologies"
+  },
+  "field": {
+    "id": "fld-quantum-computing",
+    "name": "Quantum Computing",
+    "slug": "quantum-computing"
+  },
+  "problemType": "technical",
+  "problemSubtypes": ["security", "cryptographic", "infrastructure"],
+  "scope": "global",
+  "maturity": "growing",
+  "urgency": "critical",
+  "severity": {
+    "overall": 8,
+    "affectedPopulation": 9,
+    "economicImpact": 9,
+    "qualityOfLife": 7,
+    "productivityImpact": 6
+  },
+  "tractability": {
+    "overall": 5,
+    "technicalFeasibility": 7,
+    "resourceRequirements": 4,
+    "existingProgress": 6,
+    "barriers": 5
+  },
+  "neglectedness": {
+    "overall": 3,
+    "researchActivity": 3,
+    "fundingLevel": 3,
+    "organizationCount": 3,
+    "mediaAttention": 4
+  },
+  "impactScore": 6.0,
+  "rootCauses": [
+    {
+      "id": "rc-1",
+      "cause": "Fundamental mathematical vulnerability of RSA, ECC, DSA, ECDSA, and Diffie-Hellman cryptosystems to Shor's algorithm",
+      "description": "All widely-used public-key algorithms rely on the difficulty of integer factorization, discrete logarithm, or elliptic-curve discrete logarithm problems, which quantum computers running Shor's algorithm can solve efficiently."
+    },
+    {
+      "id": "rc-2",
+      "cause": "Long-term data retention requirements across critical sectors",
+      "description": "Government, healthcare, financial, and enterprise systems maintain data for decades, meaning encrypted data collected today may still be sensitive when quantum computers can decrypt it in 10-20 years."
+    },
+    {
+      "id": "rc-3",
+      "cause": "Slow pace of cryptographic standard adoption and legacy system migration",
+      "description": "Historical cryptographic transitions have taken 10+ years to complete, and many organizations still rely on legacy systems with hardcoded algorithms that cannot be easily updated."
+    },
+    {
+      "id": "rc-4",
+      "cause": "Insufficient crypto-agility in current IT infrastructure",
+      "description": "Most enterprise systems were not designed with algorithm flexibility in mind, making it difficult to swap cryptographic algorithms without major architectural changes."
+    },
+    {
+      "id": "rc-5",
+      "cause": "Lack of organizational awareness and risk prioritization",
+      "description": "Only 25% of organizations currently address quantum threats in their risk management strategy despite 65% acknowledging high risk to their data security."
+    }
+  ],
+  "consequences": [
+    {
+      "id": "con-1",
+      "consequence": "Massive future data breaches exposing decades of historical confidential communications",
+      "description": "Once quantum computers become available, all encrypted data harvested today could be decrypted, exposing years of sensitive communications, transactions, and personal information simultaneously."
+    },
+    {
+      "id": "con-2",
+      "consequence": "National security compromise through decryption of classified government and defense data",
+      "description": "State actors harvesting encrypted diplomatic, military, and intelligence communications could decrypt decades of classified information, compromising ongoing operations and sources."
+    },
+    {
+      "id": "con-3",
+      "consequence": "Financial losses from exposure of trade secrets and intellectual property",
+      "description": "Corporate espionage via HNDL attacks could expose decades of R&D, proprietary algorithms, business strategies, and competitive intelligence, causing billions in economic damage."
+    },
+    {
+      "id": "con-4",
+      "consequence": "Privacy violations affecting billions of individuals",
+      "description": "Personal medical records, financial data, and communications encrypted today could be exposed, violating privacy rights and enabling identity theft on a massive scale."
+    },
+    {
+      "id": "con-5",
+      "consequence": "Erosion of trust in digital systems and e-commerce infrastructure",
+      "description": "Widespread retroactive decryption could fundamentally undermine public trust in digital security, affecting online commerce, banking, and digital governance systems."
+    }
+  ],
+  "existingSolutions": [
+    {
+      "id": "sol-1",
+      "solution": "NIST Post-Quantum Cryptography Standards",
+      "description": "NIST released finalized standards FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), and FIPS 205 (SLH-DSA) in August 2024, with HQC selected as a fifth algorithm in March 2025, providing quantum-resistant alternatives to vulnerable algorithms.",
+      "effectiveness": "high",
+      "adoption": "early-stage"
+    },
+    {
+      "id": "sol-2",
+      "solution": "Hybrid encryption approaches",
+      "description": "Combining classical algorithms with post-quantum algorithms ensures security if at least one remains secure, providing a transition path while maintaining backward compatibility. Hybrid algorithms can now be validated under FIPS 140-3.",
+      "effectiveness": "high",
+      "adoption": "growing"
+    },
+    {
+      "id": "sol-3",
+      "solution": "Crypto-agile architecture frameworks",
+      "description": "Systems designed to swap cryptographic algorithms without major rework support phased migrations and make it easier to incorporate future standards as they evolve.",
+      "effectiveness": "medium",
+      "adoption": "early-stage"
+    },
+    {
+      "id": "sol-4",
+      "solution": "Government mandates and compliance requirements",
+      "description": "CNSA 2.0 requires new NSS acquisitions to be compliant by January 2027, CISA requires TLS 1.3 adoption by January 2030, and EU regulations (DORA, NIS2) introduce encryption guidelines for critical sectors.",
+      "effectiveness": "medium",
+      "adoption": "mandated"
+    }
+  ],
+  "solutionGaps": [
+    {
+      "id": "gap-1",
+      "gap": "Certificate infrastructure not yet ready for post-quantum",
+      "description": "While key exchange is increasingly protected, no public post-quantum certificates are currently in use. First PQ certificates expected in 2026, with broad availability and browser trust not likely before 2027.",
+      "impact": "high"
+    },
+    {
+      "id": "gap-2",
+      "gap": "Larger key sizes creating infrastructure challenges",
+      "description": "Post-quantum algorithms require key sizes 5-10x larger than current standards, increasing bandwidth requirements and storage needs that challenge embedded systems, IoT devices, and bandwidth-constrained networks.",
+      "impact": "high"
+    },
+    {
+      "id": "gap-3",
+      "gap": "Shortage of cryptographic expertise for migration",
+      "description": "Organizations face significant skills gaps in post-quantum cryptography, with insufficient qualified professionals to manage complex multi-year migration projects across global infrastructure.",
+      "impact": "medium"
+    },
+    {
+      "id": "gap-4",
+      "gap": "Inconsistent global standards and regulatory timelines",
+      "description": "Different jurisdictions have varying compliance deadlines (US by 2035, UK by 2035, others unspecified), creating challenges for multinational organizations and supply chain coordination.",
+      "impact": "medium"
+    }
+  ],
+  "stakeholders": [
+    {
+      "id": "sh-1",
+      "stakeholder": "Government agencies and national security organizations",
+      "role": "Primary targets and regulators",
+      "impact": "critical",
+      "description": "Hold classified data with decades-long sensitivity, responsible for mandates like CNSA 2.0 and NSM-10, and face highest consequences from HNDL attacks on diplomatic and military communications."
+    },
+    {
+      "id": "sh-2",
+      "stakeholder": "Financial institutions and banks",
+      "role": "High-value targets and early adopters",
+      "impact": "critical",
+      "description": "Process trillions in transactions with long-term audit requirements, face regulatory pressure from DORA and financial regulators, and have significant resources for early PQC adoption."
+    },
+    {
+      "id": "sh-3",
+      "stakeholder": "Healthcare organizations",
+      "role": "Long-term data custodians",
+      "impact": "high",
+      "description": "Medical records have decades-long retention requirements and contain highly sensitive personal information, making healthcare a prime HNDL target with exposure windows extending decades."
+    },
+    {
+      "id": "sh-4",
+      "stakeholder": "Technology vendors and cloud providers",
+      "role": "Infrastructure migration enablers",
+      "impact": "high",
+      "description": "Major providers (AWS, Google Cloud, Microsoft Azure) have announced hybrid TLS support and PQC migration targets, with over half of Cloudflare traffic already protected against HNDL."
+    },
+    {
+      "id": "sh-5",
+      "stakeholder": "Enterprises with intellectual property",
+      "role": "Targets and adopters",
+      "impact": "high",
+      "description": "Companies with valuable trade secrets, R&D data, and competitive intelligence face significant risk from retrospective decryption of proprietary communications and data."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.paloaltonetworks.com/cyberpedia/harvest-now-decrypt-later-hndl",
+      "title": "Harvest Now, Decrypt Later (HNDL): The Quantum-Era Threat - Palo Alto Networks",
+      "type": "industry",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://www.federalreserve.gov/econres/feds/harvest-now-decrypt-later-examining-post-quantum-cryptography-and-the-data-privacy-risks-for-distributed-ledger-networks.htm",
+      "title": "Harvest Now Decrypt Later: Examining Post-Quantum Cryptography - Federal Reserve",
+      "type": "government",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://csrc.nist.gov/projects/post-quantum-cryptography/post-quantum-cryptography-standardization",
+      "title": "PQC Standardization Process - NIST",
+      "type": "government",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards",
+      "title": "NIST Releases First 3 Finalized Post-Quantum Encryption Standards",
+      "type": "government",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://blog.cloudflare.com/pq-2025/",
+      "title": "State of the post-quantum Internet in 2025 - Cloudflare",
+      "type": "industry",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://www.bcg.com/publications/2025/how-quantum-computing-will-upend-cybersecurity",
+      "title": "How Quantum Computing Will Upend Cybersecurity - BCG",
+      "type": "research",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://kpmg.com/xx/en/our-insights/ai-and-technology/quantum-and-cybersecurity.html",
+      "title": "Quantum is coming and bringing new cybersecurity threats with it - KPMG",
+      "type": "industry",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://www.marketsandmarkets.com/Market-Reports/post-quantum-cryptography-market-126986626.html",
+      "title": "Post-Quantum Cryptography Market Size, Share, Industry Trends & Forecast - MarketsandMarkets",
+      "type": "research",
+      "accessDate": "2026-01-21"
+    }
+  ],
+  "tags": ["quantum-computing", "cryptography", "cybersecurity", "post-quantum", "encryption", "HNDL", "data-security", "RSA", "ECC"],
+  "keywords": ["harvest now decrypt later", "HNDL", "post-quantum cryptography", "PQC", "Shor's algorithm", "quantum threat", "ML-KEM", "ML-DSA", "cryptographic migration", "quantum-resistant encryption"],
+  "metrics": {
+    "estimatedAffectedOrganizations": "millions globally",
+    "usGovernmentMigrationCost": "$7.1 billion",
+    "pqcMarketSize2025": "$0.42-1.15 billion",
+    "pqcMarketProjection2030": "$2.84-4.60 billion",
+    "migrationTimelineSmallOrg": "5-7 years",
+    "migrationTimelineLargeOrg": "12-15+ years",
+    "organizationsAddressingThreat": "25%",
+    "organizationsAcknowledgingRisk": "65%",
+    "cloudflareTrafficProtected": ">50%",
+    "quantumComputerTimeframe": "2028-2035"
+  },
+  "researchSession": "session-20260121-143500",
+  "confidence": 0.85,
+  "verificationStatus": "ai-verified",
+  "createdAt": "2026-01-21T14:35:00Z",
+  "updatedAt": "2026-01-21T14:35:00Z",
+  "version": 1
+}

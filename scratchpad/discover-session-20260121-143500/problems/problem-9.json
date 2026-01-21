@@ -1,0 +1,292 @@
+{
+  "id": "prob-quantum-computing-9",
+  "title": "Absence of Verified Practical Quantum Advantage",
+  "slug": "absence-verified-practical-quantum-advantage",
+  "description": "Despite over a decade of intensive research, billions of dollars in public and private investment, and several demonstrations of quantum supremacy on artificial benchmarks, no quantum computer has yet delivered independently verified, practical quantum advantage for real-world scientific or industrial applications. While experiments like Google's random circuit sampling and D-Wave's magnetic materials simulations have shown quantum systems outperforming classical computers, these achievements involve contrived tasks specifically designed to favor quantum hardware rather than solving commercially relevant problems in chemistry, optimization, finance, or cryptography.\n\nThe core challenge lies in the fundamental gap between demonstrating computational superiority on carefully constructed benchmarks versus achieving measurable improvements on problems of practical value. Random circuit sampling experiments, which formed the basis of initial quantum supremacy claims, do not translate to useful applications. Similarly, while quantum algorithms theoretically offer exponential speedups for certain problems like molecular simulation and cryptanalysis, the hardware requirements—including millions of error-corrected logical qubits—remain far beyond current capabilities.\n\nCritical barriers include quantum decoherence causing rapid loss of quantum information, gate error rates requiring extensive error correction overhead, the impossibility of classically verifying quantum results in high-complexity regimes, and continuously improving classical algorithms that raise the bar for demonstrating advantage. Additionally, the quantum computing community lacks consensus on what constitutes 'practical' advantage, leading to contested claims and skepticism about announced breakthroughs. The verification problem is particularly acute: in regimes where quantum computers truly exceed classical capabilities, there exists no efficient method to confirm the accuracy of quantum computations. Current estimates suggest fault-tolerant quantum computers capable of practical advantage may not emerge until the late 2020s or early 2030s, leaving a significant gap between investment expectations and deliverable results.",
+  "summary": "No independently verified quantum advantage exists for practical real-world applications in chemistry, optimization, or cryptography, despite billions in investment and demonstrations of quantum supremacy on artificial benchmarks.",
+  "industry": {
+    "id": "ind-tech-software",
+    "name": "Technology & Software",
+    "slug": "technology-software"
+  },
+  "domain": {
+    "id": "dom-emerging-tech",
+    "name": "Emerging Technologies",
+    "slug": "emerging-technologies"
+  },
+  "field": {
+    "id": "fld-quantum-computing",
+    "name": "Quantum Computing",
+    "slug": "quantum-computing"
+  },
+  "problemType": "technical",
+  "problemSubtypes": ["knowledge", "resource"],
+  "scope": "industry",
+  "maturity": "emerging",
+  "urgency": "medium",
+  "severity": {
+    "overall": 5,
+    "affectedPopulation": 5,
+    "economicImpact": 6,
+    "qualityOfLife": 4,
+    "productivityImpact": 5
+  },
+  "tractability": {
+    "overall": 5,
+    "technicalFeasibility": 5,
+    "resourceRequirements": 6,
+    "existingProgress": 6,
+    "barriers": 4
+  },
+  "neglectedness": {
+    "overall": 3,
+    "researchActivity": 3,
+    "fundingLevel": 2,
+    "organizationCount": 2,
+    "mediaAttention": 3
+  },
+  "impactScore": 4.5,
+  "rootCauses": [
+    {
+      "id": "rc-1",
+      "cause": "Quantum decoherence and high error rates",
+      "description": "Quantum systems rapidly lose their quantum properties due to environmental noise, temperature fluctuations, and neighboring qubit interference. Current gate error rates require extensive error correction, with logical qubits needing thousands of physical qubits for fault tolerance."
+    },
+    {
+      "id": "rc-2",
+      "cause": "Verification impossibility in high-complexity regimes",
+      "description": "In computational regimes where quantum computers exceed classical capabilities, there is no efficient classical method to verify the accuracy of quantum results. Experiments rely on extrapolation from smaller circuits and proxy benchmarks rather than direct verification."
+    },
+    {
+      "id": "rc-3",
+      "cause": "Limited practical quantum algorithms",
+      "description": "Few quantum algorithms provide provable exponential speedup for practical problems. While Shor's algorithm and quantum simulation are theoretically powerful, most optimization and machine learning claims for quantum advantage remain unsubstantiated."
+    },
+    {
+      "id": "rc-4",
+      "cause": "Continuously improving classical baseline",
+      "description": "Classical algorithms and hardware continue to advance rapidly, making quantum advantage a moving target. Claims of quantum supremacy have been partially refuted by improved classical simulation methods, raising the bar for demonstrating genuine advantage."
+    },
+    {
+      "id": "rc-5",
+      "cause": "Insufficient qubit count and connectivity",
+      "description": "Current quantum processors lack sufficient qubits and qubit connectivity for practical applications. Quantum chemistry calculations require 38-68 error-corrected qubits at minimum, while practical drug discovery may require millions of physical qubits."
+    }
+  ],
+  "consequences": [
+    {
+      "id": "con-1",
+      "consequence": "Misallocation of research and investment resources",
+      "description": "Billions of dollars may be invested prematurely in quantum computing applications before the technology is ready, potentially diverting resources from more immediately productive research avenues."
+    },
+    {
+      "id": "con-2",
+      "consequence": "Erosion of credibility and hype cycle damage",
+      "description": "Repeated claims of quantum advantage without practical demonstration risk damaging investor confidence and public trust, potentially triggering a 'quantum winter' similar to past AI winters."
+    },
+    {
+      "id": "con-3",
+      "consequence": "Delayed scientific breakthroughs in chemistry and materials",
+      "description": "Promised advances in drug discovery, catalyst design, and materials science that depend on quantum simulation remain unrealized, delaying potentially life-saving medical treatments and clean energy technologies."
+    },
+    {
+      "id": "con-4",
+      "consequence": "Security planning uncertainties",
+      "description": "Organizations must invest in post-quantum cryptography to protect against future quantum threats, despite lacking corresponding quantum benefits, creating asymmetric costs and planning difficulties."
+    },
+    {
+      "id": "con-5",
+      "consequence": "Talent and skills misalignment",
+      "description": "The severe shortage of quantum error correction specialists (600-700 globally vs. 5,000-16,000 needed by 2030) creates bottlenecks that slow progress toward fault-tolerant systems capable of practical advantage."
+    }
+  ],
+  "existingSolutions": [
+    {
+      "id": "sol-1",
+      "solution": "Quantum error correction and fault-tolerant architectures",
+      "description": "Major investments in error correction research, with breakthroughs like Google's Willow chip demonstrating that error rates decrease as system size increases. IBM, Quantinuum, and others are developing fault-tolerant quantum computers targeted for 2028-2029.",
+      "effectiveness": "moderate",
+      "adoption": "growing"
+    },
+    {
+      "id": "sol-2",
+      "solution": "Chemically meaningful benchmarks and standardization",
+      "description": "Development of curated benchmark hierarchies for quantum chemistry spanning multireference systems, transition-metal chemistry, and actinide bonding to provide rigorous, comparable measures of progress toward practical advantage.",
+      "effectiveness": "moderate",
+      "adoption": "emerging"
+    },
+    {
+      "id": "sol-3",
+      "solution": "Hybrid quantum-classical algorithms",
+      "description": "Variational algorithms like VQE and QAOA that leverage limited quantum resources alongside classical optimization, designed to extract value from noisy intermediate-scale quantum (NISQ) devices while fault-tolerance is achieved.",
+      "effectiveness": "limited",
+      "adoption": "widespread"
+    },
+    {
+      "id": "sol-4",
+      "solution": "Verifiable quantum advantage algorithms",
+      "description": "Google's Quantum Echoes algorithm represents the first verifiable quantum advantage, computing molecular structures 13,000x faster than classical supercomputers with results that can be independently verified.",
+      "effectiveness": "promising",
+      "adoption": "early"
+    }
+  ],
+  "solutionGaps": [
+    {
+      "id": "gap-1",
+      "gap": "Massive physical qubit overhead for error correction",
+      "description": "Current error correction schemes require thousands of physical qubits per logical qubit, making practical fault-tolerant systems extraordinarily resource-intensive. New codes like QLDPC show promise but remain experimental."
+    },
+    {
+      "id": "gap-2",
+      "gap": "Real-time classical decoder bottleneck",
+      "description": "Error correction requires classical systems that can process error signals as fast as qubits generate them. The computational cost of running decoders in real-time remains a major bottleneck preventing practical fault-tolerant operation."
+    },
+    {
+      "id": "gap-3",
+      "gap": "Lack of consensus on practical advantage definition",
+      "description": "The quantum community lacks agreed-upon definitions for what constitutes 'practical' advantage versus artificial benchmarks, leading to contested claims and difficulty measuring genuine progress toward useful applications."
+    },
+    {
+      "id": "gap-4",
+      "gap": "Insufficient quantum-native algorithms for practical problems",
+      "description": "Most promising applications still rely on algorithms developed decades ago. The pace of new quantum algorithm development has slowed, with major gaps in optimization, machine learning, and finance applications."
+    }
+  ],
+  "stakeholders": [
+    {
+      "id": "sh-1",
+      "stakeholder": "Major technology companies",
+      "type": "organization",
+      "description": "IBM, Google, Microsoft, Amazon (AWS), and others have invested billions in quantum computing research, with competing hardware architectures and aggressive roadmaps toward fault-tolerant systems.",
+      "influence": "high",
+      "impact": "high"
+    },
+    {
+      "id": "sh-2",
+      "stakeholder": "Government research agencies",
+      "type": "organization",
+      "description": "The US DOD, DOE, NSF, along with agencies in China, EU, Japan, and Australia have committed over $10 billion in public funding for quantum research, infrastructure, and workforce development.",
+      "influence": "high",
+      "impact": "high"
+    },
+    {
+      "id": "sh-3",
+      "stakeholder": "Academic researchers and universities",
+      "type": "organization",
+      "description": "University research groups advance fundamental quantum science, develop algorithms, and train the next generation of quantum scientists, though they face an estimated 10-year pipeline for quantum error correction specialists.",
+      "influence": "medium",
+      "impact": "high"
+    },
+    {
+      "id": "sh-4",
+      "stakeholder": "Pharmaceutical and materials science companies",
+      "type": "organization",
+      "description": "Companies seeking quantum advantage for drug discovery, catalyst design, and materials simulation represent a key application domain, with molecular simulation identified as the most promising near-term use case.",
+      "influence": "medium",
+      "impact": "high"
+    },
+    {
+      "id": "sh-5",
+      "stakeholder": "Financial institutions",
+      "type": "organization",
+      "description": "Banks and financial firms like JPMorgan Chase are investing up to $10 billion in quantum technologies for option pricing, risk analysis, and portfolio optimization, representing early enterprise adopters.",
+      "influence": "medium",
+      "impact": "medium"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://spectrum.ieee.org/quantum-computing-skeptics",
+      "title": "Quantum Computing's Hard, Cold Reality Check - IEEE Spectrum",
+      "type": "article",
+      "credibility": "high",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://thequantuminsider.com/2026/01/12/quantum-advantage-has-likely-been-achieved-the-debate-is-over-what-counts/",
+      "title": "Quantum Advantage Has Likely Been Achieved - The Debate Is Over What Counts",
+      "type": "article",
+      "credibility": "high",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/2025-quantum-computing-readiness",
+      "title": "Quantum Readiness Index 2025 - IBM",
+      "type": "report",
+      "credibility": "high",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://blog.google/technology/research/quantum-echoes-willow-verifiable-quantum-advantage/",
+      "title": "Quantum Echoes algorithm - Google Research",
+      "type": "article",
+      "credibility": "high",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://www.riverlane.com/blog/quantum-error-correction-our-2025-trends-and-2026-predictions",
+      "title": "Quantum Error Correction: 2025 Trends and 2026 Predictions - Riverlane",
+      "type": "article",
+      "credibility": "high",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://www.spinquanta.com/news-detail/quantum-computing-funding-explosive-growth-strategic-investment-2025",
+      "title": "Quantum Computing Funding: Explosive Growth and Strategic Investment in 2025",
+      "type": "article",
+      "credibility": "medium",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2307.00523",
+      "title": "On Realistically Achieving Quantum Advantage",
+      "type": "research",
+      "credibility": "high",
+      "accessDate": "2026-01-21"
+    },
+    {
+      "url": "https://link.aps.org/doi/10.1103/PhysRevResearch.4.033154",
+      "title": "Measurements as a roadblock to near-term practical quantum advantage in chemistry",
+      "type": "research",
+      "credibility": "high",
+      "accessDate": "2026-01-21"
+    }
+  ],
+  "tags": [
+    "quantum-computing",
+    "quantum-advantage",
+    "quantum-supremacy",
+    "error-correction",
+    "fault-tolerance",
+    "quantum-algorithms",
+    "decoherence",
+    "benchmarking"
+  ],
+  "keywords": [
+    "practical quantum advantage",
+    "verified quantum advantage",
+    "quantum supremacy",
+    "quantum error correction",
+    "fault-tolerant quantum computing",
+    "quantum chemistry",
+    "quantum optimization",
+    "NISQ",
+    "variational quantum eigensolver",
+    "quantum decoherence"
+  ],
+  "metrics": {
+    "globalMarketSize2025": "$3.52 billion",
+    "projectedMarketSize2030": "$20.2 billion",
+    "publicFundingCommitted": ">$10 billion",
+    "qecSpecialistsNeeded2030": "5,000-16,000",
+    "currentQecSpecialists": "600-700",
+    "majorQuantumCompanies": 76,
+    "faultToleranceTargetYear": "2028-2029"
+  },
+  "researchSession": "session-20260121-143500",
+  "confidence": 0.85,
+  "verificationStatus": "ai-verified",
+  "createdAt": "2026-01-21T14:35:00Z",
+  "updatedAt": "2026-01-21T14:35:00Z",
+  "version": 1
+}
