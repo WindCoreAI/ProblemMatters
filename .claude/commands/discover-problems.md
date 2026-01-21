@@ -18,7 +18,7 @@ This skill implements the **Agentic Problem Discovery Flow** using **subagent de
 >
 > 1. **Orchestrator stays lightweight** - NEVER do web searches, NEVER read large files
 > 2. **Each subagent writes to its OWN file** - NO shared file writes during research
-> 3. **Final merge is a separate subagent** - Orchestrator doesn't read problem content
+> 3. **Merge uses Python script** - NOT an LLM subagent (avoids context exhaustion)
 > 4. **Subagents return minimal status only** - Just success/fail + title + score
 
 ## Architecture
@@ -31,28 +31,38 @@ This skill implements the **Agentic Problem Discovery Flow** using **subagent de
 │  - Parse input arguments                                                 │
 │  - Launch subagents with Task tool                                       │
 │  - Track success/failure counts                                          │
+│  - Run Python merge script (NO LLM needed)                               │
 │  - Display progress to user                                              │
 │                                                                          │
 │  NEVER does:                                                             │
 │  - Web searches                                                          │
-│  - Read problem JSON files                                               │
-│  - Accumulate problem data in context                                    │
+│  - Read problem JSON files into context                                  │
+│  - Use LLM subagent for merge (causes context exhaustion)                │
 └─────────────────────────┬───────────────────────────────────────────────┘
                           │
-          ┌───────────────┼───────────────┐
-          ▼               ▼               ▼
-┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
-│ DISCOVERY       │ │ RESEARCH        │ │ MERGE           │
-│ SUBAGENT        │ │ SUBAGENTS (x10) │ │ SUBAGENT        │
-│                 │ │                 │ │                 │
-│ Writes:         │ │ Each writes:    │ │ Reads all       │
-│ candidates.json │ │ problem-N.json  │ │ problem-N.json  │
-│                 │ │ (individual)    │ │ Writes final    │
-│ Returns:        │ │                 │ │ field file      │
-│ count only      │ │ Returns:        │ │                 │
-│                 │ │ title + score   │ │ Returns:        │
-│                 │ │ only            │ │ count + summary │
-└─────────────────┘ └─────────────────┘ └─────────────────┘
+          ┌───────────────┴───────────────┐
+          ▼                               ▼
+┌─────────────────┐             ┌─────────────────┐
+│ DISCOVERY       │             │ RESEARCH        │
+│ SUBAGENT        │             │ SUBAGENTS (x10) │
+│                 │             │                 │
+│ Writes:         │             │ Each writes:    │
+│ candidates.json │             │ problem-N.json  │
+│                 │             │ (individual)    │
+│ Returns:        │             │                 │
+│ count only      │             │ Returns:        │
+│                 │             │ title + score   │
+└─────────────────┘             └─────────────────┘
+                                        │
+                                        ▼
+                              ┌─────────────────┐
+                              │ PYTHON MERGE    │
+                              │ (Bash script)   │
+                              │                 │
+                              │ Combines all    │
+                              │ problem-N.json  │
+                              │ into field file │
+                              └─────────────────┘
 ```
 
 ## Workflow Steps
@@ -69,11 +79,6 @@ Parse the user's input to determine:
 - `depthLevel`: deep
 
 If input is empty, prompt user for target.
-
-**Quick validation** - just check the taxonomy file exists:
-```
-docs/research/industry-taxonomy-hierarchy.md
-```
 
 ### Step 1: Initialize Session (LIGHTWEIGHT)
 
@@ -96,7 +101,7 @@ docs/research/industry-taxonomy-hierarchy.md
 **DO NOT:**
 - Read the output field file
 - Count existing problems
-- Read taxonomy details
+- Read taxonomy details into context
 
 ### Step 2: Discovery Phase (SUBAGENT)
 
@@ -263,84 +268,90 @@ Or if failed:
 - Display: `✓ Problem {N}: "{title}" (Impact: {score})`
 - DO NOT ask subagent to return problem content
 
-### Step 4: Merge Phase (SUBAGENT)
+### Step 4: Merge Phase (PYTHON SCRIPT - NO LLM)
 
-After all research subagents complete, launch ONE merge subagent:
+> **CRITICAL: Use Python script, NOT an LLM subagent**
+> The merge operation processes large JSON files. Using an LLM would cause context exhaustion.
+> Instead, run a Python script via Bash that handles the merge without LLM involvement.
 
+After all research subagents complete, run this Python merge script:
+
+```bash
+python3 << 'MERGE_SCRIPT'
+import json
+import glob
+import os
+from datetime import datetime
+
+# Configuration (replace these values)
+PROBLEMS_DIR = "{scratchpad}/discover-{session-id}/problems"
+OUTPUT_FILE = "research-viewer/public/research-data/industries/{industry_slug}/{domain_slug}/fields/{field_slug}.json"
+INDUSTRY = {"id": "{industry_id}", "name": "{industry_name}", "slug": "{industry_slug}"}
+DOMAIN = {"id": "{domain_id}", "name": "{domain_name}", "slug": "{domain_slug}"}
+FIELD = {"id": "{field_id}", "name": "{field_name}", "slug": "{field_slug}", "description": "{field_description}"}
+
+# Create output directory
+os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
+
+# Load existing file or create new structure
+if os.path.exists(OUTPUT_FILE):
+    with open(OUTPUT_FILE, 'r') as f:
+        output = json.load(f)
+else:
+    output = {
+        "field": FIELD,
+        "domain": DOMAIN,
+        "industry": INDUSTRY,
+        "problems": []
+    }
+
+# Read and merge all problem files
+problem_files = sorted(glob.glob(f"{PROBLEMS_DIR}/problem-*.json"))
+new_count = 0
+for pf in problem_files:
+    try:
+        with open(pf, 'r') as f:
+            problem = json.load(f)
+            output["problems"].append(problem)
+            new_count += 1
+    except Exception as e:
+        print(f"Error reading {pf}: {e}")
+
+# Write merged output
+with open(OUTPUT_FILE, 'w') as f:
+    json.dump(output, f, indent=2)
+
+print(f"MERGED|{new_count}|{OUTPUT_FILE}")
+MERGE_SCRIPT
 ```
-Task tool:
-- subagent_type: "general-purpose"
-- description: "Merge {field} problems"
-- prompt: <see below>
-```
 
-**MERGE PROMPT:**
-```
-You are the Merge Agent. Combine individual problem files into the final output.
-
-## Input Location
-Problem files: {scratchpad}/discover-{session-id}/problems/problem-*.json
-
-## Output Location
-Final file: research-viewer/public/research-data/industries/{industry_slug}/{domain_slug}/fields/{field_slug}.json
-
-## Taxonomy
-- Industry: {industry_name} | slug: {industry_slug} | id: {industry_id}
-- Domain: {domain_name} | slug: {domain_slug} | id: {domain_id}
-- Field: {field_name} | slug: {field_slug} | id: {field_id}
-- Field description: {field_description}
-
-## Instructions
-
-1. Create output directory if needed:
-   ```bash
-   mkdir -p research-viewer/public/research-data/industries/{industry_slug}/{domain_slug}/fields
-   ```
-
-2. Read each problem-N.json file from the problems directory
-
-3. Check if output file exists:
-   - If YES: Read it, append new problems to the "problems" array
-   - If NO: Create new file with field/domain/industry metadata
-
-4. Write the merged file with this structure:
-   ```json
-   {
-     "field": {"id": "{field_id}", "name": "{field_name}", "slug": "{field_slug}", "description": "..."},
-     "domain": {"id": "{domain_id}", "name": "{domain_name}", "slug": "{domain_slug}"},
-     "industry": {"id": "{industry_id}", "name": "{industry_name}", "slug": "{industry_slug}"},
-     "problems": [... all problems ...]
-   }
-   ```
-
-5. Validate JSON is valid using:
-   ```bash
-   python3 -c "import json; d=json.load(open('...')); print(f'Valid: {len(d[\"problems\"])} problems')"
-   ```
-
-6. Return ONLY:
-   "MERGED|{count}|{output_file_path}"
-```
+**Important:** Replace the placeholder values in the script before running:
+- `{scratchpad}` - the scratchpad path
+- `{session-id}` - the session ID
+- `{industry_slug}`, `{industry_id}`, `{industry_name}`
+- `{domain_slug}`, `{domain_id}`, `{domain_name}`
+- `{field_slug}`, `{field_id}`, `{field_name}`, `{field_description}`
 
 ### Step 5: Finalize (ORCHESTRATOR)
 
-After merge subagent completes:
+After merge script completes:
 
 1. **Write session log** (small file, OK to do directly):
-   ```json
+   ```bash
+   cat << 'EOF' > research-viewer/public/research-data/sessions/{session-id}.json
    {
      "id": "{session-id}",
      "completedAt": "{timestamp}",
-     "target": {"industry": "...", "domain": "...", "field": "..."},
+     "target": {"industry": "{industry}", "domain": "{domain}", "field": "{field}"},
      "results": {
-       "candidatesFound": N,
-       "problemsResearched": N,
-       "problemsStored": N,
-       "failures": N
+       "candidatesFound": {N},
+       "problemsResearched": {N},
+       "problemsStored": {N},
+       "failures": {N}
      }
    }
+   EOF
    ```
-   Location: `research-viewer/public/research-data/sessions/{session-id}.json`
 
 2. **Report to user:**
    ```markdown
@@ -381,7 +392,8 @@ After merge subagent completes:
 | Track success/fail counts | Read problem JSON content |
 | Display progress messages | Accumulate problem data |
 | Parse simple status lines | Ask subagents for detailed returns |
-| Write small session log | Read/write large field files |
+| Run Python merge script | Use LLM subagent for merge |
+| Write small session log | Read large field files |
 
 ## Subagent Return Format
 
@@ -391,7 +403,8 @@ All subagents return **minimal status lines** only:
 |----------|---------------|
 | Discovery | `Found {N} candidates. File written.` |
 | Research | `OK\|{title}\|{score}\|{confidence}` or `FAIL\|{title}\|{reason}` |
-| Merge | `MERGED\|{count}\|{filepath}` |
+
+The merge step is NOT a subagent - it's a Python script run via Bash.
 
 ## File Structure
 
@@ -412,4 +425,46 @@ research-viewer/public/research-data/
 
 - **WebFetch 403**: Subagent uses WebSearch results instead
 - **Research subagent fails**: Continue with others, track failure count
-- **Merge fails**: Report error, individual files preserved for retry
+- **Merge script fails**: Report error, individual files preserved for retry
+
+## Complete Python Merge Script Template
+
+Copy this script and fill in the values before running:
+
+```python
+#!/usr/bin/env python3
+import json
+import glob
+import os
+
+# === FILL IN THESE VALUES ===
+PROBLEMS_DIR = "/path/to/scratchpad/discover-session-XXXXXXXX-XXXXXX/problems"
+OUTPUT_FILE = "research-viewer/public/research-data/industries/INDUSTRY/DOMAIN/fields/FIELD.json"
+INDUSTRY = {"id": "ind-xxx", "name": "Industry Name", "slug": "industry-slug"}
+DOMAIN = {"id": "dom-xxx", "name": "Domain Name", "slug": "domain-slug"}
+FIELD = {"id": "fld-xxx", "name": "Field Name", "slug": "field-slug", "description": "Field description"}
+# ============================
+
+os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
+
+if os.path.exists(OUTPUT_FILE):
+    with open(OUTPUT_FILE, 'r') as f:
+        output = json.load(f)
+else:
+    output = {"field": FIELD, "domain": DOMAIN, "industry": INDUSTRY, "problems": []}
+
+problem_files = sorted(glob.glob(f"{PROBLEMS_DIR}/problem-*.json"))
+new_count = 0
+for pf in problem_files:
+    try:
+        with open(pf, 'r') as f:
+            output["problems"].append(json.load(f))
+            new_count += 1
+    except Exception as e:
+        print(f"Error: {pf}: {e}")
+
+with open(OUTPUT_FILE, 'w') as f:
+    json.dump(output, f, indent=2)
+
+print(f"MERGED|{new_count}|{OUTPUT_FILE}")
+```
